@@ -5,3 +5,9 @@ Licensed under the UPL-1.0 License
 https://src.ehan.dev/productivecss/LICENSE.txt
 */
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(attr(gridCol, ), 1fr));
+    grid-auto-rows: minmax(100px, auto);
+}
+
