@@ -1,6 +1,6 @@
 /*!
 Productive CSS (productivecss.ehan.dev)
-Copyright (c) 2023 Ehan Ahamed and contributors
+Copyright (c) 2023-present Ehan Ahamed and contributors
 Licensed under the UPL-1.0 License
 https://src.ehan.dev/productivecss/LICENSE.txt
 */
@@ -14,3 +14,13 @@ section[productivecss~="layout:heroLogo"] {
         "content logo";
 }
 
+@media only screen and (max-width: var(--productivecssMobileWidth)) {
+    section[productivecss~="layout:heroLogo"] {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas:
+            "header logo"
+            "content logo";
+    }
+}
