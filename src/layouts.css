@@ -5,6 +5,12 @@ Licensed under the UPL-1.0 License
 https://src.ehan.dev/productivecss/LICENSE.txt
 */
 
-section.page {
+section[productivecss~="layout:heroLogo"] {
     display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas:
+        "header logo"
+        "content logo";
 }
+
