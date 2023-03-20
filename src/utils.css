@@ -9,3 +9,8 @@ https://src.ehan.dev/productivecss/LICENSE.txt
     color: var(--productivecssColorsPrimary);
 }
 
+*[productivecss~="color:primaryFaded"] {
+    color: var(--productivecssColorsPrimaryFaded);
+}
+
+/* etc */
