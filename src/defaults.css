@@ -6,5 +6,32 @@ https://src.ehan.dev/productivecss/LICENSE.txt
 */
 
 :root {
+    /* Mobile stuff */
     --productivecssMobileWidth: 600px;
+    /* Colors */
+    --productivecssColorsPrimary: #7A52CC;
+    --productivecssColorsPrimaryFaded: #967ACC;
+    --productivecssColorsGray5: #A3A3CC;
+    --productivecssColorsGray4: #7A7ACC;
+    --productivecssColorsGray3: #5C5C99;
+    --productivecssColorsGray2: #3D3D66;
+    --productivecssColorsGray1: #1E1E32;
+    --productivecssColorsRed: #FF6666;
+    --productivecssColorsRedFaded: #FF9999;
+    --productivecssColorsOrange: #FF9966;
+    --productivecssColorsOrangeFaded: #FFBB99;
+    --productivecssColorsYellow: #FFCC66;
+    --productivecssColorsYellowFaded: #FFDD99;
+    --productivecssColorsGreen: #52CCA3;
+    --productivecssColorsGreenFaded: #7ACCB1;
+    --productivecssColorsBlue: #5252CC;
+    --productivecssColorsBlueFaded: #7A7ACC;
+    --productivecssColorsPurple: #7A52CC;
+    --productivecssColorsPurpleFaded: #967ACC;
+    /* Components */
+    --productivecssFontSize: 16px;
+    /* Buttons */
+    --productivecssButtonBgColor: var(--productivecssColorsSurface);
+    --productivecssButtonPadding: 16px 32px;
+    --productivecssButtonFontSize: var(--productivecssFontSize);
 }
