@@ -32,9 +32,11 @@ https://src.ehan.dev/productivecss/LICENSE.txt
     --productivecssColorsPinkFaded: #CC7AB1;
     /* Components */
     --productivecssFontSize: 16px;
+    --productivecssFontSizeMobile: 16px;
     /* Buttons */
     --productivecssButtonBgColor: var(--productivecssColorsGray2);
     --productivecssButtonColor: var(--productivecssColorsGray5);
-    --productivecssButtonPadding: 16px 32px;
+    --productivecssButtonPadding: 8px 16px;
     --productivecssButtonFontSize: var(--productivecssFontSize);
+    --productivecssButtonFontSizeMobile: var(--productivecssFontSizeMobile);
 }
