@@ -28,7 +28,7 @@ section[productivecss~="layout:heroLogo"] {
     section[productivecss~="layout:heroLogo"] {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr;
         grid-template-areas:
             "logo"
             "header
