@@ -1,0 +1,10 @@
+/*!
+Productive CSS (productivecss.ehan.dev)
+Copyright (c) 2023-present Ehan Ahamed and contributors
+Licensed under the UPL-1.0 License
+https://src.ehan.dev/productivecss/LICENSE.txt
+*/
+
+:root {
+    --productivecssMobileWidth: 600px;
+}
