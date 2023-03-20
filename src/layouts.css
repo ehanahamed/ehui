@@ -14,13 +14,24 @@ section[productivecss~="layout:heroLogo"] {
         "content logo";
 }
 
+*[productivecss~="area:header"] {
+    grid-area: header;
+}
+*[productivecss~="area:content"] {
+    grid-area: content;
+}
+*[productivecss~="area:logo"] {
+    grid-area: logo;
+}
+
 @media only screen and (max-width: var(--productivecssMobileWidth)) {
     section[productivecss~="layout:heroLogo"] {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
-            "header logo"
-            "content logo";
+            "logo"
+            "header
+            "content";
     }
 }
