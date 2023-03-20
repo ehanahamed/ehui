@@ -28,10 +28,12 @@ https://src.ehan.dev/productivecss/LICENSE.txt
     --productivecssColorsBlueFaded: #7A7ACC;
     --productivecssColorsPurple: #7A52CC;
     --productivecssColorsPurpleFaded: #967ACC;
+    --productivecssColorsPink: #CC52A3;
+    --productivecssColorsPinkFaded: #CC7AB1;
     /* Components */
     --productivecssFontSize: 16px;
     /* Buttons */
-    --productivecssButtonBgColor: var(--productivecssColorsSurface);
+    --productivecssButtonBgColor: var(--productivecssColorsGray2);
     --productivecssButtonPadding: 16px 32px;
     --productivecssButtonFontSize: var(--productivecssFontSize);
 }
