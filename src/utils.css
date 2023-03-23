@@ -14,3 +14,9 @@ https://src.ehan.dev/productivecss/LICENSE.txt
 }
 
 /* etc */
+
+*[productivecss~="invisible"] {
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+}
