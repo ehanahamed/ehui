@@ -1,6 +1,5 @@
-# wait i forgot my own regex, what happens if the comment is a hashtag with nothing next to it
-#
 # docs.ehan.dev/cdn
+LICENSE.txt
 src/defaults.css
 src/utils.css
 src/layouts.css
