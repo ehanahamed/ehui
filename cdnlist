@@ -1,5 +1,5 @@
 # docs.ehan.dev/cdn
-productivecss/src/defaults.css
-productivecss/src/utils.css
-productivecss/src/layouts.css
-productivecss/src/components.css
+src/defaults.css
+src/utils.css
+src/layouts.css
+src/components.css
