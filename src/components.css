@@ -6,18 +6,27 @@ https://src.ehan.dev/designsys/LICENSE.txt
 */
 
 button {
-    background-color: var();
-    border: var();
-    color: var();
-    padding: var();
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: var();
+  background-color: var(--blueishFaded2);
+  color: var(--purpleish);
+  border: 4px solid var(--purpleish);
+  transition-duration: 0.4s;
 }
 
-@media only screen and (max-width: var()) {
-    button {
-        font-size: var();
-    }
+button:hover {
+  background-color: var(--purpleish);
+  color: var(--blueishFaded2);
+  border-color: var(--purpleishFaded);
+}
+
+button.purpleish {
+  background-color: var(--purpleish);
+  color: var(--blueishFaded2);
+  border: 4px solid var(--purpleish);
+  transition-duration: 0.4s;
+}
+
+button.purpleish:hover {
+  background-color: var(--purpleish);
+  color: var(--blueishFaded2);
+  border: 4px solid var(--purpleishFaded);
 }
