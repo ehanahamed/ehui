@@ -1,23 +1,23 @@
 /*!
-Productive CSS (productivecss.ehan.dev)
+designsys (designsys.ehan.dev)
 Copyright (c) 2023-present Ehan Ahamed and contributors
 Licensed under the UPL-1.0 License
-https://src.ehan.dev/productivecss/LICENSE.txt
+https://src.ehan.dev/designsys/LICENSE.txt
 */
 
 button {
-    background-color: var(--productivecssButtonBgColor);
-    border: var(--productivecssButtonBorder);
-    color: var(--productivecssButtonColor);
-    padding: var(--productivecssButtonPadding);
+    background-color: var();
+    border: var();
+    color: var();
+    padding: var();
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: var(--productivecssButtonFontSize);
+    font-size: var();
 }
 
-@media only screen and (max-width: var(--productivecssMobileWidth)) {
+@media only screen and (max-width: var()) {
     button {
-        font-size: var(--productivecssButtonFontSizeMobile);
+        font-size: var();
     }
 }
