@@ -8,4 +8,5 @@ https://src.ehan.dev/designsys/LICENSE.txt
 body {
     background-color: var(--blueishFaded1);
     color: var(--blueishGray);
+    font-size: 1.2rem;
 }
