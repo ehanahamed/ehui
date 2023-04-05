@@ -9,7 +9,7 @@ button {
   background-color: var(--blueishFaded1);
   color: var(--purpleish);
   border: 4px solid var(--purpleish);
-  border-radius: 6px;
+  border-radius: 8px;
   transition-duration: 0.4s;
 }
 
