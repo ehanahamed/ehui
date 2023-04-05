@@ -13,6 +13,7 @@ button {
   color: var(--purpleish);
   border: 4px solid var(--purpleish);
   border-radius: 8px;
+  font-size: 1.2rem;
   transition-duration: 0.4s;
 }
 /* <button style="COLOR"></button> */
@@ -64,6 +65,7 @@ a.button {
   color: var(--purpleish);
   border: 4px solid var(--purpleish);
   border-radius: 8px;
+  font-size: 1.2rem;
   transition-duration: 0.4s;
 }
 /* <a style="button COLOR"></a> */
