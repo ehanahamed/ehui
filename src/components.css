@@ -6,7 +6,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 */
 
 button {
-  background-color: var(--blueishFaded2);
+  background-color: var(--blueishFaded1);
   color: var(--purpleish);
   border: 4px solid var(--purpleish);
   transition-duration: 0.4s;
@@ -27,6 +27,6 @@ button.purpleish {
 
 button.purpleish:hover {
   background-color: var(--purpleish);
-  color: var(--blueishFaded2);
+  color: var(--blueishFaded1);
   border: 4px solid var(--purpleishFaded);
 }
