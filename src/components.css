@@ -38,18 +38,21 @@ button.primary.greem {
   border-color: var(--greem);
 }
 
-button:hover {
+button:hover,
+button:focus {
   background-color: var(--purpleish);
   color: var(--blueishFaded1);
   border-color: var(--purpleishFaded);
 }
 
-button:hover.redish {
+button:hover.redish,
+button:focus.redish {
   background-color: var(--redish);
   border-color: var(--redishFaded);
 }
 
-button:hover.greem {
+button:hover.greem,
+button:focus.greem {
   background-color: var(--greem);
   border-color: var(--greemFaded);
 }
