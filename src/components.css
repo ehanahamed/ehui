@@ -19,7 +19,17 @@ button:hover {
   border-color: var(--purpleishFaded);
 }
 
-button.purpleish {
+button.greem {
+  border-color: var(--greem);
+  color: var(--greem);
+}
+
+button:hover.greem {
+  background-color: var(--greem);
+  border-color: var(--greemFaded);
+}
+
+button.primary {
   background-color: var(--purpleish);
   color: var(--blueishFaded1);
 }
