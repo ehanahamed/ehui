@@ -13,12 +13,12 @@ button {
   transition-duration: 0.4s;
 }
 
-button.primary.redish {
+button.redish {
   border-color: var(--redish);
   color: var(--redish);
 }
 
-button.primary.greem {
+button.greem {
   border-color: var(--greem);
   color: var(--greem);
 }
