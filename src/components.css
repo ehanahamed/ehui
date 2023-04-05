@@ -23,22 +23,6 @@ button.greem {
   color: var(--greem);
 }
 
-button:hover {
-  background-color: var(--purpleish);
-  color: var(--blueishFaded1);
-  border-color: var(--purpleishFaded);
-}
-
-button:hover.redish {
-  background-color: var(--redish);
-  border-color: var(--redish);
-}
-
-button:hover.greem {
-  background-color: var(--greem);
-  border-color: var(--greemFaded);
-}
-
 button.primary {
   background-color: var(--purpleish);
   color: var(--blueishFaded1);
@@ -52,4 +36,20 @@ button.primary.redish {
 button.primary.greem {
   background-color: var(--greem);
   border-color: var(--greem);
+}
+
+button:hover {
+  background-color: var(--purpleish);
+  color: var(--blueishFaded1);
+  border-color: var(--purpleishFaded);
+}
+
+button:hover.redish {
+  background-color: var(--redish);
+  border-color: var(--redishFaded);
+}
+
+button:hover.greem {
+  background-color: var(--greem);
+  border-color: var(--greemFaded);
 }
