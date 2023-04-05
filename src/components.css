@@ -13,15 +13,15 @@ button {
   transition-duration: 0.4s;
 }
 
+button.greem {
+  border-color: var(--greem);
+  color: var(--greem);
+}
+
 button:hover {
   background-color: var(--purpleish);
   color: var(--blueishFaded1);
   border-color: var(--purpleishFaded);
-}
-
-button.greem {
-  border-color: var(--greem);
-  color: var(--greem);
 }
 
 button:hover.greem {
