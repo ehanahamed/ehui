@@ -4,3 +4,59 @@ Copyright (c) 2023-present Ehan Ahamed and contributors
 Licensed under the UPL-1.0 License
 https://src.ehan.dev/designsys/LICENSE.txt
 */
+
+p.redish,
+b.redish,
+i.redish,
+u.redish,
+.text.redish {
+    color: var(--redish);
+}
+
+p.orangeish,
+b.orangeish,
+i.orangeish,
+u.orangeish,
+.text.orangeish {
+    color: var(--orangeish);
+}
+
+p.yellowish,
+b.yellowish,
+i.yellowish,
+u.yellowish,
+.text.yellowish {
+    color: var(--yellowish);
+}
+
+p.greem,
+b.greem,
+i.greem,
+u.greem,
+.text.greem {
+    color: var(--greem);
+}
+
+p.blueish,
+b.blueish,
+i.blueish,
+u.blueish,
+.text.blueish {
+    color: var(--blueish);
+}
+
+p.purpleish,
+b.purpleish,
+i.purpleish,
+u.purpleish,
+.text.purpleish {
+    color: var(--purpleish);
+}
+
+p.pimk,
+b.pimk,
+i.pimk,
+u.pimk,
+.text.pimk {
+    color: var(--pimk);
+}
