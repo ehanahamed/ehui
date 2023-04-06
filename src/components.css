@@ -5,10 +5,8 @@ Licensed under the UPL-1.0 License
 https://src.ehan.dev/designsys/LICENSE.txt
 */
 
-/*
-<button></button>
-*/
-button {
+button,
+.button {
   background-color: var(--blueishFaded1);
   color: var(--purpleish);
   border: 4px solid var(--purpleish);
@@ -16,95 +14,54 @@ button {
   font-size: 1.2rem;
   transition-duration: 0.4s;
 }
-/* <button style="COLOR"></button> */
-button.redish {
+
+button.redish,
+.button.redish {
   border-color: var(--redish);
   color: var(--redish);
 }
-button.greem {
+button.greem,
+.button.greem {
   border-color: var(--greem);
   color: var(--greem);
 }
-/* <button style="primary"></button> */
-button.primary {
+
+button.primary,
+.button.primary {
   background-color: var(--purpleish);
   color: var(--blueishFaded1);
 }
-/* <button style="primary COLOR"></button> */
-button.primary.redish {
+
+button.primary.redish,
+.button.primary.redish {
   background-color: var(--redish);
   border-color: var(--redish);
 }
-button.primary.greem {
+button.primary.greem,
+.button.primary.greem {
   background-color: var(--greem);
   border-color: var(--greem);
 }
-/* Hover & focus */
+
 button:hover,
-button:focus {
+button:focus,
+.button:hover,
+.button:focus {
   background-color: var(--purpleish);
   color: var(--blueishFaded1);
   border-color: var(--purpleishFaded);
 }
 button:hover.redish,
-button:focus.redish {
+button:focus.redish,
+.button:hover.redish,
+.button:focus.redish {
   background-color: var(--redish);
   border-color: var(--redishFaded);
 }
 button:hover.greem,
-button:focus.greem {
-  background-color: var(--greem);
-  border-color: var(--greemFaded);
-}
-
-/*
-<a style="button"></a>
-*/
-a.button {
-  background-color: var(--blueishFaded1);
-  color: var(--purpleish);
-  border: 4px solid var(--purpleish);
-  border-radius: 8px;
-  font-size: 1.2rem;
-  transition-duration: 0.4s;
-}
-/* <a style="button COLOR"></a> */
-a.button.redish {
-  border-color: var(--redish);
-  color: var(--redish);
-}
-a.button.greem {
-  border-color: var(--greem);
-  color: var(--greem);
-}
-/* <a style="button primary"></a> */
-a.button.primary {
-  background-color: var(--purpleish);
-  color: var(--blueishFaded1);
-}
-/* <a style="button primary COLOR"></a> */
-a.button.primary.redish {
-  background-color: var(--redish);
-  border-color: var(--redish);
-}
-a.button.primary.greem {
-  background-color: var(--greem);
-  border-color: var(--greem);
-}
-/* Hover & focus */
-a.button:hover,
-a.button:focus {
-  background-color: var(--purpleish);
-  color: var(--blueishFaded1);
-  border-color: var(--purpleishFaded);
-}
-a.button:hover.redish,
-a.button:focus.redish {
-  background-color: var(--redish);
-  border-color: var(--redishFaded);
-}
-a.button:hover.greem,
-a.button:focus.greem {
+button:focus.greem,
+.button:hover.greem,
+.button:focus.greem {
   background-color: var(--greem);
   border-color: var(--greemFaded);
 }
