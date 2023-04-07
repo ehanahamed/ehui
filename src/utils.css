@@ -13,12 +13,28 @@ u.redish,
     color: var(--redish);
 }
 
+p.redishFaded,
+b.redishFaded,
+i.redishFaded,
+u.redishFaded,
+.text.redishFaded {
+    color: var(--redishFaded);
+}
+
 p.orangeish,
 b.orangeish,
 i.orangeish,
 u.orangeish,
 .text.orangeish {
     color: var(--orangeish);
+}
+
+p.orangeishFaded,
+b.orangeishFaded,
+i.orangeishFaded,
+u.orangeishFaded,
+.text.orangeishFaded {
+    color: var(--orangeishFaded);
 }
 
 p.yellowish,
@@ -29,12 +45,28 @@ u.yellowish,
     color: var(--yellowish);
 }
 
+p.yellowishFaded,
+b.yellowishFaded,
+i.yellowishFaded,
+u.yellowishFaded,
+.text.yellowishFaded {
+    color: var(--yellowishFaded);
+}
+
 p.greem,
 b.greem,
 i.greem,
 u.greem,
 .text.greem {
     color: var(--greem);
+}
+
+p.greemFaded,
+b.greemFaded,
+i.greemFaded,
+u.greemFaded,
+.text.greemFaded {
+    color: var(--greemFaded);
 }
 
 p.blueish,
@@ -45,6 +77,14 @@ u.blueish,
     color: var(--blueish);
 }
 
+p.blueishFaded,
+b.blueishFaded,
+i.blueishFaded,
+u.blueishFaded,
+.text.blueishFaded {
+    color: var(--blueishFaded);
+}
+
 p.purpleish,
 b.purpleish,
 i.purpleish,
@@ -53,10 +93,26 @@ u.purpleish,
     color: var(--purpleish);
 }
 
+p.purpleishFaded,
+b.purpleishFaded,
+i.purpleishFaded,
+u.purpleishFaded,
+.text.purpleishFaded {
+    color: var(--purpleishFaded);
+}
+
 p.pimk,
 b.pimk,
 i.pimk,
 u.pimk,
 .text.pimk {
     color: var(--pimk);
+}
+
+p.pimkFaded,
+b.pimkFaded,
+i.pimkFaded,
+u.pimkFaded,
+.text.pimkFaded {
+    color: var(--pimkFaded);
 }
