@@ -55,30 +55,11 @@ button:hover.redish,
 button:focus.redish,
 .button:hover.redish,
 .button:focus.redish {
-  background-color: var(--redish);
+  background-color: var(--redishFaded);
 }
 button:hover.greem,
 button:focus.greem,
 .button:hover.greem,
 .button:focus.greem {
-  background-color: var(--greem);
-}
-
-button:hover.primary,
-button:focus.primary,
-.button:hover.primary,
-.button:focus.primary {
-  background-color: var(--purpleishFaded);
-}
-button:hover.primary.redish,
-button:focus.primary.redish,
-.button:hover.primary.redish,
-.button:focus.primary.redish {
-  background-color: var(--redishFaded);
-}
-button:hover.primary.greem,
-button:focus.primary.greem,
-.button:hover.primary.greem,
-.button:focus.primary.greem {
   background-color: var(--greemFaded);
 }
