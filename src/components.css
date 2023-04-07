@@ -50,7 +50,7 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-  background-color: var(--purpleish);
+  background-color: var(--purpleishFaded);
   color: var(--blueishFaded1);
 }
 
