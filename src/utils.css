@@ -77,12 +77,44 @@ u.blueish,
     color: var(--blueish);
 }
 
-p.blueishFaded,
-b.blueishFaded,
-i.blueishFaded,
-u.blueishFaded,
-.text.blueishFaded {
-    color: var(--blueishFaded);
+p.blueishFaded4,
+b.blueishFaded4,
+i.blueishFaded4,
+u.blueishFaded4,
+.text.blueishFaded4 {
+    color: var(--blueishFaded4);
+}
+
+p.blueishFaded3,
+b.blueishFaded3,
+i.blueishFaded3,
+u.blueishFaded3,
+.text.blueishFaded3 {
+    color: var(--blueishFaded3);
+}
+
+p.blueishFaded2,
+b.blueishFaded2,
+i.blueishFaded2,
+u.blueishFaded2,
+.text.blueishFaded2 {
+    color: var(--blueishFaded2);
+}
+
+p.blueishFaded1,
+b.blueishFaded1,
+i.blueishFaded1,
+u.blueishFaded1,
+.text.blueishFaded1 {
+    color: var(--blueishFaded1);
+}
+
+p.blueishGray,
+b.blueishGray,
+i.blueishGray,
+u.blueishGray,
+.text.blueishGray {
+    color: var(--blueishGray);
 }
 
 p.purpleish,
