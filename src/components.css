@@ -67,3 +67,9 @@ button:focus-visible.greem,
 .button:focus-visible.greem {
   background-color: var(--greemFaded);
 }
+
+button:focus-visible,
+.button:focus-visible {
+  outline: 4px solid var(--purpleish);
+  outline-offset: 4px;
+}
