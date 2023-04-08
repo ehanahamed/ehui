@@ -8,8 +8,8 @@ https://src.ehan.dev/designsys/LICENSE.txt
 mark {
   background-color: var(--blueishGray);
   color: var(--blueishFaded1);
-  border-radius: 0.6rem;
-  padding: 0.2rem 0.2rem;
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.4rem;
 }
 
 button,
