@@ -47,23 +47,23 @@ button.primary.greem,
 }
 
 button:hover,
-button:focus,
+button:focus-visible,
 .button:hover,
-.button:focus {
+.button:focus-visible {
   background-color: var(--purpleishFaded);
   color: var(--blueishFaded1);
 }
 
 button:hover.redish,
-button:focus.redish,
+button:focus-visible.redish,
 .button:hover.redish,
-.button:focus.redish {
+.button:focus-visible.redish {
   background-color: var(--redishFaded);
 }
 
 button:hover.greem,
-button:focus.greem,
+button:focus-visible.greem,
 .button:hover.greem,
-.button:focus.greem {
+.button:focus-visible.greem {
   background-color: var(--greemFaded);
 }
