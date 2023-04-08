@@ -166,3 +166,75 @@ u.pimkFaded,
 .text.pimkFaded {
     color: var(--pimkFaded);
 }
+
+mark.redish {
+    background-color: var(--redish);
+}
+
+mark.redishFaded {
+    background-color: var(--redishFaded);
+}
+
+mark.orangeish {
+    background-color: var(--orangeish);
+}
+
+mark.orangeishFaded {
+    background-color: var(--orangeishFaded);
+}
+
+mark.yellowish {
+    background-color: var(--yellowish);
+}
+
+mark.yellowishFaded {
+    background-color: var(--yellowishFaded);
+}
+
+mark.greem {
+    background-color: var(--greem);
+}
+
+mark.greemFaded {
+    background-color: var(--greemFaded);
+}
+
+mark.blueish {
+    background-color: var(--blueish);
+}
+
+mark.blueishFaded4 {
+    background-color: var(--blueishFaded4);
+}
+
+mark.blueishFaded3 {
+    background-color: var(--blueishFaded3);
+}
+
+mark.blueishFaded2 {
+    background-color: var(--blueishFaded2);
+}
+
+mark.blueishFaded1 {
+    background-color: var(--blueishFaded1);
+}
+
+mark.blueishGray {
+    background-color: var(--blueishGray);
+}
+
+mark.purpleish {
+    background-color: var(--purpleish);
+}
+
+mark.purpleishFaded {
+    background-color: var(--purpleishFaded);
+}
+
+mark.pimk {
+    background-color: var(--pimk);
+}
+
+mark.pimkFaded {
+    background-color: var(--pimkFaded);
+}
