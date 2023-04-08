@@ -12,6 +12,11 @@ body {
     font-family: sans-serif;
 }
 
+body::selection {
+    background-color: var(--purpleish);
+    color: var(--blueishFaded1);
+}
+
 h1 {
     font-size: 2.8rem;
 }
