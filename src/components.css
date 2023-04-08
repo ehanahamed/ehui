@@ -70,5 +70,6 @@ button:focus-visible.greem,
 
 button:focus-visible,
 .button:focus-visible {
-  outline: 0.4rem solid var(--purpleish);
+  outline: 0.2rem solid var(--purpleish);
+  outline-offset: 0.2rem;
 }
