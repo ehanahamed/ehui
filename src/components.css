@@ -5,6 +5,13 @@ Licensed under the UPL-1.0 License
 https://src.ehan.dev/designsys/LICENSE.txt
 */
 
+mark {
+  background-color: var(--blueishGray);
+  color: var(--blueishFaded1);
+  border-radius: 0.6rem;
+  padding: 0.2rem 0.2rem;
+}
+
 button,
 .button {
   background-color: var(--blueishFaded1);
