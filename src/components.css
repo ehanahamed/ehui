@@ -9,9 +9,9 @@ button,
 .button {
   background-color: var(--blueishFaded1);
   color: var(--purpleish);
-  border: 4px solid var(--purpleish);
-  border-radius: 8px;
-  padding: 8px 16px;
+  border: 0.6rem solid var(--purpleish);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
   font-size: 1.2rem;
   transition-duration: 0.4s;
 }
