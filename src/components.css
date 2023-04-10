@@ -8,7 +8,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 mark {
   background-color: var(--blueishGray);
   color: var(--blueishFaded1);
-  border-radius: 0.8rem;
+  border-radius: 0.6rem;
   padding: 0.2rem 0.4rem;
   font-size: 1.2rem;
   line-height: 1.6rem;
@@ -25,7 +25,7 @@ button,
   background-color: var(--blueishFaded1);
   color: var(--purpleish);
   border: 0.4rem solid var(--purpleish);
-  border-radius: 0.8rem;
+  border-radius: 0.6rem;
   padding: 0.6rem 1.2rem;
   font-size: 1.2rem;
   line-height: 1.6rem;
