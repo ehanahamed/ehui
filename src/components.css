@@ -24,7 +24,7 @@ button,
 .button {
   background-color: var(--blueishFaded1);
   color: var(--purpleish);
-  border: 0.4rem solid var(--purpleish);
+  border: 0.2rem solid var(--purpleish);
   border-radius: 0.6rem;
   padding: 0.2rem 0.4rem;
   font-size: 1rem;
@@ -87,6 +87,8 @@ button:focus-visible.greem,
 button:focus-visible,
 .button:focus-visible {
   outline: 0.2rem solid var(--purpleish);
+  outline-offset: 0.2rem;
+  transition-duration: 0.2s;
 }
 
 button:focus-visible.redish,
