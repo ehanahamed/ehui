@@ -6,14 +6,14 @@ https://src.ehan.dev/designsys/LICENSE.txt
 */
 
 html {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 body {
     background-color: var(--blueishFaded1);
     color: var(--blueishGray);
-    font-size: 1.2rem;
-    line-height: 1.6rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
     font-family: sans-serif;
 }
 
@@ -23,33 +23,33 @@ body::selection {
 }
 
 h1 {
-    font-size: 2.8rem;
-    line-height: 3.2;
+    font-size: 2.6rem;
+    line-height: 3rem;
 }
 
 h2 {
-    font-size: 2.4rem;
-    line-height: 2.8rem;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
 }
 
 h3 {
-    font-size: 2rem;
-    line-height: 2.4rem;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
 }
 
 h4 {
-    font-size: 1.6rem;
-    line-height: 2rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
 }
 
 h5,
 p {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
 }
 
 h6,
 small {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    font-size: 0.6rem;
+    line-height: 1rem;
 }
