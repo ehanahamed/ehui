@@ -46,6 +46,7 @@ button,
   box-sizing: border-box;
   text-align: center;
   cursor: pointer;
+  text-decoration: none;
   background-color: var(--blueishFaded1);
   color: var(--purpleish);
   border: 0.2rem solid var(--purpleish);
