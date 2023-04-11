@@ -5,7 +5,23 @@ Licensed under the UPL-1.0 License
 https://src.ehan.dev/designsys/LICENSE.txt
 */
 
-mark {
+b,
+.b {
+  font-weight: bold;
+}
+
+i,
+.i {
+  font-style: italic;
+}
+
+u,
+.u {
+  text-decoration: underline dotted;
+}
+
+mark,
+.mark {
   background-color: var(--blueishGray);
   color: var(--blueishFaded1);
   border-radius: 0.6rem;
@@ -14,8 +30,11 @@ mark {
   line-height: 1.4rem;
 }
 
-a {
+a,
+.a {
   color: var(--purpleish);
+  text-decoration: underline dotted;
+  cursor: pointer;
   font-size: 1rem;
   line-height: 1.4rem;
 }
@@ -25,6 +44,8 @@ button,
   display: inline-block;
   align-items: flex-start;
   box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
   background-color: var(--blueishFaded1);
   color: var(--purpleish);
   border: 0.2rem solid var(--purpleish);
