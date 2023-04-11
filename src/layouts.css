@@ -5,33 +5,71 @@ Licensed under the UPL-1.0 License
 https://src.ehan.dev/designsys/LICENSE.txt
 */
 
-section[productivecss~="layout:heroLogo"] {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows: 2fr 1fr;
-    grid-template-areas:
-        "header logo"
-        "content logo";
+div.flex {
+    display: flex;
+    gap: 1rem;
 }
 
-*[productivecss~="area:header"] {
-    grid-area: header;
-}
-*[productivecss~="area:content"] {
-    grid-area: content;
-}
-*[productivecss~="area:logo"] {
-    grid-area: logo;
+div.flex.row {
+    flex-direction: row;
 }
 
-@media only screen and (max-width: var(--productivecssMobileWidth)) {
-    section[productivecss~="layout:heroLogo"] {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr 1fr;
-        grid-template-areas:
-            "logo"
-            "header
-            "content";
-    }
+div.flex.row.left {
+    flex-direction: row-reverse;
+}
+
+div.flex.col {
+    flex-direction: column;
+}
+
+div.flex.col.up {
+    flex-direction: column-reverse;
+}
+
+div.flex.nowrap {
+    flex-wrap: nowrap;
+}
+
+div.flex.wrap {
+    flex-wrap: wrap;
+}
+
+div.flex.start {
+    align-items: flex-start;
+}
+
+div.flex.end {
+    align-items: flex-end;
+}
+
+div.flex.center {
+    align-items: center;
+}
+
+div.flex.stretch {
+    align-items: stretch;
+}
+
+div.flex.wrapstart {
+    align-content: flex-start;
+}
+
+div.flex.wrapend {
+    align-content: flex-end;
+}
+
+div.flex.wrapcenter {
+    align-content: center;
+}
+
+div.flex.wrapstretch {
+    align-content: stretch;
+}
+
+div.flex.wrapedge {
+    align-content: space-between;
+}
+
+div.flex.wrapspace {
+    align-content: space-around;
 }
