@@ -22,6 +22,9 @@ a {
 
 button,
 .button {
+  display: inline-block;
+  align-items: flex-start;
+  box-sizing: border-box;
   background-color: var(--blueishFaded1);
   color: var(--purpleish);
   border: 0.2rem solid var(--purpleish);
