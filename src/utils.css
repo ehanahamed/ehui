@@ -238,3 +238,13 @@ mark.pimk {
 mark.pimkFaded {
     background-color: var(--pimkFaded);
 }
+
+.notice.redish {
+    color: var(--redish);
+    border-color: var(--redish);
+}
+
+.notice.greem {
+    color: var(--greem);
+    border-color: var(--greem);
+}
