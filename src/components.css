@@ -84,6 +84,14 @@ code,
   line-height: 1.4rem;
 }
 
+p.notice {
+  color: var(--blueishGray);
+  border: 0.2rem solid var(--blueishFaded2);
+  border-radius: 0.6rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
 a,
 .a {
   color: var(--purpleish);
