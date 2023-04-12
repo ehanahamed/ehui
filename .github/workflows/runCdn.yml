@@ -1,5 +1,6 @@
 name: Run cdn
-on: push
+# cdn auto-updates temporarily disabled
+on: workflow_dispatch # push
 jobs:
     runCdn:
         name: Run cdn workflow
