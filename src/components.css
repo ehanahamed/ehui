@@ -137,34 +137,10 @@ button,
   margin-bottom: 1rem;
 }
 
-button.redish,
-.button.redish {
-  border-color: var(--redish);
-  color: var(--redish);
-}
-
-button.greem,
-.button.greem {
-  border-color: var(--greem);
-  color: var(--greem);
-}
-
 button.primary,
 .button.primary {
   background-color: var(--purpleish);
   color: var(--blueishFaded1);
-}
-
-button.primary.redish,
-.button.primary.redish {
-  background-color: var(--redish);
-  border-color: var(--redish);
-}
-
-button.primary.greem,
-.button.primary.greem {
-  background-color: var(--greem);
-  border-color: var(--greem);
 }
 
 button:hover,
@@ -175,33 +151,9 @@ button:focus-visible,
   color: var(--blueishFaded1);
 }
 
-button:hover.redish,
-button:focus-visible.redish,
-.button:hover.redish,
-.button:focus-visible.redish {
-  background-color: var(--redishFaded);
-}
-
-button:hover.greem,
-button:focus-visible.greem,
-.button:hover.greem,
-.button:focus-visible.greem {
-  background-color: var(--greemFaded);
-}
-
 button:focus-visible,
 .button:focus-visible {
   outline: 0.2rem solid var(--purpleish);
   outline-offset: 0.2rem;
   transition-duration: 0.2s;
-}
-
-button:focus-visible.redish,
-.button:focus-visible.redish {
-  outline: 0.2rem solid var(--redish);
-}
-
-button:focus-visible.greem,
-.button:focus-visible.greem {
-  outline: 0.2rem solid var(--greem);
 }
