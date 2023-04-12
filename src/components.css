@@ -74,6 +74,16 @@ mark,
   line-height: 1.4rem;
 }
 
+code,
+.code {
+  font-family: monospace;
+  background-color: var(--blueishFaded2);
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.4rem;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
 a,
 .a {
   color: var(--purpleish);
