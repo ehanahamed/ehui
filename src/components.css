@@ -84,7 +84,7 @@ code,
   line-height: 1.4rem;
 }
 
-p.notice {
+.notice {
   color: var(--blueishGray);
   border: 0.2rem solid var(--blueishFaded2);
   border-radius: 0.6rem;
