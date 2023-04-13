@@ -5,11 +5,6 @@ Licensed under the UPL-1.0 License
 https://src.ehan.dev/designsys/LICENSE.txt
 */
 
-body::selection {
-    background-color: var(--purpleish);
-    color: var(--blueishFaded1);
-}
-
 span.redish,
 p.redish,
 b.redish,
