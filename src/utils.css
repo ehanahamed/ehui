@@ -251,26 +251,26 @@ mark.pimkFaded {
 
 button.redish,
 .button.redish {
-  border-color: var(--redish);
-  color: var(--redish);
-}
-
-button.greem,
-.button.greem {
-  border-color: var(--greem);
-  color: var(--greem);
-}
-
-button.primary.redish,
-.button.primary.redish {
   background-color: var(--redish);
   border-color: var(--redish);
 }
 
-button.primary.greem,
-.button.primary.greem {
+button.greem,
+.button.greem {
   background-color: var(--greem);
   border-color: var(--greem);
+}
+
+button.alt.redish,
+.button.alt.redish {
+  border-color: var(--redish);
+  color: var(--redish);
+}
+
+button.alt.greem,
+.button.alt.greem {
+  border-color: var(--greem);
+  color: var(--greem);
 }
 
 button:hover.redish,
