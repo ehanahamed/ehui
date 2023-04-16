@@ -278,6 +278,7 @@ button:focus-visible.redish,
 .button:hover.redish,
 .button:focus-visible.redish {
   background-color: var(--redishFaded);
+  color: var(--blueishFaded1);
 }
 
 button:hover.greem,
@@ -285,6 +286,7 @@ button:focus-visible.greem,
 .button:hover.greem,
 .button:focus-visible.greem {
   background-color: var(--greemFaded);
+  color: var(--blueishFaded1);
 }
 
 button:focus-visible.redish,
