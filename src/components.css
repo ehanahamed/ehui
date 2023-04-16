@@ -120,7 +120,7 @@ a,
   font-size: 1rem;
   line-height: 1.4rem;
   text-decoration: none;
-  transition-duration: 0.6s;
+  transition-duration: 0.4s;
 }
 
 a:hover,
@@ -145,22 +145,22 @@ button,
   text-align: center;
   cursor: pointer;
   text-decoration: none;
-  background-color: var(--blueishFaded1);
-  color: var(--purpleish);
+  background-color: var(--purpleish);
+  color: var(--blueishFaded1);
   border: 0.2rem solid var(--purpleish);
   border-radius: 0.6rem;
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
   line-height: 1.4rem;
-  transition-duration: 0.6s;
+  transition-duration: 0.4s;
   margin-top: 0px;
   margin-bottom: 1rem;
 }
 
-button.primary,
-.button.primary {
-  background-color: var(--purpleish);
-  color: var(--blueishFaded1);
+button.alt,
+.button.alt {
+  background-color: var(--blueishFaded1);
+  color: var(--purpleish);
 }
 
 button:hover,
