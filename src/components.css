@@ -19,7 +19,7 @@ body {
     margin: 1rem;
 }
 
-body::selection {
+::selection {
     background-color: var(--purpleish);
     color: var(--blueishFaded1);
 }
@@ -176,4 +176,32 @@ button:focus-visible,
   outline: 0.2rem solid var(--purpleish);
   outline-offset: 0.2rem;
   transition-duration: 0.2s;
+}
+
+::placeholder {
+  color: var(--blueishFaded2);
+  opacity: 1;
+}
+
+input {
+  display: inline-block;
+  align-items: flex-start;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: text;
+  text-decoration: none;
+  background-color: var(--blueishFaded1);
+  color: var(--blueishGray);
+  border: 0.2rem solid var(--purpleish);
+  border-radius: 0.6rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  transition-duration: 0.4s;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+}
+
+input::hover {
+  border-color: var(--purpleishFaded);
 }
