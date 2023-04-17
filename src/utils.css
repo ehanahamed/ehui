@@ -291,10 +291,10 @@ button:focus-visible.greem,
 
 button:focus-visible.redish,
 .button:focus-visible.redish {
-  outline: 0.2rem solid var(--redish);
+  outline-color: var(--redish);
 }
 
 button:focus-visible.greem,
 .button:focus-visible.greem {
-  outline: 0.2rem solid var(--greem);
+  outline-color: var(--greem);
 }
