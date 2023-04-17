@@ -298,3 +298,37 @@ button:focus-visible.greem,
 .button:focus-visible.greem {
   outline-color: var(--greem);
 }
+
+input.redish,
+textarea.redish {
+  border-color: var(--redish);
+}
+
+input.greem,
+textarea.greem {
+  border-color: var(--greem);
+}
+
+input.redish:hover,
+input.redish:focus-visible,
+textarea.redish:hover,
+textarea.redish:focus-visible {
+  border-color: var(--redishFaded);
+}
+
+input.greem:hover,
+input.greem:focus-visible,
+textarea.greem:hover,
+textarea.greem:focus-visible {
+  border-color: var(--greemFaded);
+}
+
+input.redish:focus-visible,
+textarea.redish:focus-visible {
+  outline-color: var(--redish);
+}
+
+input.greem:focus-visible,
+textarea.greem:focus-visible {
+  outline-color: var(--greem);
+}
