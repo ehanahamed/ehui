@@ -73,3 +73,27 @@ div.flex.wrapedge {
 div.flex.wrapspace {
     align-content: space-around;
 }
+
+div.grid {
+    display: grid;
+}
+
+div.grid.hero.logo {
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas:
+        "header logo"
+        "content logo";
+}
+
+div.grid.hero.logo .header {
+    grid-area: header;
+}
+
+div.grid.hero.logo .content {
+    grid-area: content;
+}
+
+div.grid.hero.logo .logo {
+    grid-area: logo;
+}
