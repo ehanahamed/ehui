@@ -97,3 +97,15 @@ div.grid.hero.logo .content {
 div.grid.hero.logo .logo {
     grid-area: logo;
 }
+
+/* fill in correct pixel value later, 100 is temporary */
+@media only screen and (max-width: 100px) {
+    div.grid.hero.logo {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 3fr 2fr;
+        grid-template-areas:
+            "logo"
+            "header"
+            "content";
+    }
+}
