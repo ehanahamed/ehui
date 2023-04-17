@@ -80,28 +80,23 @@ div.grid {
 
 div.grid.hero.logo {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas:
-        "header logo"
         "content logo";
 }
 
-div.grid.hero.logo .header {
-    grid-area: header;
+div.grid.hero.logo .content,
+div.grid.hero.logo .logo {
     justify-self: start;
     align-self: center;
 }
 
 div.grid.hero.logo .content {
     grid-area: content;
-    justify-self: start;
-    align-self: center;
 }
 
 div.grid.hero.logo .logo {
     grid-area: logo;
-    justify-self: start;
-    align-self: center;
 }
 
 /* fill in correct pixel value later, 800 is temporary */
@@ -111,11 +106,12 @@ div.grid.hero.logo .logo {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
             "logo"
-            "header"
             "content";
     }
 
+    div.grid.hero.logo .content,
     div.grid.hero.logo .logo {
         justify-self: center;
+        align-self: center;
     }
 }
