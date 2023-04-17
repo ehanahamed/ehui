@@ -205,3 +205,9 @@ input {
 input:hover {
   border-color: var(--purpleishFaded);
 }
+
+input:focus-visible {
+  outline: 0.2rem solid var(--purpleish);
+  outline-offset: 0.2rem;
+  transition-duration: 0.2s;
+}
