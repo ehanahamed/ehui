@@ -183,7 +183,8 @@ button:focus-visible,
   opacity: 1;
 }
 
-input {
+input,
+textarea {
   display: inline-block;
   align-items: flex-start;
   box-sizing: border-box;
@@ -203,11 +204,14 @@ input {
 }
 
 input:hover,
-input:focus-visible {
+input:focus-visible,
+textarea:hover,
+textarea:focus-visible {
   border-color: var(--purpleishFaded);
 }
 
-input:focus-visible {
+input:focus-visible,
+textarea:focus-visible {
   outline: 0.2rem solid var(--purpleish);
   outline-offset: 0.2rem;
   transition-duration: 0.2s;
