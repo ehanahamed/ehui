@@ -202,6 +202,6 @@ input {
   margin-bottom: 1rem;
 }
 
-input::hover {
+input:hover {
   border-color: var(--purpleishFaded);
 }
