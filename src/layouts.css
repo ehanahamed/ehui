@@ -88,14 +88,20 @@ div.grid.hero.logo {
 
 div.grid.hero.logo .header {
     grid-area: header;
+    justify-self: center;
+    align-self: center;
 }
 
 div.grid.hero.logo .content {
     grid-area: content;
+    justify-self: center;
+    align-self: center;
 }
 
 div.grid.hero.logo .logo {
     grid-area: logo;
+    justify-self: start;
+    align-self: center;
 }
 
 /* fill in correct pixel value later, 100 is temporary */
@@ -107,5 +113,9 @@ div.grid.hero.logo .logo {
             "logo"
             "header"
             "content";
+    }
+
+    div.grid.hero.logo .logo {
+        justify-self: center;
     }
 }
