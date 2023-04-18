@@ -80,10 +80,10 @@ https://src.ehan.dev/designsys/LICENSE.txt
 }
 
 .grid.hero.logo {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2rem 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
-        "content logo";
+        "content . logo";
 }
 
 .grid.hero.logo .content {
