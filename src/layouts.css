@@ -5,103 +5,103 @@ Licensed under the UPL-1.0 License
 https://src.ehan.dev/designsys/LICENSE.txt
 */
 
-div.flex {
+.flex {
     display: flex;
     gap: 1rem;
 }
 
-div.flex.row {
+.flex.row {
     flex-direction: row;
 }
 
-div.flex.row.left {
+.flex.row.left {
     flex-direction: row-reverse;
 }
 
-div.flex.col {
+.flex.col {
     flex-direction: column;
 }
 
-div.flex.col.up {
+.flex.col.up {
     flex-direction: column-reverse;
 }
 
-div.flex.nowrap {
+.flex.nowrap {
     flex-wrap: nowrap;
 }
 
-div.flex.wrap {
+.flex.wrap {
     flex-wrap: wrap;
 }
 
-div.flex.start {
+.flex.start {
     align-items: flex-start;
 }
 
-div.flex.end {
+.flex.end {
     align-items: flex-end;
 }
 
-div.flex.center {
+.flex.center {
     align-items: center;
 }
 
-div.flex.stretch {
+.flex.stretch {
     align-items: stretch;
 }
 
-div.flex.wrapstart {
+.flex.wrapstart {
     align-content: flex-start;
 }
 
-div.flex.wrapend {
+.flex.wrapend {
     align-content: flex-end;
 }
 
-div.flex.wrapcenter {
+.flex.wrapcenter {
     align-content: center;
 }
 
-div.flex.wrapstretch {
+.flex.wrapstretch {
     align-content: stretch;
 }
 
-div.flex.wrapedge {
+.flex.wrapedge {
     align-content: space-between;
 }
 
-div.flex.wrapspace {
+.flex.wrapspace {
     align-content: space-around;
 }
 
-div.grid {
+.grid {
     display: grid;
 }
 
-div.grid.hero.logo {
+.grid.hero.logo {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
         "left content logo right";
 }
 
-div.grid.hero.logo .content,
-div.grid.hero.logo .logo {
+.grid.hero.logo .content,
+.grid.hero.logo .logo {
     justify-self: start;
     align-self: center;
 }
 
-div.grid.hero.logo .content {
+.grid.hero.logo .content {
     grid-area: content;
 }
 
-div.grid.hero.logo .logo {
+.grid.hero.logo .logo {
     grid-area: logo;
 }
 
 /* fill in correct pixel value later, 800 is temporary */
 @media only screen and (max-width: 800px) {
-    div.grid.hero.logo {
+    .grid.hero.logo {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
@@ -109,8 +109,8 @@ div.grid.hero.logo .logo {
             "content";
     }
 
-    div.grid.hero.logo .content,
-    div.grid.hero.logo .logo {
+    .grid.hero.logo .content,
+    .grid.hero.logo .logo {
         justify-self: center;
         align-self: center;
     }
