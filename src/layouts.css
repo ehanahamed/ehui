@@ -79,10 +79,10 @@ div.grid {
 }
 
 div.grid.hero.logo {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
-        "content logo";
+        "left content logo right";
 }
 
 div.grid.hero.logo .content,
