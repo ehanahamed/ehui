@@ -79,42 +79,33 @@ https://src.ehan.dev/designsys/LICENSE.txt
     display: grid;
 }
 
-.grid.hero.logo {
+.grid.hero {
     grid-template-columns: 2fr 1fr 2fr;
     grid-template-rows: 1fr;
     grid-template-areas:
         "content . logo";
 }
 
-.grid.hero.logo > .content {
+.grid.hero > .content {
     grid-area: content;
     justify-self: end;
     align-self: center;
+    text-align: center;
 }
 
-.grid.hero.logo > .logo {
+.grid.hero > .logo {
     grid-area: logo;
     justify-self: start;
     align-self: center;
 }
 
-.grid.hero.logo > .content * {
-    text-align: center;
-}
-
 /* fill in correct pixel value later, 800 is temporary */
 @media only screen and (max-width: 800px) {
-    .grid.hero.logo {
+    .grid.hero {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
             "logo"
             "content";
-    }
-
-    .grid.hero.logo > .content,
-    .grid.hero.logo > .logo {
-        justify-self: center;
-        align-self: center;
     }
 }
