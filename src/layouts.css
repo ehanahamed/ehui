@@ -36,19 +36,19 @@ https://src.ehan.dev/designsys/LICENSE.txt
 }
 
 .flex.start {
-    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .flex.end {
-    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .flex.center {
-    align-items: center;
+    justify-content: center;
 }
 
 .flex.stretch {
-    align-items: stretch;
+    justify-content: stretch;
 }
 
 .flex.wrapstart {
