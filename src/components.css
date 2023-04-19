@@ -125,8 +125,7 @@ code,
   margin-bottom: 2rem;
 }
 
-header,
-.header {
+.hero {
   border-bottom: 0.2rem solid var(--blueishFaded2);
   text-align: center;
   padding: 1rem;
