@@ -98,6 +98,10 @@ https://src.ehan.dev/designsys/LICENSE.txt
     align-self: center;
 }
 
+.grid.hero.logo > .content * {
+    text-align: center;
+}
+
 /* fill in correct pixel value later, 800 is temporary */
 @media only screen and (max-width: 800px) {
     .grid.hero.logo {
@@ -112,9 +116,5 @@ https://src.ehan.dev/designsys/LICENSE.txt
     .grid.hero.logo > .logo {
         justify-self: center;
         align-self: center;
-    }
-
-    .grid.hero.logo > .content > .flex.any {
-        justify-content: center;
     }
 }
