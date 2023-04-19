@@ -128,6 +128,14 @@ code,
 header,
 .header {
   border-bottom: 0.2rem solid var(--blueishFaded2);
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+footer,
+.footer {
+  border-top: 0.2rem solid var(--blueishFaded2);
+  padding: 1rem;
   margin-bottom: 2rem;
 }
 
