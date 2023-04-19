@@ -99,7 +99,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 }
 
 .grid.hero.logo .logo picture img {
-  object-fit: cover;
+  object-fit: contain;
   height: 100%;
 }
 
