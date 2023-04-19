@@ -98,6 +98,10 @@ https://src.ehan.dev/designsys/LICENSE.txt
     align-self: stretch;
 }
 
+.grid.hero.logo .logo * {
+    height: 100%;
+}
+
 /* fill in correct pixel value later, 800 is temporary */
 @media only screen and (max-width: 800px) {
     .grid.hero.logo {
