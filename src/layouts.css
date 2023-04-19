@@ -86,13 +86,13 @@ https://src.ehan.dev/designsys/LICENSE.txt
         "content . logo";
 }
 
-.grid.hero.logo .content {
+.grid.hero.logo > .content {
     grid-area: content;
     justify-self: end;
     align-self: center;
 }
 
-.grid.hero.logo .logo {
+.grid.hero.logo > .logo {
     grid-area: logo;
     justify-self: start;
     align-self: center;
@@ -108,9 +108,13 @@ https://src.ehan.dev/designsys/LICENSE.txt
             "content";
     }
 
-    .grid.hero.logo .content,
-    .grid.hero.logo .logo {
+    .grid.hero.logo > .content,
+    .grid.hero.logo > .logo {
         justify-self: center;
         align-self: center;
+    }
+
+    .grid.hero.logo > .content > .flex.any {
+        justify-content: center;
     }
 }
