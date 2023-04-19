@@ -94,12 +94,8 @@ https://src.ehan.dev/designsys/LICENSE.txt
 
 .grid.hero.logo .logo {
     grid-area: logo;
-    justify-self: stretch;
+    justify-self: start;
     align-self: stretch;
-}
-
-.grid.hero.logo .logo * {
-    height: 100%;
 }
 
 /* fill in correct pixel value later, 800 is temporary */
@@ -120,7 +116,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 
     .grid.hero.logo .logo {
         grid-area: logo;
-        justify-self: stretch;
+        justify-self: center;
         align-self: stretch;
     }
 }
