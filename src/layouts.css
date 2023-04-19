@@ -95,12 +95,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 .grid.hero.logo .logo {
     grid-area: logo;
     justify-self: start;
-    align-self: stretch;
-}
-
-.grid.hero.logo .logo picture img {
-  object-fit: contain;
-  height: 100%;
+    align-self: center;
 }
 
 /* fill in correct pixel value later, 800 is temporary */
@@ -113,15 +108,9 @@ https://src.ehan.dev/designsys/LICENSE.txt
             "content";
     }
 
-    .grid.hero.logo .content {
-        grid-area: content;
+    .grid.hero.logo .content,
+    .grid.hero.logo .logo {
         justify-self: center;
         align-self: center;
-    }
-
-    .grid.hero.logo .logo {
-        grid-area: logo;
-        justify-self: center;
-        align-self: stretch;
     }
 }
