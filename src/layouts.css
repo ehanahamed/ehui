@@ -99,7 +99,6 @@ https://src.ehan.dev/designsys/LICENSE.txt
     align-self: center;
 }
 
-/* fill in correct pixel value later, 800 is temporary */
 @media only screen and (max-width: 800px) {
     .grid.hero {
         grid-template-columns: 1fr;
@@ -113,4 +112,26 @@ https://src.ehan.dev/designsys/LICENSE.txt
     .grid.hero > .logo {
         justify-self: center;
     }
+}
+
+.grid.content {
+    display: grid;
+    grid-template-columns: 2fr 14fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "menu main aside";
+}
+
+.grid.content > .menu {
+    grid-area: menu;
+}
+
+.grid.content > .main {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+}
+
+.grid.content > .aside {
+    grid-area: aside;
 }
