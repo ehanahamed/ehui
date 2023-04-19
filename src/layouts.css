@@ -108,4 +108,9 @@ https://src.ehan.dev/designsys/LICENSE.txt
             "logo"
             "content";
     }
+
+    .grid.hero > .content,
+    .grid.hero > .logo {
+        justify-self: center;
+    }
 }
