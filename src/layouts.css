@@ -5,6 +5,10 @@ Licensed under the UPL-1.0 License
 https://src.ehan.dev/designsys/LICENSE.txt
 */
 
+* {
+    box-sizing: border-box;
+}
+
 .flex {
     display: flex;
     gap: 0px 1rem;
