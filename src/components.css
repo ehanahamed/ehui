@@ -10,6 +10,12 @@ html {
     scroll-behavior: smooth;
 }
 
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 16px;
+  }
+}
+
 body {
     background-color: var(--blueishFaded1);
     color: var(--blueishGray);
@@ -249,10 +255,4 @@ textarea:focus-visible {
   outline: 0.2rem solid var(--purpleish);
   outline-offset: 0.2rem;
   transition-duration: 0.2s;
-}
-
-@media only screen and (max-width: 800px) {
-  html {
-    font-size: 16px;
-  }
 }
