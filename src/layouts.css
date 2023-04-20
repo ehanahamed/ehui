@@ -124,8 +124,8 @@ https://src.ehan.dev/designsys/LICENSE.txt
 
 .grid.main > .content {
     grid-area: content;
+    justify-self: start;
     align-self: center;
-    justify-self: center;
 }
 /*
 .grid.main.aside {
