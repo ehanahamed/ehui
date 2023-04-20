@@ -150,6 +150,26 @@ footer,
   margin-top: 4rem;
 }
 
+table {
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+td, th {
+  border: 0.2rem solid var(--blueishFaded2);
+  border-radius: 0.6rem;
+  text-align: left;
+  padding: 1rem;
+}
+
+td {
+  font-weight: normal;
+}
+
+th {
+  font-weight: bold;
+}
+
 a,
 .a {
   color: var(--purpleish);
