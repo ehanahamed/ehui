@@ -126,6 +126,7 @@ code,
   color: var(--blueishGray);
   border: 0.2rem solid var(--blueishFaded2);
   border-radius: 0.6rem;
+  text-align: center;
   padding: 1rem;
   margin: 1rem;
   margin-bottom: 2rem;
