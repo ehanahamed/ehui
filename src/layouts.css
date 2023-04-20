@@ -80,7 +80,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 }
 
 .grid.hero {
-    grid-template-columns: 4fr 1fr 4fr;
+    grid-template-columns: 6fr 2fr 6fr;
     grid-template-rows: 1fr;
     grid-template-areas:
         "content . logo";
@@ -116,14 +116,10 @@ https://src.ehan.dev/designsys/LICENSE.txt
 
 .grid.main {
     display: grid;
-    grid-template-columns: 2fr 14fr 2fr;
+    grid-template-columns: 2fr 10fr 2fr;
     grid-template-rows: 1fr;
     grid-template-areas:
-        "menu content aside";
-}
-
-.grid.main > .menu {
-    grid-area: menu;
+        ". content .";
 }
 
 .grid.main > .content {
@@ -131,7 +127,23 @@ https://src.ehan.dev/designsys/LICENSE.txt
     align-self: center;
     justify-self: center;
 }
+/*
+.grid.main.aside {
+    grid-template-areas:
+        ". content aside";
+}
 
-.grid.main > .aside {
+.grid.main.aside > .aside {
     grid-area: aside;
+}
+*/
+@media only screen and (max-width: 800px) {
+    .grid.main {
+        grid-template-columns: 1fr 12fr 1fr;
+    }
+    /*
+    .grid.main.aside {
+        grid-template-columns: 2fr 1fr;
+    }
+    */
 }
