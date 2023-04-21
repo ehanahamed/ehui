@@ -280,7 +280,13 @@ textarea:focus-visible {
 
 .card {
   width: 100%;
-  height: 20rem;
+  height: 40rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .card {
+    height: 20rem;
+  }
 }
 
 .card > .content {
