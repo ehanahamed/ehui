@@ -290,6 +290,7 @@ textarea:focus-visible {
 }
 
 .card > .content {
+  display: flex;
   position: relative;
   width: 100%;
   height: 100%;
@@ -305,6 +306,7 @@ textarea:focus-visible {
 }
 
 .card.double > .content {
+  display: block;
   transition: transform 0.4s;
   transform-style: preserve-3d;
   background-color: inherit;
