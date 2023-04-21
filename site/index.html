@@ -119,7 +119,7 @@
                             card
                         </div>
                     </div>
-                    <div class="card double">
+                    <div class="card double" onclick="flipCard()">
                         <div class="content">
                             <div class="front">card flip-on-hover front</div>
                             <div class="back">card flip-on-hover back</div>
@@ -133,4 +133,9 @@
             <p>Text text text</p>
         </footer>
     </body>
+    <script>
+        function flipCard() {
+            document.getElementByClassName("card double")[0].classList.toggle("flip");
+        }
+    </script>
 </html>
