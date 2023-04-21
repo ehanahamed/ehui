@@ -320,7 +320,6 @@ textarea:focus-visible {
   transform: rotateY(180deg);
 }
 
-.card.double.flip > .content,
-.card.double.hover:hover > .content {
+.card.double.flip > .content {
   transform: rotateY(180deg)
 }
