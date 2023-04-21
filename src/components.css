@@ -302,7 +302,7 @@ textarea:focus-visible {
 
 .card.double > .content {
   display: block;
-  transition: transform 0.4s;
+  transition: transform 0.8s;
   transform-style: preserve-3d;
   background-color: inherit;
   border-radius: 0px;
