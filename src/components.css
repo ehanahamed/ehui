@@ -277,3 +277,43 @@ textarea:focus-visible {
   outline-offset: 0.2rem;
   transition-duration: 0.2s;
 }
+
+.card {
+  width: 100%;
+  height: 20rem;
+}
+
+.card.double {
+  perspective: 1000px;
+}
+
+.card > .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+}
+
+.card > .content > .front,
+.card > .content > .back {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--blueishFaded2);
+  border-radius: 0.6rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  transform: rotateX(0deg);
+}
+
+.card.double.flip > .content,
+.card.double.hover:hover > .content {
+  transform: rotateY(180deg)
+}
