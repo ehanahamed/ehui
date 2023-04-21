@@ -283,21 +283,24 @@ textarea:focus-visible {
   height: 20rem;
 }
 
-.card.double {
-  perspective: 1000px;
-}
-
 .card > .content {
   position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
+}
+
+.card.double {
+  perspective: 1000px;
+}
+
+.card.double > .content {
   transition: transform 0.4s;
   transform-style: preserve-3d;
 }
 
-.card > .content > .front,
-.card > .content > .back {
+.card.double > .content > .front,
+.card.double > .content > .back {
   display: flex;
   position: absolute;
   width: 100%;
