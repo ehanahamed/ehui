@@ -5,330 +5,382 @@ Licensed under the UPL-1.0 License
 https://src.ehan.dev/designsys/LICENSE.txt
 */
 
-span.redish,
-p.redish,
-b.redish,
-i.redish,
-u.redish,
-.text.redish {
-    color: var(--redish);
+span.red,
+p.red,
+b.red,
+i.red,
+u.red,
+.text.red {
+    color: var(--red);
 }
 
-span.redishFaded,
-p.redishFaded,
-b.redishFaded,
-i.redishFaded,
-u.redishFaded,
-.text.redishFaded {
-    color: var(--redishFaded);
+span.redAlt,
+p.redAlt,
+b.redAlt,
+i.redAlt,
+u.redAlt,
+.text.redAlt {
+    color: var(--redAlt);
 }
 
-span.orangeish,
-p.orangeish,
-b.orangeish,
-i.orangeish,
-u.orangeish,
-.text.orangeish {
-    color: var(--orangeish);
+span.orange,
+p.orange,
+b.orange,
+i.orange,
+u.orange,
+.text.orange {
+    color: var(--orange);
 }
 
-span.orangeishFaded,
-p.orangeishFaded,
-b.orangeishFaded,
-i.orangeishFaded,
-u.orangeishFaded,
-.text.orangeishFaded {
-    color: var(--orangeishFaded);
+span.orangeAlt,
+p.orangeAlt,
+b.orangeAlt,
+i.orangeAlt,
+u.orangeAlt,
+.text.orangeAlt {
+    color: var(--orangeAlt);
 }
 
-span.yellowish,
-p.yellowish,
-b.yellowish,
-i.yellowish,
-u.yellowish,
-.text.yellowish {
-    color: var(--yellowish);
+span.yellow,
+p.yellow,
+b.yellow,
+i.yellow,
+u.yellow,
+.text.yellow {
+    color: var(--yellow);
 }
 
-span.yellowishFaded,
-p.yellowishFaded,
-b.yellowishFaded,
-i.yellowishFaded,
-u.yellowishFaded,
-.text.yellowishFaded {
-    color: var(--yellowishFaded);
+span.yellowAlt,
+p.yellowAlt,
+b.yellowAlt,
+i.yellowAlt,
+u.yellowAlt,
+.text.yellowAlt {
+    color: var(--yellowAlt);
 }
 
-span.greem,
-p.greem,
-b.greem,
-i.greem,
-u.greem,
-.text.greem {
-    color: var(--greem);
+span.green,
+p.green,
+b.green,
+i.green,
+u.green,
+.text.green {
+    color: var(--green);
 }
 
-span.greemFaded,
-p.greemFaded,
-b.greemFaded,
-i.greemFaded,
-u.greemFaded,
-.text.greemFaded {
-    color: var(--greemFaded);
+span.greenAlt,
+p.greenAlt,
+b.greenAlt,
+i.greenAlt,
+u.greenAlt,
+.text.greenAlt {
+    color: var(--greenAlt);
 }
 
-span.blueish,
-p.blueish,
-b.blueish,
-i.blueish,
-u.blueish,
-.text.blueish {
-    color: var(--blueish);
+span.blue,
+p.blue,
+b.blue,
+i.blue,
+u.blue,
+.text.blue {
+    color: var(--blue);
 }
 
-span.blueishFaded4,
-p.blueishFaded4,
-b.blueishFaded4,
-i.blueishFaded4,
-u.blueishFaded4,
-.text.blueishFaded4 {
-    color: var(--blueishFaded4);
+span.blueAlt,
+p.blueAlt,
+b.blueAlt,
+i.blueAlt,
+u.blueAlt,
+.text.blueAlt {
+    color: var(--blueAlt);
 }
 
-span.blueishFaded3,
-p.blueishFaded3,
-b.blueishFaded3,
-i.blueishFaded3,
-u.blueishFaded3,
-.text.blueishFaded3 {
-    color: var(--blueishFaded3);
+span.bg3,
+p.bg3,
+b.bg3,
+i.bg3,
+u.bg3,
+.text.bg3 {
+    color: var(--bg3);
 }
 
-span.blueishFaded2,
-p.blueishFaded2,
-b.blueishFaded2,
-i.blueishFaded2,
-u.blueishFaded2,
-.text.blueishFaded2 {
-    color: var(--blueishFaded2);
+span.bg2,
+p.bg2,
+b.bg2,
+i.bg2,
+u.bg2,
+.text.bg2 {
+    color: var(--bg2);
 }
 
-span.blueishFaded1,
-p.blueishFaded1,
-b.blueishFaded1,
-i.blueishFaded1,
-u.blueishFaded1,
-.text.blueishFaded1 {
-    color: var(--blueishFaded1);
+span.bg1,
+p.bg1,
+b.bg1,
+i.bg1,
+u.bg1,
+.text.bg1 {
+    color: var(--bg1);
 }
 
-span.blueishGray,
-p.blueishGray,
-b.blueishGray,
-i.blueishGray,
-u.blueishGray,
-.text.blueishGray {
-    color: var(--blueishGray);
+span.black,
+p.black,
+b.black,
+i.black,
+u.black,
+.text.black {
+    color: var(--black);
 }
 
-span.purpleish,
-p.purpleish,
-b.purpleish,
-i.purpleish,
-u.purpleish,
-.text.purpleish {
-    color: var(--purpleish);
+span.fg,
+p.fg,
+b.fg,
+i.fg,
+u.fg,
+.text.fg {
+    color: var(--fg);
 }
 
-span.purpleishFaded,
-p.purpleishFaded,
-b.purpleishFaded,
-i.purpleishFaded,
-u.purpleishFaded,
-.text.purpleishFaded {
-    color: var(--purpleishFaded);
+span.white,
+p.white,
+b.white,
+i.white,
+u.white,
+.text.white {
+    color: var(--white);
 }
 
-span.pimk,
-p.pimk,
-b.pimk,
-i.pimk,
-u.pimk,
-.text.pimk {
-    color: var(--pimk);
+span.primary,
+p.primary,
+b.primary,
+i.primary,
+u.primary,
+.text.primary {
+    color: var(--primary);
 }
 
-span.pimkFaded,
-p.pimkFaded,
-b.pimkFaded,
-i.pimkFaded,
-u.pimkFaded,
-.text.pimkFaded {
-    color: var(--pimkFaded);
+span.primaryAlt,
+p.primaryAlt,
+b.primaryAlt,
+i.primaryAlt,
+u.primaryAlt,
+.text.primaryAlt {
+    color: var(--primaryAlt);
 }
 
-mark.redish {
-    background-color: var(--redish);
+span.purple,
+p.purple,
+b.purple,
+i.purple,
+u.purple,
+.text.purple {
+    color: var(--purple);
 }
 
-mark.redishFaded {
-    background-color: var(--redishFaded);
+span.purpleAlt,
+p.purpleAlt,
+b.purpleAlt,
+i.purpleAlt,
+u.purpleAlt,
+.text.purpleAlt {
+    color: var(--purpleAlt);
 }
 
-mark.orangeish {
-    background-color: var(--orangeish);
+span.pink,
+p.pink,
+b.pink,
+i.pink,
+u.pink,
+.text.pink {
+    color: var(--pink);
 }
 
-mark.orangeishFaded {
-    background-color: var(--orangeishFaded);
+span.pinkAlt,
+p.pinkAlt,
+b.pinkAlt,
+i.pinkAlt,
+u.pinkAlt,
+.text.pinkAlt {
+    color: var(--pinkAlt);
 }
 
-mark.yellowish {
-    background-color: var(--yellowish);
+mark.red {
+    background-color: var(--red);
 }
 
-mark.yellowishFaded {
-    background-color: var(--yellowishFaded);
+mark.redAlt {
+    background-color: var(--redAlt);
 }
 
-mark.greem {
-    background-color: var(--greem);
+mark.orange {
+    background-color: var(--orange);
 }
 
-mark.greemFaded {
-    background-color: var(--greemFaded);
+mark.orangeAlt {
+    background-color: var(--orangeAlt);
 }
 
-mark.blueish {
-    background-color: var(--blueish);
+mark.yellow {
+    background-color: var(--yellow);
 }
 
-mark.blueishFaded4 {
-    background-color: var(--blueishFaded4);
+mark.yellowAlt {
+    background-color: var(--yellowAlt);
 }
 
-mark.blueishFaded3 {
-    background-color: var(--blueishFaded3);
+mark.green {
+    background-color: var(--green);
 }
 
-mark.blueishFaded2 {
-    background-color: var(--blueishFaded2);
+mark.greenAlt {
+    background-color: var(--greenAlt);
 }
 
-mark.blueishFaded1 {
-    background-color: var(--blueishFaded1);
+mark.blue {
+    background-color: var(--blue);
 }
 
-mark.blueishGray {
-    background-color: var(--blueishGray);
+mark.blueAlt {
+    background-color: var(--blueAlt);
 }
 
-mark.purpleish {
-    background-color: var(--purpleish);
+mark.bg3 {
+    background-color: var(--bg3);
 }
 
-mark.purpleishFaded {
-    background-color: var(--purpleishFaded);
+mark.bg2 {
+    background-color: var(--bg2);
 }
 
-mark.pimk {
-    background-color: var(--pimk);
+mark.bg1 {
+    background-color: var(--bg1);
 }
 
-mark.pimkFaded {
-    background-color: var(--pimkFaded);
+mark.black {
+    background-color: var(--black);
 }
 
-.notice.redish {
-    color: var(--redish);
-    border-color: var(--redish);
+mark.fg {
+    background-color: var(--fg);
 }
 
-.notice.greem {
-    color: var(--greem);
-    border-color: var(--greem);
+mark.white {
+    background-color: var(--white);
 }
 
-button.redish,
-.button.redish {
-  background-color: var(--redish);
-  border-color: var(--redish);
+mark.primary {
+    background-color: var(--primary);
 }
 
-button.greem,
-.button.greem {
-  background-color: var(--greem);
-  border-color: var(--greem);
+mark.primaryAlt {
+    background-color: var(--primaryAlt);
 }
 
-button.alt.redish,
-.button.alt.redish {
-  border-color: var(--redish);
-  color: var(--redish);
+mark.purple {
+    background-color: var(--purple);
 }
 
-button.alt.greem,
-.button.alt.greem {
-  border-color: var(--greem);
-  color: var(--greem);
+mark.purpleAlt {
+    background-color: var(--purpleAlt);
 }
 
-button:hover.redish,
-button:focus-visible.redish,
-.button:hover.redish,
-.button:focus-visible.redish {
-  background-color: var(--redishFaded);
-  color: var(--blueishFaded1);
+mark.pink {
+    background-color: var(--pink);
 }
 
-button:hover.greem,
-button:focus-visible.greem,
-.button:hover.greem,
-.button:focus-visible.greem {
-  background-color: var(--greemFaded);
-  color: var(--blueishFaded1);
+mark.pinkAlt {
+    background-color: var(--pinkAlt);
 }
 
-button:focus-visible.redish,
-.button:focus-visible.redish {
-  outline-color: var(--redish);
+.notice.red {
+    color: var(--red);
+    border-color: var(--red);
 }
 
-button:focus-visible.greem,
-.button:focus-visible.greem {
-  outline-color: var(--greem);
+.notice.green {
+    color: var(--green);
+    border-color: var(--green);
 }
 
-input.redish,
-textarea.redish {
-  border-color: var(--redish);
+button.red,
+.button.red {
+  background-color: var(--red);
+  border-color: var(--red);
 }
 
-input.greem,
-textarea.greem {
-  border-color: var(--greem);
+button.green,
+.button.green {
+  background-color: var(--green);
+  border-color: var(--green);
 }
 
-input.redish:hover,
-input.redish:focus-visible,
-textarea.redish:hover,
-textarea.redish:focus-visible {
-  border-color: var(--redishFaded);
+button.alt.red,
+.button.alt.red {
+  border-color: var(--red);
+  color: var(--red);
 }
 
-input.greem:hover,
-input.greem:focus-visible,
-textarea.greem:hover,
-textarea.greem:focus-visible {
-  border-color: var(--greemFaded);
+button.alt.green,
+.button.alt.green {
+  border-color: var(--green);
+  color: var(--green);
 }
 
-input.redish:focus-visible,
-textarea.redish:focus-visible {
-  outline-color: var(--redish);
+button:hover.red,
+button:focus-visible.red,
+.button:hover.red,
+.button:focus-visible.red {
+  background-color: var(--redAlt);
+  color: var(--bg1);
 }
 
-input.greem:focus-visible,
-textarea.greem:focus-visible {
-  outline-color: var(--greem);
+button:hover.green,
+button:focus-visible.green,
+.button:hover.green,
+.button:focus-visible.green {
+  background-color: var(--greenAlt);
+  color: var(--bg1);
+}
+
+button:focus-visible.red,
+.button:focus-visible.red {
+  outline-color: var(--red);
+}
+
+button:focus-visible.green,
+.button:focus-visible.green {
+  outline-color: var(--green);
+}
+
+input.red,
+textarea.red {
+  border-color: var(--red);
+}
+
+input.green,
+textarea.green {
+  border-color: var(--green);
+}
+
+input.red:hover,
+input.red:focus-visible,
+textarea.red:hover,
+textarea.red:focus-visible {
+  border-color: var(--redAlt);
+}
+
+input.green:hover,
+input.green:focus-visible,
+textarea.green:hover,
+textarea.green:focus-visible {
+  border-color: var(--greenAlt);
+}
+
+input.red:focus-visible,
+textarea.red:focus-visible {
+  outline-color: var(--red);
+}
+
+input.green:focus-visible,
+textarea.green:focus-visible {
+  outline-color: var(--green);
 }
