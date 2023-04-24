@@ -384,3 +384,11 @@ input.green:focus-visible,
 textarea.green:focus-visible {
   outline-color: var(--green);
 }
+
+textarea.vertical {
+    resize: vertical;
+}
+
+textarea.horizontal {
+    resize: horizontal;
+}
