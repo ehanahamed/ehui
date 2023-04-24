@@ -119,7 +119,7 @@
                             card
                         </div>
                     </div>
-                    <div class="card double" onclick="flipCard()">
+                    <div class="card double" id="flipme" onclick="flipCard()">
                         <div class="content">
                             <div class="front">
                                 card front<br/>click to flip
@@ -139,7 +139,7 @@
     </body>
     <script>
         function flipCard() {
-            document.getElementsByClassName("card double")[0].classList.toggle("flip");
+            document.getElementById("flipme").classList.toggle("flip");
         }
     </script>
 </html>
