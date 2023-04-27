@@ -1,0 +1,28 @@
+/*
+    Example of themeing designsys using Dracula theme (draculatheme.com)
+*/
+
+:root {
+    --red: #FF5555;
+    --redAlt: #FF6E6E;
+    --orange: #FFB86C;
+    --orangeAlt: #FFB86C;
+    --yellow: #F1FA8C;
+    --yellowAlt: #FFFFA5;
+    --green: #50FA7B;
+    --greenAlt: #69FF94;
+    --blue: #8BE9FD;
+    --blueAlt: #A4FFFF;
+    --bg3: #6272a4;
+    --bg2: #44475a;
+    --bg1: #282A36;
+    --black: #282A36;
+    --fg: #F8F8F2;
+    --white: #F8F8F2;
+    --primary:#BD93F9;
+    --primaryAlt:#D6ACFF;
+    --purple: #BD93F9;
+    --purpleAlt: #D6ACFF;
+    --pink: #FF79C6;
+    --pinkAlt: #FF92DF;
+}
