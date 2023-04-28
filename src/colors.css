@@ -1,0 +1,75 @@
+
+:root.purpleish {
+    --red: #FF6666;
+    --redAlt: #FF9999;
+    --orange: #FF9966;
+    --orangeAlt: #FFBB99;
+    --yellow: #FFCC66;
+    --yellowAlt: #FFDD99;
+    --green: #52CCA3;
+    --greenAlt: #7ACCB1;
+    --blue: #5252CC;
+    --blueAlt: #7A7ACC;
+    --bg3: #5C5C99;
+    --bg2: #3D3D66;
+    --bg1: #1E1E32;
+    --black: #1E1E32;
+    --fg: #A3A3CC;
+    --white: #A3A3CC;
+    --primary: #7A52CC;
+    --primaryAlt: #967ACC;
+    --purple: #7A52CC;
+    --purpleAlt: #967ACC;
+    --pink: #CC52A3;
+    --pinkAlt: #CC7AB1;
+}
+
+:root.dracula {
+    --red: #FF5555;
+    --redAlt: #FF6E6E;
+    --orange: #FFB86C;
+    --orangeAlt: #FFB86C;
+    --yellow: #F1FA8C;
+    --yellowAlt: #FFFFA5;
+    --green: #50FA7B;
+    --greenAlt: #69FF94;
+    --blue: #8BE9FD;
+    --blueAlt: #A4FFFF;
+    --bg3: #6272a4;
+    --bg2: #44475a;
+    --bg1: #282A36;
+    --black: #282A36;
+    --fg: #F8F8F2;
+    --white: #F8F8F2;
+    --primary:#BD93F9;
+    --primaryAlt:#D6ACFF;
+    --purple: #BD93F9;
+    --purpleAlt: #D6ACFF;
+    --pink: #FF79C6;
+    --pinkAlt: #FF92DF;
+}
+
+:root.nord {
+    --red: #BF616A;
+    --redAlt: #BF616A; /* fix later */
+    --orange: #D08770;
+    --orangeAlt: #D08770;
+    --yellow: #EBCB8B;
+    --yellowAlt: #EBCB8B;
+    --green: #A3BE8C;
+    --greenAlt: #A3BE8C; /* fix later */
+    --blue: #5E81AC;
+    --blueAlt: #81A1C1;
+    --bg3: #434C5E;
+    --bg2: #3B4252;
+    --bg1: #2E3440;
+    --black: #2E3440;
+    --fg: #D8DEE9;
+    --white: #D8DEE9;
+    --primary:#88C0D0;
+    --primaryAlt:#8FBCBB;
+    --purple: #B48EAD;
+    --purpleAlt: #B48EAD;
+    --pink: #B48EAD;
+    --pinkAlt: #B48EAD;
+}
