@@ -2,7 +2,7 @@
     Purpleish & Dracula theme, for designsys
 */
 
-:root.purpleish {
+:root /* purpleish */ {
     --red: #FF6666;
     --redAlt: #FF9999;
     --orange: #FF9966;
