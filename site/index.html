@@ -29,8 +29,12 @@
             <div class="grid main">
                 <div class="content">
                     <div class="notice">
-                        <p>Currently there are two themes, Purpleish (purpleish.ehan.dev) and Dracula theme (draculatheme.com)</p>
-                        <button onclick="changeTheme()">Change theme</button>
+                        <p>Select theme</p>
+                        <div class="flex">
+                            <button onclick="setTheme('purpleish')">Purpleish</button>
+                            <button onclick="setTheme('dracula')" class="alt">Dracula</button>
+                            <button onclick="setTheme('nord')" class="alt">Nord</button>
+                        </div>
                     </div>
                     <h1>Heading 1</h1>
                     <h2>Heading 2</h2>
