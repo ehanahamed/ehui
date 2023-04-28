@@ -32,8 +32,8 @@
                         <p>Select theme</p>
                         <div class="flex">
                             <button onclick="setTheme('purpleish')">Purpleish</button>
-                            <button onclick="setTheme('dracula')" class="alt">Dracula</button>
                             <button onclick="setTheme('nord')" class="alt">Nord</button>
+                            <button onclick="setTheme('dracula')" class="alt">Dracula</button>
                         </div>
                     </div>
                     <h1>Heading 1</h1>
@@ -150,8 +150,9 @@
         </footer>
     </body>
     <script>
-        function changeTheme() {
-            document.documentElement.classList.toggle("dracula");
+        function setTheme(theme) {
+            document.documentElement.classList.remove("purpleish", "dracula", "nord");
+            document.documentElement.classList.add(theme);
         }
         function flipCard() {
             document.getElementById("flipme").classList.toggle("flip");
