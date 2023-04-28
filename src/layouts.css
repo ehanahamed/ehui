@@ -9,6 +9,10 @@ https://src.ehan.dev/designsys/LICENSE.txt
     box-sizing: border-box;
 }
 
+.center {
+    text-align: center;
+}
+
 .flex {
     display: flex;
     gap: 0px 1rem;
