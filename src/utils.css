@@ -291,12 +291,12 @@ mark.pinkAlt {
     background-color: var(--pinkAlt);
 }
 
-.notice.red {
+.box.red {
     color: var(--red);
     border-color: var(--red);
 }
 
-.notice.green {
+.box.green {
     color: var(--green);
     border-color: var(--green);
 }
