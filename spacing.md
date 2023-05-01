@@ -22,3 +22,7 @@ Not all elements have the same padding, however, elements of the same "type" hav
  - buttons (`<button>...</button>`, `<... class="button">...</...>`)
  - inputs (`<input type="...">...</input>`)
     - textareas (`<textarea>...</textarea>`)
+
+### `Box` elements
+
+`Box` elements have a padding of `1rem`.
