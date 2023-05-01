@@ -26,3 +26,15 @@ Not all elements have the same padding, however, elements of the same "type" hav
 ### `Box` elements
 
 `Box` elements have a padding of `1rem`.
+
+`Box` elements include:
+ - boxes (`<... class="box">...</...>`)
+ - table children (`<table>...</table>`)
+    - `th`
+    - `td`
+ - heros (`<... class="hero">...</...>`)
+ - footers (`<footer>...</footer>`, `<... class="footer">...</...>`)
+
+ > Note that in tables, the padding is applied to each cell (`th`, `td`).
+
+
