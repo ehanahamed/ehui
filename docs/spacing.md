@@ -2,6 +2,8 @@
 
 ## Padding
 
+> Padding handles spacing inside elements, between their border their content.
+
 Not all elements have the same padding, however, elements of the same "type" have the same padding rules.
 
 ### `Text` elements with `background`
@@ -37,4 +39,8 @@ Not all elements have the same padding, however, elements of the same "type" hav
 
  > Note that in tables, the padding is applied to each cell (`th`, `td`).
 
+## Margins
 
+> Margins handle spacing between elements.
+
+(Almost) every element has a bottom margin of `1rem`, so that the element after it is pushed down. They do not *need* top margin, because every element assumes the element above it is responsible for pushing the next line's element down.
