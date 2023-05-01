@@ -46,8 +46,8 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --bg2: #444444;
     --bg1: #222222;
     --black: #222222;
-    --fg: #EEEEEE;
-    --white: #EEEEEE;
+    --fg: #DDDDDD;
+    --white: #DDDDDD;
     --primary: #4488FF;
     --primaryAlt: #66AAFF;
     --purple: #8844FF;
@@ -59,24 +59,24 @@ https://src.ehan.dev/designsys/LICENSE.txt
 
 /* make colors two shades darker later */
 :root.light {
-    --red: #FF4444;
-    --redAlt: #FF6666;
-    --orange: #FF8844;
-    --orangeAlt: #FFAA66;
-    --yellow: #FFFF44;
-    --yellowAlt: #FFFF66;
-    --green: #44FF44;
-    --greenAlt: #66FF66;
-    --blue: #4488FF;
-    --blueAlt: #66AAFF;
+    --red: #DD2222;
+    --redAlt: #DD4444;
+    --orange: #DD6622;
+    --orangeAlt: #DD8844;
+    --yellow: #DDDD22;
+    --yellowAlt: #DDDD44;
+    --green: #22AA22;
+    --greenAlt: #44AA44;
+    --blue: #2266DD;
+    --blueAlt: #4488DD;
     --bg3: #888888;
     --bg2: #AAAAAA;
     --bg1: #DDDDDD;
     --black: #222222;
     --fg: #222222;
     --white: #DDDDDD;
-    --primary: #4488FF;
-    --primaryAlt: #66AAFF;
+    --primary: #2266DD;
+    --primaryAlt: #4488DD;
     --purple: #8844FF;
     --purpleAlt: #AA66FF;
     --pink: #FF44FF;
