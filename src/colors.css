@@ -77,10 +77,10 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --white: #DDDDDD;
     --primary: #2266DD;
     --primaryAlt: #4488DD;
-    --purple: #8844FF;
-    --purpleAlt: #AA66FF;
-    --pink: #FF44FF;
-    --pinkAlt: #FF66FF;
+    --purple: #6622DD;
+    --purpleAlt: #8844DD;
+    --pink: #DD22DD;
+    --pinkAlt: #DD44DD;
 }
 
 :root.dracula {
