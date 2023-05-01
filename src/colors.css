@@ -35,13 +35,13 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --red: #FF4444;
     --redAlt: #FF6666;
     --orange: #FF8844;
-    --orangeAlt: #FF8866;
+    --orangeAlt: #FFAA66;
     --yellow: #FFFF44;
     --yellowAlt: #FFFF66;
     --green: #44FF44;
     --greenAlt: #66FF66;
     --blue: #4488FF;
-    --blueAlt: #6688FF;
+    --blueAlt: #66AAFF;
     --bg3: #666666;
     --bg2: #444444;
     --bg1: #222222;
@@ -49,9 +49,9 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --fg: #EEEEEE;
     --white: #EEEEEE;
     --primary: #4488FF;
-    --primaryAlt: #6688FF;
+    --primaryAlt: #66AAFF;
     --purple: #8844FF;
-    --purpleAlt: #8866FF;
+    --purpleAlt: #AA66FF;
     --pink: #FF44FF;
     --pinkAlt: #FF66FF;
 }
@@ -60,13 +60,13 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --red: #FF4444;
     --redAlt: #FF6666;
     --orange: #FF8844;
-    --orangeAlt: #FF8866;
+    --orangeAlt: #FFAA66;
     --yellow: #FFFF44;
     --yellowAlt: #FFFF66;
     --green: #44FF44;
     --greenAlt: #66FF66;
     --blue: #4488FF;
-    --blueAlt: #6688FF;
+    --blueAlt: #66AAFF;
     --bg3: #888888;
     --bg2: #AAAAAA;
     --bg1: #DDDDDD;
@@ -74,9 +74,9 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --fg: #222222;
     --white: #DDDDDD;
     --primary: #4488FF;
-    --primaryAlt: #6688FF;
+    --primaryAlt: #66AAFF;
     --purple: #8844FF;
-    --purpleAlt: #8866FF;
+    --purpleAlt: #AA66FF;
     --pink: #FF44FF;
     --pinkAlt: #FF66FF;
 }
