@@ -31,6 +31,31 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --pinkAlt: #CC7AB1;
 }
 
+:root.light {
+    --red: #FF6666;
+    --redAlt: #FF9999;
+    --orange: #FF9966;
+    --orangeAlt: #FFBB99;
+    --yellow: #FFCC66;
+    --yellowAlt: #FFDD99;
+    --green: #52CCA3;
+    --greenAlt: #7ACCB1;
+    --blue: #5252CC;
+    --blueAlt: #7A7ACC;
+    --bg3: #3D3D66;
+    --bg2: #5C5C99;
+    --bg1: #A3A3CC;
+    --black: #1E1E32;
+    --fg: #1E1E32;
+    --white: #A3A3CC;
+    --primary: #7A52CC;
+    --primaryAlt: #967ACC;
+    --purple: #7A52CC;
+    --purpleAlt: #967ACC;
+    --pink: #CC52A3;
+    --pinkAlt: #CC7AB1;
+}
+
 :root.dracula {
     --red: #FF5555;
     --redAlt: #FF6E6E;
@@ -67,8 +92,8 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --greenAlt: #A3BE8C; /* fix later */
     --blue: #5E81AC;
     --blueAlt: #81A1C1;
-    --bg3: #434C5E;
-    --bg2: #3B4252;
+    --bg3: #4C566A;
+    --bg2: #434C5E;
     --bg1: #2E3440;
     --black: #2E3440;
     --fg: #D8DEE9;
