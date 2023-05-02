@@ -330,11 +330,7 @@ button.alt.green,
 button:hover.red,
 button:focus-visible.red,
 .button:hover.red,
-.button:focus-visible.red,
-button.alt:hover.red,
-button.alt:focus-visible.red,
-.button.alt:hover.red,
-.button.alt:focus-visible.red {
+.button:focus-visible.red {
   background-color: var(--redAlt);
   color: var(--bg1);
 }
