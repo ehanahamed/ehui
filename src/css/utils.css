@@ -328,7 +328,11 @@ button.alt.green,
 button:hover.red,
 button:focus-visible.red,
 .button:hover.red,
-.button:focus-visible.red {
+.button:focus-visible.red,
+button.alt:hover.red,
+button.alt:focus-visible.red,
+.button.alt:hover.red,
+.button.alt:focus-visible.red {
   background-color: var(--redAlt);
   color: var(--bg1);
 }
@@ -336,7 +340,11 @@ button:focus-visible.red,
 button:hover.green,
 button:focus-visible.green,
 .button:hover.green,
-.button:focus-visible.green {
+.button:focus-visible.green,
+button.alt:hover.green,
+button.alt:focus-visible.green,
+.button.alt:hover.green,
+.button.alt:focus-visible.green {
   background-color: var(--greenAlt);
   color: var(--bg1);
 }
