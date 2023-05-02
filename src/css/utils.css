@@ -315,12 +315,14 @@ button.green,
 
 button.alt.red,
 .button.alt.red {
+  background-color: var(--bg1);
   border-color: var(--red);
   color: var(--red);
 }
 
 button.alt.green,
 .button.alt.green {
+  background-color: var(--bg1);
   border-color: var(--green);
   color: var(--green);
 }
