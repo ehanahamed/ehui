@@ -1,6 +1,6 @@
 # docs.ehan.dev/cdn
 LICENSE.txt
-src/colors.css
-src/utils.css
-src/layouts.css
-src/components.css
+src/css/colors.css
+src/css/utils.css
+src/css/layouts.css
+src/css/components.css
