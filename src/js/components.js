@@ -14,6 +14,12 @@ var components = {
                     event.target.classList.toggle("select");
                 }
             );
+            document.getElementsByClassName("checkbox")[i].addEventListener(
+                "keyup",
+                function (event) {
+                    event.target.classList.toggle("select");
+                }
+            )
         }
     }
 }
