@@ -277,14 +277,13 @@ textarea:focus-visible {
   transition-duration: 0.1s;
 }
 
-/*
-non-standard checkboxes (like this) aren't reccomended
-see:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex
-https://moderncss.dev/pure-css-custom-checkbox-style/
-*/
-
 .checkbox {
+  /*
+    non-standard checkboxes (like this) aren't reccomended
+    see:
+    https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex
+    https://moderncss.dev/pure-css-custom-checkbox-style/
+  */
   content: "";
   display: inline-block;
   width: 1.8rem; /* 1.8 is the 1rem text size + the similar-styled button's 0.4rem padding on top AND bottom, so a total of 1.8rem */
