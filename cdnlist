@@ -4,3 +4,4 @@ src/css/colors.css
 src/css/utils.css
 src/css/layouts.css
 src/css/components.css
+src/js/components.js
