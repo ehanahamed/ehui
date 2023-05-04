@@ -11,3 +11,5 @@ var components = {
         }
     }
 }
+
+components.init(); // temporary
