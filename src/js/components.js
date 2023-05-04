@@ -8,6 +8,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 var components = {
     init: function () {
         for (var i = 0; i < document.getElementsByClassName("checkbox").length; i++) {
+            document.getElementsByClassName("checkbox")[i].tabindex = 0;
             document.getElementsByClassName("checkbox")[i].addEventListener(
                 "click",
                 function (event) {
