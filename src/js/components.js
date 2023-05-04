@@ -1,3 +1,9 @@
+/*!
+designsys (designsys.ehan.dev)
+Copyright (c) 2023-present Ehan Ahamed and contributors
+Licensed under the UPL-1.0 License
+https://src.ehan.dev/designsys/LICENSE.txt
+*/
 
 var components = {
     init: function () {
