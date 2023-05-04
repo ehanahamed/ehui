@@ -277,6 +277,13 @@ textarea:focus-visible {
   transition-duration: 0.1s;
 }
 
+/*
+non-standard checkboxes (like this) aren't reccomended
+see:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex
+https://moderncss.dev/pure-css-custom-checkbox-style/
+*/
+
 .checkbox {
   content: "";
   display: inline-block;
