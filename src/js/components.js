@@ -11,7 +11,7 @@ var components = {
             document.getElementsByClassName("checkbox")[i].addEventListener(
                 "click",
                 function (event) {
-                    event.target.classlist.toggle("select");
+                    event.target.classList.toggle("select");
                 }
             );
         }
