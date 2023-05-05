@@ -353,36 +353,44 @@ button:focus-visible.green,
   outline-color: var(--green);
 }
 
-input.red,
+input[type="text"].red,
+input[type="password"].red,
 textarea.red {
   border-color: var(--red);
 }
 
-input.green,
+input[type="text"].green,
+input[type="password"].green,
 textarea.green {
   border-color: var(--green);
 }
 
-input.red:hover,
-input.red:focus-visible,
+input[type="text"].red:hover,
+input[type="text"].red:focus-visible,
+input[type="password"].red:hover,
+input[type="password"].red:focus-visible,
 textarea.red:hover,
 textarea.red:focus-visible {
   border-color: var(--redAlt);
 }
 
-input.green:hover,
-input.green:focus-visible,
+input[type="text"].green:hover,
+input[type="text"].green:focus-visible,
+input[type="password"].green:hover,
+input[type="password"].green:focus-visible,
 textarea.green:hover,
 textarea.green:focus-visible {
   border-color: var(--greenAlt);
 }
 
-input.red:focus-visible,
+input[type="text"].red:focus-visible,
+input[type="password"].red:focus-visible,
 textarea.red:focus-visible {
   outline-color: var(--red);
 }
 
-input.green:focus-visible,
+input[type="text"].green:focus-visible,
+input[type="password"].green:focus-visible,
 textarea.green:focus-visible {
   outline-color: var(--green);
 }
