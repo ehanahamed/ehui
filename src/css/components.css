@@ -244,6 +244,7 @@ button:focus-visible,
 }
 
 input[type="text"],
+input[type="password"],
 textarea {
   display: inline-block;
   align-items: flex-start;
@@ -265,12 +266,15 @@ textarea {
 
 input[type="text"]:hover,
 input[type="text"]:focus-visible,
+input[type="password"]:hover,
+input[type="password"]:focus-visible,
 textarea:hover,
 textarea:focus-visible {
   border-color: var(--primaryAlt);
 }
 
 input[type="text"]:focus-visible,
+input[type="password"]:focus-visible,
 textarea:focus-visible {
   outline: 0.2rem solid var(--primary);
   outline-offset: 0.2rem;
