@@ -243,7 +243,7 @@ button:focus-visible,
   opacity: 1;
 }
 
-input,
+input[type="text"],
 textarea {
   display: inline-block;
   align-items: flex-start;
@@ -263,14 +263,14 @@ textarea {
   margin-bottom: 1rem;
 }
 
-input:hover,
-input:focus-visible,
+input[type="text"]:hover,
+input[type="text"]:focus-visible,
 textarea:hover,
 textarea:focus-visible {
   border-color: var(--primaryAlt);
 }
 
-input:focus-visible,
+input[type="text"]:focus-visible,
 textarea:focus-visible {
   outline: 0.2rem solid var(--primary);
   outline-offset: 0.2rem;
