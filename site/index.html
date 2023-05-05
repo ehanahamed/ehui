@@ -1,185 +1,189 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>designsys</title>
-        <link rel="stylesheet" href="https://cdn.ehan.dev/designsys/src/css/colors.css" />
-        <link rel="stylesheet" href="https://cdn.ehan.dev/designsys/src/css/components.css" />
-        <link rel="stylesheet" href="https://cdn.ehan.dev/designsys/src/css/layouts.css" />
-        <link rel="stylesheet" href="https://cdn.ehan.dev/designsys/src/css/utils.css" />
-    </head>
-    <body>
-        <main>
-            <div class="grid hero">
-                <div class="content">
-                    <p class="h1">Header</p>
-                    <p>Text text text text</p>
-                    <div class="flex center">
-                        <button>button</button><button class="alt">button</button><button class="alt">button</button>
-                    </div>
-                </div>
-                <div class="logo">
-                    <picture>
-                        <source srcset="https://raw.ehan.dev/quizfreely/assets/icon800.png" media="(min-width: 800px)" width="400" height="400" />
-                        <img src="https://raw.ehan.dev/quizfreely/assets/icon400.png" alt="logo" width="200" height="200" />
-                    </picture>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>designsys</title>
+    <link rel="stylesheet" href="https://cdn.ehan.dev/designsys/src/css/colors.css" />
+    <link rel="stylesheet" href="https://cdn.ehan.dev/designsys/src/css/components.css" />
+    <link rel="stylesheet" href="https://cdn.ehan.dev/designsys/src/css/layouts.css" />
+    <link rel="stylesheet" href="https://cdn.ehan.dev/designsys/src/css/utils.css" />
+</head>
+
+<body>
+    <main>
+        <div class="grid hero">
+            <div class="content">
+
+                <p class="h1">Header</p>
+                <p>Text text text text</p>
+                <div class="flex center">
+                    <button>button</button><button class="alt">button</button><button class="alt">button</button>
                 </div>
             </div>
-            <div class="grid main">
-                <div class="content">
-                    <div class="box">
-                        <p>Select theme</p>
-                        <div class="flex">
-                            <button onclick="setTheme('purpleish')">Purpleish</button>
-                            <button onclick="setTheme('nord')" class="alt">Nord</button>
-                            <button onclick="setTheme('dracula')" class="alt">Dracula</button>
-                        </div>
-                        <div class="flex">
-                            <button onclick="setTheme('dark')" class="alt">Dark</button>
-                            <button onclick="setTheme('light')" class="alt">Light</button>
-                        </div>
+            <div class="logo">
+                <picture>
+                    <source srcset="https://raw.ehan.dev/quizfreely/assets/icon800.png" media="(min-width: 800px)"
+                        width="400" height="400" />
+                    <img src="https://raw.ehan.dev/quizfreely/assets/icon400.png" alt="logo" width="200" height="200" />
+                </picture>
+            </div>
+        </div>
+        <div class="grid main">
+            <div class="content">
+                <div class="box">
+                    <p>Select theme</p>
+                    <div class="flex">
+                        <button onclick="setTheme('purpleish')">Purpleish</button>
+                        <button onclick="setTheme('nord')" class="alt">Nord</button>
+                        <button onclick="setTheme('dracula')" class="alt">Dracula</button>
                     </div>
-                    <h1>Heading 1</h1>
-                    <h2>Heading 2</h2>
-                    <h3>Heading 3</h3>
-                    <h4>Heading 4</h4>
-                    <h5>Heading 5</h5>
-                    <h6>Heading 6</h6>
-                    <p>Paragraph of normal text</p>
-                    <p>Paragraph with <b>bold text</b>, <i>italic text</i>, <s>strikethrough</s>, <mark>highlighted text</mark>, and <code>inline code</code></p>
-                    <p>Text, <a href="https://designsys.ehan.dev">link</a>.</p>
+                    <div class="flex">
+                        <button onclick="setTheme('dark')" class="alt">Dark</button>
+                        <button onclick="setTheme('light')" class="alt">Light</button>
+                    </div>
+                </div>
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+                <p>Paragraph of normal text</p>
+                <p>Paragraph with <b>bold text</b>, <i>italic text</i>, <s>strikethrough</s>, <mark>highlighted
+                        text</mark>, and <code>inline code</code></p>
+                <p>Text, <a href="https://designsys.ehan.dev">link</a>.</p>
+                <div class="flex">
+                    <button>button</button>
+                    <button class="alt">alt button</button>
+                </div>
+                <div class="flex">
+                    <button class="green">green</button>
+                    <button class="alt green">alt green</button>
+                </div>
+                <div class="flex">
+                    <button class="red">red</button>
+                    <button class="alt red">alt red</button>
+                </div>
+                <div class="flex">
+                    <button>button</button><a href="https://designsys.ehan.dev" class="button">link button</a>
+                </div>
+                <p>Default color text</p>
+                <p class="red">Red text</p>
+                <p class="redAlt">Red Alt text</p>
+                <p class="orange">Orange text</p>
+                <p class="orangeAlt">Orange Alt text</p>
+                <p class="yellow">Yellow text</p>
+                <p class="yellowAlt">Yellow Alt text</p>
+                <p class="green">Green text</p>
+                <p class="greenAlt">Green Alt text</p>
+                <p class="blue">Blue text</p>
+                <p class="blueAlt">Blue Alt text</p>
+                <p class="purple">Purple text</p>
+                <p class="purpleAlt">Purple Alt text</p>
+                <p class="pink">Pink text</p>
+                <p class="pinkAlt">Pink Alt text</p>
+                <p class="white">White text</p>
+                <p class="black">Black text</p>
+                <p class="primary">Primary text</p>
+                <p class="primaryAlt"> Primary Alt text</p>
+                <p class="fg">Foreground text</p>
+                <p class="bg3">Background 3 text</p>
+                <p class="bg2">Background 2 text</p>
+                <p class="bg1">Background 1 text</p>
+                <h2>Notice boxes</h2>
+                <p class="box center">notice box text</p>
+                <p class="box center green">notice box text</p>
+                <p class="box center red">notice box text</p>
+                <h2>Boxes</h2>
+                <div class="box">
+                    <p>box text</p>
                     <div class="flex">
                         <button>button</button>
-                        <button class="alt">alt button</button>
+                        <button class="alt">button</button>
                     </div>
-                    <div class="flex">
-                        <button class="green">green</button>
-                        <button class="alt green">alt green</button>
-                    </div>
-                    <div class="flex">
-                        <button class="red">red</button>
-                        <button class="alt red">alt red</button>
-                    </div>
-                    <div class="flex">
-                        <button>button</button><a href="https://designsys.ehan.dev" class="button">link button</a>
-                    </div>
-                    <p>Default color text</p>
-                    <p class="red">Red text</p>
-                    <p class="redAlt">Red Alt text</p>
-                    <p class="orange">Orange text</p>
-                    <p class="orangeAlt">Orange Alt text</p>
-                    <p class="yellow">Yellow text</p>
-                    <p class="yellowAlt">Yellow Alt text</p>
-                    <p class="green">Green text</p>
-                    <p class="greenAlt">Green Alt text</p>
-                    <p class="blue">Blue text</p>
-                    <p class="blueAlt">Blue Alt text</p>
-                    <p class="purple">Purple text</p>
-                    <p class="purpleAlt">Purple Alt text</p>
-                    <p class="pink">Pink text</p>
-                    <p class="pinkAlt">Pink Alt text</p>
-                    <p class="white">White text</p>
-                    <p class="black">Black text</p>
-                    <p class="primary">Primary text</p>
-                    <p class="primaryAlt"> Primary Alt text</p>
-                    <p class="fg">Foreground text</p>
-                    <p class="bg3">Background 3 text</p>
-                    <p class="bg2">Background 2 text</p>
-                    <p class="bg1">Background 1 text</p>
-                    <h2>Notice boxes</h2>
-                    <p class="box center">notice box text</p>
-                    <p class="box center green">notice box text</p>
-                    <p class="box center red">notice box text</p>
-                    <h2>Boxes</h2>
-                    <div class="box">
-                        <p>box text</p>
-                        <div class="flex">
-                            <button>button</button>
-                            <button class="alt">button</button>
-                        </div>
-                    </div>
-                    <div class="box green">
-                        <p>box text</p>
-                        <div class="flex">
-                            <button class="green">button</button>
-                            <button class="green alt">button</button>
-                        </div>
-                    </div>
-                    <div class="box red">
-                        <p>box text</p>
-                        <div class="flex">
-                            <button class="red">button</button>
-                            <button class="red alt">button</button>
-                        </div>
-                    </div>
-                    <h2>Inputs</h2>
-                    <div class="flex wrap">
-                        <input type="text" placeholder="Placeholder text"></input>
-                        <input class="red" type="text" placeholder="Text input red"></input>
-                        <input  class="green" type="text" placeholder="Text input green"></input>
-                    </div>
-                    <div class="flex wrap">
-                        <textarea rows="2" placeholder="Placeholder text"></textarea>
-                        <textarea class="red" rows="2" placeholder="Textarea red"></textarea>
-                        <textarea class="green" rows="2" placeholder="Textarea green"></textarea>
-                    </div>
-                    <h2>Tables</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Table Heading</th>
-                                <th>Cell 1 Heading</th>
-                                <th>Cell 2 Heading</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Table cell</td>
-                                <td>Cell 1, Row 1</td>
-                                <td>Cell 2, Row 1</td>
-                            </tr>
-                            <tr>
-                                <td>Cell 0, Row 2</td>
-                                <td>Cell 1, Row 2</td>
-                                <td>Cell 2, Row 2</td>
-                            </tr>
-                            <tr>
-                                <td>Cell 0, Row 3</td>
-                                <td>Cell 1, Row 3</td>
-                                <td>Cell 2, Row 3</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <h2>Cards</h2>
-                    <div class="card">
-                        <div class="content">
-                            card
-                        </div>
-                    </div>
-                    <div class="card double" id="flip" onclick="flipCard()">
-                        <div class="content">
-                            <div class="front">
-                                card front<br/>click to flip
-                            </div>
-                            <div class="back">
-                                card back<br/>click to flip
-                            </div>
-                        </div>
-                    </div>
-                    <h2>Work in progress</h2>
-                    <p>Checkboxes</p>
-                    <div class="checkbox"></div>
-                    <div class="checkbox select"></div>
                 </div>
+                <div class="box green">
+                    <p>box text</p>
+                    <div class="flex">
+                        <button class="green">button</button>
+                        <button class="green alt">button</button>
+                    </div>
+                </div>
+                <div class="box red">
+                    <p>box text</p>
+                    <div class="flex">
+                        <button class="red">button</button>
+                        <button class="red alt">button</button>
+                    </div>
+                </div>
+                <h2>Inputs</h2>
+                <div class="flex wrap">
+                    <input type="text" placeholder="Placeholder text"></input>
+                    <input class="red" type="text" placeholder="Text input red"></input>
+                    <input  class="green" type="text" placeholder="Text input green"></input>
+                </div>
+                <div class="flex wrap">
+                    <textarea rows="2" placeholder="Placeholder text"></textarea>
+                    <textarea class="red" rows="2" placeholder="Textarea red"></textarea>
+                    <textarea class="green" rows="2" placeholder="Textarea green"></textarea>
+                </div>
+                <h2>Tables</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Table Heading</th>
+                            <th>Cell 1 Heading</th>
+                            <th>Cell 2 Heading</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Table cell</td>
+                            <td>Cell 1, Row 1</td>
+                            <td>Cell 2, Row 1</td>
+                        </tr>
+                        <tr>
+                            <td>Cell 0, Row 2</td>
+                            <td>Cell 1, Row 2</td>
+                            <td>Cell 2, Row 2</td>
+                        </tr>
+                        <tr>
+                            <td>Cell 0, Row 3</td>
+                            <td>Cell 1, Row 3</td>
+                            <td>Cell 2, Row 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>Cards</h2>
+                <div class="card">
+                    <div class="content">
+                        card
+                    </div>
+                </div>
+                <div class="card double" id="flip" onclick="flipCard()">
+                    <div class="content">
+                        <div class="front">
+                            card front<br/>click to flip
+                        </div>
+                        <div class="back">
+                            card back<br/>click to flip
+                        </div>
+                    </div>
+                </div>
+                <h2>Work in progress</h2>
+                <p>Checkboxes</p>
+                <div class="checkbox"></div>
+                <div class="checkbox select"></div>
+                
             </div>
-        </main>
-        <footer>
-            <h2>Footer</h2>
-            <p>Text text text</p>
-        </footer>
-
-    <script src="https://cdn.ehan.dev/designsys/src/js/components.js"></script>
+        </div>
+    </main>
+    <footer>
+        <h2>Footer</h2>
+        <p>Text text text</p>
+    </footer>
     <script>
         function setTheme(theme) {
             document.documentElement.classList.remove("purpleish", "dracula", "nord", "light", "dark");
@@ -189,5 +193,6 @@
             document.getElementById("flip").classList.toggle("flip");
         }
     </script>
-    </body>
+</body>
+
 </html>
