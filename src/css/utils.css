@@ -5,9 +5,72 @@ Licensed under the UPL-1.0 License
 https://src.ehan.dev/designsys/LICENSE.txt
 */
 
-html.legacy {
+/*
+min/reduced-motion utils
+*/
+html.min {
     scroll-behavior: auto;
 }
+
+html.min .card.min,
+.card.double.min {
+  perspective: none;
+}
+
+html.min .card.double > .content,
+.card.double.min > .content {
+  display: block;
+  transition-duration: 0s;
+  transform-style: flat;
+  background-color: inherit;
+  border-radius: 0px;
+  align-items: normal;
+  justify-content: normal;
+  text-align: center;
+}
+
+html.min .card.double > .content > .front,
+html.min .card.double > .content > .back,
+.card.double.min > .content > .front,
+.card.double.min > .content > .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg2);
+  border-radius: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+  -moz-backface-visibility: visible;
+  transform: none;
+}
+
+.card.double > .content > .back {
+  display: none;
+  transform: none;
+}
+
+.card.double > .content > .front {
+  display: flex;
+}
+
+.card.double.flip > .content {
+  transform: none;
+}
+
+.card.double.flip > .content > .back {
+  display: flex;
+}
+
+.card.double.flip > .content > .front {
+  display: none;
+}
+
+/*
+other utils
+*/
 
 span.red,
 p.red,
