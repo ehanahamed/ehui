@@ -35,14 +35,16 @@
             <div class="content">
                 <div class="box">
                     <p>Select theme</p>
-                    <div class="flex">
-                        <button onclick="setTheme('purpleish')">Purpleish</button>
-                        <button onclick="setTheme('nord')" class="alt">Nord</button>
-                        <button onclick="setTheme('dracula')" class="alt">Dracula</button>
+                    <div class="flex wrap">
+                        <button id="purpleish" onclick="setTheme('purpleish')">Purpleish</button>
+                        <button id="dark" onclick="setTheme('dark')" class="alt">Dark</button>
+                        <button id="light" onclick="setTheme('light')" class="alt">Light</button>
+                        <button id="nord" onclick="setTheme('nord')" class="alt">Nord</button>
+                        <button id="dracula" onclick="setTheme('dracula')" class="alt">Dracula</button>
                     </div>
-                    <div class="flex">
-                        <button onclick="setTheme('dark')" class="alt">Dark</button>
-                        <button onclick="setTheme('light')" class="alt">Light</button>
+                    <p>Settings</p>
+                    <div class="flex wrap">
+                        <button onclick="toggleMin()">Toggle Minimal UI</button>
                     </div>
                 </div>
                 <h1>Heading 1</h1>
@@ -190,6 +192,14 @@
         function setTheme(theme) {
             document.documentElement.classList.remove("purpleish", "dracula", "nord", "light", "dark");
             document.documentElement.classList.add(theme);
+            document.getElementById("purpleish").classList.add("alt");
+            document.getElementById("purpleish").classList.add("alt");
+            document.getElementById("purpleish").classList.add("alt");
+            document.getElementById("purpleish").classList.add("alt");
+            document.getElementById(theme).classList.remove("alt");
+        }
+        function toggleMin() {
+            document.documentElement.classList.toggle("min")
         }
         function flipCard() {
             document.getElementById("flip").classList.toggle("flip");
