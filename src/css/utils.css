@@ -12,6 +12,16 @@ html.min {
     scroll-behavior: auto;
 }
 
+html.min a,
+html.min .a,
+html.min button,
+html.min .button,
+html.min input[type="text"],
+html.min input[type="password"],
+html.min textarea {
+    transition-duration: 0s;
+}
+
 html.min .card.min,
 .card.double.min {
   perspective: none;
