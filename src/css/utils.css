@@ -47,24 +47,29 @@ html.min .card.double > .content > .back,
   transform: none;
 }
 
-.card.double > .content > .back {
+html.min .card.double > .content > .back,
+.card.double.min > .content > .back {
   display: none;
   transform: none;
 }
 
-.card.double > .content > .front {
+html.min .card.double > .content > .front,
+.card.double.min > .content > .front {
   display: flex;
 }
 
-.card.double.flip > .content {
+html.min .card.double.flip > .content,
+.card.double.min.flip > .content {
   transform: none;
 }
 
-.card.double.flip > .content > .back {
+html.min .card.double.flip > .content > .back,
+.card.double.min.flip > .content > .back {
   display: flex;
 }
 
-.card.double.flip > .content > .front {
+html.min .card.double.flip > .content > .front,
+.card.double.min.flip > .content > .front {
   display: none;
 }
 
