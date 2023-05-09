@@ -484,11 +484,3 @@ textarea.vertical {
 textarea.horizontal {
     resize: horizontal;
 }
-
-/* weird stuff */
-.invisible {
-    opacity: 0;
-    z-index: -1;
-    position: absolute;
-    margin: 0;
-}
