@@ -302,7 +302,7 @@ input[type="radio"] {
   margin: 0;
   border: 0.2rem solid var(--primary);
   /* 
-  https://moderncss.dev/pure-css-custom-styled-radio-buttons/#theme-variable-and-box-sizing-reset
+  https://moderncss.dev/pure-css-custom-styled-radio-buttons/
   https://moderncss.dev/pure-css-custom-checkbox-style/
   */
 }
