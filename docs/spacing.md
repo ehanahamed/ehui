@@ -1,4 +1,4 @@
-# Spacing & stuff
+# Spacing
 
 ## Padding
 
