@@ -43,4 +43,4 @@ Not all elements have the same padding, however, elements of the same "type" hav
 
 > Margins handle spacing between elements.
 
-(Almost) every element has a bottom margin of `1rem`, so that the element after it is pushed down. They do not *need* top margin, because every element assumes the element above it is responsible for pushing the next line's element down.
+(Almost) every element has a bottom margin of `1rem`, so that the element after it is pushed down. They do not *need* a top margin, because every element assumes the element above it is responsible for pushing the next line's element down.
