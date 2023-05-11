@@ -191,12 +191,13 @@
     </footer>
     <script>
         function setTheme(theme) {
-            document.documentElement.classList.remove("purpleish", "dracula", "nord", "light", "dark");
+            document.documentElement.classList.remove("purpleish", "dark", "light", "dracula", "nord");
             document.documentElement.classList.add(theme);
             document.getElementById("purpleish").classList.add("alt");
-            document.getElementById("purpleish").classList.add("alt");
-            document.getElementById("purpleish").classList.add("alt");
-            document.getElementById("purpleish").classList.add("alt");
+            document.getElementById("dark").classList.add("alt");
+            document.getElementById("light").classList.add("alt");
+            document.getElementById("nord").classList.add("alt");
+            document.getElementById("dracula").classList.add("alt");
             document.getElementById(theme).classList.remove("alt");
         }
         function toggleMin() {
