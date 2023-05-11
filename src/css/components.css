@@ -142,6 +142,7 @@ code,
 header,
 .header {
   position: sticky;
+  z-index: 100;
   top: 1rem;
   background-color: var(--bg1);
   border: 0.2rem solid var(--bg2);
