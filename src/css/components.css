@@ -6,14 +6,8 @@ https://src.ehan.dev/designsys/LICENSE.txt
 */
 
 html {
-    font-size: 20px;
-    scroll-behavior: smooth;
-}
-
-@media only screen and (max-width: 800px) {
-  html {
     font-size: 18px;
-  }
+    scroll-behavior: smooth;
 }
 
 body {
