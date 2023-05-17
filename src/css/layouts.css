@@ -157,3 +157,22 @@ https://src.ehan.dev/designsys/LICENSE.txt
     }
     */
 }
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-areas:
+        "menu content options"
+}
+
+header > .menu {
+    grid-area: menu;
+}
+
+header > .content {
+    grid-area: content;
+}
+
+header > .options {
+    grid-area: options;
+}
