@@ -91,6 +91,13 @@ i,
   font-style: italic;
 }
 
+/*
+nerdfont icons shouldn't have same styling as italic element lol
+*/
+i.nf {
+  font-style: normal;
+}
+
 s,
 .s {
   text-decoration: line-through;
