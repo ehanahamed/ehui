@@ -180,3 +180,8 @@ header > .options {
     text-align: left;
     justify-self: left;
 }
+
+header button,
+header .button {
+    margin-bottom: 0px;
+}
