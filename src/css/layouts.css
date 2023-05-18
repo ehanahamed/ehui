@@ -19,6 +19,11 @@ https://src.ehan.dev/designsys/LICENSE.txt
     display: flex;
     gap: 0px 1rem;
     flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.flex * {
+    margin-bottom: 0px;
 }
 
 .flex.row {
@@ -179,4 +184,8 @@ header > .options {
     grid-area: options;
     text-align: left;
     justify-self: left;
+}
+
+header * {
+    margin-bottom: 0px;
 }
