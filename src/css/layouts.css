@@ -173,6 +173,7 @@ header > .content {
     grid-area: content;
     text-align: center;
     justify-self: center;
+    margin: 0px auto;
 }
 
 header > .options {
