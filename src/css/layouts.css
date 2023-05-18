@@ -160,26 +160,21 @@ https://src.ehan.dev/designsys/LICENSE.txt
 
 header {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-        "menu content options"
+        "menu options"
 }
 
 header > .menu {
     grid-area: menu;
-}
-
-header > .content {
-    grid-area: content;
-    text-align: center;
-    justify-self: center;
-    margin: 0px auto;
+    text-align: left;
+    justify-self: left;
 }
 
 header > .options {
     grid-area: options;
-    text-align: left;
-    justify-self: left;
+    text-align: right;
+    justify-self: right;
 }
 
 header button,
