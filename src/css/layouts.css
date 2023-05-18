@@ -160,7 +160,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 
 header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-areas:
         "menu options"
 }
