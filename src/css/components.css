@@ -297,8 +297,8 @@ textarea:focus-visible {
 
 input[type="radio"] {
   appearance: none;
-  width: 1.8;
-  height: 1.8;
+  width: 1.8rem;
+  height: 1.8rem;
   margin: 0px;
   border: 0.2rem solid var(--primary);
   /* 
