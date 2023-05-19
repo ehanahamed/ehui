@@ -21,7 +21,7 @@ body {
 }
 
 ::selection {
-    background-color: var(--primary);
+    background-color: var(--primaryAlt);
     color: var(--bg1);
 }
 
