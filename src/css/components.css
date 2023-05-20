@@ -295,6 +295,15 @@ textarea:focus-visible {
   transition-duration: 0.1s;
 }
 
+/*
+the html of a radio should look like:
+
+<label class="radio>
+  <input type="radio" ... />
+  text
+</label>
+
+*/
 .radio {
   display: grid;
   grid-template-columns: 1.8rem auto;
@@ -303,7 +312,9 @@ textarea:focus-visible {
   margin-bottom: 1rem;
 }
 
-.radio > input[type="radio"] {
+input[type="radio"] {
+  display: grid;
+  place-content: center;
   appearance: none;
   width: 1.8rem;
   height: 1.8rem;
@@ -311,10 +322,27 @@ textarea:focus-visible {
   background-color: var(--bg1);
   border: 0.2rem solid var(--primary);
   border-radius: 0.8rem;
+  transition-duration: 0.4s;
   /*
   https://moderncss.dev/pure-css-custom-styled-radio-buttons/
   https://moderncss.dev/pure-css-custom-checkbox-style/
   */
+}
+
+input[type="radio"]:hover,
+input[type="radio"]:focus-visible {
+  border-color: var(--primaryAlt);
+}
+
+input[type="radio"]:focus-visible {
+  outline: 0.2rem solid var(--primary);
+  outline-offset: 0.2rem;
+  transition-duration: 0.1s;
+}
+
+input[type="radio"]:checked {
+  background-color: var(--primary);
+  transition-duration: 0.1s;
 }
 
 .card {
