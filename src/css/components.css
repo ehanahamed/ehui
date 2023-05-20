@@ -295,13 +295,23 @@ textarea:focus-visible {
   transition-duration: 0.1s;
 }
 
-input[type="radio"] {
+.radio {
+  display: grid;
+  grid-template-columns: 1.8rem auto;
+  gap: 1em;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+}
+
+.radio > input[type="radio"] {
   appearance: none;
   width: 1.8rem;
   height: 1.8rem;
   margin: 0px;
+  background-color: var(--bg1);
   border: 0.2rem solid var(--primary);
-  /* 
+  border-radius: 0.8rem;
+  /*
   https://moderncss.dev/pure-css-custom-styled-radio-buttons/
   https://moderncss.dev/pure-css-custom-checkbox-style/
   */
