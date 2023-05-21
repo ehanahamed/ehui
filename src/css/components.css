@@ -351,6 +351,19 @@ input[type="checkbox"]:checked {
   transition-duration: 0.1s;
 }
 
+input[type="checkbox"]::before {
+  display: none;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 0px;
+  background-color: var(--bg1);
+  clip-path: polygon(14% 44%, 0% 64%, 48% 100%, 100% 16%, 80% 0%, 42% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+  display: block;
+}
+
 .card {
   width: 40rem;
   height: 20rem;
