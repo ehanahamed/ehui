@@ -306,10 +306,21 @@ the html of a radio should look like:
 .radio,
 .checkbox {
   display: grid;
-  grid-template-columns: 1.8rem auto;
+  grid-template-columns: 1.8rem auto 1fr;
+  grid-template-areas: "input label .";
   gap: 1em;
   margin-top: 0px;
   margin-bottom: 1rem;
+}
+
+.radio input,
+.checkbox input {
+  grid-area: input;
+}
+
+.radio label,
+.checkbox label {
+  grid-area: label;
 }
 
 input[type="radio"],
