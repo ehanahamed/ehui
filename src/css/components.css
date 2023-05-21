@@ -315,8 +315,6 @@ the html of a radio should look like:
 
 input[type="radio"],
 input[type="checkbox"] {
-  display: grid;
-  place-content: center;
   appearance: none;
   width: 1.8rem;
   height: 1.8rem;
@@ -349,6 +347,11 @@ input[type="radio"]:checked,
 input[type="checkbox"]:checked {
   background-color: var(--primary);
   transition-duration: 0.1s;
+}
+
+input[type="checkbox"] {
+  display: grid;
+  place-content: center;
 }
 
 input[type="checkbox"]::before {
