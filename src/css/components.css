@@ -298,11 +298,10 @@ textarea:focus-visible {
 /*
 the html of a radio should look like:
 
-<label class="radio>
-  <input type="radio" ... />
-  text
-</label>
-
+<div class="radio>
+  <input type="radio" id="id" ... />
+  <label for="id">text</label>
+</div>
 */
 .radio,
 .checkbox {
