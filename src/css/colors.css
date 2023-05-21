@@ -7,6 +7,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 
 :root,
 :root.purpleish {
+    color-scheme: dark;
     --red: #FF6666;
     --redAlt: #FF9999;
     --orange: #FF9966;
@@ -32,6 +33,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 }
 
 :root.dark {
+    color-scheme: dark;
     --red: #FF4444;
     --redAlt: #FF6666;
     --orange: #FF8844;
@@ -59,6 +61,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 
 /* make colors two shades darker later */
 :root.light {
+    color-scheme: light;
     --red: #DD2222;
     --redAlt: #DD4444;
     --orange: #DD6622;
@@ -84,6 +87,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 }
 
 :root.dracula {
+    color-scheme: dark;
     --red: #FF5555;
     --redAlt: #FF6E6E;
     --orange: #FFB86C;
@@ -109,6 +113,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 }
 
 :root.nord {
+    color-scheme: dark;
     --red: #BF616A;
     --redAlt: #BF616A; /* fix later */
     --orange: #D08770;
