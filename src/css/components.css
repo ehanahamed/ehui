@@ -349,19 +349,6 @@ input[type="checkbox"]:checked {
   transition-duration: 0.1s;
 }
 
-input[type="checkbox"] {
-  display: grid;
-  place-content: center;
-}
-
-input[type="checkbox"]::before {
-  content: "\udb83\ude1e";
-  width: 1.8rem;
-  height: 1.8rem;
-  margin: 0px;
-  color: var(--bg1);
-}
-
 .card {
   width: 40rem;
   height: 20rem;
