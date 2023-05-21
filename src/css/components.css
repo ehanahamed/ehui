@@ -304,7 +304,8 @@ the html of a radio should look like:
 </label>
 
 */
-.radio {
+.radio,
+.checkbox {
   display: grid;
   grid-template-columns: 1.8rem auto;
   gap: 1em;
@@ -312,7 +313,8 @@ the html of a radio should look like:
   margin-bottom: 1rem;
 }
 
-input[type="radio"] {
+input[type="radio"],
+input[type="checkbox"] {
   display: grid;
   place-content: center;
   appearance: none;
@@ -330,17 +332,21 @@ input[type="radio"] {
 }
 
 input[type="radio"]:hover,
-input[type="radio"]:focus-visible {
+input[type="radio"]:focus-visible,
+input[type="checkbox"]:hover,
+input[type="checkbox"]:focus-visible {
   border-color: var(--primaryAlt);
 }
 
-input[type="radio"]:focus-visible {
+input[type="radio"]:focus-visible,
+input[type="checkbox"]:focus-visible {
   outline: 0.2rem solid var(--primary);
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
 }
 
-input[type="radio"]:checked {
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
   background-color: var(--primary);
   transition-duration: 0.1s;
 }
