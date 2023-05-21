@@ -1,16 +1,14 @@
 # Styleguide
 
-HTML form elements should NOT use the label as a wrapper, the label and input should be insdie a div:
+HTML form elements should use the label as a wrapper:
 
 ```html
-<div class="">
-    <input type="" name"" id="ID" />
-    <label for="ID">text</label>
-</div>
+<label>
+    <input type="" name"" />
+</label>
 ```
 
 Unclosed elements should use a slash at the end
-
 ```html
 <element attribute="" />
 ```
