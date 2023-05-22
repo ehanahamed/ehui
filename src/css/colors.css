@@ -34,56 +34,56 @@ https://src.ehan.dev/designsys/LICENSE.txt
 
 :root.dark {
     color-scheme: dark;
-    --red: #FF4444;
-    --redAlt: #FF6666;
-    --orange: #FF8844;
-    --orangeAlt: #FFAA66;
-    --yellow: #FFFF44;
-    --yellowAlt: #FFFF66;
-    --green: #44FF44;
-    --greenAlt: #66FF66;
-    --blue: #4488FF;
-    --blueAlt: #66AAFF;
-    --bg3: #666666;
-    --bg2: #444444;
-    --bg1: #222222;
-    --black: #222222;
-    --fg: #DDDDDD;
-    --white: #DDDDDD;
-    --primary: #4488FF;
-    --primaryAlt: #66AAFF;
-    --purple: #8844FF;
-    --purpleAlt: #AA66FF;
-    --pink: #FF44FF;
-    --pinkAlt: #FF66FF;
+    --red: #ea2b2b;
+    --redAlt: #ff4b4b;
+    --orange: #ffc800;
+    --orangeAlt: #fbe56d;
+    --yellow: #ffc800;
+    --yellowAlt: #fbe56d;
+    --green: #58cc02;
+    --greenAlt: #a5ed6e;
+    --blue: #1899d6;
+    --blueAlt: #1cb0f6;
+    --bg3: #afafaf;
+    --bg2: #777777;
+    --bg1: #4b4b4b;
+    --black: #4b4b4b;
+    --fg: #f7f7f7;
+    --white: #f7f7f7;
+    --primary: #58cc02;
+    --primaryAlt: #a5ed6e;
+    --purple: #9069cd;
+    --purpleAlt: #ce82ff;
+    --pink: #9069cd;
+    --pinkAlt: #ce82ff;
 }
 
 
 /* make colors two shades darker later */
 :root.light {
     color-scheme: light;
-    --red: #DD2222;
-    --redAlt: #DD4444;
-    --orange: #DD6622;
-    --orangeAlt: #DD8844;
-    --yellow: #DDDD22;
-    --yellowAlt: #DDDD44;
-    --green: #22AA22;
-    --greenAlt: #44AA44;
-    --blue: #2266DD;
-    --blueAlt: #4488DD;
-    --bg3: #888888;
-    --bg2: #AAAAAA;
-    --bg1: #DDDDDD;
-    --black: #222222;
-    --fg: #222222;
-    --white: #DDDDDD;
-    --primary: #2266DD;
-    --primaryAlt: #4488DD;
-    --purple: #6622DD;
-    --purpleAlt: #8844DD;
-    --pink: #DD22DD;
-    --pinkAlt: #DD44DD;
+    --red: #ea2b2b;
+    --redAlt: #ff4b4b;
+    --orange: #ffc800;
+    --orangeAlt: #fbe56d;
+    --yellow: #ffc800;
+    --yellowAlt: #fbe56d;
+    --green: #58cc02;
+    --greenAlt: #a5ed6e;
+    --blue: #1899d6;
+    --blueAlt: #1cb0f6;
+    --bg3: #afafaf;
+    --bg2: #e5e5e5;
+    --bg1: #f7f7f7;
+    --black: #4b4b4b;
+    --fg: #4b4b4b;
+    --white: #f7f7f7;
+    --primary: #58cc02;
+    --primaryAlt: #a5ed6e;
+    --purple: #9069cd;
+    --purpleAlt: #ce82ff;
+    --pink: #9069cd;
+    --pinkAlt: #ce82ff;
 }
 
 :root.dracula {
