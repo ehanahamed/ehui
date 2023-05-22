@@ -32,35 +32,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --pinkAlt: #CC7AB1;
 }
 
-:root.dark {
-    color-scheme: dark;
-    --red: #ea2b2b;
-    --redAlt: #ff4b4b;
-    --orange: #ffc800;
-    --orangeAlt: #fbe56d;
-    --yellow: #ffc800;
-    --yellowAlt: #fbe56d;
-    --green: #58cc02;
-    --greenAlt: #a5ed6e;
-    --blue: #1899d6;
-    --blueAlt: #1cb0f6;
-    --bg3: #afafaf;
-    --bg2: #777777;
-    --bg1: #4b4b4b;
-    --black: #4b4b4b;
-    --fg: #f7f7f7;
-    --white: #f7f7f7;
-    --primary: #58cc02;
-    --primaryAlt: #a5ed6e;
-    --purple: #9069cd;
-    --purpleAlt: #ce82ff;
-    --pink: #9069cd;
-    --pinkAlt: #ce82ff;
-}
-
-
-/* make colors two shades darker later */
-:root.light {
+:root.owl {
     color-scheme: light;
     --red: #ea2b2b;
     --redAlt: #ff4b4b;
@@ -86,7 +58,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --pinkAlt: #ce82ff;
 }
 
-:root.dracula {
+:root.vampire {
     color-scheme: dark;
     --red: #FF5555;
     --redAlt: #FF6E6E;
@@ -110,30 +82,4 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --purpleAlt: #D6ACFF;
     --pink: #FF79C6;
     --pinkAlt: #FF92DF;
-}
-
-:root.nord {
-    color-scheme: dark;
-    --red: #BF616A;
-    --redAlt: #BF616A; /* fix later */
-    --orange: #D08770;
-    --orangeAlt: #D08770;
-    --yellow: #EBCB8B;
-    --yellowAlt: #EBCB8B;
-    --green: #A3BE8C;
-    --greenAlt: #A3BE8C; /* fix later */
-    --blue: #5E81AC;
-    --blueAlt: #81A1C1;
-    --bg3: #4C566A;
-    --bg2: #434C5E;
-    --bg1: #2E3440;
-    --black: #2E3440;
-    --fg: #D8DEE9;
-    --white: #D8DEE9;
-    --primary:#88C0D0;
-    --primaryAlt:#8FBCBB;
-    --purple: #B48EAD;
-    --purpleAlt: #B48EAD;
-    --pink: #B48EAD;
-    --pinkAlt: #B48EAD;
 }
