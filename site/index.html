@@ -65,6 +65,7 @@
                         <button id="owl" onclick="setTheme('owl')" class="alt">Owl</button>
                         <button id="vampire" onclick="setTheme('vampire')" class="alt">Vampire</button>
                         <button id="realdarkmode" onclick="setTheme('realdarkmode')" class="alt">Real Dark Mode</button>
+                        <button id="reallightmode" onclick="setTheme('reallightmode')" class="alt">Real Light Mode</button>
                     </div>
                     <p>Settings</p>
                     <div class="flex wrap">
@@ -243,12 +244,13 @@
     </footer>
     <script>
         function setTheme(theme) {
-            document.documentElement.classList.remove("purpleish", "owl", "vampire", "realdarkmode");
+            document.documentElement.classList.remove("purpleish", "owl", "vampire", "realdarkmode", "");
             document.documentElement.classList.add(theme);
             document.getElementById("purpleish").classList.add("alt");
             document.getElementById("owl").classList.add("alt");
             document.getElementById("vampire").classList.add("alt");
             document.getElementById("realdarkmode").classList.add("alt");
+            document.getElementById("reallightmode").classList.add("alt");
             document.getElementById(theme).classList.remove("alt");
         }
         function toggleMin() {
