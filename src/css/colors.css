@@ -32,6 +32,32 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --pinkAlt: #CC7AB1;
 }
 
+:root.reallightmode {
+    color-scheme: light;
+    --red: #ffffff;
+    --redAlt: #ffffff;
+    --orange: #ffffff;
+    --orangeAlt: #ffffff;
+    --yellow: #ffffff;
+    --yellowAlt: #ffffff;
+    --green: #ffffff;
+    --greenAlt: #ffffff;
+    --blue: #ffffff;
+    --blueAlt: #ffffff;
+    --bg3: #ffffff;
+    --bg2: #ffffff;
+    --bg1: #ffffff;
+    --black: #ffffff;
+    --fg: #cccccc;
+    --white: #ffffff;
+    --primary: #ffffff;
+    --primaryAlt: #ffffff;
+    --purple: #ffffff;
+    --purpleAlt: #ffffff;
+    --pink: #ffffff;
+    --pinkAlt: #ffffff;
+}
+
 :root.realdarkmode {
     color-scheme: dark;
     --red: #000000;
