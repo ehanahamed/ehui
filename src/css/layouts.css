@@ -177,7 +177,12 @@ header > .options {
     justify-self: right;
 }
 
-* + * {
+/*
+* + *        for default,
+* + element  for reversing margin-top: 0px;
+*/
+* + *,
+* + p {
     margin-top: 1rem;
 }
 
