@@ -136,7 +136,7 @@ code,
 
 header,
 .header {
-  position: sticky;
+  position: fixed;
   z-index: 100;
   top: 1rem;
   background-color: var(--bg1);
