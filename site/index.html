@@ -22,15 +22,15 @@
         </div>
         <div class="options">
             <div class="flex">
-                <button onclick="document.getElementById('lang').classList.toggle('hide');">
+                <button onclick="document.getElementById('lang').classList.toggle('hide');document.getElementById('theme').classList.add('hide');document.getElementById('options').classList.add('hide');">
                     <i class="nf nf-md-translate"></i>
                     Language
                 </button>
-                <button onclick="document.getElementById('theme').classList.toggle('hide');">
+                <button onclick="document.getElementById('lang').classList.add('hide');document.getElementById('theme').classList.toggle('hide');document.getElementById('options').classList.add('hide');">
                     <i class="nf nf-cod-symbol_color"></i>
                     Theme
                 </button>
-                <button onclick="document.getElementById('options').classList.toggle('hide');">
+                <button onclick="document.getElementById('lang').classList.add('hide');document.getElementById('theme').classList.add('hide');document.getElementById('options').classList.toggle('hide');">
                     <i class="nf nf-cod-settings"></i>
                     Options
                 </button>
