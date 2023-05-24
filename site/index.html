@@ -22,20 +22,20 @@
         </div>
         <div class="options">
             <div class="flex">
-                <button>
+                <button onclick="document.getElementById('lang').classList.toggle('hide');">
                     <i class="nf nf-md-translate"></i>
                     Language
                 </button>
-                <button>
+                <button onclick="document.getElementById('theme').classList.toggle('hide');">
                     <i class="nf nf-cod-symbol_color"></i>
                     Theme
                 </button>
-                <button>
+                <button onclick="document.getElementById('options').classList.toggle('hide');">
                     <i class="nf nf-cod-settings"></i>
                     Options
                 </button>
             </div>
-            <div id="lang">
+            <div id="lang" class="hide">
                 <div class="radio">
                   <input type="radio" name="lang" id="en" />
                   <label for="en">English</label>
@@ -49,7 +49,7 @@
                   <label for="gz">中文</label>
                 </div>
             </div>
-            <div id="theme">
+            <div id="theme" class="hide">
                 <div class="radio">
                   <input type="radio" name="theme" id="purpleish" />
                   <label for="en">Purpleish</label>
@@ -63,7 +63,7 @@
                   <label for="vampire">Vampire</label>
                 </div>
             </div>
-            <div id="options">
+            <div id="options" class="hide">
                 options?
             </div>
         </div>
