@@ -484,3 +484,7 @@ textarea.vertical {
 textarea.horizontal {
     resize: horizontal;
 }
+
+.hide {
+    display: none;
+}
