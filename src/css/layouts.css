@@ -183,6 +183,7 @@ header > .options {
 
 .flex > *,
 header,
+header + *,
 header > .menu,
 header > .options,
 .radio > *,
