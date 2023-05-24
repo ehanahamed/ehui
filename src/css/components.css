@@ -30,7 +30,6 @@ h1,
     font-size: 4rem;
     line-height: 4.4rem;
     font-weight: bold;
-    margin-top: 0px;
     margin-bottom: 2rem;
 }
 
@@ -39,7 +38,6 @@ h2,
     font-size: 2.4rem;
     line-height: 2.8rem;
     font-weight: bold;
-    margin-top: 0px;
     margin-bottom: 2rem;
 }
 
@@ -48,7 +46,6 @@ h3,
     font-size: 1.6rem;
     line-height: 2rem;
     font-weight: bold;
-    margin-top: 0px;
     margin-bottom: 2rem;
 }
 
@@ -57,7 +54,6 @@ h4,
     font-size: 1.2rem;
     line-height: 1.6rem;
     font-weight: bold;
-    margin-top: 0px;
     margin-bottom: 2rem;
 }
 
@@ -67,7 +63,6 @@ p {
     font-size: 1rem;
     line-height: 1.4rem;
     font-weight: normal;
-    margin-top: 0px;
     margin-bottom: 1rem;
 }
 
@@ -77,7 +72,6 @@ small {
     font-size: 0.8rem;
     line-height: 1.2rem;
     font-weight: normal;
-    margin-top: 0px;
     margin-bottom: 1rem;
 }
 
@@ -222,7 +216,6 @@ button,
   font-size: 1rem;
   line-height: 1.4rem;
   transition-duration: 0.4s;
-  margin-top: 0px;
 }
 
 button.alt,
@@ -272,7 +265,6 @@ textarea {
   font-size: 1rem;
   line-height: 1.4rem;
   transition-duration: 0.4s;
-  margin-top: 0px;
 }
 
 input[type="text"]:hover,
@@ -306,7 +298,6 @@ the html of a radio should look like:
   grid-template-columns: 1.8rem auto 1fr;
   grid-template-areas: "input label .";
   gap: 1em;
-  margin-top: 0px;
 }
 
 .radio input,
