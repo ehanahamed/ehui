@@ -164,7 +164,6 @@ footer,
 table {
   border-collapse: collapse;
   border-radius: 0.8rem;
-  margin-bottom: 1rem;
 }
 
 td, th {
@@ -224,7 +223,6 @@ button,
   line-height: 1.4rem;
   transition-duration: 0.4s;
   margin-top: 0px;
-  margin-bottom: 1rem;
 }
 
 button.alt,
@@ -275,7 +273,6 @@ textarea {
   line-height: 1.4rem;
   transition-duration: 0.4s;
   margin-top: 0px;
-  margin-bottom: 1rem;
 }
 
 input[type="text"]:hover,
@@ -310,7 +307,6 @@ the html of a radio should look like:
   grid-template-areas: "input label .";
   gap: 1em;
   margin-top: 0px;
-  margin-bottom: 1rem;
 }
 
 .radio input,
@@ -362,7 +358,6 @@ input[type="checkbox"]:checked {
 .card {
   width: 40rem;
   height: 20rem;
-  margin-bottom: 1rem;
 }
 
 .card > .content {
