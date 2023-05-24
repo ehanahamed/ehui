@@ -181,3 +181,11 @@ header button,
 header .button {
     margin-bottom: 0px;
 }
+
+div + div {
+    margin-top: 1rem;
+}
+
+div.flex div + div {
+    margin-top: 0px;
+}
