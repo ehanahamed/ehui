@@ -272,6 +272,15 @@
         <p>Text text text text</p>
     </footer>
     <script>
+        document.getElementById("purpleish").addEventListener("change", function (event) {
+            setTheme("purpleish");
+        });
+        document.getElementById("owl").addEventListener("change", function (event) {
+            setTheme("owl");
+        });
+        document.getElementById("vampire").addEventListener("change", function (event) {
+            setTheme("vampire");
+        });
         function setTheme(theme) {
             document.documentElement.classList.remove("purpleish", "owl", "vampire");
             document.documentElement.classList.add(theme);
