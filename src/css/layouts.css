@@ -187,10 +187,7 @@ header > .options {
 }
 
 .flex > *,
-header,
-header + *,
-header > .menu,
-header > .options,
+header > *,
 .radio > *,
 .checkbox > * {
     margin-top: 0px;
