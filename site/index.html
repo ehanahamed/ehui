@@ -64,7 +64,10 @@
                 </div>
             </div>
             <div id="options" class="hide">
-                options?
+                <div class="checkbox">
+                  <input type="checkbox" name="options" id="min" />
+                  <label for="min">Minimal UI</label>
+                </div>
             </div>
         </div>
     </header>
@@ -89,18 +92,6 @@
         </div>
         <div class="grid main">
             <div class="content">
-                <div class="box">
-                    <p>Select theme</p>
-                    <div class="flex wrap">
-                        <button id="purpleish" onclick="setTheme('purpleish')">Purpleish</button>
-                        <button id="owl" onclick="setTheme('owl')" class="alt">Owl</button>
-                        <button id="vampire" onclick="setTheme('vampire')" class="alt">Vampire</button>
-                    </div>
-                    <p>Settings</p>
-                    <div class="flex wrap">
-                        <button onclick="toggleMin()">Toggle Minimal UI</button>
-                    </div>
-                </div>
                 <h1>Heading 1</h1>
                 <h2>Heading 2</h2>
                 <h3>Heading 3</h3>
@@ -289,9 +280,11 @@
             document.getElementById("vampire").classList.add("alt");
             document.getElementById(theme).classList.remove("alt");
         }
-        function toggleMin() {
+
+        document.getElementById("min").addEventListener("change", function (event) {
             document.documentElement.classList.toggle("min")
-        }
+        });
+
         function flipCard() {
             document.getElementById("flip").classList.toggle("flip");
         }
