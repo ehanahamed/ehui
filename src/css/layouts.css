@@ -124,6 +124,10 @@ https://src.ehan.dev/designsys/LICENSE.txt
     }
 }
 
+.grid.split {
+    
+}
+
 .grid.main {
     display: grid;
     grid-template-columns: 2fr 10fr 2fr;
