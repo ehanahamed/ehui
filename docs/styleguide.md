@@ -29,8 +29,6 @@ However, when a button is by itself it should almost never have the `alt` class.
 
 Buttons are for "actions", links are to "bring you somewhere".
 
-For example, on a page lets say you can save something, the component to save the thing should be a button.
+For example, on a page lets say you can save something, the component to save the thing should be a button. At the same time, somewhere else on the page you can go to the documentation. That component should be a link. However, the need for a button overrides the need for a link. For example, if the link to the documentation was related to saving, and was right next to the save button, both components should be buttons, even though the documentation isn't an "action". (buttons right next to links just doesn't look nice)
 
-At the same time, somewhere else on the page you can go to the documentation. That component should be a link.
-
-However, the need for a button overrides the need for a link. For example, if the link to the documentation was related to saving, and was right next to the save button, both components should be buttons, even though the documentation isn't an "action". (buttons right next to links just doesn't look nice)
+In another example, lets say you have a menu where all the menu items are links to pages. All of them should be links. However, if one of them is an action, they would all become buttons. (However, this specific example doesn't exist, because a menu (the `menu` class, inside a `header` tag) should not have any actions in the first place, only links leading to other places)
