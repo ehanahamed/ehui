@@ -32,6 +32,7 @@ Now the `input` element is technically not hidden, the user can't see it, but th
 Then the rest is simple, just make the label look like a button. Since designsys already has a `.button` class, its super easy. You're html would look something like this:
 ```html
 <div>
+    <!-- no extra css is needed, all these classes are already in designsys -->
     <label for="ID" ... class="button">Select File</label>
     <input type="file" ... id="ID" class="invisible" />
 </div>
