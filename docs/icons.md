@@ -28,6 +28,7 @@ If you can, make icons on different lines than text or other html elements.
 If an icon is on the same line as text or another html element, add spaces:
 ```html
 <!-- adding whitespace effects the actual spacing of the rendered html -->
+<!-- this one-line technique should be used when dealing with html stuff in javascript -->
 <element> <i class="nf nf-something"></i> <element>text</element> </element>
 <element> <i class="nf nf-something"></i> text </element> 
 ```
