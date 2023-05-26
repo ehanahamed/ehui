@@ -17,7 +17,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 
 .flex {
     display: flex;
-    gap: 0px 1rem;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
