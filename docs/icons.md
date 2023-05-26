@@ -10,6 +10,30 @@ It is against deisngsys's design princibles to have "icon buttons" or icons by t
 
 If a button in a row of buttons has an icon, every button in that "group"/row should have an icon. If it becomes hard to find a related icon, none of the buttons in the group should have an icon.
 
+## HTML-ing
+
+If you can, make icons on different lines than text or other html elements.
+```html
+<!-- having them on different lines effects spacing -->
+<element>
+    <i class="nf nf-something"></i>
+    <element>text</element>
+</element>
+<element>
+    <i class="nf nf-something"></i>
+    text
+</element>
+```
+
+If an icon is on the same line as text or another html element, add spaces:
+```html
+<!-- adding whitespace effects the actual spacing of the rendered html -->
+<element> <i class="nf nf-something"></i> <element>text</element> </element>
+<element> <i class="nf nf-something"></i> text </element> 
+```
+
+If you do not follow this spacing and newline-ing guide, the icons will be spaced incorrectly and might even overlap text.
+
 ## Usage
 
 ### General guide
