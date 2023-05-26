@@ -125,9 +125,21 @@ https://src.ehan.dev/designsys/LICENSE.txt
 }
 
 .grid.split {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 4fr 1fr 4fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "";
+    grid-template-areas: "left middle right";
+}
+
+.grid.split > .left {
+    grid-area: left;
+}
+
+.grid.split > .middle {
+    grid-area: middle;
+}
+
+.grid.split > .right {
+    grid-area: right;
 }
 
 .grid.main {
