@@ -12,13 +12,13 @@ If a button in a row of buttons has an icon, every button in that "group"/row sh
 
 ## Usage
 
-### General usage guide
+### General guide
 
 Always use the most "visible" icon avilable, the one that can be most easily distinguished. Always prefer outlined over filled icons, filled icons look like "images", while outlined look like part of the text, which is what we want in icons.
 
 It is perfectly fine to mix icons from different icon libraries! (thats the whole point of using nerdfonts)
 
-### Specific icons
+### Icon usage
 
 An `X` icon should be used to indicate closing or hiding something. NOT deleting something.
 
@@ -27,3 +27,13 @@ A "trash bin" icon should be used to indicate deleting something. Anytime user-m
 An "eye" icon and a "crossed-out-eye" icon is used for toggling between two states of visibility. Like showing a password or hiding the password. The content should still be "there" and still "see"-able, just shown *differently*.
 
 Options, or an icon with a bunch of "sliders", is used for options, NOT settings. In designsys terminology options refers to designsys's settings and UI appearence options while settings refers to the actual app/website's settings and configuration. Settings, or a "cog"/gear is used for "settings".
+
+### Specific icons
+
+`nf-cod-trash` for trash can
+
+`nf-md-translate` for language
+
+`nf-cod-symbol_color` for theme/color
+
+`nf-cod-settings` for options
