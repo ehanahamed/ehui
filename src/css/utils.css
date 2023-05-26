@@ -488,3 +488,12 @@ textarea.horizontal {
 .hide {
     display: none;
 }
+
+.invisible {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 0px;
+    opacity: 0;
+    overflow: hidden;
+}
