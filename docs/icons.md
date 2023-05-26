@@ -62,3 +62,5 @@ Options, or an icon with a bunch of "sliders", is used for options, NOT settings
 `nf-cod-symbol_color` for theme/color
 
 `nf-cod-settings` for options
+
+`nf-cod-arrow_small_left`, `nf-cod-arrow_small_down`, `nf-cod-arrow_small_up`, `nf-cod-arrow_small_right` for moving an item in a certain direction.
