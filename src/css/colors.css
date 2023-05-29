@@ -18,18 +18,18 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --greenAlt: #7ACCB1;
     --blue: #5252CC;
     --blueAlt: #7A7ACC;
-    --bg3: #5C5C99;
-    --bg2: #3D3D66;
-    --bg1: #1E1E32;
-    --black: #1E1E32;
-    --fg: #A3A3CC;
-    --white: #A3A3CC;
     --primary: #7A52CC;
     --primaryAlt: #967ACC;
     --purple: #7A52CC;
     --purpleAlt: #967ACC;
     --pink: #CC52A3;
     --pinkAlt: #CC7AB1;
+    --bg3: #5C5C99;
+    --bg2: #3D3D66;
+    --bg1: #1E1E32;
+    --black: #1E1E32;
+    --fg: #A3A3CC;
+    --white: #A3A3CC;
 }
 
 :root.owl {
@@ -44,18 +44,18 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --greenAlt: #a5ed6e;
     --blue: #1899d6;
     --blueAlt: #1cb0f6;
-    --bg3: #afafaf;
-    --bg2: #e5e5e5;
-    --bg1: #f7f7f7;
-    --black: #4b4b4b;
-    --fg: #4b4b4b;
-    --white: #f7f7f7;
     --primary: #58cc02;
     --primaryAlt: #a5ed6e;
     --purple: #9069cd;
     --purpleAlt: #ce82ff;
     --pink: #9069cd;
     --pinkAlt: #ce82ff;
+    --bg3: #afafaf;
+    --bg2: #e5e5e5;
+    --bg1: #f7f7f7;
+    --black: #4b4b4b;
+    --fg: #4b4b4b;
+    --white: #f7f7f7;
 }
 
 :root.vampire {
@@ -70,16 +70,16 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --greenAlt: #69FF94;
     --blue: #8BE9FD;
     --blueAlt: #A4FFFF;
-    --bg3: #6272a4;
-    --bg2: #44475a;
-    --bg1: #282A36;
-    --black: #282A36;
-    --fg: #F8F8F2;
-    --white: #F8F8F2;
     --primary:#BD93F9;
     --primaryAlt:#D6ACFF;
     --purple: #BD93F9;
     --purpleAlt: #D6ACFF;
     --pink: #FF79C6;
     --pinkAlt: #FF92DF;
+    --bg3: #6272a4;
+    --bg2: #44475a;
+    --bg1: #282A36;
+    --black: #282A36;
+    --fg: #F8F8F2;
+    --white: #F8F8F2;
 }
