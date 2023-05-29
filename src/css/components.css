@@ -241,7 +241,7 @@ button:focus-visible,
 }
 
 ::placeholder {
-  color: var(--bg2);
+  color: var(--bg3);
   font-size: 1rem;
   font-family: sans-serif;
   font-weight: normal;
