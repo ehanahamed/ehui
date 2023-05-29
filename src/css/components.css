@@ -258,6 +258,7 @@ textarea {
   text-align: left;
   cursor: text;
   text-decoration: none;
+  font-family: sans-serif;
   background-color: var(--bg1);
   color: var(--fg);
   border: 0.2rem solid var(--primary);
