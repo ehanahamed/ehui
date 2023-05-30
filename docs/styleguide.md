@@ -15,6 +15,40 @@ Unclosed elements should use a slash at the end
 <element attribute="" />
 ```
 
+### HTML IDs
+
+IDs for headers and IDs for other elements are much different, headers should have "user-readable" IDs, while other elements who's IDs are used in JS should have "structure-sensitive" IDs. 
+
+HTML IDs for headers should have a user-understandable ID. For example:
+```html
+<h2>Settings</h2>
+<h3 id="appearance">Appearance</h3>
+<element>...</element>
+<h3 id="accesibility">Accesibility</h3>
+<element>...</element>
+<something>
+    <h3 id="account">Account</h3>
+    <element>...</element>
+</something>
+```
+
+HTML IDs for elements with JavaScript functionality should be likie:
+```html
+<div class="header">
+    <div class="menu">
+        <button id="headerMenuSettingsbutton">Show Settings</button>
+        <div id="headerMenuSettingssection">
+            ...
+        </div>
+    </div>
+</div>
+<something>
+    <element id="somethingElement">...</element>
+</something>
+```
+
+Notice how when two elements have a similar name, like the settings button and the settings section, you just add another descriptive word. the settings button is named `settingsbutton` and the settings section is `settingssection`. The parent elements are also listed in the full id, so that even if theres another settings button somewhere else, you'll never get confused.
+
 ## UI/UX
 
 ### When to use alt buttons
