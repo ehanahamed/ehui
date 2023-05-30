@@ -1,8 +1,16 @@
 # Wording
 
+## Grammar and capitalization
+
+A button with really short text, like "Sign Up", should have "title capitalization", all words are capitalized except conjunctions. A button with longer text like a sentence, for example "Continue without an account" should have "sentence capitalization", you capitalize it like you would capitalize a normal sentence. However, do not use puncuation.
+
+The above logic also applies to titles/headings (h2, h3, etc), if the text is short, like "Get Started", its "title capitalization", if its longer, like "Create or open a dataset". Titles also do not use *normal* puncuation, however titles that are questions should use a question mark! Some titles might have commas, but almost never use periods at the end of titles.
+
+Text/content should almost ALWAYS use proper grammar and capitalization.
+
 ## Source code
 
-Source code should not use tenses (when possible), for example, a flippable/double-sided card is named `card double`, both words are "tenseless", the class to make the card flipped is named `flip`, NOT "flipped", the english language has a lot of odd and irregular tense conjugations for different words, so its simplier to juse use them like this, at least in the source code. In the actual website content, you should always use correct grammar.
+Source code should not use tenses (when possible), for example, a flippable/double-sided card is named `card double`, the name is "tenseless", the class to make the card flipped is named `flip`, NOT "flipped", the english language has a lot of odd and irregular tense conjugations for different words, so its simplier to juse use them like this, at least in the source code. In the actual website content, you should always use correct grammar.
 
 ### Center vs middle
 
