@@ -8,6 +8,10 @@ The above logic also applies to titles/headings (h2, h3, etc), if the text is sh
 
 Text/content should almost ALWAYS use proper grammar and capitalization.
 
+## Styling text
+
+Feel free to use bold (`<b>`) to indicate important text, and bg3 (`<span class="bg3">`) to make less important text stand out less. However, do not use both in one paragraph with no "normal" text.
+
 ## Source code
 
 Source code should not use tenses (when possible), for example, a flippable/double-sided card is named `card double`, the name is "tenseless", the class to make the card flipped is named `flip`, NOT "flipped", the english language has a lot of odd and irregular tense conjugations for different words, so its simplier to juse use them like this, at least in the source code. In the actual website content, you should always use correct grammar.
