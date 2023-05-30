@@ -15,7 +15,7 @@
 <body>
     <header>
         <div class="menu">
-            <button onclick="document.getElementById('menu').classList.toggle('hide');">
+            <button id="buttonMenu">
                 <i class="nf nf-md-menu"></i>
                 Menu
             </button>
@@ -29,15 +29,15 @@
         </div>
         <div class="options">
             <div class="flex">
-                <button onclick="document.getElementById('lang').classList.toggle('hide');document.getElementById('theme').classList.add('hide');document.getElementById('options').classList.add('hide');">
+                <button id="buttonLang">
                     <i class="nf nf-md-translate"></i>
                     Language
                 </button>
-                <button onclick="document.getElementById('lang').classList.add('hide');document.getElementById('theme').classList.toggle('hide');document.getElementById('options').classList.add('hide');">
+                <button id="buttonTheme">
                     <i class="nf nf-cod-symbol_color"></i>
                     Theme
                 </button>
-                <button onclick="document.getElementById('lang').classList.add('hide');document.getElementById('theme').classList.add('hide');document.getElementById('options').classList.toggle('hide');">
+                <button id="buttonOptions">
                     <i class="nf nf-cod-settings"></i>
                     Options
                 </button>
@@ -284,6 +284,19 @@
         <p>Text text text text</p>
     </footer>
     <script>
+        document.getElementById("buttonMenu").addEventListener("click", function () {
+            document.getElementById('menu').classList.toggle('hide');
+        });
+        document.getElementById("buttonTheme").addEventListener("click", function () {
+            document.getElementById('lang').classList.add('hide');
+            document.getElementById('theme').classList.toggle('hide');
+            document.getElementById('options').classList.add('hide');
+        });
+        document.getElementById("buttonOptions").addEventListener("click", function () {
+            document.getElementById('lang').classList.add('hide');
+            document.getElementById('theme').classList.add('hide');
+            document.getElementById('options').classList.toggle('hide');
+        });
         document.getElementById("purpleish").addEventListener("change", function (event) {
             setTheme("purpleish");
         });
