@@ -18,7 +18,9 @@ html.min button,
 html.min .button,
 html.min input[type="text"],
 html.min input[type="password"],
-html.min textarea {
+html.min textarea,
+html.min input[type="radio"],
+html.min input[type="checkbox"] {
     transition-duration: 0s;
 }
 
