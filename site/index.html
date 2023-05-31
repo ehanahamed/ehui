@@ -301,6 +301,11 @@
         document.getElementById("buttonMenu").addEventListener("click", function () {
             document.getElementById('menu').classList.toggle('hide');
         });
+        document.getElementById("buttonLang").addEventListener("click", function () {
+            document.getElementById('lang').classList.toggle('hide');
+            document.getElementById('theme').classList.add('hide');
+            document.getElementById('options').classList.add('hide');
+        });
         document.getElementById("buttonTheme").addEventListener("click", function () {
             document.getElementById('lang').classList.add('hide');
             document.getElementById('theme').classList.toggle('hide');
