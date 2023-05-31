@@ -15,11 +15,11 @@
 <body>
     <header>
         <div class="menu">
-            <button id="buttonMenu">
+            <button id="headerMenuMenubutton">
                 <i class="nf nf-md-menu"></i>
                 Menu
             </button>
-            <div id="menu" class="hide">
+            <div id="headerMenuMenudiv" class="hide">
                 <ul>
                     <li><a href="#" class="text fg">Home</a></li>
                     <li><a href="#">Demo</a></li>
@@ -29,20 +29,20 @@
         </div>
         <div class="options">
             <div class="flex center">
-                <button id="buttonLang">
+                <button id="headerOptionsLangbutton">
                     <i class="nf nf-md-translate"></i>
                     Language
                 </button>
-                <button id="buttonTheme">
+                <button id="headerOptionsThemebutton">
                     <i class="nf nf-cod-symbol_color"></i>
                     Theme
                 </button>
-                <button id="buttonOptions">
+                <button id="headerOptionsOptionsbutton">
                     <i class="nf nf-cod-settings"></i>
                     Options
                 </button>
             </div>
-            <div id="lang" class="hide">
+            <div id="headerOptionsLangdiv" class="hide">
                 <div class="radio">
                   <input type="radio" name="lang" id="en" checked/>
                   <label for="en">English</label>
@@ -56,7 +56,7 @@
                   <label for="gz">中文</label>
                 </div>
             </div>
-            <div id="theme" class="hide">
+            <div id="headerOptionsThemediv" class="hide">
                 <div class="radio">
                   <input type="radio" name="theme" id="purpleish" checked/>
                   <label for="purpleish">Purpleish</label>
@@ -70,7 +70,7 @@
                   <label for="vampire">Vampire</label>
                 </div>
             </div>
-            <div id="options" class="hide">
+            <div id="headerOptionsOptionsdiv" class="hide">
                 <div class="checkbox">
                   <input type="checkbox" name="options" id="min" />
                   <label for="min">Disable Animations</label>
@@ -298,23 +298,23 @@
         <p>Text text text text</p>
     </footer>
     <script>
-        document.getElementById("buttonMenu").addEventListener("click", function () {
-            document.getElementById('menu').classList.toggle('hide');
+        document.getElementById("headerMenuMenubutton").addEventListener("click", function () {
+            document.getElementById('headerMenuMenudiv').classList.toggle('hide');
         });
-        document.getElementById("buttonLang").addEventListener("click", function () {
-            document.getElementById('lang').classList.toggle('hide');
-            document.getElementById('theme').classList.add('hide');
-            document.getElementById('options').classList.add('hide');
+        document.getElementById("headerOptionsLangbutton").addEventListener("click", function () {
+            document.getElementById('headerOptionsLangdiv').classList.toggle('hide');
+            document.getElementById('headerOptionsThemediv').classList.add('hide');
+            document.getElementById('headerOptionsOptionsdiv').classList.add('hide');
         });
-        document.getElementById("buttonTheme").addEventListener("click", function () {
-            document.getElementById('lang').classList.add('hide');
-            document.getElementById('theme').classList.toggle('hide');
-            document.getElementById('options').classList.add('hide');
+        document.getElementById("headerOptionsThemebutton").addEventListener("click", function () {
+            document.getElementById('headerOptionsLangdiv').classList.add('hide');
+            document.getElementById('headerOptionsThemediv').classList.toggle('hide');
+            document.getElementById('headerOptionsOptionsdiv').classList.add('hide');
         });
-        document.getElementById("buttonOptions").addEventListener("click", function () {
-            document.getElementById('lang').classList.add('hide');
-            document.getElementById('theme').classList.add('hide');
-            document.getElementById('options').classList.toggle('hide');
+        document.getElementById("headerOptionsOptionsbutton").addEventListener("click", function () {
+            document.getElementById('headerOptionsLangdiv').classList.add('hide');
+            document.getElementById('headerOptionsThemediv').classList.add('hide');
+            document.getElementById('headerOptionsOptionsdiv').classList.toggle('hide');
         });
         document.getElementById("purpleish").addEventListener("change", function (event) {
             setTheme("purpleish");
