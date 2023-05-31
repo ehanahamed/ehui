@@ -316,13 +316,13 @@
             document.getElementById('headerOptionsThemediv').classList.add('hide');
             document.getElementById('headerOptionsOptionsdiv').classList.toggle('hide');
         });
-        document.getElementById("purpleish").addEventListener("change", function (event) {
+        document.getElementById("headerOptionsThemedivPurpleish").addEventListener("change", function (event) {
             setTheme("purpleish");
         });
-        document.getElementById("owl").addEventListener("change", function (event) {
+        document.getElementById("headerOptionsThemedivOwl").addEventListener("change", function (event) {
             setTheme("owl");
         });
-        document.getElementById("vampire").addEventListener("change", function (event) {
+        document.getElementById("headerOptionsThemedivVampire").addEventListener("change", function (event) {
             setTheme("vampire");
         });
         function setTheme(theme) {
@@ -334,7 +334,7 @@
             document.getElementById(theme).classList.remove("alt");
         }
 
-        document.getElementById("min").addEventListener("change", function (event) {
+        document.getElementById("headerOptionsOptionsdivMin").addEventListener("change", function (event) {
             document.documentElement.classList.toggle("min")
         });
 
