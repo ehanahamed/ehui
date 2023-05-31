@@ -107,6 +107,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
     grid-area: logo;
     justify-self: start;
     align-self: center;
+    color: var(--primary);
 }
 
 @media only screen and (max-width: 800px) {
