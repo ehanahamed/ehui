@@ -33,3 +33,7 @@ The actual UI, unlike the source code, should always use correct grammar and sho
 "Delete" should mean that the something is being gone-ed. For example, if there is a textbox, and you are deleteing the textbox, and any content inside it (the textbox would be gone, not moved somewhere else, just gone completly) that button would be labeled "delete". 
 
 It doesn't matter if the action is undo-able, if it is gone-ed it is "delete"-ed, if it is moved out of something it is "remove"-ed. 
+
+## Sign Up, Log In, & Sign In
+
+I use "sign up" and "sign in", cause they're the same first word and "look better". Theres really no logic to this preference, it just looks nicer to read.
