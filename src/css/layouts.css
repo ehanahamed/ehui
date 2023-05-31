@@ -85,6 +85,22 @@ https://src.ehan.dev/designsys/LICENSE.txt
     align-content: space-around;
 }
 
+.flex.itemscenter {
+    align-items: center;
+}
+
+.flex.itemsstretch {
+    align-items: stretch;
+}
+
+.flex.itemsstart {
+    align-items: flex-start;
+}
+
+.flex.itemsend {
+    align-items: flex-end;
+}
+
 .grid {
     display: grid;
 }
