@@ -18,7 +18,7 @@ Source code should not use tenses (when possible), for example, a flippable/doub
 
 ### Center vs middle
 
-In designsys's source code `center` should refer to centered alignment, like text-align, which way content floats, etc.
+In the source code, `center` should refer to centered alignment, like text-align, which way content floats, etc.
 
 `middle` should be used when there are many options like left right and middle. Like in a grid layout, lets say there is three grid areas, one would be left right and middle, NOT center.
 
