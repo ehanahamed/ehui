@@ -41,7 +41,7 @@ If you do not follow this spacing and newline-ing guide, the icons will be space
 
 Always use the most "visible" icon avilable, the one that can be most easily distinguished. Always prefer outlined over filled icons, filled icons look like "images", while outlined look like part of the text, which is what we want in icons.
 
-It is perfectly fine to mix icons from different icon libraries! (thats the whole point of using nerdfonts)
+It is perfectly fine to mix icons from different icon libraries! (thats the whole point of using nerdfonts) However, don't mix stuff too far from eachother, for example if theres an octicon `X` you're using for "incorrect", and a matching `checkmark` you could use for "correct", use the matching icon!
 
 ### Icon usage
 
