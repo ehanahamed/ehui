@@ -57,6 +57,10 @@ https://src.ehan.dev/designsys/LICENSE.txt
     justify-content: center;
 }
 
+.flex.spaceBetween {
+    justify-content: space-between;
+}
+
 .flex.stretch {
     justify-content: stretch;
 }
