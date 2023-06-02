@@ -23,8 +23,13 @@ document.getElementById("headerOptionsOptionsbutton").addEventListener("click", 
     document.getElementById('headerOptionsThemediv').classList.add('hide');
     document.getElementById('headerOptionsOptionsdiv').classList.toggle('hide');
 });
+function setTheme(theme) {
+    document.documentElement.classList.remove("purpleish", "owl", "vampire");
+    document.documentElement.classList.add(theme);
+}
 document.getElementById("headerOptionsThemedivPurpleish").addEventListener("change", function (event) {
     setTheme("purpleish");
+    
 });
 document.getElementById("headerOptionsThemedivOwl").addEventListener("change", function (event) {
     setTheme("owl");
@@ -32,10 +37,6 @@ document.getElementById("headerOptionsThemedivOwl").addEventListener("change", f
 document.getElementById("headerOptionsThemedivVampire").addEventListener("change", function (event) {
     setTheme("vampire");
 });
-function setTheme(theme) {
-    document.documentElement.classList.remove("purpleish", "owl", "vampire");
-    document.documentElement.classList.add(theme);
-}
 document.getElementById("headerOptionsOptionsdivMin").addEventListener("change", function (event) {
     document.documentElement.classList.toggle("min")
 });
