@@ -331,6 +331,10 @@ mark.pinkAlt,
     color: var(--pinkAlt);
 }
 
+a.mark {
+    color: var(--primary);
+}
+
 mark.markRed,
 .mark.markRed {
     background-color: var(--red);
