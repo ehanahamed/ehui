@@ -86,6 +86,18 @@ html.min .card.double.flip > .content > .front,
 }
 
 /*
+specific css-negation-stuff utils
+*/
+a.mark {
+    color: var(--primary);
+}
+
+a.mark:hover,
+a.mark:focus-visible {
+    color: var(--primaryAlt);
+}
+
+/*
 other utils
 */
 
@@ -329,10 +341,6 @@ u.pinkAlt,
 mark.pinkAlt,
 .mark.pinkAlt {
     color: var(--pinkAlt);
-}
-
-a.mark {
-    color: var(--primary);
 }
 
 mark.markRed,
