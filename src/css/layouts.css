@@ -25,7 +25,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
     flex-direction: row;
 }
 
-.flex.row.left {
+.flex.row.rev {
     flex-direction: row-reverse;
 }
 
@@ -33,7 +33,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
     flex-direction: column;
 }
 
-.flex.col.up {
+.flex.col.rev {
     flex-direction: column-reverse;
 }
 
