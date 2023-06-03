@@ -10,8 +10,6 @@ if (localStorage.getItem("theme") === "purpleish") {
     document.getElementById("headerOptionsThemedivPurpleish").checked = true;
 } else if (localStorage.getItem("theme") === "owl") {
     document.getElementById("headerOptionsThemedivOwl").checked = true;
-} else if (localStorage.getItem("theme") === "vampire") {
-    document.getElementById("headerOptionsThemedivVampire").checked = true;
 }
 
 document.getElementById("headerMenuMenubutton").addEventListener("click", function () {
@@ -33,7 +31,7 @@ document.getElementById("headerOptionsOptionsbutton").addEventListener("click", 
     document.getElementById('headerOptionsOptionsdiv').classList.toggle('hide');
 });
 function setTheme(theme) {
-    document.documentElement.classList.remove("purpleish", "owl", "vampire");
+    document.documentElement.classList.remove("purpleish", "owl");
     document.documentElement.classList.add(theme);
 }
 document.getElementById("headerOptionsThemedivPurpleish").addEventListener("change", function (event) {
@@ -43,10 +41,6 @@ document.getElementById("headerOptionsThemedivPurpleish").addEventListener("chan
 document.getElementById("headerOptionsThemedivOwl").addEventListener("change", function (event) {
     setTheme("owl");
     localStorage.setItem("theme", "owl");
-});
-document.getElementById("headerOptionsThemedivVampire").addEventListener("change", function (event) {
-    setTheme("vampire");
-    localStorage.setItem("theme", "vampire");
 });
 document.getElementById("headerOptionsOptionsdivMin").addEventListener("change", function (event) {
     document.documentElement.classList.toggle("min")
