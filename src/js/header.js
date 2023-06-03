@@ -6,6 +6,7 @@ https://src.ehan.dev/design/LICENSE.txt
 */
 
 setTheme(localStorage.getItem("theme"));
+document.getElementById("headerOptionsThemediv" + localStorage.getItem("theme")).checked = true;
 
 document.getElementById("headerMenuMenubutton").addEventListener("click", function () {
     document.getElementById('headerMenuMenudiv').classList.toggle('hide');
