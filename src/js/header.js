@@ -5,6 +5,8 @@ Licensed under the UPL-1.0 License
 https://src.ehan.dev/design/LICENSE.txt
 */
 
+setTheme(localStorage.getItem("theme"));
+
 document.getElementById("headerMenuMenubutton").addEventListener("click", function () {
     document.getElementById('headerMenuMenudiv').classList.toggle('hide');
 });
@@ -29,13 +31,15 @@ function setTheme(theme) {
 }
 document.getElementById("headerOptionsThemedivPurpleish").addEventListener("change", function (event) {
     setTheme("purpleish");
-    
+    localStorage.setItem("theme", "purpleish");
 });
 document.getElementById("headerOptionsThemedivOwl").addEventListener("change", function (event) {
     setTheme("owl");
+    localStorage.setItem("theme", "owl");
 });
 document.getElementById("headerOptionsThemedivVampire").addEventListener("change", function (event) {
     setTheme("vampire");
+    localStorage.setItem("theme", "vampire");
 });
 document.getElementById("headerOptionsOptionsdivMin").addEventListener("change", function (event) {
     document.documentElement.classList.toggle("min")
