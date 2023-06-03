@@ -10,8 +10,7 @@ if (localStorage.getItem("theme") === "purpleish") {
     document.getElementById("headerOptionsThemedivPurpleish").checked = true;
 } else if (localStorage.getItem("theme") === "owl") {
     document.getElementById("headerOptionsThemedivOwl").checked = true;
-}
-
+};
 document.getElementById("headerMenuMenubutton").addEventListener("click", function () {
     document.getElementById('headerMenuMenudiv').classList.toggle('hide');
 });
