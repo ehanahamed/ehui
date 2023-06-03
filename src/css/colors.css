@@ -58,6 +58,13 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --bg1: #f7f7f7;
 }
 
+:root.owl button:hover,
+:root.owl button:focus-visible,
+:root.owl .button:hover,
+:root.owl .button:focus-visible {
+    color: var(--fg);
+}
+
 :root.vampire {
     color-scheme: dark;
     --red: #FF5555;
