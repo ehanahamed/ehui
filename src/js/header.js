@@ -6,7 +6,13 @@ https://src.ehan.dev/design/LICENSE.txt
 */
 
 setTheme(localStorage.getItem("theme"));
-document.getElementById("headerOptionsThemediv" + localStorage.getItem("theme")).checked = true;
+if (localStorage.getItem("theme") === "purpleish") {
+    document.getElementById("headerOptionsThemedivPurpleish").checked = true;
+} else if (localStorage.getItem("theme") === "owl") {
+    document.getElementById("headerOptionsThemedivOwl").checked = true;
+} else if (localStorage.getItem("theme") === "vampire") {
+    document.getElementById("headerOptionsThemedivVampire").checked = true;
+}
 
 document.getElementById("headerMenuMenubutton").addEventListener("click", function () {
     document.getElementById('headerMenuMenudiv').classList.toggle('hide');
