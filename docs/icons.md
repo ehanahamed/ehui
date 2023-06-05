@@ -55,7 +55,7 @@ Options, or an icon with a bunch of "sliders", is used for options, NOT settings
 
 ### Specific icons
 
-`nf-cod-trash` for trash can
+`nf-fa-trash_o` for trash can
 
 `nf-md-translate` for language
 
@@ -63,4 +63,4 @@ Options, or an icon with a bunch of "sliders", is used for options, NOT settings
 
 `nf-cod-settings` for options
 
-`nf-cod-arrow_small_left`, `nf-cod-arrow_small_down`, `nf-cod-arrow_small_up`, `nf-cod-arrow_small_right` for moving an item in a certain direction.
+`nf-cod-arrow_left`, `nf-cod-arrow_down`, `nf-cod-arrow_up`, `nf-cod-arrow_right` for moving an item in a certain direction.
