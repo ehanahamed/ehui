@@ -485,6 +485,11 @@ mark.markPinkAlt,
     border-color: var(--green);
 }
 
+pre,
+.pre {
+    white-space: pre;
+}
+
 button.red,
 .button.red {
   background-color: var(--red);
