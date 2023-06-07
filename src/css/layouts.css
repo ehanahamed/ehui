@@ -109,6 +109,10 @@ https://src.ehan.dev/designsys/LICENSE.txt
     display: grid;
 }
 
+.grid.list {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .grid.hero {
     grid-template-columns: 6fr 2fr 6fr;
     grid-template-rows: 1fr;
