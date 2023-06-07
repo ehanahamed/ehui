@@ -229,6 +229,7 @@ header > .options {
 }
 
 .flex > *,
+.grid > *,
 header > *,
 .radio > *,
 .checkbox > * {
