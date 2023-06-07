@@ -355,8 +355,8 @@ input[type="checkbox"]:checked {
 }
 
 .card {
-  width: 40rem;
-  height: 20rem;
+  width: 100%;
+  aspect-ratio: 6 / 4;
 }
 
 .card > .content {
