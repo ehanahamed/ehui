@@ -1,7 +1,6 @@
 TODO:
  - grid list
-   - 4 columns for desktop
-   - 2 for mobile
+   - should mobile have 1 or 2 columns?
  - fix margin(s)
  - autocomplete/autofill colors
  - make sure tab works on file inputs
