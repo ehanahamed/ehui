@@ -114,6 +114,12 @@ https://src.ehan.dev/designsys/LICENSE.txt
     gap: 1rem;
 }
 
+@media only screen and (max-width: 800px) {
+    .grid.list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 .grid.hero {
     grid-template-columns: 6fr 2fr 6fr;
     grid-template-rows: 1fr;
