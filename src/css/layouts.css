@@ -110,13 +110,13 @@ https://src.ehan.dev/designsys/LICENSE.txt
 }
 
 .grid.list {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
 }
 
 @media only screen and (max-width: 800px) {
     .grid.list {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
