@@ -192,6 +192,10 @@ https://src.ehan.dev/designsys/LICENSE.txt
     }
 }
 
+.grid.screen {
+    height: 100%;
+}
+
 .grid.screen > .content {
     justify-self: center;
     align-self: center;
