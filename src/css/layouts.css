@@ -11,14 +11,6 @@ https://src.ehan.dev/designsys/LICENSE.txt
     box-sizing: border-box;
 }
 
-.page {
-    overflow: scroll;
-}
-
-.screen {
-    overflow: hidden;
-}
-
 .center {
     text-align: center;
 }
@@ -213,6 +205,16 @@ https://src.ehan.dev/designsys/LICENSE.txt
         grid-template-columns: 2fr 1fr;
     }
     */
+}
+
+.grid.main.page {
+    place-content: start;
+    overflow: scroll;
+}
+
+.grid.main.screen {
+    place-content: center;
+    overflow: hidden;
 }
 
 header {
