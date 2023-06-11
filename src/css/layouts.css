@@ -205,7 +205,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 
 body.screen {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
     margin-top: 0px;
 }
 
