@@ -1,6 +1,5 @@
 TODO:
- - grid list
-   - should mobile have 1 or 2 columns?
+ - **page & screen layout**
  - fix margin(s)
  - autocomplete/autofill colors
  - make sure tab works on file inputs
