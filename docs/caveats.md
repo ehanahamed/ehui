@@ -4,7 +4,7 @@
 
 Web browsers hate web developers, so they made it annoying to style the default `<input type="file"...` element.
 
-They say they do this for "saftey" so the "user doesn't accidentally upload stuff cause..." but all their explainations are just excuses cause they're actually too lazy and egotistical to improve any code they already wrote. "BuT ChAnGiNG iT WiLl cAuSE BrEAkiNG CHaNgES to SoME SiTEs", they'll say. (It won't btw)
+They say they do this for "saftey" so the "user doesn't accidentally upload stuff cause..." but all their explainations are just excuses cause they're actually too lazy and egotistical to improve any code they already wrote. "BuT ChAnGiNG iT WiLl cAuSE BrEAkiNG CHaNgES to SoME SiTEs", they'll say. (It won't btw cause changing something that doesnt remove or change any existing features won't break anything, but they like to pretend it will.)
 
 ### Current "sollution"
 
@@ -39,3 +39,7 @@ Then the rest is simple, just make the label look like a button. Since designsys
 ```
 
 The above html is how file inputs are supposed to be written when using designsys's css.
+
+## position: sticky
+
+web browsers decided that `position: sticky` will litterally just behave randomly if any of it's parent elements do not have `height: auto`, there is no reason, logic, or explanation to this nonsense, they just do it cause its funny to them when stuff doesn't work as intended.
