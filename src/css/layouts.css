@@ -194,11 +194,19 @@ https://src.ehan.dev/designsys/LICENSE.txt
 
 .grid.screen {
     height: 100%;
+    margin-top: 0px;
 }
 
 .grid.screen > .content {
     justify-self: center;
     align-self: center;
+    margin-top: 0px;
+}
+
+body.screen {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 0px;
 }
 
 header {
