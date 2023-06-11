@@ -173,48 +173,28 @@ https://src.ehan.dev/designsys/LICENSE.txt
     grid-area: right;
 }
 
-.grid.main {
-    display: grid;
+.grid.page {
     grid-template-columns: 2fr 10fr 2fr;
     grid-template-rows: 1fr;
     grid-template-areas:
         ". content .";
 }
 
-.grid.main > .content {
+.grid.page > .content {
     grid-area: content;
     justify-self: stretch;
-    align-self: center;
-}
-/*
-.grid.main.aside {
-    grid-template-areas:
-        ". content aside";
+    align-self: start;
 }
 
-.grid.main.aside > .aside {
-    grid-area: aside;
-}
-*/
 @media only screen and (max-width: 800px) {
-    .grid.main {
+    .grid.page {
         grid-template-columns: 1fr 12fr 1fr;
     }
-    /*
-    .grid.main.aside {
-        grid-template-columns: 2fr 1fr;
-    }
-    */
 }
 
-.grid.main.page {
-    place-content: start;
-    overflow: scroll;
-}
-
-.grid.main.screen {
-    place-content: center;
-    overflow: hidden;
+.grid.screen > .content {
+    justify-self: center;
+    align-self: center;
 }
 
 header {
