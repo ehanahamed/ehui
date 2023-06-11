@@ -203,7 +203,12 @@ https://src.ehan.dev/designsys/LICENSE.txt
     margin-top: 0px;
 }
 
-body.screen {
+html.screen {
+    height: 100%;
+}
+
+html.screen body {
+    height: 100%;
     display: grid;
     grid-template-rows: auto 1fr;
     margin-top: 0px;
