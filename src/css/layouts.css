@@ -11,6 +11,14 @@ https://src.ehan.dev/designsys/LICENSE.txt
     box-sizing: border-box;
 }
 
+.page {
+    overflow: scroll;
+}
+
+.screen {
+    overflow: hidden;
+}
+
 .center {
     text-align: center;
 }
