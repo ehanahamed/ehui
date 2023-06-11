@@ -37,3 +37,7 @@ It doesn't matter if the action is undo-able, if it is gone-ed it is "delete"-ed
 ## Sign Up, Log In, & Sign In
 
 I use "sign up" and "sign in", cause they're the same first word and "look better". Theres really no logic to this preference, it just looks nicer to read.
+
+## Pages vs Screens
+
+Pages are scrollable with many things on them, screens have one main breif thing on them. Screens are full-height and do not scroll. Pages scroll.
