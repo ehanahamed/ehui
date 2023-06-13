@@ -362,6 +362,10 @@ input[type="checkbox"]:checked {
 
 .caption {
   width: 40rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr;
 }
 
 @media only screen and (max-width: 800px) {
