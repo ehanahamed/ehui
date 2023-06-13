@@ -105,6 +105,22 @@ https://src.ehan.dev/designsys/LICENSE.txt
     align-items: flex-end;
 }
 
+.justifyselfstretch {
+    justify-self: stretch;
+}
+
+.justifyselfcenter {
+    justify-self: center;
+}
+
+.justifyselfstart {
+    justify-self: start;
+}
+
+.justifyselfend {
+    justify-self: end;
+}
+
 .grid {
     display: grid;
 }
