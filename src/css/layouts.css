@@ -263,6 +263,8 @@ header > .options {
 .grid > *,
 header > *,
 .radio > *,
-.checkbox > * {
+.checkbox > *,
+.caption > *,
+.caption > div > * {
     margin-top: 0px;
 }
