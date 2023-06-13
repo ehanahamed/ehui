@@ -360,8 +360,13 @@ input[type="checkbox"]:checked {
   height: 20rem;
 }
 
+.caption {
+  width: 40rem;
+}
+
 @media only screen and (max-width: 800px) {
-  .card {
+  .card,
+  .caption {
     width: 100%;
   }
 }
