@@ -128,6 +128,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 .grid.list {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+    margin-bottom: 1rem; /* temporary fix */
 }
 
 @media only screen and (max-width: 800px) {
