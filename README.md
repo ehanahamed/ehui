@@ -1,4 +1,5 @@
 TODO:
+ - document usage of `i`/italic vs `b`/bold in writing
  - `<a>` has its own size, breaks `.h1`, `.h2`, etc
  - `<code>` has its own size, breaks `.h1`, `.h2`, etc
  - `layouts.css`
