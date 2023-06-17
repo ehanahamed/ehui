@@ -269,3 +269,18 @@ header > *,
 .caption > div > * {
     margin-top: 0px;
 }
+
+.grid.paragraph {
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "content image";
+}
+
+.grid.paragraph > .content {
+    grid-area: content;
+}
+
+.grid.paragraph > .image {
+    grid-area: image;
+    object-fit: contain;
+}
