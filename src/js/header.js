@@ -10,6 +10,10 @@ if (localStorage.getItem("theme") === "purpleish") {
     document.getElementById("headerOptionsThemedivPurpleish").checked = true;
 } else if (localStorage.getItem("theme") === "owl") {
     document.getElementById("headerOptionsThemedivOwl").checked = true;
+} else {
+    /* default to purpleish if not set in localstorage */
+    setTheme("purpleish");
+    document.getElementById("headerOptionsThemedivPurpleish").checked = true;
 };
 document.getElementById("headerMenuMenubutton").addEventListener("click", function () {
     document.getElementById('headerMenuMenudiv').classList.toggle('hide');
