@@ -276,6 +276,10 @@ header > *,
     grid-template-areas: "content image";
 }
 
+.grid.paragraph.alt {
+    grid-template-areas: "image content";
+}
+
 .grid.paragraph > .content {
     grid-area: content;
 }
@@ -291,7 +295,8 @@ header > *,
 }
 
 @media only screen and (max-width: 1000px) {
-    .grid.paragraph {
+    .grid.paragraph,
+    .grid.paragraph.alt {
         gap: 1rem;
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr;
