@@ -638,3 +638,8 @@ textarea.horizontal {
     opacity: 0;
     overflow: hidden;
 }
+
+/* temp */
+.fullWidth {
+    width: 100%;
+}
