@@ -12,6 +12,8 @@ TODO:
  - MAKE SURE EVERY REPO & SITE HAS DESIGNSYS RENAMED!
  - styleguide
     - & specifically **camelCase**
+    - consistant image alt tag (+ and in quizfreely)
+       - currently most are `<img ... alt="image" ...`
 
 TODO EXTRA:
  - fancy betterthantab keyboard shortcut system
