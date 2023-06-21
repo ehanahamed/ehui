@@ -6,4 +6,6 @@ However, making random buttons random colors like other websites just looks terr
 
 ## Using color for emphasis
 
+we now have `var(--extra)` and `--extraAlt` as emphasis/extra color, for Purpleish, its green, for "Owl"/Duo its blue.
+
 work in progress
