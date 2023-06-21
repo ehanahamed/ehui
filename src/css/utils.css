@@ -365,6 +365,30 @@ code.pinkAlt {
     color: var(--pinkAlt);
 }
 
+span.extra,
+p.extra,
+b.extra,
+i.extra,
+u.extra,
+.text.extra,
+mark.extra,
+.mark.extra,
+code.extra {
+    color: var(--extra);
+}
+
+span.extraAlt,
+p.extraAlt,
+b.extraAlt,
+i.extraAlt,
+u.extraAlt,
+.text.extraAlt,
+mark.extraAlt,
+.mark.extraAlt,
+code.extraAlt {
+    color: var(--extraAlt);
+}
+
 mark.markRed,
 .mark.markRed {
     background-color: var(--red);
@@ -473,6 +497,16 @@ mark.markPink,
 mark.markPinkAlt,
 .mark.markPinkAlt {
     background-color: var(--pinkAlt);
+}
+
+mark.markExtra,
+.mark.markExtra {
+    background-color: var(--extra);
+}
+
+mark.markExtraAlt,
+.mark.markExtraAlt {
+    background-color: var(--extraAlt);
 }
 
 .box.red {
