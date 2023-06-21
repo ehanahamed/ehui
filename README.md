@@ -15,6 +15,7 @@ TODO:
     - & specifically **camelCase**
     - consistant image alt tag (+ and in quizfreely)
        - currently most are `<img ... alt="image" ...`
+    - fix incorrect `<br/>`, and encorage correct `<br/>` use in examples & actual html
 
 TODO EXTRA:
  - fancy betterthantab keyboard shortcut system
