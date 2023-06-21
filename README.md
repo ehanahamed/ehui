@@ -7,6 +7,7 @@ TODO:
     - `thingthing` that uses `justifything` should be `thingjustifything`
     - correct justify and align use in class names
  - fix margin(s)
+    - temporary fix for `p`, labelled `/* TEMPORARY FIX */` in `components.css`
  - autocomplete/autofill colors
  - make sure tab works on file inputs
  - MAKE SURE EVERY REPO & SITE HAS DESIGNSYS RENAMED!
