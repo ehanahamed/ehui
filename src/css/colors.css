@@ -69,12 +69,10 @@ https://src.ehan.dev/designsys/LICENSE.txt
     color: var(--fg);
 }
 
-/*
-hide owl-only elements when using purpleish and vice versa 
-*/
 :root.purpleish .owl {
     display: none;
 }
+
 :root.owl .purpleish {
     display: none;
 }
