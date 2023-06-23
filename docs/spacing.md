@@ -36,6 +36,15 @@ VERY BAD, NEVER DO THIS (BAD)
 </div>
 ```
 
+Also, notice the `/`:
+```html
+<br />     <!-- GOOD -->
+
+<br>       <!-- BAD -->
+
+<br></br>  <!-- BAD -->  <!-- INVALID HTML -->
+```
+
 ## Padding
 
 > Padding handles spacing inside elements, between their border their content.
