@@ -15,6 +15,8 @@ Unclosed elements should use a slash at the end
 <element attribute="" />
 ```
 
+Use `<br />`s as shown in [`./spacing.md`](./spacing.md)
+
 ### HTML IDs
 
 IDs for headers and IDs for other elements are much different, headers should have "user-readable" IDs, while other elements who's IDs are used in JS should have "structure-sensitive" IDs. 
