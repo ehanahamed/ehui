@@ -1,5 +1,41 @@
 # Spacing
 
+## `br`s
+
+Some people hate `<br />`s because they're un-`[buzzword they dont know the meaning of]`, however, `br`s are useful.
+
+When to use a br (GOOD)
+```html
+<!-- GOOD -->
+<p>text text text,<br /> text text text.</p>
+```
+
+Also when to use a br (GOOD)
+```html
+<!-- GOOD -->
+<button>button</button>
+<br />
+<br />
+<p>text text text? <a ...>link</a></p>
+```
+
+VERY BAD, NEVER DO THIS (BAD)
+```html
+<!-- BAD -->
+<div ...>
+   <br />  <!-- NEVER DO THIS -->
+   <br />  <!-- BAD -->
+   <br />
+   <br />
+   <p>text text text.</p>
+   <br />  <!-- NEVER DO THIS -->
+   <br />  <!-- BAD -->
+   <button>button</button>
+   <br />  <!-- NEVER DO THIS -->
+   <br />  <!-- BAD -->
+</div>
+```
+
 ## Padding
 
 > Padding handles spacing inside elements, between their border their content.
