@@ -36,8 +36,8 @@ https://src.ehan.dev/designsys/LICENSE.txt
 
 :root.owl {
     color-scheme: light;
-    --red: #ea2b2b;
-    --redAlt: #ff4b4b;
+    --red: #ff4b4b;
+    --redAlt: #ff7878;
     --orange: #ffc800;
     --orangeAlt: #fbe56d;
     --yellow: #ffc800;
@@ -64,7 +64,12 @@ https://src.ehan.dev/designsys/LICENSE.txt
 
 :root.owl button,
 :root.owl .button {
-    box-shadow: 0px 0.4rem #58a700;
+    box-shadow: 0px 0.2rem #58a700;
+}
+
+:root.owl button.red,
+:root.owl .button.red {
+    box-shadow: 0px 0.2rem #ea2b2b;
 }
 
 :root.owl button:hover,
