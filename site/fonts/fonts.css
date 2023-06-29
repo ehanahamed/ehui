@@ -25,3 +25,32 @@
     font-style: italic;
     font-weight: bold;
 }
+/*
+@font-face {
+    font-family: "nunito";
+    src: url("./nunito/Nunito-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "nunito";
+    src: url("./nunito/Nunito-Italic.ttf");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "nunito";
+    src: url("./nunito/Nunito-Bold.ttf");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "nunito";
+    src: url("./nunito/Nunito-BoldItalic.ttf");
+    font-style: italic;
+    font-weight: bold;
+}
+*/
