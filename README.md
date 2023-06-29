@@ -1,10 +1,12 @@
-TODO:
+TODO NOW:
  - mobile header
-   - add `position: static` to `header` as an option to "hide header"
+    - add `position: static` to `header` as an option to "hide header"
       - no, it doesn't effect its width
       - make that option `static` default on mobile
       - make `sticky` default on desktop
       - the setting thingy will be under `options` which will toggle between letting the header scroll with the page or stay at the top
+ - javascript-localstorage-save options (like disableanimations & the new hideornohidetheheader)
+    - just like with the theme-save-and-load localstorage thingy
  - document usage of `i`/italic vs `b`/bold in writing
  - `<a>` has its own size, breaks `.h1`, `.h2`, etc
  - `<code>` has its own size, breaks `.h1`, `.h2`, etc
