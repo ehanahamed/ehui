@@ -62,6 +62,11 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --bg1: #f7f7f7;
 }
 
+:root.owl button,
+:root.owl .button {
+    box-shadow: 0px 0.4rem #58a700;
+}
+
 :root.owl button:hover,
 :root.owl button:focus-visible,
 :root.owl .button:hover,
