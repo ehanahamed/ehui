@@ -650,6 +650,7 @@ button.g,
     background-color: #FFFFFF;
     color: var(--black);
     padding: 0.6rem 0.8rem;
+    font-family: "roboto";
 }
 
 button.g:hover,
