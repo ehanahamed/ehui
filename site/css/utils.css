@@ -647,7 +647,7 @@ textarea.horizontal {
 /* third party styling requirements */
 button.g,
 .button.g {
-    background-color: #FFFFFF;
+    background-color: #EEEEEE;
     color: var(--black);
     padding: 0.6rem 0.8rem;
     font-family: "roboto";
