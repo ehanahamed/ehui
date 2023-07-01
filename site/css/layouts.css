@@ -231,6 +231,11 @@ html.screen body {
     margin-top: 0px;
 }
 
+html.screen header {
+    margin-top: 1rem;
+    margin-bottom: 0px;
+}
+
 header {
     display: grid;
     gap: 1rem;
