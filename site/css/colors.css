@@ -10,12 +10,14 @@ https://src.ehan.dev/designsys/LICENSE.txt
     color-scheme: dark;
     --red: #FF6666;
     --redAlt: #FF9999;
+    --redDark: #CC5252;
     --orange: #FF9966;
     --orangeAlt: #FFBB99;
     --yellow: #FFCC66;
     --yellowAlt: #FFDD99;
     --green: #52CCA3;
     --greenAlt: #7ACCB1;
+    --greenDark: #3D997A;
     --blue: #5252CC;
     --blueAlt: #7A7ACC;
     --purple: #7A52CC;
@@ -24,6 +26,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --pinkAlt: #CC7AB1;
     --primary: #7A52CC;
     --primaryAlt: #967ACC;
+    --primaryDark: #5C3D99;
     --extra: #52CCA3;
     --extraAlt: #7ACCB1;
     --black: #1E1E32;
@@ -40,12 +43,14 @@ https://src.ehan.dev/designsys/LICENSE.txt
     color-scheme: light;
     --red: #ff4b4b;
     --redAlt: #ff7878;
+    --redDark: #ea2b2b;
     --orange: #ffc800;
     --orangeAlt: #fbe56d;
     --yellow: #ffc800;
     --yellowAlt: #fbe56d;
     --green: #58cc02;
     --greenAlt: #a5ed6e;
+    --greenDark: #58a700;
     --blue: #1899d6;
     --blueAlt: #1cb0f6;
     --purple: #9069cd;
@@ -54,6 +59,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --pinkAlt: #ce82ff;
     --primary: #58cc02;
     --primaryAlt: #a5ed6e;
+    --primaryDark: #58a700;
     --extra: #1899d6;
     --extraAlt: #1cb0f6;
     --black: #4b4b4b;
@@ -66,40 +72,48 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --bg1: #f7f7f7;
 }
 
-:root.owl button,
-:root.owl .button,
-:root.owl input[type="text"],
-:root.owl input[type="password"],
-:root.owl textarea,
-:root.owl input[type="radio"],
-:root.owl input[type="checkbox"] {
-    box-shadow: 0px 0.2rem #58a700;
+button,
+.button,
+input[type="text"],
+input[type="password"],
+textarea,
+input[type="radio"],
+input[type="checkbox"] {
+    box-shadow: 0px 0.2rem var(--primaryDark);
 }
 
-:root.owl button.red,
-:root.owl .button.red,
-:root.owl input[type="text"].red,
-:root.owl input[type="password"].red,
-:root.owl textarea.red {
-    box-shadow: 0px 0.2rem #ea2b2b;
+button.green,
+.button.green,
+input[type="text"].green,
+input[type="password"].green,
+textarea.green {
+    box-shadow: 0px 0.2rem var(--greenDark);
 }
 
-:root.owl button:hover,
-:root.owl .button:hover,
-:root.owl button:focus-visible,
-:root.owl .button:focus-visible,
-:root.owl input[type="text"]:hover,
-:root.owl input[type="text"]:focus-visible,
-:root.owl input[type="password"]:hover,
-:root.owl input[type="password"]:focus-visible,
-:root.owl textarea:hover,
-:root.owl textarea:focus-visible,
-:root.owl input[type="radio"]:hover,
-:root.owl input[type="radio"]:focus-visible,
-:root.owl input[type="checkbox"]:hover,
-:root.owl input[type="checkbox"]:focus-visible,
-:root.owl input[type="radio"]:checked,
-:root.owl input[type="checkbox"]:checked {
+button.red,
+.button.red,
+input[type="text"].red,
+input[type="password"].red,
+textarea.red {
+    box-shadow: 0px 0.2rem var(--redDark);
+}
+
+button:hover,
+.button:hover,
+button:focus-visible,
+.button:focus-visible,
+input[type="text"]:hover,
+input[type="text"]:focus-visible,
+input[type="password"]:hover,
+input[type="password"]:focus-visible,
+textarea:hover,
+textarea:focus-visible,
+input[type="radio"]:hover,
+input[type="radio"]:focus-visible,
+input[type="checkbox"]:hover,
+input[type="checkbox"]:focus-visible,
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
     box-shadow: none;
     transform: translateY(0.2rem);
 }
