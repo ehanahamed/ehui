@@ -647,7 +647,7 @@ textarea.horizontal {
 /* third party styling requirements */
 button.g,
 .button.g {
-    background-color: var(--grayAlt);
+    background-color: var(--white);
     font-family: "roboto";
     color: var(--black);
     padding: 0.6rem 0.8rem;
@@ -658,12 +658,12 @@ button.g:hover,
 .button.g:hover,
 button.g:focus-visible,
 .button.g:focus-visible {
-    background-color: var(--white);
+    background-color: var(--grayAlt);
 }
 
 :root.purpleish button.g,
 :root.purpleish .button.g {
-    background-color: #DDDDEE;
+    background-color: #CCCCDD;
 }
 
 :root.purpleish button.g:hover,
