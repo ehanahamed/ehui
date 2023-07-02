@@ -71,3 +71,7 @@ Options, or an icon with a bunch of "sliders", is used for options, NOT settings
 `nf-cod-settings` for options
 
 `nf-cod-arrow_left`, `nf-cod-arrow_down`, `nf-cod-arrow_up`, `nf-cod-arrow_right` for moving an item in a certain direction.
+
+`nf-oct-plus` for create/new/add
+
+`nf-oct-check` for done/checkmark/finish
