@@ -648,9 +648,10 @@ textarea.horizontal {
 button.g,
 .button.g {
     background-color: #EEEEEE;
+    font-family: "roboto";
     color: var(--black);
     padding: 0.6rem 0.8rem;
-    font-family: "roboto";
+    border-width: 0.4rem;
 }
 
 button.g:hover,
