@@ -79,7 +79,7 @@ input[type="password"],
 textarea,
 input[type="radio"],
 input[type="checkbox"] {
-    box-shadow: 0px 0.2rem var(--primaryDark);
+    box-shadow: 0px 0.2rem 0px var(--primaryDark);
 }
 
 button.green,
@@ -87,7 +87,7 @@ button.green,
 input[type="text"].green,
 input[type="password"].green,
 textarea.green {
-    box-shadow: 0px 0.2rem var(--greenDark);
+    box-shadow: 0px 0.2rem 0px var(--greenDark);
 }
 
 button.red,
@@ -95,7 +95,7 @@ button.red,
 input[type="text"].red,
 input[type="password"].red,
 textarea.red {
-    box-shadow: 0px 0.2rem var(--redDark);
+    box-shadow: 0px 0.2rem 0px var(--redDark);
 }
 
 button:hover,
@@ -115,19 +115,6 @@ input[type="checkbox"]:focus-visible,
 input[type="radio"]:checked,
 input[type="checkbox"]:checked {
     box-shadow: none;
-    transform: translateY(0.2rem);
-}
-
-a,
-.a {
-    text-shadow: 0px 0.2rem var(--primaryAlt);
-}
-
-a:hover,
-.a:hover,
-a:focus-visible,
-.a:focus-visible {
-    text-shadow: none;
     transform: translateY(0.2rem);
 }
 
