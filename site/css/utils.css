@@ -647,7 +647,7 @@ textarea.horizontal {
 /* third party styling requirements */
 button.g,
 .button.g {
-    background-color: #D0D0E0;
+    background-color: var(--white);
     font-family: "roboto";
     color: var(--black);
     padding: 0.6rem 0.8rem;
@@ -658,7 +658,7 @@ button.g:hover,
 .button.g:hover,
 button.g:focus-visible,
 .button.g:focus-visible {
-    background-color: #EFEFFF;
+    background-color: var(--grayAlt);
 }
 
 button.g img {
