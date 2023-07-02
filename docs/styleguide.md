@@ -1,5 +1,16 @@
 # Styleguide
 
+Use `0px` instead of just `0` (even though `0` is allowed in css, `0px` looks better)
+```css
+element {
+    property: 0px;
+}
+/* do this even when another unit is next to it */
+anotherelement {
+    anotherproperty: 1rem 0px 1fr
+}
+```
+
 HTML form elements should NOT use the label as a wrapper, the label and input should be insdie a div:
 
 ```html
