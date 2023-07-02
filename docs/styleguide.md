@@ -7,7 +7,7 @@ element {
 }
 /* do this even when another unit is next to it */
 anotherelement {
-    anotherproperty: 1rem 0px 1fr
+    anotherproperty: 1rem 0px 3rem 2rem
 }
 ```
 
