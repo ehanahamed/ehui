@@ -661,6 +661,18 @@ button.g:focus-visible,
     background-color: var(--grayAlt);
 }
 
+:root.purpleish button.g,
+:root.purpleish .button.g {
+    background-color: #D0D0EE
+}
+
+:root.purpleish button.g:hover,
+:root.purpleish button.g:focus-visible,
+:root.purpleish .button.g:hover,
+:root.purpleish .button.g:focus-visible {
+    background-color: #EFEFFF
+}
+
 button.g img {
     height: 1.4rem;
     width: 1.4rem;
