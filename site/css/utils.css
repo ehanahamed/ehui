@@ -655,8 +655,10 @@ button.g,
 }
 
 button.g:hover,
-.button.g:hover {
-    background-color: #E0E0F0;
+.button.g:hover,
+button.g:focus-visible,
+.button.g:focus-visible {
+    background-color: #EFEFFF;
 }
 
 button.g img {
