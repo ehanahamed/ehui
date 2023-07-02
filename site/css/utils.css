@@ -663,14 +663,14 @@ button.g:focus-visible,
 
 :root.purpleish button.g,
 :root.purpleish .button.g {
-    background-color: #D0D0EE
+    background-color: #DDDDEE;
 }
 
 :root.purpleish button.g:hover,
 :root.purpleish button.g:focus-visible,
 :root.purpleish .button.g:hover,
 :root.purpleish .button.g:focus-visible {
-    background-color: #EFEFFF
+    background-color: #EEEEFF;
 }
 
 button.g img {
