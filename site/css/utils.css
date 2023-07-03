@@ -536,6 +536,12 @@ button.green,
   border-color: var(--green);
 }
 
+button.extra,
+.button.extra {
+  background-color: var(--extra);
+  border-color: var(--extra);
+}
+
 button.alt.red,
 .button.alt.red {
   background-color: var(--bg1);
@@ -548,6 +554,13 @@ button.alt.green,
   background-color: var(--bg1);
   border-color: var(--green);
   color: var(--green);
+}
+
+button.alt.extra,
+.button.alt.extra {
+  background-color: var(--bgExtra);
+  border-color: var(--extra);
+  color: var(--extra);
 }
 
 button:hover.red,
@@ -566,6 +579,14 @@ button:focus-visible.green,
   color: var(--bg1);
 }
 
+button:hover.extra,
+button:focus-visible.extra,
+.button:hover.extra,
+.button:focus-visible.extra {
+  background-color: var(--extraAlt);
+  color: var(--bgExtra);
+}
+
 button:focus-visible.red,
 .button:focus-visible.red {
   outline-color: var(--red);
@@ -574,6 +595,11 @@ button:focus-visible.red,
 button:focus-visible.green,
 .button:focus-visible.green {
   outline-color: var(--green);
+}
+
+button:focus-visible.extra,
+.button:focus-visible.extra {
+  outline-color: var(--extra);
 }
 
 input[type="text"].red,
