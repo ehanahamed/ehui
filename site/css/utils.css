@@ -644,6 +644,12 @@ textarea.horizontal {
     width: 100%;
 }
 
+.grid.page.extraAlt {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: var(--extraAlt);
+}
+
 /* third party styling requirements */
 button.g,
 .button.g {
