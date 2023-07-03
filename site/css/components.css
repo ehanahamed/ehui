@@ -25,7 +25,7 @@ body {
     line-height: 1.4rem;
     font-family: sans-serif;
     font-weight: normal;
-    margin: 1rem;
+    margin: 1rem 0px;
 }
 
 ::selection {
@@ -142,7 +142,7 @@ code,
   text-align: center;
   padding: 1rem;
   padding-bottom: 4rem;
-  margin-bottom: 4rem;
+  margin: 4rem 1rem;
 }
 
 header,
@@ -152,7 +152,7 @@ header,
   border: 0.2rem solid var(--bg2);
   border-radius: 0.8rem;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
 header.sticky,
@@ -168,8 +168,7 @@ footer,
   text-align: center;
   padding: 1rem;
   padding-top: 4rem;
-  margin-bottom: 1rem;
-  margin-top: 4rem;
+  margin: 4rem 1rem;
 }
 
 table {
