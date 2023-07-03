@@ -644,10 +644,10 @@ textarea.horizontal {
     width: 100%;
 }
 
-.grid.page.extraDark {
+.grid.page.extra {
     margin-top: 0px;
     margin-bottom: 0px;
-    background-color: var(--extraDark);
+    background-color: var(--bgExtra);
 }
 
 /* third party styling requirements */
