@@ -670,7 +670,7 @@ button.g:focus-visible,
 :root.purpleish button.g:focus-visible,
 :root.purpleish .button.g:hover,
 :root.purpleish .button.g:focus-visible {
-    background-color: #EEEEFF;
+    background-color: #BBBBCC;
 }
 
 button.g img {
