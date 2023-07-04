@@ -544,6 +544,7 @@ button.extra,
 .button.extra {
   background-color: var(--extra);
   border-color: var(--extra);
+  color: var(--bgExtra);
   /* 3D-ish stuff */
   box-shadow: 0px 0.2rem 0px var(--extraDark);
 }
