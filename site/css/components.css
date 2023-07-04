@@ -360,6 +360,9 @@ input[type="radio"]:focus-visible,
 input[type="checkbox"]:hover,
 input[type="checkbox"]:focus-visible {
   border-color: var(--primaryAlt);
+  /* 3D-ish stuff */
+  box-shadow: none;
+  transform: translateY(0.2rem);
 }
 
 input[type="radio"]:focus-visible,
@@ -373,6 +376,9 @@ input[type="radio"]:checked,
 input[type="checkbox"]:checked {
   background-color: var(--primary);
   transition-duration: 0.1s;
+  /* 3D-ish stuff */
+  box-shadow: none;
+  transform: translateY(0.2rem);
 }
 
 .card {
