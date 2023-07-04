@@ -630,6 +630,13 @@ textarea.green {
   border-color: var(--green);
 }
 
+input[type="text"].extra,
+input[type="password"].extra,
+textarea.extra {
+  background-color: var(--bgExtra);
+  border-color: var(--extra);
+}
+
 input[type="text"].red:hover,
 input[type="text"].red:focus-visible,
 input[type="password"].red:hover,
@@ -648,6 +655,15 @@ textarea.green:focus-visible {
   border-color: var(--greenAlt);
 }
 
+input[type="text"].extra:hover,
+input[type="text"].extra:focus-visible,
+input[type="password"].extra:hover,
+input[type="password"].extra:focus-visible,
+textarea.extra:hover,
+textarea.extra:focus-visible {
+  border-color: var(--extraAlt);
+}
+
 input[type="text"].red:focus-visible,
 input[type="password"].red:focus-visible,
 textarea.red:focus-visible {
@@ -658,6 +674,12 @@ input[type="text"].green:focus-visible,
 input[type="password"].green:focus-visible,
 textarea.green:focus-visible {
   outline-color: var(--green);
+}
+
+input[type="text"].extra:focus-visible,
+input[type="password"].extra:focus-visible,
+textarea.extra:focus-visible {
+  outline-color: var(--extra);
 }
 
 textarea.vertical {
