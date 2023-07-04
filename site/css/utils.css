@@ -650,6 +650,9 @@ input[type="password"].red:focus-visible,
 textarea.red:hover,
 textarea.red:focus-visible {
   border-color: var(--redAlt);
+  /* 3D-ish stuff */
+  box-shadow: none;
+  transform: translateY(0.2rem);
 }
 
 input[type="text"].green:hover,
@@ -659,6 +662,9 @@ input[type="password"].green:focus-visible,
 textarea.green:hover,
 textarea.green:focus-visible {
   border-color: var(--greenAlt);
+  /* 3D-ish stuff */
+  box-shadow: none;
+  transform: translateY(0.2rem);
 }
 
 input[type="text"].extra:hover,
@@ -668,6 +674,9 @@ input[type="password"].extra:focus-visible,
 textarea.extra:hover,
 textarea.extra:focus-visible {
   border-color: var(--extraAlt);
+  /* 3D-ish stuff */
+  box-shadow: none;
+  transform: translateY(0.2rem);
 }
 
 input[type="text"].red:focus-visible,
