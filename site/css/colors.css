@@ -84,24 +84,18 @@ input[type="checkbox"] {
     box-shadow: 0px 0.2rem 0px var(--primaryDark);
 }
 
-button.green,
-.button.green,
 input[type="text"].green,
 input[type="password"].green,
 textarea.green {
     box-shadow: 0px 0.2rem 0px var(--greenDark);
 }
 
-button.red,
-.button.red,
 input[type="text"].red,
 input[type="password"].red,
 textarea.red {
     box-shadow: 0px 0.2rem 0px var(--redDark);
 }
 
-button.extra,
-.button.extra,
 input[type="text"].extra,
 input[type="password"].extra,
 textarea.extra {
