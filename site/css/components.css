@@ -232,6 +232,9 @@ button,
   font-size: 1rem;
   line-height: 1.4rem;
   transition-duration: 0.4s;
+  /* 3D-ish stuff */
+  box-shadow: none;
+  transform: translateY(0.2rem);
 }
 
 button.alt,
