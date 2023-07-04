@@ -76,9 +76,6 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --bg1: #f7f7f7;
 }
 
-input[type="text"],
-input[type="password"],
-textarea,
 input[type="radio"],
 input[type="checkbox"] {
     box-shadow: 0px 0.2rem 0px var(--primaryDark);
