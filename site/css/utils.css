@@ -688,6 +688,7 @@ textarea.horizontal {
 .grid.page.extra {
     margin-top: 0px;
     margin-bottom: 0px;
+    padding-bottom: 1rem;
     background-color: var(--bgExtra);
 }
 
