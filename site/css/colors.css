@@ -96,12 +96,6 @@ textarea.red {
     box-shadow: 0px 0.2rem 0px var(--redDark);
 }
 
-input[type="text"].extra,
-input[type="password"].extra,
-textarea.extra {
-    box-shadow: 0px 0.2rem 0px var(--extraDark);
-}
-
 input[type="text"]:hover,
 input[type="text"]:focus-visible,
 input[type="password"]:hover,
