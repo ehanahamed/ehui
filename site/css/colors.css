@@ -76,17 +76,6 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --bg1: #f7f7f7;
 }
 
-input[type="radio"]:hover,
-input[type="radio"]:focus-visible,
-input[type="checkbox"]:hover,
-input[type="checkbox"]:focus-visible,
-input[type="radio"]:checked,
-input[type="checkbox"]:checked {
-    /* 3D-ish stuff */
-    box-shadow: none;
-    transform: translateY(0.2rem);
-}
-
 :root.owl button:hover,
 :root.owl button:focus-visible,
 :root.owl .button:hover,
