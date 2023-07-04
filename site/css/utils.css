@@ -528,18 +528,24 @@ button.red,
 .button.red {
   background-color: var(--red);
   border-color: var(--red);
+  /* 3D-ish stuff */
+  box-shadow: 0px 0.2rem 0px var(--redDark);
 }
 
 button.green,
 .button.green {
   background-color: var(--green);
   border-color: var(--green);
+  /* 3D-ish stuff */
+  box-shadow: 0px 0.2rem 0px var(--greenDark);
 }
 
 button.extra,
 .button.extra {
   background-color: var(--extra);
   border-color: var(--extra);
+  /* 3D-ish stuff */
+  box-shadow: 0px 0.2rem 0px var(--extraDark);
 }
 
 button.alt.red,
