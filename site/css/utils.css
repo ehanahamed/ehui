@@ -635,6 +635,8 @@ input[type="password"].extra,
 textarea.extra {
   background-color: var(--bgExtra);
   border-color: var(--extra);
+  /* 3D-ish stuff */
+  box-shadow: 0px 0.2rem 0px var(--extraDark);
 }
 
 input[type="text"].red:hover,
