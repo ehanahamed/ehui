@@ -718,6 +718,22 @@ textarea.horizontal {
     overflow: hidden;
 }
 
+/* fancy */
+.hero > .logo::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: -100;
+    background-color: var(--primary);
+    opacity: 0.4;
+    filter: blur(60px);
+}
+
+.hero > .logo > svg {
+    margin-top: 0px;
+}
+
 /* temp */
 .fullWidth {
     width: 100%;
