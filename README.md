@@ -27,3 +27,7 @@ TODO NOW:
 
 TODO EXTRA:
  - fancy betterthantab keyboard shortcut system
+
+NOTE:
+ - fancy logo glow effect is in utils.css, under the comment "`fancy stuff`"
+ - logos should use `--gray` not `--bg2`
