@@ -718,7 +718,7 @@ textarea.horizontal {
     overflow: hidden;
 }
 
-/* fancy */
+/* fancy stuff */
 .hero > .logo::before {
     content: "";
     position: absolute;
@@ -726,7 +726,7 @@ textarea.horizontal {
     height: 200px;
     z-index: -100;
     background-color: var(--primary);
-    opacity: 0.4;
+    opacity: 0.2;
     filter: blur(60px);
 }
 
