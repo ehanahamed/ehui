@@ -730,6 +730,10 @@ textarea.horizontal {
     filter: blur(60px);
 }
 
+html.min .hero > .logo::before {
+    display: none;
+}
+
 .hero > .logo > svg {
     margin-top: 0px;
 }
