@@ -727,7 +727,8 @@ textarea.horizontal {
     z-index: -100;
     background-color: var(--primary);
     opacity: 0.2;
-    filter: blur(60px);
+    filter: blur(1rem);
+    border-radius: 50%;
 }
 
 html.min .hero > .logo::before {
