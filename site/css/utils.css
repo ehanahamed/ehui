@@ -784,3 +784,9 @@ button.g img {
     height: 1.4rem;
     width: 1.4rem;
 }
+
+button.guest,
+.button.guest {
+    padding: 0.6rem 0.8rem;
+    border-width: 0.4rem;
+}
