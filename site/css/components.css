@@ -25,7 +25,7 @@ body {
     line-height: 1.4rem;
     font-family: sans-serif;
     font-weight: normal;
-    margin: 1rem 0px;
+    margin: 0px;
 }
 
 ::selection {
@@ -149,10 +149,9 @@ header,
 .header {
   position: static;
   background-color: var(--bg1);
-  border: 0.2rem solid var(--bg2);
-  border-radius: 0.8rem;
+  border-bottom: 0.2rem solid var(--bg2);
   padding: 1rem;
-  margin: 1rem;
+  margin: 0px;
 }
 
 header.sticky,
