@@ -90,3 +90,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 :root.owl .purpleish {
     display: none;
 }
+
+:root.owl .hero > .logo::before {
+    display: none;
+}
