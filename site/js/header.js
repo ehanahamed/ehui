@@ -26,13 +26,13 @@ document.getElementById("headerOptionsLangbutton").addEventListener("click", fun
 document.getElementById("headerOptionsThemebutton").addEventListener("click", function () {
     document.getElementById('headerOptionsLangdiv').classList.add('hide');
     document.getElementById('headerOptionsThemediv').classList.toggle('hide');
-    document.getElementById('headerOptionsOptionsdiv').classList.add('hide');
+    //document.getElementById('headerOptionsOptionsdiv').classList.add('hide');
 });
-document.getElementById("headerOptionsOptionsbutton").addEventListener("click", function () {
+/*document.getElementById("headerOptionsOptionsbutton").addEventListener("click", function () {
     document.getElementById('headerOptionsLangdiv').classList.add('hide');
     document.getElementById('headerOptionsThemediv').classList.add('hide');
     document.getElementById('headerOptionsOptionsdiv').classList.toggle('hide');
-});
+});*/
 function setTheme(theme) {
     document.documentElement.classList.remove("purpleish", "owl");
     document.documentElement.classList.add(theme);
