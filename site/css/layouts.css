@@ -251,8 +251,10 @@ header > .options {
 }
 
 /*
+
 * + *        for default,
 * + element  for reversing margin-top: 0px;
+
 */
 * + *,
 * + p {
@@ -265,7 +267,8 @@ header > *,
 .radio > *,
 .checkbox > *,
 .caption > *,
-.caption > div > * {
+.caption > div > *,
+.nav > div {
     margin-top: 0px;
 }
 
