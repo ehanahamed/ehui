@@ -211,7 +211,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 
 .grid.screen {
     height: 100%;
-    margin-top: 0px;
+    margin: 0px 1rem;
 }
 
 .grid.screen > .content {
@@ -228,12 +228,6 @@ html.screen body {
     height: 100%;
     display: grid;
     grid-template-rows: auto 1fr;
-    margin-top: 0px;
-}
-
-html.screen header {
-    margin-top: 1rem;
-    margin-bottom: 0px;
 }
 
 header {
