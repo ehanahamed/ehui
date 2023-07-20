@@ -248,6 +248,7 @@ header > .options {
     grid-area: options;
     text-align: right;
     justify-self: right;
+    padding: 1rem;
 }
 
 /*
