@@ -147,18 +147,13 @@ code,
 
 header,
 .header {
-  position: static;
+  position: sticky;
+  z-index: 100;
+  top: 0px;
   background-color: var(--bg1);
   border-bottom: 0.2rem solid var(--bg2);
   padding: 1rem;
   margin: 0px;
-}
-
-header.sticky,
-.header.sticky {
-  position: sticky;
-  z-index: 100;
-  top: 1rem;
 }
 
 footer,
