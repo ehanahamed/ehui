@@ -21,7 +21,7 @@ document.getElementById("headerMenuMenubutton").addEventListener("click", functi
 document.getElementById("headerOptionsLangbutton").addEventListener("click", function () {
     document.getElementById('headerOptionsLangdiv').classList.toggle('hide');
     document.getElementById('headerOptionsThemediv').classList.add('hide');
-    document.getElementById('headerOptionsOptionsdiv').classList.add('hide');
+    //document.getElementById('headerOptionsOptionsdiv').classList.add('hide');
 });
 document.getElementById("headerOptionsThemebutton").addEventListener("click", function () {
     document.getElementById('headerOptionsLangdiv').classList.add('hide');
