@@ -164,7 +164,11 @@ header > .nav {
   margin-bottom: 0px;
 }
 
-header > .nav > .current {
+.nav > div {
+  border-bottom: 0.2rem solid var(--bg1);
+}
+
+.nav > div.current {
   border-bottom: 0.2rem solid var(--primary);
 }
 
