@@ -169,7 +169,11 @@ header > .nav {
 }
 
 .nav > div.current {
-  border-bottom: 0.2rem solid var(--primary);
+  border-bottom: 0.2rem solid var(--primaryAlt);
+}
+
+.nav > div.current > a {
+  color: var(--primaryAlt);
 }
 
 footer,
