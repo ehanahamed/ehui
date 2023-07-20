@@ -251,6 +251,12 @@ header > .options {
     padding: 1rem;
 }
 
+.nav > div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 /*
 
 * + *        for default,
