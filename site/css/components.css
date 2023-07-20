@@ -160,8 +160,7 @@ header > .nav {
   display: flex;
   gap: 1rem;
   align-items: center;
-  margin: 1rem;
-  margin-bottom: 0px;
+  margin: 0px 1rem;
 }
 
 .nav > div {
