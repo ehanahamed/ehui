@@ -149,6 +149,10 @@ header,
 .header {
   position: sticky;
   z-index: 100;
+
+  /* TEMP*/
+  height: 4rem;
+  
   top: 0px;
   background-color: var(--bg1);
   border-bottom: 0.2rem solid var(--bg2);
