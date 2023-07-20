@@ -156,6 +156,16 @@ header,
   margin: 0px;
 }
 
+header > .nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+header > .nav > .current {
+  border-bottom: 0.2rem solid var(--primary);
+}
+
 footer,
 .footer {
   border-top: 0.2rem solid var(--bg2);
