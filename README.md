@@ -1,3 +1,6 @@
+
+Last navbar thingy that was not finished: 45ad72357a2e4c0205dc8585ab529a32dadddf66
+
 TODO NOW:
  - mobile header
     - add `position: static` to `header` as an option to "hide header"
