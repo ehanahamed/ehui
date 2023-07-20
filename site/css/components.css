@@ -152,7 +152,7 @@ header,
   top: 0px;
   background-color: var(--bg1);
   border-bottom: 0.2rem solid var(--bg2);
-  padding: 1rem;
+  padding: 0px;
   margin: 0px;
 }
 
@@ -160,6 +160,8 @@ header > .nav {
   display: flex;
   gap: 1rem;
   align-items: center;
+  margin: 1rem;
+  margin-bottom: 0px;
 }
 
 header > .nav > .current {
