@@ -113,11 +113,11 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --extraDark: #8250df;
     --bgExtra: #2e1461;
     --black: #1f2328;
-    --gray: #24292f;
-    --grayAlt: #32383f;
+    --gray: #32383f;
+    --grayAlt: #424a53;
     --white: #f6f8fa;
     --fg: #f6f8fa;
-    --bg3: #32383f;
-    --bg2: #24292f;
+    --bg3: #424a53;
+    --bg2: #32383f;
     --bg1: #1f2328;
 }
