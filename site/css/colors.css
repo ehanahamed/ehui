@@ -83,14 +83,41 @@ https://src.ehan.dev/designsys/LICENSE.txt
     color: var(--fg);
 }
 
-:root.purpleish .owl {
-    display: none;
-}
-
-:root.owl .purpleish {
-    display: none;
-}
-
 :root.owl .hero > .logo::before {
     display: none;
+}
+
+:root.cat {
+    color-scheme: dark;
+    --red: #fa4549;
+    --redAlt: #ff8182;
+    --redDark: #cf222e;
+    --orange: #e16f24;
+    --orangeAlt: #fb8f44;
+    --yellow: #d4a72c;
+    --yellowAlt: #eac54f;
+    --green: #2da44e;
+    --greenAlt: #4ac26b;
+    --greenDark: #1a7f37;
+    --blue: #218bff;
+    --blueAlt: #54aeff;
+    --purple: #a475f9;
+    --purpleAlt: #c297ff;
+    --pink: #e85aad;
+    --pinkAlt: #ff80c8;
+    --primary: #218bff;
+    --primaryAlt: #54aeff;
+    --primaryDark: #0969da;
+    --extra: #a475f9;
+    --extraAlt: #c297ff;
+    --extraDark: #8250df;
+    --bgExtra: #2e1461;
+    --black: #1f2328;
+    --gray: #24292f;
+    --grayAlt: #32383f;
+    --white: #f6f8fa;
+    --fg: #f6f8fa;
+    --bg3: #32383f;
+    --bg2: #24292f;
+    --bg1: #1f2328;
 }
