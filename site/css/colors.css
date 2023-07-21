@@ -112,12 +112,30 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --extraAlt: #c297ff;
     --extraDark: #8250df;
     --bgExtra: #2e1461;
-    --black: #1f2328;
-    --gray: #32383f;
-    --grayAlt: #424a53;
-    --white: #f6f8fa;
-    --fg: #f6f8fa;
-    --bg3: #424a53;
-    --bg2: #32383f;
-    --bg1: #1f2328;
+    --black: #0D1117;
+    --gray: #30363D;
+    --grayAlt: #7D8590;
+    --white: #E6EDF3;
+    --fg: #E6EDF3;
+    --bg3: #7D8590;
+    --bg2: #30363D;
+    --bg1: #0D1117;
+}
+
+:root.cat button,
+:root.cat .button {
+    color: #E6EDF3;
+    background-color: #238636;
+    border-color: #41A956;
+    box-shadow: none;
+}
+
+:root.cat button:hover,
+:root.cat .button:hover {
+    background-color: #2EA043;
+}
+
+:root.cat button.alt,
+:root.cat .button.alt {
+    background-color: #21262D;
 }
