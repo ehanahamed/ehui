@@ -126,7 +126,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 :root.cat .button,
 :root.cat button.extra,
 :root.cat .button.extra {
-    color: #E6EDF3;
+    color: var(--fg);
     background-color: #238636;
     border-color: #41A956;
     box-shadow: none;
@@ -140,7 +140,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 :root.cat button.extra:focus-visible,
 :root.cat .button.extra:hover,
 :root.cat .button.extra:focus-visible {
-    color: #E6EDF3;
+    color: var(--fg);
     background-color: #2EA043;
     border-color: #41A956;
     transform: none;
@@ -150,7 +150,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 :root.cat .button.alt,
 :root.cat button.extra.alt,
 :root.cat .button.extra.alt {
-    color: #E6EDF3;
+    color: var(--fg);
     background-color: #21262D;
     border-color: #363B42;
 }
@@ -163,7 +163,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 :root.cat button.extra.alt:focus-visible,
 :root.cat .button.extra.alt:hover,
 :root.cat .button.extra.alt:focus-visible {
-    color: #E6EDF3;
+    color: var(--fg);
     background-color: #30363D;
     border-color: #8B949E;
     transform: none;
@@ -187,7 +187,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 :root.cat button.red.alt:focus-visible,
 :root.cat .button.red.alt:hover,
 :root.cat .button.red.alt:focus-visible {
-    color: #E6EDF3;
+    color: var(--fg);
     background-color: var(--red);
     border-color: var(--redAlt);
     transform: none;
@@ -211,8 +211,20 @@ https://src.ehan.dev/designsys/LICENSE.txt
 :root.cat button.green.alt:focus-visible,
 :root.cat .button.green.alt:hover,
 :root.cat .button.green.alt:focus-visible {
-    color: #E6EDF3;
+    color: var(--fg);
     background-color: var(--green);
     border-color: var(--greenAlt);
     transform: none;
+}
+
+:root.cat .nav > div > a {
+    color: var(--bg3);
+}
+
+:root.cat .nav > div.current {
+    border-color: #f78166;
+}
+
+:root.cat .nav > div.current > a {
+    color: var(--fg);
 }
