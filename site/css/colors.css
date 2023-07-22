@@ -323,8 +323,8 @@ https://src.ehan.dev/designsys/LICENSE.txt
 :root.catdim button.extra.alt,
 :root.catdim .button.extra.alt {
     color: var(--fg);
-    background-color: #21262D;
-    border-color: #363B42;
+    background-color: #373E47;
+    border-color: #464E57;
 }
 
 :root.catdim button.alt:hover,
@@ -336,8 +336,8 @@ https://src.ehan.dev/designsys/LICENSE.txt
 :root.catdim .button.extra.alt:hover,
 :root.catdim .button.extra.alt:focus-visible {
     color: var(--fg);
-    background-color: #30363D;
-    border-color: #8B949E;
+    background-color: #444C56;
+    border-color: #768390;
     transform: none;
 }
 
@@ -346,8 +346,8 @@ https://src.ehan.dev/designsys/LICENSE.txt
 :root.catdim .button.red,
 :root.catdim .button.red.alt {
     color: #F85149;
-    background-color: #21262D;
-    border-color: #363B42;
+    background-color: #373E47;
+    border-color: #464E57;
 }
 
 :root.catdim button.red:hover,
@@ -369,8 +369,8 @@ https://src.ehan.dev/designsys/LICENSE.txt
 :root.catdim .button.green,
 :root.catdim .button.green.alt {
     color: #41A956;
-    background-color: #21262D;
-    border-color: #363B42;
+    background-color: #373E47;
+    border-color: #464E57;
 }
 
 :root.catdim button.green:hover,
