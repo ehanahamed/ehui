@@ -111,7 +111,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --extra: #a475f9;
     --extraAlt: #c297ff;
     --extraDark: #8250df;
-    --bgExtra: #2e1461;
+    --bgExtra: #29233f;
     --black: #0D1117;
     --gray: #30363D;
     --grayAlt: #7D8590;
@@ -131,11 +131,25 @@ https://src.ehan.dev/designsys/LICENSE.txt
 }
 
 :root.cat button:hover,
-:root.cat .button:hover {
+:root.cat button:focus-visible,
+:root.cat .button:hover,
+:root.cat .button:focus-visible {
     background-color: #2EA043;
+    border-color: #41A956;
+    transform: none;
 }
 
 :root.cat button.alt,
 :root.cat .button.alt {
     background-color: #21262D;
+    border-color: #363B42;
+}
+
+:root.cat button.alt:hover,
+:root.cat button.alt:focus-visible,
+:root.cat .button.alt:hover,
+:root.cat .button.alt:focus-visible {
+    background-color: #30363D;
+    border-color: #8B949E;
+    transform: none;
 }
