@@ -147,7 +147,9 @@ https://src.ehan.dev/designsys/LICENSE.txt
 }
 
 :root.cat button.alt,
-:root.cat .button.alt {
+:root.cat .button.alt,
+:root.cat button.extra.alt,
+:root.cat .button.extra.alt {
     color: #E6EDF3;
     background-color: #21262D;
     border-color: #363B42;
@@ -156,7 +158,11 @@ https://src.ehan.dev/designsys/LICENSE.txt
 :root.cat button.alt:hover,
 :root.cat button.alt:focus-visible,
 :root.cat .button.alt:hover,
-:root.cat .button.alt:focus-visible {
+:root.cat .button.alt:focus-visible,
+:root.cat button.extra.alt:hover,
+:root.cat button.extra.alt:focus-visible,
+:root.cat .button.extra.alt:hover,
+:root.cat .button.extra.alt:focus-visible {
     color: #E6EDF3;
     background-color: #30363D;
     border-color: #8B949E;
@@ -208,22 +214,5 @@ https://src.ehan.dev/designsys/LICENSE.txt
     color: #E6EDF3;
     background-color: var(--green);
     border-color: var(--greenAlt);
-    transform: none;
-}
-
-:root.cat button.extra.alt,
-:root.cat .button.extra.alt {
-    color: #E6EDF3;
-    background-color: #21262D;
-    border-color: #363B42;
-}
-
-:root.cat button.extra.alt:hover,
-:root.cat button.extra.alt:focus-visible,
-:root.cat .button.extra.alt:hover,
-:root.cat .button.extra.alt:focus-visible {
-    color: #E6EDF3;
-    background-color: #30363D;
-    border-color: #8B949E;
     transform: none;
 }
