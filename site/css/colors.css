@@ -89,16 +89,16 @@ https://src.ehan.dev/designsys/LICENSE.txt
 
 :root.cat {
     color-scheme: dark;
-    --red: #DA3633;
-    --redAlt: #F85149;
+    --red: #fa4549;
+    --redAlt: #ff8182;
     --redDark: #cf222e;
-    --orange: #e16f24;
-    --orangeAlt: #fb8f44;
-    --yellow: #d4a72c;
-    --yellowAlt: #eac54f;
-    --green: #238636;
-    --greenAlt: #41A956;
-    --greenDark: #238636;
+    --orange: #fb8f44;
+    --orangeAlt: #ffb77c;
+    --yellow: #eac54f;
+    --yellowAlt: #fae17d;
+    --green: #4ac26b;
+    --greenAlt: #6fdd8b;
+    --greenDark: #2da44e;
     --blue: #218bff;
     --blueAlt: #54aeff;
     --purple: #a475f9;
@@ -173,7 +173,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 :root.cat button.red.alt,
 :root.cat .button.red,
 :root.cat .button.red.alt {
-    color: var(--red);
+    color: #F85149;
     background-color: #21262D;
     border-color: #363B42;
 }
@@ -188,8 +188,8 @@ https://src.ehan.dev/designsys/LICENSE.txt
 :root.cat .button.red.alt:hover,
 :root.cat .button.red.alt:focus-visible {
     color: var(--fg);
-    background-color: var(--red);
-    border-color: var(--redAlt);
+    background-color: #DA3633;
+    border-color: #F85149;
     transform: none;
 }
 
@@ -197,7 +197,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 :root.cat button.green.alt,
 :root.cat .button.green,
 :root.cat .button.green.alt {
-    color: var(--green);
+    color: #41A956;
     background-color: #21262D;
     border-color: #363B42;
 }
@@ -212,8 +212,8 @@ https://src.ehan.dev/designsys/LICENSE.txt
 :root.cat .button.green.alt:hover,
 :root.cat .button.green.alt:focus-visible {
     color: var(--fg);
-    background-color: var(--green);
-    border-color: var(--greenAlt);
+    background-color: #2EA043;
+    border-color: #41A956;
     transform: none;
 }
 
