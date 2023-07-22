@@ -90,36 +90,36 @@ https://src.ehan.dev/designsys/LICENSE.txt
 :root.blurple {
     color-scheme: dark;
     --red: #DA373C;
-    --redAlt: #ED4245;
+    --redAlt: #A12828;
     --redDark: #A12828;
     --orange: #BF861C;
     --orangeAlt: #BF861C;
     --yellow: #FEE75C;
     --yellowAlt: #FEE75C;
     --green: #23A55A;
-    --greenAlt: #57F287;
+    --greenAlt: #1A6334;
     --greenDark: #1A6334;
     --blue: #00A8FC;
     --blueAlt: #00A8FC;
     --purple: #5865F2;
-    --purpleAlt: #00A8FC;
+    --purpleAlt: #4752C4;
     --pink: #EB459E;
     --pinkAlt: #EB459E;
     --primary: #5865F2;
-    --primaryAlt: #00A8FC;
+    --primaryAlt: #4752C4;
     --primaryDark: #4752C4;
     --extra: #5865F2;
-    --extraAlt: #00A8FC;
+    --extraAlt: #4752C4;
     --extraDark: #4752C4;
     --bgExtra: #23272A;
-    --black: #313338;
-    --gray: #383A40;
-    --grayAlt: #949BA4;
+    --black: #2B2D31;
+    --gray: #404249;
+    --grayAlt: #B5BAC1;
     --white: #F2F3F5;
     --fg: #F2F3F5;
-    --bg3: #949BA4;
-    --bg2: #383A40;
-    --bg1: #313338;
+    --bg3: #B5BAC1;
+    --bg2: #404249;
+    --bg1: #2B2D31;
 }
 
 :root.cat {
