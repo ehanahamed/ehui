@@ -122,6 +122,13 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --bg1: #2B2D31;
 }
 
+:root.blurple button:hover,
+:root.blurple button:focus-visible,
+:root.blurple .button:hover,
+:root.blurple .button:focus-visible {
+    color: var(--fg);
+}
+
 :root.cat {
     color-scheme: dark;
     --red: #fa4549;
