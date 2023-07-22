@@ -753,7 +753,13 @@ html.min .hero > .logo::before {
 
 /* third party styling requirements */
 button.g,
-.button.g {
+.button.g,
+:root.blurple button.g,
+:root.blurple .button.g,
+:root.cat button.g,
+:root.cat .button.g,
+:root.catdim button.g,
+:root.catdim .button.g {
     background-color: var(--white);
     font-family: "roboto";
     color: var(--black);
@@ -764,7 +770,20 @@ button.g,
 button.g:hover,
 .button.g:hover,
 button.g:focus-visible,
-.button.g:focus-visible {
+.button.g:focus-visible,
+:root.blurple button.g:hover,
+:root.blurple .button.g:hover,
+:root.blurple button.g:focus-visible,
+:root.blurple .button.g:focus-visible,
+:root.cat button.g:hover,
+:root.cat .button.g:hover,
+:root.cat button.g:focus-visible,
+:root.cat .button.g:focus-visible,
+:root.catdim button.g:hover,
+:root.catdim .button.g:hover,
+:root.catdim button.g:focus-visible,
+:root.catdim .button.g:focus-visible {
+    color: var(--black);
     background-color: var(--grayAlt);
 }
 
@@ -788,4 +807,5 @@ button.g img {
 button.guest,
 .button.guest {
     border-width: 0.4rem;
+    padding: 0.6rem 0.8rem;
 }
