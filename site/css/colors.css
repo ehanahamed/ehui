@@ -512,17 +512,17 @@ https://src.ehan.dev/designsys/LICENSE.txt
     color: var(--fg);
 }
 
-:root.cat button:focus-visible,
-:root.cat .button:focus-visible,
-:root.cat input[type="radio"]:focus-visible,
-:root.cat input[type="checkbox"]:focus-visible,
-:root.cat input[type="text"]:focus-visible,
-:root.cat input[type="password"]:focus-visible,
-:root.cat textarea:focus-visible {
+:root.catdim button:focus-visible,
+:root.catdim .button:focus-visible,
+:root.catdim input[type="radio"]:focus-visible,
+:root.catdim input[type="checkbox"]:focus-visible,
+:root.catdim input[type="text"]:focus-visible,
+:root.catdim input[type="password"]:focus-visible,
+:root.catdim textarea:focus-visible {
     outline-color: var(--blue);
 }
 
-:root.cat input[type="radio"]:checked,
-:root.cat input[type="checkbox"]:checked {
+:root.catdim input[type="radio"]:checked,
+:root.catdim input[type="checkbox"]:checked {
     background-color: var(--blue);
 }
