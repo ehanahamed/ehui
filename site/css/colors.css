@@ -169,10 +169,10 @@ https://src.ehan.dev/designsys/LICENSE.txt
     color: var(--blue);
 }
 
-:root.catdim a:hover,
-:root.catdim a:focus-visible,
-:root.catdim .a:hover,
-:root.catdim .a:focus-visible {
+:root.cat a:hover,
+:root.cat a:focus-visible,
+:root.cat .a:hover,
+:root.cat .a:focus-visible {
     color: var(--blueAlt);
 }
 
@@ -348,8 +348,8 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --bg1: #22272E;
 }
 
-:root.cat a,
-:root.cat .a {
+:root.catdim a,
+:root.catdim .a {
     color: var(--blue);
 }
 
