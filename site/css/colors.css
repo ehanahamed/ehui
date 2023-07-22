@@ -147,9 +147,9 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --purpleAlt: #c297ff;
     --pink: #e85aad;
     --pinkAlt: #ff80c8;
-    --primary: #218bff;
-    --primaryAlt: #54aeff;
-    --primaryDark: #0969da;
+    --primary: #a475f9;
+    --primaryAlt: #c297ff;
+    --primaryDark: #8250df;
     --extra: #a475f9;
     --extraAlt: #c297ff;
     --extraDark: #8250df;
@@ -162,6 +162,18 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --bg3: #7D8590;
     --bg2: #30363D;
     --bg1: #0D1117;
+}
+
+:root.cat a,
+:root.cat .a {
+    color: var(--blue);
+}
+
+:root.catdim a:hover,
+:root.catdim a:focus-visible,
+:root.catdim .a:hover,
+:root.catdim .a:focus-visible {
+    color: var(--blueAlt);
 }
 
 :root.cat button,
@@ -319,9 +331,9 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --purpleAlt: #c297ff;
     --pink: #e85aad;
     --pinkAlt: #ff80c8;
-    --primary: #218bff;
-    --primaryAlt: #54aeff;
-    --primaryDark: #0969da;
+    --primary: #a475f9;
+    --primaryAlt: #c297ff;
+    --primaryDark: #8250df;
     --extra: #a475f9;
     --extraAlt: #c297ff;
     --extraDark: #8250df;
@@ -334,6 +346,18 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --bg3: #768390;
     --bg2: #444C56;
     --bg1: #22272E;
+}
+
+:root.cat a,
+:root.cat .a {
+    color: var(--blue);
+}
+
+:root.catdim a:hover,
+:root.catdim a:focus-visible,
+:root.catdim .a:hover,
+:root.catdim .a:focus-visible {
+    color: var(--blueAlt);
 }
 
 :root.catdim button,
