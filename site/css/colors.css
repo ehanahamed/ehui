@@ -217,6 +217,24 @@ https://src.ehan.dev/designsys/LICENSE.txt
     transform: none;
 }
 
+:root.cat input[type="text"],
+:root.cat input[type="password"],
+:root.cat textarea {
+    background-color: #010409;
+    border-color: var(--bg2);
+    box-shadow: none;
+}
+
+:root.cat input[type="text"]:hover,
+:root.cat input[type="text"]:focus-visible,
+:root.cat input[type="password"]:hover,
+:root.cat input[type="password"]:focus-visible,
+:root.cat textarea:hover,
+:root.cat textarea:focus-visible {
+    border-color: var(--bg3);
+    transform: none;
+}
+
 :root.cat .nav > div > a {
     color: var(--bg3);
 }
