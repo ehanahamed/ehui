@@ -237,8 +237,16 @@ https://src.ehan.dev/designsys/LICENSE.txt
 
 :root.cat input[type="radio"],
 :root.cat input[type="checkbox"] {
+    border-color: var(--bg2);
     box-shadow: none;
     transform: none;
+}
+
+:root.cat input[type="radio"]:hover,
+:root.cat input[type="checkbox"]:hover,
+:root.cat input[type="radio"]:focus-visible,
+:root.cat input[type="checkbox"]:focus-visible {
+    border-color: var(--bg3)
 }
 
 :root.cat .nav > div > a {
