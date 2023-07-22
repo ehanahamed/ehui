@@ -313,6 +313,21 @@ https://src.ehan.dev/designsys/LICENSE.txt
     color: var(--fg);
 }
 
+:root.cat button:focus-visible,
+:root.cat .button:focus-visible,
+:root.cat input[type="radio"]:focus-visible,
+:root.cat input[type="checkbox"]:focus-visible,
+:root.cat input[type="text"]:focus-visible,
+:root.cat input[type="password"]:focus-visible,
+:root.cat textarea:focus-visible {
+    outline-color: var(--blue);
+}
+
+:root.cat input[type="radio"]:checked,
+:root.cat input[type="checkbox"]:checked {
+    background-color: var(--blue);
+}
+
 :root.catdim {
     color-scheme: dark;
     --red: #fa4549;
@@ -495,4 +510,19 @@ https://src.ehan.dev/designsys/LICENSE.txt
 
 :root.catdim .nav > div.current > a {
     color: var(--fg);
+}
+
+:root.cat button:focus-visible,
+:root.cat .button:focus-visible,
+:root.cat input[type="radio"]:focus-visible,
+:root.cat input[type="checkbox"]:focus-visible,
+:root.cat input[type="text"]:focus-visible,
+:root.cat input[type="password"]:focus-visible,
+:root.cat textarea:focus-visible {
+    outline-color: var(--blue);
+}
+
+:root.cat input[type="radio"]:checked,
+:root.cat input[type="checkbox"]:checked {
+    background-color: var(--blue);
 }
