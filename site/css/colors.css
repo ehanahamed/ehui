@@ -87,6 +87,41 @@ https://src.ehan.dev/designsys/LICENSE.txt
     display: none;
 }
 
+:root.blurple {
+    color-scheme: dark;
+    --red: #DA373C;
+    --redAlt: #ED4245;
+    --redDark: #A12828;
+    --orange: #BF861C;
+    --orangeAlt: #BF861C;
+    --yellow: #FEE75C;
+    --yellowAlt: #FEE75C;
+    --green: #23A55A;
+    --greenAlt: #57F287;
+    --greenDark: #1A6334;
+    --blue: #00A8FC;
+    --blueAlt: #00A8FC;
+    --purple: #5865F2;
+    --purpleAlt: #00A8FC;
+    --pink: #EB459E;
+    --pinkAlt: #EB459E;
+    --primary: #5865F2;
+    --primaryAlt: #00A8FC;
+    --primaryDark: #4752C4;
+    --extra: #5865F2;
+    --extraAlt: #00A8FC;
+    --extraDark: #4752C4;
+    --bgExtra: #23272A;
+    --black: #313338;
+    --gray: #383A40;
+    --grayAlt: #949BA4;
+    --white: #F2F3F5;
+    --fg: #F2F3F5;
+    --bg3: #949BA4;
+    --bg2: #383A40;
+    --bg1: #313338;
+}
+
 :root.cat {
     color-scheme: dark;
     --red: #fa4549;
