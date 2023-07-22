@@ -775,10 +775,6 @@ button.g:focus-visible,
 :root.blurple .button.g:hover,
 :root.blurple button.g:focus-visible,
 :root.blurple .button.g:focus-visible,
-:root.cat button.g:hover,
-:root.cat .button.g:hover,
-:root.cat button.g:focus-visible,
-:root.cat .button.g:focus-visible,
 :root.catdim button.g:hover,
 :root.catdim .button.g:hover,
 :root.catdim button.g:focus-visible,
@@ -787,8 +783,25 @@ button.g:focus-visible,
     background-color: var(--grayAlt);
 }
 
+:root.cat button.g:hover,
+:root.cat .button.g:hover,
+:root.cat button.g:focus-visible,
+:root.cat .button.g:focus-visible {
+    color: var(--black);
+    background-color: #8B949E;
+}
+
+:root.catdim button.g:hover,
+:root.catdim .button.g:hover,
+:root.catdim button.g:focus-visible,
+:root.catdim .button.g:focus-visible {
+    color: var(--black);
+    background-color: #768390;
+}
+
 :root.purpleish button.g,
 :root.purpleish .button.g {
+    color: var(--black);
     background-color: #DDDDEE;
 }
 
@@ -796,6 +809,7 @@ button.g:focus-visible,
 :root.purpleish button.g:focus-visible,
 :root.purpleish .button.g:hover,
 :root.purpleish .button.g:focus-visible {
+    color: var(--black);
     background-color: #BBBBCC;
 }
 
@@ -807,5 +821,4 @@ button.g img {
 button.guest,
 .button.guest {
     border-width: 0.4rem;
-    padding: 0.6rem 0.8rem;
 }
