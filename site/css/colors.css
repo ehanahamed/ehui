@@ -235,6 +235,12 @@ https://src.ehan.dev/designsys/LICENSE.txt
     transform: none;
 }
 
+:root.cat input[type="radio"],
+:root.cat input[type="checkbox"] {
+    box-shadow: none;
+    transform: none;
+}
+
 :root.cat .nav > div > a {
     color: var(--bg3);
 }
