@@ -41,6 +41,41 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --bg1: #1E1E32;
 }
 
+:root.owldark {
+    color-scheme: dark;
+    --red: #ff4b4b;
+    --redAlt: #ff7878;
+    --redDark: #ea2b2b;
+    --orange: #ffc800;
+    --orangeAlt: #fbe56d;
+    --yellow: #ffc800;
+    --yellowAlt: #fbe56d;
+    --green: #58cc02;
+    --greenAlt: #a5ed6e;
+    --greenDark: #58a700;
+    --blue: #1899d6;
+    --blueAlt: #1cb0f6;
+    --purple: #9069cd;
+    --purpleAlt: #ce82ff;
+    --pink: #9069cd;
+    --pinkAlt: #ce82ff;
+    --primary: #58cc02;
+    --primaryAlt: #a5ed6e;
+    --primaryDark: #58a700;
+    --extra: #1899d6;
+    --extraAlt: #1cb0f6;
+    --extraDark: #2b70c9;
+    --bgExtra: #202F36;
+    --black: #131F24;
+    --gray: #37464F;
+    --grayAlt: #52656D;
+    --white: #F1F7FB;
+    --fg: #F1F7FB;
+    --bg3: #52656D;
+    --bg2: #37464F;
+    --bg1: #131F24;
+}
+
 :root.owl {
     color-scheme: light;
     --red: #ff4b4b;
