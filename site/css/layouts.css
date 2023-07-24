@@ -233,7 +233,7 @@ html.screen body {
 header {
     display: grid;
     gap: 1rem;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: auto 1rem;
     grid-template-areas:
         "menu options";
 }
