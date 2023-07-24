@@ -76,6 +76,10 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --bg1: #131F24;
 }
 
+:root.owldark .hero > .logo::before {
+    display: none;
+}
+
 :root.owl {
     color-scheme: light;
     --red: #ff4b4b;
