@@ -1,6 +1,6 @@
 function setTheme(theme) {
     /* function to be used in this script and in other settings menus */
-    document.documentElement.classList.remove("purpleish", "owl", "blurple", "cat", "catdim");
+    document.documentElement.classList.remove("purpleish", "owl", "owldark", "blurple", "cat", "catdim");
     if (theme) {
         document.documentElement.classList.add(theme);
         localStorage.setItem("theme", theme);
