@@ -43,14 +43,14 @@ https://src.ehan.dev/designsys/LICENSE.txt
 
 :root.owldark {
     color-scheme: dark;
-    --red: #D84848;
+    --red: #EE5555;
     --redAlt: #FF5D5D;
     --redDark: #D84848;
     --orange: #ffc800;
     --orangeAlt: #fbe56d;
     --yellow: #ffc800;
     --yellowAlt: #fbe56d;
-    --green: #79B933;
+    --green: #A2E838;
     --greenAlt: #A2E838;
     --greenDark: #79B933;
     --blue: #1899d6;
@@ -59,7 +59,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
     --purpleAlt: #ce82ff;
     --pink: #9069cd;
     --pinkAlt: #ce82ff;
-    --primary: #79B933;
+    --primary: #A2E838;
     --primaryAlt: #A2E838;
     --primaryDark: #79B933;
     --extra: #1899d6;
