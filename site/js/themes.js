@@ -18,6 +18,9 @@ function setTheme(theme) {
   if (theme) {
     document.documentElement.classList.add(theme);
     localStorage.setItem("theme", theme);
+  } else {
+    document.documentElement.classList.add("purpleish");
+    localStorage.setItem("theme", "purpleish");
   }
 }
 
