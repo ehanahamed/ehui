@@ -429,21 +429,23 @@
       </div>
       <div class="grid page">
         <div class="content">
-          <p>Open modal?</p>
+          <h2>Modals & Popups</h2>
+          <p>Modals should only be used to get full attention for something super important.</p>
           <button
             onclick="document.getElementById('modalfilter').classList.remove('hide');document.getElementById('modal').classList.remove('hide');"
           >
-            Open test modal
+            Open Modal
           </button>
           <div>
             <div id="modalfilter" class="modal filter hide"></div>
             <div id="modal" class="modal content box hide">
-              <p>Test modal text</p>
+              <p>This is a modal!</p>
+              <p>Most elements work perfectly inside of modals, with no extra "setup".</p>
               <div>
                 <button
                   onclick="document.getElementById('modalfilter').classList.add('hide');document.getElementById('modal').classList.add('hide');"
                 >
-                  close?
+                  Close
                 </button>
               </div>
             </div>
