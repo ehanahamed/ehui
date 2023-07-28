@@ -536,6 +536,8 @@ input[type="checkbox"]:checked {
   .modal > .content {
     width: 100vw;
     border: none;
+    border-top: 0.2rem solid var(--bg2);
     border-radius: 0px;
+    padding-bottom: 4rem;
   }
 }
