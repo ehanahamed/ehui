@@ -538,6 +538,6 @@ input[type="checkbox"]:checked {
     border: none;
     border-top: 0.2rem solid var(--bg2);
     border-radius: 0px;
-    padding-bottom: 4rem;
+    padding-bottom: 8rem;
   }
 }
