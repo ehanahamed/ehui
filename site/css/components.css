@@ -495,7 +495,18 @@ input[type="checkbox"]:checked {
   margin: 0px 1rem;
 }
 
-.modal.filter {
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal::before {
   position: fixed;
   z-index: 180;
   top: 0px;
@@ -506,12 +517,11 @@ input[type="checkbox"]:checked {
   opacity: 0.6;
 }
 
-.modal.content {
-  position: fixed;
+.modal > .content {
   z-index: 200;
-  top: 20vh;
-  left: 20vw;
   width: 60vw;
-  height: 60vh;
   background-color: var(--bg1);
+  border: 0.2rem solid var(--bg2);
+  border-radius: 0.8rem;
+  padding: 1rem;
 }
