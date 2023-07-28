@@ -4,7 +4,7 @@
 
 A button with really short text, like "Sign Up", should have "title capitalization", all words are capitalized except conjunctions. A button with longer text like a sentence, for example "Continue without an account" should have "sentence capitalization", you capitalize it like you would capitalize a normal sentence. However, do not use puncuation.
 
-The above logic also applies to titles/headings (h2, h3, etc), if the text is short, like "Get Started", its "title capitalization", if its longer, like "Create or open a dataset". Titles also do not use *normal* puncuation, however titles that are questions should use a question mark! Some titles might have commas, but almost never use periods at the end of titles.
+The above logic also applies to titles/headings (h2, h3, etc), if the text is short, like "Get Started", its "title capitalization", if its longer, like "Create or open a dataset". Titles also do not use _normal_ puncuation, however titles that are questions should use a question mark! Some titles might have commas, but almost never use periods at the end of titles.
 
 Text/content should almost ALWAYS use proper grammar and capitalization.
 
@@ -28,11 +28,11 @@ The actual UI, unlike the source code, should always use correct grammar and sho
 
 ### Remove vs delete
 
-"Remove" should mean that you are taking something out of somewhere, but the something you are removing still exists somewhere else. For example, if there is a list and there is a button to take something out of the list, that button would say "remove". You are re-*move*-ing something, that something still exists, but is just somewhere else.
+"Remove" should mean that you are taking something out of somewhere, but the something you are removing still exists somewhere else. For example, if there is a list and there is a button to take something out of the list, that button would say "remove". You are re-_move_-ing something, that something still exists, but is just somewhere else.
 
-"Delete" should mean that the something is being gone-ed. For example, if there is a textbox, and you are deleteing the textbox, and any content inside it (the textbox would be gone, not moved somewhere else, just gone completly) that button would be labeled "delete". 
+"Delete" should mean that the something is being gone-ed. For example, if there is a textbox, and you are deleteing the textbox, and any content inside it (the textbox would be gone, not moved somewhere else, just gone completly) that button would be labeled "delete".
 
-It doesn't matter if the action is undo-able, if it is gone-ed it is "delete"-ed, if it is moved out of something it is "remove"-ed. 
+It doesn't matter if the action is undo-able, if it is gone-ed it is "delete"-ed, if it is moved out of something it is "remove"-ed.
 
 ## Sign Up, Log In, & Sign In
 

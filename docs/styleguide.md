@@ -1,13 +1,14 @@
 # Styleguide
 
 Use `0px` instead of just `0` (even though `0` is allowed in css, `0px` looks better)
+
 ```css
 element {
-    property: 0px;
+  property: 0px;
 }
 /* do this even when another unit is next to it */
 anotherelement {
-    anotherproperty: 1rem 0px 3rem 2rem
+  anotherproperty: 1rem 0px 3rem 2rem;
 }
 ```
 
@@ -15,8 +16,8 @@ HTML form elements should NOT use the label as a wrapper, the label and input sh
 
 ```html
 <div class="">
-    <input type="" name"" id="ID" />
-    <label for="ID">text</label>
+  <input type="" name"" id="ID" />
+  <label for="ID">text</label>
 </div>
 ```
 
@@ -30,9 +31,10 @@ Use `<br />`s as shown in [`./spacing.md`](./spacing.md)
 
 ### HTML IDs
 
-IDs for headers and IDs for other elements are much different, headers should have "user-readable" IDs, while other elements who's IDs are used in JS should have "structure-sensitive" IDs. 
+IDs for headers and IDs for other elements are much different, headers should have "user-readable" IDs, while other elements who's IDs are used in JS should have "structure-sensitive" IDs.
 
 HTML IDs for headers should have a user-understandable ID. For example:
+
 ```html
 <h2>Settings</h2>
 <h3 id="appearance">Appearance</h3>
@@ -40,23 +42,22 @@ HTML IDs for headers should have a user-understandable ID. For example:
 <h3 id="accesibility">Accesibility</h3>
 <element>...</element>
 <something>
-    <h3 id="account">Account</h3>
-    <element>...</element>
+  <h3 id="account">Account</h3>
+  <element>...</element>
 </something>
 ```
 
 HTML IDs for elements with JavaScript functionality should be likie:
+
 ```html
 <div class="header">
-    <div class="menu">
-        <button id="headerMenuSettingsbutton">Show Settings</button>
-        <div id="headerMenuSettingssection">
-            ...
-        </div>
-    </div>
+  <div class="menu">
+    <button id="headerMenuSettingsbutton">Show Settings</button>
+    <div id="headerMenuSettingssection">...</div>
+  </div>
 </div>
 <something>
-    <element id="somethingElement">...</element>
+  <element id="somethingElement">...</element>
 </something>
 ```
 

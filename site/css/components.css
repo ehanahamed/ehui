@@ -6,73 +6,73 @@ https://src.ehan.dev/designsys/LICENSE.txt
 */
 
 html {
-    height: auto;
-    font-size: 18px;
-    scroll-behavior: smooth;
+  height: auto;
+  font-size: 18px;
+  scroll-behavior: smooth;
 }
 
 @media only screen and (max-width: 800px) {
-    html {
-      font-size: 16px;
-    }
+  html {
+    font-size: 16px;
+  }
 }
 
 body {
-    height: auto;
-    background-color: var(--bg1);
-    color: var(--fg);
-    font-size: 1rem;
-    line-height: 1.4rem;
-    font-family: sans-serif;
-    font-weight: normal;
-    margin: 0px;
+  height: auto;
+  background-color: var(--bg1);
+  color: var(--fg);
+  font-size: 1rem;
+  line-height: 1.4rem;
+  font-family: sans-serif;
+  font-weight: normal;
+  margin: 0px;
 }
 
 ::selection {
-    background-color: var(--primaryAlt);
-    color: var(--bg1);
+  background-color: var(--primaryAlt);
+  color: var(--bg1);
 }
 
 h1,
 .h1 {
-    font-size: 4rem;
-    line-height: 4.4rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
+  font-size: 4rem;
+  line-height: 4.4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
 
 h2,
 .h2 {
-    font-size: 2.4rem;
-    line-height: 2.8rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
 
 h3,
 .h3 {
-    font-size: 1.6rem;
-    line-height: 2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
 
 h4,
 .h4 {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
 
 h5,
 .h5,
 p {
-    font-size: 1rem;
-    line-height: 1.4rem;
-    font-weight: normal;
-    margin-top: 0px;
-    margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  font-weight: normal;
+  margin-top: 0px;
+  margin-bottom: 1rem;
 }
 /* TEMPORARY FIX */
 p {
@@ -80,12 +80,11 @@ p {
 }
 
 h6,
-.h6
-small {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
-    font-weight: normal;
-    margin-bottom: 1rem;
+.h6 small {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
 }
 
 b,
@@ -152,7 +151,7 @@ header,
 
   /* TEMP*/
   height: 4rem;
-  
+
   top: 0px;
   background-color: var(--bg1);
   border-bottom: 0.2rem solid var(--bg2);
@@ -193,7 +192,8 @@ table {
   border-radius: 0.8rem;
 }
 
-td, th {
+td,
+th {
   border: 0.2rem solid var(--bg2);
   text-align: left;
   padding: 1rem;
@@ -475,12 +475,12 @@ input[type="checkbox"]:checked {
 }
 
 .card.double.flip > .content {
-  transform: rotateY(180deg)
+  transform: rotateY(180deg);
 }
 
 .separator {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   color: var(--bg3);
 }

@@ -9,7 +9,7 @@ https://src.ehan.dev/designsys/LICENSE.txt
 min/reduced-motion utils
 */
 html.min {
-    scroll-behavior: auto;
+  scroll-behavior: auto;
 }
 
 html.min a,
@@ -21,7 +21,7 @@ html.min input[type="password"],
 html.min textarea,
 html.min input[type="radio"],
 html.min input[type="checkbox"] {
-    transition-duration: 0s;
+  transition-duration: 0s;
 }
 
 html.min .card.min,
@@ -89,12 +89,12 @@ html.min .card.double.flip > .content > .front,
 specific css-negation-stuff utils
 */
 a.mark {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 a.mark:hover,
 a.mark:focus-visible {
-    color: var(--primaryAlt);
+  color: var(--primaryAlt);
 }
 
 /*
@@ -110,7 +110,7 @@ u.red,
 mark.red,
 .mark.red,
 code.red {
-    color: var(--red);
+  color: var(--red);
 }
 
 span.redAlt,
@@ -122,7 +122,7 @@ u.redAlt,
 mark.redAlt,
 .mark.redAlt,
 code.redAlt {
-    color: var(--redAlt);
+  color: var(--redAlt);
 }
 
 span.orange,
@@ -134,7 +134,7 @@ u.orange,
 mark.orange,
 .mark.orange,
 code.orange {
-    color: var(--orange);
+  color: var(--orange);
 }
 
 span.orangeAlt,
@@ -146,7 +146,7 @@ u.orangeAlt,
 mark.orangeAlt,
 .mark.orangeAlt,
 code.orangeAlt {
-    color: var(--orangeAlt);
+  color: var(--orangeAlt);
 }
 
 span.yellow,
@@ -158,7 +158,7 @@ u.yellow,
 mark.yellow,
 .mark.yellow,
 code.yellow {
-    color: var(--yellow);
+  color: var(--yellow);
 }
 
 span.yellowAlt,
@@ -170,7 +170,7 @@ u.yellowAlt,
 mark.yellowAlt,
 .mark.yellowAlt,
 code.yellowAlt {
-    color: var(--yellowAlt);
+  color: var(--yellowAlt);
 }
 
 span.green,
@@ -182,7 +182,7 @@ u.green,
 mark.green,
 .mark.green,
 code.green {
-    color: var(--green);
+  color: var(--green);
 }
 
 span.greenAlt,
@@ -194,7 +194,7 @@ u.greenAlt,
 mark.greenAlt,
 .mark.greenAlt,
 code.greenAlt {
-    color: var(--greenAlt);
+  color: var(--greenAlt);
 }
 
 span.blue,
@@ -203,10 +203,9 @@ b.blue,
 i.blue,
 u.blue,
 .text.blue,
-mark.blue
-.mark.blue,
+mark.blue .mark.blue,
 code.blue {
-    color: var(--blue);
+  color: var(--blue);
 }
 
 span.blueAlt,
@@ -216,9 +215,8 @@ i.blueAlt,
 u.blueAlt,
 .text.blueAlt,
 mark.blueAlt,
-.mark.blueAlt
-code.blueAlt {
-    color: var(--blueAlt);
+.mark.blueAlt code.blueAlt {
+  color: var(--blueAlt);
 }
 
 span.bg3,
@@ -230,7 +228,7 @@ u.bg3,
 mark.bg3,
 .mark.bg3,
 code.bg3 {
-    color: var(--bg3);
+  color: var(--bg3);
 }
 
 span.bg2,
@@ -242,7 +240,7 @@ u.bg2,
 mark.bg2,
 .mark.bg2,
 code.bg2 {
-    color: var(--bg2);
+  color: var(--bg2);
 }
 
 span.bg1,
@@ -254,7 +252,7 @@ u.bg1,
 mark.bg1,
 .mark.bg1,
 code.bg1 {
-    color: var(--bg1);
+  color: var(--bg1);
 }
 
 span.black,
@@ -266,7 +264,7 @@ u.black,
 mark.black,
 .mark.black,
 code.black {
-    color: var(--black);
+  color: var(--black);
 }
 
 span.fg,
@@ -278,7 +276,7 @@ u.fg,
 mark.fg,
 .mark.fg,
 code.fg {
-    color: var(--fg);
+  color: var(--fg);
 }
 
 span.white,
@@ -290,7 +288,7 @@ u.white,
 mark.white,
 .mark.white,
 code.white {
-    color: var(--white);
+  color: var(--white);
 }
 
 span.primary,
@@ -302,7 +300,7 @@ u.primary,
 mark.primary,
 .mark.primary,
 code.primary {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 span.primaryAlt,
@@ -314,7 +312,7 @@ u.primaryAlt,
 mark.primaryAlt,
 .mark.primaryAlt,
 code.primaryAlt {
-    color: var(--primaryAlt);
+  color: var(--primaryAlt);
 }
 
 span.purple,
@@ -326,7 +324,7 @@ u.purple,
 mark.purple,
 .mark.purple,
 code.purple {
-    color: var(--purple);
+  color: var(--purple);
 }
 
 span.purpleAlt,
@@ -338,7 +336,7 @@ u.purpleAlt,
 mark.purpleAlt,
 .mark.purpleAlt,
 code.purpleAlt {
-    color: var(--purpleAlt);
+  color: var(--purpleAlt);
 }
 
 span.pink,
@@ -350,7 +348,7 @@ u.pink,
 mark.pink,
 .mark.pink,
 code.pink {
-    color: var(--pink);
+  color: var(--pink);
 }
 
 span.pinkAlt,
@@ -362,7 +360,7 @@ u.pinkAlt,
 mark.pinkAlt,
 .mark.pinkAlt,
 code.pinkAlt {
-    color: var(--pinkAlt);
+  color: var(--pinkAlt);
 }
 
 span.extra,
@@ -374,7 +372,7 @@ u.extra,
 mark.extra,
 .mark.extra,
 code.extra {
-    color: var(--extra);
+  color: var(--extra);
 }
 
 span.extraAlt,
@@ -386,142 +384,142 @@ u.extraAlt,
 mark.extraAlt,
 .mark.extraAlt,
 code.extraAlt {
-    color: var(--extraAlt);
+  color: var(--extraAlt);
 }
 
 mark.markRed,
 .mark.markRed {
-    background-color: var(--red);
+  background-color: var(--red);
 }
 
 mark.markRedAlt,
 .mark.markRedAlt {
-    background-color: var(--redAlt);
+  background-color: var(--redAlt);
 }
 
 mark.markOrange,
 .mark.markOrange {
-    background-color: var(--orange);
+  background-color: var(--orange);
 }
 
 mark.markOrangeAlt,
 .mark.markOrangeAlt {
-    background-color: var(--orangeAlt);
+  background-color: var(--orangeAlt);
 }
 
 mark.markYellow,
 .mark.markYellow {
-    background-color: var(--yellow);
+  background-color: var(--yellow);
 }
 
 mark.markYellowAlt,
 .mark.markYellowAlt {
-    background-color: var(--yellowAlt);
+  background-color: var(--yellowAlt);
 }
 
 mark.markGreen,
 .mark.markGreen {
-    background-color: var(--green);
+  background-color: var(--green);
 }
 
 mark.markGreenAlt,
 .mark.markGreenAlt {
-    background-color: var(--greenAlt);
+  background-color: var(--greenAlt);
 }
 
 mark.markBlue,
 .mark.markBlue {
-    background-color: var(--blue);
+  background-color: var(--blue);
 }
 
 mark.markBlueAlt,
 .mark.markBlueAlt {
-    background-color: var(--blueAlt);
+  background-color: var(--blueAlt);
 }
 
 mark.markBg3,
 .mark.markBg3 {
-    background-color: var(--bg3);
+  background-color: var(--bg3);
 }
 
 mark.markBg2,
 .mark.markBg2 {
-    background-color: var(--bg2);
+  background-color: var(--bg2);
 }
 
 mark.markBg1,
 .mark.markBg1 {
-    background-color: var(--bg1);
+  background-color: var(--bg1);
 }
 
 mark.markBlack,
 .mark.markBlack {
-    background-color: var(--black);
+  background-color: var(--black);
 }
 
 mark.markFg,
 .mark.markFg {
-    background-color: var(--fg);
+  background-color: var(--fg);
 }
 
 mark.markWhite,
 .mark.markWhite {
-    background-color: var(--white);
+  background-color: var(--white);
 }
 
 mark.markPrimary,
 .mark.markPrimary {
-    background-color: var(--primary);
+  background-color: var(--primary);
 }
 
 mark.markPrimaryAlt,
 .mark.markPrimaryAlt {
-    background-color: var(--primaryAlt);
+  background-color: var(--primaryAlt);
 }
 
 mark.markPurple,
 .mark.markPurple {
-    background-color: var(--purple);
+  background-color: var(--purple);
 }
 
 mark.markPurpleAlt,
 .mark.markPurpleAlt {
-    background-color: var(--purpleAlt);
+  background-color: var(--purpleAlt);
 }
 
 mark.markPink,
 .mark.markPink {
-    background-color: var(--pink);
+  background-color: var(--pink);
 }
 
 mark.markPinkAlt,
 .mark.markPinkAlt {
-    background-color: var(--pinkAlt);
+  background-color: var(--pinkAlt);
 }
 
 mark.markExtra,
 .mark.markExtra {
-    background-color: var(--extra);
+  background-color: var(--extra);
 }
 
 mark.markExtraAlt,
 .mark.markExtraAlt {
-    background-color: var(--extraAlt);
+  background-color: var(--extraAlt);
 }
 
 .box.red {
-    color: var(--red);
-    border-color: var(--red);
+  color: var(--red);
+  border-color: var(--red);
 }
 
 .box.green {
-    color: var(--green);
-    border-color: var(--green);
+  color: var(--green);
+  border-color: var(--green);
 }
 
 pre,
 .pre {
-    white-space: pre;
+  white-space: pre;
 }
 
 button.red,
@@ -698,57 +696,57 @@ textarea.extra:focus-visible {
 }
 
 textarea.vertical {
-    resize: vertical;
+  resize: vertical;
 }
 
 textarea.horizontal {
-    resize: horizontal;
+  resize: horizontal;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .invisible {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: 0px;
-    opacity: 0;
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0px;
+  opacity: 0;
+  overflow: hidden;
 }
 
 /* fancy stuff */
 .hero > .logo::before {
-    content: "";
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    z-index: -100;
-    background-color: var(--primary);
-    opacity: 0.2;
-    filter: blur(1rem);
-    border-radius: 50%;
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: -100;
+  background-color: var(--primary);
+  opacity: 0.2;
+  filter: blur(1rem);
+  border-radius: 50%;
 }
 
 html.min .hero > .logo::before {
-    display: none;
+  display: none;
 }
 
 .hero > .logo > svg {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
 /* temp */
 .fullWidth {
-    width: 100%;
+  width: 100%;
 }
 
 .grid.page.extra {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-bottom: 1rem;
-    background-color: var(--bgExtra);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 1rem;
+  background-color: var(--bgExtra);
 }
 
 /* third party styling requirements */
@@ -760,11 +758,11 @@ button.g,
 :root.cat .button.g,
 :root.catdim button.g,
 :root.catdim .button.g {
-    background-color: var(--white);
-    font-family: "roboto";
-    color: var(--black);
-    padding: 0.6rem 0.8rem;
-    border-width: 0.4rem;
+  background-color: var(--white);
+  font-family: "roboto";
+  color: var(--black);
+  padding: 0.6rem 0.8rem;
+  border-width: 0.4rem;
 }
 
 button.g:hover,
@@ -779,14 +777,14 @@ button.g:focus-visible,
 :root.catdim .button.g:hover,
 :root.catdim button.g:focus-visible,
 :root.catdim .button.g:focus-visible {
-    color: var(--black);
-    background-color: var(--grayAlt);
+  color: var(--black);
+  background-color: var(--grayAlt);
 }
 
 :root.purpleish button.g,
 :root.purpleish .button.g {
-    color: var(--black);
-    background-color: #DDDDEE;
+  color: var(--black);
+  background-color: #ddddee;
 }
 
 :root.purpleish button.g:hover,
@@ -801,16 +799,16 @@ button.g:focus-visible,
 :root.catdim .button.g:hover,
 :root.catdim button.g:focus-visible,
 :root.catdim .button.g:focus-visible {
-    color: var(--black);
-    background-color: #BBBBCC;
+  color: var(--black);
+  background-color: #bbbbcc;
 }
 
 button.g img {
-    height: 1.4rem;
-    width: 1.4rem;
+  height: 1.4rem;
+  width: 1.4rem;
 }
 
 button.guest,
 .button.guest {
-    border-width: 0.4rem;
+  border-width: 0.4rem;
 }

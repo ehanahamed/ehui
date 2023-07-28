@@ -7,9 +7,10 @@ Some webdevs decide to make their own icon set, but there is truly no need to re
 It is USUALLY against deisngsys's design princibles to have "icon buttons" or icons by themselves with no text. Almost all icons must have text with them. (The same is NOT true for text, text does not need icons, do NOT overuse icons when not needed.)
 
 There are only three "universal" icons that can be used without text.
- - directional arrows/movement arrows
- - X to close (NOT X to delete or trash to delete, only X as close/hide ui)
- - three vertical bars for menu
+
+- directional arrows/movement arrows
+- X to close (NOT X to delete or trash to delete, only X as close/hide ui)
+- three vertical bars for menu
 
 ONLY THESE THREE ICON TYPES CAN BE USED WITHOUT TEXT, all other icons need text!!!
 
@@ -20,24 +21,26 @@ If a button in a row of buttons has an icon, every button in that "group"/row sh
 ## HTML-ing
 
 If you can, make icons on different lines than text or other html elements.
+
 ```html
 <!-- having them on different lines effects spacing -->
 <element>
-    <i class="nf nf-something"></i>
-    <element>text</element>
+  <i class="nf nf-something"></i>
+  <element>text</element>
 </element>
 <element>
-    <i class="nf nf-something"></i>
-    text
+  <i class="nf nf-something"></i>
+  text
 </element>
 ```
 
 If an icon is on the same line as text or another html element, add spaces:
+
 ```html
 <!-- adding whitespace effects the actual spacing of the rendered html -->
 <!-- this one-line technique should be used when dealing with html stuff in javascript -->
 <element> <i class="nf nf-something"></i> <element>text</element> </element>
-<element> <i class="nf nf-something"></i> text </element> 
+<element> <i class="nf nf-something"></i> text </element>
 ```
 
 If you do not follow this spacing and newline-ing guide, the icons will be spaced incorrectly and might even overlap text.
@@ -56,7 +59,7 @@ An `X` icon should be used to indicate closing or hiding something. NOT deleting
 
 A "trash bin" icon should be used to indicate deleting something. Anytime user-made content is being "gone"-ed you use a trash bin, NOT an `X`.
 
-An "eye" icon and a "crossed-out-eye" icon is used for toggling between two states of visibility. Like showing a password or hiding the password. The content should still be "there" and still "see"-able, just shown *differently*.
+An "eye" icon and a "crossed-out-eye" icon is used for toggling between two states of visibility. Like showing a password or hiding the password. The content should still be "there" and still "see"-able, just shown _differently_.
 
 Options, or an icon with a bunch of "sliders", is used for options, NOT settings. In designsys terminology options refers to designsys's settings and UI appearence options while settings refers to the actual app/website's settings and configuration. Settings, or a "cog"/gear is used for "settings".
 

@@ -13,28 +13,30 @@ Regardless, the current solution isn't too "hacky". Simply hide the actual `inpu
 However, hiding the `input` element is a bit more of a struggle, because simply using some css like `display: none;` will make the upload button useless to certain accisibility features.
 
 Instead use a more "hacky" css approach:
+
 ```css
 /*
 this css class is in designsys (in utils.css)
 */
 .invisible {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: 0px;
-    opacity: 0;
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0px;
+  opacity: 0;
+  overflow: hidden;
 }
 ```
 
 Now the `input` element is technically not hidden, the user can't see it, but the web browser thinks the user can.
 
 Then the rest is simple, just make the label look like a button. Since designsys already has a `.button` class, its super easy. You're html would look something like this:
+
 ```html
 <div>
-    <!-- no extra css is needed, all these classes are already in designsys -->
-    <label for="ID" ... class="button">Select File</label>
-    <input type="file" ... id="ID" class="invisible" />
+  <!-- no extra css is needed, all these classes are already in designsys -->
+  <label for="ID" ... class="button">Select File</label>
+  <input type="file" ... id="ID" class="invisible" />
 </div>
 ```
 
