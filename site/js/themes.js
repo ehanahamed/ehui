@@ -1,3 +1,10 @@
+/*!
+  Design System (design.ehan.dev)
+  Copyright (c) 2022-present Ehan Ahamed and contributors
+  Licensed under the UPL-1.0 License
+  https://design.ehan.dev/license
+*/
+
 function setTheme(theme) {
   /* function to be used in this script and in other settings menus */
   document.documentElement.classList.remove(

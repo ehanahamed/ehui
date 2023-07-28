@@ -1,8 +1,8 @@
 /*!
-design (design.ehan.dev)
-Copyright (c) 2023-present Ehan Ahamed and contributors
-Licensed under the UPL-1.0 License
-https://src.ehan.dev/design/LICENSE.txt
+  Design System (design.ehan.dev)
+  Copyright (c) 2022-present Ehan Ahamed and contributors
+  Licensed under the UPL-1.0 License
+  https://design.ehan.dev/license
 */
 
 setTheme(localStorage.getItem("theme"));
