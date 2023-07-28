@@ -507,6 +507,7 @@ input[type="checkbox"]:checked {
 }
 
 .modal::before {
+  content: "";
   position: fixed;
   z-index: 180;
   top: 0px;

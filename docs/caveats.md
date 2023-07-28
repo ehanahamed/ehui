@@ -1,5 +1,15 @@
 # Caveats/Annoying stuff
 
+## Pseudo-elements (::before and ::after)
+
+Always make sure to add `content: ""` or else, they just wont exist.
+```css
+something::before {
+  content: "";
+  /* ... */
+}
+```
+
 ## File inputs
 
 Web browsers hate web developers, so they made it annoying to style the default `<input type="file"...` element.
