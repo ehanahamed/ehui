@@ -427,6 +427,21 @@
           />
         </svg>
       </div>
+      <div class="grid page">
+        <div class="content">
+          <p>Open modal?</p>
+          <button onclick="document.getElementById('modalfilter').classList.remove('hide');document.getElementById('modal').classList.remove('hide');">Open test modal</button>
+          <div>
+            <div id="modalfilter" class="modal filter hide"></div>
+            <div id="modal" class="modal content hide">
+              <p>Test modal text</p>
+              <div>
+                <button onclick="document.getElementById('modalfilter').classList.add('hide');document.getElementById('modal').classList.add('hide');">close?</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <h2>Footer</h2>
