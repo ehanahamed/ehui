@@ -29,6 +29,17 @@ Unclosed elements should use a slash at the end
 
 Use `<br />`s as shown in [`./spacing.md`](./spacing.md)
 
+### z-index
+
+- Normal stuff: N/A
+  - Elements with `position: static;` (the default) don't need/have a z-index
+- Header/navbar: 100
+- Popups/navigation-helpers: 160
+- Modals
+  - Containing modal element: 200
+    - Modal filter/bg (`::before`): 180
+    - Modal box (`.content`): 200
+
 ### HTML IDs
 
 IDs for headers and IDs for other elements are much different, headers should have "user-readable" IDs, while other elements who's IDs are used in JS should have "structure-sensitive" IDs.

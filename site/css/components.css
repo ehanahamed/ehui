@@ -499,6 +499,7 @@ input[type="checkbox"]:checked {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 200;
   position: fixed;
   top: 0px;
   left: 0px;
