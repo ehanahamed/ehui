@@ -527,3 +527,15 @@ input[type="checkbox"]:checked {
   border-radius: 0.8rem;
   padding: 1rem;
 }
+
+@media only screen and (max-width: 800px) {
+  .modal {
+    align-items: flex-end;
+  }
+
+  .modal > .content {
+    width: 100vw;
+    border: none;
+    border-radius: 0px;
+  }
+}
