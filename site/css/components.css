@@ -541,3 +541,7 @@ input[type="checkbox"]:checked {
     padding-bottom: 8rem;
   }
 }
+
+.flex.pop {
+  padding: 0px 1rem;
+}
