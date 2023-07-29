@@ -19,6 +19,7 @@
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  padding: 0px 1rem;
 }
 
 .flex.row {
@@ -61,48 +62,34 @@
   justify-content: space-between;
 }
 
-.flex.stretch {
-  justify-content: stretch;
-}
-
-.flex.wrapstart {
+.flex.alignStart {
+  align-items: flex-start;
   align-content: flex-start;
 }
 
-.flex.wrapend {
+.flex.alignEnd {
+  align-items: flex-end;
   align-content: flex-end;
 }
 
-.flex.wrapcenter {
+.flex.alignCenter {
+  align-items: center;
   align-content: center;
 }
 
-.flex.wrapstretch {
+.flex.stretch {
+  align-items: stretch;
   align-content: stretch;
 }
 
-.flex.wrapedge {
+.flex.alignSpaceBetween {
+  align-items: space-between;
   align-content: space-between;
 }
 
-.flex.wrapspace {
+.flex.alignSpaceAround {
+  align-items: space-around;
   align-content: space-around;
-}
-
-.flex.itemscenter {
-  align-items: center;
-}
-
-.flex.itemsstretch {
-  align-items: stretch;
-}
-
-.flex.itemsstart {
-  align-items: flex-start;
-}
-
-.flex.itemsend {
-  align-items: flex-end;
 }
 
 .justifyselfstretch {
