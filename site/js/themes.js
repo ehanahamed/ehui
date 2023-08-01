@@ -6,23 +6,34 @@
 */
 
 function setTheme(theme) {
-  /* function to be used in this script and in other settings menus */
+  localStorage.setItem("theme", theme);
   document.documentElement.classList.remove(
     "purpleish",
+    "snow",
     "owl",
     "owldark",
     "blurple",
     "cat",
     "catdim"
   );
-  if (theme) {
-    document.documentElement.classList.add(theme);
-    localStorage.setItem("theme", theme);
+
+  if (theme === "auto") {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: light)").matches
+    ) {
+      document.documentElement.classList.add("snow");
+    } else {
+      document.documentElement.classList.add("purpleish");
+    }
   } else {
-    document.documentElement.classList.add("purpleish");
-    localStorage.setItem("theme", "purpleish");
+    document.documentElement.classList.add(theme);
   }
 }
 
 /* run function with localStorage to set to last used theme */
-setTheme(localStorage.getItem("theme"));
+if (localStorage.getItem("theme")) {
+  setTheme(localStorage.getItem("theme"));
+} else {
+  setTheme("auto")
+}
