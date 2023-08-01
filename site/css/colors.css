@@ -43,16 +43,16 @@
 
 :root.snow {
   color-scheme: light;
-  --red: #F26161;
-  --redAlt: #F29191;
-  --redDark: #BF4D4D;
+  --red: #E65C5C;
+  --redAlt: #E68A8A;
+  --redDark: #B34747;
   --orange: #ff9966;
   --orangeAlt: #ffbb99;
   --yellow: #ffcc66;
   --yellowAlt: #ffdd99;
-  --green: #4DBF99;
-  --greenAlt: #73BFA6;
-  --greenDark: #388C70;
+  --green: #47B38F;
+  --greenAlt: #6BB39B;
+  --greenDark: #338066;
   --blue: #5252cc;
   --blueAlt: #7a7acc;
   --purple: #7a52cc;
@@ -62,9 +62,9 @@
   --primary: #7a52cc;
   --primaryAlt: #967acc;
   --primaryDark: #5c3d99;
-  --extra: #4DBF99;
-  --extraAlt: #73BFA6;
-  --extraDark: #388C70;
+  --extra: #47B38F;
+  --extraAlt: #6BB39B;
+  --extraDark: #338066;
   --bgExtra: #E6E6F2;
   --black: #1e1e32;
   --gray: #DADAE6;
