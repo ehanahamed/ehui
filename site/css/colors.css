@@ -5,6 +5,82 @@
   https://design.ehan.dev/license
 */
 
+@media (prefers-color-scheme: dark) {
+  :root,
+  :root.auto {
+    color-scheme: dark;
+    --red: #ff6666;
+    --redAlt: #ff9999;
+    --redDark: #cc5252;
+    --orange: #ff9966;
+    --orangeAlt: #ffbb99;
+    --yellow: #ffcc66;
+    --yellowAlt: #ffdd99;
+    --green: #52cca3;
+    --greenAlt: #7accb1;
+    --greenDark: #3d997a;
+    --blue: #5252cc;
+    --blueAlt: #7a7acc;
+    --purple: #7a52cc;
+    --purpleAlt: #967acc;
+    --pink: #cc52a3;
+    --pinkAlt: #cc7ab1;
+    --primary: #7a52cc;
+    --primaryAlt: #967acc;
+    --primaryDark: #5c3d99;
+    --extra: #52cca3;
+    --extraAlt: #7accb1;
+    --extraDark: #3d997a;
+    --bgExtra: #3d3d66;
+    --black: #1e1e32;
+    --gray: #3d3d66;
+    --grayAlt: #5c5c99;
+    --white: #a3a3cc;
+    --fg: #a3a3cc;
+    --bg3: #5c5c99;
+    --bg2: #3d3d66;
+    --bg1: #1e1e32;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root,
+  :root.auto {
+    color-scheme: light;
+    --red: #E65C5C;
+    --redAlt: #E68A8A;
+    --redDark: #B34747;
+    --orange: #ff9966;
+    --orangeAlt: #ffbb99;
+    --yellow: #ffcc66;
+    --yellowAlt: #ffdd99;
+    --green: #47B38F;
+    --greenAlt: #6BB39B;
+    --greenDark: #338066;
+    --blue: #5252cc;
+    --blueAlt: #7a7acc;
+    --purple: #7a52cc;
+    --purpleAlt: #967acc;
+    --pink: #cc52a3;
+    --pinkAlt: #cc7ab1;
+    --primary: #7a52cc;
+    --primaryAlt: #967acc;
+    --primaryDark: #5c3d99;
+    --extra: #47B38F;
+    --extraAlt: #6BB39B;
+    --extraDark: #338066;
+    --bgExtra: #E6E6FF;
+    --black: #3d3d66;
+    --gray: #DADAE6;
+    --grayAlt: #8A8A99;
+    --white: #F2F2FF;
+    --fg: #3d3d66;
+    --bg3: #8A8A99;
+    --bg2: #DADAE6;
+    --bg1: #F2F2FF;
+  }
+}
+
 :root.purpleish {
   color-scheme: dark;
   --red: #ff6666;
