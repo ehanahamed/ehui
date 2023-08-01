@@ -6,8 +6,8 @@
 */
 
 function setTheme(theme) {
-  localStorage.setItem("theme", theme);
   document.documentElement.classList.remove(
+    "auto",
     "purpleish",
     "snow",
     "owl",
@@ -16,19 +16,8 @@ function setTheme(theme) {
     "cat",
     "catdim"
   );
-
-  if (theme === "auto") {
-    if (
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: light)").matches
-    ) {
-      document.documentElement.classList.add("snow");
-    } else {
-      document.documentElement.classList.add("purpleish");
-    }
-  } else {
-    document.documentElement.classList.add(theme);
-  }
+  document.documentElement.classList.add(theme);
+  localStorage.setItem("theme", theme);
 }
 
 /* run function with localStorage to set to last used theme */
