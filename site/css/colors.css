@@ -71,13 +71,13 @@
     --extraDark: #338066;
     --bgExtra: #E6E6FF;
     --black: #3d3d66;
-    --gray: #DADAE6;
-    --grayAlt: #8A8A99;
-    --white: #F2F2FF;
+    --gray: #B8B8CC;
+    --grayAlt: #7A7A99;
+    --white: #FAFAFF;
     --fg: #3d3d66;
-    --bg3: #8A8A99;
-    --bg2: #DADAE6;
-    --bg1: #F2F2FF;
+    --bg3: #7A7A99;
+    --bg2: #B8B8CC;
+    --bg1: #FAFAFF;
   }
 
   :root.auto .hero > .logo::before {
@@ -146,13 +146,13 @@
   --extraDark: #338066;
   --bgExtra: #E6E6FF;
   --black: #3d3d66;
-  --gray: #DADAE6;
-  --grayAlt: #8A8A99;
-  --white: #F2F2FF;
+  --gray: #B8B8CC;
+  --grayAlt: #7A7A99;
+  --white: #FAFAFF;
   --fg: #3d3d66;
-  --bg3: #8A8A99;
-  --bg2: #DADAE6;
-  --bg1: #F2F2FF;
+  --bg3: #7A7A99;
+  --bg2: #B8B8CC;
+  --bg1: #FAFAFF;
 }
 
 :root.snow button:hover,
