@@ -80,6 +80,13 @@
     --bg1: #FAFAFF;
   }
 
+  :root.auto button:hover,
+  :root.auto button:focus-visible,
+  :root.auto .button:hover,
+  :root.auto .button:focus-visible {
+    color: var(--fg);
+  }
+
   :root.auto .hero > .logo::before {
     display: none;
   }
