@@ -79,6 +79,10 @@
     --bg2: #DADAE6;
     --bg1: #F2F2FF;
   }
+
+  :root.auto .hero > .logo::before {
+    display: none;
+  }
 }
 
 :root.purpleish {

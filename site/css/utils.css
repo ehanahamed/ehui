@@ -811,14 +811,12 @@ button.g:focus-visible,
   background-color: #bbbbcc;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root.auto button.g:hover,
-  :root.auto button.g:focus-visible,
-  :root.auto .button.g:hover,
-  :root.auto .button.g:focus-visible {
-    color: var(--black);
-    background-color: #ddddee;
-  }
+:root.auto button.g:hover,
+:root.auto button.g:focus-visible,
+:root.auto .button.g:hover,
+:root.auto .button.g:focus-visible {
+  color: var(--black);
+  background-color: #bbbbcc;
 }
 
 button.g img {
