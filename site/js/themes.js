@@ -11,7 +11,6 @@ function setTheme(theme) {
     "purpleish",
     "snow",
     "owl",
-    "owldark",
     "blurple",
     "cat",
     "catdim"

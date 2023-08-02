@@ -166,45 +166,6 @@
   display: none;
 }
 
-:root.owldark {
-  color-scheme: dark;
-  --red: #ee5555;
-  --redAlt: #ff5d5d;
-  --redDark: #d84848;
-  --orange: #ffc800;
-  --orangeAlt: #fbe56d;
-  --yellow: #ffc800;
-  --yellowAlt: #fbe56d;
-  --green: #a2e838;
-  --greenAlt: #a2e838;
-  --greenDark: #79b933;
-  --blue: #48c2f6;
-  --blueAlt: #81dfff;
-  --purple: #9069cd;
-  --purpleAlt: #ce82ff;
-  --pink: #9069cd;
-  --pinkAlt: #ce82ff;
-  --primary: #a2e838;
-  --primaryAlt: #a2e838;
-  --primaryDark: #79b933;
-  --extra: #48c2f6;
-  --extraAlt: #81dfff;
-  --extraDark: #1a98d6;
-  --bgExtra: #202f36;
-  --black: #131f24;
-  --gray: #37464f;
-  --grayAlt: #52656d;
-  --white: #f1f7fb;
-  --fg: #f1f7fb;
-  --bg3: #52656d;
-  --bg2: #37464f;
-  --bg1: #131f24;
-}
-
-:root.owldark .hero > .logo::before {
-  display: none;
-}
-
 :root.owl {
   color-scheme: light;
   --red: #ff4b4b;
