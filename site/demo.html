@@ -297,7 +297,8 @@
             <input type="file" name="file" id="file" class="invisible" />
           </div>
           <h2>Tables</h2>
-          <table>
+          <p>Inner table</p>
+          <table class="inner">
             <thead>
               <tr>
                 <th>Header, column 0</th>
@@ -316,10 +317,27 @@
                 <td>Row 1, column 1</td>
                 <td>Row 1, column 2</td>
               </tr>
+            </tbody>
+          </table>
+          <p>Outer table</p>
+          <table class="outer">
+            <thead>
               <tr>
-                <td>Row 2, column 0</td>
-                <td>Row 2, column 1</td>
-                <td>Row 2, column 2</td>
+                <th>Header, column 0</th>
+                <th>Header, column 1</th>
+                <th>Header, column 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Row 0, column 0</td>
+                <td>Row 0, column 1</td>
+                <td>Row 0, column 2</td>
+              </tr>
+              <tr>
+                <td>Row 1, column 0</td>
+                <td>Row 1, column 1</td>
+                <td>Row 1, column 2</td>
               </tr>
             </tbody>
           </table>
