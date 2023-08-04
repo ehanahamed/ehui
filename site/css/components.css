@@ -219,8 +219,8 @@ table.inner td:not(:last-child) {
  border-right: 0.2rem solid var(--bg2);
 }
 
-table.inner > thead > th,
-table.inner > thead > td,
+table.inner > thead > tr > th,
+table.inner > thead > tr > td,
 table.inner > tbody > tr:not(:last-child) > th,
 table.inner > tbody > tr:not(:last-child) > td,
 table.inner > tr:not(:last-child) > td,
