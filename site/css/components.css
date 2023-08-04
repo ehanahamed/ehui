@@ -219,17 +219,14 @@ table.inner td:not(:last-child) {
  border-right: 0.2rem solid var(--bg2);
 }
 
-table.inner > thead > tr:not(:last-child) > th,
-table.inner > thead > tr:not(:last-child) > td,
+table.inner > thead > th,
+table.inner > thead > td,
 table.inner > tbody > tr:not(:last-child) > th,
 table.inner > tbody > tr:not(:last-child) > td,
-table.inner > tfoot > tr:not(:last-child) > th,
-table.inner > tfoot > tr:not(:last-child) > td,
 table.inner > tr:not(:last-child) > td,
 table.inner > tr:not(:last-child) > th,
 table.inner > thead:not(:last-child),
-table.inner > tbody:not(:last-child),
-table.inner > tfoot:not(:last-child) {
+table.inner > tbody:not(:last-child) {
   border-bottom: 0.2rem solid var(--bg2);
 }
 
