@@ -188,23 +188,49 @@ footer,
 }
 
 table {
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0px;
   border-radius: 0.8rem;
-}
-
-td,
-th {
   border: 0.2rem solid var(--bg2);
-  text-align: left;
-  padding: 1rem;
 }
 
 td {
   font-weight: normal;
+  text-align: left;
+  padding: 1rem;
 }
 
 th {
   font-weight: bold;
+  text-align: left;
+  padding: 1rem;
+}
+
+table.outer td,
+table.outer th,
+table.outer thead,
+table.outer tbody,
+table.outer tfoot {
+  border: none;
+}
+
+table.inner th:not(:last-child),
+table.inner td:not(:last-child) {
+ border-right: 0.2rem solid var(--bg2);
+}
+
+table.inner > thead > tr:not(:last-child) > th,
+table.inner > thead > tr:not(:last-child) > td,
+table.inner > tbody > tr:not(:last-child) > th,
+table.inner > tbody > tr:not(:last-child) > td,
+table.inner > tfoot > tr:not(:last-child) > th,
+table.inner > tfoot > tr:not(:last-child) > td,
+table.inner > tr:not(:last-child) > td,
+table.inner > tr:not(:last-child) > th,
+table.inner > thead:not(:last-child),
+table.inner > tbody:not(:last-child),
+table.inner > tfoot:not(:last-child) {
+  border-bottom: 0.2rem solid var(--bg2);
 }
 
 a,
