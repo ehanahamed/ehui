@@ -707,6 +707,20 @@ textarea.horizontal {
   display: none;
 }
 
+.fullscreen {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  background: var(--bg1);
+}
+
 .invisible {
   position: absolute;
   width: 1px;
