@@ -722,15 +722,19 @@ textarea.horizontal {
 }
 
 .exitFullscreen {
-  display: none;
-}
-
-.fullscreen > .exitFullscreen {
-  display: inline-block;
   position: fixed;
   top: 1rem;
   left: 1rem;
   margin: 0px;
+  /* hide exit button by default */
+  display: none;
+}
+
+.fullscreen > button.exitFullscreen,
+.fullscreen > .button.exitFullscreen {
+  /* show exit button if its parent is fullscreen */
+  display: inline-block;
+  /* and specifically use inline block just for buttons */
 }
 
 .invisible {
