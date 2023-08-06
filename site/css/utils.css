@@ -721,6 +721,18 @@ textarea.horizontal {
   background: var(--bg1);
 }
 
+.exitFullscreen {
+  display: none;
+}
+
+.fullscreen > .exitFullscreen {
+  display: inline-block;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  margin: 0px;
+}
+
 .invisible {
   position: absolute;
   width: 1px;
