@@ -697,10 +697,12 @@ textarea.extra:focus-visible {
 
 textarea.vertical {
   resize: vertical;
+  white-space: pre;
 }
 
 textarea.horizontal {
   resize: horizontal;
+  white-space: pre;
 }
 
 .hide {
