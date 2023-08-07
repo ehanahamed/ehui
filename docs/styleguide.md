@@ -84,6 +84,28 @@ However, if two buttons are next to eachother, and one button is the "default" a
 
 However, when a button is by itself it should almost never have the `alt` class.
 
+However, if a button that would have been alt is a different color, it will not be alt, unless another alt button of the same color as the primary button is in that group.
+
+Examples: (Good)
+```
+  Main Button
+  Main Button   Main Button
+  Main Button   Alt Button
+  Main Button   Color Button
+  Main Button   Alt Button  Alt Button
+  Main Button   Alt Button  Color Alt Button
+  Color Button
+  Color Button  Color Button
+  Color Button  Color Alt Button
+```
+
+NEVER DO THIS: (BAD)
+```
+  Main Button  Color Alt Button
+  Alt Button   
+  Alt Button   Main Button
+```
+
 ### When to use buttons or links
 
 Buttons are for "actions", links are to "bring you somewhere".
