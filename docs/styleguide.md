@@ -104,6 +104,7 @@ NEVER DO THIS: (BAD)
   Main Button  Color Alt Button
   Alt Button   
   Alt Button   Main Button
+  Alt Button   Color Alt Button
 ```
 
 ### When to use buttons or links
