@@ -163,7 +163,9 @@
   gap: 1rem;
   grid-template-areas:
     "logotype actions"
-    "content content"
+    "content content";
+  padding: 1rem;
+  margin: 2rem 0px;
 }
 
 .grid.intro > .logotype {
