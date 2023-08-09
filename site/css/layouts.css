@@ -309,7 +309,8 @@ header > *,
 .checkbox > *,
 .caption > *,
 .caption > div > *,
-.nav > div {
+.nav > div,
+.logotype > * {
   margin-top: 0px;
 }
 
