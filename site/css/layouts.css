@@ -164,7 +164,7 @@
   grid-template-areas:
     "logotype actions"
     "content content";
-  padding: 2rem;
+  padding: 2rem 4rem;
   margin: 0px;
 }
 
@@ -192,6 +192,12 @@
 .grid.intro > .content {
   grid-area: content;
   text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .grid.intro {
+    padding: 2rem;
+  }
 }
 
 .grid.split {
