@@ -181,19 +181,16 @@
   gap: 1rem;
   justify-items: start;
   justify-content: start;
+  align-items: center;
+}
+
+.grid.intro > .logotype p {
+  margin-bottom: 0px;
 }
 
 .grid.intro > .logotype > .logo {
   width: 4rem;
   height: 4rem;
-}
-
-.grid.intro > .actions {
-  grid-area: actions;
-  display: flex;
-  gap: 1rem;
-  justify-items: end;
-  justify-content: end;
 }
 
 .grid.intro > .content {
