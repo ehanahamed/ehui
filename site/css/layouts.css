@@ -160,7 +160,7 @@
 .grid.intro {
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  gap: 4rem;
   grid-template-areas:
     "logotype actions"
     "content content";
