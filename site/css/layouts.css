@@ -158,20 +158,25 @@
 }
 
 .grid.intro {
-  grid-template-rows: 1fr 4fr 4fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
   grid-template-areas:
-    "logo actions"
+    "logotype actions"
     "content content"
 }
 
-.grid.intro > .logo {
-  grid-area: logo;
+.grid.intro > .logotype {
+  grid-area: logotype;
   display: flex;
   gap: 1rem;
   justify-items: start;
   justify-content: start;
+}
+
+.grid.intro > .logotype > .logo {
+  width: 4rem;
+  height: 4rem;
 }
 
 .grid.intro > .actions {
