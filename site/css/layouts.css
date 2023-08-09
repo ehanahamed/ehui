@@ -164,13 +164,13 @@
   grid-template-areas:
     "logotype actions"
     "content content";
-  padding-top: 2rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   padding-bottom: 4rem;
   margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 1rem;
+  margin-right: 1rem;
   margin-bottom: 4rem;
   border-bottom: 0.2rem solid var(--bg2);
 }
@@ -203,8 +203,8 @@
 
 @media only screen and (max-width: 800px) {
   .grid.intro {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
