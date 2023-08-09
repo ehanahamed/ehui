@@ -164,7 +164,7 @@
   grid-template-areas:
     "logotype actions"
     "content content";
-  padding: 1rem;
+  padding: 2rem;
   margin: 2rem 0px;
 }
 
