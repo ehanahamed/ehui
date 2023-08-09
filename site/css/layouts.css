@@ -157,6 +157,36 @@
   }
 }
 
+.grid.intro {
+  grid-template-rows: 1fr 4fr 4fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-template-areas:
+    "logo actions"
+    "content content"
+}
+
+.grid.intro > .logo {
+  grid-area: logo;
+  display: flex;
+  gap: 1rem;
+  justify-items: start;
+  justify-content: start;
+}
+
+.grid.intro > .actions {
+  grid-area: actions;
+  display: flex;
+  gap: 1rem;
+  justify-items: end;
+  justify-content: end;
+}
+
+.grid.intro > .content {
+  grid-area: content;
+  text-align: center;
+}
+
 .grid.split {
   grid-template-columns: 4fr 1fr 4fr;
   grid-template-rows: 1fr;
