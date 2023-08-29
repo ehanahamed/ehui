@@ -28,9 +28,9 @@
     --primary: #7a52cc;
     --primaryAlt: #967acc;
     --primaryDark: #5c3d99;
-    --extra: #52cca3;
-    --extraAlt: #7accb1;
-    --extraDark: #3d997a;
+    --extra: #52CCCC;
+    --extraAlt: #7ACCCC;
+    --extraDark: #3D9999;
     --bgExtra: #3d3d66;
     --black: #1e1e32;
     --gray: #3d3d66;
@@ -113,9 +113,9 @@
   --primary: #7a52cc;
   --primaryAlt: #967acc;
   --primaryDark: #5c3d99;
-  --extra: #52cca3;
-  --extraAlt: #7accb1;
-  --extraDark: #3d997a;
+  --extra: #52CCCC;
+  --extraAlt: #7ACCCC;
+  --extraDark: #3D9999;
   --bgExtra: #3d3d66;
   --black: #1e1e32;
   --gray: #3d3d66;
