@@ -69,15 +69,15 @@
     --extra: #47B38F;
     --extraAlt: #6BB39B;
     --extraDark: #338066;
-    --bgExtra: #E6E6FF;
+    --bgExtra: #CFCFE6;
     --black: #3d3d66;
-    --gray: #DDDDF0;
-    --grayAlt: #7A7A99;
-    --white: #FAFAFF;
+    --gray: #CFCFE6;
+    --grayAlt: #A3A3CC;
+    --white: #EDEDF2;
     --fg: #3d3d66;
-    --bg3: #7A7A99;
-    --bg2: #DDDDF0;
-    --bg1: #FAFAFF;
+    --bg3: #A3A3CC;
+    --bg2: #CFCFE6;
+    --bg1: #EDEDF2;
   }
 
   :root.auto button:hover,
@@ -153,13 +153,13 @@
   --extraDark: #338066;
   --bgExtra: #E6E6FF;
   --black: #3d3d66;
-  --gray: #DDDDF0;
-  --grayAlt: #7A7A99;
-  --white: #FAFAFF;
+  --gray: #CFCFE6;
+  --grayAlt: #A3A3CC;
+  --white: #EDEDF2;
   --fg: #3d3d66;
-  --bg3: #7A7A99;
-  --bg2: #DDDDF0;
-  --bg1: #FAFAFF;
+  --bg3: #A3A3CC;
+  --bg2: #CFCFE6;
+  --bg1: #EDEDF2;
 }
 
 :root.snow button:hover,
