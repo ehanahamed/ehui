@@ -1,7 +1,4 @@
-Last navbar thingy that was not finished: 45ad72357a2e4c0205dc8585ab529a32dadddf66
-
 TODO NOW:
-- purpleish light theme & auto theme
 - mobile header
   - add `position: static` to `header` as an option to "hide header"
     - no, it doesn't effect its width
@@ -21,7 +18,6 @@ TODO NOW:
   - temporary fix for `p`, labelled `/* TEMPORARY FIX */` in `components.css`
 - autocomplete/autofill colors
 - make sure tab works on file inputs
-- MAKE SURE EVERY REPO & SITE HAS DESIGNSYS RENAMED!
 - styleguide
   - & specifically **camelCase**
   - consistant image alt tag (+ and in quizfreely)
@@ -29,10 +25,7 @@ TODO NOW:
   - fix incorrect `<br/>`, and encorage correct `<br/>` use in examples & actual html
 
 TODO EXTRA:
-
 - fancy betterthantab keyboard shortcut system
 
 NOTE:
-
-- fancy logo glow effect is in utils.css, under the comment "`fancy stuff`"
 - logos should use `--gray` not `--bg2`
