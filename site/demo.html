@@ -476,7 +476,10 @@
           </div>
           <h2>Poppers</h2>
           <p>These are powered by <a href="https://floating-ui.com">Floating UI</a> (aka <a href="https://popper.js.org">Popper</a>)</p>
-          <button id="popper1Button">Show Popper</button>
+          <div id="popper1ButtonDiv">
+            <!-- wrap it in a div to avoid shifting on hover (element moves on hover)-->
+            <button>Show Popper</button>
+          </div>
           <div id="popper1Popper" class="popper">This is a popper!</div>
         </div>
       </div>
@@ -490,12 +493,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.5.3"></script>
     <script>
       /* Poppers */
-      var popper1Button = document.getElementById("popper1Button");
+      var popper1ButtonDiv = document.getElementById("popper1ButtonDiv");
       var popper1Popper = document.getElementById("popper1Popper");
 
       function updatePosition() {
         FloatingUIDOM.computePosition(
-          popper1Button,
+          popper1ButtonDiv,
           popper1Popper,
           {
             middleware: [FloatingUIDOM.flip()]
@@ -507,7 +510,7 @@
       }
 
       var clearPopper1 = FloatingUIDOM.autoUpdate(
-        popper1Button,
+        popper1ButtonDiv,
         popper1Popper,
         updatePosition
       );
