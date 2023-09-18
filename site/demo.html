@@ -493,16 +493,24 @@
       var popper1Button = document.getElementById("popper1Button");
       var popper1Popper = document.getElementById("popper1Popper");
 
-      FloatingUIDOM.computePosition(
+      function updatePosition() {
+        FloatingUIDOM.computePosition(
+          popper1Button,
+          popper1Popper,
+          {
+            middleware: [FloatingUIDOM.flip()]
+          }
+        ).then(function ({x, y}) {
+          popper1Popper.style.left = x + "px";
+          popper1Popper.style.top = y + "px";
+        });
+      }
+
+      var clearPopper1 = FloatingUiDOM.autoUpdate(
         popper1Button,
         popper1Popper,
-        {
-          middleware: [FloatingUIDOM.flip()]
-        }
-      ).then(function ({x, y}) {
-        popper1Popper.style.left = x + "px";
-        popper1Popper.style.top = y + "px";
-      });
+        updatePosition
+      );
     </script>
   </body>
 </html>
