@@ -475,7 +475,7 @@
             </div>
           </div>
           <h2>Poppers</h2>
-          <p>These powered by <a href="https://floating-ui.com">Floating UI</a> (aka <a href="https://popper.js.org">Popper</a>)</p>
+          <p>These are powered by <a href="https://floating-ui.com">Floating UI</a> (aka <a href="https://popper.js.org">Popper</a>)</p>
           <button id="popper1Button">Show Popper</button>
           <div id="popper1Popper" class="popper">This is a popper!</div>
         </div>
@@ -493,14 +493,15 @@
       var popper1Button = document.getElementById("popper1Button");
       var popper1Popper = document.getElementById("popper1Popper");
 
-      window.FloatingUIDOM.computePosition(
+      FloatingUIDOM.computePosition(
         popper1Button,
-        popper1Popper
-      ).then(({x, y}) => {
-        Object.assign(popper1Popper.style, {
-          left: `${x}px`,
-          top: `${y}px`,
-        });
+        popper1Popper,
+        {
+          middleware: [FloatingUIDOM.flip()]
+        }
+      ).then(function ({x, y}) {
+        popper1Popper.style.left = x + "px";
+        popper1Popper.style.top = y + "px";
       });
     </script>
   </body>
