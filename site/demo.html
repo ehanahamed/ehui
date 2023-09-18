@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://design.ehan.dev/css/colors.css" />
     <link rel="stylesheet" href="https://design.ehan.dev/css/components.css" />
     <link rel="stylesheet" href="https://design.ehan.dev/css/layouts.css" />
+    <link rel="stylesheet" href="https://design.ehan.dev/css/poppers.css"
     <link rel="stylesheet" href="https://design.ehan.dev/css/utils.css" />
     <link
       rel="stylesheet"
@@ -489,7 +490,18 @@
     <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.5.3"></script>
     <script>
       /* Poppers */
-      
+      var popper1Button = document.getElementById("popper1Button");
+      var popper1Popper = document.getElementById("popper1Popper");
+
+      window.FloatingUIDOM.computePosition(
+        popper1Button,
+        popper1Popper
+      ).then(({x, y}) => {
+        Object.assign(popper1Popper.style, {
+          left: `${x}px`,
+          top: `${y}px`,
+        });
+      });
     </script>
   </body>
 </html>
