@@ -19,3 +19,16 @@
 .popperRef {
   width: max-content;
 }
+
+.popperArrow {
+  position: absolute;
+  width: 0.4rem;
+  height: 0.4rem;
+  transform: rotate(45deg);
+  /*
+    rotate 45 degrees to create a dimond shape,
+    so regardless of which side isn't overlapped,
+    its always a triangle
+  */
+  background-color: var(--bg2);  
+}

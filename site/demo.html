@@ -480,7 +480,10 @@
             <!-- wrap it in a div to avoid shifting on hover (element moves on hover)-->
             <button>Show Popper</button>
           </div>
-          <div id="popper1Popper" class="popper">This is a popper!</div>
+          <div id="popper1Popper" class="popper">
+            This is a popper!
+            <div id="popper1Arrow" class="popperArrow"></div>
+          </div>
         </div>
       </div>
     </main>
@@ -495,17 +498,51 @@
       /* Poppers */
       var popper1ButtonDiv = document.getElementById("popper1ButtonDiv");
       var popper1Popper = document.getElementById("popper1Popper");
+      var popper1Arrow = document.getElementById("popper1Arrow");
 
       function updatePosition() {
         FloatingUIDOM.computePosition(
           popper1ButtonDiv,
           popper1Popper,
           {
-            middleware: [FloatingUIDOM.flip()]
+            middleware: [
+              FloatingUIDOM.flip(),
+              FloatingUIDOM.arrow({
+                element: popper1Arrow
+              })
+            ]
           }
-        ).then(function ({x, y}) {
-          popper1Popper.style.left = x + "px";
-          popper1Popper.style.top = y + "px";
+        ).then(function (result) {
+          /*
+            result looks like:
+            {
+              x,
+              y,
+              placement,
+              middlewareData: {
+                arrow: {
+                  x,
+                  y
+                }
+              }
+            }
+          */
+          popper1Popper.style.left = result.x + "px";
+          popper1Popper.style.top = result.y + "px";
+
+          var arrowX = result.middlewareData.arrow.x;
+          var arrowY = result.middlewareData.arrow.y;
+          var arrowSide = {
+            top: "bottom",
+            left: "right",
+            bottom: "top",
+            right: "left"
+          }[
+            result.placement.split("-")[0]
+          ];
+          popper1Arrow.style.left = arrowX + "px";
+          popper1Arrow.style.top = arrowY + "px";
+          popper1Arrow.style[arrowSide] = "-0.2rem";
         });
       }
 
