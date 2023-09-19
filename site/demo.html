@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://design.ehan.dev/css/colors.css" />
     <link rel="stylesheet" href="https://design.ehan.dev/css/components.css" />
     <link rel="stylesheet" href="https://design.ehan.dev/css/layouts.css" />
-    <link rel="stylesheet" href="https://design.ehan.dev/css/poppers.css" />
     <link rel="stylesheet" href="https://design.ehan.dev/css/utils.css" />
     <link
       rel="stylesheet"
@@ -474,16 +473,6 @@
               </div>
             </div>
           </div>
-          <h2>Poppers</h2>
-          <p>These are powered by <a href="https://floating-ui.com">Floating UI</a> (aka <a href="https://popper.js.org">Popper</a>)</p>
-          <div id="popper1ButtonDiv" class="popperRef">
-            <!-- wrap it in a div to avoid shifting on hover (element moves on hover)-->
-            <button>Show Popper</button>
-          </div>
-          <div id="popper1Popper" class="popper">
-            This is a popper!
-            <div id="popper1Arrow" class="popperArrow"></div>
-          </div>
         </div>
       </div>
     </main>
@@ -492,65 +481,5 @@
       <p>Text text text text</p>
     </footer>
     <script src="https://design.ehan.dev/js/themes.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.5.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.5.3"></script>
-    <script>
-      /* Poppers */
-      var popper1ButtonDiv = document.getElementById("popper1ButtonDiv");
-      var popper1Popper = document.getElementById("popper1Popper");
-      var popper1Arrow = document.getElementById("popper1Arrow");
-
-      function updatePosition() {
-        FloatingUIDOM.computePosition(
-          popper1ButtonDiv,
-          popper1Popper,
-          {
-            middleware: [
-              FloatingUIDOM.flip(),
-              FloatingUIDOM.arrow({
-                element: popper1Arrow
-              })
-            ]
-          }
-        ).then(function (result) {
-          /*
-            result looks like:
-            {
-              x,
-              y,
-              placement,
-              middlewareData: {
-                arrow: {
-                  x,
-                  y
-                }
-              }
-            }
-          */
-          popper1Popper.style.left = result.x + "px";
-          popper1Popper.style.top = result.y + "px";
-
-          var arrowX = result.middlewareData.arrow.x;
-          var arrowY = result.middlewareData.arrow.y;
-          var arrowSide = {
-            top: "bottom",
-            left: "right",
-            bottom: "top",
-            right: "left"
-          }[
-            result.placement.split("-")[0]
-          ];
-          popper1Arrow.style.left = arrowX + "px";
-          popper1Arrow.style.top = arrowY + "px";
-          popper1Arrow.style[arrowSide] = "-0.4rem";
-        });
-      }
-
-      var clearPopper1 = FloatingUIDOM.autoUpdate(
-        popper1ButtonDiv,
-        popper1Popper,
-        updatePosition
-      );
-    </script>
   </body>
 </html>
