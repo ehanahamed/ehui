@@ -148,6 +148,11 @@ code,
   margin: 4rem 1rem;
 }
 
+.topmost {
+  /* "topmost" is those alert bar thingies that are ABOVE the header, they're the top-most */
+  padding: 1rem;
+}
+
 header,
 .header {
   position: sticky;
