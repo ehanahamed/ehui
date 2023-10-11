@@ -150,7 +150,7 @@ code,
 
 .topmost {
   /* "topmost" is those alert bar thingies that are ABOVE the header, they're the top-most */
-  padding: 1rem;
+  margin: 1rem;
 }
 
 header,
