@@ -10,7 +10,7 @@ var modals = {
         /*
             params can be
             {
-                title: "title text",
+                title: "title text", // optional
                 body: "body text",
                 actions: [
                     [
@@ -26,10 +26,18 @@ var modals = {
                         onclickFunc()
                     ]
                 ]
+                classList: [ // optional
+                    "array",
+                    "of",
+                    "classes"
+                ]
             }
             or can be
             {
-                html: "entire innerHTML of modal"
+                innerHtml: "entire innerHTML of modal",
+                classList: [ //optional
+                    "classes"
+                ]
             }
         */
         var modal = document.createElement("div");
@@ -37,9 +45,18 @@ var modals = {
         if (params.html) {
             modal.innerHTML = params.html;
         } else {
-            var modalTitle = document.createElement(
-                "h1"
-            );
+            if (params.title) {
+                var modalTitle = document.createElement(
+                    "p"
+                );
+                modalTitle.classList.add("h3");
+                modalTitle.innerText = params.title;
+                modal.appendChild(modalTitle);
+            }
+            var modalBody = document.createElement(
+                "p"
+            )
+            
         }
     }
 }
