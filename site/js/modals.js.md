@@ -12,7 +12,9 @@ The `modals.create()` function accepts one parameter, an object.
 
 ### Parameters & usage
 
-The params object looks like this:
+`modals.create()` accepts a single parameter, an object.
+
+The object looks like this:
 
 ```javascript
 modals.create({
@@ -41,7 +43,14 @@ modals.create({
 })
 ```
 
+An example (will be) below:
+```
+work in progress
+```
 
+### Source code
+
+The code below begins at line `11` of `site/js/modals.js`
 
 ```javascript
 var modal = document.createElement("div");
