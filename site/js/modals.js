@@ -54,9 +54,9 @@ var modals = {
                             modalActionsAction.classList.add(params.actions[i].classList[i2]);
                         }
                     }
-                    modalActions.addChild(modalActionsAction);
+                    modalActions.appendChild(modalActionsAction);
                 }
-                modal.addChild(modalActions);
+                modal.appendChild(modalActions);
             }
         }
         document.body.appendChild(modal);
