@@ -40,18 +40,18 @@ var modals = {
                 modalActions.classList.add("flex");
                 for (var i = 0; i < params.actions.length; i++) {
                     var modalActionsAction = document.createElement(
-                        params.actions[i][0]
+                        params.actions[i].tag
                     );
-                    modalActionsAction.innerText = params.actions[i][1];
+                    modalActionsAction.innerText = params.actions[i].text;
                     if (params.actions[i][0] === "a") {
                         modalActionsAction.classList.add("button");
-                        modalActionsAction.href = params.actions[i][2];
+                        modalActionsAction.href = params.actions[i].href;
                     } else if (params.actions[i][0] === "button") {
-                        modalActionsAction.onclick = params.actions[i][2];
+                        modalActionsAction.onclick = params.actions[i].onClick;
                     }
                     if (params.actions[i][3]) {
                         for (var i2 = 0; i2 < params.actions.length; i2++) {
-                            modalActionsAction.classList.add(params.actions[i][3][i2]);
+                            modalActionsAction.classList.add(params.actions[i].classList[i2]);
                         }
                     }
                 }

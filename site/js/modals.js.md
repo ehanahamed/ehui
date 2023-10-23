@@ -21,13 +21,14 @@ modals.create({
   title: "string",
   body: "string",
   actions: [
-    [
-      "string", /* either "a" or "button" */
-      "string", /* button text */
-      "string" /* href string if a, or onclick func if button */
-      [] /* array of optional button classes as strings */
+    {
+      tag: "string", /* either "a" or "button" */
+      text: "string", /* button or link-button text */
+      href: "string" /* only used if .tag is "a" */
+      onClick: func() /* only used if .tag is "button" */
+      classList: [] /* array of optional classes as strings */
       /* if [0] is "a", ".button" class gets added automatically */
-    ],
+    },
   ],
   classList: [] /* array of optional modal classes as strings */
   /* ".modal" is added automatically */
