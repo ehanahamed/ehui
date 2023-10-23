@@ -15,50 +15,58 @@ var modals = {
                 modal.classList.add(params.classList[i]);
             }
         }
+        var modalContent = document.createElement("div");
+        modalContent.classList.add("content");
+        if (params.contentClassList) {
+            for (var i = 0; i < params.contentClassList.length; i++) {
+                modalContent.classList.add(params.classList[i]);
+            }
+        }
         if (params.innerHtml) {
-            modal.innerHTML = params.innerHtml;
+            modalContent.innerHTML = params.innerHtml;
         } else {
             if (params.title) {
-                var modalTitle = document.createElement(
+                var modalContentTitle = document.createElement(
                     "p"
                 );
-                modalTitle.classList.add("h3");
-                modalTitle.innerText = params.title;
-                modal.appendChild(modalTitle);
+                modalContentTitle.classList.add("h3");
+                modalContentTitle.innerText = params.title;
+                modalContent.appendChild(modalContentTitle);
             }
             if (params.body) {
-                var modalBody = document.createElement(
+                var modalContentBody = document.createElement(
                     "p"
                 );
-                modalBody.innerText = params.body;
-                modal.appendChild(modalBody);
+                modalContentBody.innerText = params.body;
+                modalContent.appendChild(modalContentBody);
             }
             if (params.actions) {
-                var modalActions = document.createElement(
+                var modalContentActions = document.createElement(
                     "div"
                 );
-                modalActions.classList.add("flex");
+                modalContentActions.classList.add("flex");
                 for (var i = 0; i < params.actions.length; i++) {
-                    var modalActionsAction = document.createElement(
+                    var modalContentActionsAction = document.createElement(
                         params.actions[i].tag
                     );
-                    modalActionsAction.innerText = params.actions[i].text;
+                    modalContentActionsAction.innerText = params.actions[i].text;
                     if (params.actions[i].tag === "a") {
-                        modalActionsAction.classList.add("button");
-                        modalActionsAction.href = params.actions[i].href;
+                        modalContentActionsAction.classList.add("button");
+                        modalContentActionsAction.href = params.actions[i].href;
                     } else if (params.actions[i].tag === "button") {
-                        modalActionsAction.onclick = params.actions[i].onClick;
+                        modalContentActionsAction.onclick = params.actions[i].onClick;
                     }
                     if (params.actions[i].classList) {
                         for (var i2 = 0; i2 < params.actions.length; i2++) {
-                            modalActionsAction.classList.add(params.actions[i].classList[i2]);
+                            modalContentActionsAction.classList.add(params.actions[i].classList[i2]);
                         }
                     }
-                    modalActions.appendChild(modalActionsAction);
+                    modalContentActions.appendChild(modalContentActionsAction);
                 }
-                modal.appendChild(modalActions);
+                modalContent.appendChild(modalContentActions);
             }
         }
+        modal.appendChild(modalContent);
         document.body.appendChild(modal);
     }
 }
