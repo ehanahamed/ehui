@@ -32,6 +32,22 @@ modals.create({
   ],
   classList: [] /* array of optional modal classes as strings */
   /* ".modal" is added automatically */
+  contentClassList: [] /* array of optional modal > content classes as strings */
+  /* ".content* is added automatically */
+
+  /*
+    classList applies classes to:
+    <div class="modal THIS">
+      <div class="content">
+      </div>
+    </div>
+
+    contentClassList applies classes to:
+    <div class="modal">
+      <div class="content THIS">
+      </div>
+    </div>
+  */
 });
 
 /*
