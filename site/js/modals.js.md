@@ -6,6 +6,8 @@ This script has a bunch of functions to easily manage modals using js.
 
 The `modals.list` property is an array of all modals created using `modals.create()`, so that these modals can be manipulated later.
 
+Also see `useList` parameter of `modals.create()` for more information. (docs for `modals.create()` is below)
+
 ## .create()
 
 The `modals.create()` function accepts one parameter, an object.
@@ -30,6 +32,14 @@ modals.create({
       /* if [0] is "a", ".button" class gets added automatically */
     },
   ],
+  useList: boolean, /* defaults to true */
+  /*
+    if true, modal element is added to modals.list,
+    and modals.create() returns index of element on modals.list
+    
+    if false, modal element is NOT added to modals.list,
+    and modals.create() returns the modal's html element
+  */
   classList: [], /* array of optional modal classes as strings */
   /* ".modal" is added automatically */
   contentClassList: [] /* array of optional modal > content classes as strings */
@@ -57,6 +67,14 @@ modals.create({
   innerHtml: "string",
   classList: [] /* array of optional modal classes as strings */
   /* ".modal" is added automatically */
+  useList: boolean, /* defaults to true */
+  /*
+    if true, modal element is added to modals.list,
+    and modals.create() returns index of element on modals.list
+    
+    if false, modal element is NOT added to modals.list,
+    and modals.create() returns the modal's html element
+  */
 })
 ```
 
