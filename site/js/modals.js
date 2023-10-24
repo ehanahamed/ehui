@@ -68,5 +68,11 @@ var modals = {
         }
         modal.appendChild(modalContent);
         document.body.appendChild(modal);
+        if (params.useList === false) {
+            return modal
+        } else {
+            modals.list.push(modal);
+            return modals.list.length - 1;
+        }
     }
 }
