@@ -483,19 +483,20 @@
     <script src="https://design.ehan.dev/js/themes.js"></script>
     <script src="https://design.ehan.dev/js/modals.js"></script>
     <script>
-	    modals.create({
+	    var modals.create({
 		    title: "eee",
 		    body: "body text goes here?",
 		    actions: [
 			    {
-				    tag: "a",
-				    text: "link?",
+				    tag: "button",
+            text: ""
+				    onClick: hideThis(),
 				    href: "https://ehan.dev/test.html",
 				    classList: [
 					    "red"
-					 ]
+					  ]
 				  }
-           ]
+        ]
 	    });
     </script>
   </body>
