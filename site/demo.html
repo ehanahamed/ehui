@@ -494,14 +494,15 @@
 			    {
 				    tag: "button",
             text: "close",
-				    onClick: hideThis()
+				    onClick: function () { hideThis() } 
 				  },
           {
             tag: "button",
             text: "change color",
-            onClick: chColor(),
+            onClick: function () { chColor() },
             classList: [
-              "red alt"
+              "red",
+              "alt"
             ]
           }
         ]
