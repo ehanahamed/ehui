@@ -27,7 +27,7 @@ modals.create({
       tag: "string", /* either "a" or "button" */
       text: "string", /* button or link-button text */
       href: "string", /* only used if .tag is "a" */
-      onClick: func(), /* only used if .tag is "button" */
+      onClick: function () { doSomething() }, /* only used if .tag is "button" */
       classList: [] /* array of optional classes as strings */
       /* if [0] is "a", ".button" class gets added automatically */
     },
