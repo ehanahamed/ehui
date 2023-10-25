@@ -71,8 +71,8 @@ ehansUi.modals = {
         if (params.useList === false) {
             return modal
         } else {
-            modals.list.push(modal);
-            return modals.list.length - 1;
+            ehansUi.modals.list.push(modal);
+            return ehansUi.modals.list.length - 1;
         }
     }
 }
