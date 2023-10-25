@@ -484,10 +484,11 @@
       /* devtools for mobile & school chromebooks */
       (function () { var script = document.createElement('script'); script.src="https://cdn.jsdelivr.net/npm/eruda"; document.body.append(script); script.onload = function () { eruda.init(); } })();
     </script>
+    <script src="https://design.ehan.dev/js/ehansUi.js"></script>
     <script src="https://design.ehan.dev/js/themes.js"></script>
     <script src="https://design.ehan.dev/js/modals.js"></script>
     <script>
-	    var indx = modals.create({
+	    var indx = ehansUi.modals.create({
 		    title: "eee",
 		    body: "body text goes here?",
 		    actions: [
