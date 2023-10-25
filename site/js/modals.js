@@ -5,7 +5,7 @@
   https://design.ehan.dev/LICENSE.txt
 */
 
-var modals = {
+ehansUi.modals = {
     list: [],
     create: function (params) {
         var modal = document.createElement("div");
