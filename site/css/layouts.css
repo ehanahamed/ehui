@@ -111,14 +111,45 @@
   display: grid;
 }
 
+.grid.split {
+  gap: 0px;
+  grid-template-columns: 4fr 4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "left right";
+}
+
+.grid.split > .left {
+  grid-area: left;
+  justify-self: right;
+  padding-right: 2rem;
+  border-right: 0.2rem solid var(--bg2);
+}
+
+.grid.split > .right {
+  grid-area: right;
+  justify-self: left;
+  padding-left: 2rem;
+}
+
 .grid.list {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
   margin-bottom: 2rem; /* temporary fix */
 }
 
+/*
+when inside a grid split (the list will have less space),
+and 
+when on mobile/smaller-window,
+make the list have only one column
+*/
+.grid.split .grid.list {
+  /* for grid split */
+  grid-template-columns: 1fr;
+}
 @media only screen and (max-width: 800px) {
   .grid.list {
+    /* for mobile/smaller-window */
     grid-template-columns: 1fr;
   }
 }
@@ -203,26 +234,6 @@
     padding-left: 1rem;
     padding-right: 1rem;
   }
-}
-
-.grid.split {
-  gap: 0px;
-  grid-template-columns: 4fr 4fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "left right";
-}
-
-.grid.split > .left {
-  grid-area: left;
-  justify-self: right;
-  padding-right: 2rem;
-  border-right: 0.2rem solid var(--bg2);
-}
-
-.grid.split > .right {
-  grid-area: right;
-  justify-self: left;
-  padding-left: 2rem;
 }
 
 .grid.page {
