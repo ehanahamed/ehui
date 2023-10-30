@@ -206,21 +206,21 @@
 }
 
 .grid.split {
-  grid-template-columns: 4fr 1fr 4fr;
+  gap: 0px;
+  grid-template-columns: 4fr 4fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "left middle right";
+  grid-template-areas: "left right";
 }
 
 .grid.split > .left {
   grid-area: left;
-}
-
-.grid.split > .middle {
-  grid-area: middle;
+  padding-right: 0.5rem;
+  border-right: 0.2rem solid var(--bg2);
 }
 
 .grid.split > .right {
   grid-area: right;
+  padding-left: 0.5rem;
 }
 
 .grid.page {
