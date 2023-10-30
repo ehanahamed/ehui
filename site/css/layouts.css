@@ -215,14 +215,14 @@
 .grid.split > .left {
   grid-area: left;
   justify-self: right;
-  padding-right: 1rem;
+  padding-right: 2rem;
   border-right: 0.2rem solid var(--bg2);
 }
 
 .grid.split > .right {
   grid-area: right;
   justify-self: left;
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 
 .grid.page {
