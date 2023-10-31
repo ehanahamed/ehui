@@ -131,6 +131,17 @@
   padding-left: 2rem;
 }
 
+/* when mobile/smaller-window, resize */
+@media only screen and (max-width: 800px) {
+  .grid.split {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "left"
+      "right"
+  }
+}
+
 .grid.list {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
