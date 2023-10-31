@@ -138,11 +138,12 @@
     grid-template-columns: 1fr;
     grid-template-areas: 
       "left"
-      "right"
+      "right";
+    padding: 0px 2rem;
   }
   .grid.split > .left,
   .grid.split > .right {
-    justify-self: center;
+    justify-self: left;
     padding-left: 0px;
     padding-right: 0px;
     border: none;
