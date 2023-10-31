@@ -140,6 +140,10 @@
       "left"
       "right"
   }
+  .grid.split > .left,
+  .grid.split > .right {
+    justify-self: center;
+  }
 }
 
 .grid.list {
