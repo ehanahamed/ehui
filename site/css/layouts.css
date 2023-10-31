@@ -143,6 +143,9 @@
   .grid.split > .left,
   .grid.split > .right {
     justify-self: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: none;
   }
 }
 
