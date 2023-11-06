@@ -84,7 +84,8 @@ p {
 }
 
 h6,
-.h6 small {
+.h6,
+small {
   font-size: 0.8rem;
   line-height: 1.2rem;
   font-weight: normal;
