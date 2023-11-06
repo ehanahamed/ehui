@@ -36,7 +36,6 @@ body {
 h1,
 .h1 {
   font-size: 3.4rem;
-  line-height: 4rem;
   font-weight: bold;
   margin-bottom: 1rem;
   margin-top: 0px;
@@ -45,7 +44,6 @@ h1,
 h2,
 .h2 {
   font-size: 2.8rem;
-  line-height: 3.2rem;
   font-weight: bold;
   margin-bottom: 1rem;
   margin-top: 0px;
@@ -54,7 +52,6 @@ h2,
 h3,
 .h3 {
   font-size: 2.2rem;
-  line-height: 2.6rem;
   font-weight: bold;
   margin-bottom: 1rem;
   margin-top: 0px;
@@ -63,17 +60,20 @@ h3,
 h4,
 .h4 {
   font-size: 1.6rem;
-  line-height: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
   margin-top: 0px;
+}
+
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+  line-height: 1.2;
 }
 
 h5,
 .h5,
 p {
   font-size: 1rem;
-  line-height: 1.4rem;
   font-weight: normal;
   margin-top: 0px;
   margin-bottom: 1rem;
@@ -87,9 +87,13 @@ h6,
 .h6,
 small {
   font-size: 0.8rem;
-  line-height: 1.2rem;
   font-weight: normal;
   margin-bottom: 1rem;
+}
+
+h5, p, h6, small,
+.h5, .h6 {
+  line-height: 1.4;
 }
 
 b,
