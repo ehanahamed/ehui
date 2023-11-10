@@ -1,5 +1,9 @@
 # Ehan's UI Kit
 
+Notes:
+
+main website is uikit.ehan.dev, ehansuikit.ehan.dev should have a topmost alert with a link to the main website.
+
 TODO NOW:
 - mobile header
   - add `position: static` to `header` as an option to "hide header"
