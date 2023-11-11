@@ -4,7 +4,7 @@ ehansuikit works great with nerdftons (https://www.nerdfonts.com/)
 
 Some webdevs decide to make their own icon set, but there is truly no need to reinvent the wheel, for almost all icon sets end up looking exactly the same, and are mostly a waste of time to make. (It's quite different from UI libraries, Design Systems, or logos, for which being unique is very important.) Icons on the other hand, should NOT be unique, because they are meant to convey a universal meaning that a user can easily understand.
 
-It is USUALLY against deisngsys's design princibles to have "icon buttons" or icons by themselves with no text. Almost all icons must have text with them. (The same is NOT true for text, text does not need icons, do NOT overuse icons when not needed.)
+It is USUALLY against ehansuikit's "opinoin" to have "icon buttons" or icons by themselves with no text. Almost all icons must have text with them. (The same is NOT true for text, text does not need icons, do NOT overuse icons when not needed.)
 
 There are only three "universal" icons that can be used without text.
 

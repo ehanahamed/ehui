@@ -1,8 +1,8 @@
 /*!
-  design.ehan.dev
+  Ehan's UI Kit
   Copyright (c) Ehan Ahamed and contributors
   Licensed under the UPL-1.0 License
-  https://design.ehan.dev/LICENSE.txt
+  https://uikit.ehan.dev/LICENSE.txt
 */
 
 function setTheme(theme) {
