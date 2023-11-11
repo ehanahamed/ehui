@@ -1,6 +1,6 @@
 # Icons
 
-designsys works great with nerdftons (https://www.nerdfonts.com/)
+ehansuikit works great with nerdftons (https://www.nerdfonts.com/)
 
 Some webdevs decide to make their own icon set, but there is truly no need to reinvent the wheel, for almost all icon sets end up looking exactly the same, and are mostly a waste of time to make. (It's quite different from UI libraries, Design Systems, or logos, for which being unique is very important.) Icons on the other hand, should NOT be unique, because they are meant to convey a universal meaning that a user can easily understand.
 
@@ -60,8 +60,6 @@ An `X` icon should be used to indicate closing or hiding something. NOT deleting
 A "trash bin" icon should be used to indicate deleting something. Anytime user-made content is being "gone"-ed you use a trash bin, NOT an `X`.
 
 An "eye" icon and a "crossed-out-eye" icon is used for toggling between two states of visibility. Like showing a password or hiding the password. The content should still be "there" and still "see"-able, just shown _differently_.
-
-Options, or an icon with a bunch of "sliders", is used for options, NOT settings. In designsys terminology options refers to designsys's settings and UI appearence options while settings refers to the actual app/website's settings and configuration. Settings, or a "cog"/gear is used for "settings".
 
 ### Specific icons
 
