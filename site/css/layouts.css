@@ -122,13 +122,13 @@
   grid-area: left;
   justify-self: right;
   padding-right: 2rem;
-  border-right: 0.2rem solid var(--bg2);
 }
 
 .grid.split > .right {
   grid-area: right;
   justify-self: left;
   padding-left: 2rem;
+  border-left: 0.2rem solid var(--bg2);
 }
 
 /* when mobile/smaller-window, resize */
