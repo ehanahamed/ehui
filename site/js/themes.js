@@ -5,21 +5,24 @@
   https://uikit.ehan.dev/LICENSE.txt
 */
 
-function setTheme(theme) {
-  document.documentElement.classList.remove(
-    "auto",
-    "purpleish",
-    "snow",
-    "owl",
-    "blurple",
-    "cat",
-    "catdim"
-  );
-  document.documentElement.classList.add(theme);
-  localStorage.setItem("theme", theme);
+ehansUi.themes = {
+  setTheme: function (theme) {
+    document.documentElement.classList.remove(
+      "auto",
+      "purpleish",
+      "snow",
+      "owl",
+      "blurple",
+      "cat",
+      "catdim"
+    );
+    document.documentElement.classList.add(theme);
+    /* save theme to localstorage */
+    localStorage.setItem("theme", theme);
+  }
 }
 
-/* run function with localStorage to set to last used theme */
+/* get theme from localstorage */
 if (localStorage.getItem("theme")) {
   setTheme(localStorage.getItem("theme"));
 } else {
