@@ -92,6 +92,41 @@
   }
 }
 
+.red {
+    color-scheme: dark;
+    --red: #ff0000;
+    --redAlt: #ff0000;
+    --redDark: #ff0000;
+    --orange: #ff0000;
+    --orangeAlt: #ff0000;
+    --yellow: #ff0000;
+    --yellowAlt: #ff0000;
+    --green: #ff0000;
+    --greenAlt: #ff0000;
+    --greenDark: #ff0000;
+    --blue: #ff0000;
+    --blueAlt: #ff0000;
+    --purple: #ff0000;
+    --purpleAlt: #ff0000;
+    --pink: #ff0000;
+    --pinkAlt: #ff0000;
+    --primary: #ff0000;
+    --primaryAlt: #ff0000;
+    --primaryDark: #ff0000;
+    --extra: #ff0000;
+    --extraAlt: #ff0000;
+    --extraDark: #ff0000;
+    --bgExtra: #ff0000;
+    --black: #ff0000;
+    --gray: #ff0000;
+    --grayAlt: #ff0000;
+    --white: #ff0000;
+    --fg: #ff0000;
+    --bg3: #ff0000;
+    --bg2: #ff0000;
+    --bg1: #ff0000;
+}
+
 :root.purpleish {
   color-scheme: dark;
   --red: #ff6666;
