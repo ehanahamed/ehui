@@ -14,7 +14,8 @@ ehansUi.themes = {
       "owl",
       "blurple",
       "cat",
-      "catdim"
+      "catdim",
+      "red"
     );
     document.documentElement.classList.add(theme);
     /* save theme to localstorage */
