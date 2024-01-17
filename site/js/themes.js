@@ -24,7 +24,7 @@ ehansUi.themes = {
 
 /* get theme from localstorage */
 if (localStorage.getItem("theme")) {
-  setTheme(localStorage.getItem("theme"));
+  ehansUi.setTheme(localStorage.getItem("theme"));
 } else {
-  setTheme("auto")
+  ehansUi.setTheme("auto")
 }
