@@ -784,8 +784,8 @@ html.min .hero > .logo::before {
 /* third party styling requirements */
 button.g,
 .button.g {
-  background-color: #EDEDF2;
   font-family: "roboto";
+  background-color: #EDEDF2;
   color: #181820;
   padding: 0.6rem 0.8rem;
   border-width: 0.4rem;
