@@ -286,8 +286,6 @@ button,
   font-size: 1rem;
   line-height: 1.4;
   transition-duration: 0.4s;
-  /* 3D-ish stuff */
-  box-shadow: 0px 0.2rem 0px var(--primaryDark);
 }
 
 button.alt,
@@ -302,9 +300,6 @@ button:focus-visible,
 .button:focus-visible {
   background-color: var(--primaryAlt);
   color: var(--bg1);
-  /* 3D-ish stuff */
-  box-shadow: none;
-  transform: translateY(0.2rem);
 }
 
 button:focus-visible,
@@ -341,8 +336,6 @@ textarea {
   font-size: 1rem;
   line-height: 1.4;
   transition-duration: 0.4s;
-  /* 3D-ish stuff */
-  box-shadow: 0px 0.2rem 0px var(--primaryDark);
 }
 
 input[type="text"]:hover,
@@ -352,9 +345,6 @@ input[type="password"]:focus-visible,
 textarea:hover,
 textarea:focus-visible {
   border-color: var(--primaryAlt);
-  /* 3D-ish stuff */
-  box-shadow: none;
-  transform: translateY(0.2rem);
 }
 
 input[type="text"]:focus-visible,
@@ -404,8 +394,6 @@ input[type="checkbox"] {
   background-color: var(--bg1);
   border: 0.2rem solid var(--primary);
   transition-duration: 0.4s;
-  /* 3D-ish stuff */
-  box-shadow: 0px 0.2rem 0px var(--primaryDark);
 }
 
 input[type="radio"] {
@@ -421,9 +409,6 @@ input[type="radio"]:focus-visible,
 input[type="checkbox"]:hover,
 input[type="checkbox"]:focus-visible {
   border-color: var(--primaryAlt);
-  /* 3D-ish stuff */
-  box-shadow: none;
-  transform: translateY(0.2rem);
 }
 
 input[type="radio"]:focus-visible,
@@ -437,9 +422,6 @@ input[type="radio"]:checked,
 input[type="checkbox"]:checked {
   background-color: var(--primary);
   transition-duration: 0.1s;
-  /* 3D-ish stuff */
-  box-shadow: none;
-  transform: translateY(0.2rem);
 }
 
 .card {
