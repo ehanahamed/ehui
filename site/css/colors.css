@@ -130,7 +130,9 @@
 :root.purpleish button,
 :root.purpleish .button,
 :root.auto button,
-:root.auto .button {
+:root.auto .button,
+:root.light button,
+:root.light .button {
   /* 3D-ish stuff */
   box-shadow: 0px 0.2rem 0px var(--primaryDark);
 }
@@ -142,7 +144,11 @@
 :root.auto button:hover,
 :root.auto button:focus-visible,
 :root.auto .button:hover,
-:root.auto .button:focus-visible {
+:root.auto .button:focus-visible,
+:root.light button:hover,
+:root.light button:focus-visible,
+:root.light .button:hover,
+:root.light .button:focus-visible {
   /* 3D-ish stuff */
   box-shadow: none;
   transform: translateY(0.2rem);
@@ -153,7 +159,10 @@
 :root.purpleish textarea,
 :root.auto input[type="text"],
 :root.auto input[type="password"],
-:root.auto textarea {
+:root.auto textarea,
+:root.light input[type="text"],
+:root.light input[type="password"],
+:root.light textarea {
   /* 3D-ish stuff */
   box-shadow: 0px 0.2rem 0px var(--primaryDark);
 }
@@ -169,7 +178,13 @@
 :root.auto input[type="password"]:hover,
 :root.auto input[type="password"]:focus-visible,
 :root.auto textarea:hover,
-:root.auto textarea:focus-visible {
+:root.auto textarea:focus-visible,
+:root.light input[type="text"]:hover,
+:root.light input[type="text"]:focus-visible,
+:root.light input[type="password"]:hover,
+:root.light input[type="password"]:focus-visible,
+:root.light textarea:hover,
+:root.light textarea:focus-visible {
   /* 3D-ish stuff */
   box-shadow: none;
   transform: translateY(0.2rem);
@@ -178,7 +193,9 @@
 :root.purpleish input[type="radio"],
 :root.purpleish input[type="checkbox"],
 :root.auto input[type="radio"],
-:root.auto input[type="checkbox"] {
+:root.auto input[type="checkbox"],
+:root.light input[type="radio"],
+:root.light input[type="checkbox"] {
   /* 3D-ish stuff */
   box-shadow: 0px 0.2rem 0px var(--primaryDark);
 }
@@ -190,7 +207,11 @@
 :root.auto input[type="radio"]:hover,
 :root.auto input[type="radio"]:focus-visible,
 :root.auto input[type="checkbox"]:hover,
-:root.auto input[type="checkbox"]:focus-visible{
+:root.auto input[type="checkbox"]:focus-visible,
+:root.light input[type="radio"]:hover,
+:root.light input[type="radio"]:focus-visible,
+:root.light input[type="checkbox"]:hover,
+:root.light input[type="checkbox"]:focus-visible {
   /* 3D-ish stuff */
   box-shadow: none;
   transform: translateY(0.2rem);
@@ -199,7 +220,9 @@
 :root.purpleish input[type="radio"]:checked,
 :root.purpleish input[type="checkbox"]:checked,
 :root.auto input[type="radio"]:checked,
-:root.auto input[type="checkbox"]:checked {
+:root.auto input[type="checkbox"]:checked,
+:root.light input[type="radio"]:checked,
+:root.light input[type="checkbox"]:checked {
   /* 3D-ish stuff */
   box-shadow: none;
   transform: translateY(0.2rem);
@@ -208,7 +231,9 @@
 :root.purpleish button.red,
 :root.purpleish .button.red,
 :root.auto button.red,
-:root.auto .button.red {
+:root.auto .button.red,
+:root.light button.red,
+:root.light .button.red {
   /* 3D-ish stuff */
   box-shadow: 0px 0.2rem 0px var(--redDark);
 }
@@ -216,7 +241,9 @@
 :root.purpleish button.green,
 :root.purpleish .button.green,
 :root.auto button.green,
-:root.auto .button.green {
+:root.auto .button.green,
+:root.light button.green,
+:root.light .button.green {
   /* 3D-ish stuff */
   box-shadow: 0px 0.2rem 0px var(--greenDark);
 }
@@ -224,7 +251,9 @@
 :root.purpleish button.extra,
 :root.purpleish .button.extra,
 :root.auto button.extra,
-:root.auto .button.extra {
+:root.auto .button.extra,
+:root.light button.extra,
+:root.light .button.extra {
   /* 3D-ish stuff */
   box-shadow: 0px 0.2rem 0px var(--extraDark);
 }
@@ -236,7 +265,11 @@
 :root.auto button:hover.red,
 :root.auto button:focus-visible.red,
 :root.auto .button:hover.red,
-:root.auto .button:focus-visible.red{
+:root.auto .button:focus-visible.red,
+:root.light button:hover.red,
+:root.light button:focus-visible.red,
+:root.light .button:hover.red,
+:root.light .button:focus-visible.red {
   /* 3D-ish stuff */
   box-shadow: none;
   transform: translateY(0.2rem);
@@ -249,7 +282,11 @@
 :root.auto button:hover.green,
 :root.auto button:focus-visible.green,
 :root.auto .button:hover.green,
-:root.auto .button:focus-visible.green {
+:root.auto .button:focus-visible.green,
+:root.light button:hover.green,
+:root.light button:focus-visible.green,
+:root.light .button:hover.green,
+:root.light .button:focus-visible.green {
   /* 3D-ish stuff */
   box-shadow: none;
   transform: translateY(0.2rem);
@@ -262,13 +299,17 @@
 :root.auto button:hover.extra,
 :root.auto button:focus-visible.extra,
 :root.auto .button:hover.extra,
-:root.auto .button:focus-visible.extra {
+:root.auto .button:focus-visible.extra,
+:root.light button:hover.extra,
+:root.light button:focus-visible.extra,
+:root.light .button:hover.extra,
+:root.light .button:focus-visible.extra {
   /* 3D-ish stuff */
   box-shadow: none;
   transform: translateY(0.2rem);
 }
 
-:root.snow {
+:root.light {
   color-scheme: light;
   --red: #E65C5C;
   --redAlt: #E68A8A;
@@ -303,14 +344,14 @@
   --bg1: #EDEDF2;
 }
 
-:root.snow button:hover,
-:root.snow button:focus-visible,
-:root.snow .button:hover,
-:root.snow .button:focus-visible {
+:root.light button:hover,
+:root.light button:focus-visible,
+:root.light .button:hover,
+:root.light .button:focus-visible {
   color: var(--fg);
 }
 
-:root.snow .hero > .logo::before {
+:root.light .hero > .logo::before {
   display: none;
 }
 
