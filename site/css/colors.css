@@ -235,6 +235,31 @@
   transform: translateY(0.2rem);
 }
 
+:root.purpleish button.g,
+:root.purpleish .button.g,
+:root.auto button.g,
+:root.auto .button.g,
+:root.light button.g,
+:root.light .button.g {
+  box-shadow: 0px 0.2rem 0px #a3a3cc;
+}
+
+:root.purpleish button.g:hover,
+:root.purpleish .button.g:hover,
+:root.purpleish button.g:focus-visible,
+:root.purpleish .button.g:focus-visible,
+:root.auto button.g:hover,
+:root.auto .button.g:hover,
+:root.auto button.g:focus-visible,
+:root.auto .button.g:focus-visible,
+:root.light button.g:hover,
+:root.light .button.g:hover,
+:root.light button.g:focus-visible,
+:root.light .button.g:focus-visible {
+  box-shadow: none;
+  transform: translateY(0.2rem);
+}
+
 :root.light {
   color-scheme: light;
   --red: #E65C5C;

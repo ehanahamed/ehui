@@ -755,8 +755,9 @@ html.min .hero > .logo::before {
 button.g,
 .button.g {
   font-family: "roboto";
-  background-color: #EDEDF2;
+  background-color: #dfdfed;
   color: #181820;
+  border-color: #dfdfed;
   padding: 0.6rem 0.8rem;
   border-width: 0.4rem;
 }
@@ -767,6 +768,11 @@ button.g:focus-visible,
 .button.g:focus-visible {
   color: #181820;
   background-color: #CFCFE6;
+}
+
+button.g:focus-visible,
+.button.g:focus-visible {
+  outline-color: #dfdfed;
 }
 
 button.g img {
