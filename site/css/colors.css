@@ -127,6 +127,147 @@
   --bg1: #1e1e32;
 }
 
+:root.purpleish button,
+:root.purpleish .button,
+:root.auto button,
+:root.auto .button {
+  /* 3D-ish stuff */
+  box-shadow: 0px 0.2rem 0px var(--primaryDark);
+}
+
+:root.purpleish button:hover,
+:root.purpleish button:focus-visible,
+:root.purpleish .button:hover,
+:root.purpleish .button:focus-visible,
+:root.auto button:hover,
+:root.auto button:focus-visible,
+:root.auto .button:hover,
+:root.auto .button:focus-visible {
+  /* 3D-ish stuff */
+  box-shadow: none;
+  transform: translateY(0.2rem);
+}
+
+:root.purpleish input[type="text"],
+:root.purpleish input[type="password"],
+:root.purpleish textarea,
+:root.auto input[type="text"],
+:root.auto input[type="password"],
+:root.auto textarea {
+  /* 3D-ish stuff */
+  box-shadow: 0px 0.2rem 0px var(--primaryDark);
+}
+
+:root.purpleish input[type="text"]:hover,
+:root.purpleish input[type="text"]:focus-visible,
+:root.purpleish input[type="password"]:hover,
+:root.purpleish input[type="password"]:focus-visible,
+:root.purpleish textarea:hover,
+:root.purpleish textarea:focus-visible,
+:root.auto input[type="text"]:hover,
+:root.auto input[type="text"]:focus-visible,
+:root.auto input[type="password"]:hover,
+:root.auto input[type="password"]:focus-visible,
+:root.auto textarea:hover,
+:root.auto textarea:focus-visible {
+  /* 3D-ish stuff */
+  box-shadow: none;
+  transform: translateY(0.2rem);
+}
+
+:root.purpleish input[type="radio"],
+:root.purpleish input[type="checkbox"],
+:root.auto input[type="radio"],
+:root.auto input[type="checkbox"] {
+  /* 3D-ish stuff */
+  box-shadow: 0px 0.2rem 0px var(--primaryDark);
+}
+
+:root.purpleish input[type="radio"]:hover,
+:root.purpleish input[type="radio"]:focus-visible,
+:root.purpleish input[type="checkbox"]:hover,
+:root.purpleish input[type="checkbox"]:focus-visible,
+:root.auto input[type="radio"]:hover,
+:root.auto input[type="radio"]:focus-visible,
+:root.auto input[type="checkbox"]:hover,
+:root.auto input[type="checkbox"]:focus-visible{
+  /* 3D-ish stuff */
+  box-shadow: none;
+  transform: translateY(0.2rem);
+}
+
+:root.purpleish input[type="radio"]:checked,
+:root.purpleish input[type="checkbox"]:checked,
+:root.auto input[type="radio"]:checked,
+:root.auto input[type="checkbox"]:checked {
+  /* 3D-ish stuff */
+  box-shadow: none;
+  transform: translateY(0.2rem);
+}
+
+:root.purpleish button.red,
+:root.purpleish .button.red,
+:root.auto button.red,
+:root.auto .button.red {
+  /* 3D-ish stuff */
+  box-shadow: 0px 0.2rem 0px var(--redDark);
+}
+
+:root.purpleish button.green,
+:root.purpleish .button.green,
+:root.auto button.green,
+:root.auto .button.green {
+  /* 3D-ish stuff */
+  box-shadow: 0px 0.2rem 0px var(--greenDark);
+}
+
+:root.purpleish button.extra,
+:root.purpleish .button.extra,
+:root.auto button.extra,
+:root.auto .button.extra {
+  /* 3D-ish stuff */
+  box-shadow: 0px 0.2rem 0px var(--extraDark);
+}
+
+:root.purpleish button:hover.red,
+:root.purpleish button:focus-visible.red,
+:root.purpleish .button:hover.red,
+:root.purpleish .button:focus-visible.red,
+:root.auto button:hover.red,
+:root.auto button:focus-visible.red,
+:root.auto .button:hover.red,
+:root.auto .button:focus-visible.red{
+  /* 3D-ish stuff */
+  box-shadow: none;
+  transform: translateY(0.2rem);
+}
+
+:root.purpleish button:hover.green,
+:root.purpleish button:focus-visible.green,
+:root.purpleish .button:hover.green,
+:root.purpleish .button:focus-visible.green,
+:root.auto button:hover.green,
+:root.auto button:focus-visible.green,
+:root.auto .button:hover.green,
+:root.auto .button:focus-visible.green {
+  /* 3D-ish stuff */
+  box-shadow: none;
+  transform: translateY(0.2rem);
+}
+
+:root.purpleish button:hover.extra,
+:root.purpleish button:focus-visible.extra,
+:root.purpleish .button:hover.extra,
+:root.purpleish .button:focus-visible.extra,
+:root.auto button:hover.extra,
+:root.auto button:focus-visible.extra,
+:root.auto .button:hover.extra,
+:root.auto .button:focus-visible.extra {
+  /* 3D-ish stuff */
+  box-shadow: none;
+  transform: translateY(0.2rem);
+}
+
 :root.snow {
   color-scheme: light;
   --red: #E65C5C;
@@ -657,159 +798,4 @@
 :root.catdim input[type="radio"]:checked,
 :root.catdim input[type="checkbox"]:checked {
   background-color: var(--blue);
-}
-
-.style3d button,
-.style3d .button {
-  /* 3D-ish stuff */
-  box-shadow: 0px 0.2rem 0px var(--primaryDark);
-}
-
-.style3d button:hover,
-.style3d button:focus-visible,
-.style3d .button:hover,
-.style3d .button:focus-visible {
-  /* 3D-ish stuff */
-  box-shadow: none;
-  transform: translateY(0.2rem);
-}
-
-.style3d input[type="text"],
-.style3d input[type="password"],
-.style3d textarea {
-  /* 3D-ish stuff */
-  box-shadow: 0px 0.2rem 0px var(--primaryDark);
-}
-
-.style3d input[type="text"]:hover,
-.style3d input[type="text"]:focus-visible,
-.style3d input[type="password"]:hover,
-.style3d input[type="password"]:focus-visible,
-.style3d textarea:hover,
-.style3d textarea:focus-visible {
-  /* 3D-ish stuff */
-  box-shadow: none;
-  transform: translateY(0.2rem);
-}
-
-.style3d input[type="radio"],
-.style3d input[type="checkbox"] {
-  /* 3D-ish stuff */
-  box-shadow: 0px 0.2rem 0px var(--primaryDark);
-}
-
-.style3d input[type="radio"]:hover,
-.style3d input[type="radio"]:focus-visible,
-.style3d input[type="checkbox"]:hover,
-.style3d input[type="checkbox"]:focus-visible {
-  /* 3D-ish stuff */
-  box-shadow: none;
-  transform: translateY(0.2rem);
-}
-
-.style3d input[type="radio"]:checked,
-.style3d input[type="checkbox"]:checked {
-  /* 3D-ish stuff */
-  box-shadow: none;
-  transform: translateY(0.2rem);
-}
-
-.style3d button.red,
-.style3d .button.red {
-  /* 3D-ish stuff */
-  box-shadow: 0px 0.2rem 0px var(--redDark);
-}
-
-.style3d button.green,
-.style3d .button.green {
-  /* 3D-ish stuff */
-  box-shadow: 0px 0.2rem 0px var(--greenDark);
-}
-
-.style3d button.extra,
-.style3d .button.extra {
-  /* 3D-ish stuff */
-  box-shadow: 0px 0.2rem 0px var(--extraDark);
-}
-
-.style3d button:hover.red,
-.style3d button:focus-visible.red,
-.style3d .button:hover.red,
-.style3d .button:focus-visible.red {
-  /* 3D-ish stuff */
-  box-shadow: none;
-  transform: translateY(0.2rem);
-}
-
-.style3d button:hover.green,
-.style3d button:focus-visible.green,
-.style3d .button:hover.green,
-.style3d .button:focus-visible.green {
-  /* 3D-ish stuff */
-  box-shadow: none;
-  transform: translateY(0.2rem);
-}
-
-.style3d button:hover.extra,
-.style3d button:focus-visible.extra,
-.style3d .button:hover.extra,
-.style3d .button:focus-visible.extra {
-  /* 3D-ish stuff */
-  box-shadow: none;
-  transform: translateY(0.2rem);
-}
-
-.style3d input[type="text"].red,
-.style3d input[type="password"].red,
-.style3d textarea.red {
-  /* 3D-ish stuff */
-  box-shadow: 0px 0.2rem 0px var(--redDark);
-}
-
-.style3d input[type="text"].green,
-.style3d input[type="password"].green,
-.style3d textarea.green {
-  /* 3D-ish stuff */
-  box-shadow: 0px 0.2rem 0px var(--greenDark);
-
-}
-
-.style3d input[type="text"].extra,
-.style3d input[type="password"].extra,
-.style3d textarea.extra {
-  /* 3D-ish stuff */
-  box-shadow: 0px 0.2rem 0px var(--extraDark);
-}
-
-.style3d input[type="text"].red:hover,
-.style3d input[type="text"].red:focus-visible,
-.style3d input[type="password"].red:hover,
-.style3d input[type="password"].red:focus-visible,
-.style3d textarea.red:hover,
-.style3d textarea.red:focus-visible {
-  /* 3D-ish stuff */
-  box-shadow: none;
-  transform: translateY(0.2rem);
-}
-
-.style3d input[type="text"].green:hover,
-.style3d input[type="text"].green:focus-visible,
-.style3d input[type="password"].green:hover,
-.style3d input[type="password"].green:focus-visible,
-.style3d textarea.green:hover,
-.style3d textarea.green:focus-visible {
-  /* 3D-ish stuff */
-  box-shadow: none;
-  transform: translateY(0.2rem);
-}
-
-.style3d input[type="text"].extra:hover,
-.style3d input[type="text"].extra:focus-visible,
-.style3d input[type="password"].extra:hover,
-.style3d input[type="password"].extra:focus-visible,
-.style3d textarea.extra:hover,
-.style3d textarea.extra:focus-visible {
-  /* 3D-ish stuff */
-  box-shadow: none;
-  transform: translateY(0.2rem);
 }
