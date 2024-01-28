@@ -306,94 +306,6 @@
   display: none;
 }
 
-:root.owl {
-  color-scheme: light;
-  --red: #ff4b4b;
-  --redAlt: #ff7878;
-  --redDark: #ea2b2b;
-  --orange: #ffc800;
-  --orangeAlt: #fbe56d;
-  --yellow: #ffc800;
-  --yellowAlt: #fbe56d;
-  --green: #58cc02;
-  --greenAlt: #a5ed6e;
-  --greenDark: #58a700;
-  --blue: #1899d6;
-  --blueAlt: #1cb0f6;
-  --purple: #9069cd;
-  --purpleAlt: #ce82ff;
-  --pink: #9069cd;
-  --pinkAlt: #ce82ff;
-  --primary: #58cc02;
-  --primaryAlt: #a5ed6e;
-  --primaryDark: #58a700;
-  --extra: #1899d6;
-  --extraAlt: #1cb0f6;
-  --extraDark: #2b70c9;
-  --bgExtra: #ddf4ff;
-  --black: #4b4b4b;
-  --gray: #afafaf;
-  --grayAlt: #e5e5e5;
-  --white: #f7f7f7;
-  --fg: #4b4b4b;
-  --bg3: #afafaf;
-  --bg2: #e5e5e5;
-  --bg1: #f7f7f7;
-}
-
-:root.owl button:hover,
-:root.owl button:focus-visible,
-:root.owl .button:hover,
-:root.owl .button:focus-visible {
-  color: var(--fg);
-}
-
-:root.owl .hero > .logo::before {
-  display: none;
-}
-
-:root.blurple {
-  color-scheme: dark;
-  --red: #da373c;
-  --redAlt: #a12828;
-  --redDark: #a12828;
-  --orange: #bf861c;
-  --orangeAlt: #bf861c;
-  --yellow: #fee75c;
-  --yellowAlt: #fee75c;
-  --green: #23a55a;
-  --greenAlt: #1a6334;
-  --greenDark: #1a6334;
-  --blue: #00a8fc;
-  --blueAlt: #00a8fc;
-  --purple: #5865f2;
-  --purpleAlt: #4752c4;
-  --pink: #eb459e;
-  --pinkAlt: #eb459e;
-  --primary: #5865f2;
-  --primaryAlt: #4752c4;
-  --primaryDark: #4752c4;
-  --extra: #5865f2;
-  --extraAlt: #4752c4;
-  --extraDark: #4752c4;
-  --bgExtra: #1e1f22;
-  --black: #2b2d31;
-  --gray: #404249;
-  --grayAlt: #b5bac1;
-  --white: #f2f3f5;
-  --fg: #f2f3f5;
-  --bg3: #b5bac1;
-  --bg2: #404249;
-  --bg1: #2b2d31;
-}
-
-:root.blurple button:hover,
-:root.blurple button:focus-visible,
-:root.blurple .button:hover,
-:root.blurple .button:focus-visible {
-  color: var(--fg);
-}
-
 :root.cat {
   color-scheme: dark;
   --red: #fa4549;
@@ -790,4 +702,40 @@
 :root.catdim input[type="radio"]:checked,
 :root.catdim input[type="checkbox"]:checked {
   background-color: var(--blue);
+}
+
+:root.darker {
+  color-scheme: dark;
+  --red: #ff6666;
+  --redAlt: #ff9999;
+  --redDark: #cc5252;
+  --orange: #ff9966;
+  --orangeAlt: #ffbb99;
+  --yellow: #ffcc66;
+  --yellowAlt: #ffdd99;
+  --green: #52cca3;
+  --greenAlt: #7accb1;
+  --greenDark: #3d997a;
+  --blue: #527ACC;
+  --blueAlt: #7A96CC;
+  --purple: #7a52cc;
+  --purpleAlt: #967acc;
+  --pink: #cc52a3;
+  --pinkAlt: #cc7ab1;
+  --primary: #7a52cc;
+  --primaryAlt: #967acc;
+  --primaryDark: #5c3d99;
+  --extra: #52cca3;
+  --extraAlt: #7accb1;
+  --extraDark: #3d997a;
+  --bgExtra: #181820;
+  --black: #1e1e28;
+  --gray: #3d3d50;
+  --grayAlt: #5c5c7a;
+  --white: #a3a3b7;
+  --fg: #a3a3b7;
+  --bg3: #5c5c7a;
+  --bg2: #3d3d50;
+  --bg1Alt: #282835;
+  --bg1: #1e1e28; 
 }

@@ -12,10 +12,7 @@ var ehansUi = {
       "auto",
       "purpleish",
       "light",
-      "owl",
-      "blurple",
-      "cat",
-      "catdim"
+      "darker"
     );
     document.documentElement.classList.add(theme);
     /* save theme to localstorage */
