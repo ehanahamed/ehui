@@ -11,7 +11,7 @@ var ehansUi = {
     document.documentElement.classList.remove(
       "auto",
       "purpleish",
-      "snow",
+      "light",
       "owl",
       "blurple",
       "cat",
