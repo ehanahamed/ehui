@@ -1,8 +1,6 @@
-# Ehan's UI Kit
+# EhUI
 
-Notes:
-
-main website is uikit.ehan.dev, ehansuikit.ehan.dev should have a topmost alert with a link to the main website.
+**Eh**an's **UI** Kit/Library/Framework
 
 TODO NOW:
 - mobile header

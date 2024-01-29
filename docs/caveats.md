@@ -26,7 +26,7 @@ Instead use a more "hacky" css approach:
 
 ```css
 /*
-this css class is in ehan's uikit (in utils.css)
+this css class is in EhUI (in utils.css)
 */
 .invisible {
   position: absolute;
@@ -40,17 +40,17 @@ this css class is in ehan's uikit (in utils.css)
 
 Now the `input` element is technically not hidden, the user can't see it, but the web browser thinks the user can.
 
-Then the rest is simple, just make the label look like a button. Since ehan's uikit already has a `.button` class, its super easy. You're html would look something like this:
+Then the rest is simple, just make the label look like a button. Since EhUI already has a `.button` class, its super easy. You're html would look something like this:
 
 ```html
 <div>
-  <!-- no extra css is needed, all these classes are already in ehan's uikit -->
+  <!-- no extra css is needed, all these classes are already in EhUI -->
   <label for="ID" ... class="button">Select File</label>
   <input type="file" ... id="ID" class="invisible" />
 </div>
 ```
 
-The above html is how file inputs are supposed to be written when using ehansuikit's css.
+The above html is how file inputs are supposed to be written when using EhUI's css.
 
 ## position: sticky
 

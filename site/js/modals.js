@@ -1,11 +1,11 @@
 /*!
-  Ehan's UI Kit
+  EhUI
   Copyright (c) Ehan Ahamed and contributors
   Licensed under the UPL-1.0 License
-  https://uikit.ehan.dev/LICENSE.txt
+  https://ehui.ehan.dev/LICENSE.txt
 */
 
-ehansUi.modals = {
+ehUi.modals = {
     list: [],
     create: function (params) {
         var modal = document.createElement("div");
@@ -71,8 +71,8 @@ ehansUi.modals = {
         if (params.useList === false) {
             return modal
         } else {
-            ehansUi.modals.list.push(modal);
-            return ehansUi.modals.list.length - 1;
+            ehUi.modals.list.push(modal);
+            return ehUi.modals.list.length - 1;
         }
     }
 }

@@ -1,11 +1,11 @@
 /*
-  Ehan's UI Kit
+  EhUI
   Copyright (c) Ehan Ahamed and contributors
   Licensed under the UPL-1.0 License
-  https://uikit.ehan.dev/LICENSE.txt
+  https://ehui.ehan.dev/LICENSE.txt
 */
 
-var ehansUi = {
+var ehUi = {
   version: "v0.4.0",
   setTheme: function (theme) {
     document.documentElement.classList.remove(
@@ -22,7 +22,7 @@ var ehansUi = {
 
 /* get theme from localstorage */
 if (localStorage.getItem("theme")) {
-  ehansUi.setTheme(localStorage.getItem("theme"));
+  ehUi.setTheme(localStorage.getItem("theme"));
 } else {
-  ehansUi.setTheme("auto")
+  ehUi.setTheme("auto")
 }
