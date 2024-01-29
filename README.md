@@ -1,6 +1,6 @@
 # EhUI
 
-**Eh**an's **UI** Kit/Library/Framework
+**Eh**an's **UI** Kit
 
 TODO NOW:
 - mobile header
