@@ -8,4 +8,6 @@ jobs:
       - name: Clone from GitHub
         run: git clone https://github.com/ehanahamed/ehui.git
       - name: Push to Codeberg
-        run: git push https://ehanahamed:${{ secrets.CODEBERG_TOKEN }}@codeberg.org/ehanahamed/ehui.git --all
+        run: |
+          cd ehui
+          git push https://ehanahamed:${{ secrets.CODEBERG_TOKEN }}@codeberg.org/ehanahamed/ehui.git --all
