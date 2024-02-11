@@ -131,6 +131,11 @@
   border-left: 0.2rem solid var(--bg2);
 }
 
+.grid.split.noBorder > .left,
+.grid.split.noBorder > .right {
+  border: none;
+}
+
 /* when mobile/smaller-window, resize */
 @media only screen and (max-width: 800px) {
   .grid.split {
