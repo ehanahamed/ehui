@@ -24,6 +24,7 @@ button borders:
 - `--button-alt-ohno-border`
 - `--button-alt-yay-border`
 
+button borders: (hover)
 - `--button-border-hover`
 - `--button-extra-border-hover`
 - `--button-ohno-border-hover`
@@ -32,4 +33,5 @@ button borders:
 - `--button-alt-extra-border-hover`
 - `--button-alt-ohno-border-hover`
 - `--button-alt-yay-border-hover`
-- `--button-
+
+
