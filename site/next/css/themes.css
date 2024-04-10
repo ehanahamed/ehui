@@ -38,6 +38,7 @@
   --gray: var(--overlay0);
   --grayAlt: var(--overlay1);
   --white: var(--text);
+  --primaryAlt: #c6a0f6;
 }
 
 :root.catppuccin.latte {
@@ -89,7 +90,6 @@
   --pink: #cc52a3;
   --pinkAlt: #cc7ab1;
   --primary: var(--mauve);
-  --primaryAlt: #967acc;
   --primaryDark: #5c3d99;
   --extra: #52cca3;
   --extraAlt: #7accb1;
