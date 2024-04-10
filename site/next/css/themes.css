@@ -5,6 +5,7 @@
   https://ehui.ehan.dev/LICENSE.txt
 */
 
+:root,
 :root.catppuccin.mocha {
   color-scheme: dark;
   --rosewater: #f5e0dc;
@@ -73,6 +74,7 @@
   --white: var(--crust);
 }
 
+:root,
 :root.catppuccin {
   --redAlt: #ff9999;
   --redDark: #cc5252;
