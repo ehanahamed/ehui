@@ -281,7 +281,7 @@ button,
   background-color: var(--primary);
   color: var(--bg1);
   border: 0.2rem solid var(--primary);
-  border-radius: 0.8rem;
+  border-radius: var(--button-radius);
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
   line-height: 1.4;
