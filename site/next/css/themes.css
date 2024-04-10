@@ -33,6 +33,10 @@
   --base: #1e1e2e;
   --mantle: #181825;
   --crust: #11111b;
+  --black: var(--crust);
+  --gray: var(--overlay0);
+  --grayAlt: var(--overlay1);
+  --white: var(--text);
 }
 
 :root.catppuccin.latte {
@@ -63,8 +67,34 @@
   --base: #eff1f5;
   --mantle: #e6e9ef;
   --crust: #dce0e8;
+  --black: var(--text);
+  --gray: var(--overlay1);
+  --grayAlt: var(--overlay0);
+  --white: var(--crust);
 }
 
 :root.catppuccin {
-  
+  --redAlt: #ff9999;
+  --redDark: #cc5252;
+  --orange: var(--peach);
+  --orangeAlt: #ffbb99;
+  --yellowAlt: #ffdd99;
+  --greenAlt: #7accb1;
+  --greenDark: #3d997a;
+  --blueAlt: #7A96CC;
+  --purple: #7a52cc;
+  --purpleAlt: #967acc;
+  --pink: #cc52a3;
+  --pinkAlt: #cc7ab1;
+  --primary: var(--mauve);
+  --primaryAlt: #967acc;
+  --primaryDark: #5c3d99;
+  --extra: #52cca3;
+  --extraAlt: #7accb1;
+  --extraDark: #3d997a;
+  --bgExtra: var(--mantle);
+  --fg: var(--text);
+  --bg3: var(--surface1);
+  --bg2: var(--surface0);
+  --bg1: var(--base);
 }
