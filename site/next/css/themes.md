@@ -10,9 +10,11 @@ colors:
 - `--ohno` error/incorrect/bad color, usually red
 - `--yay` success/correct/good color, usually green
 
-variables:
+button border radius:
 - `--button-radius`
 - `--button-alt-radius`
+
+button borders:
 - `--button-border`
 - `--button-extra-border`
 - `--button-ohno-border`
@@ -21,6 +23,7 @@ variables:
 - `--button-alt-extra-border`
 - `--button-alt-ohno-border`
 - `--button-alt-yay-border`
+
 - `--button-border-hover`
 - `--button-extra-border-hover`
 - `--button-ohno-border-hover`
@@ -29,3 +32,4 @@ variables:
 - `--button-alt-extra-border-hover`
 - `--button-alt-ohno-border-hover`
 - `--button-alt-yay-border-hover`
+- `--button-
