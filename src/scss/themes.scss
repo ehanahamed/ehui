@@ -1,0 +1,102 @@
+/*!
+  EhUI
+  Copyright (c) Ehan Ahamed and contributors
+  Licensed under the UPL-1.0 License
+  https://ehui.ehan.dev/LICENSE.txt
+*/
+
+:root,
+:root.catppuccin.mocha {
+  color-scheme: dark;
+  --rosewater: #f5e0dc;
+  --flamingo: #f2cdcd;
+  --pink: #f5c2e7;
+  --mauve: #cba6f7;
+  --red: #f38ba8;
+  --maroon: #eba0ac;
+  --peach: #fab387;
+  --yellow: #f9e2af;
+  --green: #a6e3a1;
+  --teal: #94e2d5;
+  --sky: #89dceb;
+  --sapphire: #74c7ec;
+  --blue: #89b4fa;
+  --lavender: #b4befe;
+  --text: #cdd6f4;
+  --subtext1: #bac2de;
+  --subtext0: #a6adc8;
+  --overlay2: #9399b2;
+  --overlay1: #7f849c;
+  --overlay0: #6c7086;
+  --surface2: #585b70;
+  --surface1: #45475a;
+  --surface0: #313244;
+  --base: #1e1e2e;
+  --mantle: #181825;
+  --crust: #11111b;
+  --black: var(--crust);
+  --gray: var(--overlay0);
+  --grayAlt: var(--overlay1);
+  --white: var(--text);
+  --primaryAlt: #c6a0f6;
+}
+
+:root.catppuccin.latte {
+  color-scheme: light;
+  --rosewater: #dc8a78;
+  --flamingo: #dd7878;
+  --pink: #ea76cb;
+  --mauve: #8839ef;
+  --red: #d20f39;
+  --maroon: #e64553;
+  --peach: #fe640b;
+  --yellow: #df8e1d;
+  --green: #40a02b;
+  --teal: #179299;
+  --sky: #04a5e5;
+  --sapphire: #209fb5;
+  --blue: #1e66f5;
+  --lavender: #7287fd;
+  --text: #4c4f69;
+  --subtext1: #5c5f77;
+  --subtext0: #6c6f85;
+  --overlay2: #7c7f93;
+  --overlay1: #8c8fa1;
+  --overlay0: #9ca0b0;
+  --surface2: #acb0be;
+  --surface1: #bcc0cc;
+  --surface0: #ccd0da;
+  --base: #eff1f5;
+  --mantle: #e6e9ef;
+  --crust: #dce0e8;
+  --black: var(--text);
+  --gray: var(--overlay1);
+  --grayAlt: var(--overlay0);
+  --white: var(--crust);
+}
+
+:root,
+:root.catppuccin {
+  --redAlt: #ff9999;
+  --redDark: #cc5252;
+  --orange: var(--peach);
+  --orangeAlt: #ffbb99;
+  --yellowAlt: #ffdd99;
+  --greenAlt: #7accb1;
+  --greenDark: #3d997a;
+  --blueAlt: #7A96CC;
+  --purple: #7a52cc;
+  --purpleAlt: #967acc;
+  --pink: #cc52a3;
+  --pinkAlt: #cc7ab1;
+  --primary: var(--mauve);
+  --primaryDark: #5c3d99;
+  --extra: #52cca3;
+  --extraAlt: #7accb1;
+  --extraDark: #3d997a;
+  --bgExtra: var(--mantle);
+  --fg: var(--text);
+  --bg3: var(--surface1);
+  --bg2: var(--surface0);
+  --bg1: var(--base);
+}
