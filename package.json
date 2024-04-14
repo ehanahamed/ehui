@@ -2,7 +2,8 @@
   "name": "ehui",
   "version": "1.0.0",
   "scripts": {
-    "build": "npm run build-scss",
-    "build-scss": "dart run sass ./src/scss/ehui.scss ./site/next/css/ehui.css --no-source-map"
+    "build": "npm run build-scss && npm run build-js",
+    "build-scss": "dart run sass ./src/scss/ehui.scss ./site/dev/css/ehui.css --no-source-map",
+    "build-js": "rm -rf ./site/dev/js && cp -r ./src/js ./site/dev/js"
   }
 }
