@@ -1,0 +1,8 @@
+{
+  "name": "ehui",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm run build-scss",
+    "build-scss": "dart run sass ./src/scss/ehui.scss ./site/next/css/ehui.css --no-source-map"
+  }
+}
