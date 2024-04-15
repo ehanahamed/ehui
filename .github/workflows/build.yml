@@ -26,7 +26,3 @@ jobs:
         run: |
           cd ehui
           git push https://ehanahamed:${{ secrets.GH_TOKEN }}@github.com/ehanahamed/ehui.git --all
-      - name: Push to Codeberg
-        run: |
-          cd ehui
-          git push https://ehanahamed:${{ secrets.CODEBERG_TOKEN }}@codeberg.org/ehanahamed/ehui.git --all
