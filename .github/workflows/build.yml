@@ -11,7 +11,9 @@ jobs:
         with:
           node-version: 20
       - name: Run npm script
-        run: npm run build
+        run: |
+          cd ehui
+          npm run build
       - name: Commit Changes
         run: |
           cd ehui
