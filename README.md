@@ -1,4 +1,4 @@
 # EhUI
 
-**Eh**an's **UI** Kit
+Ehan's UI kit/library
 
