@@ -2,7 +2,7 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    name: Build (src/ to site/dev/)
+    name: Build site/dev/
     runs-on: ubuntu-latest
     steps:
       - name: Clone from GitHub
@@ -10,6 +10,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - uses: dart-lang/setup-dart@v1
       - name: Run npm script
         run: |
           cd ehui
