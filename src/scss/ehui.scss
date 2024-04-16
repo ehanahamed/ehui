@@ -1,4 +1,11 @@
-@use "./components.scss";
+$bg0: #1e1e2e !default;
+$bg1: #1e1e2e !default;
+$bg2: #1e1e2e !default;
+$bg3: #1e1e2e !default;
+$fg0: #1e1e2e !default;
+$fg1: #1e1e2e !default;
+$fg2: #1e1e2e !default;
+
+@use "./elements.scss";
 @use "./layouts.scss";
 @use "./utils.scss";
-/* e */
