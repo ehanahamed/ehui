@@ -1,10 +1,14 @@
-$bg0: #1e1e2e !default;
-$bg1: #1e1e2e !default;
-$bg2: #1e1e2e !default;
-$bg3: #1e1e2e !default;
-$fg0: #1e1e2e !default;
-$fg1: #1e1e2e !default;
-$fg2: #1e1e2e !default;
+$bg0: false !default;
+$bg1: false !default;
+$bg2: false !default;
+$bg3: false !default;
+$fg0: false !default;
+$fg1: false !default;
+$fg2: false !default;
+$main: false !default;
+$extra: false !default;
+$error: false !default;
+$yay: false !default;
 
 @use "./elements.scss";
 @use "./layouts.scss";
