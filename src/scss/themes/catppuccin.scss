@@ -26,6 +26,10 @@ $mocha-mantle: #181825;
 $mocha-crust: #11111b;
 
 @use "../ehui.scss" with (
-    $bg0: $crust,
-    $bg1: $base
+    $bg0: $mocha-crust,
+    $bg1: $mocha-base,
+    $bg2: $mocha-mantle,
+    $fg0: $mocha-subtext0,
+    $fg1: $mocha-text,
+    $fg2: $mocha-text, 
 )
