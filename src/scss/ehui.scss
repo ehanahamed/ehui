@@ -1,16 +1,37 @@
-$bg0: false !default;
+$bg0: color.adjust($bg1, $lightness: -20%) !default;
 $bg1: false !default;
-$bg2: false !default;
-$bg3: false !default;
-$fg0: false !default;
-$fg1: false !default;
-$fg2: false !default;
-$main: false !default;
-$extra: false !default;
-$error: false !default;
-$yay: false !default;
+$bg2: color.adjust($bg1, $lightness: +20%) !default;
+$bg3: color.adjust($bg2, $lightness: +20%) !default;
+$fg0: color.adjust($fg1, $lightness: -20%) !default;
+$fg1: color.adjust() !default;
+$fg2: fg1 !default;
+$main: #0000ff !default;
+$extra: color.adjust($main, $hue: -100deg) !default;
+$scary: color.adjust(
+  #ff0000,
+  $saturation: color.saturation(
+    color.mix(#ff0000, $main, 20%)
+  ),
+  $lightness: color.lightness(
+    color.mix(#ff0000, $main, 20%)
+  )
+) !default;
+$yay: color.adjust(
+  #00ff00,
+  $saturation: color.saturation(
+    color.mix(#00ff00, $main, 20%)
+  ),
+  $lightness: color.lightness(
+    color.mix(#00ff00, $main, 20%)
+  )
+) !default;
+$links: $main !default;
+$border-radius: 0.8rem !default;
 
-@use "./elements.scss";
+@use "./elements.scss" with (
+  $link-color: $links,
+  $menu-color: $links,
+);
 @use "./layouts.scss";
 @use "./utils.scss";
 
