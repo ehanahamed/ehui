@@ -1,3 +1,4 @@
+$dark: true !default;
 $bg0: color.adjust($bg1, $lightness: -20%) !default;
 $bg1: false !default;
 $bg2: color.adjust($bg1, $lightness: +20%) !default;
@@ -18,6 +19,14 @@ $button-border: none !default;
 $alt-button-bg: $bg3 !default;
 $alt-button-text: $main !default;
 $alt-button-border: none !default;
+
+@use "./elements.scss" with (
+  $border-radius: $border-radius,
+  $link-color: $links
+);
+
+@use "./layouts.scss";
+
 $scary-button-bg: $scary !default;
 $scary-button-text: $button-text !default;
 $scary-button-border: none !default;
@@ -30,12 +39,33 @@ $yay-button-border: none !default;
 $alt-yay-button-bg: $alt-button-bg !default;
 $alt-yay-button-text: $yay !default;
 $alt-yay-button-border: none !default;
+$extra-button-bg: $extra !default;
+$extra-button-text: $button-text !default;
+$extra-button-border: none !default;
+$alt-extra-button-bg: $alt-button-bg !default;
+$alt-extra-button-text: $extra !default;
+$alt-extra-button-border: none !default;
 
-@use "./elements.scss" with (
-  $link-color: $links,
+@use "./classes.scss" with (
+  $scary-button-background: $scary-button-bg,
+  $scary-button-text: $scary-button-text,
+  $scary-button-border: $scary-button-border,
+  $alt-scary-button-background: $alt-scary-button-bg,
+  $alt-scary-button-text: $alt-scary-button-text,
+  $alt-scary-button-border: $alt-scary-button-border,
+  $yay-button-background: $yay-button-bg,
+  $yay-button-text: $yay-button-text,
+  $yay-button-border: $yay-button-border,
+  $alt-yay-button-background: $alt-yay-button-bg,
+  $alt-yay-button-text: $alt-yay-button-text,
+  $alt-yay-button-border: $alt-yay-button-border,
+  $extra-button-background: $extra-button-bg,
+  $extra-button-text: $extra-button-text,
+  $extra-button-border: $extra-button-border,
+  $alt-extra-button-background: $alt-extra-button-bg,
+  $alt-extra-button-text: $alt-extra-button-text,
+  $alt-extra-button-border: $alt-extra-button-border
 );
-@use "./layouts.scss";
-@use "./utils.scss";
 
 html {
   height: auto;
