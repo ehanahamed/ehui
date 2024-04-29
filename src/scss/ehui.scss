@@ -1,4 +1,4 @@
-$dark-mode: true !default;
+$dark-theme: true !default;
 $bg0: color.adjust($bg1, $lightness: -20%) !default;
 $bg1: false !default;
 $bg2: color.adjust($bg1, $lightness: +20%) !default;

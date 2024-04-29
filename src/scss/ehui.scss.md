@@ -5,7 +5,7 @@ To make a ehui theme, include `ehui.scss` with the `@use` rule.
 Required variables:
 ```scss
 @use "ehui.scss" with (
-  $dark-mode: bool, // is it a dark theme?
+  $dark-theme: bool, // is it a dark theme?
   $bg1: color,      // background color
   $fg1: color,      // text/foreground color
   $main: color,     // main/primary/accent color
@@ -19,7 +19,7 @@ Important variables:
 // Some have default values based on other variables' values
 @use "ehui.scss" with (
   // is this a dark theme?
-  $dark-mode: boolean,
+  $dark-theme: boolean,
   // below (usually darker than) bg1
   $bg0: color, // default is 20% darkend $bg1
   // background color
