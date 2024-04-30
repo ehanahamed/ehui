@@ -5,6 +5,29 @@
   https://ehui.ehan.dev/LICENSE.txt
 */
 
+html {
+  height: auto;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  height: auto;
+  background-color: $bg1;
+  color: $fg0;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: sans-serif;
+  font-weight: normal;
+  margin: 0px;
+}
+
 ::selection {
   background-color: var(--primaryAlt);
   color: var(--bg1);

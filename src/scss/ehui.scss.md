@@ -1,6 +1,6 @@
 # ehui.scss
 
-To make a ehui theme, include `ehui.scss` with the `@use` rule.
+~~To make a ehui theme, include `ehui.scss` with the `@use` rule.~~
 
 Required variables:
 ```scss

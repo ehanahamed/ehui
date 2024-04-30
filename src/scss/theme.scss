@@ -1,0 +1,43 @@
+// default theme
+$dark-theme: true !default;
+$bg0: color.adjust($bg1, $lightness: -20%) !default;
+$bg1: false !default;
+$bg2: color.adjust($bg1, $lightness: +20%) !default;
+$bg3: color.adjust($bg2, $lightness: +20%) !default;
+$fg0: color.mix($fg1, $bg1, 60%) !default;
+$fg1: false !default;
+$fg2: $fg1 !default;
+$main: false !default;
+$extra: false !default;
+$bgExtra: $bg0 !default;
+$scary: false !default;
+$yay: false !default;
+$links: $main !default;
+$border-radius: 0.8rem !default;
+$border-width: 0.2rem !default;
+
+$button-bg: $main !default;
+$button-text: $bg0 !default;
+$button-border: $border-width solid $button-bg !default;
+$alt-button-bg: $bg3 !default;
+$alt-button-text: $main !default;
+$alt-button-border: $border-width solid $alt-button-text !default;
+
+$scary-button-bg: $scary !default;
+$scary-button-text: $button-text !default;
+$scary-button-border: $border-width solid $scary-button-bg !default;
+$alt-scary-button-bg: $alt-button-bg !default;
+$alt-scary-button-text: $scary !default;
+$alt-scary-button-border: $border-width solid $alt-scary-button-text !default;
+$yay-button-bg: $yay !default;
+$yay-button-text: $button-text !default;
+$yay-button-border: $border-width solid $yay-button-bg !default;
+$alt-yay-button-bg: $alt-button-bg !default;
+$alt-yay-button-text: $yay !default;
+$alt-yay-button-border: $border-width solid $alt-yay-button-text !default;
+$extra-button-bg: $extra !default;
+$extra-button-text: $button-text !default;
+$extra-button-border: $border-width solid $extra-button-bg !default;
+$alt-extra-button-bg: $alt-button-bg !default;
+$alt-extra-button-text: $extra !default;
+$alt-extra-button-border: $border-width solid $alt-extra-button-text !default;
