@@ -4,6 +4,7 @@
   Licensed under the UPL-1.0 License
   https://ehui.ehan.dev/LICENSE.txt
 */
+@use "./theme.scss" as theme;
 
 html {
   height: auto;
@@ -286,12 +287,14 @@ button,
   font-size: 1rem;
   line-height: 1.4;
   transition-duration: 0.4s;
+  @include theme.button(false, $main);
 }
 
 button.alt,
 .button.alt {
   background-color: var(--bg1);
   color: var(--primary);
+  @include theme.button(true, $main);
 }
 
 button:hover,
@@ -300,6 +303,7 @@ button:focus-visible,
 .button:focus-visible {
   background-color: var(--primaryAlt);
   color: var(--bg1);
+  @include theme.button(false, $main, true);
 }
 
 button:focus-visible,
