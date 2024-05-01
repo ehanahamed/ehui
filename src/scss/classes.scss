@@ -524,30 +524,24 @@ pre,
   white-space: pre;
 }
 
-button.red,
-.button.red {
-  background-color: var(--red);
-  border-color: var(--red);
+button.scary,
+.button.scary {
+  @include theme.button(false, theme.$scary);
 }
 
-button.green,
-.button.green {
-  background-color: var(--green);
-  border-color: var(--green);
+button.yay,
+.button.yay {
+  @include theme.button(false, theme.$yay);
 }
 
 button.extra,
 .button.extra {
-  background-color: var(--extra);
-  border-color: var(--extra);
-  color: var(--bgExtra);
+  @include theme.button(false, theme.$extra);
 }
 
-button.alt.red,
-.button.alt.red {
-  background-color: var(--bg1);
-  border-color: var(--red);
-  color: var(--red);
+button.alt.scary,
+.button.alt.scary {
+  @include theme.button(true, theme.$scary);
 }
 
 button.alt.green,

@@ -279,38 +279,27 @@ button,
   text-align: center;
   cursor: pointer;
   text-decoration: none;
-  background-color: var(--primary);
-  color: var(--bg1);
-  border: 0.2rem solid var(--primary);
-  border-radius: var(--button-radius);
-  padding: 0.4rem 0.8rem;
   font-size: 1rem;
   line-height: 1.4;
+  padding: 0.4rem 0.8rem;
   transition-duration: 0.4s;
-  @include theme.button(false, $main);
+  @include theme.button(false, theme.$main);
 }
 
 button.alt,
 .button.alt {
-  background-color: var(--bg1);
-  color: var(--primary);
-  @include theme.button(true, $main);
+  @include theme.button(true, theme.$main);
 }
 
 button:hover,
-button:focus-visible,
-.button:hover,
-.button:focus-visible {
-  background-color: var(--primaryAlt);
-  color: var(--bg1);
-  @include theme.button(false, $main, true);
+.button:hover {
+  @include theme.button(false, theme.$main, true);
 }
 
 button:focus-visible,
 .button:focus-visible {
-  outline: 0.2rem solid var(--primary);
-  outline-offset: 0.2rem;
   transition-duration: 0.1s;
+  @include theme.button(false, theme.$main, false, true);
 }
 
 ::placeholder {
