@@ -544,27 +544,23 @@ button.alt.scary,
   @include theme.button(true, theme.$scary);
 }
 
-button.alt.green,
-.button.alt.green {
-  background-color: var(--bg1);
-  border-color: var(--green);
-  color: var(--green);
+button.alt.yay,
+.button.alt.yay {
+  @include theme.button(true, theme.$yay);
 }
 
 button.alt.extra,
 .button.alt.extra {
-  background-color: var(--bgExtra);
-  border-color: var(--extra);
-  color: var(--extra);
+  @include theme.button(true, theme.$extra);
 }
 
 button:hover.red,
-button:focus-visible.red,
-.button:hover.red,
-.button:focus-visible.red {
-  background-color: var(--redAlt);
-  color: var(--bg1);
+button:focus-visible.red {
+  @include theme.button(false, theme.$red, true)
 }
+
+.button:hover.red,
+.button:focus-visible.red
 
 button:hover.green,
 button:focus-visible.green,
