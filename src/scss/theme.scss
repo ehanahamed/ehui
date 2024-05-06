@@ -43,3 +43,22 @@ $border-width: 0.2rem;
         outline: none;
     }
 }
+
+@mixin textbox(
+    $type,
+    $color: $main,
+    /* $state can be "none", "hover", or "focus" */
+    $state: "none"
+) {
+    @if $color == $main {
+        @if $state = "hover" {
+            border: 0.2rem solid color.adjust($color, $lightness: +20%);
+        } @else if $state == "focus" {
+            border: 0.2rem solid $color;
+        } @else {
+            border: 0.2rem solid $bg3;
+        }
+    } @else {
+        border: 0.2rem solid $color;
+    }
+}
