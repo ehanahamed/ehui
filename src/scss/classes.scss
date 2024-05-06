@@ -542,25 +542,103 @@ button.scary:focus-visible,
   @include theme.button(false, theme.$scary, "focus-visible");
 }
 
-button.alt,
-.button.alt {
+button.alt.scary,
+.button.alt.scary {
   @include theme.button(true);
 }
-button.alt:hover,
-.button.alt:hover {
-  @include theme.button(true, theme.$main, "hover");
+button.alt.scary:hover,
+.button.alt.scary:hover {
+  @include theme.button(true, theme.$scary, "hover");
 }
-button.alt:focus,
-.button.alt:focus {
-  @include theme.button(true, theme.$main, "focus");
+button.alt.scary:focus,
+.button.alt.scary:focus {
+  @include theme.button(true, theme.$scary, "focus");
 }
-button.alt:focus-visible,
-.button.alt:focus-visible {
-  @include theme.button(true, theme.$main, "focus-visible");
+button.alt.scary:focus-visible,
+.button.alt.scary:focus-visible {
+  @include theme.button(true, theme.$scary, "focus-visible");
 }
-button.alt:active,
-.button.alt:active {
-  @include theme.button(true, theme.$main, "active");
+button.alt.scary:active,
+.button.alt.scary:active {
+  @include theme.button(true, theme.$scary, "active");
+}
+
+button.yay,
+.button.yay {
+  @include theme.button(false, theme.$yay, "none");
+}
+button.yay:hover,
+.button.yay:hover {
+  @include theme.button(false, theme.$yay, "hover");
+}
+button.yay:focus,
+.button.yay:focus {
+  @include theme.button(false, theme.$yay, "focus");
+}
+button.yay:focus-visible,
+.button.yay:focus-visible {
+  transition-duration: 0.1s;
+  @include theme.button(false, theme.$yay, "focus-visible");
+}
+
+button.alt.yay,
+.button.alt.yay {
+  @include theme.button(true);
+}
+button.alt.yay:hover,
+.button.alt.yay:hover {
+  @include theme.button(true, theme.$yay, "hover");
+}
+button.alt.yay:focus,
+.button.alt.yay:focus {
+  @include theme.button(true, theme.$yay, "focus");
+}
+button.alt.yay:focus-visible,
+.button.alt.yay:focus-visible {
+  @include theme.button(true, theme.$yay, "focus-visible");
+}
+button.alt.yay:active,
+.button.alt.yay:active {
+  @include theme.button(true, theme.$yay, "active");
+}
+
+button.extra,
+.button.extra {
+  @include theme.button(false, theme.$extra, "none");
+}
+button.extra:hover,
+.button.extra:hover {
+  @include theme.button(false, theme.$extra, "hover");
+}
+button.extra:focus,
+.button.extra:focus {
+  @include theme.button(false, theme.$extra, "focus");
+}
+button.extra:focus-visible,
+.button.extra:focus-visible {
+  transition-duration: 0.1s;
+  @include theme.button(false, theme.$extra, "focus-visible");
+}
+
+button.alt.extra,
+.button.alt.extra {
+  @include theme.button(true);
+}
+button.alt.extra:hover,
+.button.alt.extra:hover {
+  @include theme.button(true, theme.$extra, "hover");
+}
+button.alt.extra:focus,
+.button.alt.extra:focus {
+  @include theme.button(true, theme.$extra, "focus");
+}
+button.alt.extra:focus-visible,
+.button.alt.extra:focus-visible {
+  @include theme.button(true, theme.$extra, "focus-visible");
+}
+button.alt.extra:active,
+.button.alt.extra:active {
+  @include theme.button(true, theme.$extra, "active");
 }
 
 input[type="text"].red,

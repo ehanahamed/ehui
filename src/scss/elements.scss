@@ -270,6 +270,11 @@ a:focus-visible,
   transition-duration: 0.1s;
 }
 
+/* button & button.alt are here,
+button.scary, button.yay, button.extra, and
+they're alt versions and their hover/focus/etc states
+are in classes.scss
+theme.button() is obvously in theme.scss */
 button,
 .button {
   display: inline-block;
