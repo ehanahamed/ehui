@@ -16,30 +16,30 @@ $border-radius: 0.8rem;
 $border-width: 0.2rem;
 
 @mixin button(
-    $alt,
-    $color,
-    $hover: false,
-    $focus-visible: false,
-    $active: false
+    $alt: false,
+    /* $color can be $main, $scary, $yay, or $extra */
+    $color: $main,
+    /* $state can be "none", "hover", "focus", "focus-visible*, or "active" */
+    $state: "none"
 ) {
-    @if $alt and ($hover or $focus-visible) {
+    @if $alt and ($state == "hover" or $state == "focus-visible") {
         background: $color;
         color: $bg1;
     } @else if $alt {
         background: $bg3;
         color: $color;
-    } @else if ($hover or $focus-visible) {
+    } @else if ($state == "hover" or $state = "focus-visible") {
         background: color.adjust($color, $lightness: +20%);
         color: $bg1;
     } @else {
         background: $color;
         color: $bg1;
     }
+    border: $border-width solid $color;
     @if $focus-visible {
         outline: 0.2rem solid $color;
         outline-offset: 0.2rem;
     } @else {
         outline: none;
     }
-    border: $border-width solid $color;
 }
