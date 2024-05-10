@@ -1,6 +1,9 @@
 # EhUI
 
-Ehan's UI kit/library
+## Project Structure
 
-work in progress classes.scss
+src/scss/ - the main styles and stuff
+elements.scss defines the actual styles,
+classes.scss has extra asdfsadfasdfasd
+
 
