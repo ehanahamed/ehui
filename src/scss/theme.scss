@@ -1,3 +1,9 @@
+/*
+  EhUI is free and open source
+  Copyright (c) Ehan Ahamed and contributors
+  https://ehui.ehan.dev/LICENSE.txt
+*/
+
 $dark-theme: true;
 $bg0: color.adjust($bg1, $lightness: -20%);
 $bg1: false;
@@ -17,9 +23,9 @@ $border-width: 0.2rem;
 
 @mixin button(
     $alt: false,
-    /* $color can be $main, $scary, $yay, or $extra */
+    /* $color will be $main, $scary, $yay, or $extra */
     $color: $main,
-    /* $state can be "none", "hover", "focus", "focus-visible*, or "active" */
+    /* $state will be "none", "hover", "focus", "focus-visible*, or "active" */
     $state: "none"
 ) {
     @if $alt and ($state == "hover" or $state == "focus-visible") {

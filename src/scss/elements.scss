@@ -1,9 +1,9 @@
-/*!
-  EhUI
+/*
+  EhUI is free and open source
   Copyright (c) Ehan Ahamed and contributors
-  Licensed under the UPL-1.0 License
   https://ehui.ehan.dev/LICENSE.txt
 */
+
 @use "./theme.scss" as theme;
 
 html {
@@ -303,26 +303,9 @@ button:focus-visible,
   transition-duration: 0.1s;
   @include theme.button(false, theme.$main, "focus-visible");
 }
-
-button.alt,
-.button.alt {
-  @include theme.button(true);
-}
-button.alt:hover,
-.button.alt:hover {
-  @include theme.button(true, theme.$main, "hover");
-}
-button.alt:focus,
-.button.alt:focus {
-  @include theme.button(true, theme.$main, "focus");
-}
-button.alt:focus-visible,
-.button.alt:focus-visible {
-  @include theme.button(true, theme.$main, "focus-visible");
-}
-button.alt:active,
-.button.alt:active {
-  @include theme.button(true, theme.$main, "active");
+button:active,
+.button:active {
+  @include theme.button(false, theme.$main, "active");
 }
 
 ::placeholder {

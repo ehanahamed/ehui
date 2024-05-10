@@ -1,91 +1,10 @@
-/*!
-  EhUI
+/*
+  EhUI is free and open source
   Copyright (c) Ehan Ahamed and contributors
-  Licensed under the UPL-1.0 License
   https://ehui.ehan.dev/LICENSE.txt
 */
 
 @use "./theme.scss" as theme;
-
-/*
-min/reduced-motion utils
-*/
-html.min {
-  scroll-behavior: auto;
-}
-
-html.min a,
-html.min .a,
-html.min button,
-html.min .button,
-html.min input[type="text"],
-html.min input[type="password"],
-html.min textarea,
-html.min input[type="radio"],
-html.min input[type="checkbox"] {
-  transition-duration: 0s;
-}
-
-html.min .card.min,
-.card.double.min {
-  perspective: none;
-}
-
-html.min .card.double > .content,
-.card.double.min > .content {
-  display: block;
-  transition-duration: 0s;
-  transform-style: flat;
-  background-color: inherit;
-  border-radius: 0px;
-  align-items: normal;
-  justify-content: normal;
-  text-align: center;
-}
-
-html.min .card.double > .content > .front,
-html.min .card.double > .content > .back,
-.card.double.min > .content > .front,
-.card.double.min > .content > .back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--bg2);
-  border-radius: 0.8rem;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  backface-visibility: visible;
-  -webkit-backface-visibility: visible;
-  -moz-backface-visibility: visible;
-  transform: none;
-}
-
-html.min .card.double > .content > .back,
-.card.double.min > .content > .back {
-  display: none;
-  transform: none;
-}
-
-html.min .card.double > .content > .front,
-.card.double.min > .content > .front {
-  display: flex;
-}
-
-html.min .card.double.flip > .content,
-.card.double.min.flip > .content {
-  transform: none;
-}
-
-html.min .card.double.flip > .content > .back,
-.card.double.min.flip > .content > .back {
-  display: flex;
-}
-
-html.min .card.double.flip > .content > .front,
-.card.double.min.flip > .content > .front {
-  display: none;
-}
 
 /*
 specific css-negation-stuff utils
@@ -524,6 +443,27 @@ pre,
   white-space: pre;
 }
 
+button.alt,
+.button.alt {
+  @include theme.button(true);
+}
+button.alt:hover,
+.button.alt:hover {
+  @include theme.button(true, theme.$main, "hover");
+}
+button.alt:focus,
+.button.alt:focus {
+  @include theme.button(true, theme.$main, "focus");
+}
+button.alt:focus-visible,
+.button.alt:focus-visible {
+  @include theme.button(true, theme.$main, "focus-visible");
+}
+button.alt:active,
+.button.alt:active {
+  @include theme.button(true, theme.$main, "active");
+}
+
 button.scary,
 .button.scary {
   @include theme.button(false, theme.$scary, "none");
@@ -538,7 +478,6 @@ button.scary:focus,
 }
 button.scary:focus-visible,
 .button.scary:focus-visible {
-  transition-duration: 0.1s;
   @include theme.button(false, theme.$scary, "focus-visible");
 }
 
@@ -577,7 +516,6 @@ button.yay:focus,
 }
 button.yay:focus-visible,
 .button.yay:focus-visible {
-  transition-duration: 0.1s;
   @include theme.button(false, theme.$yay, "focus-visible");
 }
 
@@ -616,7 +554,6 @@ button.extra:focus,
 }
 button.extra:focus-visible,
 .button.extra:focus-visible {
-  transition-duration: 0.1s;
   @include theme.button(false, theme.$extra, "focus-visible");
 }
 
