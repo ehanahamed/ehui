@@ -331,22 +331,32 @@ textarea {
   line-height: 1.4;
   transition-duration: 0.4s;
 }
-
-input[type="text"]:hover,
-input[type="text"]:focus-visible,
-input[type="password"]:hover,
-input[type="password"]:focus-visible,
-textarea:hover,
-textarea:focus-visible {
-  border-color: var(--primaryAlt);
+input[type="text"] {
+  @include theme.textbox("text")
 }
-
-input[type="text"]:focus-visible,
-input[type="password"]:focus-visible,
-textarea:focus-visible {
-  outline: 0.2rem solid var(--primary);
-  outline-offset: 0.2rem;
-  transition-duration: 0.1s;
+input[type="text"]:hover {
+  @include theme.textbox("text", "hover")
+}
+input[type="text"]:focus {
+  @include theme.textbox("text", "focus")
+}
+input[type="password"] {
+  @include theme.textbox("password")
+}
+input[type="password"]:hover {
+  @include theme.textbox("password", "hover")
+}
+input[type="password"]:focus {
+  @include theme.textbox("password", "focus")
+}
+textarea {
+  @include theme.textbox("textarea")
+}
+textarea:hover {
+  @include theme.textbox("textarea", "hover")
+}
+textarea:focus {
+  @include theme.textbox("textarea", "focus")
 }
 
 /*
