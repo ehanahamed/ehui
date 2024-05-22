@@ -4,6 +4,15 @@
   https://ehui.ehan.dev/LICENSE.txt
 */
 
-@use "./elements.scss";
+$theme: "dark";
+$bg0: #101020;
+$bg1: #1e1e32;
+$bg2: ;
+$bg3: ;
+$fg0: ;
+$fg: ;
+@use "./elements.scss" with (
+  
+);
 @use "./layouts.scss";
 @use "./classes.scss";
