@@ -4,15 +4,153 @@
   https://ehui.ehan.dev/LICENSE.txt
 */
 
-$theme: "dark";
-$bg0: #101020;
-$bg1: #1e1e32;
-$bg2: ;
-$bg3: ;
-$fg0: ;
-$fg: ;
+$theme: "light" !default;
+$fg2: #343a40 !default;
+$fg1: #495057 !default;
+$fg0: #868e96 !default;
+$bg3: #dee2e6 !default;
+$bg2: #e9ecef !default;
+$bg1: #f8f9fa !default;
+$bg0: #ffffff !default;
+$main2: #5f3dc4 !default;
+$main: #7048e8 !default;
+$main0: #d0bfff !default;
+$extra2: #087f5b !default;
+$extra: #0ca678 !default;
+$extra0: #96f2d7 !default;
+$yay2: #087f5b !default;
+$yay: #0ca678 !default;
+$yay0: #96f2d7 !default;
+$ohno2: #c92a2a !default;
+$ohno: #f03e3e !default;
+$ohno0: #ffc9c9 !default;
+$red2: #c92a2a !default;
+$red: #f03e3e !default;
+$red0: #ffc9c9 !default;
+$orange2: #d9480f !default;
+$orange: #f76707 !default;
+$orange0: #ffd8a8 !default;
+$yellow2: #f59f00 !default;
+$yellow: #fcc419 !default;
+$yellow0: #ffec99 !default;
+$green2: #2b8a3e !default;
+$green: #37b24d !default;
+$green0: #b2f2bb !default;
+$teal2: #087f5b !default;
+$teal: #0ca678 !default;
+$teal0: #96f2d7 !default;
+$cyan2: #0b7285 !default;
+$cyan: #1098ad !default;
+$cyan0: #99e9f2 !default;
+$blue2: #1864ab !default;
+$blue: #1c7ed6 !default;
+$blue0: #a5d8ff !default;
+$purple2: #5f3dc4 !default;
+$purple: #7048e8 !default;
+$purple0: #d0bfff !default;
+$pink2: #c2255c !default;
+$pink: #e64980 !default;
+$pink0: #fcc2d7 !default;
+$border-radius: 2rem !default;
+$border-width: 0.2rem !default;
+$border-style: solid !default;
+
 @use "./elements.scss" with (
-  
+  $fg2: $fg2,
+  $fg1: $fg1,
+  $fg0: $fg0,
+  $bg3: $bg3,
+  $bg2: $bg2,
+  $bg1: $bg1,
+  $bg0: $bg0,
+  $main2: $main2,
+  $main: $main,
+  $main0: $main0,
+  $extra2: $extra2,
+  $extra: $extra,
+  $extra0: $extra0,
+  $yay2: $yay2,
+  $yay: $yay,
+  $yay0: $yay0,
+  $ohno2: $ohno2,
+  $ohno: $ohno,
+  $ohno0: $ohno0,
+  $red2: $red2,
+  $red: $red,
+  $red0: $red0,
+  $orange2: $orange2,
+  $orange: $orange,
+  $orange0: $orange0,
+  $yellow2: $yellow2,
+  $yellow: $yellow,
+  $yellow0: $yellow0,
+  $green2: $green2,
+  $green: $green,
+  $green0: $green0,
+  $teal2: $teal2,
+  $teal: $teal,
+  $teal0: $teal0,
+  $cyan2: $cyan2,
+  $cyan: $cyan,
+  $cyan0: $cyan0,
+  $blue2: $blue2,
+  $blue: $blue,
+  $blue0: $blue0,
+  $purple2: $purple2,
+  $purple: $purple,
+  $purple0: $purple0,
+  $pink2: $pink2,
+  $pink: $pink,
+  $pink0: $pink0
 );
+
 @use "./layouts.scss";
-@use "./classes.scss";
+
+@use "./classes.scss" with (
+  $fg2: $fg2,
+  $fg1: $fg1,
+  $fg0: $fg0,
+  $bg3: $bg3,
+  $bg2: $bg2,
+  $bg1: $bg1,
+  $bg0: $bg0,
+  $main2: $main2,
+  $main: $main,
+  $main0: $main0,
+  $extra2: $extra2,
+  $extra: $extra,
+  $extra0: $extra0,
+  $yay2: $yay2,
+  $yay: $yay,
+  $yay0: $yay0,
+  $ohno2: $ohno2,
+  $ohno: $ohno,
+  $ohno0: $ohno0,
+  $red2: $red2,
+  $red: $red,
+  $red0: $red0,
+  $orange2: $orange2,
+  $orange: $orange,
+  $orange0: $orange0,
+  $yellow2: $yellow2,
+  $yellow: $yellow,
+  $yellow0: $yellow0,
+  $green2: $green2,
+  $green: $green,
+  $green0: $green0,
+  $teal2: $teal2,
+  $teal: $teal,
+  $teal0: $teal0,
+  $cyan2: $cyan2,
+  $cyan: $cyan,
+  $cyan0: $cyan0,
+  $blue2: $blue2,
+  $blue: $blue,
+  $blue0: $blue0,
+  $purple2: $purple2,
+  $purple: $purple,
+  $purple0: $purple0,
+  $pink2: $pink2,
+  $pink: $pink,
+  $pink0: $pink0
+);

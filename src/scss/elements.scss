@@ -4,8 +4,6 @@
   https://ehui.ehan.dev/LICENSE.txt
 */
 
-@use "./theme.scss" as theme;
-
 html {
   height: auto;
   font-size: 18px;
@@ -21,7 +19,7 @@ html {
 body {
   height: auto;
   background-color: $bg1;
-  color: $fg0;
+  color: $fg1;
   font-size: 1rem;
   line-height: 1.4;
   font-family: sans-serif;
@@ -30,7 +28,7 @@ body {
 }
 
 ::selection {
-  background-color: var(--primaryAlt);
+  background-color: $main0;
   color: var(--bg1);
 }
 
