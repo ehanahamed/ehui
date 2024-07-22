@@ -1,3 +1,10 @@
+@use "../scss/ehui.scss" with (
+    $color-scheme: "light",
+    $border-radius: 2rem,
+    $border-width: 0.2rem,
+    $border-style: solid,
+);
+
 :root {
     color-scheme: light;
     --fg2: #343a40;
@@ -99,10 +106,3 @@
         --pink0: #fcc2d7;
     }
 }
-
-@use "../scss/ehui.scss" with (
-    $color-scheme: "light",
-    $border-radius: 2rem,
-    $border-width: 0.2rem,
-    $border-style: solid,
-);
