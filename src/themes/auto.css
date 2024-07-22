@@ -1,0 +1,68 @@
+/* Error: This at-rule is not allowed here.
+ *     ,
+ * 55  | /     @use "../scss/ehui.scss" with (
+ * 56  | |         $color-scheme: "dark",
+ * 57  | |         $fg2: #343a40,
+ * 58  | |         $fg1: #495057,
+ * 59  | |         $fg0: #868e96,
+ * 60  | |         $bg3: #dee2e6,
+ * 61  | |         $bg2: #e9ecef,
+ * 62  | |         $bg1: #212529,
+ * 63  | |         $bg0: #14171a,
+ * 64  | |         $main2: #5f3dc4,
+ * 65  | |         $main: #7048e8,
+ * 66  | |         $main0: #d0bfff,
+ * 67  | |         $extra2: #087f5b,
+ * 68  | |         $extra: #0ca678,
+ * 69  | |         $extra0: #96f2d7,
+ * 70  | |         $yay2: #087f5b,
+ * 71  | |         $yay: #0ca678,
+ * 72  | |         $yay0: #96f2d7,
+ * 73  | |         $ohno2: #c92a2a,
+ * 74  | |         $ohno: #f03e3e,
+ * 75  | |         $ohno0: #ffc9c9,
+ * 76  | |         $red2: #c92a2a,
+ * 77  | |         $red: #f03e3e,
+ * 78  | |         $red0: #ffc9c9,
+ * 79  | |         $orange2: #d9480f,
+ * 80  | |         $orange: #f76707,
+ * 81  | |         $orange0: #ffd8a8,
+ * 82  | |         $yellow2: #f59f00,
+ * 83  | |         $yellow: #fcc419,
+ * 84  | |         $yellow0: #ffec99,
+ * 85  | |         $green2: #2b8a3e,
+ * 86  | |         $green: #37b24d,
+ * 87  | |         $green0: #b2f2bb,
+ * 88  | |         $teal2: #087f5b,
+ * 89  | |         $teal: #0ca678,
+ * 90  | |         $teal0: #96f2d7,
+ * 91  | |         $cyan2: #0b7285,
+ * 92  | |         $cyan: #1098ad,
+ * 93  | |         $cyan0: #99e9f2,
+ * 94  | |         $blue2: #1864ab,
+ * 95  | |         $blue: #1c7ed6,
+ * 96  | |         $blue0: #a5d8ff,
+ * 97  | |         $purple2: #5f3dc4,
+ * 98  | |         $purple: #7048e8,
+ * 99  | |         $purple0: #d0bfff,
+ * 100 | |         $pink2: #c2255c,
+ * 101 | |         $pink: #e64980,
+ * 102 | |         $pink0: #fcc2d7,
+ * 103 | |         $border-radius: 2rem,
+ * 104 | |         $border-width: 0.2rem,
+ * 105 | |         $border-style: solid,
+ * 106 | |     );
+ *     | '-----^
+ *     '
+ *   auto.scss 55:5  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: This at-rule is not allowed here.\a     \2577 \a 55  \2502  \250c      @use "../scss/ehui.scss" with (\a 56  \2502  \2502          $color-scheme: "dark",\a 57  \2502  \2502          $fg2: #343a40,\a 58  \2502  \2502          $fg1: #495057,\a 59  \2502  \2502          $fg0: #868e96,\a 60  \2502  \2502          $bg3: #dee2e6,\a 61  \2502  \2502          $bg2: #e9ecef,\a 62  \2502  \2502          $bg1: #212529,\a 63  \2502  \2502          $bg0: #14171a,\a 64  \2502  \2502          $main2: #5f3dc4,\a 65  \2502  \2502          $main: #7048e8,\a 66  \2502  \2502          $main0: #d0bfff,\a 67  \2502  \2502          $extra2: #087f5b,\a 68  \2502  \2502          $extra: #0ca678,\a 69  \2502  \2502          $extra0: #96f2d7,\a 70  \2502  \2502          $yay2: #087f5b,\a 71  \2502  \2502          $yay: #0ca678,\a 72  \2502  \2502          $yay0: #96f2d7,\a 73  \2502  \2502          $ohno2: #c92a2a,\a 74  \2502  \2502          $ohno: #f03e3e,\a 75  \2502  \2502          $ohno0: #ffc9c9,\a 76  \2502  \2502          $red2: #c92a2a,\a 77  \2502  \2502          $red: #f03e3e,\a 78  \2502  \2502          $red0: #ffc9c9,\a 79  \2502  \2502          $orange2: #d9480f,\a 80  \2502  \2502          $orange: #f76707,\a 81  \2502  \2502          $orange0: #ffd8a8,\a 82  \2502  \2502          $yellow2: #f59f00,\a 83  \2502  \2502          $yellow: #fcc419,\a 84  \2502  \2502          $yellow0: #ffec99,\a 85  \2502  \2502          $green2: #2b8a3e,\a 86  \2502  \2502          $green: #37b24d,\a 87  \2502  \2502          $green0: #b2f2bb,\a 88  \2502  \2502          $teal2: #087f5b,\a 89  \2502  \2502          $teal: #0ca678,\a 90  \2502  \2502          $teal0: #96f2d7,\a 91  \2502  \2502          $cyan2: #0b7285,\a 92  \2502  \2502          $cyan: #1098ad,\a 93  \2502  \2502          $cyan0: #99e9f2,\a 94  \2502  \2502          $blue2: #1864ab,\a 95  \2502  \2502          $blue: #1c7ed6,\a 96  \2502  \2502          $blue0: #a5d8ff,\a 97  \2502  \2502          $purple2: #5f3dc4,\a 98  \2502  \2502          $purple: #7048e8,\a 99  \2502  \2502          $purple0: #d0bfff,\a 100 \2502  \2502          $pink2: #c2255c,\a 101 \2502  \2502          $pink: #e64980,\a 102 \2502  \2502          $pink0: #fcc2d7,\a 103 \2502  \2502          $border-radius: 2rem,\a 104 \2502  \2502          $border-width: 0.2rem,\a 105 \2502  \2502          $border-style: solid,\a 106 \2502  \2502      );\a     \2502  \2514 \2500 \2500 \2500 \2500 \2500 ^\a     \2575 \a   auto.scss 55:5  root stylesheet';
+}
