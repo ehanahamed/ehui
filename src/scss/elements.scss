@@ -1,6 +1,7 @@
-/*
-  EhUI is free and open source
+/*!
+  EhUI
   Copyright (c) Ehan Ahamed and contributors
+  Licensed under the UPL-1.0 License
   https://ehui.ehan.dev/LICENSE.txt
 */
 
@@ -19,7 +20,7 @@ html {
 body {
   height: auto;
   background-color: var(--bg1);
-  color: var(--fg1);
+  color: var(--fg);
   font-size: 1rem;
   line-height: 1.4;
   font-family: sans-serif;
@@ -28,7 +29,7 @@ body {
 }
 
 ::selection {
-  background-color: var(--main0);
+  background-color: var(--primaryAlt);
   color: var(--bg1);
 }
 
@@ -119,7 +120,7 @@ s,
 
 mark,
 .mark {
-  background-color: var(--fg1);
+  background-color: var(--fg);
   color: var(--bg1);
   border-radius: 0.8rem;
   padding: 0.2rem 0.4rem;
@@ -138,7 +139,7 @@ code,
 }
 
 .box {
-  color: var(--fg1);
+  color: var(--fg);
   border: 0.2rem solid var(--bg2);
   border-radius: 0.8rem;
   padding: 1rem;
@@ -277,28 +278,35 @@ button,
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+  background-color: var(--primary);
+  color: var(--bg1);
+  border: 0.2rem solid var(--primary);
+  border-radius: 0.8rem;
+  padding: 0.4rem 0.8rem;
   font-size: 1rem;
   line-height: 1.4;
-  padding: 0.4rem 0.8rem;
   transition-duration: 0.4s;
-  @include theme.button(false, theme.$main, "none");
 }
+
+button.alt,
+.button.alt {
+  background-color: var(--bg1);
+  color: var(--primary);
+}
+
 button:hover,
-.button:hover {
-  @include theme.button(false, theme.$main, "hover");
+button:focus-visible,
+.button:hover,
+.button:focus-visible {
+  background-color: var(--primaryAlt);
+  color: var(--bg1);
 }
-button:focus,
-.button:focus {
-  @include theme.button(false, theme.$main, "focus");
-}
+
 button:focus-visible,
 .button:focus-visible {
+  outline: 0.2rem solid var(--primary);
+  outline-offset: 0.2rem;
   transition-duration: 0.1s;
-  @include theme.button(false, theme.$main, "focus-visible");
-}
-button:active,
-.button:active {
-  @include theme.button(false, theme.$main, "active");
 }
 
 ::placeholder {
@@ -329,32 +337,22 @@ textarea {
   line-height: 1.4;
   transition-duration: 0.4s;
 }
-input[type="text"] {
-  @include theme.textbox("text")
+
+input[type="text"]:hover,
+input[type="text"]:focus-visible,
+input[type="password"]:hover,
+input[type="password"]:focus-visible,
+textarea:hover,
+textarea:focus-visible {
+  border-color: var(--primaryAlt);
 }
-input[type="text"]:hover {
-  @include theme.textbox("text", "hover")
-}
-input[type="text"]:focus {
-  @include theme.textbox("text", "focus")
-}
-input[type="password"] {
-  @include theme.textbox("password")
-}
-input[type="password"]:hover {
-  @include theme.textbox("password", "hover")
-}
-input[type="password"]:focus {
-  @include theme.textbox("password", "focus")
-}
-textarea {
-  @include theme.textbox("textarea")
-}
-textarea:hover {
-  @include theme.textbox("textarea", "hover")
-}
-textarea:focus {
-  @include theme.textbox("textarea", "focus")
+
+input[type="text"]:focus-visible,
+input[type="password"]:focus-visible,
+textarea:focus-visible {
+  outline: 0.2rem solid var(--primary);
+  outline-offset: 0.2rem;
+  transition-duration: 0.1s;
 }
 
 /*

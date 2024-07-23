@@ -1,10 +1,89 @@
-/*
-  EhUI is free and open source
+/*!
+  EhUI
   Copyright (c) Ehan Ahamed and contributors
+  Licensed under the UPL-1.0 License
   https://ehui.ehan.dev/LICENSE.txt
 */
 
-@use "./theme.scss" as theme;
+/*
+min/reduced-motion utils
+*/
+html.min {
+  scroll-behavior: auto;
+}
+
+html.min a,
+html.min .a,
+html.min button,
+html.min .button,
+html.min input[type="text"],
+html.min input[type="password"],
+html.min textarea,
+html.min input[type="radio"],
+html.min input[type="checkbox"] {
+  transition-duration: 0s;
+}
+
+html.min .card.min,
+.card.double.min {
+  perspective: none;
+}
+
+html.min .card.double > .content,
+.card.double.min > .content {
+  display: block;
+  transition-duration: 0s;
+  transform-style: flat;
+  background-color: inherit;
+  border-radius: 0px;
+  align-items: normal;
+  justify-content: normal;
+  text-align: center;
+}
+
+html.min .card.double > .content > .front,
+html.min .card.double > .content > .back,
+.card.double.min > .content > .front,
+.card.double.min > .content > .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg2);
+  border-radius: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+  -moz-backface-visibility: visible;
+  transform: none;
+}
+
+html.min .card.double > .content > .back,
+.card.double.min > .content > .back {
+  display: none;
+  transform: none;
+}
+
+html.min .card.double > .content > .front,
+.card.double.min > .content > .front {
+  display: flex;
+}
+
+html.min .card.double.flip > .content,
+.card.double.min.flip > .content {
+  transform: none;
+}
+
+html.min .card.double.flip > .content > .back,
+.card.double.min.flip > .content > .back {
+  display: flex;
+}
+
+html.min .card.double.flip > .content > .front,
+.card.double.min.flip > .content > .front {
+  display: none;
+}
 
 /*
 specific css-negation-stuff utils
@@ -443,139 +522,147 @@ pre,
   white-space: pre;
 }
 
-button.alt,
-.button.alt {
-  @include theme.button(true);
-}
-button.alt:hover,
-.button.alt:hover {
-  @include theme.button(true, theme.$main, "hover");
-}
-button.alt:focus,
-.button.alt:focus {
-  @include theme.button(true, theme.$main, "focus");
-}
-button.alt:focus-visible,
-.button.alt:focus-visible {
-  @include theme.button(true, theme.$main, "focus-visible");
-}
-button.alt:active,
-.button.alt:active {
-  @include theme.button(true, theme.$main, "active");
+button.red,
+.button.red {
+  background-color: var(--red);
+  border-color: var(--red);
 }
 
-button.scary,
-.button.scary {
-  @include theme.button(false, theme.$scary, "none");
-}
-button.scary:hover,
-.button.scary:hover {
-  @include theme.button(false, theme.$scary, "hover");
-}
-button.scary:focus,
-.button.scary:focus {
-  @include theme.button(false, theme.$scary, "focus");
-}
-button.scary:focus-visible,
-.button.scary:focus-visible {
-  @include theme.button(false, theme.$scary, "focus-visible");
-}
-
-button.alt.scary,
-.button.alt.scary {
-  @include theme.button(true);
-}
-button.alt.scary:hover,
-.button.alt.scary:hover {
-  @include theme.button(true, theme.$scary, "hover");
-}
-button.alt.scary:focus,
-.button.alt.scary:focus {
-  @include theme.button(true, theme.$scary, "focus");
-}
-button.alt.scary:focus-visible,
-.button.alt.scary:focus-visible {
-  @include theme.button(true, theme.$scary, "focus-visible");
-}
-button.alt.scary:active,
-.button.alt.scary:active {
-  @include theme.button(true, theme.$scary, "active");
-}
-
-button.yay,
-.button.yay {
-  @include theme.button(false, theme.$yay, "none");
-}
-button.yay:hover,
-.button.yay:hover {
-  @include theme.button(false, theme.$yay, "hover");
-}
-button.yay:focus,
-.button.yay:focus {
-  @include theme.button(false, theme.$yay, "focus");
-}
-button.yay:focus-visible,
-.button.yay:focus-visible {
-  @include theme.button(false, theme.$yay, "focus-visible");
-}
-
-button.alt.yay,
-.button.alt.yay {
-  @include theme.button(true);
-}
-button.alt.yay:hover,
-.button.alt.yay:hover {
-  @include theme.button(true, theme.$yay, "hover");
-}
-button.alt.yay:focus,
-.button.alt.yay:focus {
-  @include theme.button(true, theme.$yay, "focus");
-}
-button.alt.yay:focus-visible,
-.button.alt.yay:focus-visible {
-  @include theme.button(true, theme.$yay, "focus-visible");
-}
-button.alt.yay:active,
-.button.alt.yay:active {
-  @include theme.button(true, theme.$yay, "active");
+button.green,
+.button.green {
+  background-color: var(--green);
+  border-color: var(--green);
 }
 
 button.extra,
 .button.extra {
-  @include theme.button(false, theme.$extra, "none");
+  background-color: var(--extra);
+  border-color: var(--extra);
+  color: var(--bgExtra);
 }
-button.extra:hover,
-.button.extra:hover {
-  @include theme.button(false, theme.$extra, "hover");
+
+button.alt.red,
+.button.alt.red {
+  background-color: var(--bg1);
+  border-color: var(--red);
+  color: var(--red);
 }
-button.extra:focus,
-.button.extra:focus {
-  @include theme.button(false, theme.$extra, "focus");
-}
-button.extra:focus-visible,
-.button.extra:focus-visible {
-  @include theme.button(false, theme.$extra, "focus-visible");
+
+button.alt.green,
+.button.alt.green {
+  background-color: var(--bg1);
+  border-color: var(--green);
+  color: var(--green);
 }
 
 button.alt.extra,
 .button.alt.extra {
-  @include theme.button(true);
+  background-color: var(--bgExtra);
+  border-color: var(--extra);
+  color: var(--extra);
 }
-button.alt.extra:hover,
-.button.alt.extra:hover {
-  @include theme.button(true, theme.$extra, "hover");
+
+button:hover.red,
+button:focus-visible.red,
+.button:hover.red,
+.button:focus-visible.red {
+  background-color: var(--redAlt);
+  color: var(--bg1);
 }
-button.alt.extra:focus,
-.button.alt.extra:focus {
-  @include theme.button(true, theme.$extra, "focus");
+
+button:hover.green,
+button:focus-visible.green,
+.button:hover.green,
+.button:focus-visible.green {
+  background-color: var(--greenAlt);
+  color: var(--bg1);
 }
-button.alt.extra:focus-visible,
-.button.alt.extra:focus-visible {
-  @include theme.button(true, theme.$extra, "focus-visible");
+
+button:hover.extra,
+button:focus-visible.extra,
+.button:hover.extra,
+.button:focus-visible.extra {
+  background-color: var(--extraAlt);
+  color: var(--bgExtra);
 }
-button.alt.extra:active,
-.button.alt.extra:active {
-  @include theme.button(true, theme.$extra, "active");
+
+button:focus-visible.red,
+.button:focus-visible.red {
+  outline-color: var(--red);
+}
+
+button:focus-visible.green,
+.button:focus-visible.green {
+  outline-color: var(--green);
+}
+
+button:focus-visible.extra,
+.button:focus-visible.extra {
+  outline-color: var(--extra);
+}
+
+input[type="text"].red,
+input[type="password"].red,
+textarea.red {
+  border-color: var(--red);
+}
+
+input[type="text"].green,
+input[type="password"].green,
+textarea.green {
+  border-color: var(--green);
+}
+
+input[type="text"].extra,
+input[type="password"].extra,
+textarea.extra {
+  background-color: var(--bgExtra);
+  border-color: var(--extra);
+}
+
+input[type="text"].red:hover,
+input[type="text"].red:focus-visible,
+input[type="password"].red:hover,
+input[type="password"].red:focus-visible,
+textarea.red:hover,
+textarea.red:focus-visible {
+  border-color: var(--redAlt);
+}
+
+input[type="text"].green:hover,
+input[type="text"].green:focus-visible,
+input[type="password"].green:hover,
+input[type="password"].green:focus-visible,
+textarea.green:hover,
+textarea.green:focus-visible {
+  border-color: var(--greenAlt);
+}
+
+input[type="text"].extra:hover,
+input[type="text"].extra:focus-visible,
+input[type="password"].extra:hover,
+input[type="password"].extra:focus-visible,
+textarea.extra:hover,
+textarea.extra:focus-visible {
+  border-color: var(--extraAlt);
+}
+
+input[type="text"].red:focus-visible,
+input[type="password"].red:focus-visible,
+textarea.red:focus-visible {
+  outline-color: var(--red);
+}
+
+input[type="text"].green:focus-visible,
+input[type="password"].green:focus-visible,
+textarea.green:focus-visible {
+  outline-color: var(--green);
+}
+
+input[type="text"].extra:focus-visible,
+input[type="password"].extra:focus-visible,
+textarea.extra:focus-visible {
+  outline-color: var(--extra);
 }
 
 textarea.vertical {
