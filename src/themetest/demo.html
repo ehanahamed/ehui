@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+  <!--
+  EhUI
+  Copyright (c) Ehan Ahamed and contributors
+  Licensed under the UPL-1.0 License
+  https://ehui.ehan.dev/LICENSE.txt
+  -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10, user-scalable=1" />
+    <title>ehui.ehan.dev</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="stylesheet" href="./colors.css" />
+    <link rel="stylesheet" href="https://ehan.dev/ehui/css/components.css" />
+    <link rel="stylesheet" href="https://ehan.dev/ehui/css/layouts.css" />
+    <link rel="stylesheet" href="https://ehan.dev/ehui/css/utils.css" />
+    <link
+      rel="stylesheet"
+      href="https://www.nerdfonts.com/assets/css/webfont.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!--<div class="menu">
+            <button id="headerMenuMenubutton">
+                <i class="nf nf-md-menu"></i>
+                Menu
+            </button>
+            <div id="headerMenuMenudiv" class="hide">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="bg1 mark markPrimary">Demo</a></li>
+                    <li><a href="#">Docs</a></li>
+                </ul>
+            </div>
+        </div>-->
+      <div class="menu nav">
+        <div>
+          <a href="./index.html">Home</a>
+        </div>
+        <div class="current">
+          <a href="./demo.html">Demo</a>
+        </div>
+        <div>
+          <a href="./docs.html">Docs</a>
+        </div>
+      </div>
+      <!--<div class="options">
+            <div class="flex center">
+                <button id="headerOptionsLangbutton">
+                    <i class="nf nf-md-translate"></i>
+                    Language
+                </button>
+                <button id="headerOptionsThemebutton">
+                    <i class="nf nf-cod-symbol_color"></i>
+                    Theme
+                </button>
+                <button id="headerOptionsOptionsbutton">
+                    <i class="nf nf-cod-settings"></i>
+                    Options
+                </button>
+            </div>
+            <div id="headerOptionsLangdiv" class="hide">
+                <div class="radio">
+                  <input type="radio" name="lang" id="headerOptionsLangdivEn" checked/>
+                  <label for="headerOptionsLangdivEn">English</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="lang" id="headerOptionsLangdivDe" />
+                  <label for="headerOptionsLangdivDe">Deutsch</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="lang" id="headerOptionsLangdivGz" />
+                  <label for="headerOptionsLangdivGz">中文</label>
+                </div>
+            </div>
+            <div id="headerOptionsThemediv" class="hide">
+                <div class="radio">
+                  <input type="radio" name="theme" id="headerOptionsThemedivPurpleish" checked/>
+                  <label for="headerOptionsThemedivPurpleish">Purpleish</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="theme" id="headerOptionsThemedivOwl" />
+                  <label for="headerOptionsThemedivOwl">Owl</label>
+                </div>
+            </div>
+            <div id="headerOptionsOptionsdiv" class="hide">
+                <div class="checkbox">
+                  <input type="checkbox" name="options" id="headerOptionsOptionsdivMin" />
+                  <label for="headerOptionsOptionsdivMin">Disable Animations</label>
+                </div>
+            </div>
+        </div>-->
+    </header>
+    <main>
+      <div class="grid hero">
+        <div class="content">
+          <p class="h1">Heading</p>
+          <p>Text text text text</p>
+          <div class="flex center">
+            <button>Button</button>
+            <button class="alt">Button</button>
+            <button class="alt">Button</button>
+          </div>
+        </div>
+        <div class="logo">
+          <svg
+            width="200"
+            height="200"
+            viewBox="0 0 200 200"
+            version="1.1"
+            id="SVGRoot"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg"
+          >
+            <defs id="defs1887" />
+            <path
+              d="m 172.40468,10 q 7.03813,0 12.31672,4.658203 Q 190,19.316406 190,26.347656 q 0,5.976562 -4.57479,15.117187 -6.51026,12.392578 -13.19649,24.433594 -6.59824,12.041015 -17.24339,29.003905 -10.55719,16.962898 -16.27567,22.148448 -9.85338,9.14062 -21.90616,9.14062 -12.66862,0 -21.818185,-9.31641 -9.061586,-9.31641 -9.061586,-22.060548 0,-6.064453 2.375367,-11.601562 2.463344,-5.625 6.862173,-9.66797 L 159.29617,15.361328 Q 165.10263,10 172.40468,10 Z M 80.997043,113.79883 q 3.870968,7.55859 10.73314,13.09571 6.862173,5.44921 15.131967,7.64648 l 0.088,7.11914 q 0.43988,21.44531 -13.020538,34.89258 Q 80.4692,190 58.826967,190 q -9.941351,0 -18.12317,-3.07617 -8.181819,-3.07617 -13.812318,-8.4375 -5.6305,-5.36133 -9.501468,-12.74414 -3.870969,-7.38282 -5.6305,-15.82032 Q 10,141.39649 10,131.99219 q 0.527859,0.35156 4.134898,2.98828 3.607039,2.63672 6.246335,4.48242 2.727273,1.8457 5.894429,3.60352 3.167157,1.75781 4.662758,1.75781 4.134897,0 5.542523,-3.6914 2.55132,-6.5918 5.806451,-11.25 3.255134,-4.7461 6.950149,-7.73438 3.695015,-2.98828 8.797655,-4.74609 5.190617,-1.75781 10.381234,-2.46094 5.278593,-0.79102 12.580647,-1.14258 z"
+              id="path526"
+              style="
+                font-weight: bold;
+                font-size: 200px;
+                -inkscape-font-specification: 'sans-serif Bold';
+                fill: var(--bg2);
+                stroke-width: 0.900441;
+              "
+            />
+            <path
+              d="m 40,180 h 66.0596 c 25.72847,0 41.95364,-5.70645 53.31126,-18.65569 C 172.81457,146.41975 180,124.69136 180,99.890261 180,75.308642 172.81457,53.580247 159.37086,38.436214 148.01324,25.486968 132.01986,20 106.0596,20 H 40 Z M 74.768214,152.56516 V 47.434842 H 106.0596 c 26.19205,0 39.17218,17.33882 39.17218,52.674898 0,35.1166 -12.98013,52.45542 -39.17218,52.45542 z"
+              id="path416"
+              style="
+                font-weight: bold;
+                font-size: 200px;
+                -inkscape-font-specification: 'sans-serif Bold';
+                fill: var(--primary);
+                stroke-width: 1.12775;
+              "
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="grid page">
+        <div class="content">
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+          <p>Paragraph of normal text</p>
+          <p>
+            Paragraph with <b>bold text</b>, <i>italic text</i>,
+            <s>strikethrough</s>, <mark>highlighted text</mark>, and
+            <code>inline code</code>
+          </p>
+          <ul>
+            <li>Unordered List</li>
+            <li>Text</li>
+            <li>Text text</li>
+          </ul>
+          <ol>
+            <li>Ordered List</li>
+            <li>More text</li>
+            <li>Wow such text</li>
+          </ol>
+          <p>Text, <a href="https://ehui.ehan.dev">link</a>.</p>
+          <div class="flex">
+            <button>Button</button>
+            <button class="alt">Alt button</button>
+          </div>
+          <div class="flex">
+            <button class="green">Green</button>
+            <button class="alt green">Green alt</button>
+          </div>
+          <div class="flex">
+            <button class="red">Red</button>
+            <button class="alt red">Red alt</button>
+          </div>
+          <div class="flex">
+            <button>Button</button>
+            <a href="https://ehui.ehan.dev" class="button">Link button</a>
+          </div>
+          <p>Default text</p>
+          <p class="red">Red text</p>
+          <p class="redAlt">Red alt text</p>
+          <p class="orange">Orange text</p>
+          <p class="orangeAlt">Orange alt text</p>
+          <p class="yellow">Yellow text</p>
+          <p class="yellowAlt">Yellow alt text</p>
+          <p class="green">Green text</p>
+          <p class="greenAlt">Green alt text</p>
+          <p class="blue">Blue text</p>
+          <p class="blueAlt">Blue alt text</p>
+          <p class="purple">Purple text</p>
+          <p class="purpleAlt">Purple alt text</p>
+          <p class="pink">Pink text</p>
+          <p class="pinkAlt">Pink alt text</p>
+          <p class="primary">Primary text</p>
+          <p class="primaryAlt">Primary alt text</p>
+          <p class="black">Black text</p>
+          <p class="white">White text</p>
+          <p class="fg">Foreground text</p>
+          <p class="bg3">Background 3 text</p>
+          <p class="bg2">Background 2 text</p>
+          <p class="bg1">Background 1 text</p>
+          <h2>Notice boxes</h2>
+          <p class="box center">Notice box text</p>
+          <p class="box center green">Notice box text</p>
+          <p class="box center red">Notice box text</p>
+          <h2>Boxes</h2>
+          <div class="box">
+            <p>Box text</p>
+            <div class="flex">
+              <button>Button</button>
+              <button class="alt">Button</button>
+            </div>
+          </div>
+          <div class="box green">
+            <p>Green box</p>
+            <div class="flex">
+              <button class="green">Button</button>
+              <button class="green alt">Button</button>
+            </div>
+          </div>
+          <div class="box red">
+            <p>Red box</p>
+            <div class="flex">
+              <button class="red">Button</button>
+              <button class="red alt">Button</button>
+            </div>
+          </div>
+          <h2>Inputs</h2>
+          <p>Text input</p>
+          <div class="flex wrap">
+            <input type="text" placeholder="Text input" />
+            <input class="red" type="text" placeholder="Red text input" />
+            <input class="green" type="text" placeholder="Green text input" />
+          </div>
+          <p>Password input</p>
+          <div class="flex wrap">
+            <input type="password" placeholder="Password input" />
+            <input
+              class="red"
+              type="password"
+              placeholder="Red password input"
+            />
+            <input
+              class="green"
+              type="password"
+              placeholder="Green password input"
+            />
+          </div>
+          <p>Textarea input</p>
+          <div class="flex wrap">
+            <textarea rows="2" placeholder="Textarea"></textarea>
+            <textarea
+              class="red"
+              rows="2"
+              placeholder="Red textarea"
+            ></textarea>
+            <textarea
+              class="green"
+              rows="2"
+              placeholder="Green textarea"
+            ></textarea>
+          </div>
+          <p>Radio select</p>
+          <div class="radio">
+            <input type="radio" name="radio" id="radio0" />
+            <label for="radio0">Radio 0</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="radio" id="radio1" />
+            <label for="radio1">Radio 1</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="radio" id="radio2" />
+            <label for="radio2">Radio 2</label>
+          </div>
+          <p>Checkbox select</p>
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox0" />
+            <label for="checkbox0">Checkbox 0</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox1" />
+            <label for="checkbox1">Checkbox 1</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox2" />
+            <label for="checkbox2">Checkbox 2</label>
+          </div>
+          <p>File input</p>
+          <div>
+            <label for="file" class="button">Select File</label>
+            <input type="file" name="file" id="file" class="invisible" />
+          </div>
+          <h2>Tables</h2>
+          <p>Inner table</p>
+          <table class="inner">
+            <thead>
+              <tr>
+                <th>Header, column 0</th>
+                <th>Header, column 1</th>
+                <th>Header, column 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Row 0, column 0</td>
+                <td>Row 0, column 1</td>
+                <td>Row 0, column 2</td>
+              </tr>
+              <tr>
+                <td>Row 1, column 0</td>
+                <td>Row 1, column 1</td>
+                <td>Row 1, column 2</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Outer table</p>
+          <table class="outer">
+            <thead>
+              <tr>
+                <th>Header, column 0</th>
+                <th>Header, column 1</th>
+                <th>Header, column 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Row 0, column 0</td>
+                <td>Row 0, column 1</td>
+                <td>Row 0, column 2</td>
+              </tr>
+              <tr>
+                <td>Row 1, column 0</td>
+                <td>Row 1, column 1</td>
+                <td>Row 1, column 2</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>Cards</h2>
+          <div class="card">
+            <div class="content">Card</div>
+          </div>
+          <div
+            class="card double"
+            id="flip"
+            onclick="document.getElementById('flip').classList.toggle('flip');"
+          >
+            <div class="content">
+              <div class="front">Card front<br />Click to flip</div>
+              <div class="back">Card back<br />Click to flip</div>
+            </div>
+          </div>
+          <h2>Grid List Thingy</h2>
+          <div class="grid list">
+            <div class="box">Item 0</div>
+            <div class="box">Item 1</div>
+            <div class="box green">
+              <p>Item 2</p>
+              <p>Green</p>
+            </div>
+            <div class="box">Item 3</div>
+            <div class="box">Item 4</div>
+            <div class="box red">
+              <p>Item 5</p>
+              <p>Red</p>
+            </div>
+            <div class="box">Item 6</div>
+            <div class="box green">
+              <p>Item 7</p>
+              <p>Green</p>
+            </div>
+            <div class="box">Item 8</div>
+            <div class="box">Item 9</div>
+            <div class="box">Item 10</div>
+            <div class="box">Item 11</div>
+            <div class="box">Item 12</div>
+            <div class="box">Item 13</div>
+            <div class="box">Item 14</div>
+          </div>
+          <h2>Separator</h2>
+          <p>text</p>
+          <div class="separator">separator</div>
+          <p>text</p>
+          <h2>Example</h2>
+          <p>Option 1</p>
+          <div class="separator">or</div>
+          <p>Option 2</p>
+        </div>
+      </div>
+      <div style="margin-top: 1rem; margin-bottom: 0px">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          display="block"
+          style="width: 100%; height: 100%"
+          viewBox="0 0 1000 200"
+        >
+          <path
+            fill="var(--bgExtra)"
+            d="M0 100s250.096-101.786 566.869 6.735C861.491 207.668 1000 60 1000 60v140H0Z"
+          />
+        </svg>
+      </div>
+      <div class="grid page extra">
+        <div class="content">
+          <h2 class="extra">Extra header</h2>
+          <div class="flex">
+            <button class="extra">Extra</button>
+            <button class="alt extra">Extra alt</button>
+          </div>
+          <p>Extra inputs</p>
+          <div>
+            <input class="extra" type="text" placeholder="Extra text input" />
+          </div>
+          <div>
+            <input
+              class="extra"
+              type="password"
+              placeholder="Extra password input"
+            />
+          </div>
+          <div>
+            <textarea
+              class="extra"
+              rows="2"
+              placeholder="Extra textarea"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 0px; margin-bottom: 1rem">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          display="block"
+          style="width: 100%; height: 100%"
+          viewBox="0 0 1000 200"
+        >
+          <path
+            fill="var(--bgExtra)"
+            d="M0 100s250.096-101.786 566.869 6.735C861.491 207.668 1000 60 1000 60V0H0Z"
+          />
+        </svg>
+      </div>
+      <div class="grid page">
+        <div class="content">
+          <h2>Modals & Popups</h2>
+          <p>
+            Modals should only be used to get the user's attention for something
+            super important.
+          </p>
+          <button
+            onclick="document.getElementById('modal').classList.remove('hide');"
+          >
+            Open Modal
+          </button>
+          <div id="modal" class="modal hide">
+            <div class="content">
+              <p>This is a modal!</p>
+              <p>
+                Most elements work perfectly inside of modals, with no extra
+                "setup".
+              </p>
+              <div>
+                <button
+                  onclick="document.getElementById('modal').classList.add('hide');"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h2>Footer</h2>
+      <p>Text text text text</p>
+    </footer>
+    <script>
+      /* devtools for mobile & school chromebooks */
+      (function () { var script = document.createElement('script'); script.src="https://cdn.jsdelivr.net/npm/eruda"; document.body.append(script); script.onload = function () { eruda.init(); } })();
+    </script>
+    <script src="https://ehui.ehan.dev/js/ehUi.js"></script>
+    <script src="https://ehui.ehan.dev/js/modals.js"></script>
+    <script>
+	    var indx = ehUi.modals.create({
+		    title: "Title",
+		    body: "Body text goes here?",
+		    actions: [
+			    {
+				    tag: "button",
+            text: "close",
+				    onClick: function () { hideThis() } 
+				  },
+          {
+            tag: "button",
+            text: "change color",
+            onClick: function () { chColor() },
+            classList: [
+              "red",
+              "alt"
+            ]
+          }
+        ]
+	    });
+      function hideThis() {
+        ehUi.modals.list[indx].classList.add("hide");
+      }
+      function chColor() {
+        ehUi.modals.list[indx].style.color = "#ff0000"
+      }
+    </script>
+  </body>
+</html>

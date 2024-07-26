@@ -1,0 +1,81 @@
+/*!
+  EhUI
+  Copyright (c) Ehan Ahamed and contributors
+  Licensed under the UPL-1.0 License
+  https://ehui.ehan.dev/LICENSE.txt
+*/
+ 
+:root {
+  color-scheme: light;
+  --red: #E65C5C;
+  --redAlt: #E68A8A;
+  --redDark: #B34747;
+  --orange: #ff9966;
+  --orangeAlt: #ffbb99;
+  --yellow: #ffcc66;
+  --yellowAlt: #ffdd99;
+  --green: #42A685;
+  --greenAlt: #63A690;
+  --greenDark: #2E735C;
+  --blue: #527ACC;
+  --blueAlt: #7A96CC;
+  --purple: #7a52cc;
+  --purpleAlt: #967acc;
+  --pink: #cc52a3;
+  --pinkAlt: #cc7ab1;
+  --primary: #7a52cc;
+  --primaryAlt: #967acc;
+  --primaryDark: #5c3d99;
+  --extra: #42A685;
+  --extraAlt: #63A690;
+  --extraDark: #2E735C;
+  --bgExtra: #e6fcf5;
+  --black: #363659;
+  --gray: #CFCFE6;
+  --grayAlt: #A3A3CC;
+  --white: #EDEDF2;
+  --fg: #343a40;
+  --bg3: #868e96; /* #868e96 for greyed out text (new fg0) */
+  --bg2: #ced4da; /* #e9ecef for actual backgrounds (new bg2)
+   #ced4da for borders/dividers (new bg3) */
+  --bg1: #fbfcfc;
+  --bg0: #e9ecef;
+}
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --red: #ff6666;
+    --redAlt: #ff9999;
+    --redDark: #cc5252;
+    --orange: #ff9966;
+    --orangeAlt: #ffbb99;
+    --yellow: #ffcc66;
+    --yellowAlt: #ffdd99;
+    --green: #52cca3;
+    --greenAlt: #7accb1;
+    --greenDark: #3d997a;
+    --blue: #527ACC;
+    --blueAlt: #7A96CC;
+    --purple: #7a52cc;
+    --purpleAlt: #967acc;
+    --pink: #cc52a3;
+    --pinkAlt: #cc7ab1;
+    --primary: #7a52cc;
+    --primaryAlt: #967acc;
+    --primaryDark: #5c3d99;
+    --extra: #52cca3;
+    --extraAlt: #7accb1;
+    --extraDark: #3d997a;
+    --bgExtra: #181829;
+    --black: #1e1e32;
+    --gray: #3d3d66;
+    --grayAlt: #5c5c99;
+    --white: #a3a3cc;
+    --fg: #a3a3cc;
+    --bg3: #5c5c99;
+    --bg2: #3d3d66;
+    --bg1: #1e1e32;
+  }
+}
+*/
