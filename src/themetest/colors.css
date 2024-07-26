@@ -9,7 +9,6 @@
   color-scheme: light;
   --red: #E65C5C;
   --redAlt: #E68A8A;
-  --redDark: #B34747;
   --orange: #ff9966;
   --orangeAlt: #ffbb99;
   --yellow: #ffcc66;
@@ -19,27 +18,25 @@
   --greenDark: #2E735C;
   --blue: #527ACC;
   --blueAlt: #7A96CC;
-  --purple: #7a52cc;
+  --purple: #7A29CC;
   --purpleAlt: #967acc;
   --pink: #cc52a3;
   --pinkAlt: #cc7ab1;
-  --primary: #7a52cc;
-  --primaryAlt: #967acc;
-  --primaryDark: #5c3d99;
-  --extra: #42A685;
-  --extraAlt: #63A690;
-  --extraDark: #2E735C;
-  --bgExtra: #e6fcf5;
+  --primary: #7F47CC;
+  --primaryAlt: #5F3699;
+  --extra: #3EB395; /*#12b886;*/
+  --extraAlt: #2D806B;/*369980;*/
+  --bgExtra: #f1f3f5;
   --black: #363659;
   --gray: #CFCFE6;
   --grayAlt: #A3A3CC;
   --white: #EDEDF2;
   --fg: #343a40;
   --bg3: #868e96; /* #868e96 for greyed out text (new fg0) */
-  --bg2: #ced4da; /* #e9ecef for actual backgrounds (new bg2)
+  --bg2: #ced4da; /* #f1f3f5 for actual backgrounds (new bg2)
    #ced4da for borders/dividers (new bg3) */
   --bg1: #fbfcfc;
-  --bg0: #e9ecef;
+  --bg0: #f1f3f5; /* #f1f3f5 is bg2 AND bg0 */
 }
 /*
 @media (prefers-color-scheme: dark) {
