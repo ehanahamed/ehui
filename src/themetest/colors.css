@@ -24,8 +24,8 @@
   --pinkAlt: #cc7ab1;
   --primary: #7F47CC;
   --primaryAlt: #5F3699;
-  --extra: #3EB395; /*#12b886;*/
-  --extraAlt: #2D806B;/*369980;*/
+  --extra: #3EB395;
+  --extraAlt: #2D806B;
   --bgExtra: #f1f3f5;
   --black: #363659;
   --gray: #CFCFE6;
@@ -38,7 +38,7 @@
   --bg1: #fbfcfc;
   --bg0: #f1f3f5; /* #f1f3f5 is bg2 AND bg0 */
 }
-/*
+
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
@@ -51,28 +51,26 @@
     --yellowAlt: #ffdd99;
     --green: #52cca3;
     --greenAlt: #7accb1;
-    --greenDark: #3d997a;
     --blue: #527ACC;
     --blueAlt: #7A96CC;
-    --purple: #7a52cc;
+    --purple: #B366FF;
     --purpleAlt: #967acc;
     --pink: #cc52a3;
     --pinkAlt: #cc7ab1;
-    --primary: #7a52cc;
-    --primaryAlt: #967acc;
-    --primaryDark: #5c3d99;
+    --primary: #A666FF;
+    --primaryAlt: #C499FF;
     --extra: #52cca3;
     --extraAlt: #7accb1;
-    --extraDark: #3d997a;
-    --bgExtra: #181829;
+    --bgExtra: #181825;
     --black: #1e1e32;
     --gray: #3d3d66;
     --grayAlt: #5c5c99;
     --white: #a3a3cc;
-    --fg: #a3a3cc;
-    --bg3: #5c5c99;
-    --bg2: #3d3d66;
-    --bg1: #1e1e32;
+    --fg: #c3cce9; /* #9399b2 for faded out (fg0) */
+    --bg3: #9399b2;
+    --bg2: #3b3c4f; /* #3b3c4f for borders (new bg3) 
+    #272839 for backgrounds/surfaces (new bg2) */
+    --bg1: #1e1e2e;
+    --bg0: #181825;
   }
 }
-*/
