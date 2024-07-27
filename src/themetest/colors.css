@@ -20,6 +20,13 @@
    #ced4da for borders/dividers (new bg3) */
   --bg1: #fbfcfc;
   --bg0: #f1f3f5; /* #f1f3f5 is bg2 AND bg0 */
+  --bgSelect: #E0CCFF;
+  --select: #343a40;
+}
+
+::selection {
+  background-color: var(--bgSelect) !important;
+  color: var(--select) !important;
 }
 
 @media (prefers-color-scheme: dark) {

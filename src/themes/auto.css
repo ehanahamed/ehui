@@ -21,6 +21,13 @@
     --bg2: #f1f3f5;
     --bg1: #fbfcfc;
     --bg0: #f1f3f5;
+    --bgSelect: #C499FF;
+    --select: #343a40;
+}
+
+::selection {
+    background-color: var(--bgSelect);
+    color: var(--select);
 }
   
 @media (prefers-color-scheme: dark) {
