@@ -45,5 +45,7 @@
     #272839 for backgrounds/surfaces (new bg2) */
     --bg1: #1e1e2e;
     --bg0: #181825;
+    --bgSelect: #533380;
+    --select: #c3cce9;
   }
 }
