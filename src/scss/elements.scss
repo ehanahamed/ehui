@@ -29,8 +29,8 @@ body {
 }
 
 ::selection {
-  background-color: var(--primaryAlt);
-  color: var(--bg1);
+  background-color: var(--select);
+  color: var(--selectBg);
 }
 
 h1,
@@ -120,7 +120,7 @@ s,
 
 mark,
 .mark {
-  background-color: var(--fg);
+  background-color: var(--fg1);
   color: var(--bg1);
   border-radius: 0.8rem;
   padding: 0.2rem 0.4rem;
@@ -139,14 +139,14 @@ code,
 }
 
 .box {
-  color: var(--fg);
-  border: 0.2rem solid var(--bg2);
+  color: var(--fg1);
+  border: 0.2rem solid var(--bg3);
   border-radius: 0.8rem;
   padding: 1rem;
 }
 
 .hero {
-  border-bottom: 0.2rem solid var(--bg2);
+  border-bottom: 0.2rem solid var(--bg3);
   text-align: center;
   padding: 1rem;
   padding-bottom: 4rem;
@@ -168,7 +168,7 @@ header,
 
   top: 0px;
   background-color: var(--bg1);
-  border-bottom: 0.2rem solid var(--bg2);
+  border-bottom: 0.2rem solid var(--bg3);
   padding: 0px;
   margin: 0px;
 }
@@ -185,16 +185,16 @@ header > .nav {
 }
 
 .nav > div.current {
-  border-bottom: 0.2rem solid var(--primaryAlt);
+  border-bottom: 0.2rem solid var(--mainAlt);
 }
 
 .nav > div.current > a {
-  color: var(--primaryAlt);
+  color: var(--mainAlt);
 }
 
 footer,
 .footer {
-  border-top: 0.2rem solid var(--bg2);
+  border-top: 0.2rem solid var(--bg3);
   text-align: center;
   padding: 1rem;
   padding-top: 4rem;
@@ -205,7 +205,7 @@ table {
   border-collapse: separate;
   border-spacing: 0px;
   border-radius: 0.8rem;
-  border: 0.2rem solid var(--bg2);
+  border: 0.2rem solid var(--bg3);
 }
 
 td {
@@ -230,7 +230,7 @@ table.outer tfoot {
 
 table.inner th:not(:last-child),
 table.inner td:not(:last-child) {
- border-right: 0.2rem solid var(--bg2);
+ border-right: 0.2rem solid var(--bg3);
 }
 
 table.inner > thead > tr > th,
@@ -241,12 +241,12 @@ table.inner > tr:not(:last-child) > td,
 table.inner > tr:not(:last-child) > th,
 table.inner > thead:not(:last-child),
 table.inner > tbody:not(:last-child) {
-  border-bottom: 0.2rem solid var(--bg2);
+  border-bottom: 0.2rem solid var(--bg3);
 }
 
 a,
 .a {
-  color: var(--primary);
+  color: var(--main);
   cursor: pointer;
   border-radius: 0.8rem;
   font-size: 1rem;
@@ -259,12 +259,12 @@ a:hover,
 a:focus-visible,
 .a:hover,
 .a:focus-visible {
-  color: var(--primaryAlt);
+  color: var(--mainAlt);
 }
 
 a:focus-visible,
 .a:focus-visible {
-  outline: 0.2rem solid var(--primary);
+  outline: 0.2rem solid var(--main);
   outline-offset: 0.4rem;
   transition-duration: 0.1s;
 }
@@ -278,9 +278,9 @@ button,
   text-align: center;
   cursor: pointer;
   text-decoration: none;
-  background-color: var(--primary);
+  background-color: var(--main);
   color: var(--bg1);
-  border: 0.2rem solid var(--primary);
+  border: 0.2rem solid var(--main);
   border-radius: 0.8rem;
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
@@ -291,26 +291,26 @@ button,
 button.alt,
 .button.alt {
   background-color: var(--bg1);
-  color: var(--primary);
+  color: var(--main);
 }
 
 button:hover,
 button:focus-visible,
 .button:hover,
 .button:focus-visible {
-  background-color: var(--primaryAlt);
+  background-color: var(--mainAlt);
   color: var(--bg1);
 }
 
 button:focus-visible,
 .button:focus-visible {
-  outline: 0.2rem solid var(--primary);
+  outline: 0.2rem solid var(--main);
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
 }
 
 ::placeholder {
-  color: var(--bg3);
+  color: var(--fg0);
   font-size: 1rem;
   font-family: sans-serif;
   font-weight: normal;
@@ -329,8 +329,8 @@ textarea {
   text-decoration: none;
   font-family: sans-serif;
   background-color: var(--bg1);
-  color: var(--fg);
-  border: 0.2rem solid var(--primary);
+  color: var(--fg1);
+  border: 0.2rem solid var(--main);
   border-radius: 0.8rem;
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
@@ -344,13 +344,13 @@ input[type="password"]:hover,
 input[type="password"]:focus-visible,
 textarea:hover,
 textarea:focus-visible {
-  border-color: var(--primaryAlt);
+  border-color: var(--mainAlt);
 }
 
 input[type="text"]:focus-visible,
 input[type="password"]:focus-visible,
 textarea:focus-visible {
-  outline: 0.2rem solid var(--primary);
+  outline: 0.2rem solid var(--main);
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
 }
@@ -392,7 +392,7 @@ input[type="checkbox"] {
   height: 1.8rem;
   margin: 0px;
   background-color: var(--bg1);
-  border: 0.2rem solid var(--primary);
+  border: 0.2rem solid var(--main);
   transition-duration: 0.4s;
 }
 
@@ -408,19 +408,19 @@ input[type="radio"]:hover,
 input[type="radio"]:focus-visible,
 input[type="checkbox"]:hover,
 input[type="checkbox"]:focus-visible {
-  border-color: var(--primaryAlt);
+  border-color: var(--mainAlt);
 }
 
 input[type="radio"]:focus-visible,
 input[type="checkbox"]:focus-visible {
-  outline: 0.2rem solid var(--primary);
+  outline: 0.2rem solid var(--main);
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
 }
 
 input[type="radio"]:checked,
 input[type="checkbox"]:checked {
-  background-color: var(--primary);
+  background-color: var(--main);
   transition-duration: 0.1s;
 }
 
@@ -512,14 +512,14 @@ input[type="checkbox"]:checked {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--bg3);
+  color: var(--fg0);
 }
 
 .separator::before,
 .separator::after {
   content: "";
   display: block;
-  background: var(--bg2);
+  background: var(--bg3);
   width: 100%;
   height: 0.2rem;
   margin: 0px 1rem;
@@ -553,7 +553,7 @@ input[type="checkbox"]:checked {
   z-index: 200;
   width: 60vw;
   background-color: var(--bg1);
-  border: 0.2rem solid var(--bg2);
+  border: 0.2rem solid var(--bg3);
   border-radius: 0.8rem;
   padding: 1rem;
 }
@@ -566,7 +566,7 @@ input[type="checkbox"]:checked {
   .modal > .content {
     width: 100vw;
     border: none;
-    border-top: 0.2rem solid var(--bg2);
+    border-top: 0.2rem solid var(--bg3);
     border-radius: 0px;
     padding-bottom: 8rem;
   }

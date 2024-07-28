@@ -4,10 +4,12 @@
   Licensed under the UPL-1.0 License
   https://ehui.ehan.dev/LICENSE.txt
 */
-
 /*
-min/reduced-motion utils
-*/
+
+@media (prefers-reduced-motion) {
+  something something i forgor
+}
+
 html.min {
   scroll-behavior: auto;
 }
@@ -84,163 +86,45 @@ html.min .card.double.flip > .content > .front,
 .card.double.min.flip > .content > .front {
   display: none;
 }
-
+*/
 /*
 specific css-negation-stuff utils
 */
 a.mark {
-  color: var(--primary);
+  color: var(--main);
 }
 
 a.mark:hover,
 a.mark:focus-visible {
-  color: var(--primaryAlt);
+  color: var(--mainAlt);
 }
 
 /*
 other utils
 */
 
-span.red,
-p.red,
-b.red,
-i.red,
-u.red,
-.text.red,
-mark.red,
-.mark.red,
-code.red {
-  color: var(--red);
+span.ohno,
+p.ohno,
+b.ohno,
+i.ohno,
+u.ohno,
+.text.ohno,
+mark.ohno,
+.mark.ohno,
+code.ohno {
+  color: var(--ohno);
 }
 
-span.redAlt,
-p.redAlt,
-b.redAlt,
-i.redAlt,
-u.redAlt,
-.text.redAlt,
-mark.redAlt,
-.mark.redAlt,
-code.redAlt {
-  color: var(--redAlt);
-}
-
-span.orange,
-p.orange,
-b.orange,
-i.orange,
-u.orange,
-.text.orange,
-mark.orange,
-.mark.orange,
-code.orange {
-  color: var(--orange);
-}
-
-span.orangeAlt,
-p.orangeAlt,
-b.orangeAlt,
-i.orangeAlt,
-u.orangeAlt,
-.text.orangeAlt,
-mark.orangeAlt,
-.mark.orangeAlt,
-code.orangeAlt {
-  color: var(--orangeAlt);
-}
-
-span.yellow,
-p.yellow,
-b.yellow,
-i.yellow,
-u.yellow,
-.text.yellow,
-mark.yellow,
-.mark.yellow,
-code.yellow {
-  color: var(--yellow);
-}
-
-span.yellowAlt,
-p.yellowAlt,
-b.yellowAlt,
-i.yellowAlt,
-u.yellowAlt,
-.text.yellowAlt,
-mark.yellowAlt,
-.mark.yellowAlt,
-code.yellowAlt {
-  color: var(--yellowAlt);
-}
-
-span.green,
-p.green,
-b.green,
-i.green,
-u.green,
-.text.green,
-mark.green,
-.mark.green,
-code.green {
-  color: var(--green);
-}
-
-span.greenAlt,
-p.greenAlt,
-b.greenAlt,
-i.greenAlt,
-u.greenAlt,
-.text.greenAlt,
-mark.greenAlt,
-.mark.greenAlt,
-code.greenAlt {
-  color: var(--greenAlt);
-}
-
-span.blue,
-p.blue,
-b.blue,
-i.blue,
-u.blue,
-.text.blue,
-mark.blue .mark.blue,
-code.blue {
-  color: var(--blue);
-}
-
-span.blueAlt,
-p.blueAlt,
-b.blueAlt,
-i.blueAlt,
-u.blueAlt,
-.text.blueAlt,
-mark.blueAlt,
-.mark.blueAlt code.blueAlt {
-  color: var(--blueAlt);
-}
-
-span.bg3,
-p.bg3,
-b.bg3,
-i.bg3,
-u.bg3,
-.text.bg3,
-mark.bg3,
-.mark.bg3,
-code.bg3 {
-  color: var(--bg3);
-}
-
-span.bg2,
-p.bg2,
-b.bg2,
-i.bg2,
-u.bg2,
-.text.bg2,
-mark.bg2,
-.mark.bg2,
-code.bg2 {
-  color: var(--bg2);
+span.yay,
+p.yay,
+b.yay,
+i.yay,
+u.yay,
+.text.yay,
+mark.yay,
+.mark.yay,
+code.yay {
+  color: var(--yay);
 }
 
 span.bg1,
@@ -255,112 +139,52 @@ code.bg1 {
   color: var(--bg1);
 }
 
-span.black,
-p.black,
-b.black,
-i.black,
-u.black,
-.text.black,
-mark.black,
-.mark.black,
-code.black {
-  color: var(--black);
+span.fg2,
+p.fg2,
+b.fg2,
+i.fg2,
+u.fg2,
+.text.fg2,
+mark.fg2,
+.mark.fg2,
+code.fg2 {
+  color: var(--fg2);
 }
 
-span.fg,
-p.fg,
-b.fg,
-i.fg,
-u.fg,
-.text.fg,
-mark.fg,
-.mark.fg,
-code.fg {
-  color: var(--fg);
+span.fg1,
+p.fg1,
+b.fg1,
+i.fg1,
+u.fg1,
+.text.fg1,
+mark.fg1,
+.mark.fg1,
+code.fg1 {
+  color: var(--fg1);
 }
 
-span.white,
-p.white,
-b.white,
-i.white,
-u.white,
-.text.white,
-mark.white,
-.mark.white,
-code.white {
-  color: var(--white);
+span.fg0,
+p.fg0,
+b.fg0,
+i.fg0,
+u.fg0,
+.text.fg0,
+mark.fg0,
+.mark.fg0,
+code.fg0 {
+  color: var(--fg0);
 }
 
-span.primary,
-p.primary,
-b.primary,
-i.primary,
-u.primary,
-.text.primary,
-mark.primary,
-.mark.primary,
-code.primary {
-  color: var(--primary);
-}
-
-span.primaryAlt,
-p.primaryAlt,
-b.primaryAlt,
-i.primaryAlt,
-u.primaryAlt,
-.text.primaryAlt,
-mark.primaryAlt,
-.mark.primaryAlt,
-code.primaryAlt {
-  color: var(--primaryAlt);
-}
-
-span.purple,
-p.purple,
-b.purple,
-i.purple,
-u.purple,
-.text.purple,
-mark.purple,
-.mark.purple,
-code.purple {
-  color: var(--purple);
-}
-
-span.purpleAlt,
-p.purpleAlt,
-b.purpleAlt,
-i.purpleAlt,
-u.purpleAlt,
-.text.purpleAlt,
-mark.purpleAlt,
-.mark.purpleAlt,
-code.purpleAlt {
-  color: var(--purpleAlt);
-}
-
-span.pink,
-p.pink,
-b.pink,
-i.pink,
-u.pink,
-.text.pink,
-mark.pink,
-.mark.pink,
-code.pink {
-  color: var(--pink);
-}
-
-span.pinkAlt,
-p.pinkAlt,
-b.pinkAlt,
-i.pinkAlt,
-u.pinkAlt,
-.text.pinkAlt,
-mark.pinkAlt,
-.mark.pinkAlt,
-code.pinkAlt {
-  color: var(--pinkAlt);
+span.main,
+p.main,
+b.main,
+i.main,
+u.main,
+.text.main,
+mark.main,
+.mark.main,
+code.main {
+  color: var(--main);
 }
 
 span.extra,
@@ -375,66 +199,14 @@ code.extra {
   color: var(--extra);
 }
 
-span.extraAlt,
-p.extraAlt,
-b.extraAlt,
-i.extraAlt,
-u.extraAlt,
-.text.extraAlt,
-mark.extraAlt,
-.mark.extraAlt,
-code.extraAlt {
-  color: var(--extraAlt);
+mark.markOhno,
+.mark.markOhno {
+  background-color: var(--ohno);
 }
 
-mark.markRed,
-.mark.markRed {
-  background-color: var(--red);
-}
-
-mark.markRedAlt,
-.mark.markRedAlt {
-  background-color: var(--redAlt);
-}
-
-mark.markOrange,
-.mark.markOrange {
-  background-color: var(--orange);
-}
-
-mark.markOrangeAlt,
-.mark.markOrangeAlt {
-  background-color: var(--orangeAlt);
-}
-
-mark.markYellow,
-.mark.markYellow {
-  background-color: var(--yellow);
-}
-
-mark.markYellowAlt,
-.mark.markYellowAlt {
-  background-color: var(--yellowAlt);
-}
-
-mark.markGreen,
-.mark.markGreen {
-  background-color: var(--green);
-}
-
-mark.markGreenAlt,
-.mark.markGreenAlt {
-  background-color: var(--greenAlt);
-}
-
-mark.markBlue,
-.mark.markBlue {
-  background-color: var(--blue);
-}
-
-mark.markBlueAlt,
-.mark.markBlueAlt {
-  background-color: var(--blueAlt);
+mark.markYay,
+.mark.markYay {
+  background-color: var(--yay);
 }
 
 mark.markBg3,
@@ -447,54 +219,24 @@ mark.markBg2,
   background-color: var(--bg2);
 }
 
-mark.markBg1,
-.mark.markBg1 {
-  background-color: var(--bg1);
+mark.markFg2,
+.mark.markFg2 {
+  background-color: var(--fg2);
 }
 
-mark.markBlack,
-.mark.markBlack {
-  background-color: var(--black);
+mark.markFg1,
+.mark.markFg1 {
+  background-color: var(--fg1);
 }
 
-mark.markFg,
-.mark.markFg {
-  background-color: var(--fg);
+mark.markFg0,
+.mark.markFg0 {
+  background-color: var(--fg0);
 }
 
-mark.markWhite,
-.mark.markWhite {
-  background-color: var(--white);
-}
-
-mark.markPrimary,
-.mark.markPrimary {
-  background-color: var(--primary);
-}
-
-mark.markPrimaryAlt,
-.mark.markPrimaryAlt {
-  background-color: var(--primaryAlt);
-}
-
-mark.markPurple,
-.mark.markPurple {
-  background-color: var(--purple);
-}
-
-mark.markPurpleAlt,
-.mark.markPurpleAlt {
-  background-color: var(--purpleAlt);
-}
-
-mark.markPink,
-.mark.markPink {
-  background-color: var(--pink);
-}
-
-mark.markPinkAlt,
-.mark.markPinkAlt {
-  background-color: var(--pinkAlt);
+mark.markMain,
+.mark.markMain {
+  background-color: var(--main);
 }
 
 mark.markExtra,
@@ -502,19 +244,14 @@ mark.markExtra,
   background-color: var(--extra);
 }
 
-mark.markExtraAlt,
-.mark.markExtraAlt {
-  background-color: var(--extraAlt);
+.box.ohno {
+  color: var(--ohno);
+  border-color: var(--ohno);
 }
 
-.box.red {
-  color: var(--red);
-  border-color: var(--red);
-}
-
-.box.green {
-  color: var(--green);
-  border-color: var(--green);
+.box.yay {
+  color: var(--yay);
+  border-color: var(--yay);
 }
 
 pre,
@@ -522,59 +259,59 @@ pre,
   white-space: pre;
 }
 
-button.red,
-.button.red {
-  background-color: var(--red);
-  border-color: var(--red);
+button.ohno,
+.button.ohno {
+  background-color: var(--ohno);
+  border-color: var(--ohno);
 }
 
-button.green,
-.button.green {
-  background-color: var(--green);
-  border-color: var(--green);
+button.yay,
+.button.yay {
+  background-color: var(--yay);
+  border-color: var(--yay);
 }
 
 button.extra,
 .button.extra {
   background-color: var(--extra);
   border-color: var(--extra);
-  color: var(--bgExtra);
+  color: var(--extraBg);
 }
 
-button.alt.red,
-.button.alt.red {
+button.alt.ohno,
+.button.alt.ohno {
   background-color: var(--bg1);
-  border-color: var(--red);
-  color: var(--red);
+  border-color: var(--ohno);
+  color: var(--ohno);
 }
 
-button.alt.green,
-.button.alt.green {
+button.alt.yay,
+.button.alt.yay {
   background-color: var(--bg1);
-  border-color: var(--green);
-  color: var(--green);
+  border-color: var(--yay);
+  color: var(--yay);
 }
 
 button.alt.extra,
 .button.alt.extra {
-  background-color: var(--bgExtra);
+  background-color: var(--extraBg);
   border-color: var(--extra);
   color: var(--extra);
 }
 
-button:hover.red,
-button:focus-visible.red,
-.button:hover.red,
-.button:focus-visible.red {
-  background-color: var(--redAlt);
+button:hover.ohno,
+button:focus-visible.ohno,
+.button:hover.ohno,
+.button:focus-visible.ohno {
+  background-color: var(--ohnoAlt);
   color: var(--bg1);
 }
 
-button:hover.green,
-button:focus-visible.green,
-.button:hover.green,
-.button:focus-visible.green {
-  background-color: var(--greenAlt);
+button:hover.yay,
+button:focus-visible.yay,
+.button:hover.yay,
+.button:focus-visible.yay {
+  background-color: var(--yayAlt);
   color: var(--bg1);
 }
 
@@ -583,17 +320,17 @@ button:focus-visible.extra,
 .button:hover.extra,
 .button:focus-visible.extra {
   background-color: var(--extraAlt);
-  color: var(--bgExtra);
+  color: var(--extraBg);
 }
 
-button:focus-visible.red,
-.button:focus-visible.red {
-  outline-color: var(--red);
+button:focus-visible.ohno,
+.button:focus-visible.ohno {
+  outline-color: var(--ohno);
 }
 
-button:focus-visible.green,
-.button:focus-visible.green {
-  outline-color: var(--green);
+button:focus-visible.yay,
+.button:focus-visible.yay {
+  outline-color: var(--yay);
 }
 
 button:focus-visible.extra,
@@ -601,41 +338,41 @@ button:focus-visible.extra,
   outline-color: var(--extra);
 }
 
-input[type="text"].red,
-input[type="password"].red,
-textarea.red {
-  border-color: var(--red);
+input[type="text"].ohno,
+input[type="password"].ohno,
+textarea.ohno {
+  border-color: var(--ohno);
 }
 
-input[type="text"].green,
-input[type="password"].green,
-textarea.green {
-  border-color: var(--green);
+input[type="text"].yay,
+input[type="password"].yay,
+textarea.yay {
+  border-color: var(--yay);
 }
 
 input[type="text"].extra,
 input[type="password"].extra,
 textarea.extra {
-  background-color: var(--bgExtra);
+  background-color: var(--extraBg);
   border-color: var(--extra);
 }
 
-input[type="text"].red:hover,
-input[type="text"].red:focus-visible,
-input[type="password"].red:hover,
-input[type="password"].red:focus-visible,
-textarea.red:hover,
-textarea.red:focus-visible {
-  border-color: var(--redAlt);
+input[type="text"].ohno:hover,
+input[type="text"].ohno:focus-visible,
+input[type="password"].ohno:hover,
+input[type="password"].ohno:focus-visible,
+textarea.ohno:hover,
+textarea.ohno:focus-visible {
+  border-color: var(--ohnoAlt);
 }
 
-input[type="text"].green:hover,
-input[type="text"].green:focus-visible,
-input[type="password"].green:hover,
-input[type="password"].green:focus-visible,
-textarea.green:hover,
-textarea.green:focus-visible {
-  border-color: var(--greenAlt);
+input[type="text"].yay:hover,
+input[type="text"].yay:focus-visible,
+input[type="password"].yay:hover,
+input[type="password"].yay:focus-visible,
+textarea.yay:hover,
+textarea.yay:focus-visible {
+  border-color: var(--yayAlt);
 }
 
 input[type="text"].extra:hover,
@@ -647,16 +384,16 @@ textarea.extra:focus-visible {
   border-color: var(--extraAlt);
 }
 
-input[type="text"].red:focus-visible,
-input[type="password"].red:focus-visible,
-textarea.red:focus-visible {
-  outline-color: var(--red);
+input[type="text"].ohno:focus-visible,
+input[type="password"].ohno:focus-visible,
+textarea.ohno:focus-visible {
+  outline-color: var(--ohno);
 }
 
-input[type="text"].green:focus-visible,
-input[type="password"].green:focus-visible,
-textarea.green:focus-visible {
-  outline-color: var(--green);
+input[type="text"].yay:focus-visible,
+input[type="password"].yay:focus-visible,
+textarea.yay:focus-visible {
+  outline-color: var(--yay);
 }
 
 input[type="text"].extra:focus-visible,
@@ -725,7 +462,7 @@ textarea.horizontal {
   width: 200px;
   height: 200px;
   z-index: -100;
-  background-color: var(--primary);
+  background-color: var(--main);
   opacity: 0.2;
   filter: blur(1rem);
   border-radius: 50%;
@@ -748,7 +485,7 @@ html.min .hero > .logo::before {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-bottom: 1rem;
-  background-color: var(--bgExtra);
+  background-color: var(--extraBg);
 }
 
 /* third party styling requirements */

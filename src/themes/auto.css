@@ -13,7 +13,7 @@
     --mainAlt: #5F3699;
     --extra: #00B386;
     --extraAlt: #008060;
-    --bgExtra: #f1f3f5;
+    --extraBg: #f1f3f5;
     --fg2: #343a40;
     --fg1: #343a40;
     --fg0: #868e96;
@@ -21,8 +21,8 @@
     --bg2: #f1f3f5;
     --bg1: #fbfcfc;
     --bg0: #f1f3f5;
-    --bgSelect: #C499FF;
     --select: #343a40;
+    --selectBg: #C499FF;
 }
 
 ::selection {
@@ -39,7 +39,7 @@
         --mainAlt: #C499FF;
         --extra: #45E6BD;
         --extraAlt: #A6FFE9;
-        --bgExtra: #181825;
+        --extraBg: #181825;
         --fg2: #c3cce9;
         --fg1: #c3cce9;
         --fg0: #9399b2;
@@ -47,5 +47,7 @@
         --bg2: #272839;
         --bg1: #1e1e2e;
         --bg0: #181825;
+        --select: #c3cce9;
+        --selectBg: #533380;
     }
 }
