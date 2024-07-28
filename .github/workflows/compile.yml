@@ -2,7 +2,7 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    name: Build site/dev/
+    name: Compile Sass
     runs-on: ubuntu-latest
     steps:
       - name: Clone from GitHub
@@ -21,7 +21,7 @@ jobs:
           git add .
           git config --global user.name "Ehan"
           git config --global user.email "ehanahamed@ehan.dev"
-          git commit -m "Build site/dev/"
+          git commit -m "Compile Sass"
       - name: Push to GitHub
         run: |
           cd ehui
