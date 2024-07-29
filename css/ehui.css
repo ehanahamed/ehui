@@ -120,7 +120,7 @@ mark,
 .mark {
   background-color: var(--fg1);
   color: var(--bg1);
-  border-radius: 0.8rem;
+  border-radius: 0.4rem;
   padding: 0.2rem 0.4rem;
   font-size: 1rem;
   line-height: 1.4;
@@ -130,7 +130,7 @@ code,
 .code {
   font-family: monospace;
   background-color: var(--bg2);
-  border-radius: 0.8rem;
+  border-radius: 0.4rem;
   padding: 0.2rem 0.4rem;
   font-size: 1rem;
   line-height: 1.4;
@@ -244,7 +244,7 @@ a,
 .a {
   color: var(--main);
   cursor: pointer;
-  border-radius: 0.8rem;
+  border-radius: 0.4rem;
   font-size: 1rem;
   line-height: 1.4;
   text-decoration: none;
@@ -277,7 +277,7 @@ button,
   background-color: var(--main);
   color: var(--bg1);
   border: 0.2rem solid var(--main);
-  border-radius: 0.8rem;
+  border-radius: 2rem;
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
   line-height: 1.4;
