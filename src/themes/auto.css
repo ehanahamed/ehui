@@ -24,11 +24,6 @@
     --select: #343a40;
     --selectBg: #C499FF;
 }
-
-::selection {
-    background-color: var(--bgSelect);
-    color: var(--select);
-}
   
 @media (prefers-color-scheme: dark) {
     :root {
