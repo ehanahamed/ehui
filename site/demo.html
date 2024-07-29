@@ -112,44 +112,28 @@
             <button class="alt">Alt button</button>
           </div>
           <div class="flex">
-            <button class="green">Green</button>
-            <button class="alt green">Green alt</button>
+            <button class="yay">Yay</button>
+            <button class="alt yay">Yay alt</button>
           </div>
           <div class="flex">
-            <button class="red">Red</button>
-            <button class="alt red">Red alt</button>
+            <button class="ohno">Ohno</button>
+            <button class="alt ohno">Ohno alt</button>
           </div>
           <div class="flex">
             <button>Button</button>
             <a href="https://ehui.ehan.dev" class="button">Link button</a>
           </div>
           <p>Default text</p>
-          <p class="red">Red text</p>
-          <p class="redAlt">Red alt text</p>
-          <p class="orange">Orange text</p>
-          <p class="orangeAlt">Orange alt text</p>
-          <p class="yellow">Yellow text</p>
-          <p class="yellowAlt">Yellow alt text</p>
-          <p class="green">Green text</p>
-          <p class="greenAlt">Green alt text</p>
-          <p class="blue">Blue text</p>
-          <p class="blueAlt">Blue alt text</p>
-          <p class="purple">Purple text</p>
-          <p class="purpleAlt">Purple alt text</p>
-          <p class="pink">Pink text</p>
-          <p class="pinkAlt">Pink alt text</p>
-          <p class="primary">Primary text</p>
-          <p class="primaryAlt">Primary alt text</p>
-          <p class="black">Black text</p>
-          <p class="white">White text</p>
-          <p class="fg">Foreground text</p>
-          <p class="bg3">Background 3 text</p>
-          <p class="bg2">Background 2 text</p>
-          <p class="bg1">Background 1 text</p>
+          <p class="ohno">Ohno text</p>
+          <p class="yay">Yay text</p>
+          <p class="main">Main text</p>
+          <p class="fg2">Fg2 text</p>
+          <p class="fg1">Fg1 text</p>
+          <p class="fg0">Fg0 text</p>
           <h2>Notice boxes</h2>
           <p class="box center">Notice box text</p>
-          <p class="box center green">Notice box text</p>
-          <p class="box center red">Notice box text</p>
+          <p class="box center yay">Notice box text</p>
+          <p class="box center ohno">Notice box text</p>
           <h2>Boxes</h2>
           <div class="box">
             <p>Box text</p>
@@ -158,37 +142,37 @@
               <button class="alt">Button</button>
             </div>
           </div>
-          <div class="box green">
+          <div class="box yay">
             <p>Green box</p>
             <div class="flex">
-              <button class="green">Button</button>
-              <button class="green alt">Button</button>
+              <button class="yay">Button</button>
+              <button class="yay alt">Button</button>
             </div>
           </div>
-          <div class="box red">
+          <div class="box ohno">
             <p>Red box</p>
             <div class="flex">
-              <button class="red">Button</button>
-              <button class="red alt">Button</button>
+              <button class="ohno">Button</button>
+              <button class="ohno alt">Button</button>
             </div>
           </div>
           <h2>Inputs</h2>
           <p>Text input</p>
           <div class="flex wrap">
             <input type="text" placeholder="Text input" />
-            <input class="red" type="text" placeholder="Red text input" />
-            <input class="green" type="text" placeholder="Green text input" />
+            <input class="ohno" type="text" placeholder="Red text input" />
+            <input class="yay" type="text" placeholder="Green text input" />
           </div>
           <p>Password input</p>
           <div class="flex wrap">
             <input type="password" placeholder="Password input" />
             <input
-              class="red"
+              class="ohno"
               type="password"
               placeholder="Red password input"
             />
             <input
-              class="green"
+              class="yay"
               type="password"
               placeholder="Green password input"
             />
@@ -197,12 +181,12 @@
           <div class="flex wrap">
             <textarea rows="2" placeholder="Textarea"></textarea>
             <textarea
-              class="red"
+              class="ohno"
               rows="2"
               placeholder="Red textarea"
             ></textarea>
             <textarea
-              class="green"
+              class="yay"
               rows="2"
               placeholder="Green textarea"
             ></textarea>
@@ -301,18 +285,18 @@
           <div class="grid list">
             <div class="box">Item 0</div>
             <div class="box">Item 1</div>
-            <div class="box green">
+            <div class="box yay">
               <p>Item 2</p>
               <p>Green</p>
             </div>
             <div class="box">Item 3</div>
             <div class="box">Item 4</div>
-            <div class="box red">
+            <div class="box ohno">
               <p>Item 5</p>
               <p>Red</p>
             </div>
             <div class="box">Item 6</div>
-            <div class="box green">
+            <div class="box yay">
               <p>Item 7</p>
               <p>Green</p>
             </div>
@@ -342,7 +326,7 @@
           viewBox="0 0 1000 200"
         >
           <path
-            fill="var(--bgExtra)"
+            fill="var(--extraBg)"
             d="M0 100s250.096-101.786 566.869 6.735C861.491 207.668 1000 60 1000 60v140H0Z"
           />
         </svg>
@@ -382,7 +366,7 @@
           viewBox="0 0 1000 200"
         >
           <path
-            fill="var(--bgExtra)"
+            fill="var(--extraBg)"
             d="M0 100s250.096-101.786 566.869 6.735C861.491 207.668 1000 60 1000 60V0H0Z"
           />
         </svg>
@@ -443,7 +427,7 @@
             text: "change color",
             onClick: function () { chColor() },
             classList: [
-              "red",
+              "ohno",
               "alt"
             ]
           }
