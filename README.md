@@ -2,6 +2,15 @@
 
 This is a "UI kit" with a bunch of css styles. It's customizable and themeable, so that we don't need to rewrite similar css for different projects.
 
+## To-do
+
+- fonts
+    - other scss files have different `font-family:` properties that don't follow `$font-family`
+    - that ancient `fonts/fonts.css` file and `fonts/` dir does something?
+- border radius
+    - use scss vars
+- document using scss vars to build a custom ehui.css
+
 ## Project/folder structure
 
 - `css/ehui.css`

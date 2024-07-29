@@ -5,6 +5,10 @@
 */
 
 $font-family: "Nunito", sans-serif !default;
+$border-radius: 0.8rem;
+$button-border-radius: 2rem;
+$textbox-border-radius: 0.8rem;
+$checkbox-border-radius: 0.6rem;
 
 @use "./elements.scss" with (
   $font-family: $font-family

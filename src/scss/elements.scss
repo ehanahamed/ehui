@@ -276,7 +276,7 @@ button,
   background-color: var(--main);
   color: var(--bg1);
   border: 0.2rem solid var(--main);
-  border-radius: 0.8rem;
+  border-radius: $button-border-radius;
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
   line-height: 1.4;
@@ -326,7 +326,7 @@ textarea {
   background-color: var(--bg1);
   color: var(--fg1);
   border: 0.2rem solid var(--main);
-  border-radius: 0.8rem;
+  border-radius: $textbox-border-radius;
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
   line-height: 1.4;
