@@ -1,10 +1,14 @@
 /*!
   EhUI is free and open source
   Copyright (c) Ehan Ahamed and contributors
-  https://ehui.ehan.dev/LICENSE.txt
+  https://ehan.dev/ehui/LICENSE.txt
 */
 
-@use "./elements.scss";
+$font-family: "Nunito", sans-serif !default;
+
+@use "./elements.scss" with (
+  $font-family: $font-family
+);
 
 @use "./layouts.scss";
 
