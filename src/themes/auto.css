@@ -9,6 +9,8 @@
     color-scheme: light;
     --ohno: #E64545;
     --ohnoAlt: #B33636;
+    --yay: #00B386;
+    --yayAlt: #008060;
     --main: #7F47CC;
     --mainAlt: #5F3699;
     --extra: #00B386;
@@ -30,6 +32,8 @@
         color-scheme: dark;
         --ohno: #ff6666;
         --ohnoAlt: #ff9999;
+        --yay: #45E6BD;
+        --yayAlt: #A6FFE9;
         --main: #A666FF;
         --mainAlt: #C499FF;
         --extra: #45E6BD;
