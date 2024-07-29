@@ -1,7 +1,25 @@
 {
   "name": "ehui",
   "version": "1.0.0",
+  "description": "## Project Structure",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
-    "compile": "dart run sass ./src/scss/ehui.scss ./css/ehui.css --no-source-map"
+    "compile": "npx sass ./src/scss/ehui.scss ./css/ehui.css --no-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehanahamed/ehui.git"
+  },
+  "author": "Ehan Ahamed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ehanahamed/ehui/issues"
+  },
+  "homepage": "https://github.com/ehanahamed/ehui#readme",
+  "devDependencies": {
+    "sass": "^1.77.8"
   }
 }
