@@ -15,7 +15,7 @@ jobs:
           cd ehui
           npm install
           npm run compile
-      - name: Commit & push changes
+      - name: Commit & push to GitHub
         run: |
           cd ehui
           git add .
