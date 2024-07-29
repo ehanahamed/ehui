@@ -10,19 +10,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - uses: dart-lang/setup-dart@v1
       - name: Run npm script
         run: |
           cd ehui
-          npm run build
-      - name: Commit Changes
+          npm install
+          npm run compile
+      - name: Commit & push changes
         run: |
           cd ehui
           git add .
           git config --global user.name "Ehan"
           git config --global user.email "ehanahamed@ehan.dev"
           git commit -m "Compile Sass"
-      - name: Push to GitHub
-        run: |
-          cd ehui
           git push https://ehanahamed:${{ secrets.GH_TOKEN }}@github.com/ehanahamed/ehui.git --all
