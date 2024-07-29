@@ -1,3 +1,5 @@
+$border-radius: 0.8rem !default;
+
 a.mark {
   /*
   undo stuff in other stuff?
@@ -479,7 +481,7 @@ button.large,
     width: 100%;
     height: 100%;
     background-color: var(--bg2);
-    border-radius: 0.8rem;
+    border-radius: $border-radius;
     align-items: center;
     justify-content: center;
     text-align: center;

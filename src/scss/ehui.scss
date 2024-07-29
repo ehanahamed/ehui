@@ -5,15 +5,23 @@
 */
 
 $font-family: "Nunito", sans-serif !default;
-$border-radius: 0.8rem;
-$button-border-radius: 2rem;
-$textbox-border-radius: 0.8rem;
-$checkbox-border-radius: 0.6rem;
+$border-radius: 0.8rem !default;
+$border-radius-button: 2rem !default;
+$border-radius-textbox: 0.8rem !default;
+$border-radius-checkbox: 0.6rem !default;
+$border-radius-text: 0.4rem !default;
 
 @use "./elements.scss" with (
-  $font-family: $font-family
+  $font-family: $font-family,
+  $border-radius: $border-radius,
+  $border-radius-button: $border-radius-button,
+  $border-radius-textbox: $border-radius-textbox,
+  $border-radius-checkbox: $border-radius-checkbox,
+  $border-radius-text: $border-radius-text,
 );
 
 @use "./layouts.scss";
 
-@use "./classes.scss";
+@use "./classes.scss" with (
+  $border-radius: $border-radius
+);

@@ -7,18 +7,19 @@ This is a "UI kit" with a bunch of css styles. It's customizable and themeable, 
 - fonts
     - other scss files have different `font-family:` properties that don't follow `$font-family`
     - that ancient `fonts/fonts.css` file and `fonts/` dir does something?
-- border radius
-    - use scss vars
 - document using scss vars to build a custom ehui.css
+- document creating a theme css file
 
 ## Project/folder structure
 
-- `css/ehui.css`
-    - css file compiled from `src/scss/`, use it with a css file from `themes/` to define it's colors (`css/ehui.css` has no colors without a css file from `themes/`)
+- `css/`
+    - `ehui.css`
+        - css file compiled from `src/scss/`, use it with a css file from `themes/` to define it's colors (`css/ehui.css` has no colors without a css file from `themes/`)
 - `site/`
 - `src/`
     - `scss/`
-        - the "actual" source code that is later compiled into `css/ehui.css`
+        - `ehui.scss`
+            - the "main" scss file that imports the other scss files, it gets compiled into `css/ehui.css`, it has options/variables and can be imported in another scss file to compile a customized ehui.css
     - `js/`
         - extra javascript utilities (these add extra functionality, ehui works without javascript)
 - `themes/`
