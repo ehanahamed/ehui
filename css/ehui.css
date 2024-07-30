@@ -281,7 +281,7 @@ button,
   padding: 0.4rem 0.8rem;
   font-family: "nunito", sans-serif;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1.4;
   transition-duration: 0.4s;
 }
