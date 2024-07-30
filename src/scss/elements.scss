@@ -1,4 +1,4 @@
-$font-family: "Nunito", sans-serif !default;
+$font-family: sans-serif !default;
 $border-radius: 0.8rem !default;
 $border-radius-button: 2rem !default;
 $border-radius-textbox: 0.8rem !default;
@@ -283,7 +283,9 @@ button,
   border: 0.2rem solid var(--main);
   border-radius: $border-radius-button;
   padding: 0.4rem 0.8rem;
+  font-family: $font-family;
   font-size: 1rem;
+  font-weight: bold;
   line-height: 1.4;
   transition-duration: 0.4s;
 }
@@ -312,7 +314,7 @@ button:focus-visible,
 ::placeholder {
   color: var(--fg0);
   font-size: 1rem;
-  font-family: sans-serif;
+  font-family: $font-family;
   font-weight: normal;
   opacity: 1;
 }
@@ -327,7 +329,7 @@ textarea {
   text-align: left;
   cursor: text;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: $font-family;
   background-color: var(--bg1);
   color: var(--fg1);
   border: 0.2rem solid var(--main);
