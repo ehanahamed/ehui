@@ -4,9 +4,8 @@ This is a "UI kit" with a bunch of css styles. It's customizable and themeable, 
 
 ## To-do
 
-- fonts
-    - other scss files have different `font-family:` properties that don't follow `$font-family`
-    - that ancient `fonts/fonts.css` file and `fonts/` dir does something?
+- improve textboxes (inputs & textarea)
+- checkbox checkmarks
 - document using scss vars to build a custom ehui.css
 - document creating a theme css file
 
