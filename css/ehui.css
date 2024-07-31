@@ -288,8 +288,9 @@ button,
 
 button.alt,
 .button.alt {
-  background-color: var(--bg1);
+  background-color: var(--bg3);
   color: var(--main);
+  border-color: var(--bg3);
 }
 
 button:hover,
@@ -1131,21 +1132,21 @@ button.extra,
 
 button.alt.ohno,
 .button.alt.ohno {
-  background-color: var(--bg1);
+  background-color: var(--bg3);
   border-color: var(--ohno);
   color: var(--ohno);
 }
 
 button.alt.yay,
 .button.alt.yay {
-  background-color: var(--bg1);
+  background-color: var(--bg3);
   border-color: var(--yay);
   color: var(--yay);
 }
 
 button.alt.extra,
 .button.alt.extra {
-  background-color: var(--extraBg);
+  background-color: var(--bg3);
   border-color: var(--extra);
   color: var(--extra);
 }
