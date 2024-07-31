@@ -138,13 +138,13 @@ code,
 
 .box {
   color: var(--fg1);
-  border: 0.2rem solid var(--bg3);
+  border: 0.2rem solid var(--bg4);
   border-radius: 0.8rem;
   padding: 1rem;
 }
 
 .hero {
-  border-bottom: 0.2rem solid var(--bg3);
+  border-bottom: 0.2rem solid var(--bg4);
   text-align: center;
   padding: 1rem;
   padding-bottom: 4rem;
@@ -164,7 +164,7 @@ header,
   height: 4rem;
   top: 0px;
   background-color: var(--bg1);
-  border-bottom: 0.2rem solid var(--bg3);
+  border-bottom: 0.2rem solid var(--bg4);
   padding: 0px;
   margin: 0px;
 }
@@ -190,7 +190,7 @@ header > .nav {
 
 footer,
 .footer {
-  border-top: 0.2rem solid var(--bg3);
+  border-top: 0.2rem solid var(--bg4);
   text-align: center;
   padding: 1rem;
   padding-top: 4rem;
@@ -201,7 +201,7 @@ table {
   border-collapse: separate;
   border-spacing: 0px;
   border-radius: 0.8rem;
-  border: 0.2rem solid var(--bg3);
+  border: 0.2rem solid var(--bg4);
 }
 
 td {
@@ -226,7 +226,7 @@ table.outer tfoot {
 
 table.inner th:not(:last-child),
 table.inner td:not(:last-child) {
-  border-right: 0.2rem solid var(--bg3);
+  border-right: 0.2rem solid var(--bg4);
 }
 
 table.inner > thead > tr > th,
@@ -237,7 +237,7 @@ table.inner > tr:not(:last-child) > td,
 table.inner > tr:not(:last-child) > th,
 table.inner > thead:not(:last-child),
 table.inner > tbody:not(:last-child) {
-  border-bottom: 0.2rem solid var(--bg3);
+  border-bottom: 0.2rem solid var(--bg4);
 }
 
 a,
@@ -516,7 +516,7 @@ input[type=checkbox]:checked {
 .separator::after {
   content: "";
   display: block;
-  background: var(--bg3);
+  background: var(--bg4);
   width: 100%;
   height: 0.2rem;
   margin: 0px 1rem;
@@ -550,7 +550,7 @@ input[type=checkbox]:checked {
   z-index: 200;
   width: 60vw;
   background-color: var(--bg1);
-  border: 0.2rem solid var(--bg3);
+  border: 0.2rem solid var(--bg4);
   border-radius: 0.8rem;
   padding: 1rem;
 }
@@ -562,7 +562,7 @@ input[type=checkbox]:checked {
   .modal > .content {
     width: 100vw;
     border: none;
-    border-top: 0.2rem solid var(--bg3);
+    border-top: 0.2rem solid var(--bg4);
     border-radius: 0px;
     padding-bottom: 8rem;
   }
@@ -694,7 +694,7 @@ input[type=checkbox]:checked {
   grid-area: right;
   justify-self: left;
   padding-left: 2rem;
-  border-left: 0.2rem solid var(--bg3);
+  border-left: 0.2rem solid var(--bg4);
 }
 
 .grid.split.noBorder > .left,
@@ -784,7 +784,7 @@ make the list have only one column
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 4rem;
-  border-bottom: 0.2rem solid var(--bg3);
+  border-bottom: 0.2rem solid var(--bg4);
 }
 
 .grid.intro > .logotype {
@@ -1060,9 +1060,9 @@ mark.markYay,
   background-color: var(--yay);
 }
 
-mark.markBg3,
-.mark.markBg3 {
-  background-color: var(--bg3);
+mark.markBg4,
+.mark.markBg4 {
+  background-color: var(--bg4);
 }
 
 mark.markBg2,
