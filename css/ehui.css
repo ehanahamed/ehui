@@ -137,8 +137,9 @@ code,
 }
 
 .box {
+  background-color: var(--bg2);
   color: var(--fg1);
-  border: 0.2rem solid var(--bg4);
+  border: 0.2rem solid var(--bg2);
   border-radius: 0.8rem;
   padding: 1rem;
 }
