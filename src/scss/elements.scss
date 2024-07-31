@@ -293,8 +293,9 @@ button,
 
 button.alt,
 .button.alt {
-  background-color: var(--bg1);
+  background-color: var(--bg3);
   color: var(--main);
+  border-color: var(--bg3)
 }
 
 button:hover,
