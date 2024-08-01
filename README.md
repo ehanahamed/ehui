@@ -15,6 +15,9 @@ This is a "UI kit" with a bunch of css styles. It's customizable and themeable, 
     - `ehui.css`
         - css file compiled from `src/scss/`, use it with a css file from `themes/` to define it's colors (`css/ehui.css` has no colors without a css file from `themes/`)
 - `site/`
+    - `fonts/`
+        - `fonts.css`
+            - defines @fontface-s that `css/ehui.css` uses. ehui will still look okay without these fonts (`css/ehui.css` falls back to sans-serif). if you want these fancy fonts, copy `site/fonts/` anywhere (`site/fonts/fonts.css` uses relative paths), find the css file and `<link rel="stylesheet` it. TODO: DOCUMENT USING DIFFERENT FONTS BY COMPILING SASS WITH ALTERED FONT-FAMILY SCSS VAR
 - `src/`
     - `scss/`
         - `ehui.scss`
