@@ -7,7 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "compile": "npm run compile-dark && npm run compile-light",
+    "build": "npm run compile && npm run minify",
+    "compile": "npm run compile-dark && npm run compile-light && npm run cat",
     "compile-dark": "npx sass ./themes/dark.scss ./css/ehui-dark.css --no-source-map",
     "compile-light": "npx sass ./themes/light.scss ./css/ehui-light.css --no-source-map",
     "cat": "node ./cat.js",
