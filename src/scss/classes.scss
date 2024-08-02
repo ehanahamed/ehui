@@ -530,6 +530,18 @@ button.large,
   fill: $bg0;
 }
 
+.background-bg2 {
+  background-color: $bg2;
+}
+
+.background-bg1 {
+  background-color: $bg1;
+}
+
+.background-bg0 {
+  background-color: $bg0;
+}
+
 @media (prefers-reduced-motion) {
   html {
     scroll-behavior: auto;

@@ -1460,6 +1460,18 @@ button.large,
   fill: #f1f3f5;
 }
 
+.background-bg2 {
+  background-color: #f1f3f5;
+}
+
+.background-bg1 {
+  background-color: #fbfcfc;
+}
+
+.background-bg0 {
+  background-color: #f1f3f5;
+}
+
 @media (prefers-reduced-motion) {
   html {
     scroll-behavior: auto;
