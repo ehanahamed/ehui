@@ -1424,6 +1424,10 @@ button.large,
   fill: #008055;
 }
 
+.fill-extra-bg {
+  fill: #f1f3f5;
+}
+
 .fill-fg2 {
   fill: #343a40;
 }
