@@ -1,0 +1,25 @@
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    name: Minify css
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone from GitHub
+        run: git clone https://github.com/ehanahamed/ehui.git
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run npm script
+        run: |
+          cd ehui
+          npm install
+          npm run minify
+      - name: Commit & push to GitHub
+        run: |
+          cd ehui
+          git add .
+          git config --global user.name "Ehan"
+          git config --global user.email "ehanahamed@ehan.dev"
+          git commit -m "Minify css"
+          git push https://ehanahamed:${{ secrets.GH_TOKEN }}@github.com/ehanahamed/ehui.git --all
