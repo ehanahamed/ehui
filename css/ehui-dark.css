@@ -1392,6 +1392,70 @@ button.large,
   line-height: 1.6rem;
 }
 
+.fill-ohno {
+  fill: #ff6666;
+}
+
+.fill-ohno-alt {
+  fill: #ff9999;
+}
+
+.fill-yay {
+  fill: #66FFCC;
+}
+
+.fill-yay-alt {
+  fill: #CCFFEE;
+}
+
+.fill-main {
+  fill: #9966FF;
+}
+
+.fill-main-alt {
+  fill: #BB99FF;
+}
+
+.fill-extra {
+  fill: #66FFCC;
+}
+
+.fill-extra-alt {
+  fill: #CCFFEE;
+}
+
+.fill-fg2 {
+  fill: #c3cce9;
+}
+
+.fill-fg1 {
+  fill: #c3cce9;
+}
+
+.fill-fg0 {
+  fill: #9399b2;
+}
+
+.fill-bg4 {
+  fill: #3b3c4f;
+}
+
+.fill-bg3 {
+  fill: #2b2c3d;
+}
+
+.fill-bg2 {
+  fill: #222333;
+}
+
+.fill-bg1 {
+  fill: #1e1e2e;
+}
+
+.fill-bg0 {
+  fill: #181825;
+}
+
 @media (prefers-reduced-motion) {
   html {
     scroll-behavior: auto;

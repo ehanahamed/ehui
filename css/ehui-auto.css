@@ -1392,6 +1392,70 @@ button.large,
   line-height: 1.6rem;
 }
 
+.fill-ohno {
+  fill: #E64545;
+}
+
+.fill-ohno-alt {
+  fill: #B33636;
+}
+
+.fill-yay {
+  fill: #00B377;
+}
+
+.fill-yay-alt {
+  fill: #008055;
+}
+
+.fill-main {
+  fill: #7447CC;
+}
+
+.fill-main-alt {
+  fill: #573699;
+}
+
+.fill-extra {
+  fill: #00B377;
+}
+
+.fill-extra-alt {
+  fill: #008055;
+}
+
+.fill-fg2 {
+  fill: #343a40;
+}
+
+.fill-fg1 {
+  fill: #343a40;
+}
+
+.fill-fg0 {
+  fill: #868e96;
+}
+
+.fill-bg4 {
+  fill: #ced4da;
+}
+
+.fill-bg3 {
+  fill: #e8ebee;
+}
+
+.fill-bg2 {
+  fill: #f1f3f5;
+}
+
+.fill-bg1 {
+  fill: #fbfcfc;
+}
+
+.fill-bg0 {
+  fill: #f1f3f5;
+}
+
 @media (prefers-reduced-motion) {
   html {
     scroll-behavior: auto;
@@ -2847,6 +2911,70 @@ button.large,
   padding: 0.6rem 1.2rem;
   font-size: 1.2rem;
   line-height: 1.6rem;
+}
+
+.fill-ohno {
+  fill: #E64545;
+}
+
+.fill-ohno-alt {
+  fill: #B33636;
+}
+
+.fill-yay {
+  fill: #00B377;
+}
+
+.fill-yay-alt {
+  fill: #008055;
+}
+
+.fill-main {
+  fill: #7447CC;
+}
+
+.fill-main-alt {
+  fill: #573699;
+}
+
+.fill-extra {
+  fill: #00B377;
+}
+
+.fill-extra-alt {
+  fill: #008055;
+}
+
+.fill-fg2 {
+  fill: #343a40;
+}
+
+.fill-fg1 {
+  fill: #343a40;
+}
+
+.fill-fg0 {
+  fill: #868e96;
+}
+
+.fill-bg4 {
+  fill: #ced4da;
+}
+
+.fill-bg3 {
+  fill: #e8ebee;
+}
+
+.fill-bg2 {
+  fill: #f1f3f5;
+}
+
+.fill-bg1 {
+  fill: #fbfcfc;
+}
+
+.fill-bg0 {
+  fill: #f1f3f5;
 }
 
 @media (prefers-reduced-motion) {
