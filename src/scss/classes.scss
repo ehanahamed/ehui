@@ -462,6 +462,70 @@ button.large,
   line-height: 1.6rem;
 }
 
+.fill-ohno {
+  fill: $ohno;
+}
+
+.fill-ohno-alt {
+  fill: $ohno-alt;
+}
+
+.fill-yay {
+  fill: $yay;
+}
+
+.fill-yay-alt {
+  fill: $yay-alt;
+}
+
+.fill-main {
+  fill: $main;
+}
+
+.fill-main-alt {
+  fill: $main-alt;
+}
+
+.fill-extra {
+  fill: $extra;
+}
+
+.fill-extra-alt {
+  fill: $extra-alt;
+}
+
+.fill-fg2 {
+  fill: $fg2;
+}
+
+.fill-fg1 {
+  fill: $fg1;
+}
+
+.fill-fg0 {
+  fill: $fg0;
+}
+
+.fill-bg4 {
+  fill: $bg4;
+}
+
+.fill-bg3 {
+  fill: $bg3;
+}
+
+.fill-bg2 {
+  fill: $bg2;
+}
+
+.fill-bg1 {
+  fill: $bg1;
+}
+
+.fill-bg0 {
+  fill: $bg0;
+}
+
 @media (prefers-reduced-motion) {
   html {
     scroll-behavior: auto;
