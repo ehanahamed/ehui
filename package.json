@@ -9,7 +9,8 @@
   "scripts": {
     "compile": "npm run compile-dark && npm run compile-light",
     "compile-dark": "npx sass ./themes/dark.scss ./css/ehui-dark.css --no-source-map",
-    "compile-light": "npx sass ./themes/light.scss ./css/ehui-light.css --no-source-map"
+    "compile-light": "npx sass ./themes/light.scss ./css/ehui-light.css --no-source-map",
+    "minify": "npx postcss ./css/ --dir ./site/css/ --ext .min.css"
   },
   "repository": {
     "type": "git",
