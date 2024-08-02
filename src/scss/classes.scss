@@ -24,12 +24,12 @@ a.mark {
   /*
   undo stuff in other stuff?
   */
-  color: var(--main);
+  color: $main;
 }
 
 a.mark:hover,
 a.mark:focus-visible {
-  color: var(--mainAlt);
+  color: $main-alt;
 }
 
 /*
@@ -45,7 +45,7 @@ u.ohno,
 mark.ohno,
 .mark.ohno,
 code.ohno {
-  color: var(--ohno);
+  color: $ohno;
 }
 
 span.yay,
@@ -57,7 +57,7 @@ u.yay,
 mark.yay,
 .mark.yay,
 code.yay {
-  color: var(--yay);
+  color: $yay;
 }
 
 span.bg1,
@@ -69,7 +69,7 @@ u.bg1,
 mark.bg1,
 .mark.bg1,
 code.bg1 {
-  color: var(--bg1);
+  color: $bg1;
 }
 
 span.fg2,
@@ -81,7 +81,7 @@ u.fg2,
 mark.fg2,
 .mark.fg2,
 code.fg2 {
-  color: var(--fg2);
+  color: $fg2;
 }
 
 span.fg1,
@@ -93,7 +93,7 @@ u.fg1,
 mark.fg1,
 .mark.fg1,
 code.fg1 {
-  color: var(--fg1);
+  color: $fg1;
 }
 
 span.fg0,
@@ -105,7 +105,7 @@ u.fg0,
 mark.fg0,
 .mark.fg0,
 code.fg0 {
-  color: var(--fg0);
+  color: $fg0;
 }
 
 span.main,
@@ -117,7 +117,7 @@ u.main,
 mark.main,
 .mark.main,
 code.main {
-  color: var(--main);
+  color: $main;
 }
 
 span.extra,
@@ -129,62 +129,62 @@ u.extra,
 mark.extra,
 .mark.extra,
 code.extra {
-  color: var(--extra);
+  color: $extra;
 }
 
 mark.markOhno,
 .mark.markOhno {
-  background-color: var(--ohno);
+  background-color: $ohno;
 }
 
 mark.markYay,
 .mark.markYay {
-  background-color: var(--yay);
+  background-color: $yay;
 }
 
 mark.markBg4,
 .mark.markBg4 {
-  background-color: var(--bg4);
+  background-color: $bg4;
 }
 
 mark.markBg2,
 .mark.markBg2 {
-  background-color: var(--bg2);
+  background-color: $bg2;
 }
 
 mark.markFg2,
 .mark.markFg2 {
-  background-color: var(--fg2);
+  background-color: $fg2;
 }
 
 mark.markFg1,
 .mark.markFg1 {
-  background-color: var(--fg1);
+  background-color: $fg1;
 }
 
 mark.markFg0,
 .mark.markFg0 {
-  background-color: var(--fg0);
+  background-color: $fg0;
 }
 
 mark.markMain,
 .mark.markMain {
-  background-color: var(--main);
+  background-color: $main;
 }
 
 mark.markExtra,
 .mark.markExtra {
-  background-color: var(--extra);
+  background-color: $extra;
 }
 
 .box.ohno {
-  color: var(--ohno);
-  border-color: var(--ohno);
+  color: $ohno;
+  border-color: $ohno;
 }
 
 .box.yay {
-  color: var(--yay);
-  border-color: var(--yay);
+  color: $yay;
+  border-color: $yay;
 }
 
 pre,
@@ -194,100 +194,100 @@ pre,
 
 button.ohno,
 .button.ohno {
-  background-color: var(--ohno);
-  border-color: var(--ohno);
+  background-color: $ohno;
+  border-color: $ohno;
 }
 
 button.yay,
 .button.yay {
-  background-color: var(--yay);
-  border-color: var(--yay);
+  background-color: $yay;
+  border-color: $yay;
 }
 
 button.extra,
 .button.extra {
-  background-color: var(--extra);
-  border-color: var(--extra);
-  color: var(--extraBg);
+  background-color: $extra;
+  border-color: $extra;
+  color: $extra-bg;
 }
 
 button.alt.ohno,
 .button.alt.ohno {
-  background-color: var(--bg3);
-  border-color: var(--bg3);
-  color: var(--ohno);
+  background-color: $bg3;
+  border-color: $bg3;
+  color: $ohno;
 }
 
 button.alt.yay,
 .button.alt.yay {
-  background-color: var(--bg3);
-  border-color: var(--bg3);
-  color: var(--yay);
+  background-color: $bg3;
+  border-color: $bg3;
+  color: $yay;
 }
 
 button.alt.extra,
 .button.alt.extra {
-  background-color: var(--bg3);
-  border-color: var(--bg3);
-  color: var(--extra);
+  background-color: $bg3;
+  border-color: $bg3;
+  color: $extra;
 }
 
 button:hover.ohno,
 button:focus-visible.ohno,
 .button:hover.ohno,
 .button:focus-visible.ohno {
-  background-color: var(--ohnoAlt);
-  color: var(--bg1);
+  background-color: $ohno-alt;
+  color: $bg1;
 }
 
 button:hover.yay,
 button:focus-visible.yay,
 .button:hover.yay,
 .button:focus-visible.yay {
-  background-color: var(--yayAlt);
-  color: var(--bg1);
+  background-color: $yay-alt;
+  color: $bg1;
 }
 
 button:hover.extra,
 button:focus-visible.extra,
 .button:hover.extra,
 .button:focus-visible.extra {
-  background-color: var(--extraAlt);
-  color: var(--extraBg);
+  background-color: $extra-alt;
+  color: $extra-bg;
 }
 
 button:focus-visible.ohno,
 .button:focus-visible.ohno {
-  outline-color: var(--ohno);
+  outline-color: $ohno;
 }
 
 button:focus-visible.yay,
 .button:focus-visible.yay {
-  outline-color: var(--yay);
+  outline-color: $yay;
 }
 
 button:focus-visible.extra,
 .button:focus-visible.extra {
-  outline-color: var(--extra);
+  outline-color: $extra;
 }
 
 input[type="text"].ohno,
 input[type="password"].ohno,
 textarea.ohno {
-  border-color: var(--ohno);
+  border-color: $ohno;
 }
 
 input[type="text"].yay,
 input[type="password"].yay,
 textarea.yay {
-  border-color: var(--yay);
+  border-color: $yay;
 }
 
 input[type="text"].extra,
 input[type="password"].extra,
 textarea.extra {
-  background-color: var(--extraBg);
-  border-color: var(--extra);
+  background-color: $extra-bg;
+  border-color: $extra;
 }
 
 input[type="text"].ohno:hover,
@@ -296,7 +296,7 @@ input[type="password"].ohno:hover,
 input[type="password"].ohno:focus-visible,
 textarea.ohno:hover,
 textarea.ohno:focus-visible {
-  border-color: var(--ohnoAlt);
+  border-color: $ohno-alt;
 }
 
 input[type="text"].yay:hover,
@@ -305,7 +305,7 @@ input[type="password"].yay:hover,
 input[type="password"].yay:focus-visible,
 textarea.yay:hover,
 textarea.yay:focus-visible {
-  border-color: var(--yayAlt);
+  border-color: $yay-alt;
 }
 
 input[type="text"].extra:hover,
@@ -314,25 +314,25 @@ input[type="password"].extra:hover,
 input[type="password"].extra:focus-visible,
 textarea.extra:hover,
 textarea.extra:focus-visible {
-  border-color: var(--extraAlt);
+  border-color: $extra-alt;
 }
 
 input[type="text"].ohno:focus-visible,
 input[type="password"].ohno:focus-visible,
 textarea.ohno:focus-visible {
-  outline-color: var(--ohno);
+  outline-color: $ohno;
 }
 
 input[type="text"].yay:focus-visible,
 input[type="password"].yay:focus-visible,
 textarea.yay:focus-visible {
-  outline-color: var(--yay);
+  outline-color: $yay;
 }
 
 input[type="text"].extra:focus-visible,
 input[type="password"].extra:focus-visible,
 textarea.extra:focus-visible {
-  outline-color: var(--extra);
+  outline-color: $extra;
 }
 
 textarea.vertical {
@@ -360,7 +360,7 @@ textarea.horizontal {
   align-items: center;
   justify-content: center;
   margin: 0px;
-  background: var(--bg1);
+  background: $bg1;
 }
 
 .exitFullscreen {
@@ -395,7 +395,7 @@ textarea.horizontal {
   width: 200px;
   height: 200px;
   z-index: -100;
-  background-color: var(--main);
+  background-color: $main;
   opacity: 0.2;
   filter: blur(1rem);
   border-radius: 50%;
@@ -418,7 +418,7 @@ html.min .hero > .logo::before {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-bottom: 1rem;
-  background-color: var(--extraBg);
+  background-color: $extra-bg;
 }
 
 /* third party styling requirements */
@@ -500,7 +500,7 @@ button.large,
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: var(--bg2);
+    background-color: $bg2;
     border-radius: $border-radius;
     align-items: center;
     justify-content: center;
