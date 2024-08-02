@@ -6,8 +6,7 @@ This is a "UI kit" with a bunch of css styles. It's customizable and themeable, 
 
 - improve textboxes (inputs & textarea)
 - checkbox checkmarks
-- document using scss vars to build a custom ehui.css
-- document creating a theme css file
+- document theming
 
 ## Project/folder structure
 
