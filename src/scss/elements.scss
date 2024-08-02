@@ -44,8 +44,8 @@ html {
 
 body {
   height: auto;
-  background-color: var(--bg1);
-  color: var(--fg1);
+  background-color: $bg1;
+  color: $fg1;
   font-size: 1rem;
   line-height: 1.4;
   font-family: $font-family;
@@ -54,8 +54,8 @@ body {
 }
 
 ::selection {
-  background-color: var(--selectBg);
-  color: var(--select);
+  background-color: $select-bg;
+  color: $select;
 }
 
 h1,
@@ -145,8 +145,8 @@ s,
 
 mark,
 .mark {
-  background-color: var(--fg1);
-  color: var(--bg1);
+  background-color: $fg1;
+  color: $bg1;
   border-radius: $border-radius-text;
   padding: 0.2rem 0.4rem;
   font-size: 1rem;
@@ -156,7 +156,7 @@ mark,
 code,
 .code {
   font-family: monospace;
-  background-color: var(--bg2);
+  background-color: $bg2;
   border-radius: $border-radius-text;
   padding: 0.2rem 0.4rem;
   font-size: 1rem;
@@ -164,15 +164,15 @@ code,
 }
 
 .box {
-  background-color: var(--bg2);
-  color: var(--fg1);
-  border: 0.2rem solid var(--bg2);
+  background-color: $bg2;
+  color: $fg1;
+  border: 0.2rem solid $bg2;
   border-radius: $border-radius;
   padding: 1rem;
 }
 
 .hero {
-  border-bottom: 0.2rem solid var(--bg4);
+  border-bottom: 0.2rem solid $bg4;
   text-align: center;
   padding: 1rem;
   padding-bottom: 4rem;
@@ -193,8 +193,8 @@ header,
   height: 4rem;
 
   top: 0px;
-  background-color: var(--bg1);
-  border-bottom: 0.2rem solid var(--bg4);
+  background-color: $bg1;
+  border-bottom: 0.2rem solid $bg4;
   padding: 0px;
   margin: 0px;
 }
@@ -207,20 +207,20 @@ header > .nav {
 }
 
 .nav > div {
-  border-bottom: 0.2rem solid var(--bg1);
+  border-bottom: 0.2rem solid $bg1;
 }
 
 .nav > div.current {
-  border-bottom: 0.2rem solid var(--mainAlt);
+  border-bottom: 0.2rem solid $main-alt;
 }
 
 .nav > div.current > a {
-  color: var(--mainAlt);
+  color: $main-alt;
 }
 
 footer,
 .footer {
-  border-top: 0.2rem solid var(--bg4);
+  border-top: 0.2rem solid $bg4;
   text-align: center;
   padding: 1rem;
   padding-top: 4rem;
@@ -231,7 +231,7 @@ table {
   border-collapse: separate;
   border-spacing: 0px;
   border-radius: $border-radius;
-  border: 0.2rem solid var(--bg4);
+  border: 0.2rem solid $bg4;
 }
 
 td {
@@ -256,7 +256,7 @@ table.outer tfoot {
 
 table.inner th:not(:last-child),
 table.inner td:not(:last-child) {
- border-right: 0.2rem solid var(--bg4);
+ border-right: 0.2rem solid $bg4;
 }
 
 table.inner > thead > tr > th,
@@ -267,12 +267,12 @@ table.inner > tr:not(:last-child) > td,
 table.inner > tr:not(:last-child) > th,
 table.inner > thead:not(:last-child),
 table.inner > tbody:not(:last-child) {
-  border-bottom: 0.2rem solid var(--bg4);
+  border-bottom: 0.2rem solid $bg4;
 }
 
 a,
 .a {
-  color: var(--main);
+  color: $main;
   cursor: pointer;
   border-radius: $border-radius-text;
   font-size: 1rem;
@@ -285,12 +285,12 @@ a:hover,
 a:focus-visible,
 .a:hover,
 .a:focus-visible {
-  color: var(--mainAlt);
+  color: $main-alt;
 }
 
 a:focus-visible,
 .a:focus-visible {
-  outline: 0.2rem solid var(--main);
+  outline: 0.2rem solid $main;
   outline-offset: 0.4rem;
   transition-duration: 0.1s;
 }
@@ -304,9 +304,9 @@ button,
   text-align: center;
   cursor: pointer;
   text-decoration: none;
-  background-color: var(--main);
-  color: var(--bg1);
-  border: 0.2rem solid var(--main);
+  background-color: $main;
+  color: $bg1;
+  border: 0.2rem solid $main;
   border-radius: $border-radius-button;
   padding: 0.4rem 0.8rem;
   font-family: $font-family;
@@ -318,28 +318,28 @@ button,
 
 button.alt,
 .button.alt {
-  background-color: var(--bg3);
-  color: var(--main);
-  border-color: var(--bg3)
+  background-color: $bg3;
+  color: $main;
+  border-color: $bg3
 }
 
 button:hover,
 button:focus-visible,
 .button:hover,
 .button:focus-visible {
-  background-color: var(--mainAlt);
-  color: var(--bg1);
+  background-color: $main-alt;
+  color: $bg1;
 }
 
 button:focus-visible,
 .button:focus-visible {
-  outline: 0.2rem solid var(--main);
+  outline: 0.2rem solid $main;
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
 }
 
 ::placeholder {
-  color: var(--fg0);
+  color: $fg0;
   font-size: 1rem;
   font-family: $font-family;
   font-weight: normal;
@@ -357,9 +357,9 @@ textarea {
   cursor: text;
   text-decoration: none;
   font-family: $font-family;
-  background-color: var(--bg1);
-  color: var(--fg1);
-  border: 0.2rem solid var(--main);
+  background-color: $bg1;
+  color: $fg1;
+  border: 0.2rem solid $main;
   border-radius: $border-radius-textbox;
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
@@ -373,13 +373,13 @@ input[type="password"]:hover,
 input[type="password"]:focus-visible,
 textarea:hover,
 textarea:focus-visible {
-  border-color: var(--mainAlt);
+  border-color: $main-alt;
 }
 
 input[type="text"]:focus-visible,
 input[type="password"]:focus-visible,
 textarea:focus-visible {
-  outline: 0.2rem solid var(--main);
+  outline: 0.2rem solid $main;
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
 }
@@ -420,8 +420,8 @@ input[type="checkbox"] {
   width: 1.8rem;
   height: 1.8rem;
   margin: 0px;
-  background-color: var(--bg1);
-  border: 0.2rem solid var(--main);
+  background-color: $bg1;
+  border: 0.2rem solid $main;
   transition-duration: 0.4s;
 }
 
@@ -437,19 +437,19 @@ input[type="radio"]:hover,
 input[type="radio"]:focus-visible,
 input[type="checkbox"]:hover,
 input[type="checkbox"]:focus-visible {
-  border-color: var(--mainAlt);
+  border-color: $main-alt;
 }
 
 input[type="radio"]:focus-visible,
 input[type="checkbox"]:focus-visible {
-  outline: 0.2rem solid var(--main);
+  outline: 0.2rem solid $main;
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
 }
 
 input[type="radio"]:checked,
 input[type="checkbox"]:checked {
-  background-color: var(--main);
+  background-color: $main;
   transition-duration: 0.1s;
 }
 
@@ -489,7 +489,7 @@ input[type="checkbox"]:checked {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: var(--bg2);
+  background-color: $bg2;
   border-radius: $border-radius;
   align-items: center;
   justify-content: center;
@@ -518,7 +518,7 @@ input[type="checkbox"]:checked {
   width: 100%;
   height: 100%;
   margin-top: 0px;
-  background-color: var(--bg2);
+  background-color: $bg2;
   border-radius: $border-radius;
   align-items: center;
   justify-content: center;
@@ -541,14 +541,14 @@ input[type="checkbox"]:checked {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--fg0);
+  color: $fg0;
 }
 
 .separator::before,
 .separator::after {
   content: "";
   display: block;
-  background: var(--bg4);
+  background: $bg4;
   width: 100%;
   height: 0.2rem;
   margin: 0px 1rem;
@@ -574,15 +574,15 @@ input[type="checkbox"]:checked {
   left: 0px;
   width: 100vw;
   height: 100vh;
-  background-color: var(--bg1);
+  background-color: $bg1;
   opacity: 0.6;
 }
 
 .modal > .content {
   z-index: 200;
   width: 60vw;
-  background-color: var(--bg1);
-  border: 0.2rem solid var(--bg4);
+  background-color: $bg1;
+  border: 0.2rem solid $bg4;
   border-radius: $border-radius;
   padding: 1rem;
 }
@@ -595,7 +595,7 @@ input[type="checkbox"]:checked {
   .modal > .content {
     width: 100vw;
     border: none;
-    border-top: 0.2rem solid var(--bg4);
+    border-top: 0.2rem solid $bg4;
     border-radius: 0px;
     padding-bottom: 8rem;
   }
