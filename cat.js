@@ -17,7 +17,7 @@ function addDark() {
     css += "\n" +
     "@media (prefers-color-scheme: dark) {" +
     "\n";
-    fs.readFile("./css/ehui-light.css", "utf8", (err, data) => {
+    fs.readFile("./css/ehui-dark.css", "utf8", (err, data) => {
       if (err) {
         console.error(err);
         return;
