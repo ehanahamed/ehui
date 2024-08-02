@@ -33,7 +33,7 @@ This is a "UI kit" with a bunch of css styles. It's customizable and themeable, 
 
 ## Compiling, minifying, etc
 
-Use `npm run compile` to compile `css/ehui-dark.css` and `css/ehui-light.css` from the scss in `themes/` & `src/scss/`.
+Use `npm run compile` to compile `css/ehui-dark.css` and `css/ehui-light.css` from the scss in `themes/` & `src/scss/`. It just uses `npx sass`, its in package.json
 
 There's also a GitHub action (`.github/workflows/compile.yml`) that can run `npm run compile` & commit + push the compiled css for you. This is useful if you're developing on a device that you can't run npm commands on.
 
@@ -45,8 +45,17 @@ There's also a GitHub action (`.github/workflows/compile.yml`) that can run `npm
 @media (prefers-color-scheme: dark) {
     /* styles from ehui-dark.css */
 }
-``` 
+```
 
-### minifying
+`css/ehui-auto.css` is minified into `site/css/ehui-auto.min.css`, ehui-auto.min.css is used by the demo/testing html
 
+that means you should
+1. first compile (`npm run compile` or the github action) the other css files
+2. copy the compiled css into ehui-auto.css
+3. then minify (`npm run minify` or the github action)
 
+### Minifying css & updating site/
+
+Use `npm run minify` to minify the css in `css/`, which will create `.min.css` files in `site/css/`. Run this after compiling (`npm run compile`) so that the minified css in `site/css/` matches the css in `css/` which is compiled from `themes/` and `/src/scss/`.
+
+This also has a GitHub action (`.github/workflows/minify.yml`) in case you can't run the npm command at the moment.
