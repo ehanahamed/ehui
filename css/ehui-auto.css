@@ -1547,7 +1547,7 @@ button.large,
   https://ehan.dev/ehui/LICENSE.txt
 */
 :root {
-  color-scheme: light;
+  color-scheme: dark;
 }
 
 html {
@@ -1563,8 +1563,8 @@ html {
 }
 body {
   height: auto;
-  background-color: #fbfcfc;
-  color: #343a40;
+  background-color: #1e1e2e;
+  color: #c3cce9;
   font-size: 1rem;
   line-height: 1.4;
   font-family: "nunito", sans-serif;
@@ -1573,8 +1573,8 @@ body {
 }
 
 ::selection {
-  background-color: #C499FF;
-  color: #343a40;
+  background-color: #533380;
+  color: #c3cce9;
 }
 
 h1,
@@ -1665,8 +1665,8 @@ s,
 
 mark,
 .mark {
-  background-color: #343a40;
-  color: #fbfcfc;
+  background-color: #c3cce9;
+  color: #1e1e2e;
   border-radius: 0.4rem;
   padding: 0.2rem 0.4rem;
   font-size: 1rem;
@@ -1676,7 +1676,7 @@ mark,
 code,
 .code {
   font-family: monospace;
-  background-color: #f1f3f5;
+  background-color: #222333;
   border-radius: 0.4rem;
   padding: 0.2rem 0.4rem;
   font-size: 1rem;
@@ -1684,15 +1684,15 @@ code,
 }
 
 .box {
-  background-color: #f1f3f5;
-  color: #343a40;
-  border: 0.2rem solid #f1f3f5;
+  background-color: #222333;
+  color: #c3cce9;
+  border: 0.2rem solid #222333;
   border-radius: 0.8rem;
   padding: 1rem;
 }
 
 .hero {
-  border-bottom: 0.2rem solid #ced4da;
+  border-bottom: 0.2rem solid #3b3c4f;
   text-align: center;
   padding: 1rem;
   padding-bottom: 4rem;
@@ -1711,8 +1711,8 @@ header,
   /* TEMP*/
   height: 4rem;
   top: 0px;
-  background-color: #fbfcfc;
-  border-bottom: 0.2rem solid #ced4da;
+  background-color: #1e1e2e;
+  border-bottom: 0.2rem solid #3b3c4f;
   padding: 0px;
   margin: 0px;
 }
@@ -1725,20 +1725,20 @@ header > .nav {
 }
 
 .nav > div {
-  border-bottom: 0.2rem solid #fbfcfc;
+  border-bottom: 0.2rem solid #1e1e2e;
 }
 
 .nav > div.current {
-  border-bottom: 0.2rem solid #573699;
+  border-bottom: 0.2rem solid #BB99FF;
 }
 
 .nav > div.current > a {
-  color: #573699;
+  color: #BB99FF;
 }
 
 footer,
 .footer {
-  border-top: 0.2rem solid #ced4da;
+  border-top: 0.2rem solid #3b3c4f;
   text-align: center;
   padding: 1rem;
   padding-top: 4rem;
@@ -1749,7 +1749,7 @@ table {
   border-collapse: separate;
   border-spacing: 0px;
   border-radius: 0.8rem;
-  border: 0.2rem solid #ced4da;
+  border: 0.2rem solid #3b3c4f;
 }
 
 td {
@@ -1774,7 +1774,7 @@ table.outer tfoot {
 
 table.inner th:not(:last-child),
 table.inner td:not(:last-child) {
-  border-right: 0.2rem solid #ced4da;
+  border-right: 0.2rem solid #3b3c4f;
 }
 
 table.inner > thead > tr > th,
@@ -1785,12 +1785,12 @@ table.inner > tr:not(:last-child) > td,
 table.inner > tr:not(:last-child) > th,
 table.inner > thead:not(:last-child),
 table.inner > tbody:not(:last-child) {
-  border-bottom: 0.2rem solid #ced4da;
+  border-bottom: 0.2rem solid #3b3c4f;
 }
 
 a,
 .a {
-  color: #7447CC;
+  color: #9966FF;
   cursor: pointer;
   border-radius: 0.4rem;
   font-size: 1rem;
@@ -1803,12 +1803,12 @@ a:hover,
 a:focus-visible,
 .a:hover,
 .a:focus-visible {
-  color: #573699;
+  color: #BB99FF;
 }
 
 a:focus-visible,
 .a:focus-visible {
-  outline: 0.2rem solid #7447CC;
+  outline: 0.2rem solid #9966FF;
   outline-offset: 0.4rem;
   transition-duration: 0.1s;
 }
@@ -1822,9 +1822,9 @@ button,
   text-align: center;
   cursor: pointer;
   text-decoration: none;
-  background-color: #7447CC;
-  color: #fbfcfc;
-  border: 0.2rem solid #7447CC;
+  background-color: #9966FF;
+  color: #1e1e2e;
+  border: 0.2rem solid #9966FF;
   border-radius: 2rem;
   padding: 0.4rem 0.8rem;
   font-family: "nunito", sans-serif;
@@ -1836,28 +1836,28 @@ button,
 
 button.alt,
 .button.alt {
-  background-color: #e8ebee;
-  color: #7447CC;
-  border-color: #e8ebee;
+  background-color: #2b2c3d;
+  color: #9966FF;
+  border-color: #2b2c3d;
 }
 
 button:hover,
 button:focus-visible,
 .button:hover,
 .button:focus-visible {
-  background-color: #573699;
-  color: #fbfcfc;
+  background-color: #BB99FF;
+  color: #1e1e2e;
 }
 
 button:focus-visible,
 .button:focus-visible {
-  outline: 0.2rem solid #7447CC;
+  outline: 0.2rem solid #9966FF;
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
 }
 
 ::placeholder {
-  color: #868e96;
+  color: #9399b2;
   font-size: 1rem;
   font-family: "nunito", sans-serif;
   font-weight: normal;
@@ -1875,9 +1875,9 @@ textarea {
   cursor: text;
   text-decoration: none;
   font-family: "nunito", sans-serif;
-  background-color: #fbfcfc;
-  color: #343a40;
-  border: 0.2rem solid #7447CC;
+  background-color: #1e1e2e;
+  color: #c3cce9;
+  border: 0.2rem solid #9966FF;
   border-radius: 0.8rem;
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
@@ -1891,13 +1891,13 @@ input[type=password]:hover,
 input[type=password]:focus-visible,
 textarea:hover,
 textarea:focus-visible {
-  border-color: #573699;
+  border-color: #BB99FF;
 }
 
 input[type=text]:focus-visible,
 input[type=password]:focus-visible,
 textarea:focus-visible {
-  outline: 0.2rem solid #7447CC;
+  outline: 0.2rem solid #9966FF;
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
 }
@@ -1938,8 +1938,8 @@ input[type=checkbox] {
   width: 1.8rem;
   height: 1.8rem;
   margin: 0px;
-  background-color: #fbfcfc;
-  border: 0.2rem solid #7447CC;
+  background-color: #1e1e2e;
+  border: 0.2rem solid #9966FF;
   transition-duration: 0.4s;
 }
 
@@ -1955,19 +1955,19 @@ input[type=radio]:hover,
 input[type=radio]:focus-visible,
 input[type=checkbox]:hover,
 input[type=checkbox]:focus-visible {
-  border-color: #573699;
+  border-color: #BB99FF;
 }
 
 input[type=radio]:focus-visible,
 input[type=checkbox]:focus-visible {
-  outline: 0.2rem solid #7447CC;
+  outline: 0.2rem solid #9966FF;
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
 }
 
 input[type=radio]:checked,
 input[type=checkbox]:checked {
-  background-color: #7447CC;
+  background-color: #9966FF;
   transition-duration: 0.1s;
 }
 
@@ -2006,7 +2006,7 @@ input[type=checkbox]:checked {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: #f1f3f5;
+  background-color: #222333;
   border-radius: 0.8rem;
   align-items: center;
   justify-content: center;
@@ -2035,7 +2035,7 @@ input[type=checkbox]:checked {
   width: 100%;
   height: 100%;
   margin-top: 0px;
-  background-color: #f1f3f5;
+  background-color: #222333;
   border-radius: 0.8rem;
   align-items: center;
   justify-content: center;
@@ -2058,14 +2058,14 @@ input[type=checkbox]:checked {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #868e96;
+  color: #9399b2;
 }
 
 .separator::before,
 .separator::after {
   content: "";
   display: block;
-  background: #ced4da;
+  background: #3b3c4f;
   width: 100%;
   height: 0.2rem;
   margin: 0px 1rem;
@@ -2091,15 +2091,15 @@ input[type=checkbox]:checked {
   left: 0px;
   width: 100vw;
   height: 100vh;
-  background-color: #fbfcfc;
+  background-color: #1e1e2e;
   opacity: 0.6;
 }
 
 .modal > .content {
   z-index: 200;
   width: 60vw;
-  background-color: #fbfcfc;
-  border: 0.2rem solid #ced4da;
+  background-color: #1e1e2e;
+  border: 0.2rem solid #3b3c4f;
   border-radius: 0.8rem;
   padding: 1rem;
 }
@@ -2111,7 +2111,7 @@ input[type=checkbox]:checked {
   .modal > .content {
     width: 100vw;
     border: none;
-    border-top: 0.2rem solid #ced4da;
+    border-top: 0.2rem solid #3b3c4f;
     border-radius: 0px;
     padding-bottom: 8rem;
   }
@@ -2243,7 +2243,7 @@ input[type=checkbox]:checked {
   grid-area: right;
   justify-self: left;
   padding-left: 2rem;
-  border-left: 0.2rem solid #ced4da;
+  border-left: 0.2rem solid #3b3c4f;
 }
 
 .grid.split.noBorder > .left,
@@ -2333,7 +2333,7 @@ make the list have only one column
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 4rem;
-  border-bottom: 0.2rem solid #ced4da;
+  border-bottom: 0.2rem solid #3b3c4f;
 }
 
 .grid.intro > .logotype {
@@ -2492,12 +2492,12 @@ a.mark {
   /*
   undo stuff in other stuff?
   */
-  color: #7447CC;
+  color: #9966FF;
 }
 
 a.mark:hover,
 a.mark:focus-visible {
-  color: #573699;
+  color: #BB99FF;
 }
 
 /*
@@ -2512,7 +2512,7 @@ u.ohno,
 mark.ohno,
 .mark.ohno,
 code.ohno {
-  color: #E64545;
+  color: #ff6666;
 }
 
 span.yay,
@@ -2524,7 +2524,7 @@ u.yay,
 mark.yay,
 .mark.yay,
 code.yay {
-  color: #00B377;
+  color: #66FFCC;
 }
 
 span.bg1,
@@ -2536,7 +2536,7 @@ u.bg1,
 mark.bg1,
 .mark.bg1,
 code.bg1 {
-  color: #fbfcfc;
+  color: #1e1e2e;
 }
 
 span.fg2,
@@ -2548,7 +2548,7 @@ u.fg2,
 mark.fg2,
 .mark.fg2,
 code.fg2 {
-  color: #343a40;
+  color: #c3cce9;
 }
 
 span.fg1,
@@ -2560,7 +2560,7 @@ u.fg1,
 mark.fg1,
 .mark.fg1,
 code.fg1 {
-  color: #343a40;
+  color: #c3cce9;
 }
 
 span.fg0,
@@ -2572,7 +2572,7 @@ u.fg0,
 mark.fg0,
 .mark.fg0,
 code.fg0 {
-  color: #868e96;
+  color: #9399b2;
 }
 
 span.main,
@@ -2584,7 +2584,7 @@ u.main,
 mark.main,
 .mark.main,
 code.main {
-  color: #7447CC;
+  color: #9966FF;
 }
 
 span.extra,
@@ -2596,62 +2596,62 @@ u.extra,
 mark.extra,
 .mark.extra,
 code.extra {
-  color: #00B377;
+  color: #66FFCC;
 }
 
 mark.markOhno,
 .mark.markOhno {
-  background-color: #E64545;
+  background-color: #ff6666;
 }
 
 mark.markYay,
 .mark.markYay {
-  background-color: #00B377;
+  background-color: #66FFCC;
 }
 
 mark.markBg4,
 .mark.markBg4 {
-  background-color: #ced4da;
+  background-color: #3b3c4f;
 }
 
 mark.markBg2,
 .mark.markBg2 {
-  background-color: #f1f3f5;
+  background-color: #222333;
 }
 
 mark.markFg2,
 .mark.markFg2 {
-  background-color: #343a40;
+  background-color: #c3cce9;
 }
 
 mark.markFg1,
 .mark.markFg1 {
-  background-color: #343a40;
+  background-color: #c3cce9;
 }
 
 mark.markFg0,
 .mark.markFg0 {
-  background-color: #868e96;
+  background-color: #9399b2;
 }
 
 mark.markMain,
 .mark.markMain {
-  background-color: #7447CC;
+  background-color: #9966FF;
 }
 
 mark.markExtra,
 .mark.markExtra {
-  background-color: #00B377;
+  background-color: #66FFCC;
 }
 
 .box.ohno {
-  color: #E64545;
-  border-color: #E64545;
+  color: #ff6666;
+  border-color: #ff6666;
 }
 
 .box.yay {
-  color: #00B377;
-  border-color: #00B377;
+  color: #66FFCC;
+  border-color: #66FFCC;
 }
 
 pre,
@@ -2661,100 +2661,100 @@ pre,
 
 button.ohno,
 .button.ohno {
-  background-color: #E64545;
-  border-color: #E64545;
+  background-color: #ff6666;
+  border-color: #ff6666;
 }
 
 button.yay,
 .button.yay {
-  background-color: #00B377;
-  border-color: #00B377;
+  background-color: #66FFCC;
+  border-color: #66FFCC;
 }
 
 button.extra,
 .button.extra {
-  background-color: #00B377;
-  border-color: #00B377;
-  color: #f1f3f5;
+  background-color: #66FFCC;
+  border-color: #66FFCC;
+  color: #181825;
 }
 
 button.alt.ohno,
 .button.alt.ohno {
-  background-color: #e8ebee;
-  border-color: #e8ebee;
-  color: #E64545;
+  background-color: #2b2c3d;
+  border-color: #2b2c3d;
+  color: #ff6666;
 }
 
 button.alt.yay,
 .button.alt.yay {
-  background-color: #e8ebee;
-  border-color: #e8ebee;
-  color: #00B377;
+  background-color: #2b2c3d;
+  border-color: #2b2c3d;
+  color: #66FFCC;
 }
 
 button.alt.extra,
 .button.alt.extra {
-  background-color: #e8ebee;
-  border-color: #e8ebee;
-  color: #00B377;
+  background-color: #2b2c3d;
+  border-color: #2b2c3d;
+  color: #66FFCC;
 }
 
 button:hover.ohno,
 button:focus-visible.ohno,
 .button:hover.ohno,
 .button:focus-visible.ohno {
-  background-color: #B33636;
-  color: #fbfcfc;
+  background-color: #ff9999;
+  color: #1e1e2e;
 }
 
 button:hover.yay,
 button:focus-visible.yay,
 .button:hover.yay,
 .button:focus-visible.yay {
-  background-color: #008055;
-  color: #fbfcfc;
+  background-color: #CCFFEE;
+  color: #1e1e2e;
 }
 
 button:hover.extra,
 button:focus-visible.extra,
 .button:hover.extra,
 .button:focus-visible.extra {
-  background-color: #008055;
-  color: #f1f3f5;
+  background-color: #CCFFEE;
+  color: #181825;
 }
 
 button:focus-visible.ohno,
 .button:focus-visible.ohno {
-  outline-color: #E64545;
+  outline-color: #ff6666;
 }
 
 button:focus-visible.yay,
 .button:focus-visible.yay {
-  outline-color: #00B377;
+  outline-color: #66FFCC;
 }
 
 button:focus-visible.extra,
 .button:focus-visible.extra {
-  outline-color: #00B377;
+  outline-color: #66FFCC;
 }
 
 input[type=text].ohno,
 input[type=password].ohno,
 textarea.ohno {
-  border-color: #E64545;
+  border-color: #ff6666;
 }
 
 input[type=text].yay,
 input[type=password].yay,
 textarea.yay {
-  border-color: #00B377;
+  border-color: #66FFCC;
 }
 
 input[type=text].extra,
 input[type=password].extra,
 textarea.extra {
-  background-color: #f1f3f5;
-  border-color: #00B377;
+  background-color: #181825;
+  border-color: #66FFCC;
 }
 
 input[type=text].ohno:hover,
@@ -2763,7 +2763,7 @@ input[type=password].ohno:hover,
 input[type=password].ohno:focus-visible,
 textarea.ohno:hover,
 textarea.ohno:focus-visible {
-  border-color: #B33636;
+  border-color: #ff9999;
 }
 
 input[type=text].yay:hover,
@@ -2772,7 +2772,7 @@ input[type=password].yay:hover,
 input[type=password].yay:focus-visible,
 textarea.yay:hover,
 textarea.yay:focus-visible {
-  border-color: #008055;
+  border-color: #CCFFEE;
 }
 
 input[type=text].extra:hover,
@@ -2781,25 +2781,25 @@ input[type=password].extra:hover,
 input[type=password].extra:focus-visible,
 textarea.extra:hover,
 textarea.extra:focus-visible {
-  border-color: #008055;
+  border-color: #CCFFEE;
 }
 
 input[type=text].ohno:focus-visible,
 input[type=password].ohno:focus-visible,
 textarea.ohno:focus-visible {
-  outline-color: #E64545;
+  outline-color: #ff6666;
 }
 
 input[type=text].yay:focus-visible,
 input[type=password].yay:focus-visible,
 textarea.yay:focus-visible {
-  outline-color: #00B377;
+  outline-color: #66FFCC;
 }
 
 input[type=text].extra:focus-visible,
 input[type=password].extra:focus-visible,
 textarea.extra:focus-visible {
-  outline-color: #00B377;
+  outline-color: #66FFCC;
 }
 
 textarea.vertical {
@@ -2827,7 +2827,7 @@ textarea.horizontal {
   align-items: center;
   justify-content: center;
   margin: 0px;
-  background: #fbfcfc;
+  background: #1e1e2e;
 }
 
 .exitFullscreen {
@@ -2862,7 +2862,7 @@ textarea.horizontal {
   width: 200px;
   height: 200px;
   z-index: -100;
-  background-color: #7447CC;
+  background-color: #9966FF;
   opacity: 0.2;
   filter: blur(1rem);
   border-radius: 50%;
@@ -2885,7 +2885,7 @@ html.min .hero > .logo::before {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-bottom: 1rem;
-  background-color: #f1f3f5;
+  background-color: #181825;
 }
 
 /* third party styling requirements */
@@ -2930,83 +2930,83 @@ button.large,
 }
 
 .fill-ohno {
-  fill: #E64545;
+  fill: #ff6666;
 }
 
 .fill-ohno-alt {
-  fill: #B33636;
+  fill: #ff9999;
 }
 
 .fill-yay {
-  fill: #00B377;
+  fill: #66FFCC;
 }
 
 .fill-yay-alt {
-  fill: #008055;
+  fill: #CCFFEE;
 }
 
 .fill-main {
-  fill: #7447CC;
+  fill: #9966FF;
 }
 
 .fill-main-alt {
-  fill: #573699;
+  fill: #BB99FF;
 }
 
 .fill-extra {
-  fill: #00B377;
+  fill: #66FFCC;
 }
 
 .fill-extra-alt {
-  fill: #008055;
+  fill: #CCFFEE;
 }
 
 .fill-extra-bg {
-  fill: #f1f3f5;
+  fill: #181825;
 }
 
 .fill-fg2 {
-  fill: #343a40;
+  fill: #c3cce9;
 }
 
 .fill-fg1 {
-  fill: #343a40;
+  fill: #c3cce9;
 }
 
 .fill-fg0 {
-  fill: #868e96;
+  fill: #9399b2;
 }
 
 .fill-bg4 {
-  fill: #ced4da;
+  fill: #3b3c4f;
 }
 
 .fill-bg3 {
-  fill: #e8ebee;
+  fill: #2b2c3d;
 }
 
 .fill-bg2 {
-  fill: #f1f3f5;
+  fill: #222333;
 }
 
 .fill-bg1 {
-  fill: #fbfcfc;
+  fill: #1e1e2e;
 }
 
 .fill-bg0 {
-  fill: #f1f3f5;
+  fill: #181825;
 }
 
 .background-bg2 {
-  background-color: #f1f3f5;
+  background-color: #222333;
 }
 
 .background-bg1 {
-  background-color: #fbfcfc;
+  background-color: #1e1e2e;
 }
 
 .background-bg0 {
-  background-color: #f1f3f5;
+  background-color: #181825;
 }
 
 @media (prefers-reduced-motion) {
@@ -3043,7 +3043,7 @@ button.large,
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #f1f3f5;
+    background-color: #222333;
     border-radius: 0.8rem;
     align-items: center;
     justify-content: center;
