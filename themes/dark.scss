@@ -1,0 +1,29 @@
+/*!
+  EhUI
+  Copyright (c) Ehan Ahamed and contributors
+  Licensed under the UPL-1.0 License
+  https://ehui.ehan.dev/LICENSE.txt
+*/
+
+@use "../src/scss/ehui.scss" with (
+  $color-scheme: dark,
+  $ohno: #ff6666,
+  $ohno-alt: #ff9999,
+  $yay: #66FFCC,
+  $yay-alt: #CCFFEE,
+  $main: #9966FF,
+  $main-alt: #BB99FF,
+  $extra: #66FFCC,
+  $extra-alt: #CCFFEE,
+  $extra-bg: #181825,
+  $fg2: #c3cce9,
+  $fg1: #c3cce9,
+  $fg0: #9399b2,
+  $bg4: #3b3c4f,
+  $bg3: #2b2c3d,
+  $bg2: #222333,
+  $bg1: #1e1e2e,
+  $bg0: #181825,
+  $select: #c3cce9,
+  $select-bg: #533380,
+)
