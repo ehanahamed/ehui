@@ -1,0 +1,23 @@
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    name: Update site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone ehui (from GitHub)
+        run: git clone https://github.com/ehanahamed/ehui.git
+      - name: Clone site (from GitHub)
+        run: git clone https://github.com/ehanahamed/ehui.git
+      - name: Copy ehui's site/ into site's site/ehui/
+        run: |
+          rm -rf site/site/ehui
+          cp -R ehui/site site/site/ehui
+      - name: Commit & push to site (gh)
+        run: |
+          cd site
+          git add .
+          git config --global user.name "Ehan"
+          git config --global user.email "ehanahamed@ehan.dev"
+          git commit -m "Update ehui"
+          git push https://ehanahamed:${{ secrets.GH_TOKEN }}@github.com/ehanahamed/site.git --all
