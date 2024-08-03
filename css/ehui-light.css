@@ -1460,6 +1460,10 @@ button.large,
   fill: #f1f3f5;
 }
 
+.background-extra-bg {
+  background-color: #f1f3f5;
+}
+
 .background-bg2 {
   background-color: #f1f3f5;
 }
