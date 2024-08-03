@@ -35,7 +35,7 @@ This is a "UI kit" with a bunch of css styles. It's customizable and themeable, 
 
 ## Compiling, minifying, etc
 
-Use `npm run build` to compile + minify the css, and update `site/`. There is a github action (`.github/workflows/build.yml`) that can run `npm run build` & commit + push the compiled css for you (it's useful if you're developing on a device that you can't run npm commands on).
+Use `npm run build` to compile + minify the css, and update `site/`. There is a github action ([build.yml](.github/workflows/build.yml)) that can run `npm run build` & commit + push the compiled css for you (it's useful if you're developing on a device that you can't run npm commands on).
 
 `npm run build` does all the compiling, concatenating, and minifying in one command/npm script.
 
@@ -43,7 +43,7 @@ It just runs `npm run compile` and then `npm run minify`.
 
 ### Compiling
 
-Use `npm run compile` to compile `css/ehui-dark.css`, `css/ehui-light.css`, and `css/ehui-auto.css`. There's also a GitHub action (`.github/workflows/compile.yml`) for this.
+Use `npm run compile` to compile `css/ehui-dark.css`, `css/ehui-light.css`, and `css/ehui-auto.css`. There's also a GitHub action ([compile.yml](.github/workflows/compile.yml)) for this.
 
 `css/ehui-dark.css` and `css/ehui-light.css` are compiled from the scss in `themes/` (the scss in themes uses the scss in `src/scss/`).
 
@@ -61,4 +61,14 @@ Compiling ONLY updates `css/`. Use `npm run build` to update `css/` AND `site/cs
 
 Use `npm run minify` to minify the css in `css/`, which will create `.min.css` files in `site/css/`. Run this after compiling (`npm run compile`) so that `css/` and `site/css/` are up-to-date.
 
-This also has a GitHub action (`.github/workflows/minify.yml`) in case you can't run the npm command at the moment.
+This also has a GitHub action ([minify.yml](.github/workflows/minify.yml)) in case you can't run the npm command at the moment.
+
+## Site & demos/testing
+
+`site/` has ehui's website source code. All the html examples, demos, & testing is there.
+
+EhUI's website is at [ehan.dev/ehui](https://ehan.dev/ehui). Because it's part of `ehan.dev`, there's a copy of ehui's `site/` in `ehan.dev`'s source code (which is `ehanahamed/site` on [codeberg](https://codeberg.org/ehanahamed/site) and [github](https://github.com/ehanahamed/site)).
+
+To update the copy in the `site` repository, copy `<ehui repo>/site/` to `<site repo>/site/ehui/`.
+
+We have a github action ([update-site.yml](.github/workflows/update-site.yml)) to update the copy in `site`'s repo.
