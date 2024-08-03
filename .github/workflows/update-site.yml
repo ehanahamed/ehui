@@ -8,7 +8,7 @@ jobs:
       - name: Clone ehui (from GitHub)
         run: git clone https://github.com/ehanahamed/ehui.git
       - name: Clone site (from GitHub)
-        run: git clone https://github.com/ehanahamed/ehui.git
+        run: git clone https://github.com/ehanahamed/site.git
       - name: Copy ehui's site/ into site's site/ehui/
         run: |
           rm -rf site/site/ehui
