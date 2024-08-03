@@ -4,6 +4,7 @@ This is a "UI kit" with a bunch of css styles. It's customizable and themeable, 
 
 ## To-do
 
+- fix svgs in demo html
 - improve textboxes (inputs & textarea)
 - checkbox checkmarks
 - document theming
