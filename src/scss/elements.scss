@@ -359,8 +359,9 @@ textarea {
   font-family: $font-family;
   background-color: $bg1;
   color: $fg1;
-  border: 0.2rem solid $main;
+  border: 0.2rem solid $bg4;
   border-radius: $border-radius-textbox;
+  outline: none;
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
   line-height: 1.4;
@@ -368,20 +369,18 @@ textarea {
 }
 
 input[type="text"]:hover,
-input[type="text"]:focus-visible,
 input[type="password"]:hover,
-input[type="password"]:focus-visible,
-textarea:hover,
-textarea:focus-visible {
+textarea:hover {
   border-color: $main-alt;
 }
 
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus,
 input[type="text"]:focus-visible,
 input[type="password"]:focus-visible,
 textarea:focus-visible {
-  outline: 0.2rem solid $main;
-  outline-offset: 0.2rem;
-  transition-duration: 0.1s;
+  border-color: $main;
 }
 
 /*
