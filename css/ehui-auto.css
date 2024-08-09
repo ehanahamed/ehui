@@ -340,8 +340,9 @@ textarea {
   font-family: "nunito", sans-serif;
   background-color: #fbfcfc;
   color: #343a40;
-  border: 0.2rem solid #7447CC;
+  border: 0.2rem solid #ced4da;
   border-radius: 0.8rem;
+  outline: none;
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
   line-height: 1.4;
@@ -349,20 +350,18 @@ textarea {
 }
 
 input[type=text]:hover,
-input[type=text]:focus-visible,
 input[type=password]:hover,
-input[type=password]:focus-visible,
-textarea:hover,
-textarea:focus-visible {
+textarea:hover {
   border-color: #573699;
 }
 
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus,
 input[type=text]:focus-visible,
 input[type=password]:focus-visible,
 textarea:focus-visible {
-  outline: 0.2rem solid #7447CC;
-  outline-offset: 0.2rem;
-  transition-duration: 0.1s;
+  border-color: #7447CC;
 }
 
 /*
@@ -1881,8 +1880,9 @@ textarea {
   font-family: "nunito", sans-serif;
   background-color: #1e1e2e;
   color: #c3cce9;
-  border: 0.2rem solid #9966FF;
+  border: 0.2rem solid #3b3c4f;
   border-radius: 0.8rem;
+  outline: none;
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
   line-height: 1.4;
@@ -1890,20 +1890,18 @@ textarea {
 }
 
 input[type=text]:hover,
-input[type=text]:focus-visible,
 input[type=password]:hover,
-input[type=password]:focus-visible,
-textarea:hover,
-textarea:focus-visible {
+textarea:hover {
   border-color: #BB99FF;
 }
 
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus,
 input[type=text]:focus-visible,
 input[type=password]:focus-visible,
 textarea:focus-visible {
-  outline: 0.2rem solid #9966FF;
-  outline-offset: 0.2rem;
-  transition-duration: 0.1s;
+  border-color: #9966FF;
 }
 
 /*
