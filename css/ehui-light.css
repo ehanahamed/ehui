@@ -1331,40 +1331,6 @@ html.min .hero > .logo::before {
   background-color: #f1f3f5;
 }
 
-/* third party styling requirements */
-button.g,
-.button.g {
-  font-family: "roboto";
-  background-color: #dfdfed;
-  color: #181820;
-  border-color: #dfdfed;
-  padding: 0.6rem 0.8rem;
-  border-width: 0.4rem;
-}
-
-button.g:hover,
-.button.g:hover,
-button.g:focus-visible,
-.button.g:focus-visible {
-  color: #181820;
-  background-color: #CFCFE6;
-}
-
-button.g:focus-visible,
-.button.g:focus-visible {
-  outline-color: #dfdfed;
-}
-
-button.g img {
-  height: 1.4rem;
-  width: 1.4rem;
-}
-
-button.guest,
-.button.guest {
-  border-width: 0.4rem;
-}
-
 button.large,
 .button.large {
   padding: 0.6rem 1.2rem;
