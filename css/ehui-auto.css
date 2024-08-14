@@ -614,7 +614,8 @@ input[type=checkbox]:checked {
   flex-direction: column-reverse;
 }
 
-.flex.nowrap {
+.flex.nowrap,
+.flex.no-wrap {
   flex-wrap: nowrap;
 }
 
@@ -648,9 +649,15 @@ input[type=checkbox]:checked {
   align-content: flex-end;
 }
 
-.flex.alignCenter {
+.flex.alignCenter,
+.flex.center-v {
   align-items: center;
   align-content: center;
+}
+
+.flex.center-h {
+  justify-items: center;
+  justify-content: center;
 }
 
 .flex.stretch {
@@ -2101,7 +2108,8 @@ input[type=checkbox]:checked {
   flex-direction: column-reverse;
 }
 
-.flex.nowrap {
+.flex.nowrap,
+.flex.no-wrap {
   flex-wrap: nowrap;
 }
 
@@ -2135,9 +2143,15 @@ input[type=checkbox]:checked {
   align-content: flex-end;
 }
 
-.flex.alignCenter {
+.flex.alignCenter,
+.flex.center-v {
   align-items: center;
   align-content: center;
+}
+
+.flex.center-h {
+  justify-items: center;
+  justify-content: center;
 }
 
 .flex.stretch {
