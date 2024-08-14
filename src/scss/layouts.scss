@@ -32,7 +32,8 @@ $bg4: #3b3c4f !default;
   flex-direction: column-reverse;
 }
 
-.flex.nowrap {
+.flex.nowrap,
+.flex.no-wrap {
   flex-wrap: nowrap;
 }
 
@@ -66,9 +67,15 @@ $bg4: #3b3c4f !default;
   align-content: flex-end;
 }
 
-.flex.alignCenter {
+.flex.alignCenter,
+.flex.center-v {
   align-items: center;
   align-content: center;
+}
+
+.flex.center-h {
+  justify-items: center;
+  justify-content: center;
 }
 
 .flex.stretch {
