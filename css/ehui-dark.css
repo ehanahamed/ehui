@@ -204,11 +204,11 @@ header > .nav {
 }
 
 .nav > div.current {
-  border-bottom: 0.2rem solid #BB99FF;
+  border-bottom: 0.2rem solid #B899FF;
 }
 
 .nav > div.current > a {
-  color: #BB99FF;
+  color: #B899FF;
 }
 
 footer,
@@ -265,7 +265,7 @@ table.inner > tbody:not(:last-child) {
 
 a,
 .a {
-  color: #9966FF;
+  color: #9466FF;
   cursor: pointer;
   border-radius: 0.4rem;
   font-size: 1rem;
@@ -278,12 +278,12 @@ a:hover,
 a:focus-visible,
 .a:hover,
 .a:focus-visible {
-  color: #BB99FF;
+  color: #B899FF;
 }
 
 a:focus-visible,
 .a:focus-visible {
-  outline: 0.2rem solid #9966FF;
+  outline: 0.2rem solid #9466FF;
   outline-offset: 0.4rem;
   transition-duration: 0.1s;
 }
@@ -297,9 +297,9 @@ button,
   text-align: center;
   cursor: pointer;
   text-decoration: none;
-  background-color: #9966FF;
+  background-color: #9466FF;
   color: #20202E;
-  border: 0.2rem solid #9966FF;
+  border: 0.2rem solid #9466FF;
   border-radius: 2rem;
   padding: 0.4rem 0.8rem;
   font-family: "nunito", sans-serif;
@@ -312,7 +312,7 @@ button,
 button.alt,
 .button.alt {
   background-color: #2B2B3D;
-  color: #9966FF;
+  color: #9466FF;
   border-color: #2B2B3D;
 }
 
@@ -320,13 +320,13 @@ button:hover,
 button:focus-visible,
 .button:hover,
 .button:focus-visible {
-  background-color: #BB99FF;
+  background-color: #B899FF;
   color: #20202E;
 }
 
 button:focus-visible,
 .button:focus-visible {
-  outline: 0.2rem solid #9966FF;
+  outline: 0.2rem solid #9466FF;
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
 }
@@ -364,7 +364,7 @@ textarea {
 input[type=text]:hover,
 input[type=password]:hover,
 textarea:hover {
-  border-color: #BB99FF;
+  border-color: #B899FF;
 }
 
 input[type=text]:focus,
@@ -373,7 +373,7 @@ textarea:focus,
 input[type=text]:focus-visible,
 input[type=password]:focus-visible,
 textarea:focus-visible {
-  border-color: #9966FF;
+  border-color: #9466FF;
 }
 
 /*
@@ -413,7 +413,7 @@ input[type=checkbox] {
   height: 1.8rem;
   margin: 0px;
   background-color: #20202E;
-  border: 0.2rem solid #9966FF;
+  border: 0.2rem solid #9466FF;
   transition-duration: 0.4s;
 }
 
@@ -429,19 +429,19 @@ input[type=radio]:hover,
 input[type=radio]:focus-visible,
 input[type=checkbox]:hover,
 input[type=checkbox]:focus-visible {
-  border-color: #BB99FF;
+  border-color: #B899FF;
 }
 
 input[type=radio]:focus-visible,
 input[type=checkbox]:focus-visible {
-  outline: 0.2rem solid #9966FF;
+  outline: 0.2rem solid #9466FF;
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
 }
 
 input[type=radio]:checked,
 input[type=checkbox]:checked {
-  background-color: #9966FF;
+  background-color: #9466FF;
   transition-duration: 0.1s;
 }
 
@@ -974,12 +974,12 @@ a.mark {
   /*
   undo stuff in other stuff?
   */
-  color: #9966FF;
+  color: #9466FF;
 }
 
 a.mark:hover,
 a.mark:focus-visible {
-  color: #BB99FF;
+  color: #B899FF;
 }
 
 /*
@@ -1066,7 +1066,7 @@ u.main,
 mark.main,
 .mark.main,
 code.main {
-  color: #9966FF;
+  color: #9466FF;
 }
 
 span.extra,
@@ -1118,7 +1118,7 @@ mark.markFg0,
 
 mark.markMain,
 .mark.markMain {
-  background-color: #9966FF;
+  background-color: #9466FF;
 }
 
 mark.markExtra,
@@ -1325,7 +1325,7 @@ textarea.horizontal {
   width: 200px;
   height: 200px;
   z-index: -100;
-  background-color: #9966FF;
+  background-color: #9466FF;
   opacity: 0.2;
   filter: blur(1rem);
   border-radius: 50%;
@@ -1375,11 +1375,11 @@ button.large,
 }
 
 .fill-main {
-  fill: #9966FF;
+  fill: #9466FF;
 }
 
 .fill-main-alt {
-  fill: #BB99FF;
+  fill: #B899FF;
 }
 
 .fill-extra {
