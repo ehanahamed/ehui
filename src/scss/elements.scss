@@ -186,17 +186,27 @@ code,
 
 header,
 .header {
-  position: sticky;
-  z-index: 100;
-
+  position: static;
   /* TEMP*/
   height: 4rem;
-
-  top: 0px;
   background-color: $bg1;
   border-bottom: 0.2rem solid $bg4;
   padding: 0px;
-  margin: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 1rem;
+}
+
+header.sticky,
+.header.sticky {
+  position: sticky;
+  z-index: 100;
+  top: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
 }
 
 header > .nav {
