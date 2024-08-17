@@ -1521,7 +1521,7 @@ html {
 }
 body {
   height: auto;
-  background-color: #1e1e2e;
+  background-color: #20202E;
   color: #c3cce9;
   font-size: 1rem;
   line-height: 1.4;
@@ -1624,7 +1624,7 @@ s,
 mark,
 .mark {
   background-color: #c3cce9;
-  color: #1e1e2e;
+  color: #20202E;
   border-radius: 0.4rem;
   padding: 0.2rem 0.4rem;
   font-size: 1rem;
@@ -1634,7 +1634,7 @@ mark,
 code,
 .code {
   font-family: monospace;
-  background-color: #222333;
+  background-color: #242433;
   border-radius: 0.4rem;
   padding: 0.2rem 0.4rem;
   font-size: 1rem;
@@ -1642,15 +1642,15 @@ code,
 }
 
 .box {
-  background-color: #222333;
+  background-color: #242433;
   color: #c3cce9;
-  border: 0.2rem solid #222333;
+  border: 0.2rem solid #242433;
   border-radius: 0.8rem;
   padding: 1rem;
 }
 
 .hero {
-  border-bottom: 0.2rem solid #3b3c4f;
+  border-bottom: 0.2rem solid #2E2E42;
   text-align: center;
   padding: 1rem;
   padding-bottom: 4rem;
@@ -1669,8 +1669,8 @@ header,
   /* TEMP*/
   height: 4rem;
   top: 0px;
-  background-color: #1e1e2e;
-  border-bottom: 0.2rem solid #3b3c4f;
+  background-color: #20202E;
+  border-bottom: 0.2rem solid #2E2E42;
   padding: 0px;
   margin: 0px;
 }
@@ -1683,7 +1683,7 @@ header > .nav {
 }
 
 .nav > div {
-  border-bottom: 0.2rem solid #1e1e2e;
+  border-bottom: 0.2rem solid #20202E;
 }
 
 .nav > div.current {
@@ -1696,7 +1696,7 @@ header > .nav {
 
 footer,
 .footer {
-  border-top: 0.2rem solid #3b3c4f;
+  border-top: 0.2rem solid #2E2E42;
   text-align: center;
   padding: 1rem;
   padding-top: 4rem;
@@ -1707,7 +1707,7 @@ table {
   border-collapse: separate;
   border-spacing: 0px;
   border-radius: 0.8rem;
-  border: 0.2rem solid #3b3c4f;
+  border: 0.2rem solid #2E2E42;
 }
 
 td {
@@ -1732,7 +1732,7 @@ table.outer tfoot {
 
 table.inner th:not(:last-child),
 table.inner td:not(:last-child) {
-  border-right: 0.2rem solid #3b3c4f;
+  border-right: 0.2rem solid #2E2E42;
 }
 
 table.inner > thead > tr > th,
@@ -1743,7 +1743,7 @@ table.inner > tr:not(:last-child) > td,
 table.inner > tr:not(:last-child) > th,
 table.inner > thead:not(:last-child),
 table.inner > tbody:not(:last-child) {
-  border-bottom: 0.2rem solid #3b3c4f;
+  border-bottom: 0.2rem solid #2E2E42;
 }
 
 a,
@@ -1781,7 +1781,7 @@ button,
   cursor: pointer;
   text-decoration: none;
   background-color: #9966FF;
-  color: #1e1e2e;
+  color: #20202E;
   border: 0.2rem solid #9966FF;
   border-radius: 2rem;
   padding: 0.4rem 0.8rem;
@@ -1794,9 +1794,9 @@ button,
 
 button.alt,
 .button.alt {
-  background-color: #2b2c3d;
+  background-color: #2B2B3D;
   color: #9966FF;
-  border-color: #2b2c3d;
+  border-color: #2B2B3D;
 }
 
 button:hover,
@@ -1804,7 +1804,7 @@ button:focus-visible,
 .button:hover,
 .button:focus-visible {
   background-color: #BB99FF;
-  color: #1e1e2e;
+  color: #20202E;
 }
 
 button:focus-visible,
@@ -1833,9 +1833,9 @@ textarea {
   cursor: text;
   text-decoration: none;
   font-family: "nunito", sans-serif;
-  background-color: #1e1e2e;
+  background-color: #20202E;
   color: #c3cce9;
-  border: 0.2rem solid #3b3c4f;
+  border: 0.2rem solid #2E2E42;
   border-radius: 0.8rem;
   outline: none;
   padding: 0.4rem 0.8rem;
@@ -1895,7 +1895,7 @@ input[type=checkbox] {
   width: 1.8rem;
   height: 1.8rem;
   margin: 0px;
-  background-color: #1e1e2e;
+  background-color: #20202E;
   border: 0.2rem solid #9966FF;
   transition-duration: 0.4s;
 }
@@ -1963,7 +1963,7 @@ input[type=checkbox]:checked {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: #222333;
+  background-color: #242433;
   border-radius: 0.8rem;
   align-items: center;
   justify-content: center;
@@ -1992,7 +1992,7 @@ input[type=checkbox]:checked {
   width: 100%;
   height: 100%;
   margin-top: 0px;
-  background-color: #222333;
+  background-color: #242433;
   border-radius: 0.8rem;
   align-items: center;
   justify-content: center;
@@ -2023,7 +2023,7 @@ input[type=checkbox]:checked {
 .separator::after {
   content: "";
   display: block;
-  background: #3b3c4f;
+  background: #2E2E42;
   width: 100%;
   height: 0.2rem;
   margin: 0px 1rem;
@@ -2049,15 +2049,15 @@ input[type=checkbox]:checked {
   left: 0px;
   width: 100vw;
   height: 100vh;
-  background-color: #1e1e2e;
+  background-color: #20202E;
   opacity: 0.6;
 }
 
 .modal > .content {
   z-index: 200;
   width: 60vw;
-  background-color: #1e1e2e;
-  border: 0.2rem solid #3b3c4f;
+  background-color: #20202E;
+  border: 0.2rem solid #2E2E42;
   border-radius: 0.8rem;
   padding: 1rem;
 }
@@ -2069,7 +2069,7 @@ input[type=checkbox]:checked {
   .modal > .content {
     width: 100vw;
     border: none;
-    border-top: 0.2rem solid #3b3c4f;
+    border-top: 0.2rem solid #2E2E42;
     border-radius: 0px;
     padding-bottom: 8rem;
   }
@@ -2208,7 +2208,7 @@ input[type=checkbox]:checked {
   grid-area: right;
   justify-self: left;
   padding-left: 2rem;
-  border-left: 0.2rem solid #3b3c4f;
+  border-left: 0.2rem solid #2E2E42;
 }
 
 .grid.split.noBorder > .left,
@@ -2298,7 +2298,7 @@ make the list have only one column
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 4rem;
-  border-bottom: 0.2rem solid #3b3c4f;
+  border-bottom: 0.2rem solid #2E2E42;
 }
 
 .grid.intro > .logotype {
@@ -2501,7 +2501,7 @@ u.bg1,
 mark.bg1,
 .mark.bg1,
 code.bg1 {
-  color: #1e1e2e;
+  color: #20202E;
 }
 
 span.fg2,
@@ -2576,12 +2576,12 @@ mark.markYay,
 
 mark.markBg4,
 .mark.markBg4 {
-  background-color: #3b3c4f;
+  background-color: #2E2E42;
 }
 
 mark.markBg2,
 .mark.markBg2 {
-  background-color: #222333;
+  background-color: #242433;
 }
 
 mark.markFg2,
@@ -2640,27 +2640,27 @@ button.extra,
 .button.extra {
   background-color: #66FFCC;
   border-color: #66FFCC;
-  color: #181825;
+  color: #1B1B26;
 }
 
 button.alt.ohno,
 .button.alt.ohno {
-  background-color: #2b2c3d;
-  border-color: #2b2c3d;
+  background-color: #2B2B3D;
+  border-color: #2B2B3D;
   color: #ff6666;
 }
 
 button.alt.yay,
 .button.alt.yay {
-  background-color: #2b2c3d;
-  border-color: #2b2c3d;
+  background-color: #2B2B3D;
+  border-color: #2B2B3D;
   color: #66FFCC;
 }
 
 button.alt.extra,
 .button.alt.extra {
-  background-color: #2b2c3d;
-  border-color: #2b2c3d;
+  background-color: #2B2B3D;
+  border-color: #2B2B3D;
   color: #66FFCC;
 }
 
@@ -2669,7 +2669,7 @@ button:focus-visible.ohno,
 .button:hover.ohno,
 .button:focus-visible.ohno {
   background-color: #ff9999;
-  color: #1e1e2e;
+  color: #20202E;
 }
 
 button:hover.yay,
@@ -2677,7 +2677,7 @@ button:focus-visible.yay,
 .button:hover.yay,
 .button:focus-visible.yay {
   background-color: #CCFFEE;
-  color: #1e1e2e;
+  color: #20202E;
 }
 
 button:hover.extra,
@@ -2685,7 +2685,7 @@ button:focus-visible.extra,
 .button:hover.extra,
 .button:focus-visible.extra {
   background-color: #CCFFEE;
-  color: #181825;
+  color: #1B1B26;
 }
 
 button:focus-visible.ohno,
@@ -2773,7 +2773,7 @@ textarea.horizontal {
   align-items: center;
   justify-content: center;
   margin: 0px;
-  background: #1e1e2e;
+  background: #20202E;
 }
 
 .exitFullscreen {
@@ -2831,7 +2831,7 @@ html.min .hero > .logo::before {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-bottom: 1rem;
-  background-color: #181825;
+  background-color: #1B1B26;
 }
 
 button.large,
@@ -2874,7 +2874,7 @@ button.large,
 }
 
 .fill-extra-bg {
-  fill: #181825;
+  fill: #1B1B26;
 }
 
 .fill-fg2 {
@@ -2890,39 +2890,39 @@ button.large,
 }
 
 .fill-bg4 {
-  fill: #3b3c4f;
+  fill: #2E2E42;
 }
 
 .fill-bg3 {
-  fill: #2b2c3d;
+  fill: #2B2B3D;
 }
 
 .fill-bg2 {
-  fill: #222333;
+  fill: #242433;
 }
 
 .fill-bg1 {
-  fill: #1e1e2e;
+  fill: #20202E;
 }
 
 .fill-bg0 {
-  fill: #181825;
+  fill: #1B1B26;
 }
 
 .background-extra-bg {
-  background-color: #181825;
+  background-color: #1B1B26;
 }
 
 .background-bg2 {
-  background-color: #222333;
+  background-color: #242433;
 }
 
 .background-bg1 {
-  background-color: #1e1e2e;
+  background-color: #20202E;
 }
 
 .background-bg0 {
-  background-color: #181825;
+  background-color: #1B1B26;
 }
 
 @media (prefers-reduced-motion) {
@@ -2959,7 +2959,7 @@ button.large,
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #222333;
+    background-color: #242433;
     border-radius: 0.8rem;
     align-items: center;
     justify-content: center;
