@@ -493,6 +493,38 @@ button.large,
   background-color: $bg0;
 }
 
+.dropdown .content button.ohno,
+.dropdown .content .button.ohno {
+  background-color: $bg2;
+  border-color: $bg2;
+  color: $ohno;
+}
+
+.dropdown .content button.yay,
+.dropdown .content .button.yay {
+  background-color: $bg2;
+  border-color: $bg2;
+  color: $yay;
+}
+
+.dropdown .content button.ohno:hover,
+.dropdown .content .button.ohno:hover,
+.dropdown .content button.ohno:focus-visible,
+.dropdown .content .button.ohno:focus-visible {
+  background-color: $bg3;
+  border-color: $bg3;
+  color: $ohno-alt;
+}
+
+.dropdown .content button.yay:hover,
+.dropdown .content .button.yay:hover,
+.dropdown .content button.yay:focus-visible,
+.dropdown .content .button.yay:focus-visible {
+  background-color: $bg3;
+  border-color: $bg3;
+  color: $yay-alt;
+}
+
 @media (prefers-reduced-motion) {
   html {
     scroll-behavior: auto;
