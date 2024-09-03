@@ -595,6 +595,38 @@ input[type=checkbox]:checked {
   padding: 0px 1rem;
 }
 
+/* .dropdown html structure:
+<div class="dropdown">
+  <button>Toggle Dropdown!</button>
+  <div class="content">
+    <button>Something</button>
+    <button>Another thing</button>
+    <button>More things</button>
+  </div>
+</div>
+*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.2rem;
+  padding: 0.2rem;
+  background: #F0F2F5;
+  border: none;
+  border-radius: 0.8rem;
+}
+
+.dropdown:focus-within .content {
+  display: flex;
+}
+
 *,
 *:before,
 *:after {
