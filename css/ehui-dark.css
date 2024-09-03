@@ -616,15 +616,34 @@ input[type=checkbox]:checked {
   z-index: 1;
   flex-direction: column;
   align-items: stretch;
-  gap: 0.2rem;
-  padding: 0.2rem;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+  padding: 0.4rem;
   background: #242433;
-  border: none;
+  border: 0.2rem solid #2E2E42;
   border-radius: 0.8rem;
 }
 
 .dropdown:focus-within .content {
   display: flex;
+}
+
+.dropdown .content button,
+.dropdown .content .button {
+  margin-top: 0px;
+  text-wrap: nowrap;
+  background-color: #242433;
+  border-color: #242433;
+  color: #9466FF;
+}
+
+.dropdown .content button:hover,
+.dropdown .content .button:hover,
+.dropdown .content button:focus-visible,
+.dropdown .content .button:focus-visible {
+  background-color: #2B2B3D;
+  border-color: #2B2B3D;
+  color: #B899FF;
 }
 
 *,
