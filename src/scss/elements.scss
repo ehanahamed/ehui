@@ -665,3 +665,19 @@ input[type="checkbox"]:checked {
   border-color: $bg3;
   color: $main-alt;
 }
+
+button.dropdown-toggle,
+.button.dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  color: $fg1;
+}
+
+button.dropdown-toggle:hover,
+.button.dropdown-toggle:hover,
+button.dropdown-toggle:focus-visible,
+.button.dropdown-toggle:focus-visible {
+  background-color: $bg3;
+  border: none;
+  color: $main-alt;
+}
