@@ -640,6 +640,22 @@ input[type=checkbox]:checked {
   color: #6639BF;
 }
 
+button.dropdown-toggle,
+.button.dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  color: #343a40;
+}
+
+button.dropdown-toggle:hover,
+.button.dropdown-toggle:hover,
+button.dropdown-toggle:focus-visible,
+.button.dropdown-toggle:focus-visible {
+  background-color: #EBEDF0;
+  border: none;
+  color: #6639BF;
+}
+
 *,
 *:before,
 *:after {
@@ -2221,6 +2237,22 @@ input[type=checkbox]:checked {
 .dropdown .content .button:focus-visible {
   background-color: #2B2B3D;
   border-color: #2B2B3D;
+  color: #B899FF;
+}
+
+button.dropdown-toggle,
+.button.dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  color: #c3cce9;
+}
+
+button.dropdown-toggle:hover,
+.button.dropdown-toggle:hover,
+button.dropdown-toggle:focus-visible,
+.button.dropdown-toggle:focus-visible {
+  background-color: #2B2B3D;
+  border: none;
   color: #B899FF;
 }
 

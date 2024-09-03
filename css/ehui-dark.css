@@ -640,6 +640,22 @@ input[type=checkbox]:checked {
   color: #B899FF;
 }
 
+button.dropdown-toggle,
+.button.dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  color: #c3cce9;
+}
+
+button.dropdown-toggle:hover,
+.button.dropdown-toggle:hover,
+button.dropdown-toggle:focus-visible,
+.button.dropdown-toggle:focus-visible {
+  background-color: #2B2B3D;
+  border: none;
+  color: #B899FF;
+}
+
 *,
 *:before,
 *:after {
