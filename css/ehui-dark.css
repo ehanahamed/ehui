@@ -1493,6 +1493,38 @@ button.large,
   background-color: #1B1B26;
 }
 
+.dropdown .content button.ohno,
+.dropdown .content .button.ohno {
+  background-color: #242433;
+  border-color: #242433;
+  color: #ff6666;
+}
+
+.dropdown .content button.yay,
+.dropdown .content .button.yay {
+  background-color: #242433;
+  border-color: #242433;
+  color: #66FFCC;
+}
+
+.dropdown .content button.ohno:hover,
+.dropdown .content .button.ohno:hover,
+.dropdown .content button.ohno:focus-visible,
+.dropdown .content .button.ohno:focus-visible {
+  background-color: #2B2B3D;
+  border-color: #2B2B3D;
+  color: #ff9999;
+}
+
+.dropdown .content button.yay:hover,
+.dropdown .content .button.yay:hover,
+.dropdown .content button.yay:focus-visible,
+.dropdown .content .button.yay:focus-visible {
+  background-color: #2B2B3D;
+  border-color: #2B2B3D;
+  color: #CCFFEE;
+}
+
 @media (prefers-reduced-motion) {
   html {
     scroll-behavior: auto;
