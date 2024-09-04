@@ -724,7 +724,8 @@ button.icon-only-button:focus-visible,
   align-content: flex-start;
 }
 
-.flex.alignEnd {
+.flex.alignEnd,
+.flex.align-end {
   align-items: flex-end;
   align-content: flex-end;
 }
@@ -2378,7 +2379,8 @@ button.icon-only-button:focus-visible,
   align-content: flex-start;
 }
 
-.flex.alignEnd {
+.flex.alignEnd,
+.flex.align-end {
   align-items: flex-end;
   align-content: flex-end;
 }
