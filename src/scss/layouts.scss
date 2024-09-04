@@ -62,7 +62,8 @@ $bg4: #3b3c4f !default;
   align-content: flex-start;
 }
 
-.flex.alignEnd {
+.flex.alignEnd,
+.flex.align-end {
   align-items: flex-end;
   align-content: flex-end;
 }
