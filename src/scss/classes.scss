@@ -525,6 +525,50 @@ button.large,
   color: $yay-alt;
 }
 
+button.dropdown-toggle.ohno,
+.button.dropdown-toggle.ohno,
+button.icon-only-button.ohno,
+.button.icon-only-button.ohno {
+  background-color: transparent;
+  border: none;
+  color: $ohno;
+}
+
+button.dropdown-toggle.ohno:hover,
+.button.dropdown-toggle.ohno:hover,
+button.dropdown-toggle.ohno:focus-visible,
+.button.dropdown-toggle.ohno:focus-visible,
+button.icon-only-button.ohno:hover,
+.button.icon-only-button.ohno:hover,
+button.icon-only-button.ohno:focus-visible,
+.button.icon-only-button.ohno:focus-visible {
+  background-color: $bg3;
+  border: none;
+  color: $ohno-alt;
+}
+
+button.dropdown-toggle.yay,
+.button.dropdown-toggle.yay,
+button.icon-only-button.yay,
+.button.icon-only-button.yay {
+  background-color: transparent;
+  border: none;
+  color: $yay;
+}
+
+button.dropdown-toggle.yay:hover,
+.button.dropdown-toggle.yay:hover,
+button.dropdown-toggle.yay:focus-visible,
+.button.dropdown-toggle.yay:focus-visible,
+button.icon-only-button.yay:hover,
+.button.icon-only-button.yay:hover,
+button.icon-only-button.yay:focus-visible,
+.button.icon-only-button.yay:focus-visible {
+  background-color: $bg3;
+  border: none;
+  color: $yay-alt;
+}
+
 @media (prefers-reduced-motion) {
   html {
     scroll-behavior: auto;
