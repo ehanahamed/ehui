@@ -667,7 +667,9 @@ input[type="checkbox"]:checked {
 }
 
 button.dropdown-toggle,
-.button.dropdown-toggle {
+.button.dropdown-toggle,
+button.icon-only-button,
+.button.icon-only-button {
   background-color: transparent;
   border: none;
   color: $fg1;
@@ -676,7 +678,11 @@ button.dropdown-toggle,
 button.dropdown-toggle:hover,
 .button.dropdown-toggle:hover,
 button.dropdown-toggle:focus-visible,
-.button.dropdown-toggle:focus-visible {
+.button.dropdown-toggle:focus-visible,
+button.icon-only-button:hover,
+.button.icon-only-button:hover,
+button.icon-only-button:focus-visible,
+.button.icon-only-button:focus-visible {
   background-color: $bg3;
   border: none;
   color: $main-alt;
