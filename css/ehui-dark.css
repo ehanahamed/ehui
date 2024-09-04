@@ -641,7 +641,9 @@ input[type=checkbox]:checked {
 }
 
 button.dropdown-toggle,
-.button.dropdown-toggle {
+.button.dropdown-toggle,
+button.icon-only-button,
+.button.icon-only-button {
   background-color: transparent;
   border: none;
   color: #c3cce9;
@@ -650,7 +652,11 @@ button.dropdown-toggle,
 button.dropdown-toggle:hover,
 .button.dropdown-toggle:hover,
 button.dropdown-toggle:focus-visible,
-.button.dropdown-toggle:focus-visible {
+.button.dropdown-toggle:focus-visible,
+button.icon-only-button:hover,
+.button.icon-only-button:hover,
+button.icon-only-button:focus-visible,
+.button.icon-only-button:focus-visible {
   background-color: #2B2B3D;
   border: none;
   color: #B899FF;
@@ -763,6 +769,10 @@ button.dropdown-toggle:focus-visible,
 
 .justifyselfend {
   justify-self: end;
+}
+
+.flex.compact-gap {
+  gap: 0.2rem;
 }
 
 .grid {
@@ -1532,6 +1542,50 @@ button.large,
 .dropdown .content .button.yay:focus-visible {
   background-color: #2B2B3D;
   border-color: #2B2B3D;
+  color: #CCFFEE;
+}
+
+button.dropdown-toggle.ohno,
+.button.dropdown-toggle.ohno,
+button.icon-only-button.ohno,
+.button.icon-only-button.ohno {
+  background-color: transparent;
+  border: none;
+  color: #ff6666;
+}
+
+button.dropdown-toggle.ohno:hover,
+.button.dropdown-toggle.ohno:hover,
+button.dropdown-toggle.ohno:focus-visible,
+.button.dropdown-toggle.ohno:focus-visible,
+button.icon-only-button.ohno:hover,
+.button.icon-only-button.ohno:hover,
+button.icon-only-button.ohno:focus-visible,
+.button.icon-only-button.ohno:focus-visible {
+  background-color: #2B2B3D;
+  border: none;
+  color: #ff9999;
+}
+
+button.dropdown-toggle.yay,
+.button.dropdown-toggle.yay,
+button.icon-only-button.yay,
+.button.icon-only-button.yay {
+  background-color: transparent;
+  border: none;
+  color: #66FFCC;
+}
+
+button.dropdown-toggle.yay:hover,
+.button.dropdown-toggle.yay:hover,
+button.dropdown-toggle.yay:focus-visible,
+.button.dropdown-toggle.yay:focus-visible,
+button.icon-only-button.yay:hover,
+.button.icon-only-button.yay:hover,
+button.icon-only-button.yay:focus-visible,
+.button.icon-only-button.yay:focus-visible {
+  background-color: #2B2B3D;
+  border: none;
   color: #CCFFEE;
 }
 
