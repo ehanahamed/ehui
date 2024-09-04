@@ -109,6 +109,10 @@ $bg4: #3b3c4f !default;
   justify-self: end;
 }
 
+.flex.compact-gap {
+  gap: 0.2rem;
+}
+
 .grid {
   display: grid;
 }
