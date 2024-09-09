@@ -263,6 +263,7 @@ a,
   cursor: pointer;
   border-radius: 0.4rem;
   font-size: 1rem;
+  font-weight: 600;
   line-height: 1.4;
   text-decoration: none;
   transition-duration: 0.4s;
@@ -1918,6 +1919,7 @@ a,
   cursor: pointer;
   border-radius: 0.4rem;
   font-size: 1rem;
+  font-weight: 600;
   line-height: 1.4;
   text-decoration: none;
   transition-duration: 0.4s;
