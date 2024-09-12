@@ -148,6 +148,11 @@ code,
   padding: 1rem;
 }
 
+.extra .box {
+  background-color: #20202E;
+  border-color: #20202E;
+}
+
 .hero {
   border-bottom: 0.2rem solid #2E2E42;
   text-align: center;

@@ -148,6 +148,11 @@ code,
   padding: 1rem;
 }
 
+.extra .box {
+  background-color: #FBFCFC;
+  border-color: #FBFCFC;
+}
+
 .hero {
   border-bottom: 0.2rem solid #E1E2E6;
   text-align: center;
@@ -1802,6 +1807,11 @@ code,
   border: 0.2rem solid #242433;
   border-radius: 0.8rem;
   padding: 1rem;
+}
+
+.extra .box {
+  background-color: #20202E;
+  border-color: #20202E;
 }
 
 .hero {
