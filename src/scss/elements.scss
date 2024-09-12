@@ -172,6 +172,11 @@ code,
   padding: 1rem;
 }
 
+.extra .box {
+  background-color: $bg1;
+  border-color: $bg1;
+}
+
 .hero {
   border-bottom: 0.2rem solid $bg4;
   text-align: center;
