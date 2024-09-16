@@ -720,10 +720,23 @@ button.icon-only-button:focus-visible,
 }
 
 .wave-top,
-.wave-top.bg0 {
-  margin-top: 1rem;
+.wave-bottom {
   margin-left: 0px;
   margin-right: 0px;
+  background-size: 100% 10rem;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 800px) {
+  .wave-top,
+  .wave-bottom {
+    background-size: 100% 10rem;
+  }
+}
+
+.wave-top,
+.wave-top.bg0 {
+  margin-top: 1rem;
   margin-bottom: 0px;
   background-image: url(wave-top-svg-url($bg0));
 }
@@ -735,8 +748,6 @@ button.icon-only-button:focus-visible,
 .wave-bottom,
 .wave-bottom.bg0 {
   margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
   margin-bottom: 1rem;
   background-image: url(wave-bottom-svg-url($bg0));
 }
