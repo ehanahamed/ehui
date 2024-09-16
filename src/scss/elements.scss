@@ -703,8 +703,6 @@ button.icon-only-button:focus-visible,
   @return $string;
 }
 
-@debug url-encode-replace-hashtag("#abc");
-
 @function wave-top-svg-url($fill-color) {
   @return url-encode-replace-hashtag(
     "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22" +
