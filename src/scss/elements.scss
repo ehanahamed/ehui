@@ -737,6 +737,14 @@ button.icon-only-button:focus-visible,
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .wave-top,
+  .wave-bottom {
+    height: 6rem;
+    background-size: 100% 6rem;
+  }
+}
+
 .wave-top,
 .wave-top.bg0 {
   margin-top: 1rem;
