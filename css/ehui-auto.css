@@ -685,6 +685,13 @@ button.icon-only-button:focus-visible,
     background-size: 100% 8rem;
   }
 }
+@media only screen and (max-width: 600px) {
+  .wave-top,
+  .wave-bottom {
+    height: 6rem;
+    background-size: 100% 6rem;
+  }
+}
 .wave-top,
 .wave-top.bg0 {
   margin-top: 1rem;
@@ -2383,6 +2390,13 @@ button.icon-only-button:focus-visible,
   .wave-bottom {
     height: 8rem;
     background-size: 100% 8rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .wave-top,
+  .wave-bottom {
+    height: 6rem;
+    background-size: 100% 6rem;
   }
 }
 .wave-top,
