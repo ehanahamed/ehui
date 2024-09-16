@@ -669,10 +669,22 @@ button.icon-only-button:focus-visible,
 }
 
 .wave-top,
-.wave-top.bg0 {
-  margin-top: 1rem;
+.wave-bottom {
   margin-left: 0px;
   margin-right: 0px;
+  background-size: 100% 10rem;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 800px) {
+  .wave-top,
+  .wave-bottom {
+    background-size: 100% 10rem;
+  }
+}
+.wave-top,
+.wave-top.bg0 {
+  margin-top: 1rem;
   margin-bottom: 0px;
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23F0F2F5%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E");
 }
@@ -684,8 +696,6 @@ button.icon-only-button:focus-visible,
 .wave-bottom,
 .wave-bottom.bg0 {
   margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
   margin-bottom: 1rem;
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23F0F2F5%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
 }
@@ -2356,10 +2366,22 @@ button.icon-only-button:focus-visible,
 }
 
 .wave-top,
-.wave-top.bg0 {
-  margin-top: 1rem;
+.wave-bottom {
   margin-left: 0px;
   margin-right: 0px;
+  background-size: 100% 10rem;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 800px) {
+  .wave-top,
+  .wave-bottom {
+    background-size: 100% 10rem;
+  }
+}
+.wave-top,
+.wave-top.bg0 {
+  margin-top: 1rem;
   margin-bottom: 0px;
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%231B1B26%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E");
 }
@@ -2371,8 +2393,6 @@ button.icon-only-button:focus-visible,
 .wave-bottom,
 .wave-bottom.bg0 {
   margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
   margin-bottom: 1rem;
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%231B1B26%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
 }
