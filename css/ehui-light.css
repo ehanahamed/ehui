@@ -668,6 +668,75 @@ button.icon-only-button:focus-visible,
   color: #6639BF;
 }
 
+.combo-select {
+  display: flex;
+  gap: 0px;
+  align-items: stretch;
+}
+
+.combo-select > .left,
+.combo-select > button.left,
+.combo-select > .button.left {
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.combo-select > .mid,
+.combo-select > button.mid,
+.combo-select > .button.mid {
+  margin: 0px;
+  border-radius: 0px;
+}
+
+.combo-select > .right,
+.combo-select > button.right,
+.combo-select > .button.right {
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.combo-select > button,
+.combo-select > .button {
+  background-color: #EBEDF0;
+  color: #7C49F2;
+  border-color: #EBEDF0;
+}
+
+.combo-select > button:hover,
+.combo-select > .button:hover,
+.combo-select > button.selected:hover,
+.combo-select > .button.selected:hover,
+.combo-select > button:focus-visible,
+.combo-select > .button:focus-visible,
+.combo-select > button.selected:focus-visible,
+.combo-select > .button.selected:focus-visible {
+  background-color: #6639BF;
+  color: #FBFCFC;
+  border-color: #7C49F2;
+}
+
+.combo-select > .selected,
+.combo-select > button.selected,
+.combo-select > .button.selected {
+  background-color: #7C49F2;
+  color: #FBFCFC;
+  border-color: #7C49F2;
+}
+
+.combo-select .combo-selected-icon {
+  display: none;
+}
+
+.combo-select > .selected > .combo-selected-icon {
+  display: inline;
+}
+
 .wave-top,
 .wave-bottom {
   width: 100%;
