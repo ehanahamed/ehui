@@ -171,6 +171,52 @@
               <i class="nf nf-fa-trash_can"></i>
             </button>
           </div>
+          <p>Combo-select buttons (<code>.combo-select</code> class)</p>
+          <div class="combo-select" id="combo-select-numbered">
+            <button class="left">
+              1
+            </button>
+            <button class="mid selected">
+              2
+            </button>
+            <button class="mid">
+              3
+            </button>
+            <button class="mid">
+              4
+            </button>
+            <button class="mid">
+              5
+            </button>
+            <button class="right">
+              6
+            </button>
+          </div>
+          <p>Combo-select with <code>.combo-selected-icon</code></p>
+          <div class="combo-select">
+            <button class="left selected" id="comboSelect1">
+              <i class="combo-selected-icon nf nf-fa-check"></i>
+              Option 1
+            </button>
+            <button class="mid" id="comboSelect2">
+              <i class="combo-selected-icon nf nf-fa-check"></i>
+              Option 2
+            </button>
+            <button class="right" id="comboSelect3">
+              <i class="combo-selected-icon nf nf-fa-check"></i>
+              Option 3
+            </button>
+          </div>
+          <div class="combo-select">
+            <button class="left selected" id="comboSelectA">
+              <i class="combo-selected-icon nf nf-fa-check"></i>
+              Option A
+            </button>
+            <button class="right" id="comboSelectB">
+              <i class="combo-selected-icon nf nf-fa-check"></i>
+              Option B
+            </button>
+          </div>
           <h2>Notice boxes</h2>
           <p class="box center">Notice box text</p>
           <p class="box center yay">Notice box text</p>
@@ -473,11 +519,7 @@
       <h2>Footer</h2>
       <p>Text text text text</p>
     </footer>
-    <script>
-      /* devtools for mobile & school chromebooks */
-      (function () { var script = document.createElement('script'); script.src="https://cdn.jsdelivr.net/npm/eruda"; document.body.append(script); script.onload = function () { eruda.init(); } })();
-    </script>
-    <script src="https://ehui.ehan.dev/js/ehUi.js"></script>
+    <!--<script src="https://ehui.ehan.dev/js/ehUi.js"></script>
     <script src="https://ehui.ehan.dev/js/modals.js"></script>
     <script>
 	    var indx = ehUi.modals.create({
@@ -505,6 +547,48 @@
       }
       function chColor() {
         ehUi.modals.list[indx].style.color = "#ff0000"
+      }
+    </script>-->
+    <script>
+      /* combo-select with Option 1, Option 2, Option 3 */
+      document.getElementById("comboSelect1").addEventListener("click", function () {
+        document.getElementById("comboSelect1").classList.add("selected");
+        document.getElementById("comboSelect2").classList.remove("selected");
+        document.getElementById("comboSelect3").classList.remove("selected");
+      })
+      document.getElementById("comboSelect2").addEventListener("click", function () {
+        document.getElementById("comboSelect1").classList.remove("selected");
+        document.getElementById("comboSelect2").classList.add("selected");
+        document.getElementById("comboSelect3").classList.remove("selected");
+      })
+      document.getElementById("comboSelect3").addEventListener("click", function () {
+        document.getElementById("comboSelect1").classList.remove("selected");
+        document.getElementById("comboSelect2").classList.remove("selected");
+        document.getElementById("comboSelect3").classList.add("selected");
+      })
+
+      /* combo-select with Option A and Option B*/
+      document.getElementById("comboSelectA").addEventListener("click", function () {
+        document.getElementById("comboSelectA").classList.add("selected");
+        document.getElementById("comboSelectB").classList.remove("selected");
+      })
+      document.getElementById("comboSelectB").addEventListener("click", function () {
+        document.getElementById("comboSelectA").classList.remove("selected");
+        document.getElementById("comboSelectB").classList.add("selected");
+      })
+
+      /* combo-select many numbers (initalized with a for loop and uses event.target) */
+      var comboSelectNumbered = document.getElementById("combo-select-numbered");
+      for (var i = 0; i < comboSelectNumbered.children.length; i++) {
+        comboSelectNumbered.children[i].addEventListener(
+          "click",
+          function (event) {
+            for (var i2 = 0; i2 < comboSelectNumbered.children.length; i2++) {
+              comboSelectNumbered.children[i2].classList.remove("selected");
+            }
+            event.target.classList.add("selected");
+          }
+        )
       }
     </script>
   </body>
