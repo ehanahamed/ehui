@@ -579,18 +579,19 @@ input[type=checkbox]:checked {
   padding: 1rem;
 }
 
-@media only screen and (max-width: 800px) {
+/*@media only screen and (max-width: 800px) {
   .modal {
     align-items: flex-end;
   }
+
   .modal > .content {
     width: 100vw;
     border: none;
-    border-top: 0.2rem solid #E1E2E6;
+    border-top: 0.2rem solid $bg4;
     border-radius: 0px;
     padding-bottom: 8rem;
   }
-}
+}*/
 .flex.pop {
   padding: 0px 1rem;
 }
@@ -2355,18 +2356,19 @@ input[type=checkbox]:checked {
   padding: 1rem;
 }
 
-@media only screen and (max-width: 800px) {
+/*@media only screen and (max-width: 800px) {
   .modal {
     align-items: flex-end;
   }
+
   .modal > .content {
     width: 100vw;
     border: none;
-    border-top: 0.2rem solid #2E2E42;
+    border-top: 0.2rem solid $bg4;
     border-radius: 0px;
     padding-bottom: 8rem;
   }
-}
+}*/
 .flex.pop {
   padding: 0px 1rem;
 }
