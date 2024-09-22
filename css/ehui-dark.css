@@ -572,26 +572,20 @@ input[type=checkbox]:checked {
 
 .modal > .content {
   z-index: 200;
-  width: 60vw;
+  min-width: 40vw;
+  width: auto;
+  max-width: 90vw;
   background-color: #20202E;
   border: 0.2rem solid #2E2E42;
   border-radius: 0.8rem;
   padding: 1rem;
 }
 
-/*@media only screen and (max-width: 800px) {
-  .modal {
-    align-items: flex-end;
-  }
-
+@media only screen and (max-width: 800px) {
   .modal > .content {
-    width: 100vw;
-    border: none;
-    border-top: 0.2rem solid $bg4;
-    border-radius: 0px;
-    padding-bottom: 8rem;
+    width: 90vw;
   }
-}*/
+}
 .flex.pop {
   padding: 0px 1rem;
 }
