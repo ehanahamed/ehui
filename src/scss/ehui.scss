@@ -28,6 +28,7 @@ $font-family: "nunito", sans-serif !default;
 $border-radius: 0.8rem !default;
 $border-radius-button: 2rem !default;
 $border-radius-textbox: 0.8rem !default;
+$border-radius-textbox-searchbar: 2rem !default;
 $border-radius-checkbox: 0.6rem !default;
 $border-radius-text: 0.4rem !default;
 $font-weight-button: 600 !default;
@@ -38,6 +39,7 @@ $font-weight-link: 600 !default;
   $border-radius: $border-radius,
   $border-radius-button: $border-radius-button,
   $border-radius-textbox: $border-radius-textbox,
+  $border-radius-textbox-search: $border-radius-textbox-searchbar,
   $border-radius-checkbox: $border-radius-checkbox,
   $border-radius-text: $border-radius-text,
   $font-weight-button: $font-weight-button,
