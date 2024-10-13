@@ -376,6 +376,44 @@ textarea:focus-visible {
   border-color: #7C49F2;
 }
 
+div.searchbar {
+  display: flex;
+  gap: 0px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: #F5F5F5;
+  border: 0.2rem solid #F5F5F5;
+  border-radius: 2rem;
+  transition-duration: 0.4s;
+}
+
+div.searchbar > .searchbar-icon {
+  padding-left: 0.6rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-right: 0px;
+}
+
+div.searchbar > input[type=text],
+div.searchbar > input[type=text]:hover,
+div.searchbar > input[type=text]:focus {
+  margin-top: 0px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+  padding-left: 0.6rem;
+}
+
+div.searchbar > input[type=text]:focus-visible {
+  background-color: transparent;
+  border: none;
+}
+
+div.searchbar:focus-within {
+  border-color: #7C49F2;
+}
+
 /*
 the html of a radio should look like:
 
