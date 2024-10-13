@@ -398,6 +398,7 @@ div.searchbar > .searchbar-icon {
 div.searchbar > input[type=text],
 div.searchbar > input[type=text]:hover,
 div.searchbar > input[type=text]:focus {
+  width: 100%;
   margin-top: 0px;
   background-color: transparent;
   border: none;
