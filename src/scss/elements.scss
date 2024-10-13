@@ -2,6 +2,7 @@ $font-family: sans-serif !default;
 $border-radius: 0.8rem !default;
 $border-radius-button: 2rem !default;
 $border-radius-textbox: 0.8rem !default;
+$border-radius-textbox-searchbar: 2rem !default;
 $border-radius-checkbox: 0.6rem !default;
 $border-radius-text: 0.4rem !default;
 $font-weight-button: 600 !default;
@@ -398,6 +399,31 @@ input[type="text"]:focus-visible,
 input[type="password"]:focus-visible,
 textarea:focus-visible {
   border-color: $main;
+}
+
+div.searchbar {
+  background-color: $bg2;
+  border-radius: $border-radius-textbox-searchbar;
+}
+
+div.searchbar > .searchbar-icon {
+  padding-left: 0.6rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-right: 0px;
+}
+
+div.searchbar > input[type="text"],
+div.searchbar > input[type="text"]:hover,
+div.searchbar > input[type="text"]:focus {
+  background-color: $bg2;
+  border: none;
+  border-radius: $border-radius-textbox-searchbar;
+  padding-left: 0.4rem;
+}
+
+div.searchbar > input[type="text"]:focus-visible {
+  border: none;
 }
 
 /*
