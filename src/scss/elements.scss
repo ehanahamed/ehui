@@ -402,8 +402,15 @@ textarea:focus-visible {
 }
 
 div.searchbar {
+  display: flex;
+  gap: 0px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
   background-color: $bg2;
+  border: 0.2rem solid $bg2;
   border-radius: $border-radius-textbox-searchbar;
+  transition-duration: 0.4s;
 }
 
 div.searchbar > .searchbar-icon {
@@ -416,14 +423,20 @@ div.searchbar > .searchbar-icon {
 div.searchbar > input[type="text"],
 div.searchbar > input[type="text"]:hover,
 div.searchbar > input[type="text"]:focus {
-  background-color: $bg2;
+  margin-top: 0px;
+  background-color: transparent;
   border: none;
-  border-radius: $border-radius-textbox-searchbar;
-  padding-left: 0.4rem;
+  border-radius: 0px;
+  padding-left: 0.6rem;
 }
 
 div.searchbar > input[type="text"]:focus-visible {
+  background-color: transparent;
   border: none;
+}
+
+div.searchbar:focus-within {
+  border-color: $main;
 }
 
 /*
