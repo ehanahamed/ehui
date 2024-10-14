@@ -1128,8 +1128,8 @@ header.with-search.with-status {
 
 header > .menu {
   grid-area: menu;
-  text-align: left;
-  justify-self: left;
+  text-align: start;
+  justify-self: start;
 }
 
 header > .options {
@@ -1155,6 +1155,7 @@ header.with-search.with-status > .search {
 
 header.with-search.with-status > .status {
   grid-area: status;
+  text-align: end;
   justify-self: end;
 }
 
