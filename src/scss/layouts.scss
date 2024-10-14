@@ -313,6 +313,11 @@ header {
   grid-template-areas: "menu";
 }
 
+header.with-search.with-status {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "menu search status";
+}
+
 header > .menu {
   grid-area: menu;
   text-align: left;
@@ -330,6 +335,19 @@ header > .options {
   height: 100%;
   display: flex;
   align-items: center;
+}
+
+header.with-search.with-status > .search {
+  grid-area: search;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+header.with-search.with-status > .status {
+  grid-area: status;
+  justify-self: end;
 }
 
 /*
