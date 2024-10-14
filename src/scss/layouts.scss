@@ -347,6 +347,7 @@ header.with-search.with-status > .search {
 
 header.with-search.with-status > .status {
   grid-area: status;
+  text-align: end;
   justify-self: end;
 }
 
