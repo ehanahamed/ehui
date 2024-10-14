@@ -320,8 +320,8 @@ header.with-search.with-status {
 
 header > .menu {
   grid-area: menu;
-  text-align: left;
-  justify-self: left;
+  text-align: start;
+  justify-self: start;
 }
 
 header > .options {
