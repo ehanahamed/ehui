@@ -376,8 +376,9 @@ textarea:focus-visible {
   border-color: #9466FF;
 }
 
-div.searchbar {
+.searchbar {
   display: flex;
+  width: 100%;
   gap: 0px;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -388,16 +389,17 @@ div.searchbar {
   transition-duration: 0.4s;
 }
 
-div.searchbar > .searchbar-icon {
+.searchbar > .searchbar-icon {
   padding-left: 0.6rem;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
   padding-right: 0px;
+  color: #9399b2;
 }
 
-div.searchbar > input[type=text],
-div.searchbar > input[type=text]:hover,
-div.searchbar > input[type=text]:focus {
+.searchbar > input[type=text],
+.searchbar > input[type=text]:hover,
+.searchbar > input[type=text]:focus {
   width: 100%;
   margin-top: 0px;
   background-color: transparent;
@@ -406,12 +408,12 @@ div.searchbar > input[type=text]:focus {
   padding-left: 0.6rem;
 }
 
-div.searchbar > input[type=text]:focus-visible {
+.searchbar > input[type=text]:focus-visible {
   background-color: transparent;
   border: none;
 }
 
-div.searchbar:focus-within {
+.searchbar:focus-within {
   border-color: #9466FF;
 }
 
@@ -1119,6 +1121,11 @@ header {
   grid-template-areas: "menu";
 }
 
+header.with-search.with-status {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "menu search status";
+}
+
 header > .menu {
   grid-area: menu;
   text-align: left;
@@ -1136,6 +1143,19 @@ header > .options {
   height: 100%;
   display: flex;
   align-items: center;
+}
+
+header.with-search.with-status > .search {
+  grid-area: search;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+header.with-search.with-status > .status {
+  grid-area: status;
+  justify-self: end;
 }
 
 /*
