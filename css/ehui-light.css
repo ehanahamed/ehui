@@ -417,6 +417,74 @@ textarea:focus-visible {
   border-color: #7C49F2;
 }
 
+.searchbar.with-autocomplete {
+  position: relative;
+}
+
+.searchbar.with-autocomplete > .searchbar-autocomplete {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  display: none;
+  /*display: flex;*/
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-items: stretch;
+  gap: 0.2rem;
+  margin-top: 0.6rem;
+  padding: 0.4rem;
+  background: #F5F5F5;
+  border: 0.2rem solid #E6E6E6;
+  border-radius: 0.8rem;
+}
+
+.searchbar.with-autocomplete:focus > .searchbar-autocomplete {
+  display: flex;
+}
+
+/*
+  use seperate focus-within rule so that unsupported browsers still use above rule for same styling
+  otherwise, one invalid selector makes the whole rule invalid
+*/
+.searchbar.with-autocomplete:focus-within > .searchbar-autocomplete {
+  display: flex;
+}
+
+/* make sure :focus and :focus-within do not override .hide */
+.searchbar.with-autocomplete:focus > .searchbar-autocomplete.hide {
+  display: none;
+}
+
+.searchbar.with-autocomplete:focus-within > .searchbar-autocomplete.hide {
+  display: none;
+}
+
+.searchbar-autocomplete > a,
+.searchbar-autocomplete > .a {
+  margin-top: 0px;
+  padding: 0.2rem 0.6rem;
+  border: none;
+  color: #343a40;
+  background-color: #F5F5F5;
+}
+
+.searchbar-autocomplete > a:hover,
+.searchbar-autocomplete > .a:hover {
+  color: #6639BF;
+  background-color: #F0F0F0;
+}
+
+/* extra focus-visible to override link's other styles */
+.searchbar-autocomplete > a:focus-visible,
+.searchbar-autocomplete > .a:focus-visible {
+  color: #6639BF;
+  background-color: #F0F0F0;
+  border: none;
+  outline: none;
+}
+
 /*
 the html of a radio should look like:
 
