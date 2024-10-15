@@ -433,7 +433,7 @@ textarea:focus-visible {
   flex-wrap: nowrap;
   justify-items: stretch;
   gap: 0.2rem;
-  margin-top: 0.6rem;
+  margin-top: 0.4rem;
   padding: 0.4rem;
   background: #242433;
   border: 0.2rem solid #2E2E42;
