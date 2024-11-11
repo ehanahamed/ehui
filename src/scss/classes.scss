@@ -404,7 +404,7 @@ html.min .hero > .logo::before {
 
 button.large,
 .button.large {
-  padding: 0.6rem 1.2rem;
+  padding: 0.8rem 1.4rem;
   font-size: 1.2rem;
   line-height: 1.6rem;
 }
@@ -496,14 +496,12 @@ button.large,
 .dropdown .content button.ohno,
 .dropdown .content .button.ohno {
   background-color: $bg2;
-  border-color: $bg2;
   color: $ohno;
 }
 
 .dropdown .content button.yay,
 .dropdown .content .button.yay {
   background-color: $bg2;
-  border-color: $bg2;
   color: $yay;
 }
 
@@ -512,7 +510,6 @@ button.large,
 .dropdown .content button.ohno:focus-visible,
 .dropdown .content .button.ohno:focus-visible {
   background-color: $bg3;
-  border-color: $bg3;
   color: $ohno-alt;
 }
 
@@ -521,7 +518,6 @@ button.large,
 .dropdown .content button.yay:focus-visible,
 .dropdown .content .button.yay:focus-visible {
   background-color: $bg3;
-  border-color: $bg3;
   color: $yay-alt;
 }
 

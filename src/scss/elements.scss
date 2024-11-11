@@ -1,8 +1,8 @@
 $font-family: sans-serif !default;
 $border-radius: 0.8rem !default;
-$border-radius-button: 2rem !default;
+$border-radius-button: 1.6rem !default;
 $border-radius-textbox: 0.8rem !default;
-$border-radius-textbox-searchbar: 2rem !default;
+$border-radius-textbox-searchbar: 1.6rem !default;
 $border-radius-checkbox: 0.6rem !default;
 $border-radius-text: 0.4rem !default;
 $font-weight-button: 600 !default;
@@ -324,9 +324,9 @@ button,
   text-decoration: none;
   background-color: $main;
   color: $bg1;
-  border: 0.2rem solid $main;
+  border: none;
   border-radius: $border-radius-button;
-  padding: 0.4rem 0.8rem;
+  padding: 0.6rem 1rem;
   font-family: $font-family;
   font-size: 1rem;
   font-weight: $font-weight-button;
@@ -338,7 +338,6 @@ button.alt,
 .button.alt {
   background-color: $bg3;
   color: $main;
-  border-color: $bg3
 }
 
 button:hover,
