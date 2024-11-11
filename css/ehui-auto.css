@@ -1895,16 +1895,14 @@ button.icon-only-button.yay:focus-visible,
     display: none;
   }
 }
-.clickable-effect,
-.clickable-effect-only-hover {
+.clickable-effect {
   transition-duration: 0.4s;
 }
 
 button:hover, .button:hover,
 button:focus-visible, .button:focus-visible,
 .clickable-effect:hover,
-.clickable-effect:focus-visible,
-.clickable-effect-only-hover:hover {
+.clickable-effect:focus-visible {
   transform: scale(1.1);
 }
 
@@ -3806,16 +3804,14 @@ button.icon-only-button.yay:focus-visible,
     display: none;
   }
 }
-.clickable-effect,
-.clickable-effect-only-hover {
+.clickable-effect {
   transition-duration: 0.4s;
 }
 
 button:hover, .button:hover,
 button:focus-visible, .button:focus-visible,
 .clickable-effect:hover,
-.clickable-effect:focus-visible,
-.clickable-effect-only-hover:hover {
+.clickable-effect:focus-visible {
   transform: scale(1.1);
 }
 
