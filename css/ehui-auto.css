@@ -299,9 +299,9 @@ button,
   text-decoration: none;
   background-color: #7C49F2;
   color: #FCFCFC;
-  border: 0.2rem solid #7C49F2;
-  border-radius: 2rem;
-  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 1.6rem;
+  padding: 0.6rem 1rem;
   font-family: "nunito", sans-serif;
   font-size: 1rem;
   font-weight: 600;
@@ -313,7 +313,6 @@ button.alt,
 .button.alt {
   background-color: #F0F0F0;
   color: #7C49F2;
-  border-color: #F0F0F0;
 }
 
 button:hover,
@@ -385,7 +384,7 @@ textarea:focus-visible {
   align-items: center;
   background-color: #F5F5F5;
   border: 0.2rem solid #F5F5F5;
-  border-radius: 2rem;
+  border-radius: 1.6rem;
   transition-duration: 0.4s;
 }
 
@@ -1669,7 +1668,7 @@ html.min .hero > .logo::before {
 
 button.large,
 .button.large {
-  padding: 0.6rem 1.2rem;
+  padding: 0.8rem 1.4rem;
   font-size: 1.2rem;
   line-height: 1.6rem;
 }
@@ -1761,14 +1760,12 @@ button.large,
 .dropdown .content button.ohno,
 .dropdown .content .button.ohno {
   background-color: #F5F5F5;
-  border-color: #F5F5F5;
   color: #E64545;
 }
 
 .dropdown .content button.yay,
 .dropdown .content .button.yay {
   background-color: #F5F5F5;
-  border-color: #F5F5F5;
   color: #00B377;
 }
 
@@ -1777,7 +1774,6 @@ button.large,
 .dropdown .content button.ohno:focus-visible,
 .dropdown .content .button.ohno:focus-visible {
   background-color: #F0F0F0;
-  border-color: #F0F0F0;
   color: #B33636;
 }
 
@@ -1786,7 +1782,6 @@ button.large,
 .dropdown .content button.yay:focus-visible,
 .dropdown .content .button.yay:focus-visible {
   background-color: #F0F0F0;
-  border-color: #F0F0F0;
   color: #008055;
 }
 
@@ -2208,9 +2203,9 @@ button,
   text-decoration: none;
   background-color: #9466FF;
   color: #20202E;
-  border: 0.2rem solid #9466FF;
-  border-radius: 2rem;
-  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 1.6rem;
+  padding: 0.6rem 1rem;
   font-family: "nunito", sans-serif;
   font-size: 1rem;
   font-weight: 600;
@@ -2222,7 +2217,6 @@ button.alt,
 .button.alt {
   background-color: #2B2B3D;
   color: #9466FF;
-  border-color: #2B2B3D;
 }
 
 button:hover,
@@ -2294,7 +2288,7 @@ textarea:focus-visible {
   align-items: center;
   background-color: #242433;
   border: 0.2rem solid #242433;
-  border-radius: 2rem;
+  border-radius: 1.6rem;
   transition-duration: 0.4s;
 }
 
@@ -3578,7 +3572,7 @@ html.min .hero > .logo::before {
 
 button.large,
 .button.large {
-  padding: 0.6rem 1.2rem;
+  padding: 0.8rem 1.4rem;
   font-size: 1.2rem;
   line-height: 1.6rem;
 }
@@ -3670,14 +3664,12 @@ button.large,
 .dropdown .content button.ohno,
 .dropdown .content .button.ohno {
   background-color: #242433;
-  border-color: #242433;
   color: #ff6666;
 }
 
 .dropdown .content button.yay,
 .dropdown .content .button.yay {
   background-color: #242433;
-  border-color: #242433;
   color: #66FFCC;
 }
 
@@ -3686,7 +3678,6 @@ button.large,
 .dropdown .content button.ohno:focus-visible,
 .dropdown .content .button.ohno:focus-visible {
   background-color: #2B2B3D;
-  border-color: #2B2B3D;
   color: #ff9999;
 }
 
@@ -3695,7 +3686,6 @@ button.large,
 .dropdown .content button.yay:focus-visible,
 .dropdown .content .button.yay:focus-visible {
   background-color: #2B2B3D;
-  border-color: #2B2B3D;
   color: #CCFFEE;
 }
 
