@@ -2,10 +2,9 @@
 
 This is a "UI kit" with a bunch of css styles. It's customizable and themeable, so that we don't need to rewrite similar css for different projects.
 
-## To-do
+[Codeberg](https://codeberg.org/ehanahamed/ehui) · [GitHub](https://github.com/ehanahamed/ehui)
 
-- fix svgs in demo html
-- improve textboxes (inputs & textarea)
+## To-do
 - checkbox checkmarks
 - document theming
 
