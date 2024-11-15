@@ -133,7 +133,7 @@ mark,
 code,
 .code {
   font-family: monospace;
-  background-color: #F5F5F5;
+  background-color: #F0F0F0;
   border-radius: 0.4rem;
   padding: 0.2rem 0.4rem;
   font-size: 1rem;
@@ -1454,6 +1454,21 @@ mark.markExtra,
 pre,
 .pre {
   white-space: pre;
+  display: block;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.8rem;
+  background: #F5F5F5;
+}
+
+pre > code,
+pre > .code,
+.pre > code,
+.pre > .code {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  padding: 0px;
+  background: none;
 }
 
 button.ohno,
