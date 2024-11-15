@@ -5,7 +5,7 @@ import { Eta } from "eta";
 const markdown = new Showdown.Converter();
 
 const eta = new Eta({
-    views: path.join(import.meta.dir, "src", "views"),
+    views: path.join(import.meta.dirname, "src", "views"),
     tags: [
       "<eta>",
       "</eta>"
@@ -73,8 +73,6 @@ for (var i = 0; i < srcFiles.length; i++) {
 
 await fsPromises.writeFile(
     outputListFile,
-    JSON.stringify({
-        files: outputFiles,
-        folders: outputSubfolders
-    })
+    `var docFiles = ${ JSON.stringify(outputFiles) };
+var docFolders = ${ JSON.stringify(outputSubfolders) };`
 )
