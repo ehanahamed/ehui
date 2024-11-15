@@ -13,7 +13,8 @@
     "compile-dark": "npx sass ./themes/dark.scss ./css/ehui-dark.css --no-source-map",
     "compile-light": "npx sass ./themes/light.scss ./css/ehui-light.css --no-source-map",
     "cat": "node ./cat.js",
-    "minify": "npx postcss ./css/ --dir ./site/css/ --ext .min.css"
+    "minify": "npx postcss ./css/ --dir ./site/css/ --ext .min.css",
+    "build-docs": "node ./build-docs.js"
   },
   "repository": {
     "type": "git",
