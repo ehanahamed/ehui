@@ -390,7 +390,7 @@ textarea.horizontal {
   position: absolute;
   width: 200px;
   height: 200px;
-  z-index: -100;
+  z-index: -1;
   background-color: $main;
   opacity: 0.2;
   filter: blur(1rem);
