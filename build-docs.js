@@ -51,8 +51,8 @@ for (var i = 0; i < srcSubfolders.length; i++) {
 for (var i = 0; i < srcFiles.length; i++) {
     if (srcFiles[i].endsWith(".md")) {
         let relativeFilePath = path.relative(srcDir, srcFiles[i]);
-        /* remove `.md` (last 3 chars) & add `.html` ext */
-        let newRelativeFilePath = (relativeFilePath.substring(0, (relativeFilePath.length - 3)) + ".html");
+        /* change extension to `.md.html` (original already has the `.md` so just add `.html` */
+        let newRelativeFilePath = relativeFilePath + ".html";
         let outputFilePath = path.join(outputDir, newRelativeFilePath);
         let fileContent = await fsPromises.readFile(
             srcFiles[i],
@@ -73,6 +73,5 @@ for (var i = 0; i < srcFiles.length; i++) {
 
 await fsPromises.writeFile(
     outputListFile,
-    `var docFiles = ${ JSON.stringify(outputFiles) };
-var docFolders = ${ JSON.stringify(outputSubfolders) };`
+    `docs = ${ JSON.stringify({ files: outputFiles, folders: outputSubfolders }) };`
 )
