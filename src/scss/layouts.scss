@@ -347,8 +347,10 @@ header.with-search.with-status > .search {
 
 header.with-search.with-status > .status {
   grid-area: status;
+  display: flex;
   text-align: end;
   justify-self: end;
+  align-items: center;
 }
 
 /*
