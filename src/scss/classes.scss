@@ -533,7 +533,9 @@ button.large,
 button.dropdown-toggle.ohno,
 .button.dropdown-toggle.ohno,
 button.icon-only-button.ohno,
-.button.icon-only-button.ohno {
+.button.icon-only-button.ohno,
+button.faint.ohno,
+.button.faint.ohno {
   background-color: transparent;
   border: none;
   color: $ohno;
@@ -546,7 +548,11 @@ button.dropdown-toggle.ohno:focus-visible,
 button.icon-only-button.ohno:hover,
 .button.icon-only-button.ohno:hover,
 button.icon-only-button.ohno:focus-visible,
-.button.icon-only-button.ohno:focus-visible {
+.button.icon-only-button.ohno:focus-visible,
+button.faint.ohno:hover,
+.button.faint.ohno:hover,
+button.faint.ohno:focus-visible,
+.button.faint.ohno:focus-visible {
   background-color: $bg3;
   border: none;
   color: $ohno-alt;
@@ -555,7 +561,9 @@ button.icon-only-button.ohno:focus-visible,
 button.dropdown-toggle.yay,
 .button.dropdown-toggle.yay,
 button.icon-only-button.yay,
-.button.icon-only-button.yay {
+.button.icon-only-button.yay,
+button.faint.yay,
+.button.faint.yay {
   background-color: transparent;
   border: none;
   color: $yay;
@@ -568,7 +576,11 @@ button.dropdown-toggle.yay:focus-visible,
 button.icon-only-button.yay:hover,
 .button.icon-only-button.yay:hover,
 button.icon-only-button.yay:focus-visible,
-.button.icon-only-button.yay:focus-visible {
+.button.icon-only-button.yay:focus-visible,
+button.faint.yay:hover,
+.button.faint.yay:hover,
+button.faint.yay:focus-visible,
+.button.faint.yay:focus-visible {
   background-color: $bg3;
   border: none;
   color: $yay-alt;
