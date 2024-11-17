@@ -311,7 +311,7 @@ button,
 
 button.alt,
 .button.alt {
-  background-color: #F0F0F0;
+  background-color: #F5F5F5;
   color: #7C49F2;
 }
 
@@ -320,6 +320,14 @@ button:focus-visible,
 .button:hover,
 .button:focus-visible {
   background-color: #6639BF;
+  color: #FCFCFC;
+}
+
+button.alt:hover,
+button.alt:focus-visible,
+.button.alt:hover,
+.button.alt:focus-visible {
+  background-color: #F0F0F0;
   color: #FCFCFC;
 }
 
@@ -752,7 +760,9 @@ input[type=checkbox]:checked {
 button.dropdown-toggle,
 .button.dropdown-toggle,
 button.icon-only-button,
-.button.icon-only-button {
+.button.icon-only-button,
+button.faint,
+.button.faint {
   background-color: transparent;
   border: none;
   color: #343a40;
@@ -765,7 +775,11 @@ button.dropdown-toggle:focus-visible,
 button.icon-only-button:hover,
 .button.icon-only-button:hover,
 button.icon-only-button:focus-visible,
-.button.icon-only-button:focus-visible {
+.button.icon-only-button:focus-visible,
+button.faint:hover,
+.button.faint:hover,
+button.faint:focus-visible,
+.button.faint:focus-visible {
   background-color: #F0F0F0;
   border: none;
   color: #6639BF;
@@ -1494,22 +1508,16 @@ button.extra,
 
 button.alt.ohno,
 .button.alt.ohno {
-  background-color: #F0F0F0;
-  border-color: #F0F0F0;
   color: #E64545;
 }
 
 button.alt.yay,
 .button.alt.yay {
-  background-color: #F0F0F0;
-  border-color: #F0F0F0;
   color: #00B377;
 }
 
 button.alt.extra,
 .button.alt.extra {
-  background-color: #F0F0F0;
-  border-color: #F0F0F0;
   color: #00B377;
 }
 
@@ -1805,7 +1813,9 @@ button.large,
 button.dropdown-toggle.ohno,
 .button.dropdown-toggle.ohno,
 button.icon-only-button.ohno,
-.button.icon-only-button.ohno {
+.button.icon-only-button.ohno,
+button.faint.ohno,
+.button.faint.ohno {
   background-color: transparent;
   border: none;
   color: #E64545;
@@ -1818,7 +1828,11 @@ button.dropdown-toggle.ohno:focus-visible,
 button.icon-only-button.ohno:hover,
 .button.icon-only-button.ohno:hover,
 button.icon-only-button.ohno:focus-visible,
-.button.icon-only-button.ohno:focus-visible {
+.button.icon-only-button.ohno:focus-visible,
+button.faint.ohno:hover,
+.button.faint.ohno:hover,
+button.faint.ohno:focus-visible,
+.button.faint.ohno:focus-visible {
   background-color: #F0F0F0;
   border: none;
   color: #B33636;
@@ -1827,7 +1841,9 @@ button.icon-only-button.ohno:focus-visible,
 button.dropdown-toggle.yay,
 .button.dropdown-toggle.yay,
 button.icon-only-button.yay,
-.button.icon-only-button.yay {
+.button.icon-only-button.yay,
+button.faint.yay,
+.button.faint.yay {
   background-color: transparent;
   border: none;
   color: #00B377;
@@ -1840,7 +1856,11 @@ button.dropdown-toggle.yay:focus-visible,
 button.icon-only-button.yay:hover,
 .button.icon-only-button.yay:hover,
 button.icon-only-button.yay:focus-visible,
-.button.icon-only-button.yay:focus-visible {
+.button.icon-only-button.yay:focus-visible,
+button.faint.yay:hover,
+.button.faint.yay:hover,
+button.faint.yay:focus-visible,
+.button.faint.yay:focus-visible {
   background-color: #F0F0F0;
   border: none;
   color: #008055;
@@ -2232,7 +2252,7 @@ button,
 
 button.alt,
 .button.alt {
-  background-color: #2B2B3D;
+  background-color: #242433;
   color: #9466FF;
 }
 
@@ -2241,6 +2261,14 @@ button:focus-visible,
 .button:hover,
 .button:focus-visible {
   background-color: #B899FF;
+  color: #20202E;
+}
+
+button.alt:hover,
+button.alt:focus-visible,
+.button.alt:hover,
+.button.alt:focus-visible {
+  background-color: #2B2B3D;
   color: #20202E;
 }
 
@@ -2673,7 +2701,9 @@ input[type=checkbox]:checked {
 button.dropdown-toggle,
 .button.dropdown-toggle,
 button.icon-only-button,
-.button.icon-only-button {
+.button.icon-only-button,
+button.faint,
+.button.faint {
   background-color: transparent;
   border: none;
   color: #c3cce9;
@@ -2686,7 +2716,11 @@ button.dropdown-toggle:focus-visible,
 button.icon-only-button:hover,
 .button.icon-only-button:hover,
 button.icon-only-button:focus-visible,
-.button.icon-only-button:focus-visible {
+.button.icon-only-button:focus-visible,
+button.faint:hover,
+.button.faint:hover,
+button.faint:focus-visible,
+.button.faint:focus-visible {
   background-color: #2B2B3D;
   border: none;
   color: #B899FF;
@@ -3415,22 +3449,16 @@ button.extra,
 
 button.alt.ohno,
 .button.alt.ohno {
-  background-color: #2B2B3D;
-  border-color: #2B2B3D;
   color: #ff6666;
 }
 
 button.alt.yay,
 .button.alt.yay {
-  background-color: #2B2B3D;
-  border-color: #2B2B3D;
   color: #66FFCC;
 }
 
 button.alt.extra,
 .button.alt.extra {
-  background-color: #2B2B3D;
-  border-color: #2B2B3D;
   color: #66FFCC;
 }
 
@@ -3726,7 +3754,9 @@ button.large,
 button.dropdown-toggle.ohno,
 .button.dropdown-toggle.ohno,
 button.icon-only-button.ohno,
-.button.icon-only-button.ohno {
+.button.icon-only-button.ohno,
+button.faint.ohno,
+.button.faint.ohno {
   background-color: transparent;
   border: none;
   color: #ff6666;
@@ -3739,7 +3769,11 @@ button.dropdown-toggle.ohno:focus-visible,
 button.icon-only-button.ohno:hover,
 .button.icon-only-button.ohno:hover,
 button.icon-only-button.ohno:focus-visible,
-.button.icon-only-button.ohno:focus-visible {
+.button.icon-only-button.ohno:focus-visible,
+button.faint.ohno:hover,
+.button.faint.ohno:hover,
+button.faint.ohno:focus-visible,
+.button.faint.ohno:focus-visible {
   background-color: #2B2B3D;
   border: none;
   color: #ff9999;
@@ -3748,7 +3782,9 @@ button.icon-only-button.ohno:focus-visible,
 button.dropdown-toggle.yay,
 .button.dropdown-toggle.yay,
 button.icon-only-button.yay,
-.button.icon-only-button.yay {
+.button.icon-only-button.yay,
+button.faint.yay,
+.button.faint.yay {
   background-color: transparent;
   border: none;
   color: #66FFCC;
@@ -3761,7 +3797,11 @@ button.dropdown-toggle.yay:focus-visible,
 button.icon-only-button.yay:hover,
 .button.icon-only-button.yay:hover,
 button.icon-only-button.yay:focus-visible,
-.button.icon-only-button.yay:focus-visible {
+.button.icon-only-button.yay:focus-visible,
+button.faint.yay:hover,
+.button.faint.yay:hover,
+button.faint.yay:focus-visible,
+.button.faint.yay:focus-visible {
   background-color: #2B2B3D;
   border: none;
   color: #CCFFEE;
