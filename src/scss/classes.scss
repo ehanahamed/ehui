@@ -210,35 +210,59 @@ pre > .code,
 button.ohno,
 .button.ohno {
   background-color: $ohno;
-  border-color: $ohno;
 }
 
 button.yay,
 .button.yay {
   background-color: $yay;
-  border-color: $yay;
 }
 
 button.extra,
 .button.extra {
   background-color: $extra;
-  border-color: $extra;
   color: $extra-bg;
 }
 
 button.alt.ohno,
 .button.alt.ohno {
   color: $ohno;
+  background: $bg2;
 }
 
 button.alt.yay,
 .button.alt.yay {
   color: $yay;
+  background: $bg2;
 }
 
 button.alt.extra,
 .button.alt.extra {
   color: $extra;
+  background: $bg2;
+}
+
+button.alt:hover.ohno,
+button.alt:focus-visible.ohno,
+.button.alt:hover.ohno,
+.button.alt:focus-visible.ohno {
+  background-color: $bg3;
+  color: $ohno-alt;
+}
+
+button.alt:hover.yay,
+button.alt:focus-visible.yay,
+.button.alt:hover.yay,
+.button.alt:focus-visible.yay {
+  background-color: $bg3;
+  color: $yay-alt;
+}
+
+button.alt:hover.extra,
+button.alt:focus-visible.extra,
+.button.alt:hover.extra,
+.button.alt:focus-visible.extra {
+  background-color: $bg3;
+  color: $extra-alt;
 }
 
 button:hover.ohno,
