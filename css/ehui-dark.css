@@ -275,9 +275,9 @@ a,
 }
 
 a:hover,
-a:focus-visible,
+a:focus,
 .a:hover,
-.a:focus-visible {
+.a:focus {
   color: #B899FF;
 }
 
@@ -309,6 +309,13 @@ button,
   transition-duration: 0.4s;
 }
 
+button,
+.button,
+a,
+.a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 button.alt,
 .button.alt {
   background-color: #242433;
@@ -316,17 +323,17 @@ button.alt,
 }
 
 button:hover,
-button:focus-visible,
+button:focus,
 .button:hover,
-.button:focus-visible {
+.button:focus {
   background-color: #B899FF;
   color: #20202E;
 }
 
 button.alt:hover,
-button.alt:focus-visible,
+button.alt:focus,
 .button.alt:hover,
-.button.alt:focus-visible {
+.button.alt:focus {
   background-color: #2B2B3D;
   color: #B899FF;
 }
@@ -376,10 +383,13 @@ textarea:hover {
 
 input[type=text]:focus,
 input[type=password]:focus,
-textarea:focus,
-input[type=text]:focus-visible,
-input[type=password]:focus-visible,
-textarea:focus-visible {
+textarea:focus {
+  border-color: #9466FF;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus {
   border-color: #9466FF;
 }
 
@@ -542,9 +552,9 @@ input[type=checkbox] {
 }
 
 input[type=radio]:hover,
-input[type=radio]:focus-visible,
+input[type=radio]:focus,
 input[type=checkbox]:hover,
-input[type=checkbox]:focus-visible {
+input[type=checkbox]:focus {
   border-color: #B899FF;
 }
 
@@ -750,8 +760,8 @@ input[type=checkbox]:checked {
 
 .dropdown .content button:hover,
 .dropdown .content .button:hover,
-.dropdown .content button:focus-visible,
-.dropdown .content .button:focus-visible {
+.dropdown .content button:focus,
+.dropdown .content .button:focus {
   background-color: #2B2B3D;
   border-color: #2B2B3D;
   color: #B899FF;
@@ -770,16 +780,16 @@ button.faint,
 
 button.dropdown-toggle:hover,
 .button.dropdown-toggle:hover,
-button.dropdown-toggle:focus-visible,
-.button.dropdown-toggle:focus-visible,
+button.dropdown-toggle:focus,
+.button.dropdown-toggle:focus,
 button.icon-only-button:hover,
 .button.icon-only-button:hover,
-button.icon-only-button:focus-visible,
-.button.icon-only-button:focus-visible,
+button.icon-only-button:focus,
+.button.icon-only-button:focus,
 button.faint:hover,
 .button.faint:hover,
-button.faint:focus-visible,
-.button.faint:focus-visible {
+button.faint:focus,
+.button.faint:focus {
   background-color: #2B2B3D;
   border: none;
   color: #B899FF;
@@ -829,10 +839,10 @@ button.faint:focus-visible,
 .combo-select > .button:hover,
 .combo-select > button.selected:hover,
 .combo-select > .button.selected:hover,
-.combo-select > button:focus-visible,
-.combo-select > .button:focus-visible,
-.combo-select > button.selected:focus-visible,
-.combo-select > .button.selected:focus-visible {
+.combo-select > button:focus,
+.combo-select > .button:focus,
+.combo-select > button.selected:focus,
+.combo-select > .button.selected:focus {
   background-color: #B899FF;
   color: #20202E;
   border-color: #9466FF;
@@ -1309,7 +1319,7 @@ a.mark {
 }
 
 a.mark:hover,
-a.mark:focus-visible {
+a.mark:focus {
   color: #B899FF;
 }
 
@@ -1522,49 +1532,49 @@ button.alt.extra,
 }
 
 button.alt:hover.ohno,
-button.alt:focus-visible.ohno,
+button.alt:focus.ohno,
 .button.alt:hover.ohno,
-.button.alt:focus-visible.ohno {
+.button.alt:focus.ohno {
   background-color: #2B2B3D;
   color: #ff9999;
 }
 
 button.alt:hover.yay,
-button.alt:focus-visible.yay,
+button.alt:focus.yay,
 .button.alt:hover.yay,
-.button.alt:focus-visible.yay {
+.button.alt:focus.yay {
   background-color: #2B2B3D;
   color: #CCFFEE;
 }
 
 button.alt:hover.extra,
-button.alt:focus-visible.extra,
+button.alt:focus.extra,
 .button.alt:hover.extra,
-.button.alt:focus-visible.extra {
+.button.alt:focus.extra {
   background-color: #2B2B3D;
   color: #CCFFEE;
 }
 
 button:hover.ohno,
-button:focus-visible.ohno,
+button:focus.ohno,
 .button:hover.ohno,
-.button:focus-visible.ohno {
+.button:focus.ohno {
   background-color: #ff9999;
   color: #20202E;
 }
 
 button:hover.yay,
-button:focus-visible.yay,
+button:focus.yay,
 .button:hover.yay,
-.button:focus-visible.yay {
+.button:focus.yay {
   background-color: #CCFFEE;
   color: #20202E;
 }
 
 button:hover.extra,
-button:focus-visible.extra,
+button:focus.extra,
 .button:hover.extra,
-.button:focus-visible.extra {
+.button:focus.extra {
   background-color: #CCFFEE;
   color: #1B1B26;
 }
@@ -1605,27 +1615,27 @@ textarea.extra:hover {
 input[type=text].ohno:focus,
 input[type=password].ohno:focus,
 textarea.ohno:focus,
-input[type=text].ohno:focus-visible,
-input[type=password].ohno:focus-visible,
-textarea.ohno:focus-visible {
+input[type=text].ohno:focus,
+input[type=password].ohno:focus,
+textarea.ohno:focus {
   border-color: #ff6666;
 }
 
 input[type=text].yay:focus,
 input[type=password].yay:focus,
 textarea.yay:focus,
-input[type=text].yay:focus-visible,
-input[type=password].yay:focus-visible,
-textarea.yay:focus-visible {
+input[type=text].yay:focus,
+input[type=password].yay:focus,
+textarea.yay:focus {
   border-color: #66FFCC;
 }
 
 input[type=text].extra:focus,
 input[type=password].extra:focus,
 textarea.extra:focus,
-input[type=text].extra:focus-visible,
-input[type=password].extra:focus-visible,
-textarea.extra:focus-visible {
+input[type=text].extra:focus,
+input[type=password].extra:focus,
+textarea.extra:focus {
   border-color: #66FFCC;
 }
 
@@ -1820,16 +1830,16 @@ button.large,
 
 .dropdown .content button.ohno:hover,
 .dropdown .content .button.ohno:hover,
-.dropdown .content button.ohno:focus-visible,
-.dropdown .content .button.ohno:focus-visible {
+.dropdown .content button.ohno:focus,
+.dropdown .content .button.ohno:focus {
   background-color: #2B2B3D;
   color: #ff9999;
 }
 
 .dropdown .content button.yay:hover,
 .dropdown .content .button.yay:hover,
-.dropdown .content button.yay:focus-visible,
-.dropdown .content .button.yay:focus-visible {
+.dropdown .content button.yay:focus,
+.dropdown .content .button.yay:focus {
   background-color: #2B2B3D;
   color: #CCFFEE;
 }
@@ -1847,16 +1857,16 @@ button.faint.ohno,
 
 button.dropdown-toggle.ohno:hover,
 .button.dropdown-toggle.ohno:hover,
-button.dropdown-toggle.ohno:focus-visible,
-.button.dropdown-toggle.ohno:focus-visible,
+button.dropdown-toggle.ohno:focus,
+.button.dropdown-toggle.ohno:focus,
 button.icon-only-button.ohno:hover,
 .button.icon-only-button.ohno:hover,
-button.icon-only-button.ohno:focus-visible,
-.button.icon-only-button.ohno:focus-visible,
+button.icon-only-button.ohno:focus,
+.button.icon-only-button.ohno:focus,
 button.faint.ohno:hover,
 .button.faint.ohno:hover,
-button.faint.ohno:focus-visible,
-.button.faint.ohno:focus-visible {
+button.faint.ohno:focus,
+.button.faint.ohno:focus {
   background-color: #2B2B3D;
   border: none;
   color: #ff9999;
@@ -1875,16 +1885,16 @@ button.faint.yay,
 
 button.dropdown-toggle.yay:hover,
 .button.dropdown-toggle.yay:hover,
-button.dropdown-toggle.yay:focus-visible,
-.button.dropdown-toggle.yay:focus-visible,
+button.dropdown-toggle.yay:focus,
+.button.dropdown-toggle.yay:focus,
 button.icon-only-button.yay:hover,
 .button.icon-only-button.yay:hover,
-button.icon-only-button.yay:focus-visible,
-.button.icon-only-button.yay:focus-visible,
+button.icon-only-button.yay:focus,
+.button.icon-only-button.yay:focus,
 button.faint.yay:hover,
 .button.faint.yay:hover,
-button.faint.yay:focus-visible,
-.button.faint.yay:focus-visible {
+button.faint.yay:focus,
+.button.faint.yay:focus {
   background-color: #2B2B3D;
   border: none;
   color: #CCFFEE;
@@ -1956,8 +1966,8 @@ button.faint.yay:focus-visible,
 }
 
 button:hover, .button:hover,
-button:focus-visible, .button:focus-visible,
+button:focus, .button:focus,
 .clickable-effect:hover,
-.clickable-effect:focus-visible {
+.clickable-effect:focus {
   transform: scale(1.1);
 }
