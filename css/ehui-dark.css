@@ -328,7 +328,7 @@ button.alt:focus-visible,
 .button.alt:hover,
 .button.alt:focus-visible {
   background-color: #2B2B3D;
-  color: #20202E;
+  color: #B899FF;
 }
 
 button:focus-visible,
@@ -1490,35 +1490,59 @@ pre > .code,
 button.ohno,
 .button.ohno {
   background-color: #ff6666;
-  border-color: #ff6666;
 }
 
 button.yay,
 .button.yay {
   background-color: #66FFCC;
-  border-color: #66FFCC;
 }
 
 button.extra,
 .button.extra {
   background-color: #66FFCC;
-  border-color: #66FFCC;
   color: #1B1B26;
 }
 
 button.alt.ohno,
 .button.alt.ohno {
   color: #ff6666;
+  background: #242433;
 }
 
 button.alt.yay,
 .button.alt.yay {
   color: #66FFCC;
+  background: #242433;
 }
 
 button.alt.extra,
 .button.alt.extra {
   color: #66FFCC;
+  background: #242433;
+}
+
+button.alt:hover.ohno,
+button.alt:focus-visible.ohno,
+.button.alt:hover.ohno,
+.button.alt:focus-visible.ohno {
+  background-color: #2B2B3D;
+  color: #ff9999;
+}
+
+button.alt:hover.yay,
+button.alt:focus-visible.yay,
+.button.alt:hover.yay,
+.button.alt:focus-visible.yay {
+  background-color: #2B2B3D;
+  color: #CCFFEE;
+}
+
+button.alt:hover.extra,
+button.alt:focus-visible.extra,
+.button.alt:hover.extra,
+.button.alt:focus-visible.extra {
+  background-color: #2B2B3D;
+  color: #CCFFEE;
 }
 
 button:hover.ohno,
