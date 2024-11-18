@@ -379,18 +379,14 @@ input[type=text]:hover,
 input[type=password]:hover,
 textarea:hover {
   border-color: #6639BF;
+  background-color: #F5F5F5;
 }
 
 input[type=text]:focus,
 input[type=password]:focus,
 textarea:focus {
   border-color: #7C49F2;
-}
-
-input[type=text]:focus,
-input[type=password]:focus,
-textarea:focus {
-  border-color: #7C49F2;
+  background-color: #FCFCFC;
 }
 
 .searchbar {
@@ -430,7 +426,13 @@ textarea:focus {
   border: none;
 }
 
+.searchbar:hover {
+  background: #F0F0F0;
+  border-color: #6639BF;
+}
+
 .searchbar:focus-within {
+  background: #F5F5F5;
   border-color: #7C49F2;
 }
 
