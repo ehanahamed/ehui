@@ -97,8 +97,8 @@ $font-weight-link: 600 !default;
 }
 
 button:hover, .button:hover,
-button:focus-visible, .button:focus-visible,
+button:focus, .button:focus,
 .clickable-effect:hover,
-.clickable-effect:focus-visible {
+.clickable-effect:focus {
   transform: scale(1.1);
 }

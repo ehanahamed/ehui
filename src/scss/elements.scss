@@ -300,9 +300,9 @@ a,
 }
 
 a:hover,
-a:focus-visible,
+a:focus,
 .a:hover,
-.a:focus-visible {
+.a:focus {
   color: $main-alt;
 }
 
@@ -334,6 +334,13 @@ button,
   transition-duration: 0.4s;
 }
 
+button,
+.button,
+a,
+.a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 button.alt,
 .button.alt {
   background-color: $bg2;
@@ -341,17 +348,17 @@ button.alt,
 }
 
 button:hover,
-button:focus-visible,
+button:focus,
 .button:hover,
-.button:focus-visible {
+.button:focus {
   background-color: $main-alt;
   color: $bg1;
 }
 
 button.alt:hover,
-button.alt:focus-visible,
+button.alt:focus,
 .button.alt:hover,
-.button.alt:focus-visible {
+.button.alt:focus {
   background-color: $bg3;
   color: $main-alt;
 }
@@ -401,10 +408,13 @@ textarea:hover {
 
 input[type="text"]:focus,
 input[type="password"]:focus,
-textarea:focus,
-input[type="text"]:focus-visible,
-input[type="password"]:focus-visible,
-textarea:focus-visible {
+textarea:focus {
+  border-color: $main;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
   border-color: $main;
 }
 
@@ -565,9 +575,9 @@ input[type="checkbox"] {
 }
 
 input[type="radio"]:hover,
-input[type="radio"]:focus-visible,
+input[type="radio"]:focus,
 input[type="checkbox"]:hover,
-input[type="checkbox"]:focus-visible {
+input[type="checkbox"]:focus {
   border-color: $main-alt;
 }
 
@@ -775,8 +785,8 @@ input[type="checkbox"]:checked {
 
 .dropdown .content button:hover,
 .dropdown .content .button:hover,
-.dropdown .content button:focus-visible,
-.dropdown .content .button:focus-visible {
+.dropdown .content button:focus,
+.dropdown .content .button:focus {
   background-color: $bg3;
   border-color: $bg3;
   color: $main-alt;
@@ -795,16 +805,16 @@ button.faint,
 
 button.dropdown-toggle:hover,
 .button.dropdown-toggle:hover,
-button.dropdown-toggle:focus-visible,
-.button.dropdown-toggle:focus-visible,
+button.dropdown-toggle:focus,
+.button.dropdown-toggle:focus,
 button.icon-only-button:hover,
 .button.icon-only-button:hover,
-button.icon-only-button:focus-visible,
-.button.icon-only-button:focus-visible,
+button.icon-only-button:focus,
+.button.icon-only-button:focus,
 button.faint:hover,
 .button.faint:hover,
-button.faint:focus-visible,
-.button.faint:focus-visible {
+button.faint:focus,
+.button.faint:focus {
   background-color: $bg3;
   border: none;
   color: $main-alt;
@@ -853,10 +863,10 @@ button.faint:focus-visible,
 .combo-select > .button:hover,
 .combo-select > button.selected:hover,
 .combo-select > .button.selected:hover,
-.combo-select > button:focus-visible,
-.combo-select > .button:focus-visible,
-.combo-select > button.selected:focus-visible,
-.combo-select > .button.selected:focus-visible {
+.combo-select > button:focus,
+.combo-select > .button:focus,
+.combo-select > button.selected:focus,
+.combo-select > .button.selected:focus {
   background-color: $main-alt;
   color: $bg1;
   border-color: $main;
