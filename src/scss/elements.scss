@@ -404,18 +404,14 @@ input[type="text"]:hover,
 input[type="password"]:hover,
 textarea:hover {
   border-color: $main-alt;
+  background-color: $bg2;
 }
 
 input[type="text"]:focus,
 input[type="password"]:focus,
 textarea:focus {
   border-color: $main;
-}
-
-input[type="text"]:focus,
-input[type="password"]:focus,
-textarea:focus {
-  border-color: $main;
+  background-color: $bg1;
 }
 
 .searchbar {
@@ -455,7 +451,13 @@ textarea:focus {
   border: none;
 }
 
+.searchbar:hover {
+  background: $bg3;
+  border-color: $main-alt;
+}
+
 .searchbar:focus-within {
+  background: $bg2;
   border-color: $main;
 }
 
