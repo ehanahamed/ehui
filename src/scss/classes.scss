@@ -304,49 +304,40 @@ button:focus-visible.extra,
   outline-color: $extra;
 }
 
-input[type="text"].ohno:hover,
-input[type="password"].ohno:hover,
-textarea.ohno:hover {
-  border-color: $ohno-alt;
-}
-
-input[type="text"].yay:hover,
-input[type="password"].yay:hover,
-textarea.yay:hover {
-  border-color: $yay-alt;
-}
-
-input[type="text"].extra:hover,
-input[type="password"].extra:hover,
-textarea.extra:hover {
-  border-color: $extra-alt;
-}
-
-input[type="text"].ohno:focus,
-input[type="password"].ohno:focus,
-textarea.ohno:focus,
-input[type="text"].ohno:focus,
-input[type="password"].ohno:focus,
-textarea.ohno:focus {
+input[type="text"].ohno,
+input[type="password"].ohno,
+textarea.ohno {
   border-color: $ohno;
 }
 
-input[type="text"].yay:focus,
-input[type="password"].yay:focus,
-textarea.yay:focus,
+input[type="text"].yay,
+input[type="password"].yay,
+textarea.yay {
+  border-color: $yay;
+}
+
+input[type="text"].extra,
+input[type="password"].extra,
+textarea.extra {
+  border-color: $extra;
+}
+
+input[type="text"].ohno:focus,
+input[type="password"].ohno:focus,
+textarea.ohno:focus {
+  border-color: $ohno-alt;
+}
+
 input[type="text"].yay:focus,
 input[type="password"].yay:focus,
 textarea.yay:focus {
-  border-color: $yay;
+  border-color: $yay-alt;
 }
 
 input[type="text"].extra:focus,
 input[type="password"].extra:focus,
-textarea.extra:focus,
-input[type="text"].extra:focus,
-input[type="password"].extra:focus,
 textarea.extra:focus {
-  border-color: $extra;
+  border-color: $extra-alt;
 }
 
 textarea.vertical {
