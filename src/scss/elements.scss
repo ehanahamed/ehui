@@ -403,7 +403,7 @@ textarea {
 input[type="text"]:hover,
 input[type="password"]:hover,
 textarea:hover {
-  border-color: $main-alt;
+  border-color: $bg4;
   background-color: $bg2;
 }
 
@@ -453,7 +453,7 @@ textarea:focus {
 
 .searchbar:hover {
   background: $bg3;
-  border-color: $main-alt;
+  border-color: $bg3;
 }
 
 .searchbar:focus-within {
