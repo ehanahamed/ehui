@@ -378,7 +378,7 @@ textarea {
 input[type=text]:hover,
 input[type=password]:hover,
 textarea:hover {
-  border-color: #B899FF;
+  border-color: #2E2E42;
   background-color: #242433;
 }
 
@@ -428,7 +428,7 @@ textarea:focus {
 
 .searchbar:hover {
   background: #2B2B3D;
-  border-color: #B899FF;
+  border-color: #2B2B3D;
 }
 
 .searchbar:focus-within {
@@ -1596,49 +1596,40 @@ button:focus-visible.extra,
   outline-color: #66FFCC;
 }
 
-input[type=text].ohno:hover,
-input[type=password].ohno:hover,
-textarea.ohno:hover {
-  border-color: #ff9999;
-}
-
-input[type=text].yay:hover,
-input[type=password].yay:hover,
-textarea.yay:hover {
-  border-color: #CCFFEE;
-}
-
-input[type=text].extra:hover,
-input[type=password].extra:hover,
-textarea.extra:hover {
-  border-color: #CCFFEE;
-}
-
-input[type=text].ohno:focus,
-input[type=password].ohno:focus,
-textarea.ohno:focus,
-input[type=text].ohno:focus,
-input[type=password].ohno:focus,
-textarea.ohno:focus {
+input[type=text].ohno,
+input[type=password].ohno,
+textarea.ohno {
   border-color: #ff6666;
 }
 
-input[type=text].yay:focus,
-input[type=password].yay:focus,
-textarea.yay:focus,
+input[type=text].yay,
+input[type=password].yay,
+textarea.yay {
+  border-color: #66FFCC;
+}
+
+input[type=text].extra,
+input[type=password].extra,
+textarea.extra {
+  border-color: #66FFCC;
+}
+
+input[type=text].ohno:focus,
+input[type=password].ohno:focus,
+textarea.ohno:focus {
+  border-color: #ff9999;
+}
+
 input[type=text].yay:focus,
 input[type=password].yay:focus,
 textarea.yay:focus {
-  border-color: #66FFCC;
+  border-color: #CCFFEE;
 }
 
 input[type=text].extra:focus,
 input[type=password].extra:focus,
-textarea.extra:focus,
-input[type=text].extra:focus,
-input[type=password].extra:focus,
 textarea.extra:focus {
-  border-color: #66FFCC;
+  border-color: #CCFFEE;
 }
 
 textarea.vertical {
