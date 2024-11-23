@@ -38,17 +38,17 @@
     <main>
       <div class="grid page">
         <div class="content">
-          <h1 id="caveatsannoyingstuff">Caveats/Annoying stuff</h1>
-<h2 id="pseudoelementsbeforeandafter">Pseudo-elements (::before and ::after)</h2>
+          <h1 id="caveatsannoying-stuff">Caveats/Annoying stuff</h1>
+<h2 id="pseudo-elements-before-and-after">Pseudo-elements (::before and ::after)</h2>
 <p>Always make sure to add <code>content: ""</code> or else, they just wont exist.</p>
 <pre><code class="css language-css">something::before {
   content: "";
   /* ... */
 }
 </code></pre>
-<h2 id="fileinputs">File inputs</h2>
+<h2 id="file-inputs">File inputs</h2>
 <p>Web browsers hate web developers, so they made it annoying to style the default <code>&lt;input type="file"...</code> element.</p>
-<h3 id="currentsollution">Current "sollution"</h3>
+<h3 id="current-sollution">Current "sollution"</h3>
 <p>Regardless, the current solution isn't too "hacky". Simply hide the actual <code>input</code> element, and use the associated <code>label</code> element as a button.</p>
 <p>However, hiding the <code>input</code> element is a bit more of a struggle, because simply using some css like <code>display: none;</code> will make the upload button useless to certain accisibility features.</p>
 <p>Instead use a more "hacky" css approach:</p>
@@ -70,7 +70,7 @@
   &lt;input type="file" ... id="ID" class="invisible" /&gt;
 &lt;/div&gt;
 </code></pre>
-<h2 id="positionsticky">Position sticky</h2>
+<h2 id="position-sticky">Position sticky</h2>
 <p><code>position: sticky</code> needs it's parent elements to have <code>height: auto</code>, or else it won't work properly</p>        </div>
       </div>
     </main>
