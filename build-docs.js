@@ -2,7 +2,10 @@ import path from "node:path";
 import { promises as fsPromises } from "node:fs";
 import Showdown from "showdown"
 import { Eta } from "eta";
-const markdown = new Showdown.Converter({ tables: true });
+const markdown = new Showdown.Converter({
+    tables: true,
+    ghCompatibleHeaderId: true
+});
 
 const eta = new Eta({
     views: path.join(import.meta.dirname, "src", "views"),
