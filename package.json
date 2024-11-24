@@ -1,7 +1,7 @@
 {
   "name": "ehui",
-  "version": "1.0.0",
-  "description": "## Project Structure",
+  "version": "2.0.0",
+  "description": "Customizable UI-kit/CSS-library",
   "main": "index.js",
   "type": "module",
   "directories": {
