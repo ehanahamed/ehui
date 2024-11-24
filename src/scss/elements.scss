@@ -962,20 +962,24 @@ button.faint:focus,
   background-image: url(wave-bottom-svg-url($extra-bg));
 }
 
-a.box.link-box {
+button.box,
+.button.box {
   color: $fg1;
   background: $bg2;
   border: 0.2rem solid $bg2;
 }
 
-a.box.link-box:hover,
-a.box.link-box:focus {
+button.box:hover,
+button.box:focus,
+.button.box:hover,
+.button.box:focus {
   color: $main-alt;
   background: $bg3;
   border-color: $bg3;
 }
 
-a.box.link-box.selected {
+button.box.selected,
+.button.box.selected {
   color: $main;
   border-color: $main;
 }
