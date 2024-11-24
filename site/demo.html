@@ -531,6 +531,18 @@
               </div>
             </div>
           </div>
+          <p>Button boxes, <code>&lt;button class="box"&gt;...&lt;button&gt;</code> or <code>&lt;a class="button box"&gt;...&lt;a&gt;</code></p>
+          <div class="flex">
+            <button class="box" id="button-box-1">
+              Something
+            </button>
+            <button class="box" id="button-box-2">
+              Something Else
+            </button>
+            <button class="box" id="button-box-3">
+              Another Thing
+            </button>
+          </div>
         </div>
       </div>
     </main>
@@ -609,6 +621,23 @@
           }
         )
       }
+    </script>
+    <script>
+      document.getElementById("button-box-1").addEventListener("click", function () {
+        document.getElementById("button-box-1").classList.add("selected");
+        document.getElementById("button-box-2").classList.remove("selected");
+        document.getElementById("button-box-3").classList.remove("selected");
+      })
+      document.getElementById("button-box-2").addEventListener("click", function () {
+        document.getElementById("button-box-1").classList.remove("selected");
+        document.getElementById("button-box-2").classList.add("selected");
+        document.getElementById("button-box-3").classList.remove("selected");
+      })
+      document.getElementById("button-box-3").addEventListener("click", function () {
+        document.getElementById("button-box-1").classList.remove("selected");
+        document.getElementById("button-box-2").classList.remove("selected");
+        document.getElementById("button-box-3").classList.add("selected");
+      })
     </script>
   </body>
 </html>
