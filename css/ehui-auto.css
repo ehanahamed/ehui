@@ -917,6 +917,7 @@ button.box,
   color: #343a40;
   background: #F5F5F5;
   border: 0.2rem solid #F5F5F5;
+  border-radius: 0.8rem;
 }
 
 button.box:hover,
@@ -2916,6 +2917,7 @@ button.box,
   color: #c3cce9;
   background: #242433;
   border: 0.2rem solid #242433;
+  border-radius: 0.8rem;
 }
 
 button.box:hover,
