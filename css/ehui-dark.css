@@ -928,6 +928,10 @@ button.box:focus,
   border-color: #2B2B3D;
 }
 
+button.box:focus-visible {
+  outline-offset: 0.4rem;
+}
+
 button.box.selected,
 .button.box.selected {
   color: #9466FF;
@@ -1985,4 +1989,9 @@ button:focus, .button:focus,
 .clickable-effect:hover,
 .clickable-effect:focus {
   transform: scale(1.1);
+}
+
+button.no-clickable-effect:hover, .button.no-clickable-effect:hover,
+button.no-clickable-effect:focus, .button.no-clickable-effect:focus {
+  transform: none;
 }
