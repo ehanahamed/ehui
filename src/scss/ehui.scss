@@ -102,3 +102,8 @@ button:focus, .button:focus,
 .clickable-effect:focus {
   transform: scale(1.1);
 }
+
+button.no-clickable-effect:hover, .button.no-clickable-effect:hover,
+button.no-clickable-effect:focus, .button.no-clickable-effect:focus {
+  transform: none;
+}
