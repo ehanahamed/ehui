@@ -859,22 +859,18 @@ button.faint:focus,
 
 .combo-select > button,
 .combo-select > .button {
-  background-color: $bg3;
+  background-color: $bg2;
   color: $main;
-  border-color: $bg3;
+  border-color: $bg2;
 }
 
 .combo-select > button:hover,
 .combo-select > .button:hover,
-.combo-select > button.selected:hover,
-.combo-select > .button.selected:hover,
 .combo-select > button:focus,
-.combo-select > .button:focus,
-.combo-select > button.selected:focus,
-.combo-select > .button.selected:focus {
-  background-color: $main-alt;
-  color: $bg1;
-  border-color: $main;
+.combo-select > .button:focus {
+  background-color: $bg3;
+  color: $main-alt;
+  border-color: $bg3;
 }
 
 .combo-select > .selected,
@@ -883,6 +879,15 @@ button.faint:focus,
   background-color: $main;
   color: $bg1;
   border-color: $main;
+}
+
+.combo-select > button.selected:hover,
+.combo-select > .button.selected:hover,
+.combo-select > button.selected:focus,
+.combo-select > .button.selected:focus {
+  background-color: $main-alt;
+  color: $bg1;
+  border-color: $main-alt;
 }
 
 .combo-select .combo-selected-icon {

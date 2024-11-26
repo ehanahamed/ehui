@@ -835,22 +835,18 @@ button.faint:focus,
 
 .combo-select > button,
 .combo-select > .button {
-  background-color: #2B2B3D;
+  background-color: #242433;
   color: #9466FF;
-  border-color: #2B2B3D;
+  border-color: #242433;
 }
 
 .combo-select > button:hover,
 .combo-select > .button:hover,
-.combo-select > button.selected:hover,
-.combo-select > .button.selected:hover,
 .combo-select > button:focus,
-.combo-select > .button:focus,
-.combo-select > button.selected:focus,
-.combo-select > .button.selected:focus {
-  background-color: #B899FF;
-  color: #20202E;
-  border-color: #9466FF;
+.combo-select > .button:focus {
+  background-color: #2B2B3D;
+  color: #B899FF;
+  border-color: #2B2B3D;
 }
 
 .combo-select > .selected,
@@ -859,6 +855,15 @@ button.faint:focus,
   background-color: #9466FF;
   color: #20202E;
   border-color: #9466FF;
+}
+
+.combo-select > button.selected:hover,
+.combo-select > .button.selected:hover,
+.combo-select > button.selected:focus,
+.combo-select > .button.selected:focus {
+  background-color: #B899FF;
+  color: #20202E;
+  border-color: #B899FF;
 }
 
 .combo-select .combo-selected-icon {
@@ -2008,6 +2013,13 @@ button:focus, .button:focus,
 
 button.no-clickable-effect:hover, .button.no-clickable-effect:hover,
 button.no-clickable-effect:focus, .button.no-clickable-effect:focus {
+  transform: none;
+}
+
+.combo-select button:hover,
+.combo-select button:focus,
+.combo-select .button:hover,
+.combo-select .button:focus {
   transform: none;
 }
 
