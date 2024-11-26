@@ -632,6 +632,7 @@ input[type="checkbox"]:checked {
   position: relative;
   width: 100%;
   height: 100%;
+  padding: 1rem;
   background-color: $bg2;
   border-radius: $border-radius;
   align-items: center;
@@ -661,6 +662,7 @@ input[type="checkbox"]:checked {
   width: 100%;
   height: 100%;
   margin-top: 0px;
+  padding: 1rem;
   background-color: $bg2;
   border-radius: $border-radius;
   align-items: center;
