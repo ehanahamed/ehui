@@ -621,7 +621,9 @@ button.faint.yay:focus,
   a:focus-visible,
   .a:focus-visible,
   button:focus-visible,
-  .button:focus-visible {
+  .button:focus-visible,
+  input[type="radio"]:focus-visible,
+  input[type="checkbox"]:focus-visible {
     transition-duration: 0s;
   }
 
