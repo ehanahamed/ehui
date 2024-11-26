@@ -608,6 +608,7 @@ input[type=checkbox]:checked {
   position: relative;
   width: 100%;
   height: 100%;
+  padding: 1rem;
   background-color: #F5F5F5;
   border-radius: 0.8rem;
   align-items: center;
@@ -625,6 +626,7 @@ input[type=checkbox]:checked {
   transform-style: preserve-3d;
   background-color: inherit;
   border-radius: 0px;
+  padding: 0px;
   align-items: normal;
   justify-content: normal;
   text-align: center;
@@ -637,6 +639,7 @@ input[type=checkbox]:checked {
   width: 100%;
   height: 100%;
   margin-top: 0px;
+  padding: 1rem;
   background-color: #F5F5F5;
   border-radius: 0.8rem;
   align-items: center;
@@ -1935,6 +1938,14 @@ button.faint.yay:focus,
   input[type=checkbox] {
     transition-duration: 0s;
   }
+  a:focus-visible,
+  .a:focus-visible,
+  button:focus-visible,
+  .button:focus-visible,
+  input[type=radio]:focus-visible,
+  input[type=checkbox]:focus-visible {
+    transition-duration: 0s;
+  }
   .card,
   .card.double {
     perspective: none;
@@ -1980,6 +1991,9 @@ button.faint.yay:focus,
   .card.double.flip > .content > .front {
     display: none;
   }
+  .searchbar {
+    transition-duration: 0s;
+  }
 }
 .clickable-effect {
   transition-duration: 0.4s;
@@ -1995,6 +2009,18 @@ button:focus, .button:focus,
 button.no-clickable-effect:hover, .button.no-clickable-effect:hover,
 button.no-clickable-effect:focus, .button.no-clickable-effect:focus {
   transform: none;
+}
+
+@media (prefers-reduced-motion) {
+  .clickable-effect {
+    transition-duration: 0s;
+  }
+  button:hover, .button:hover,
+  button:focus, .button:focus,
+  .clickable-effect:hover,
+  .clickable-effect:focus {
+    transform: none;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -2608,6 +2634,7 @@ input[type=checkbox]:checked {
   position: relative;
   width: 100%;
   height: 100%;
+  padding: 1rem;
   background-color: #242433;
   border-radius: 0.8rem;
   align-items: center;
@@ -2625,6 +2652,7 @@ input[type=checkbox]:checked {
   transform-style: preserve-3d;
   background-color: inherit;
   border-radius: 0px;
+  padding: 0px;
   align-items: normal;
   justify-content: normal;
   text-align: center;
@@ -2637,6 +2665,7 @@ input[type=checkbox]:checked {
   width: 100%;
   height: 100%;
   margin-top: 0px;
+  padding: 1rem;
   background-color: #242433;
   border-radius: 0.8rem;
   align-items: center;
@@ -3935,6 +3964,14 @@ button.faint.yay:focus,
   input[type=checkbox] {
     transition-duration: 0s;
   }
+  a:focus-visible,
+  .a:focus-visible,
+  button:focus-visible,
+  .button:focus-visible,
+  input[type=radio]:focus-visible,
+  input[type=checkbox]:focus-visible {
+    transition-duration: 0s;
+  }
   .card,
   .card.double {
     perspective: none;
@@ -3980,6 +4017,9 @@ button.faint.yay:focus,
   .card.double.flip > .content > .front {
     display: none;
   }
+  .searchbar {
+    transition-duration: 0s;
+  }
 }
 .clickable-effect {
   transition-duration: 0.4s;
@@ -3995,6 +4035,18 @@ button:focus, .button:focus,
 button.no-clickable-effect:hover, .button.no-clickable-effect:hover,
 button.no-clickable-effect:focus, .button.no-clickable-effect:focus {
   transform: none;
+}
+
+@media (prefers-reduced-motion) {
+  .clickable-effect {
+    transition-duration: 0s;
+  }
+  button:hover, .button:hover,
+  button:focus, .button:focus,
+  .clickable-effect:hover,
+  .clickable-effect:focus {
+    transform: none;
+  }
 }
 
 }
