@@ -618,6 +618,13 @@ button.faint.yay:focus,
     transition-duration: 0s;
   }
 
+  a:focus-visible,
+  .a:focus-visible,
+  button:focus-visible,
+  .button:focus-visible {
+    transition-duration: 0s;
+  }
+
   .card,
   .card.double {
     perspective: none;
@@ -670,4 +677,8 @@ button.faint.yay:focus,
   .card.double.flip > .content > .front {
     display: none;
   } 
+
+  .searchbar {
+    transition-duration: 0s;
+  }
 }

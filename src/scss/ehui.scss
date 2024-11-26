@@ -107,3 +107,16 @@ button.no-clickable-effect:hover, .button.no-clickable-effect:hover,
 button.no-clickable-effect:focus, .button.no-clickable-effect:focus {
   transform: none;
 }
+
+@media (prefers-reduced-motion) {  
+  .clickable-effect {
+    transition-duration: 0s;
+  }
+
+  button:hover, .button:hover,
+  button:focus, .button:focus,
+  .clickable-effect:hover,
+  .clickable-effect:focus {
+    transform: none;
+  }
+}
