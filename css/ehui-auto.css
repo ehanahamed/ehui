@@ -1681,36 +1681,6 @@ textarea.horizontal {
   display: none;
 }
 
-.fullscreen {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100vw;
-  height: 100vh;
-  z-index: 200;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0px;
-  background: #FCFCFC;
-}
-
-.exitFullscreen {
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  margin: 0px;
-  /* hide exit button by default */
-  display: none;
-}
-
-.fullscreen > button.exitFullscreen,
-.fullscreen > .button.exitFullscreen {
-  /* show exit button if its parent is fullscreen */
-  display: inline-block;
-  /* and specifically use inline block just for buttons */
-}
-
 .invisible {
   position: absolute;
   width: 1px;
