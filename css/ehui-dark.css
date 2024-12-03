@@ -30,7 +30,7 @@ body {
 }
 
 ::selection {
-  background-color: #533380;
+  background-color: #4D3A78;
   color: #c3cce9;
 }
 
@@ -203,11 +203,11 @@ header > .nav {
 }
 
 .nav > div.current {
-  border-bottom: 0.2rem solid #B899FF;
+  border-bottom: 0.2rem solid #C6ADFF;
 }
 
 .nav > div.current > a {
-  color: #B899FF;
+  color: #C6ADFF;
 }
 
 footer,
@@ -264,7 +264,7 @@ table.inner > tbody:not(:last-child) {
 
 a,
 .a {
-  color: #9466FF;
+  color: #A37CFE;
   cursor: pointer;
   border-radius: 0.4rem;
   font-size: 1rem;
@@ -278,12 +278,12 @@ a:hover,
 a:focus,
 .a:hover,
 .a:focus {
-  color: #B899FF;
+  color: #C6ADFF;
 }
 
 a:focus-visible,
 .a:focus-visible {
-  outline: 0.2rem solid #9466FF;
+  outline: 0.2rem solid #A37CFE;
   outline-offset: 0.4rem;
   transition-duration: 0.1s;
 }
@@ -297,7 +297,7 @@ button,
   text-align: center;
   cursor: pointer;
   text-decoration: none;
-  background-color: #9466FF;
+  background-color: #A37CFE;
   color: #20202E;
   border: none;
   border-radius: 1.6rem;
@@ -319,14 +319,14 @@ a,
 button.alt,
 .button.alt {
   background-color: #242433;
-  color: #9466FF;
+  color: #A37CFE;
 }
 
 button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-  background-color: #B899FF;
+  background-color: #C6ADFF;
   color: #20202E;
 }
 
@@ -335,12 +335,12 @@ button.alt:focus,
 .button.alt:hover,
 .button.alt:focus {
   background-color: #2B2B3D;
-  color: #B899FF;
+  color: #C6ADFF;
 }
 
 button:focus-visible,
 .button:focus-visible {
-  outline: 0.2rem solid #9466FF;
+  outline: 0.2rem solid #A37CFE;
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
 }
@@ -385,7 +385,7 @@ textarea:hover {
 input[type=text]:focus,
 input[type=password]:focus,
 textarea:focus {
-  border-color: #9466FF;
+  border-color: #A37CFE;
   background-color: #20202E;
 }
 
@@ -433,7 +433,7 @@ textarea:focus {
 
 .searchbar:focus-within {
   background: #242433;
-  border-color: #9466FF;
+  border-color: #A37CFE;
 }
 
 .searchbar.with-autocomplete {
@@ -491,14 +491,14 @@ textarea:focus {
 
 .searchbar-autocomplete > a:hover,
 .searchbar-autocomplete > .a:hover {
-  color: #B899FF;
+  color: #C6ADFF;
   background-color: #2B2B3D;
 }
 
 /* extra focus-visible to override link's other styles */
 .searchbar-autocomplete > a:focus-visible,
 .searchbar-autocomplete > .a:focus-visible {
-  color: #B899FF;
+  color: #C6ADFF;
   background-color: #2B2B3D;
   border: none;
   outline: none;
@@ -541,7 +541,7 @@ input[type=checkbox] {
   height: 1.8rem;
   margin: 0px;
   background-color: #20202E;
-  border: 0.2rem solid #9466FF;
+  border: 0.2rem solid #A37CFE;
   transition-duration: 0.4s;
 }
 
@@ -557,19 +557,19 @@ input[type=radio]:hover,
 input[type=radio]:focus,
 input[type=checkbox]:hover,
 input[type=checkbox]:focus {
-  border-color: #B899FF;
+  border-color: #C6ADFF;
 }
 
 input[type=radio]:focus-visible,
 input[type=checkbox]:focus-visible {
-  outline: 0.2rem solid #9466FF;
+  outline: 0.2rem solid #A37CFE;
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
 }
 
 input[type=radio]:checked,
 input[type=checkbox]:checked {
-  background-color: #9466FF;
+  background-color: #A37CFE;
   transition-duration: 0.1s;
 }
 
@@ -760,7 +760,7 @@ input[type=checkbox]:checked {
   text-wrap: nowrap;
   background-color: #242433;
   border-color: #242433;
-  color: #9466FF;
+  color: #A37CFE;
 }
 
 .dropdown .content button:hover,
@@ -769,7 +769,7 @@ input[type=checkbox]:checked {
 .dropdown .content .button:focus {
   background-color: #2B2B3D;
   border-color: #2B2B3D;
-  color: #B899FF;
+  color: #C6ADFF;
 }
 
 button.dropdown-toggle,
@@ -797,7 +797,7 @@ button.faint:focus,
 .button.faint:focus {
   background-color: #2B2B3D;
   border: none;
-  color: #B899FF;
+  color: #C6ADFF;
 }
 
 .combo-select {
@@ -836,7 +836,7 @@ button.faint:focus,
 .combo-select > button,
 .combo-select > .button {
   background-color: #242433;
-  color: #9466FF;
+  color: #A37CFE;
   border-color: #242433;
 }
 
@@ -845,25 +845,25 @@ button.faint:focus,
 .combo-select > button:focus,
 .combo-select > .button:focus {
   background-color: #2B2B3D;
-  color: #B899FF;
+  color: #C6ADFF;
   border-color: #2B2B3D;
 }
 
 .combo-select > .selected,
 .combo-select > button.selected,
 .combo-select > .button.selected {
-  background-color: #9466FF;
+  background-color: #A37CFE;
   color: #20202E;
-  border-color: #9466FF;
+  border-color: #A37CFE;
 }
 
 .combo-select > button.selected:hover,
 .combo-select > .button.selected:hover,
 .combo-select > button.selected:focus,
 .combo-select > .button.selected:focus {
-  background-color: #B899FF;
+  background-color: #C6ADFF;
   color: #20202E;
-  border-color: #B899FF;
+  border-color: #C6ADFF;
 }
 
 .combo-select .combo-selected-icon {
@@ -932,7 +932,7 @@ button.box:hover,
 button.box:focus,
 .button.box:hover,
 .button.box:focus {
-  color: #B899FF;
+  color: #C6ADFF;
   background: #2B2B3D;
   border-color: #2B2B3D;
 }
@@ -943,8 +943,8 @@ button.box:focus-visible {
 
 button.box.selected,
 .button.box.selected {
-  color: #9466FF;
-  border-color: #9466FF;
+  color: #A37CFE;
+  border-color: #A37CFE;
 }
 
 *,
@@ -1352,12 +1352,12 @@ a.mark {
   /*
   undo stuff in other stuff?
   */
-  color: #9466FF;
+  color: #A37CFE;
 }
 
 a.mark:hover,
 a.mark:focus {
-  color: #B899FF;
+  color: #C6ADFF;
 }
 
 /*
@@ -1384,7 +1384,7 @@ u.yay,
 mark.yay,
 .mark.yay,
 code.yay {
-  color: #66FFCC;
+  color: #7CFED2;
 }
 
 span.bg1,
@@ -1444,7 +1444,7 @@ u.main,
 mark.main,
 .mark.main,
 code.main {
-  color: #9466FF;
+  color: #A37CFE;
 }
 
 span.extra,
@@ -1456,7 +1456,7 @@ u.extra,
 mark.extra,
 .mark.extra,
 code.extra {
-  color: #66FFCC;
+  color: #7CFED2;
 }
 
 mark.markOhno,
@@ -1466,7 +1466,7 @@ mark.markOhno,
 
 mark.markYay,
 .mark.markYay {
-  background-color: #66FFCC;
+  background-color: #7CFED2;
 }
 
 mark.markBg4,
@@ -1496,12 +1496,12 @@ mark.markFg0,
 
 mark.markMain,
 .mark.markMain {
-  background-color: #9466FF;
+  background-color: #A37CFE;
 }
 
 mark.markExtra,
 .mark.markExtra {
-  background-color: #66FFCC;
+  background-color: #7CFED2;
 }
 
 .box.ohno {
@@ -1510,8 +1510,8 @@ mark.markExtra,
 }
 
 .box.yay {
-  color: #66FFCC;
-  border-color: #66FFCC;
+  color: #7CFED2;
+  border-color: #7CFED2;
 }
 
 pre,
@@ -1541,12 +1541,12 @@ button.ohno,
 
 button.yay,
 .button.yay {
-  background-color: #66FFCC;
+  background-color: #7CFED2;
 }
 
 button.extra,
 .button.extra {
-  background-color: #66FFCC;
+  background-color: #7CFED2;
   color: #1B1B26;
 }
 
@@ -1558,13 +1558,13 @@ button.alt.ohno,
 
 button.alt.yay,
 .button.alt.yay {
-  color: #66FFCC;
+  color: #7CFED2;
   background: #242433;
 }
 
 button.alt.extra,
 .button.alt.extra {
-  color: #66FFCC;
+  color: #7CFED2;
   background: #242433;
 }
 
@@ -1623,12 +1623,12 @@ button:focus-visible.ohno,
 
 button:focus-visible.yay,
 .button:focus-visible.yay {
-  outline-color: #66FFCC;
+  outline-color: #7CFED2;
 }
 
 button:focus-visible.extra,
 .button:focus-visible.extra {
-  outline-color: #66FFCC;
+  outline-color: #7CFED2;
 }
 
 input[type=text].ohno,
@@ -1640,13 +1640,13 @@ textarea.ohno {
 input[type=text].yay,
 input[type=password].yay,
 textarea.yay {
-  border-color: #66FFCC;
+  border-color: #7CFED2;
 }
 
 input[type=text].extra,
 input[type=password].extra,
 textarea.extra {
-  border-color: #66FFCC;
+  border-color: #7CFED2;
 }
 
 input[type=text].ohno:focus,
@@ -1727,7 +1727,7 @@ textarea.horizontal {
   width: 200px;
   height: 200px;
   z-index: -1;
-  background-color: #9466FF;
+  background-color: #A37CFE;
   opacity: 0.2;
   filter: blur(1rem);
   border-radius: 50%;
@@ -1769,7 +1769,7 @@ button.large,
 }
 
 .fill-yay {
-  fill: #66FFCC;
+  fill: #7CFED2;
 }
 
 .fill-yay-alt {
@@ -1777,15 +1777,15 @@ button.large,
 }
 
 .fill-main {
-  fill: #9466FF;
+  fill: #A37CFE;
 }
 
 .fill-main-alt {
-  fill: #B899FF;
+  fill: #C6ADFF;
 }
 
 .fill-extra {
-  fill: #66FFCC;
+  fill: #7CFED2;
 }
 
 .fill-extra-alt {
@@ -1853,7 +1853,7 @@ button.large,
 .dropdown .content button.yay,
 .dropdown .content .button.yay {
   background-color: #242433;
-  color: #66FFCC;
+  color: #7CFED2;
 }
 
 .dropdown .content button.ohno:hover,
@@ -1908,7 +1908,7 @@ button.faint.yay,
 .button.faint.yay {
   background-color: transparent;
   border: none;
-  color: #66FFCC;
+  color: #7CFED2;
 }
 
 button.dropdown-toggle.yay:hover,
