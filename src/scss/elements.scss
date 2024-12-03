@@ -1,3 +1,5 @@
+@use "sass:string";
+
 $font-family: sans-serif !default;
 $border-radius: 0.8rem !default;
 $border-radius-button: 1.6rem !default;
@@ -899,9 +901,9 @@ button.faint:focus,
 }
 
 @function url-encode-replace-hashtag($string) {
-  $index: str-index($string, "#");
+  $index: string.index($string, "#");
   @if $index {
-    @return str-slice($string, 1, $index - 1) + "%23" + str-slice($string, $index + 1);
+    @return string.slice($string, 1, $index - 1) + "%23" + string.slice($string, $index + 1);
   }
   @return $string;
 }
