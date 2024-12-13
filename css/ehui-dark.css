@@ -203,11 +203,11 @@ header > .nav {
 }
 
 .nav > div.current {
-  border-bottom: 0.2rem solid #C2B3FF;
+  border-bottom: 0.2rem solid #C7B3FF;
 }
 
 .nav > div.current > a {
-  color: #C2B3FF;
+  color: #C7B3FF;
 }
 
 footer,
@@ -264,7 +264,7 @@ table.inner > tbody:not(:last-child) {
 
 a,
 .a {
-  color: #9E75FF;
+  color: #A280FF;
   cursor: pointer;
   border-radius: 0.4rem;
   font-size: 1rem;
@@ -278,12 +278,12 @@ a:hover,
 a:focus,
 .a:hover,
 .a:focus {
-  color: #C2B3FF;
+  color: #C7B3FF;
 }
 
 a:focus-visible,
 .a:focus-visible {
-  outline: 0.2rem solid #9E75FF;
+  outline: 0.2rem solid #A280FF;
   outline-offset: 0.4rem;
   transition-duration: 0.1s;
 }
@@ -297,7 +297,7 @@ button,
   text-align: center;
   cursor: pointer;
   text-decoration: none;
-  background-color: #9E75FF;
+  background-color: #A280FF;
   color: #20202E;
   border: none;
   border-radius: 1.6rem;
@@ -319,14 +319,14 @@ a,
 button.alt,
 .button.alt {
   background-color: #242433;
-  color: #9E75FF;
+  color: #A280FF;
 }
 
 button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-  background-color: #C2B3FF;
+  background-color: #C7B3FF;
   color: #20202E;
 }
 
@@ -335,12 +335,12 @@ button.alt:focus,
 .button.alt:hover,
 .button.alt:focus {
   background-color: #2B2B3D;
-  color: #C2B3FF;
+  color: #C7B3FF;
 }
 
 button:focus-visible,
 .button:focus-visible {
-  outline: 0.2rem solid #9E75FF;
+  outline: 0.2rem solid #A280FF;
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
 }
@@ -385,7 +385,7 @@ textarea:hover {
 input[type=text]:focus,
 input[type=password]:focus,
 textarea:focus {
-  border-color: #9E75FF;
+  border-color: #A280FF;
   background-color: #20202E;
 }
 
@@ -433,7 +433,7 @@ textarea:focus {
 
 .searchbar:focus-within {
   background: #242433;
-  border-color: #9E75FF;
+  border-color: #A280FF;
 }
 
 .searchbar.with-autocomplete {
@@ -491,14 +491,14 @@ textarea:focus {
 
 .searchbar-autocomplete > a:hover,
 .searchbar-autocomplete > .a:hover {
-  color: #C2B3FF;
+  color: #C7B3FF;
   background-color: #2B2B3D;
 }
 
 /* extra focus-visible to override link's other styles */
 .searchbar-autocomplete > a:focus-visible,
 .searchbar-autocomplete > .a:focus-visible {
-  color: #C2B3FF;
+  color: #C7B3FF;
   background-color: #2B2B3D;
   border: none;
   outline: none;
@@ -541,7 +541,7 @@ input[type=checkbox] {
   height: 1.8rem;
   margin: 0px;
   background-color: #20202E;
-  border: 0.2rem solid #9E75FF;
+  border: 0.2rem solid #A280FF;
   transition-duration: 0.4s;
 }
 
@@ -557,19 +557,19 @@ input[type=radio]:hover,
 input[type=radio]:focus,
 input[type=checkbox]:hover,
 input[type=checkbox]:focus {
-  border-color: #C2B3FF;
+  border-color: #C7B3FF;
 }
 
 input[type=radio]:focus-visible,
 input[type=checkbox]:focus-visible {
-  outline: 0.2rem solid #9E75FF;
+  outline: 0.2rem solid #A280FF;
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
 }
 
 input[type=radio]:checked,
 input[type=checkbox]:checked {
-  background-color: #9E75FF;
+  background-color: #A280FF;
   transition-duration: 0.1s;
 }
 
@@ -760,7 +760,7 @@ input[type=checkbox]:checked {
   text-wrap: nowrap;
   background-color: #242433;
   border-color: #242433;
-  color: #9E75FF;
+  color: #A280FF;
 }
 
 .dropdown .content button:hover,
@@ -769,7 +769,7 @@ input[type=checkbox]:checked {
 .dropdown .content .button:focus {
   background-color: #2B2B3D;
   border-color: #2B2B3D;
-  color: #C2B3FF;
+  color: #C7B3FF;
 }
 
 button.dropdown-toggle,
@@ -797,7 +797,7 @@ button.faint:focus,
 .button.faint:focus {
   background-color: #2B2B3D;
   border: none;
-  color: #C2B3FF;
+  color: #C7B3FF;
 }
 
 .combo-select {
@@ -836,7 +836,7 @@ button.faint:focus,
 .combo-select > button,
 .combo-select > .button {
   background-color: #242433;
-  color: #9E75FF;
+  color: #A280FF;
   border-color: #242433;
 }
 
@@ -845,25 +845,25 @@ button.faint:focus,
 .combo-select > button:focus,
 .combo-select > .button:focus {
   background-color: #2B2B3D;
-  color: #C2B3FF;
+  color: #C7B3FF;
   border-color: #2B2B3D;
 }
 
 .combo-select > .selected,
 .combo-select > button.selected,
 .combo-select > .button.selected {
-  background-color: #9E75FF;
+  background-color: #A280FF;
   color: #20202E;
-  border-color: #9E75FF;
+  border-color: #A280FF;
 }
 
 .combo-select > button.selected:hover,
 .combo-select > .button.selected:hover,
 .combo-select > button.selected:focus,
 .combo-select > .button.selected:focus {
-  background-color: #C2B3FF;
+  background-color: #C7B3FF;
   color: #20202E;
-  border-color: #C2B3FF;
+  border-color: #C7B3FF;
 }
 
 .combo-select .combo-selected-icon {
@@ -932,7 +932,7 @@ button.box:hover,
 button.box:focus,
 .button.box:hover,
 .button.box:focus {
-  color: #C2B3FF;
+  color: #C7B3FF;
   background: #2B2B3D;
   border-color: #2B2B3D;
 }
@@ -943,8 +943,8 @@ button.box:focus-visible {
 
 button.box.selected,
 .button.box.selected {
-  color: #9E75FF;
-  border-color: #9E75FF;
+  color: #A280FF;
+  border-color: #A280FF;
 }
 
 *,
@@ -1352,12 +1352,12 @@ a.mark {
   /*
   undo stuff in other stuff?
   */
-  color: #9E75FF;
+  color: #A280FF;
 }
 
 a.mark:hover,
 a.mark:focus {
-  color: #C2B3FF;
+  color: #C7B3FF;
 }
 
 /*
@@ -1384,7 +1384,7 @@ u.yay,
 mark.yay,
 .mark.yay,
 code.yay {
-  color: #85FFCE;
+  color: #80FFB5;
 }
 
 span.bg1,
@@ -1444,7 +1444,7 @@ u.main,
 mark.main,
 .mark.main,
 code.main {
-  color: #9E75FF;
+  color: #A280FF;
 }
 
 span.extra,
@@ -1456,7 +1456,7 @@ u.extra,
 mark.extra,
 .mark.extra,
 code.extra {
-  color: #85FFCE;
+  color: #80FFB5;
 }
 
 mark.markOhno,
@@ -1466,7 +1466,7 @@ mark.markOhno,
 
 mark.markYay,
 .mark.markYay {
-  background-color: #85FFCE;
+  background-color: #80FFB5;
 }
 
 mark.markBg4,
@@ -1496,12 +1496,12 @@ mark.markFg0,
 
 mark.markMain,
 .mark.markMain {
-  background-color: #9E75FF;
+  background-color: #A280FF;
 }
 
 mark.markExtra,
 .mark.markExtra {
-  background-color: #85FFCE;
+  background-color: #80FFB5;
 }
 
 .box.ohno {
@@ -1510,8 +1510,8 @@ mark.markExtra,
 }
 
 .box.yay {
-  color: #85FFCE;
-  border-color: #85FFCE;
+  color: #80FFB5;
+  border-color: #80FFB5;
 }
 
 pre,
@@ -1541,12 +1541,12 @@ button.ohno,
 
 button.yay,
 .button.yay {
-  background-color: #85FFCE;
+  background-color: #80FFB5;
 }
 
 button.extra,
 .button.extra {
-  background-color: #85FFCE;
+  background-color: #80FFB5;
   color: #1B1B26;
 }
 
@@ -1558,13 +1558,13 @@ button.alt.ohno,
 
 button.alt.yay,
 .button.alt.yay {
-  color: #85FFCE;
+  color: #80FFB5;
   background: #242433;
 }
 
 button.alt.extra,
 .button.alt.extra {
-  color: #85FFCE;
+  color: #80FFB5;
   background: #242433;
 }
 
@@ -1581,7 +1581,7 @@ button.alt:focus.yay,
 .button.alt:hover.yay,
 .button.alt:focus.yay {
   background-color: #2B2B3D;
-  color: #CCFFEB;
+  color: #B3FFD2;
 }
 
 button.alt:hover.extra,
@@ -1589,7 +1589,7 @@ button.alt:focus.extra,
 .button.alt:hover.extra,
 .button.alt:focus.extra {
   background-color: #2B2B3D;
-  color: #CCFFEB;
+  color: #B3FFD2;
 }
 
 button:hover.ohno,
@@ -1604,7 +1604,7 @@ button:hover.yay,
 button:focus.yay,
 .button:hover.yay,
 .button:focus.yay {
-  background-color: #CCFFEB;
+  background-color: #B3FFD2;
   color: #20202E;
 }
 
@@ -1612,7 +1612,7 @@ button:hover.extra,
 button:focus.extra,
 .button:hover.extra,
 .button:focus.extra {
-  background-color: #CCFFEB;
+  background-color: #B3FFD2;
   color: #1B1B26;
 }
 
@@ -1623,12 +1623,12 @@ button:focus-visible.ohno,
 
 button:focus-visible.yay,
 .button:focus-visible.yay {
-  outline-color: #85FFCE;
+  outline-color: #80FFB5;
 }
 
 button:focus-visible.extra,
 .button:focus-visible.extra {
-  outline-color: #85FFCE;
+  outline-color: #80FFB5;
 }
 
 input[type=text].ohno,
@@ -1640,13 +1640,13 @@ textarea.ohno {
 input[type=text].yay,
 input[type=password].yay,
 textarea.yay {
-  border-color: #85FFCE;
+  border-color: #80FFB5;
 }
 
 input[type=text].extra,
 input[type=password].extra,
 textarea.extra {
-  border-color: #85FFCE;
+  border-color: #80FFB5;
 }
 
 input[type=text].ohno:focus,
@@ -1658,13 +1658,13 @@ textarea.ohno:focus {
 input[type=text].yay:focus,
 input[type=password].yay:focus,
 textarea.yay:focus {
-  border-color: #CCFFEB;
+  border-color: #B3FFD2;
 }
 
 input[type=text].extra:focus,
 input[type=password].extra:focus,
 textarea.extra:focus {
-  border-color: #CCFFEB;
+  border-color: #B3FFD2;
 }
 
 textarea.vertical {
@@ -1727,7 +1727,7 @@ textarea.horizontal {
   width: 200px;
   height: 200px;
   z-index: -1;
-  background-color: #9E75FF;
+  background-color: #A280FF;
   opacity: 0.2;
   filter: blur(1rem);
   border-radius: 50%;
@@ -1769,27 +1769,27 @@ button.large,
 }
 
 .fill-yay {
-  fill: #85FFCE;
+  fill: #80FFB5;
 }
 
 .fill-yay-alt {
-  fill: #CCFFEB;
+  fill: #B3FFD2;
 }
 
 .fill-main {
-  fill: #9E75FF;
+  fill: #A280FF;
 }
 
 .fill-main-alt {
-  fill: #C2B3FF;
+  fill: #C7B3FF;
 }
 
 .fill-extra {
-  fill: #85FFCE;
+  fill: #80FFB5;
 }
 
 .fill-extra-alt {
-  fill: #CCFFEB;
+  fill: #B3FFD2;
 }
 
 .fill-extra-bg {
@@ -1853,7 +1853,7 @@ button.large,
 .dropdown .content button.yay,
 .dropdown .content .button.yay {
   background-color: #242433;
-  color: #85FFCE;
+  color: #80FFB5;
 }
 
 .dropdown .content button.ohno:hover,
@@ -1869,7 +1869,7 @@ button.large,
 .dropdown .content button.yay:focus,
 .dropdown .content .button.yay:focus {
   background-color: #2B2B3D;
-  color: #CCFFEB;
+  color: #B3FFD2;
 }
 
 button.dropdown-toggle.ohno,
@@ -1908,7 +1908,7 @@ button.faint.yay,
 .button.faint.yay {
   background-color: transparent;
   border: none;
-  color: #85FFCE;
+  color: #80FFB5;
 }
 
 button.dropdown-toggle.yay:hover,
@@ -1925,7 +1925,7 @@ button.faint.yay:focus,
 .button.faint.yay:focus {
   background-color: #2B2B3D;
   border: none;
-  color: #CCFFEB;
+  color: #B3FFD2;
 }
 
 @media (prefers-reduced-motion) {
