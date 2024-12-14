@@ -1631,6 +1631,70 @@ button:focus-visible.extra,
   outline-color: #80FFBF;
 }
 
+button.button-box.ohno,
+.button.button-box.ohno {
+  color: #ff6666;
+  background: #242433;
+  border: 0.2rem solid #242433;
+  border-radius: 0.8rem;
+}
+
+button.button-box.yay,
+.button.button-box.yay {
+  color: #80FFBF;
+  background: #242433;
+  border: 0.2rem solid #242433;
+  border-radius: 0.8rem;
+}
+
+button.button-box:hover.ohno,
+button.button-box:focus.ohno,
+.button.button-box:hover.ohno,
+.button.button-box:focus.ohno {
+  color: #ff9999;
+  background: #2B2B3D;
+  border-color: #2B2B3D;
+}
+
+button.button-box:hover.yay,
+button.button-box:focus.yay,
+.button.button-box:hover.yay,
+.button.button-box:focus.yay {
+  color: #B3FFD9;
+  background: #2B2B3D;
+  border-color: #2B2B3D;
+}
+
+button.button-box.selected.ohno,
+.button.button-box.selected.ohno {
+  color: #ff6666;
+  border-color: #ff6666;
+}
+
+button.button-box.selected.yay,
+.button.button-box.selected.yay {
+  color: #80FFBF;
+  border-color: #80FFBF;
+}
+
+button.button-box.selected:hover.ohno,
+button.button-box.selected:focus.ohno,
+.button.button-box.selected:hover.ohno,
+.button.button-box.selected:focus.ohno {
+  color: #ff9999;
+  background: #2B2B3D;
+  border-color: #ff9999;
+}
+
+button.button-box.selected:hover.yay,
+button.button-box.selected:focus.yay,
+.button.button-box.selected:hover.yay,
+.button.button-box.selected:focus.yay {
+  color: #B3FFD9;
+  background: #2B2B3D;
+  border-color: #B3FFD9;
+}
+
 input[type=text].ohno,
 input[type=password].ohno,
 textarea.ohno {
