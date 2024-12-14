@@ -1384,7 +1384,7 @@ u.yay,
 mark.yay,
 .mark.yay,
 code.yay {
-  color: #80FFB5;
+  color: #80FFBF;
 }
 
 span.bg1,
@@ -1456,7 +1456,7 @@ u.extra,
 mark.extra,
 .mark.extra,
 code.extra {
-  color: #80FFB5;
+  color: #80FFBF;
 }
 
 mark.markOhno,
@@ -1466,7 +1466,7 @@ mark.markOhno,
 
 mark.markYay,
 .mark.markYay {
-  background-color: #80FFB5;
+  background-color: #80FFBF;
 }
 
 mark.markBg4,
@@ -1501,7 +1501,7 @@ mark.markMain,
 
 mark.markExtra,
 .mark.markExtra {
-  background-color: #80FFB5;
+  background-color: #80FFBF;
 }
 
 .box.ohno {
@@ -1510,8 +1510,8 @@ mark.markExtra,
 }
 
 .box.yay {
-  color: #80FFB5;
-  border-color: #80FFB5;
+  color: #80FFBF;
+  border-color: #80FFBF;
 }
 
 pre,
@@ -1541,12 +1541,12 @@ button.ohno,
 
 button.yay,
 .button.yay {
-  background-color: #80FFB5;
+  background-color: #80FFBF;
 }
 
 button.extra,
 .button.extra {
-  background-color: #80FFB5;
+  background-color: #80FFBF;
   color: #1B1B26;
 }
 
@@ -1558,13 +1558,13 @@ button.alt.ohno,
 
 button.alt.yay,
 .button.alt.yay {
-  color: #80FFB5;
+  color: #80FFBF;
   background: #242433;
 }
 
 button.alt.extra,
 .button.alt.extra {
-  color: #80FFB5;
+  color: #80FFBF;
   background: #242433;
 }
 
@@ -1581,7 +1581,7 @@ button.alt:focus.yay,
 .button.alt:hover.yay,
 .button.alt:focus.yay {
   background-color: #2B2B3D;
-  color: #B3FFD2;
+  color: #B3FFD9;
 }
 
 button.alt:hover.extra,
@@ -1589,7 +1589,7 @@ button.alt:focus.extra,
 .button.alt:hover.extra,
 .button.alt:focus.extra {
   background-color: #2B2B3D;
-  color: #B3FFD2;
+  color: #B3FFD9;
 }
 
 button:hover.ohno,
@@ -1604,7 +1604,7 @@ button:hover.yay,
 button:focus.yay,
 .button:hover.yay,
 .button:focus.yay {
-  background-color: #B3FFD2;
+  background-color: #B3FFD9;
   color: #20202E;
 }
 
@@ -1612,7 +1612,7 @@ button:hover.extra,
 button:focus.extra,
 .button:hover.extra,
 .button:focus.extra {
-  background-color: #B3FFD2;
+  background-color: #B3FFD9;
   color: #1B1B26;
 }
 
@@ -1623,12 +1623,12 @@ button:focus-visible.ohno,
 
 button:focus-visible.yay,
 .button:focus-visible.yay {
-  outline-color: #80FFB5;
+  outline-color: #80FFBF;
 }
 
 button:focus-visible.extra,
 .button:focus-visible.extra {
-  outline-color: #80FFB5;
+  outline-color: #80FFBF;
 }
 
 input[type=text].ohno,
@@ -1640,13 +1640,13 @@ textarea.ohno {
 input[type=text].yay,
 input[type=password].yay,
 textarea.yay {
-  border-color: #80FFB5;
+  border-color: #80FFBF;
 }
 
 input[type=text].extra,
 input[type=password].extra,
 textarea.extra {
-  border-color: #80FFB5;
+  border-color: #80FFBF;
 }
 
 input[type=text].ohno:focus,
@@ -1658,13 +1658,13 @@ textarea.ohno:focus {
 input[type=text].yay:focus,
 input[type=password].yay:focus,
 textarea.yay:focus {
-  border-color: #B3FFD2;
+  border-color: #B3FFD9;
 }
 
 input[type=text].extra:focus,
 input[type=password].extra:focus,
 textarea.extra:focus {
-  border-color: #B3FFD2;
+  border-color: #B3FFD9;
 }
 
 textarea.vertical {
@@ -1769,11 +1769,11 @@ button.large,
 }
 
 .fill-yay {
-  fill: #80FFB5;
+  fill: #80FFBF;
 }
 
 .fill-yay-alt {
-  fill: #B3FFD2;
+  fill: #B3FFD9;
 }
 
 .fill-main {
@@ -1785,11 +1785,11 @@ button.large,
 }
 
 .fill-extra {
-  fill: #80FFB5;
+  fill: #80FFBF;
 }
 
 .fill-extra-alt {
-  fill: #B3FFD2;
+  fill: #B3FFD9;
 }
 
 .fill-extra-bg {
@@ -1853,7 +1853,7 @@ button.large,
 .dropdown .content button.yay,
 .dropdown .content .button.yay {
   background-color: #242433;
-  color: #80FFB5;
+  color: #80FFBF;
 }
 
 .dropdown .content button.ohno:hover,
@@ -1869,7 +1869,7 @@ button.large,
 .dropdown .content button.yay:focus,
 .dropdown .content .button.yay:focus {
   background-color: #2B2B3D;
-  color: #B3FFD2;
+  color: #B3FFD9;
 }
 
 button.dropdown-toggle.ohno,
@@ -1908,7 +1908,7 @@ button.faint.yay,
 .button.faint.yay {
   background-color: transparent;
   border: none;
-  color: #80FFB5;
+  color: #80FFBF;
 }
 
 button.dropdown-toggle.yay:hover,
@@ -1925,7 +1925,7 @@ button.faint.yay:focus,
 .button.faint.yay:focus {
   background-color: #2B2B3D;
   border: none;
-  color: #B3FFD2;
+  color: #B3FFD9;
 }
 
 @media (prefers-reduced-motion) {
