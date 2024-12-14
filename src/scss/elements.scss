@@ -972,29 +972,29 @@ button.faint:focus,
   background-image: url(wave-bottom-svg-url($extra-bg));
 }
 
-button.box,
-.button.box {
+button.button-box,
+.button.button-box {
   color: $fg1;
   background: $bg2;
   border: 0.2rem solid $bg2;
   border-radius: $border-radius;
 }
 
-button.box:hover,
-button.box:focus,
-.button.box:hover,
-.button.box:focus {
+button.button-box:hover,
+button.button-box:focus,
+.button.button-box:hover,
+.button.button-box:focus {
   color: $main-alt;
   background: $bg3;
   border-color: $bg3;
 }
 
-button.box:focus-visible {
+button.button-box:focus-visible {
   outline-offset: 0.4rem;
 }
 
-button.box.selected,
-.button.box.selected {
+button.button-box.selected,
+.button.button-box.selected {
   color: $main;
   border-color: $main;
 }

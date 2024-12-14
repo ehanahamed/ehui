@@ -920,29 +920,29 @@ button.faint:focus,
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23F5F5F5%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
 }
 
-button.box,
-.button.box {
+button.button-box,
+.button.button-box {
   color: #343a40;
   background: #F5F5F5;
   border: 0.2rem solid #F5F5F5;
   border-radius: 0.8rem;
 }
 
-button.box:hover,
-button.box:focus,
-.button.box:hover,
-.button.box:focus {
+button.button-box:hover,
+button.button-box:focus,
+.button.button-box:hover,
+.button.button-box:focus {
   color: #6639BF;
   background: #F0F0F0;
   border-color: #F0F0F0;
 }
 
-button.box:focus-visible {
+button.button-box:focus-visible {
   outline-offset: 0.4rem;
 }
 
-button.box.selected,
-.button.box.selected {
+button.button-box.selected,
+.button.button-box.selected {
   color: #7C49F2;
   border-color: #7C49F2;
 }
