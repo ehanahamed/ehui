@@ -588,7 +588,8 @@
               Green (yay)
             </button>
           </div>
-          <p>We can apply color classes after being clicked (with JavaScript using <code>classList.add()</code> & <code>classList.remove()</code>)</p>
+          <p>We can apply color classes after being clicked.<br>
+          You can do this with JavaScript using <code>element.classList.add(...)</code> and <code>element.classList.remove(...)</code> in <code>element.addEventListener("click", ...)</code></p>
           <div class="flex">
             <button class="button-box" id="button-box-correct">
               Correct
@@ -723,7 +724,7 @@
         document.getElementById("button-box-incorrect-1").classList.add("selected");
         document.getElementById("button-box-incorrect-2").classList.remove("selected");
       })
-      document.getElementById("button-box-incorrect-1").addEventListener("click", function () {
+      document.getElementById("button-box-incorrect-2").addEventListener("click", function () {
         document.getElementById("button-box-correct").classList.remove("selected");
         document.getElementById("button-box-incorrect-1").classList.remove("selected");
         document.getElementById("button-box-incorrect-2").classList.add("ohno");
