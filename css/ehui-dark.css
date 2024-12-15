@@ -947,6 +947,14 @@ button.button-box.selected,
   border-color: #A280FF;
 }
 
+button.button-box.selected:hover,
+.button.button-box.selected:hover,
+button.button-box.selected:focus,
+.button.button-box.selected:focus {
+  color: #C7B3FF;
+  border-color: #C7B3FF;
+}
+
 *,
 *:before,
 *:after {

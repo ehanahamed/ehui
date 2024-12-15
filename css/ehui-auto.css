@@ -947,6 +947,14 @@ button.button-box.selected,
   border-color: #7C49F2;
 }
 
+button.button-box.selected:hover,
+.button.button-box.selected:hover,
+button.button-box.selected:focus,
+.button.button-box.selected:focus {
+  color: #6639BF;
+  border-color: #6639BF;
+}
+
 *,
 *:before,
 *:after {
@@ -3047,6 +3055,14 @@ button.button-box.selected,
 .button.button-box.selected {
   color: #A280FF;
   border-color: #A280FF;
+}
+
+button.button-box.selected:hover,
+.button.button-box.selected:hover,
+button.button-box.selected:focus,
+.button.button-box.selected:focus {
+  color: #C7B3FF;
+  border-color: #C7B3FF;
 }
 
 *,
