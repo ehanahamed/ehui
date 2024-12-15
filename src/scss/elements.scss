@@ -998,3 +998,12 @@ button.button-box.selected,
   color: $main;
   border-color: $main;
 }
+
+
+button.button-box.selected:hover,
+.button.button-box.selected:hover,
+button.button-box.selected:focus,
+.button.button-box.selected:focus {
+  color: $main-alt;
+  border-color: $main-alt;
+}
