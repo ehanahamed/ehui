@@ -567,24 +567,24 @@
           </div>
           <p>We can apply color classes <code>.yay</code> and <code>.ohno</code> to button boxes too</p>
           <div class="flex">
-            <button class="button-box">
+            <button id="button-box-w-color-1" class="button-box">
               Plain
             </button>
-            <button class="button-box ohno">
+            <button id="button-box-w-color-2" class="button-box ohno">
               Red (ohno)
             </button>
-            <button class="button-box">
+            <button id="button-box-w-color-3" class="button-box">
               Plain
             </button>
           </div>
           <div class="flex">
-            <button class="button-box">
+            <button id="button-box-w-color2-1" class="button-box">
               Plain
             </button>
-            <button class="button-box">
+            <button id="button-box-w-color2-2" class="button-box">
               Plain
             </button>
-            <button class="button-box yay">
+            <button id="button-box-w-color2-3" class="button-box yay">
               Green (yay)
             </button>
           </div>
@@ -687,53 +687,85 @@
     </script>
     <script>
       document.getElementById("button-box-1").addEventListener("click", function () {
-        document.getElementById("button-box-1").classList.add("selected");
+        document.getElementById("button-box-1").classList.toggle("selected");
         document.getElementById("button-box-2").classList.remove("selected");
         document.getElementById("button-box-3").classList.remove("selected");
       })
       document.getElementById("button-box-2").addEventListener("click", function () {
         document.getElementById("button-box-1").classList.remove("selected");
-        document.getElementById("button-box-2").classList.add("selected");
+        document.getElementById("button-box-2").classList.toggle("selected");
         document.getElementById("button-box-3").classList.remove("selected");
       })
       document.getElementById("button-box-3").addEventListener("click", function () {
         document.getElementById("button-box-1").classList.remove("selected");
         document.getElementById("button-box-2").classList.remove("selected");
-        document.getElementById("button-box-3").classList.add("selected");
+        document.getElementById("button-box-3").classList.toggle("selected");
       })
       document.getElementById("button-box-w-img-1").addEventListener("click", function () {
-        document.getElementById("button-box-w-img-1").classList.add("selected");
+        document.getElementById("button-box-w-img-1").classList.toggle("selected");
         document.getElementById("button-box-w-img-2").classList.remove("selected");
         document.getElementById("button-box-w-img-3").classList.remove("selected");
       })
       document.getElementById("button-box-w-img-2").addEventListener("click", function () {
         document.getElementById("button-box-w-img-1").classList.remove("selected");
-        document.getElementById("button-box-w-img-2").classList.add("selected");
+        document.getElementById("button-box-w-img-2").classList.toggle("selected");
         document.getElementById("button-box-w-img-3").classList.remove("selected");
       })
       document.getElementById("button-box-w-img-3").addEventListener("click", function () {
         document.getElementById("button-box-w-img-1").classList.remove("selected");
         document.getElementById("button-box-w-img-2").classList.remove("selected");
-        document.getElementById("button-box-w-img-3").classList.add("selected");
+        document.getElementById("button-box-w-img-3").classList.toggle("selected");
+      })
+      
+      document.getElementById("button-box-w-color-1").addEventListener("click", function () {
+        document.getElementById("button-box-w-color-1").classList.toggle("selected");
+        document.getElementById("button-box-w-color-2").classList.remove("selected");
+        document.getElementById("button-box-w-color-3").classList.remove("selected");
+      })
+      document.getElementById("button-box-w-color-2").addEventListener("click", function () {
+        document.getElementById("button-box-w-color-1").classList.remove("selected");
+        document.getElementById("button-box-w-color-2").classList.toggle("selected");
+        document.getElementById("button-box-w-color-3").classList.remove("selected");
+      })
+      document.getElementById("button-box-w-color-3").addEventListener("click", function () {
+        document.getElementById("button-box-w-color-1").classList.remove("selected");
+        document.getElementById("button-box-w-color-2").classList.remove("selected");
+        document.getElementById("button-box-w-color-3").classList.toggle("selected");
+      })
+
+      document.getElementById("button-box-w-color2-1").addEventListener("click", function () {
+        document.getElementById("button-box-w-color2-1").classList.toggle("selected");
+        document.getElementById("button-box-w-color2-2").classList.remove("selected");
+        document.getElementById("button-box-w-color2-3").classList.remove("selected");
+      })
+      document.getElementById("button-box-w-color2-2").addEventListener("click", function () {
+        document.getElementById("button-box-w-color2-1").classList.remove("selected");
+        document.getElementById("button-box-w-color2-2").classList.toggle("selected");
+        document.getElementById("button-box-w-color2-3").classList.remove("selected");
+      })
+      document.getElementById("button-box-w-color2-3").addEventListener("click", function () {
+        document.getElementById("button-box-w-color2-1").classList.remove("selected");
+        document.getElementById("button-box-w-color2-2").classList.remove("selected");
+        document.getElementById("button-box-w-color2-3").classList.toggle("selected");
       })
 
       document.getElementById("button-box-correct").addEventListener("click", function () {
         document.getElementById("button-box-correct").classList.add("yay");
-        document.getElementById("button-box-correct").classList.add("selected");
+        document.getElementById("button-box-correct").classList.toggle("selected");
         document.getElementById("button-box-incorrect-1").classList.remove("selected");
         document.getElementById("button-box-incorrect-2").classList.remove("selected");
       })
       document.getElementById("button-box-incorrect-1").addEventListener("click", function () {
         document.getElementById("button-box-correct").classList.remove("selected");
         document.getElementById("button-box-incorrect-1").classList.add("ohno");
-        document.getElementById("button-box-incorrect-1").classList.add("selected");
+        document.getElementById("button-box-incorrect-1").classList.toggle("selected");
         document.getElementById("button-box-incorrect-2").classList.remove("selected");
       })
       document.getElementById("button-box-incorrect-2").addEventListener("click", function () {
         document.getElementById("button-box-correct").classList.remove("selected");
         document.getElementById("button-box-incorrect-1").classList.remove("selected");
         document.getElementById("button-box-incorrect-2").classList.add("ohno");
-        document.getElementById("button-box-incorrect-2").classList.add("selected");
+        document.getElementById("button-box-incorrect-2").classList.toggle("selected");
       })
     </script>
   </body>
