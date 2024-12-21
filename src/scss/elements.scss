@@ -1007,3 +1007,22 @@ button.button-box.selected:focus,
   color: $main-alt;
   border-color: $main-alt;
 }
+
+details {
+  border: 0.2rem solid $bg4;
+  border-radius: $border-radius;
+  padding: 1rem;
+}
+
+summary {
+  font-weight: $font-weight-button;
+  padding: 0px;
+  border: none;
+  margin: 0px;
+}
+
+details[open] summary {
+  padding-bottom: 1rem;
+  border-bottom: 0.2rem solid $bg4;
+  margin-bottom: 1rem;
+}

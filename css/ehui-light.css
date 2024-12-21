@@ -955,6 +955,25 @@ button.button-box.selected:focus,
   border-color: #6639BF;
 }
 
+details {
+  border: 0.2rem solid #E6E6E6;
+  border-radius: 0.8rem;
+  padding: 1rem;
+}
+
+summary {
+  font-weight: 600;
+  padding: 0px;
+  border: none;
+  margin: 0px;
+}
+
+details[open] summary {
+  padding-bottom: 1rem;
+  border-bottom: 0.2rem solid #E6E6E6;
+  margin-bottom: 1rem;
+}
+
 *,
 *:before,
 *:after {
