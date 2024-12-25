@@ -133,7 +133,7 @@ mark,
 code,
 .code {
   font-family: monospace;
-  background-color: #2B2B3B;
+  background-color: #2C2C3A;
   border-radius: 0.4rem;
   padding: 0.2rem 0.4rem;
   font-size: 1rem;
@@ -141,9 +141,9 @@ code,
 }
 
 .box {
-  background-color: #252532;
+  background-color: #262631;
   color: #c3cce9;
-  border: 0.2rem solid #252532;
+  border: 0.2rem solid #262631;
   border-radius: 0.8rem;
   padding: 1rem;
 }
@@ -154,7 +154,7 @@ code,
 }
 
 .hero {
-  border-bottom: 0.2rem solid #303041;
+  border-bottom: 0.2rem solid #303040;
   text-align: center;
   padding: 1rem;
   padding-bottom: 4rem;
@@ -172,7 +172,7 @@ header,
   /* TEMP*/
   height: 4rem;
   background-color: #21212C;
-  border-bottom: 0.2rem solid #303041;
+  border-bottom: 0.2rem solid #303040;
   padding: 0px;
   margin-top: 0px;
   margin-left: 0px;
@@ -212,7 +212,7 @@ header > .nav {
 
 footer,
 .footer {
-  border-top: 0.2rem solid #303041;
+  border-top: 0.2rem solid #303040;
   text-align: center;
   padding: 1rem;
   padding-top: 4rem;
@@ -223,7 +223,7 @@ table {
   border-collapse: separate;
   border-spacing: 0px;
   border-radius: 0.8rem;
-  border: 0.2rem solid #303041;
+  border: 0.2rem solid #303040;
 }
 
 td {
@@ -248,7 +248,7 @@ table.outer tfoot {
 
 table.inner th:not(:last-child),
 table.inner td:not(:last-child) {
-  border-right: 0.2rem solid #303041;
+  border-right: 0.2rem solid #303040;
 }
 
 table.inner > thead > tr > th,
@@ -259,7 +259,7 @@ table.inner > tr:not(:last-child) > td,
 table.inner > tr:not(:last-child) > th,
 table.inner > thead:not(:last-child),
 table.inner > tbody:not(:last-child) {
-  border-bottom: 0.2rem solid #303041;
+  border-bottom: 0.2rem solid #303040;
 }
 
 a,
@@ -318,7 +318,7 @@ a,
 
 button.alt,
 .button.alt {
-  background-color: #252532;
+  background-color: #262631;
   color: #A280FF;
 }
 
@@ -334,7 +334,7 @@ button.alt:hover,
 button.alt:focus,
 .button.alt:hover,
 .button.alt:focus {
-  background-color: #2B2B3B;
+  background-color: #2C2C3A;
   color: #C7B3FF;
 }
 
@@ -366,7 +366,7 @@ textarea {
   font-family: "nunito", sans-serif;
   background-color: #21212C;
   color: #c3cce9;
-  border: 0.2rem solid #303041;
+  border: 0.2rem solid #303040;
   border-radius: 0.8rem;
   outline: none;
   padding: 0.4rem 0.8rem;
@@ -378,8 +378,8 @@ textarea {
 input[type=text]:hover,
 input[type=password]:hover,
 textarea:hover {
-  border-color: #303041;
-  background-color: #252532;
+  border-color: #303040;
+  background-color: #262631;
 }
 
 input[type=text]:focus,
@@ -396,8 +396,8 @@ textarea:focus {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  background-color: #252532;
-  border: 0.2rem solid #252532;
+  background-color: #262631;
+  border: 0.2rem solid #262631;
   border-radius: 1.6rem;
   transition-duration: 0.4s;
 }
@@ -427,12 +427,12 @@ textarea:focus {
 }
 
 .searchbar:hover {
-  background: #2B2B3B;
-  border-color: #2B2B3B;
+  background: #2C2C3A;
+  border-color: #2C2C3A;
 }
 
 .searchbar:focus-within {
-  background: #252532;
+  background: #262631;
   border-color: #A280FF;
 }
 
@@ -454,8 +454,8 @@ textarea:focus {
   gap: 0.2rem;
   margin-top: 0.4rem;
   padding: 0.4rem;
-  background: #252532;
-  border: 0.2rem solid #303041;
+  background: #262631;
+  border: 0.2rem solid #303040;
   border-radius: 0.8rem;
 }
 
@@ -486,20 +486,20 @@ textarea:focus {
   padding: 0.2rem 0.6rem;
   border: none;
   color: #c3cce9;
-  background-color: #252532;
+  background-color: #262631;
 }
 
 .searchbar-autocomplete > a:hover,
 .searchbar-autocomplete > .a:hover {
   color: #C7B3FF;
-  background-color: #2B2B3B;
+  background-color: #2C2C3A;
 }
 
 /* extra focus-visible to override link's other styles */
 .searchbar-autocomplete > a:focus-visible,
 .searchbar-autocomplete > .a:focus-visible {
   color: #C7B3FF;
-  background-color: #2B2B3B;
+  background-color: #2C2C3A;
   border: none;
   outline: none;
 }
@@ -609,7 +609,7 @@ input[type=checkbox]:checked {
   width: 100%;
   height: 100%;
   padding: 1rem;
-  background-color: #252532;
+  background-color: #262631;
   border-radius: 0.8rem;
   align-items: center;
   justify-content: center;
@@ -640,7 +640,7 @@ input[type=checkbox]:checked {
   height: 100%;
   margin-top: 0px;
   padding: 1rem;
-  background-color: #252532;
+  background-color: #262631;
   border-radius: 0.8rem;
   align-items: center;
   justify-content: center;
@@ -671,7 +671,7 @@ input[type=checkbox]:checked {
 .separator::after {
   content: "";
   display: block;
-  background: #303041;
+  background: #303040;
   width: 100%;
   height: 0.2rem;
   margin: 0px 1rem;
@@ -707,7 +707,7 @@ input[type=checkbox]:checked {
   width: auto;
   max-width: 90vw;
   background-color: #21212C;
-  border: 0.2rem solid #303041;
+  border: 0.2rem solid #303040;
   border-radius: 0.8rem;
   padding: 1rem;
 }
@@ -745,8 +745,8 @@ input[type=checkbox]:checked {
   gap: 0.4rem;
   margin-top: 0.4rem;
   padding: 0.4rem;
-  background: #252532;
-  border: 0.2rem solid #303041;
+  background: #262631;
+  border: 0.2rem solid #303040;
   border-radius: 0.8rem;
 }
 
@@ -758,8 +758,8 @@ input[type=checkbox]:checked {
 .dropdown .content .button {
   margin-top: 0px;
   text-wrap: nowrap;
-  background-color: #252532;
-  border-color: #252532;
+  background-color: #262631;
+  border-color: #262631;
   color: #A280FF;
 }
 
@@ -767,8 +767,8 @@ input[type=checkbox]:checked {
 .dropdown .content .button:hover,
 .dropdown .content button:focus,
 .dropdown .content .button:focus {
-  background-color: #2B2B3B;
-  border-color: #2B2B3B;
+  background-color: #2C2C3A;
+  border-color: #2C2C3A;
   color: #C7B3FF;
 }
 
@@ -795,7 +795,7 @@ button.faint:hover,
 .button.faint:hover,
 button.faint:focus,
 .button.faint:focus {
-  background-color: #2B2B3B;
+  background-color: #2C2C3A;
   border: none;
   color: #C7B3FF;
 }
@@ -835,18 +835,18 @@ button.faint:focus,
 
 .combo-select > button,
 .combo-select > .button {
-  background-color: #252532;
+  background-color: #262631;
   color: #A280FF;
-  border-color: #252532;
+  border-color: #262631;
 }
 
 .combo-select > button:hover,
 .combo-select > .button:hover,
 .combo-select > button:focus,
 .combo-select > .button:focus {
-  background-color: #2B2B3B;
+  background-color: #2C2C3A;
   color: #C7B3FF;
-  border-color: #2B2B3B;
+  border-color: #2C2C3A;
 }
 
 .combo-select > .selected,
@@ -923,8 +923,8 @@ button.faint:focus,
 button.button-box,
 .button.button-box {
   color: #c3cce9;
-  background: #252532;
-  border: 0.2rem solid #252532;
+  background: #262631;
+  border: 0.2rem solid #262631;
   border-radius: 0.8rem;
 }
 
@@ -933,8 +933,8 @@ button.button-box:focus,
 .button.button-box:hover,
 .button.button-box:focus {
   color: #C7B3FF;
-  background: #2B2B3B;
-  border-color: #2B2B3B;
+  background: #2C2C3A;
+  border-color: #2C2C3A;
 }
 
 button.button-box:focus-visible {
@@ -956,7 +956,7 @@ button.button-box.selected:focus,
 }
 
 details {
-  border: 0.2rem solid #303041;
+  border: 0.2rem solid #303040;
   border-radius: 0.8rem;
   padding: 1rem;
 }
@@ -970,7 +970,7 @@ summary {
 
 details[open] summary {
   padding-bottom: 1rem;
-  border-bottom: 0.2rem solid #303041;
+  border-bottom: 0.2rem solid #303040;
   margin-bottom: 1rem;
 }
 
@@ -1109,7 +1109,7 @@ details[open] summary {
   grid-area: right;
   justify-self: left;
   padding-left: 2rem;
-  border-left: 0.2rem solid #303041;
+  border-left: 0.2rem solid #303040;
 }
 
 .grid.split.noBorder > .left,
@@ -1199,7 +1199,7 @@ make the list have only one column
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 4rem;
-  border-bottom: 0.2rem solid #303041;
+  border-bottom: 0.2rem solid #303040;
 }
 
 .grid.intro > .logotype {
@@ -1498,12 +1498,12 @@ mark.markYay,
 
 mark.markBg4,
 .mark.markBg4 {
-  background-color: #303041;
+  background-color: #303040;
 }
 
 mark.markBg2,
 .mark.markBg2 {
-  background-color: #252532;
+  background-color: #262631;
 }
 
 mark.markFg2,
@@ -1548,7 +1548,7 @@ pre,
   padding: 0.8rem;
   border: none;
   border-radius: 0.8rem;
-  background: #252532;
+  background: #262631;
 }
 
 pre > code,
@@ -1580,26 +1580,26 @@ button.extra,
 button.alt.ohno,
 .button.alt.ohno {
   color: #ff6666;
-  background: #252532;
+  background: #262631;
 }
 
 button.alt.yay,
 .button.alt.yay {
   color: #80FFBF;
-  background: #252532;
+  background: #262631;
 }
 
 button.alt.extra,
 .button.alt.extra {
   color: #80FFBF;
-  background: #252532;
+  background: #262631;
 }
 
 button.alt:hover.ohno,
 button.alt:focus.ohno,
 .button.alt:hover.ohno,
 .button.alt:focus.ohno {
-  background-color: #2B2B3B;
+  background-color: #2C2C3A;
   color: #ff9999;
 }
 
@@ -1607,7 +1607,7 @@ button.alt:hover.yay,
 button.alt:focus.yay,
 .button.alt:hover.yay,
 .button.alt:focus.yay {
-  background-color: #2B2B3B;
+  background-color: #2C2C3A;
   color: #B3FFD9;
 }
 
@@ -1615,7 +1615,7 @@ button.alt:hover.extra,
 button.alt:focus.extra,
 .button.alt:hover.extra,
 .button.alt:focus.extra {
-  background-color: #2B2B3B;
+  background-color: #2C2C3A;
   color: #B3FFD9;
 }
 
@@ -1661,16 +1661,16 @@ button:focus-visible.extra,
 button.button-box.ohno,
 .button.button-box.ohno {
   color: #ff6666;
-  background: #252532;
-  border: 0.2rem solid #252532;
+  background: #262631;
+  border: 0.2rem solid #262631;
   border-radius: 0.8rem;
 }
 
 button.button-box.yay,
 .button.button-box.yay {
   color: #80FFBF;
-  background: #252532;
-  border: 0.2rem solid #252532;
+  background: #262631;
+  border: 0.2rem solid #262631;
   border-radius: 0.8rem;
 }
 
@@ -1679,8 +1679,8 @@ button.button-box:focus.ohno,
 .button.button-box:hover.ohno,
 .button.button-box:focus.ohno {
   color: #ff9999;
-  background: #2B2B3B;
-  border-color: #2B2B3B;
+  background: #2C2C3A;
+  border-color: #2C2C3A;
 }
 
 button.button-box:hover.yay,
@@ -1688,8 +1688,8 @@ button.button-box:focus.yay,
 .button.button-box:hover.yay,
 .button.button-box:focus.yay {
   color: #B3FFD9;
-  background: #2B2B3B;
-  border-color: #2B2B3B;
+  background: #2C2C3A;
+  border-color: #2C2C3A;
 }
 
 button.button-box.selected.ohno,
@@ -1709,7 +1709,7 @@ button.button-box.selected:focus.ohno,
 .button.button-box.selected:hover.ohno,
 .button.button-box.selected:focus.ohno {
   color: #ff9999;
-  background: #2B2B3B;
+  background: #2C2C3A;
   border-color: #ff9999;
 }
 
@@ -1718,7 +1718,7 @@ button.button-box.selected:focus.yay,
 .button.button-box.selected:hover.yay,
 .button.button-box.selected:focus.yay {
   color: #B3FFD9;
-  background: #2B2B3B;
+  background: #2C2C3A;
   border-color: #B3FFD9;
 }
 
@@ -1900,15 +1900,15 @@ button.large,
 }
 
 .fill-bg4 {
-  fill: #303041;
+  fill: #303040;
 }
 
 .fill-bg3 {
-  fill: #2B2B3B;
+  fill: #2C2C3A;
 }
 
 .fill-bg2 {
-  fill: #252532;
+  fill: #262631;
 }
 
 .fill-bg1 {
@@ -1924,7 +1924,7 @@ button.large,
 }
 
 .background-bg2 {
-  background-color: #252532;
+  background-color: #262631;
 }
 
 .background-bg1 {
@@ -1937,13 +1937,13 @@ button.large,
 
 .dropdown .content button.ohno,
 .dropdown .content .button.ohno {
-  background-color: #252532;
+  background-color: #262631;
   color: #ff6666;
 }
 
 .dropdown .content button.yay,
 .dropdown .content .button.yay {
-  background-color: #252532;
+  background-color: #262631;
   color: #80FFBF;
 }
 
@@ -1951,7 +1951,7 @@ button.large,
 .dropdown .content .button.ohno:hover,
 .dropdown .content button.ohno:focus,
 .dropdown .content .button.ohno:focus {
-  background-color: #2B2B3B;
+  background-color: #2C2C3A;
   color: #ff9999;
 }
 
@@ -1959,7 +1959,7 @@ button.large,
 .dropdown .content .button.yay:hover,
 .dropdown .content button.yay:focus,
 .dropdown .content .button.yay:focus {
-  background-color: #2B2B3B;
+  background-color: #2C2C3A;
   color: #B3FFD9;
 }
 
@@ -1986,7 +1986,7 @@ button.faint.ohno:hover,
 .button.faint.ohno:hover,
 button.faint.ohno:focus,
 .button.faint.ohno:focus {
-  background-color: #2B2B3B;
+  background-color: #2C2C3A;
   border: none;
   color: #ff9999;
 }
@@ -2014,7 +2014,7 @@ button.faint.yay:hover,
 .button.faint.yay:hover,
 button.faint.yay:focus,
 .button.faint.yay:focus {
-  background-color: #2B2B3B;
+  background-color: #2C2C3A;
   border: none;
   color: #B3FFD9;
 }
@@ -2061,7 +2061,7 @@ button.faint.yay:focus,
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #252532;
+    background-color: #262631;
     border-radius: 0.8rem;
     align-items: center;
     justify-content: center;
