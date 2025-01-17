@@ -1248,25 +1248,14 @@ make the list have only one column
     grid-template-columns: 1fr 12fr 1fr;
   }
 }
-.grid.screen {
-  height: 100%;
+.grid.thin-centered {
   margin: 0px 1rem;
 }
 
-.grid.screen > .content {
+.grid.thin-centered > .content {
   justify-self: center;
   align-self: center;
   margin-top: 0px;
-}
-
-html.screen {
-  height: 100%;
-}
-
-html.screen body {
-  height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr;
 }
 
 header {
@@ -3377,25 +3366,14 @@ make the list have only one column
     grid-template-columns: 1fr 12fr 1fr;
   }
 }
-.grid.screen {
-  height: 100%;
+.grid.thin-centered {
   margin: 0px 1rem;
 }
 
-.grid.screen > .content {
+.grid.thin-centered > .content {
   justify-self: center;
   align-self: center;
   margin-top: 0px;
-}
-
-html.screen {
-  height: 100%;
-}
-
-html.screen body {
-  height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr;
 }
 
 header {
