@@ -1,35 +1,15 @@
 $border-radius: 0.8rem !default;
 
-$ohno: #ff6666 !default;
-$ohno-alt: #ff9999 !default;
-$yay: #66FFCC !default;
-$yay-alt: #CCFFEE !default;
-$main: #9966FF !default;
-$main-alt: #BB99FF !default;
-$extra: #66FFCC !default;
-$extra-alt: #CCFFEE !default;
-$extra-bg: #181825 !default;
-$fg2: #c3cce9 !default;
-$fg1: #c3cce9 !default;
-$fg0: #9399b2 !default;
-$bg4: #3b3c4f !default;
-$bg3: #2b2c3d !default;
-$bg2: #222333 !default;
-$bg1: #1e1e2e !default;
-$bg0: #181825 !default;
-$select: #c3cce9 !default;
-$select-bg: #533380 !default;
-
 a.mark {
   /*
   undo stuff in other stuff?
   */
-  color: $main;
+  color: var(--main);
 }
 
 a.mark:hover,
 a.mark:focus {
-  color: $main-alt;
+  color: var(--main-alt);
 }
 
 /*
@@ -45,7 +25,7 @@ u.ohno,
 mark.ohno,
 .mark.ohno,
 code.ohno {
-  color: $ohno;
+  color: var(--ohno);
 }
 
 span.yay,
@@ -57,7 +37,7 @@ u.yay,
 mark.yay,
 .mark.yay,
 code.yay {
-  color: $yay;
+  color: var(--yay);
 }
 
 span.bg1,
@@ -69,7 +49,7 @@ u.bg1,
 mark.bg1,
 .mark.bg1,
 code.bg1 {
-  color: $bg1;
+  color: var(--bg1);
 }
 
 span.fg2,
@@ -81,7 +61,7 @@ u.fg2,
 mark.fg2,
 .mark.fg2,
 code.fg2 {
-  color: $fg2;
+  color: var(--fg2);
 }
 
 span.fg1,
@@ -93,7 +73,7 @@ u.fg1,
 mark.fg1,
 .mark.fg1,
 code.fg1 {
-  color: $fg1;
+  color: var(--fg1);
 }
 
 span.fg0,
@@ -105,7 +85,7 @@ u.fg0,
 mark.fg0,
 .mark.fg0,
 code.fg0 {
-  color: $fg0;
+  color: var(--fg0);
 }
 
 span.main,
@@ -117,7 +97,7 @@ u.main,
 mark.main,
 .mark.main,
 code.main {
-  color: $main;
+  color: var(--main);
 }
 
 span.extra,
@@ -129,62 +109,62 @@ u.extra,
 mark.extra,
 .mark.extra,
 code.extra {
-  color: $extra;
+  color: var(--extra);
 }
 
 mark.markOhno,
 .mark.markOhno {
-  background-color: $ohno;
+  background-color: var(--ohno);
 }
 
 mark.markYay,
 .mark.markYay {
-  background-color: $yay;
+  background-color: var(--yay);
 }
 
 mark.markBg4,
 .mark.markBg4 {
-  background-color: $bg4;
+  background-color: var(--bg4);
 }
 
 mark.markBg2,
 .mark.markBg2 {
-  background-color: $bg2;
+  background-color: var(--bg2);
 }
 
 mark.markFg2,
 .mark.markFg2 {
-  background-color: $fg2;
+  background-color: var(--fg2);
 }
 
 mark.markFg1,
 .mark.markFg1 {
-  background-color: $fg1;
+  background-color: var(--fg1);
 }
 
 mark.markFg0,
 .mark.markFg0 {
-  background-color: $fg0;
+  background-color: var(--fg0);
 }
 
 mark.markMain,
 .mark.markMain {
-  background-color: $main;
+  background-color: var(--main);
 }
 
 mark.markExtra,
 .mark.markExtra {
-  background-color: $extra;
+  background-color: var(--extra);
 }
 
 .box.ohno {
-  color: $ohno;
-  border-color: $ohno;
+  color: var(--ohno);
+  border-color: var(--ohno);
 }
 
 .box.yay {
-  color: $yay;
-  border-color: $yay;
+  color: var(--yay);
+  border-color: var(--yay);
 }
 
 pre,
@@ -194,7 +174,7 @@ pre,
   padding: 0.8rem;
   border: none;
   border-radius: $border-radius;
-  background: $bg2;
+  background: var(--bg2);
 }
 
 pre > code,
@@ -209,114 +189,114 @@ pre > .code,
 
 button.ohno,
 .button.ohno {
-  background-color: $ohno;
+  background-color: var(--ohno);
 }
 
 button.yay,
 .button.yay {
-  background-color: $yay;
+  background-color: var(--yay);
 }
 
 button.extra,
 .button.extra {
-  background-color: $extra;
-  color: $extra-bg;
+  background-color: var(--extra);
+  color: var(--extra-bg);
 }
 
 button.alt.ohno,
 .button.alt.ohno {
-  color: $ohno;
-  background: $bg2;
+  color: var(--ohno);
+  background: var(--bg2);
 }
 
 button.alt.yay,
 .button.alt.yay {
-  color: $yay;
-  background: $bg2;
+  color: var(--yay);
+  background: var(--bg2);
 }
 
 button.alt.extra,
 .button.alt.extra {
-  color: $extra;
-  background: $bg2;
+  color: var(--extra);
+  background: var(--bg2);
 }
 
 button.alt:hover.ohno,
 button.alt:focus.ohno,
 .button.alt:hover.ohno,
 .button.alt:focus.ohno {
-  background-color: $bg3;
-  color: $ohno-alt;
+  background-color: var(--bg3);
+  color: var(--ohno-alt);
 }
 
 button.alt:hover.yay,
 button.alt:focus.yay,
 .button.alt:hover.yay,
 .button.alt:focus.yay {
-  background-color: $bg3;
-  color: $yay-alt;
+  background-color: var(--bg3);
+  color: var(--yay-alt);
 }
 
 button.alt:hover.extra,
 button.alt:focus.extra,
 .button.alt:hover.extra,
 .button.alt:focus.extra {
-  background-color: $bg3;
-  color: $extra-alt;
+  background-color: var(--bg3);
+  color: var(--extra-alt);
 }
 
 button:hover.ohno,
 button:focus.ohno,
 .button:hover.ohno,
 .button:focus.ohno {
-  background-color: $ohno-alt;
-  color: $bg1;
+  background-color: var(--ohno-alt);
+  color: var(--bg1);
 }
 
 button:hover.yay,
 button:focus.yay,
 .button:hover.yay,
 .button:focus.yay {
-  background-color: $yay-alt;
-  color: $bg1;
+  background-color: var(--yay-alt);
+  color: var(--bg1);
 }
 
 button:hover.extra,
 button:focus.extra,
 .button:hover.extra,
 .button:focus.extra {
-  background-color: $extra-alt;
-  color: $extra-bg;
+  background-color: var(--extra-alt);
+  color: var(--extra-bg);
 }
 
 button:focus-visible.ohno,
 .button:focus-visible.ohno {
-  outline-color: $ohno;
+  outline-color: var(--ohno);
 }
 
 button:focus-visible.yay,
 .button:focus-visible.yay {
-  outline-color: $yay;
+  outline-color: var(--yay);
 }
 
 button:focus-visible.extra,
 .button:focus-visible.extra {
-  outline-color: $extra;
+  outline-color: var(--extra);
 }
 
 button.button-box.ohno,
 .button.button-box.ohno {
-  color: $ohno;
-  background: $bg2;
-  border: 0.2rem solid $bg2;
+  color: var(--ohno);
+  background: var(--bg2);
+  border: 0.2rem solid var(--bg2);
   border-radius: $border-radius;
 }
 
 button.button-box.yay,
 .button.button-box.yay {
-  color: $yay;
-  background: $bg2;
-  border: 0.2rem solid $bg2;
+  color: var(--yay);
+  background: var(--bg2);
+  border: 0.2rem solid var(--bg2);
   border-radius: $border-radius;
 }
 
@@ -324,84 +304,84 @@ button.button-box:hover.ohno,
 button.button-box:focus.ohno,
 .button.button-box:hover.ohno,
 .button.button-box:focus.ohno {
-  color: $ohno-alt;
-  background: $bg3;
-  border-color: $bg3;
+  color: var(--ohno-alt);
+  background: var(--bg3);
+  border-color: var(--bg3);
 }
 
 button.button-box:hover.yay,
 button.button-box:focus.yay,
 .button.button-box:hover.yay,
 .button.button-box:focus.yay {
-  color: $yay-alt;
-  background: $bg3;
-  border-color: $bg3;
+  color: var(--yay-alt);
+  background: var(--bg3);
+  border-color: var(--bg3);
 }
 
 button.button-box.selected.ohno,
 .button.button-box.selected.ohno {
-  color: $ohno;
-  border-color: $ohno;
+  color: var(--ohno);
+  border-color: var(--ohno);
 }
 
 button.button-box.selected.yay,
 .button.button-box.selected.yay {
-  color: $yay;
-  border-color: $yay;
+  color: var(--yay);
+  border-color: var(--yay);
 }
 
 button.button-box.selected:hover.ohno,
 button.button-box.selected:focus.ohno,
 .button.button-box.selected:hover.ohno,
 .button.button-box.selected:focus.ohno {
-  color: $ohno-alt;
-  background: $bg3;
-  border-color: $ohno-alt;
+  color: var(--ohno-alt);
+  background: var(--bg3);
+  border-color: var(--ohno-alt);
 }
 
 button.button-box.selected:hover.yay,
 button.button-box.selected:focus.yay,
 .button.button-box.selected:hover.yay,
 .button.button-box.selected:focus.yay {
-  color: $yay-alt;
-  background: $bg3;
-  border-color: $yay-alt;
+  color: var(--yay-alt);
+  background: var(--bg3);
+  border-color: var(--yay-alt);
 }
 
 input[type="text"].ohno,
 input[type="password"].ohno,
 textarea.ohno {
-  border-color: $ohno;
+  border-color: var(--ohno);
 }
 
 input[type="text"].yay,
 input[type="password"].yay,
 textarea.yay {
-  border-color: $yay;
+  border-color: var(--yay);
 }
 
 input[type="text"].extra,
 input[type="password"].extra,
 textarea.extra {
-  border-color: $extra;
+  border-color: var(--extra);
 }
 
 input[type="text"].ohno:focus,
 input[type="password"].ohno:focus,
 textarea.ohno:focus {
-  border-color: $ohno-alt;
+  border-color: var(--ohno-alt);
 }
 
 input[type="text"].yay:focus,
 input[type="password"].yay:focus,
 textarea.yay:focus {
-  border-color: $yay-alt;
+  border-color: var(--yay-alt);
 }
 
 input[type="text"].extra:focus,
 input[type="password"].extra:focus,
 textarea.extra:focus {
-  border-color: $extra-alt;
+  border-color: var(--extra-alt);
 }
 
 textarea.vertical {
@@ -429,7 +409,7 @@ textarea.horizontal {
   align-items: center;
   justify-content: center;
   margin: 0px;
-  background: $bg1;
+  background: var(--bg1);
 }
 
 .exitFullscreen {
@@ -464,7 +444,7 @@ textarea.horizontal {
   width: 200px;
   height: 200px;
   z-index: -1;
-  background-color: $main;
+  background-color: var(--main);
   opacity: 0.2;
   filter: blur(1rem);
   border-radius: 50%;
@@ -487,7 +467,7 @@ html.min .hero > .logo::before {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-bottom: 1rem;
-  background-color: $extra-bg;
+  background-color: var(--extra-bg);
 }
 
 button.large,
@@ -498,115 +478,115 @@ button.large,
 }
 
 .fill-ohno {
-  fill: $ohno;
+  fill: var(--ohno);
 }
 
 .fill-ohno-alt {
-  fill: $ohno-alt;
+  fill: var(--ohno-alt);
 }
 
 .fill-yay {
-  fill: $yay;
+  fill: var(--yay);
 }
 
 .fill-yay-alt {
-  fill: $yay-alt;
+  fill: var(--yay-alt);
 }
 
 .fill-main {
-  fill: $main;
+  fill: var(--main);
 }
 
 .fill-main-alt {
-  fill: $main-alt;
+  fill: var(--main-alt);
 }
 
 .fill-extra {
-  fill: $extra;
+  fill: var(--extra);
 }
 
 .fill-extra-alt {
-  fill: $extra-alt;
+  fill: var(--extra-alt);
 }
 
 .fill-extra-bg {
-  fill: $extra-bg;
+  fill: var(--extra-bg);
 }
 
 .fill-fg2 {
-  fill: $fg2;
+  fill: var(--fg2);
 }
 
 .fill-fg1 {
-  fill: $fg1;
+  fill: var(--fg1);
 }
 
 .fill-fg0 {
-  fill: $fg0;
+  fill: var(--fg0);
 }
 
 .fill-bg4 {
-  fill: $bg4;
+  fill: var(--bg4);
 }
 
 .fill-bg3 {
-  fill: $bg3;
+  fill: var(--bg3);
 }
 
 .fill-bg2 {
-  fill: $bg2;
+  fill: var(--bg2);
 }
 
 .fill-bg1 {
-  fill: $bg1;
+  fill: var(--bg1);
 }
 
 .fill-bg0 {
-  fill: $bg0;
+  fill: var(--bg0);
 }
 
 .background-extra-bg {
-  background-color: $extra-bg;
+  background-color: var(--extra-bg);
 }
 
 .background-bg2 {
-  background-color: $bg2;
+  background-color: var(--bg2);
 }
 
 .background-bg1 {
-  background-color: $bg1;
+  background-color: var(--bg1);
 }
 
 .background-bg0 {
-  background-color: $bg0;
+  background-color: var(--bg0);
 }
 
 .dropdown .content button.ohno,
 .dropdown .content .button.ohno {
-  background-color: $bg2;
-  color: $ohno;
+  background-color: var(--bg2);
+  color: var(--ohno);
 }
 
 .dropdown .content button.yay,
 .dropdown .content .button.yay {
-  background-color: $bg2;
-  color: $yay;
+  background-color: var(--bg2);
+  color: var(--yay);
 }
 
 .dropdown .content button.ohno:hover,
 .dropdown .content .button.ohno:hover,
 .dropdown .content button.ohno:focus,
 .dropdown .content .button.ohno:focus {
-  background-color: $bg3;
-  color: $ohno-alt;
+  background-color: var(--bg3);
+  color: var(--ohno-alt);
 }
 
 .dropdown .content button.yay:hover,
 .dropdown .content .button.yay:hover,
 .dropdown .content button.yay:focus,
 .dropdown .content .button.yay:focus {
-  background-color: $bg3;
-  color: $yay-alt;
+  background-color: var(--bg3);
+  color: var(--yay-alt);
 }
 
 button.dropdown-toggle.ohno,
@@ -617,7 +597,7 @@ button.faint.ohno,
 .button.faint.ohno {
   background-color: transparent;
   border: none;
-  color: $ohno;
+  color: var(--ohno);
 }
 
 button.dropdown-toggle.ohno:hover,
@@ -632,9 +612,9 @@ button.faint.ohno:hover,
 .button.faint.ohno:hover,
 button.faint.ohno:focus,
 .button.faint.ohno:focus {
-  background-color: $bg3;
+  background-color: var(--bg3);
   border: none;
-  color: $ohno-alt;
+  color: var(--ohno-alt);
 }
 
 button.dropdown-toggle.yay,
@@ -645,7 +625,7 @@ button.faint.yay,
 .button.faint.yay {
   background-color: transparent;
   border: none;
-  color: $yay;
+  color: var(--yay);
 }
 
 button.dropdown-toggle.yay:hover,
@@ -660,9 +640,9 @@ button.faint.yay:hover,
 .button.faint.yay:hover,
 button.faint.yay:focus,
 .button.faint.yay:focus {
-  background-color: $bg3;
+  background-color: var(--bg3);
   border: none;
-  color: $yay-alt;
+  color: var(--yay-alt);
 }
 
 @media (prefers-reduced-motion) {
@@ -712,7 +692,7 @@ button.faint.yay:focus,
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: $bg2;
+    background-color: var(--bg2);
     border-radius: $border-radius;
     align-items: center;
     justify-content: center;

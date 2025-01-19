@@ -10,25 +10,6 @@ $border-radius-text: 0.4rem !default;
 $font-weight-button: 600 !default;
 $font-weight-link: 600 !default;
 $color-scheme: dark !default;
-$ohno: #ff6666 !default;
-$ohno-alt: #ff9999 !default;
-$yay: #66FFCC !default;
-$yay-alt: #CCFFEE !default;
-$main: #9966FF !default;
-$main-alt: #BB99FF !default;
-$extra: #66FFCC !default;
-$extra-alt: #CCFFEE !default;
-$extra-bg: #181825 !default;
-$fg2: #c3cce9 !default;
-$fg1: #c3cce9 !default;
-$fg0: #9399b2 !default;
-$bg4: #3b3c4f !default;
-$bg3: #2b2c3d !default;
-$bg2: #222333 !default;
-$bg1: #1e1e2e !default;
-$bg0: #181825 !default;
-$select: #c3cce9 !default;
-$select-bg: #533380 !default;
 
 :root {
   color-scheme: $color-scheme;
@@ -48,8 +29,8 @@ html {
 
 body {
   height: auto;
-  background-color: $bg1;
-  color: $fg1;
+  background-color: var(--bg1);
+  color: var(--fg1);
   font-size: 1rem;
   line-height: 1.4;
   font-family: $font-family;
@@ -58,8 +39,8 @@ body {
 }
 
 ::selection {
-  background-color: $select-bg;
-  color: $select;
+  background-color: var(--select-bg);
+  color: var(--select);
 }
 
 h1,
@@ -149,8 +130,8 @@ s,
 
 mark,
 .mark {
-  background-color: $fg1;
-  color: $bg1;
+  background-color: var(--fg1);
+  color: var(--bg1);
   border-radius: $border-radius-text;
   padding: 0.2rem 0.4rem;
   font-size: 1rem;
@@ -160,7 +141,7 @@ mark,
 code,
 .code {
   font-family: monospace;
-  background-color: $bg3;
+  background-color: var(--bg3);
   border-radius: $border-radius-text;
   padding: 0.2rem 0.4rem;
   font-size: 1rem;
@@ -168,20 +149,20 @@ code,
 }
 
 .box {
-  background-color: $bg2;
-  color: $fg1;
-  border: 0.2rem solid $bg2;
+  background-color: var(--bg2);
+  color: var(--fg1);
+  border: 0.2rem solid var(--bg2);
   border-radius: $border-radius;
   padding: 1rem;
 }
 
 .extra .box {
-  background-color: $bg1;
-  border-color: $bg1;
+  background-color: var(--bg1);
+  border-color: var(--bg1);
 }
 
 .hero {
-  border-bottom: 0.2rem solid $bg4;
+  border-bottom: 0.2rem solid var(--bg4);
   text-align: center;
   padding: 1rem;
   padding-bottom: 4rem;
@@ -198,8 +179,8 @@ header,
   position: static;
   /* TEMP*/
   height: 4rem;
-  background-color: $bg1;
-  border-bottom: 0.2rem solid $bg4;
+  background-color: var(--bg1);
+  border-bottom: 0.2rem solid var(--bg4);
   padding: 0px;
   margin-top: 0px;
   margin-left: 0px;
@@ -226,20 +207,20 @@ header > .nav {
 }
 
 .nav > div {
-  border-bottom: 0.2rem solid $bg1;
+  border-bottom: 0.2rem solid var(--bg1);
 }
 
 .nav > div.current {
-  border-bottom: 0.2rem solid $main-alt;
+  border-bottom: 0.2rem solid var(--main-alt);
 }
 
 .nav > div.current > a {
-  color: $main-alt;
+  color: var(--main-alt);
 }
 
 footer,
 .footer {
-  border-top: 0.2rem solid $bg4;
+  border-top: 0.2rem solid var(--bg4);
   text-align: center;
   padding: 1rem;
   padding-top: 4rem;
@@ -250,7 +231,7 @@ table {
   border-collapse: separate;
   border-spacing: 0px;
   border-radius: $border-radius;
-  border: 0.2rem solid $bg4;
+  border: 0.2rem solid var(--bg4);
 }
 
 td {
@@ -275,7 +256,7 @@ table.outer tfoot {
 
 table.inner th:not(:last-child),
 table.inner td:not(:last-child) {
- border-right: 0.2rem solid $bg4;
+ border-right: 0.2rem solid var(--bg4);
 }
 
 table.inner > thead > tr > th,
@@ -286,12 +267,12 @@ table.inner > tr:not(:last-child) > td,
 table.inner > tr:not(:last-child) > th,
 table.inner > thead:not(:last-child),
 table.inner > tbody:not(:last-child) {
-  border-bottom: 0.2rem solid $bg4;
+  border-bottom: 0.2rem solid var(--bg4);
 }
 
 a,
 .a {
-  color: $main;
+  color: var(--main);
   cursor: pointer;
   border-radius: $border-radius-text;
   font-size: 1rem;
@@ -305,12 +286,12 @@ a:hover,
 a:focus,
 .a:hover,
 .a:focus {
-  color: $main-alt;
+  color: var(--main-alt);
 }
 
 a:focus-visible,
 .a:focus-visible {
-  outline: 0.2rem solid $main;
+  outline: 0.2rem solid var(--main);
   outline-offset: 0.4rem;
   transition-duration: 0.1s;
 }
@@ -324,8 +305,8 @@ button,
   text-align: center;
   cursor: pointer;
   text-decoration: none;
-  background-color: $main;
-  color: $bg1;
+  background-color: var(--main);
+  color: var(--bg1);
   border: none;
   border-radius: $border-radius-button;
   padding: 0.6rem 1rem;
@@ -345,35 +326,35 @@ a,
 
 button.alt,
 .button.alt {
-  background-color: $bg2;
-  color: $main;
+  background-color: var(--bg2);
+  color: var(--main);
 }
 
 button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-  background-color: $main-alt;
-  color: $bg1;
+  background-color: var(--main-alt);
+  color: var(--bg1);
 }
 
 button.alt:hover,
 button.alt:focus,
 .button.alt:hover,
 .button.alt:focus {
-  background-color: $bg3;
-  color: $main-alt;
+  background-color: var(--bg3);
+  color: var(--main-alt);
 }
 
 button:focus-visible,
 .button:focus-visible {
-  outline: 0.2rem solid $main;
+  outline: 0.2rem solid var(--main);
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
 }
 
 ::placeholder {
-  color: $fg0;
+  color: var(--fg0);
   font-size: 1rem;
   font-family: $font-family;
   font-weight: normal;
@@ -391,9 +372,9 @@ textarea {
   cursor: text;
   text-decoration: none;
   font-family: $font-family;
-  background-color: $bg1;
-  color: $fg1;
-  border: 0.2rem solid $bg4;
+  background-color: var(--bg1);
+  color: var(--fg1);
+  border: 0.2rem solid var(--bg4);
   border-radius: $border-radius-textbox;
   outline: none;
   padding: 0.4rem 0.8rem;
@@ -405,15 +386,15 @@ textarea {
 input[type="text"]:hover,
 input[type="password"]:hover,
 textarea:hover {
-  border-color: $bg4;
-  background-color: $bg2;
+  border-color: var(--bg4);
+  background-color: var(--bg2);
 }
 
 input[type="text"]:focus,
 input[type="password"]:focus,
 textarea:focus {
-  border-color: $main;
-  background-color: $bg1;
+  border-color: var(--main);
+  background-color: var(--bg1);
 }
 
 .searchbar {
@@ -423,8 +404,8 @@ textarea:focus {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  background-color: $bg2;
-  border: 0.2rem solid $bg2;
+  background-color: var(--bg2);
+  border: 0.2rem solid var(--bg2);
   border-radius: $border-radius-textbox-searchbar;
   transition-duration: 0.4s;
 }
@@ -434,7 +415,7 @@ textarea:focus {
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
   padding-right: 0px;
-  color: $fg0;
+  color: var(--fg0);
 }
 
 .searchbar > input[type="text"],
@@ -454,13 +435,13 @@ textarea:focus {
 }
 
 .searchbar:hover {
-  background: $bg3;
-  border-color: $bg3;
+  background: var(--bg3);
+  border-color: var(--bg3);
 }
 
 .searchbar:focus-within {
-  background: $bg2;
-  border-color: $main;
+  background: var(--bg2);
+  border-color: var(--main);
 }
 
 .searchbar.with-autocomplete {
@@ -481,8 +462,8 @@ textarea:focus {
   gap: 0.2rem;
   margin-top: 0.4rem;
   padding: 0.4rem;
-  background: $bg2;
-  border: 0.2rem solid $bg4;
+  background: var(--bg2);
+  border: 0.2rem solid var(--bg4);
   border-radius: $border-radius;
 }
 
@@ -510,21 +491,21 @@ textarea:focus {
   margin-top: 0px;
   padding: 0.2rem 0.6rem;
   border: none;
-  color: $fg1;
-  background-color: $bg2;
+  color: var(--fg1);
+  background-color: var(--bg2);
 }
 
 .searchbar-autocomplete > a:hover,
 .searchbar-autocomplete > .a:hover {
-  color: $main-alt;
-  background-color: $bg3;
+  color: var(--main-alt);
+  background-color: var(--bg3);
 }
 
 /* extra focus-visible to override link's other styles */
 .searchbar-autocomplete > a:focus-visible,
 .searchbar-autocomplete > .a:focus-visible {
-  color: $main-alt;
-  background-color: $bg3;
+  color: var(--main-alt);
+  background-color: var(--bg3);
   border: none;
   outline: none;
 }
@@ -565,8 +546,8 @@ input[type="checkbox"] {
   width: 1.8rem;
   height: 1.8rem;
   margin: 0px;
-  background-color: $bg1;
-  border: 0.2rem solid $main;
+  background-color: var(--bg1);
+  border: 0.2rem solid var(--main);
   transition-duration: 0.4s;
 }
 
@@ -582,19 +563,19 @@ input[type="radio"]:hover,
 input[type="radio"]:focus,
 input[type="checkbox"]:hover,
 input[type="checkbox"]:focus {
-  border-color: $main-alt;
+  border-color: var(--main-alt);
 }
 
 input[type="radio"]:focus-visible,
 input[type="checkbox"]:focus-visible {
-  outline: 0.2rem solid $main;
+  outline: 0.2rem solid var(--main);
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
 }
 
 input[type="radio"]:checked,
 input[type="checkbox"]:checked {
-  background-color: $main;
+  background-color: var(--main);
   transition-duration: 0.1s;
 }
 
@@ -635,7 +616,7 @@ input[type="checkbox"]:checked {
   width: 100%;
   height: 100%;
   padding: 1rem;
-  background-color: $bg2;
+  background-color: var(--bg2);
   border-radius: $border-radius;
   align-items: center;
   justify-content: center;
@@ -666,7 +647,7 @@ input[type="checkbox"]:checked {
   height: 100%;
   margin-top: 0px;
   padding: 1rem;
-  background-color: $bg2;
+  background-color: var(--bg2);
   border-radius: $border-radius;
   align-items: center;
   justify-content: center;
@@ -690,14 +671,14 @@ input[type="checkbox"]:checked {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $fg0;
+  color: var(--fg0);
 }
 
 .separator::before,
 .separator::after {
   content: "";
   display: block;
-  background: $bg4;
+  background: var(--bg4);
   width: 100%;
   height: 0.2rem;
   margin: 0px 1rem;
@@ -723,7 +704,7 @@ input[type="checkbox"]:checked {
   left: 0px;
   width: 100vw;
   height: 100vh;
-  background-color: $bg0;
+  background-color: var(--bg0);
   opacity: 0.6;
 }
 
@@ -732,8 +713,8 @@ input[type="checkbox"]:checked {
   min-width: 40vw;
   width: auto;
   max-width: 90vw;
-  background-color: $bg1;
-  border: 0.2rem solid $bg4;
+  background-color: var(--bg1);
+  border: 0.2rem solid var(--bg4);
   border-radius: $border-radius;
   padding: 1rem;
 }
@@ -772,8 +753,8 @@ input[type="checkbox"]:checked {
   gap: 0.4rem;
   margin-top: 0.4rem;
   padding: 0.4rem;
-  background: $bg2;
-  border: 0.2rem solid $bg4;
+  background: var(--bg2);
+  border: 0.2rem solid var(--bg4);
   border-radius: $border-radius;
 }
 
@@ -785,18 +766,18 @@ input[type="checkbox"]:checked {
 .dropdown .content .button {
   margin-top: 0px;
   text-wrap: nowrap;
-  background-color: $bg2;
-  border-color: $bg2;
-  color: $main;
+  background-color: var(--bg2);
+  border-color: var(--bg2);
+  color: var(--main);
 }
 
 .dropdown .content button:hover,
 .dropdown .content .button:hover,
 .dropdown .content button:focus,
 .dropdown .content .button:focus {
-  background-color: $bg3;
-  border-color: $bg3;
-  color: $main-alt;
+  background-color: var(--bg3);
+  border-color: var(--bg3);
+  color: var(--main-alt);
 }
 
 button.dropdown-toggle,
@@ -807,7 +788,7 @@ button.faint,
 .button.faint {
   background-color: transparent;
   border: none;
-  color: $fg1;
+  color: var(--fg1);
 }
 
 button.dropdown-toggle:hover,
@@ -822,9 +803,9 @@ button.faint:hover,
 .button.faint:hover,
 button.faint:focus,
 .button.faint:focus {
-  background-color: $bg3;
+  background-color: var(--bg3);
   border: none;
-  color: $main-alt;
+  color: var(--main-alt);
 }
 
 .combo-select {
@@ -861,35 +842,35 @@ button.faint:focus,
 
 .combo-select > button,
 .combo-select > .button {
-  background-color: $bg2;
-  color: $main;
-  border-color: $bg2;
+  background-color: var(--bg2);
+  color: var(--main);
+  border-color: var(--bg2);
 }
 
 .combo-select > button:hover,
 .combo-select > .button:hover,
 .combo-select > button:focus,
 .combo-select > .button:focus {
-  background-color: $bg3;
-  color: $main-alt;
-  border-color: $bg3;
+  background-color: var(--bg3);
+  color: var(--main-alt);
+  border-color: var(--bg3);
 }
 
 .combo-select > .selected,
 .combo-select > button.selected,
 .combo-select > .button.selected {
-  background-color: $main;
-  color: $bg1;
-  border-color: $main;
+  background-color: var(--main);
+  color: var(--bg1);
+  border-color: var(--main);
 }
 
 .combo-select > button.selected:hover,
 .combo-select > .button.selected:hover,
 .combo-select > button.selected:focus,
 .combo-select > .button.selected:focus {
-  background-color: $main-alt;
-  color: $bg1;
-  border-color: $main-alt;
+  background-color: var(--main-alt);
+  color: var(--bg1);
+  border-color: var(--main-alt);
 }
 
 .combo-select .combo-selected-icon {
@@ -954,29 +935,29 @@ button.faint:focus,
 .wave-top.bg0 {
   margin-top: 1rem;
   margin-bottom: 0px;
-  background-image: url(wave-top-svg-url($bg0));
+  background-image: url(wave-top-svg-url(var(--bg0)));
 }
 
 .wave-top.extra-bg {
-  background-image: url(wave-top-svg-url($extra-bg));
+  background-image: url(wave-top-svg-url(var(--extra-bg)));
 }
 
 .wave-bottom,
 .wave-bottom.bg0 {
   margin-top: 0px;
   margin-bottom: 1rem;
-  background-image: url(wave-bottom-svg-url($bg0));
+  background-image: url(wave-bottom-svg-url(var(--bg0)));
 }
 
 .wave-bottom.extra-bg {
-  background-image: url(wave-bottom-svg-url($extra-bg));
+  background-image: url(wave-bottom-svg-url(var(--extra-bg)));
 }
 
 button.button-box,
 .button.button-box {
-  color: $fg1;
-  background: $bg2;
-  border: 0.2rem solid $bg2;
+  color: var(--fg1);
+  background: var(--bg2);
+  border: 0.2rem solid var(--bg2);
   border-radius: $border-radius;
 }
 
@@ -984,9 +965,9 @@ button.button-box:hover,
 button.button-box:focus,
 .button.button-box:hover,
 .button.button-box:focus {
-  color: $main-alt;
-  background: $bg3;
-  border-color: $bg3;
+  color: var(--main-alt);
+  background: var(--bg3);
+  border-color: var(--bg3);
 }
 
 button.button-box:focus-visible {
@@ -995,8 +976,8 @@ button.button-box:focus-visible {
 
 button.button-box.selected,
 .button.button-box.selected {
-  color: $main;
-  border-color: $main;
+  color: var(--main);
+  border-color: var(--main);
 }
 
 
@@ -1004,12 +985,12 @@ button.button-box.selected:hover,
 .button.button-box.selected:hover,
 button.button-box.selected:focus,
 .button.button-box.selected:focus {
-  color: $main-alt;
-  border-color: $main-alt;
+  color: var(--main-alt);
+  border-color: var(--main-alt);
 }
 
 details {
-  border: 0.2rem solid $bg4;
+  border: 0.2rem solid var(--bg4);
   border-radius: $border-radius;
   padding: 1rem;
 }
@@ -1023,6 +1004,6 @@ summary {
 
 details[open] summary {
   padding-bottom: 1rem;
-  border-bottom: 0.2rem solid $bg4;
+  border-bottom: 0.2rem solid var(--bg4);
   margin-bottom: 1rem;
 }

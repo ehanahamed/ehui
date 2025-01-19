@@ -1,4 +1,4 @@
-$bg4: #3b3c4f !default;
+var(--bg4): #3b3c4f !default;
 
 *,
 *:before,
@@ -135,7 +135,7 @@ $bg4: #3b3c4f !default;
   grid-area: right;
   justify-self: left;
   padding-left: 2rem;
-  border-left: 0.2rem solid $bg4;
+  border-left: 0.2rem solid var(--bg4);
 }
 
 .grid.split.noBorder > .left,
@@ -234,7 +234,7 @@ make the list have only one column
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 4rem;
-  border-bottom: 0.2rem solid $bg4;
+  border-bottom: 0.2rem solid var(--bg4);
 }
 
 .grid.intro > .logotype {

@@ -4,26 +4,6 @@
   https://ehan.dev/ehui/LICENSE.txt
 */
 
-$color-scheme: dark !default;
-$ohno: #ff6666 !default;
-$ohno-alt: #ff9999 !default;
-$yay: #66FFCC !default;
-$yay-alt: #CCFFEE !default;
-$main: #9966FF !default;
-$main-alt: #BB99FF !default;
-$extra: #66FFCC !default;
-$extra-alt: #CCFFEE !default;
-$extra-bg: #181825 !default;
-$fg2: #c3cce9 !default;
-$fg1: #c3cce9 !default;
-$fg0: #9399b2 !default;
-$bg4: #3b3c4f !default;
-$bg3: #2b2c3d !default;
-$bg2: #222333 !default;
-$bg1: #1e1e2e !default;
-$bg0: #181825 !default;
-$select: #c3cce9 !default;
-$select-bg: #533380 !default;
 $font-family: "nunito", sans-serif !default;
 $border-radius: 0.8rem !default;
 $border-radius-button: 1.6rem !default;
@@ -43,53 +23,11 @@ $font-weight-link: 600 !default;
   $border-radius-checkbox: $border-radius-checkbox,
   $border-radius-text: $border-radius-text,
   $font-weight-button: $font-weight-button,
-  $color-scheme: $color-scheme,
-  $ohno: $ohno,
-  $ohno-alt: $ohno-alt,
-  $yay: $yay,
-  $yay-alt: $yay-alt,
-  $main: $main,
-  $main-alt: $main-alt,
-  $extra: $extra,
-  $extra-alt: $extra-alt,
-  $extra-bg: $extra-bg,
-  $fg2: $fg2,
-  $fg1: $fg1,
-  $fg0: $fg0,
-  $bg4: $bg4,
-  $bg3: $bg3,
-  $bg2: $bg2,
-  $bg1: $bg1,
-  $bg0: $bg0,
-  $select: $select,
-  $select-bg: $select-bg
-);
-
-@use "./layouts.scss" with (
-  $bg4: $bg4
+  $color-scheme: $color-scheme
 );
 
 @use "./classes.scss" with (
-  $border-radius: $border-radius,
-  $ohno: $ohno,
-  $ohno-alt: $ohno-alt,
-  $yay: $yay,
-  $yay-alt: $yay-alt,
-  $main: $main,
-  $main-alt: $main-alt,
-  $extra: $extra,
-  $extra-alt: $extra-alt,
-  $extra-bg: $extra-bg,
-  $fg2: $fg2,
-  $fg1: $fg1,
-  $fg0: $fg0,
-  $bg4: $bg4,
-  $bg3: $bg3,
-  $bg2: $bg2,
-  $bg1: $bg1,
-  $bg0: $bg0,
-  $select: $select,
-  $select-bg: $select-bg
+  $border-radius: $border-radius
 );
 
 .clickable-effect {
