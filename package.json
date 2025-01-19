@@ -9,11 +9,8 @@
   },
   "scripts": {
     "build": "npm run compile && npm run minify",
-    "compile": "npm run compile-dark && npm run compile-light && npm run cat",
-    "compile-dark": "npx sass ./themes/dark.scss ./css/ehui-dark.css --no-source-map",
-    "compile-light": "npx sass ./themes/light.scss ./css/ehui-light.css --no-source-map",
-    "cat": "node ./cat.js",
-    "minify": "npx postcss ./css/ --dir ./site/css/ --ext .min.css",
+    "compile-dark": "npx sass ./src/scss/ehui.scss ./site/css/ehui.css --no-source-map",
+    "minify": "npx postcss ./site/css/ehui.css -o ./site/css/ehui.min.css && npx postcss ./themes/ --dir ./site/themes/ --ext .min.css",
     "build-docs": "node ./build-docs.js"
   },
   "repository": {
