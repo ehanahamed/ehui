@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "npm run compile && npm run minify",
-    "compile-dark": "npx sass ./src/scss/ehui.scss ./site/css/ehui.css --no-source-map",
+    "compile": "npx sass ./src/scss/ehui.scss ./site/css/ehui.css --no-source-map",
     "minify": "npx postcss ./site/css/ehui.css -o ./site/css/ehui.min.css && npx postcss ./themes/ --dir ./site/themes/ --ext .min.css",
     "build-docs": "node ./build-docs.js"
   },

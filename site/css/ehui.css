@@ -1,0 +1,1722 @@
+/*!
+  EhUI is free and open source
+  Copyright (c) Ehan Ahamed and contributors
+  https://ehan.dev/ehui/LICENSE.txt
+*/
+html {
+  height: auto;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 16px;
+  }
+}
+body {
+  height: auto;
+  background-color: var(--bg1);
+  color: var(--fg1);
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: "nunito", sans-serif;
+  font-weight: normal;
+  margin: 0px;
+}
+
+::selection {
+  background-color: var(--select-bg);
+  color: var(--select);
+}
+
+h1,
+.h1 {
+  font-size: 3.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 0px;
+}
+
+h2,
+.h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 0px;
+}
+
+h3,
+.h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 0px;
+}
+
+h4,
+.h4 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 0px;
+}
+
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+  line-height: 1.2;
+}
+
+h5,
+.h5,
+p {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+}
+
+/* TEMPORARY FIX */
+p {
+  margin-block-end: 0px;
+}
+
+h6,
+.h6,
+small {
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+h5, p, h6, small,
+.h5, .h6 {
+  line-height: 1.4;
+}
+
+b,
+.b {
+  font-weight: bold;
+}
+
+i,
+.i {
+  font-style: italic;
+}
+
+/*
+nerdfont icons shouldn't have same styling as italic element lol
+*/
+i.nf {
+  font-style: normal;
+}
+
+s,
+.s {
+  text-decoration: line-through;
+}
+
+mark,
+.mark {
+  background-color: var(--fg1);
+  color: var(--bg1);
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.4rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+code,
+.code {
+  font-family: monospace;
+  background-color: var(--bg3);
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.4rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.box {
+  background-color: var(--bg2);
+  color: var(--fg1);
+  border: 0.2rem solid var(--bg2);
+  border-radius: 0.8rem;
+  padding: 1rem;
+}
+
+.extra .box {
+  background-color: var(--bg1);
+  border-color: var(--bg1);
+}
+
+.hero {
+  border-bottom: 0.2rem solid var(--bg4);
+  text-align: center;
+  padding: 1rem;
+  padding-bottom: 4rem;
+  margin: 4rem 1rem;
+}
+
+.topmost {
+  /* "topmost" is those alert bar thingies that are ABOVE the header, they're the top-most */
+  margin: 1rem;
+}
+
+header,
+.header {
+  position: static;
+  /* TEMP*/
+  height: 4rem;
+  background-color: var(--bg1);
+  border-bottom: 0.2rem solid var(--bg4);
+  padding: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 1rem;
+}
+
+header.sticky,
+.header.sticky {
+  position: sticky;
+  z-index: 10;
+  top: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+header > .nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 0px 1rem;
+}
+
+.nav > div {
+  border-bottom: 0.2rem solid var(--bg1);
+}
+
+.nav > div.current {
+  border-bottom: 0.2rem solid var(--main-alt);
+}
+
+.nav > div.current > a {
+  color: var(--main-alt);
+}
+
+footer,
+.footer {
+  border-top: 0.2rem solid var(--bg4);
+  text-align: center;
+  padding: 1rem;
+  padding-top: 4rem;
+  margin: 4rem 1rem;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0px;
+  border-radius: 0.8rem;
+  border: 0.2rem solid var(--bg4);
+}
+
+td {
+  font-weight: normal;
+  text-align: left;
+  padding: 1rem;
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+  padding: 1rem;
+}
+
+table.outer td,
+table.outer th,
+table.outer thead,
+table.outer tbody,
+table.outer tfoot {
+  border: none;
+}
+
+table.inner th:not(:last-child),
+table.inner td:not(:last-child) {
+  border-right: 0.2rem solid var(--bg4);
+}
+
+table.inner > thead > tr > th,
+table.inner > thead > tr > td,
+table.inner > tbody > tr:not(:last-child) > th,
+table.inner > tbody > tr:not(:last-child) > td,
+table.inner > tr:not(:last-child) > td,
+table.inner > tr:not(:last-child) > th,
+table.inner > thead:not(:last-child),
+table.inner > tbody:not(:last-child) {
+  border-bottom: 0.2rem solid var(--bg4);
+}
+
+a,
+.a {
+  color: var(--main);
+  cursor: pointer;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+a:hover,
+a:focus,
+.a:hover,
+.a:focus {
+  color: var(--main-alt);
+}
+
+a:focus-visible,
+.a:focus-visible {
+  outline: 0.2rem solid var(--main);
+  outline-offset: 0.4rem;
+  transition-duration: 0.1s;
+}
+
+button,
+.button {
+  display: inline-block;
+  appearance: none;
+  align-items: flex-start;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: var(--main);
+  color: var(--bg1);
+  border: none;
+  border-radius: 1.6rem;
+  padding: 0.6rem 1rem;
+  font-family: "nunito", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  transition-duration: 0.4s;
+}
+
+button,
+.button,
+a,
+.a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button.alt,
+.button.alt {
+  background-color: var(--bg2);
+  color: var(--main);
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  background-color: var(--main-alt);
+  color: var(--bg1);
+}
+
+button.alt:hover,
+button.alt:focus,
+.button.alt:hover,
+.button.alt:focus {
+  background-color: var(--bg3);
+  color: var(--main-alt);
+}
+
+button:focus-visible,
+.button:focus-visible {
+  outline: 0.2rem solid var(--main);
+  outline-offset: 0.2rem;
+  transition-duration: 0.1s;
+}
+
+::placeholder {
+  color: var(--fg0);
+  font-size: 1rem;
+  font-family: "nunito", sans-serif;
+  font-weight: normal;
+  opacity: 1;
+}
+
+input[type=text],
+input[type=password],
+textarea {
+  display: inline-block;
+  appearance: none;
+  align-items: flex-start;
+  box-sizing: border-box;
+  text-align: left;
+  cursor: text;
+  text-decoration: none;
+  font-family: "nunito", sans-serif;
+  background-color: var(--bg1);
+  color: var(--fg1);
+  border: 0.2rem solid var(--bg4);
+  border-radius: 0.8rem;
+  outline: none;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1.4;
+  transition-duration: 0.4s;
+}
+
+input[type=text]:hover,
+input[type=password]:hover,
+textarea:hover {
+  border-color: var(--bg4);
+  background-color: var(--bg2);
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus {
+  border-color: var(--main);
+  background-color: var(--bg1);
+}
+
+.searchbar {
+  display: flex;
+  width: 100%;
+  gap: 0px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: var(--bg2);
+  border: 0.2rem solid var(--bg2);
+  border-radius: 1.6rem;
+  transition-duration: 0.4s;
+}
+
+.searchbar > .searchbar-icon {
+  padding-left: 0.6rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-right: 0px;
+  color: var(--fg0);
+}
+
+.searchbar > input[type=text],
+.searchbar > input[type=text]:hover,
+.searchbar > input[type=text]:focus {
+  width: 100%;
+  margin-top: 0px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+  padding-left: 0.6rem;
+}
+
+.searchbar > input[type=text]:focus-visible {
+  background-color: transparent;
+  border: none;
+}
+
+.searchbar:hover {
+  background: var(--bg3);
+  border-color: var(--bg3);
+}
+
+.searchbar:focus-within {
+  background: var(--bg2);
+  border-color: var(--main);
+}
+
+.searchbar.with-autocomplete {
+  position: relative;
+}
+
+.searchbar.with-autocomplete > .searchbar-autocomplete {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  display: none;
+  /*display: flex;*/
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-items: stretch;
+  gap: 0.2rem;
+  margin-top: 0.4rem;
+  padding: 0.4rem;
+  background: var(--bg2);
+  border: 0.2rem solid var(--bg4);
+  border-radius: 0.8rem;
+}
+
+.searchbar.with-autocomplete:focus > .searchbar-autocomplete {
+  display: flex;
+}
+
+/*
+  use seperate focus-within rule so that unsupported browsers still use above rule for same styling
+  otherwise, one invalid selector makes the whole rule invalid
+*/
+.searchbar.with-autocomplete:focus-within > .searchbar-autocomplete {
+  display: flex;
+}
+
+/* make sure :focus and :focus-within do not override .hide */
+.searchbar.with-autocomplete:focus > .searchbar-autocomplete.hide {
+  display: none;
+}
+
+.searchbar.with-autocomplete:focus-within > .searchbar-autocomplete.hide {
+  display: none;
+}
+
+.searchbar-autocomplete > a,
+.searchbar-autocomplete > .a {
+  margin-top: 0px;
+  padding: 0.2rem 0.6rem;
+  border: none;
+  color: var(--fg1);
+  background-color: var(--bg2);
+}
+
+.searchbar-autocomplete > a:hover,
+.searchbar-autocomplete > .a:hover {
+  color: var(--main-alt);
+  background-color: var(--bg3);
+}
+
+/* extra focus-visible to override link's other styles */
+.searchbar-autocomplete > a:focus-visible,
+.searchbar-autocomplete > .a:focus-visible {
+  color: var(--main-alt);
+  background-color: var(--bg3);
+  border: none;
+  outline: none;
+}
+
+/*
+the html of a radio should look like:
+
+<div class="radio>
+  <input type="radio" id="id" ... />
+  <label for="id">text</label>
+</div>
+*/
+.radio,
+.checkbox {
+  display: grid;
+  grid-template-columns: 1.8rem auto 1fr;
+  grid-template-areas: "input label .";
+  gap: 1em;
+}
+
+.radio input,
+.checkbox input {
+  grid-area: input;
+}
+
+.radio label,
+.checkbox label {
+  grid-area: label;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  /*
+  https://moderncss.dev/pure-css-custom-styled-radio-buttons/
+  https://moderncss.dev/pure-css-custom-checkbox-style/
+  */
+  appearance: none;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 0px;
+  background-color: var(--bg1);
+  border: 0.2rem solid var(--main);
+  transition-duration: 0.4s;
+}
+
+input[type=radio] {
+  border-radius: 50%;
+}
+
+input[type=checkbox] {
+  border-radius: 0.6rem;
+}
+
+input[type=radio]:hover,
+input[type=radio]:focus,
+input[type=checkbox]:hover,
+input[type=checkbox]:focus {
+  border-color: var(--main-alt);
+}
+
+input[type=radio]:focus-visible,
+input[type=checkbox]:focus-visible {
+  outline: 0.2rem solid var(--main);
+  outline-offset: 0.2rem;
+  transition-duration: 0.1s;
+}
+
+input[type=radio]:checked,
+input[type=checkbox]:checked {
+  background-color: var(--main);
+  transition-duration: 0.1s;
+}
+
+.card {
+  width: 40rem;
+  height: 20rem;
+}
+
+.caption {
+  width: 40rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: 1fr;
+}
+
+.caption.centerThree {
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+.caption.evenTwo {
+  grid-template-columns: 1fr 1fr;
+}
+
+.caption.evenThree {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 800px) {
+  .card,
+  .caption {
+    width: 100%;
+  }
+}
+.card > .content {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: var(--bg2);
+  border-radius: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card.double {
+  perspective: 1000px;
+}
+
+.card.double > .content {
+  display: block;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+  background-color: inherit;
+  border-radius: 0px;
+  padding: 0px;
+  align-items: normal;
+  justify-content: normal;
+  text-align: center;
+}
+
+.card.double > .content > .front,
+.card.double > .content > .back {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+  padding: 1rem;
+  background-color: var(--bg2);
+  border-radius: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  transform: rotateX(0deg);
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card.double > .content > .back {
+  transform: rotateY(180deg);
+}
+
+.card.double.flip > .content {
+  transform: rotateY(180deg);
+}
+
+.separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--fg0);
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  display: block;
+  background: var(--bg4);
+  width: 100%;
+  height: 0.2rem;
+  margin: 0px 1rem;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 101;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal::before {
+  content: "";
+  position: fixed;
+  z-index: 101;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg0);
+  opacity: 0.6;
+}
+
+.modal > .content {
+  z-index: 102;
+  min-width: 40vw;
+  width: auto;
+  max-width: 90vw;
+  background-color: var(--bg1);
+  border: 0.2rem solid var(--bg4);
+  border-radius: 0.8rem;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .modal > .content {
+    width: 90vw;
+  }
+}
+.flex.pop {
+  padding: 0px 1rem;
+}
+
+/* .dropdown html structure:
+<div class="dropdown">
+  <button>Toggle Dropdown!</button>
+  <div class="content">
+    <button>Something</button>
+    <button>Another thing</button>
+    <button>More things</button>
+  </div>
+</div>
+*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .content {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+  padding: 0.4rem;
+  background: var(--bg2);
+  border: 0.2rem solid var(--bg4);
+  border-radius: 0.8rem;
+}
+
+.dropdown:focus-within .content {
+  display: flex;
+}
+
+.dropdown .content button,
+.dropdown .content .button {
+  margin-top: 0px;
+  text-wrap: nowrap;
+  background-color: var(--bg2);
+  border-color: var(--bg2);
+  color: var(--main);
+}
+
+.dropdown .content button:hover,
+.dropdown .content .button:hover,
+.dropdown .content button:focus,
+.dropdown .content .button:focus {
+  background-color: var(--bg3);
+  border-color: var(--bg3);
+  color: var(--main-alt);
+}
+
+button.dropdown-toggle,
+.button.dropdown-toggle,
+button.icon-only-button,
+.button.icon-only-button,
+button.faint,
+.button.faint {
+  background-color: transparent;
+  border: none;
+  color: var(--fg1);
+}
+
+button.dropdown-toggle:hover,
+.button.dropdown-toggle:hover,
+button.dropdown-toggle:focus,
+.button.dropdown-toggle:focus,
+button.icon-only-button:hover,
+.button.icon-only-button:hover,
+button.icon-only-button:focus,
+.button.icon-only-button:focus,
+button.faint:hover,
+.button.faint:hover,
+button.faint:focus,
+.button.faint:focus {
+  background-color: var(--bg3);
+  border: none;
+  color: var(--main-alt);
+}
+
+.combo-select {
+  display: flex;
+  gap: 0px;
+  align-items: stretch;
+}
+
+.combo-select > .left,
+.combo-select > button.left,
+.combo-select > .button.left {
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.combo-select > .mid,
+.combo-select > button.mid,
+.combo-select > .button.mid {
+  margin: 0px;
+  border-radius: 0px;
+}
+
+.combo-select > .right,
+.combo-select > button.right,
+.combo-select > .button.right {
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.combo-select > button,
+.combo-select > .button {
+  background-color: var(--bg2);
+  color: var(--main);
+  border-color: var(--bg2);
+}
+
+.combo-select > button:hover,
+.combo-select > .button:hover,
+.combo-select > button:focus,
+.combo-select > .button:focus {
+  background-color: var(--bg3);
+  color: var(--main-alt);
+  border-color: var(--bg3);
+}
+
+.combo-select > .selected,
+.combo-select > button.selected,
+.combo-select > .button.selected {
+  background-color: var(--main);
+  color: var(--bg1);
+  border-color: var(--main);
+}
+
+.combo-select > button.selected:hover,
+.combo-select > .button.selected:hover,
+.combo-select > button.selected:focus,
+.combo-select > .button.selected:focus {
+  background-color: var(--main-alt);
+  color: var(--bg1);
+  border-color: var(--main-alt);
+}
+
+.combo-select .combo-selected-icon {
+  display: none;
+}
+
+.combo-select > .selected > .combo-selected-icon {
+  display: inline;
+}
+
+.wave-top,
+.wave-bottom {
+  width: 100%;
+  height: 10rem;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-size: 100% 10rem;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 800px) {
+  .wave-top,
+  .wave-bottom {
+    height: 8rem;
+    background-size: 100% 8rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .wave-top,
+  .wave-bottom {
+    height: 6rem;
+    background-size: 100% 6rem;
+  }
+}
+.wave-top,
+.wave-top.bg0 {
+  margin-top: 1rem;
+  margin-bottom: 0px;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22var(--bg0)%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.wave-top.extra-bg {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22var(--extra-bg)%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.wave-bottom,
+.wave-bottom.bg0 {
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22var(--bg0)%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.wave-bottom.extra-bg {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22var(--extra-bg)%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+button.button-box,
+.button.button-box {
+  color: var(--fg1);
+  background: var(--bg2);
+  border: 0.2rem solid var(--bg2);
+  border-radius: 0.8rem;
+}
+
+button.button-box:hover,
+button.button-box:focus,
+.button.button-box:hover,
+.button.button-box:focus {
+  color: var(--main-alt);
+  background: var(--bg3);
+  border-color: var(--bg3);
+}
+
+button.button-box:focus-visible {
+  outline-offset: 0.4rem;
+}
+
+button.button-box.selected,
+.button.button-box.selected {
+  color: var(--main);
+  border-color: var(--main);
+}
+
+button.button-box.selected:hover,
+.button.button-box.selected:hover,
+button.button-box.selected:focus,
+.button.button-box.selected:focus {
+  color: var(--main-alt);
+  border-color: var(--main-alt);
+}
+
+details {
+  border: 0.2rem solid var(--bg4);
+  border-radius: 0.8rem;
+  padding: 1rem;
+}
+
+summary {
+  font-weight: 600;
+  padding: 0px;
+  border: none;
+  margin: 0px;
+}
+
+details[open] summary {
+  padding-bottom: 1rem;
+  border-bottom: 0.2rem solid var(--bg4);
+  margin-bottom: 1rem;
+}
+
+a.mark {
+  /*
+  undo stuff in other stuff?
+  */
+  color: var(--main);
+}
+
+a.mark:hover,
+a.mark:focus {
+  color: var(--main-alt);
+}
+
+/*
+other utils
+*/
+span.ohno,
+p.ohno,
+b.ohno,
+i.ohno,
+u.ohno,
+.text.ohno,
+mark.ohno,
+.mark.ohno,
+code.ohno {
+  color: var(--ohno);
+}
+
+span.yay,
+p.yay,
+b.yay,
+i.yay,
+u.yay,
+.text.yay,
+mark.yay,
+.mark.yay,
+code.yay {
+  color: var(--yay);
+}
+
+span.bg1,
+p.bg1,
+b.bg1,
+i.bg1,
+u.bg1,
+.text.bg1,
+mark.bg1,
+.mark.bg1,
+code.bg1 {
+  color: var(--bg1);
+}
+
+span.fg2,
+p.fg2,
+b.fg2,
+i.fg2,
+u.fg2,
+.text.fg2,
+mark.fg2,
+.mark.fg2,
+code.fg2 {
+  color: var(--fg2);
+}
+
+span.fg1,
+p.fg1,
+b.fg1,
+i.fg1,
+u.fg1,
+.text.fg1,
+mark.fg1,
+.mark.fg1,
+code.fg1 {
+  color: var(--fg1);
+}
+
+span.fg0,
+p.fg0,
+b.fg0,
+i.fg0,
+u.fg0,
+.text.fg0,
+mark.fg0,
+.mark.fg0,
+code.fg0 {
+  color: var(--fg0);
+}
+
+span.main,
+p.main,
+b.main,
+i.main,
+u.main,
+.text.main,
+mark.main,
+.mark.main,
+code.main {
+  color: var(--main);
+}
+
+span.extra,
+p.extra,
+b.extra,
+i.extra,
+u.extra,
+.text.extra,
+mark.extra,
+.mark.extra,
+code.extra {
+  color: var(--extra);
+}
+
+mark.markOhno,
+.mark.markOhno {
+  background-color: var(--ohno);
+}
+
+mark.markYay,
+.mark.markYay {
+  background-color: var(--yay);
+}
+
+mark.markBg4,
+.mark.markBg4 {
+  background-color: var(--bg4);
+}
+
+mark.markBg2,
+.mark.markBg2 {
+  background-color: var(--bg2);
+}
+
+mark.markFg2,
+.mark.markFg2 {
+  background-color: var(--fg2);
+}
+
+mark.markFg1,
+.mark.markFg1 {
+  background-color: var(--fg1);
+}
+
+mark.markFg0,
+.mark.markFg0 {
+  background-color: var(--fg0);
+}
+
+mark.markMain,
+.mark.markMain {
+  background-color: var(--main);
+}
+
+mark.markExtra,
+.mark.markExtra {
+  background-color: var(--extra);
+}
+
+.box.ohno {
+  color: var(--ohno);
+  border-color: var(--ohno);
+}
+
+.box.yay {
+  color: var(--yay);
+  border-color: var(--yay);
+}
+
+pre,
+.pre {
+  white-space: pre;
+  display: block;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.8rem;
+  background: var(--bg2);
+}
+
+pre > code,
+pre > .code,
+.pre > code,
+.pre > .code {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  padding: 0px;
+  background: none;
+}
+
+button.ohno,
+.button.ohno {
+  background-color: var(--ohno);
+}
+
+button.yay,
+.button.yay {
+  background-color: var(--yay);
+}
+
+button.extra,
+.button.extra {
+  background-color: var(--extra);
+  color: var(--extra-bg);
+}
+
+button.alt.ohno,
+.button.alt.ohno {
+  color: var(--ohno);
+  background: var(--bg2);
+}
+
+button.alt.yay,
+.button.alt.yay {
+  color: var(--yay);
+  background: var(--bg2);
+}
+
+button.alt.extra,
+.button.alt.extra {
+  color: var(--extra);
+  background: var(--bg2);
+}
+
+button.alt:hover.ohno,
+button.alt:focus.ohno,
+.button.alt:hover.ohno,
+.button.alt:focus.ohno {
+  background-color: var(--bg3);
+  color: var(--ohno-alt);
+}
+
+button.alt:hover.yay,
+button.alt:focus.yay,
+.button.alt:hover.yay,
+.button.alt:focus.yay {
+  background-color: var(--bg3);
+  color: var(--yay-alt);
+}
+
+button.alt:hover.extra,
+button.alt:focus.extra,
+.button.alt:hover.extra,
+.button.alt:focus.extra {
+  background-color: var(--bg3);
+  color: var(--extra-alt);
+}
+
+button:hover.ohno,
+button:focus.ohno,
+.button:hover.ohno,
+.button:focus.ohno {
+  background-color: var(--ohno-alt);
+  color: var(--bg1);
+}
+
+button:hover.yay,
+button:focus.yay,
+.button:hover.yay,
+.button:focus.yay {
+  background-color: var(--yay-alt);
+  color: var(--bg1);
+}
+
+button:hover.extra,
+button:focus.extra,
+.button:hover.extra,
+.button:focus.extra {
+  background-color: var(--extra-alt);
+  color: var(--extra-bg);
+}
+
+button:focus-visible.ohno,
+.button:focus-visible.ohno {
+  outline-color: var(--ohno);
+}
+
+button:focus-visible.yay,
+.button:focus-visible.yay {
+  outline-color: var(--yay);
+}
+
+button:focus-visible.extra,
+.button:focus-visible.extra {
+  outline-color: var(--extra);
+}
+
+button.button-box.ohno,
+.button.button-box.ohno {
+  color: var(--ohno);
+  background: var(--bg2);
+  border: 0.2rem solid var(--bg2);
+  border-radius: 0.8rem;
+}
+
+button.button-box.yay,
+.button.button-box.yay {
+  color: var(--yay);
+  background: var(--bg2);
+  border: 0.2rem solid var(--bg2);
+  border-radius: 0.8rem;
+}
+
+button.button-box:hover.ohno,
+button.button-box:focus.ohno,
+.button.button-box:hover.ohno,
+.button.button-box:focus.ohno {
+  color: var(--ohno-alt);
+  background: var(--bg3);
+  border-color: var(--bg3);
+}
+
+button.button-box:hover.yay,
+button.button-box:focus.yay,
+.button.button-box:hover.yay,
+.button.button-box:focus.yay {
+  color: var(--yay-alt);
+  background: var(--bg3);
+  border-color: var(--bg3);
+}
+
+button.button-box.selected.ohno,
+.button.button-box.selected.ohno {
+  color: var(--ohno);
+  border-color: var(--ohno);
+}
+
+button.button-box.selected.yay,
+.button.button-box.selected.yay {
+  color: var(--yay);
+  border-color: var(--yay);
+}
+
+button.button-box.selected:hover.ohno,
+button.button-box.selected:focus.ohno,
+.button.button-box.selected:hover.ohno,
+.button.button-box.selected:focus.ohno {
+  color: var(--ohno-alt);
+  background: var(--bg3);
+  border-color: var(--ohno-alt);
+}
+
+button.button-box.selected:hover.yay,
+button.button-box.selected:focus.yay,
+.button.button-box.selected:hover.yay,
+.button.button-box.selected:focus.yay {
+  color: var(--yay-alt);
+  background: var(--bg3);
+  border-color: var(--yay-alt);
+}
+
+input[type=text].ohno,
+input[type=password].ohno,
+textarea.ohno {
+  border-color: var(--ohno);
+}
+
+input[type=text].yay,
+input[type=password].yay,
+textarea.yay {
+  border-color: var(--yay);
+}
+
+input[type=text].extra,
+input[type=password].extra,
+textarea.extra {
+  border-color: var(--extra);
+}
+
+input[type=text].ohno:focus,
+input[type=password].ohno:focus,
+textarea.ohno:focus {
+  border-color: var(--ohno-alt);
+}
+
+input[type=text].yay:focus,
+input[type=password].yay:focus,
+textarea.yay:focus {
+  border-color: var(--yay-alt);
+}
+
+input[type=text].extra:focus,
+input[type=password].extra:focus,
+textarea.extra:focus {
+  border-color: var(--extra-alt);
+}
+
+textarea.vertical {
+  resize: vertical;
+  white-space: pre;
+}
+
+textarea.horizontal {
+  resize: horizontal;
+  white-space: pre;
+}
+
+.hide {
+  display: none;
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  background: var(--bg1);
+}
+
+.exitFullscreen {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  margin: 0px;
+  /* hide exit button by default */
+  display: none;
+}
+
+.fullscreen > button.exitFullscreen,
+.fullscreen > .button.exitFullscreen {
+  /* show exit button if its parent is fullscreen */
+  display: inline-block;
+  /* and specifically use inline block just for buttons */
+}
+
+.invisible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0px;
+  opacity: 0;
+  overflow: hidden;
+}
+
+/* fancy stuff */
+.hero > .logo::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+  background-color: var(--main);
+  opacity: 0.2;
+  filter: blur(1rem);
+  border-radius: 50%;
+}
+
+html.min .hero > .logo::before {
+  display: none;
+}
+
+.hero > .logo > svg {
+  margin-top: 0px;
+}
+
+/* temp */
+.fullWidth {
+  width: 100%;
+}
+
+.grid.page.extra {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 1rem;
+  background-color: var(--extra-bg);
+}
+
+button.large,
+.button.large {
+  padding: 0.8rem 1.4rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.fill-ohno {
+  fill: var(--ohno);
+}
+
+.fill-ohno-alt {
+  fill: var(--ohno-alt);
+}
+
+.fill-yay {
+  fill: var(--yay);
+}
+
+.fill-yay-alt {
+  fill: var(--yay-alt);
+}
+
+.fill-main {
+  fill: var(--main);
+}
+
+.fill-main-alt {
+  fill: var(--main-alt);
+}
+
+.fill-extra {
+  fill: var(--extra);
+}
+
+.fill-extra-alt {
+  fill: var(--extra-alt);
+}
+
+.fill-extra-bg {
+  fill: var(--extra-bg);
+}
+
+.fill-fg2 {
+  fill: var(--fg2);
+}
+
+.fill-fg1 {
+  fill: var(--fg1);
+}
+
+.fill-fg0 {
+  fill: var(--fg0);
+}
+
+.fill-bg4 {
+  fill: var(--bg4);
+}
+
+.fill-bg3 {
+  fill: var(--bg3);
+}
+
+.fill-bg2 {
+  fill: var(--bg2);
+}
+
+.fill-bg1 {
+  fill: var(--bg1);
+}
+
+.fill-bg0 {
+  fill: var(--bg0);
+}
+
+.background-extra-bg {
+  background-color: var(--extra-bg);
+}
+
+.background-bg2 {
+  background-color: var(--bg2);
+}
+
+.background-bg1 {
+  background-color: var(--bg1);
+}
+
+.background-bg0 {
+  background-color: var(--bg0);
+}
+
+.dropdown .content button.ohno,
+.dropdown .content .button.ohno {
+  background-color: var(--bg2);
+  color: var(--ohno);
+}
+
+.dropdown .content button.yay,
+.dropdown .content .button.yay {
+  background-color: var(--bg2);
+  color: var(--yay);
+}
+
+.dropdown .content button.ohno:hover,
+.dropdown .content .button.ohno:hover,
+.dropdown .content button.ohno:focus,
+.dropdown .content .button.ohno:focus {
+  background-color: var(--bg3);
+  color: var(--ohno-alt);
+}
+
+.dropdown .content button.yay:hover,
+.dropdown .content .button.yay:hover,
+.dropdown .content button.yay:focus,
+.dropdown .content .button.yay:focus {
+  background-color: var(--bg3);
+  color: var(--yay-alt);
+}
+
+button.dropdown-toggle.ohno,
+.button.dropdown-toggle.ohno,
+button.icon-only-button.ohno,
+.button.icon-only-button.ohno,
+button.faint.ohno,
+.button.faint.ohno {
+  background-color: transparent;
+  border: none;
+  color: var(--ohno);
+}
+
+button.dropdown-toggle.ohno:hover,
+.button.dropdown-toggle.ohno:hover,
+button.dropdown-toggle.ohno:focus,
+.button.dropdown-toggle.ohno:focus,
+button.icon-only-button.ohno:hover,
+.button.icon-only-button.ohno:hover,
+button.icon-only-button.ohno:focus,
+.button.icon-only-button.ohno:focus,
+button.faint.ohno:hover,
+.button.faint.ohno:hover,
+button.faint.ohno:focus,
+.button.faint.ohno:focus {
+  background-color: var(--bg3);
+  border: none;
+  color: var(--ohno-alt);
+}
+
+button.dropdown-toggle.yay,
+.button.dropdown-toggle.yay,
+button.icon-only-button.yay,
+.button.icon-only-button.yay,
+button.faint.yay,
+.button.faint.yay {
+  background-color: transparent;
+  border: none;
+  color: var(--yay);
+}
+
+button.dropdown-toggle.yay:hover,
+.button.dropdown-toggle.yay:hover,
+button.dropdown-toggle.yay:focus,
+.button.dropdown-toggle.yay:focus,
+button.icon-only-button.yay:hover,
+.button.icon-only-button.yay:hover,
+button.icon-only-button.yay:focus,
+.button.icon-only-button.yay:focus,
+button.faint.yay:hover,
+.button.faint.yay:hover,
+button.faint.yay:focus,
+.button.faint.yay:focus {
+  background-color: var(--bg3);
+  border: none;
+  color: var(--yay-alt);
+}
+
+@media (prefers-reduced-motion) {
+  html {
+    scroll-behavior: auto;
+  }
+  a,
+  .a,
+  button,
+  .button,
+  input[type=text],
+  input[type=password],
+  textarea,
+  input[type=radio],
+  input[type=checkbox] {
+    transition-duration: 0s;
+  }
+  a:focus-visible,
+  .a:focus-visible,
+  button:focus-visible,
+  .button:focus-visible,
+  input[type=radio]:focus-visible,
+  input[type=checkbox]:focus-visible {
+    transition-duration: 0s;
+  }
+  .card,
+  .card.double {
+    perspective: none;
+  }
+  .card.double > .content {
+    display: block;
+    transition-duration: 0s;
+    transform-style: flat;
+    background-color: inherit;
+    border-radius: 0px;
+    align-items: normal;
+    justify-content: normal;
+    text-align: center;
+  }
+  .card.double > .content > .front,
+  .card.double > .content > .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg2);
+    border-radius: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+    -moz-backface-visibility: visible;
+    transform: none;
+  }
+  .card.double > .content > .back {
+    display: none;
+    transform: none;
+  }
+  .card.double > .content > .front {
+    display: flex;
+  }
+  .card.double.flip > .content {
+    transform: none;
+  }
+  .card.double.flip > .content > .back {
+    display: flex;
+  }
+  .card.double.flip > .content > .front {
+    display: none;
+  }
+  .searchbar {
+    transition-duration: 0s;
+  }
+}
+.clickable-effect {
+  transition-duration: 0.4s;
+}
+
+button:hover, .button:hover,
+button:focus, .button:focus,
+.clickable-effect:hover,
+.clickable-effect:focus {
+  transform: scale(1.1);
+}
+
+button.no-clickable-effect:hover, .button.no-clickable-effect:hover,
+button.no-clickable-effect:focus, .button.no-clickable-effect:focus {
+  transform: none;
+}
+
+.combo-select button:hover,
+.combo-select button:focus,
+.combo-select .button:hover,
+.combo-select .button:focus {
+  transform: none;
+}
+
+@media (prefers-reduced-motion) {
+  .clickable-effect {
+    transition-duration: 0s;
+  }
+  button:hover, .button:hover,
+  button:focus, .button:focus,
+  .clickable-effect:hover,
+  .clickable-effect:focus {
+    transform: none;
+  }
+}
