@@ -22,8 +22,7 @@ $font-weight-link: 600 !default;
   $border-radius-textbox-searchbar: $border-radius-textbox-searchbar,
   $border-radius-checkbox: $border-radius-checkbox,
   $border-radius-text: $border-radius-text,
-  $font-weight-button: $font-weight-button,
-  $color-scheme: $color-scheme
+  $font-weight-button: $font-weight-button
 );
 
 @use "./classes.scss" with (
