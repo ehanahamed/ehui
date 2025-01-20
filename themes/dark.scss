@@ -1,7 +1,4 @@
-@use "../src/scss/theme-waves.scss";
-
-$bg0: #1C1C26;
-$extra-bg: #1C1C26;
+@use "../src/scss/theme-svgs.scss";
 
 :root {
   color-scheme: dark;
@@ -13,7 +10,7 @@ $extra-bg: #1C1C26;
   --main-alt: #C7B3FF;
   --extra: #80FFBF;
   --extra-alt: #B3FFD9;
-  --extra-bg: $extra-bg;
+  --extra-bg: #1C1C26;
   --fg2: #c3cce9;
   --fg1: #c3cce9;
   --fg0: #9399b2;
@@ -21,9 +18,9 @@ $extra-bg: #1C1C26;
   --bg3: #2C2C3A;
   --bg2: #252531;
   --bg1: #21212C;
-  --bg0: $bg0;
+  --bg0: #1C1C26;
   --select: #c3cce9;
   --select-bg: #43396A;
 }
 
-@include theme-waves.waves($bg0, $extra-bg);
+@include theme-svgs.waves(#1C1C26 /* bg0 */, #1C1C26 /* extra-bg */);

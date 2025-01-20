@@ -1,3 +1,5 @@
+@use "sass:string";
+
 @function url-encode-replace-hashtag($string) {
   $index: string.index($string, "#");
   @if $index {

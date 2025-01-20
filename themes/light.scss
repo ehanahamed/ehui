@@ -1,3 +1,5 @@
+@use "../src/scss/theme-svgs.scss";
+
 :root {
   color-scheme: light;
   --ohno: #f03e3e;
@@ -20,3 +22,5 @@
   --select: #343a40;
   --select-bg: #e5dbff;
 }
+
+@include theme-svgs.waves(#fbfcfc /* bg0 */, #fbfcfc /* extra-bg */);

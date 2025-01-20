@@ -9,8 +9,8 @@
   },
   "scripts": {
     "build": "npm run compile && npm run minify",
-    "compile": "npx sass ./src/scss/ehui.scss ./site/css/ehui.css --no-source-map && npx sass ./themes/ ./site/themes --no-source-map",
-    "minify": "npx postcss ./site/css/ehui.css -o ./site/css/ehui.min.css && npx postcss ./site/themes/ --ext .min.css",
+    "compile": "npx sass src/scss/ehui.scss:build/css/ehui.css themes/:build/themes/ --no-source-map",
+    "minify": "npx postcss build/css/ehui.css -o site/css/ehui.min.css && npx postcss build/themes/ --dir site/themes/ --ext .min.css",
     "build-docs": "node ./build-docs.js"
   },
   "repository": {
