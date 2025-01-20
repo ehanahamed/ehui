@@ -1,6 +1,8 @@
 # EhUI
 
-EhUI is a customizable free & open source UI-kit/css-library. https://ehan.dev/ehui
+EhUI is a customizable free & open source UI-kit/css-library.
+
+https://ehan.dev/ehui
 
 [Codeberg](https://codeberg.org/ehanahamed/ehui) · [GitHub](https://github.com/ehanahamed/ehui)
 
