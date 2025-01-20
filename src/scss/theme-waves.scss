@@ -1,0 +1,73 @@
+@function url-encode-replace-hashtag($string) {
+  $index: string.index($string, "#");
+  @if $index {
+    @return string.slice($string, 1, $index - 1) + "%23" + string.slice($string, $index + 1);
+  }
+  @return $string;
+}
+
+@function wave-top-svg-url($fill-color) {
+  @return url-encode-replace-hashtag(
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22" +
+    $fill-color +
+    "%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E"
+  );
+}
+
+@function wave-bottom-svg-url($fill-color) {
+  @return url-encode-replace-hashtag(
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22" +
+    $fill-color +
+    "%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E"
+  );
+}
+
+@mixin waves($bg0, $extra-bg) {
+  .wave-top,
+  .wave-bottom {
+    width: 100%;
+    height: 10rem;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-size: 100% 10rem;
+    background-repeat: no-repeat;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .wave-top,
+    .wave-bottom {
+      height: 8rem;
+      background-size: 100% 8rem;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .wave-top,
+    .wave-bottom {
+      height: 6rem;
+      background-size: 100% 6rem;
+    }
+  }
+
+  .wave-top,
+  .wave-top.bg0 {
+    margin-top: 1rem;
+    margin-bottom: 0px;
+    background-image: url(wave-top-svg-url($bg0));
+  }
+
+  .wave-top.extra-bg {
+    background-image: url(wave-top-svg-url($extra-bg));
+  }
+
+  .wave-bottom,
+  .wave-bottom.bg0 {
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    background-image: url(wave-bottom-svg-url($bg0));
+  }
+
+  .wave-bottom.extra-bg {
+    background-image: url(wave-bottom-svg-url($extra-bg));
+  }
+}

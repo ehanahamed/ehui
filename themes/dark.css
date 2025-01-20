@@ -1,22 +1,20 @@
-:root {
-  color-scheme: dark;
-  --ohno: #ff6666;
-  --ohno-alt: #ff9999;
-  --yay: #80FFBF;
-  --yay-alt: #B3FFD9;
-  --main: #A280FF;
-  --main-alt: #C7B3FF;
-  --extra: #80FFBF;
-  --extra-alt: #B3FFD9;
-  --extra-bg: #1C1C26;
-  --fg2: #c3cce9;
-  --fg1: #c3cce9;
-  --fg0: #9399b2;
-  --bg4: #303040;
-  --bg3: #2C2C3A;
-  --bg2: #252531;
-  --bg1: #21212C;
-  --bg0: #1C1C26;
-  --select: #c3cce9;
-  --select-bg: #43396A;
+/* Error: There is no module with the namespace "string".
+ *   ,
+ * 2 |   $index: string.index($string, "#");
+ *   |           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   src/scss/theme-waves.scss 2:11   url-encode-replace-hashtag()
+ *   src/scss/theme-waves.scss 10:11  wave-top-svg-url()
+ *   src/scss/theme-waves.scss 56:27  waves()
+ *   themes/dark.scss 29:1            root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: There is no module with the namespace "string".\a   \2577 \a 2 \2502    $index: string.index($string, "#");\a   \2502            ^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   src/scss/theme-waves.scss 2:11   url-encode-replace-hashtag()\a   src/scss/theme-waves.scss 10:11  wave-top-svg-url()\a   src/scss/theme-waves.scss 56:27  waves()\a   themes/dark.scss 29:1            root stylesheet';
 }
