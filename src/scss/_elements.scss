@@ -503,73 +503,60 @@ textarea:focus {
   outline: none;
 }
 
-/*
-the html of a radio should look like:
-
-<div class="radio>
-  <input type="radio" id="id" ... />
-  <label for="id">text</label>
-</div>
-*/
-.radio,
-.checkbox {
-  display: grid;
-  grid-template-columns: 1.8rem auto 1fr;
-  grid-template-areas: "input label .";
-  gap: 1em;
+.radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
 }
 
-.radio input,
-.checkbox input {
-  grid-area: input;
+.radio input[type="radio"]+span {
+  cursor: pointer;
+  color: var(--fg1);
 }
 
-.radio label,
-.checkbox label {
-  grid-area: label;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-  /*
-  https://moderncss.dev/pure-css-custom-styled-radio-buttons/
-  https://moderncss.dev/pure-css-custom-checkbox-style/
-  */
-  appearance: none;
-  width: 1.8rem;
-  height: 1.8rem;
-  margin: 0px;
-  background-color: var(--bg1);
+.radio input[type="radio"]+span::before {
+  content: "";
   border: 0.2rem solid var(--main);
+  border-radius: 50%;
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 0.5rem;
+  margin-top: 0.2rem;
+  vertical-align: -0.4rem;
+  outline: none;
   transition-duration: 0.4s;
 }
 
-input[type="radio"] {
+.radio input[type="radio"]:checked+span::before {
   border-radius: 50%;
+  background-color: var(--main-alt);
+  border: 0.4rem solid var(--main);
+  transition-duration: 0.4s;
 }
 
-input[type="checkbox"] {
-  border-radius: $border-radius-checkbox;
-}
-
-input[type="radio"]:hover,
-input[type="radio"]:focus,
-input[type="checkbox"]:hover,
-input[type="checkbox"]:focus {
+.radio input[type="radio"]:hover+span::before {
   border-color: var(--main-alt);
+  transition-duration: 0.4s;
 }
 
-input[type="radio"]:focus-visible,
-input[type="checkbox"]:focus-visible {
+.radio input[type="radio"]:focus+span::before {
   outline: 0.2rem solid var(--main);
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
 }
 
-input[type="radio"]:checked,
-input[type="checkbox"]:checked {
-  background-color: var(--main);
-  transition-duration: 0.1s;
+.radio input[type="radio"]:disabled+span {
+  cursor: default;
+  color: var(--fg0);
+}
+
+.radio input[type="radio"]:disabled+span::before {
+  border-color: var(--bg4);
+}
+
+.radio input[type="radio"]:disabled:checked+span::before {
+  background-color: var(--fg0);
 }
 
 .card {

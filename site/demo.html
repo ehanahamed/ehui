@@ -301,17 +301,37 @@
             ></textarea>
           </div>
           <p>Radio select</p>
-          <div class="radio">
-            <input type="radio" name="radio" id="radio0" />
-            <label for="radio0">Radio 0</label>
-          </div>
-          <div class="radio">
-            <input type="radio" name="radio" id="radio1" />
-            <label for="radio1">Radio 1</label>
-          </div>
-          <div class="radio">
-            <input type="radio" name="radio" id="radio2" />
-            <label for="radio2">Radio 2</label>
+          <div class="flex col">
+            <div class="radio">
+              <label>
+                <input type="radio" name="radioExample">
+                <span aria-label="Example 1">Example 1</span>
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="radioExample">
+                <span aria-label="Example 2">Example 2</span>
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="radioExample" disabled="disabled">
+                <span aria-label="Example 3 Disabled">Example 3 (Disabled)</span>
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="radioExample" disabled="disabled" checked="checked">
+                <span aria-label="Example 4 Disabled">Example 4 (Disabled)</span>
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="radioExample">
+                <span aria-label="Example 5">Example 5</span>
+              </label>
+            </div>
           </div>
           <p>Checkbox select</p>
           <div class="checkbox">
