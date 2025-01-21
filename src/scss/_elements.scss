@@ -540,7 +540,7 @@ textarea:focus {
   transition-duration: 0.4s;
 }
 
-.radio input[type="radio"]:focus+span::before {
+.radio input[type="radio"]:focus-visible+span::before {
   outline: 0.2rem solid var(--main);
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
