@@ -864,6 +864,7 @@ button.faint:focus,
 
 button.button-box,
 .button.button-box {
+  display: inline-block;
   color: var(--fg1);
   background: var(--bg2);
   border: 0.2rem solid var(--bg2);
