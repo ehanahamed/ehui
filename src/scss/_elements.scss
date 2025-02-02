@@ -291,9 +291,9 @@ a:focus-visible,
 
 button,
 .button {
-  display: inline-block;
+  display: inline-flex;
   appearance: none;
-  align-items: flex-start;
+  align-items: center;
   box-sizing: border-box;
   text-align: center;
   cursor: pointer;
