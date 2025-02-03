@@ -400,10 +400,10 @@ textarea:focus {
 }
 
 .searchbar > .searchbar-icon {
-  padding-left: 0.6rem;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
-  padding-right: 0px;
+  margin-left: 0.6rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
   color: var(--fg0);
 }
 
