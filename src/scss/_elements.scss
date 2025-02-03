@@ -294,6 +294,7 @@ button,
   display: inline-flex;
   appearance: none;
   align-items: center;
+  justify-items: center;
   gap: 0.4rem;
   box-sizing: border-box;
   text-align: center;
@@ -745,6 +746,7 @@ textarea:focus {
 
 .dropdown .content button,
 .dropdown .content .button {
+  justify-items: start;
   margin-top: 0px;
   text-wrap: nowrap;
   background-color: var(--bg2);
