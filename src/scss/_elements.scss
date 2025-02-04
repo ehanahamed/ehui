@@ -776,6 +776,11 @@ button.faint,
   color: var(--fg1);
 }
 
+button.icon-only-button,
+.button.icon-only-button {
+  padding: 0.6rem;
+}
+
 button.dropdown-toggle:hover,
 .button.dropdown-toggle:hover,
 button.dropdown-toggle:focus,
@@ -791,6 +796,65 @@ button.faint:focus,
   background-color: var(--bg3);
   border: none;
   color: var(--main-alt);
+}
+
+.full-sidebar-menu > .content {
+  display: none;
+  
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-items: flex-start;
+  justify-items: flex-start;
+  margin: 0px;
+  padding-left: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 6rem;
+  background-color: var(--bg1);
+  z-index: 20;
+  height: 100%;
+  border-right: 0.2rem solid var(--bg4);
+}
+
+.full-sidebar-menu:focus-within > .content {
+  display: flex;
+}
+
+.full-sidebar-menu > .content > div {
+  margin: 0px;
+  padding-left: 0.8rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+}
+
+.full-sidebar-menu > .content > div.current {
+  border-left: 0.2rem solid var(--main-alt);
+}
+
+.full-sidebar-menu > .content > div.current > button,
+.full-sidebar-menu > .content > div.current > .button,
+.full-sidebar-menu > .content > div.current > a,
+.full-sidebar-menu > .content > div.current > .a {
+  color: var(--main-alt)
+}
+
+.full-sidebar-menu > .content > div > button,
+.full-sidebar-menu > .content > div > .button,
+.full-sidebar-menu > .content > div > a,
+.full-sidebar-menu > .content > div > .a {
+  margin: 0px;
+}
+
+.full-sidebar-menu > .content > div > button,
+.full-sidebar-menu > .content > div > .button {
+  justify-items: start;
+  justify-content: start;
 }
 
 .combo-select {
