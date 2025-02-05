@@ -798,20 +798,21 @@ button.faint:focus,
   position: absolute;
   top: 0px;
   left: 0px;
-  gap: 1rem;
+  gap: 0.4rem;
   flex-direction: column;
-  align-items: flex-start;
-  align-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
   justify-items: flex-start;
   justify-items: flex-start;
   margin: 0px;
   padding-left: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  padding-right: 6rem;
+  padding-right: 1rem;
   background-color: var(--bg1);
   z-index: 20;
   height: 100%;
+  min-width: 10rem;
   border-right: 0.2rem solid var(--bg4);
 }
 
@@ -819,36 +820,62 @@ button.faint:focus,
   display: flex;
 }
 
-.full-sidebar-menu > .content > div {
+.full-sidebar-menu > .content > a.current,
+.full-sidebar-menu > .content > .a.current,
+.full-sidebar-menu > .content > button.current,
+.full-sidebar-menu > .content > .button.current {
+  color: var(--main);
+  background-color: var(--bg3);
+  border: none;
+}
+
+.full-sidebar-menu > .content > a,
+.full-sidebar-menu > .content > .a,
+.full-sidebar-menu > .content > button,
+.full-sidebar-menu > .content > .button {
   margin: 0px;
   padding-left: 0.8rem;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-right: 0px;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-right: 0.8rem;
+  display: flex;
+  justify-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 0.8rem;
+  color: var(--fg1);
 }
 
-.full-sidebar-menu > .content > div.current {
-  border-left: 0.2rem solid var(--main-alt);
+.full-sidebar-menu > .content > a:hover,
+.full-sidebar-menu > .content > .a:hover,
+.full-sidebar-menu > .content > button:hover,
+.full-sidebar-menu > .content > .button:hover,
+.full-sidebar-menu > .content > a:focus,
+.full-sidebar-menu > .content > .a:focus,
+.full-sidebar-menu > .content > button:focus,
+.full-sidebar-menu > .content > .button:focus {
+  color: var(--fg1);
+  background-color: var(--bg3);
 }
 
-.full-sidebar-menu > .content > div.current > button,
-.full-sidebar-menu > .content > div.current > .button,
-.full-sidebar-menu > .content > div.current > a,
-.full-sidebar-menu > .content > div.current > .a {
+.full-sidebar-menu > .content > a:focus-visible,
+.full-sidebar-menu > .content > .a:focus-visible,
+.full-sidebar-menu > .content > button:focus-visible,
+.full-sidebar-menu > .content > .button:focus-visible {
+  outline: 0.2rem solid var(--main);
+  outline-offset: 0px;
+  border: none;
+}
+
+.full-sidebar-menu > .content > a.current:hover,
+.full-sidebar-menu > .content > .a.current:hover,
+.full-sidebar-menu > .content > button.current:hover,
+.full-sidebar-menu > .content > .button.current:hover,
+.full-sidebar-menu > .content > a.current:focus,
+.full-sidebar-menu > .content > .a.current:focus,
+.full-sidebar-menu > .content > button.current:focus,
+.full-sidebar-menu > .content > .button.current:focus {
   color: var(--main-alt);
-}
-
-.full-sidebar-menu > .content > div > button,
-.full-sidebar-menu > .content > div > .button,
-.full-sidebar-menu > .content > div > a,
-.full-sidebar-menu > .content > div > .a {
-  margin: 0px;
-}
-
-.full-sidebar-menu > .content > div > button,
-.full-sidebar-menu > .content > div > .button {
-  justify-items: start;
-  justify-content: start;
+  background-color: var(--bg3);
 }
 
 .combo-select {
@@ -2106,6 +2133,13 @@ button.no-clickable-effect:focus, .button.no-clickable-effect:focus {
 .combo-select button:focus,
 .combo-select .button:hover,
 .combo-select .button:focus {
+  transform: none;
+}
+
+.full-sidebar-menu > button:hover,
+.full-sidebar-menu > .button:hover,
+.full-sidebar-menu > button:focus,
+.full-sidebar-menu > .button:focus {
   transform: none;
 }
 

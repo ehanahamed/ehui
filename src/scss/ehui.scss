@@ -54,6 +54,13 @@ button.no-clickable-effect:focus, .button.no-clickable-effect:focus {
   transform: none;
 }
 
+.full-sidebar-menu > button:hover,
+.full-sidebar-menu > .button:hover,
+.full-sidebar-menu > button:focus,
+.full-sidebar-menu > .button:focus {
+  transform: none;
+}
+
 @media (prefers-reduced-motion) {  
   .clickable-effect {
     transition-duration: 0s;
