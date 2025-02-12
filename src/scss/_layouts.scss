@@ -309,6 +309,11 @@ header > .menu {
   grid-area: menu;
   text-align: start;
   justify-self: start;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-items: flex-start;
+  justify-content: flex-start;
 }
 
 header > .options {
@@ -318,8 +323,8 @@ header > .options {
   padding: 1rem;
 }
 
-.nav > div {
-  height: 100%;
+.nav > div,
+.nav-menu > div {
   display: flex;
   align-items: center;
 }
@@ -365,6 +370,7 @@ header > *,
 .caption > *,
 .caption > div > *,
 .nav > div,
+.nav-menu > div,
 .logotype > * {
   margin-top: 0px;
 }
