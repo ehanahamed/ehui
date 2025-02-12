@@ -192,23 +192,137 @@ header.sticky,
   margin-bottom: 0px;
 }
 
-header > .nav {
+header > .nav,
+.nav-menu {
   display: flex;
   gap: 1rem;
-  align-items: center;
+  flex-wrap: nowrap;
+  align-items: stretch;
   margin: 0px 1rem;
 }
 
-.nav > div {
+.nav > div,
+.nav-menu > div {
   border-bottom: 0.2rem solid var(--bg1);
 }
 
-.nav > div.current {
+.nav > div.current,
+.nav-menu > div.current {
   border-bottom: 0.2rem solid var(--main-alt);
 }
 
-.nav > div.current > a {
+.nav > div.current > a,
+.nav-menu > div.current > a {
   color: var(--main-alt);
+}
+
+.nav-menu-toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-menu {
+    display: none;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    gap: 0.4rem;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    margin: 0px;
+    padding: 4rem;
+    background-color: var(--bg1);
+    z-index: 20;
+    height: 100%;
+    width: 100%;
+    border: none;
+  }
+
+  .nav-menu-toggle {
+    position: static;
+    display: inline-block;
+  }
+
+  .nav-menu-toggle:checked {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 21;
+  }
+
+  .nav-menu-toggle:checked + .nav-menu {
+    display: flex;
+  }
+
+  .nav-menu > div {
+    padding: 0px;
+    margin: 0px;
+  }
+  .nav-menu > div.current {
+    border: none;
+  }
+
+  .nav-menu > div.current > a,
+  .nav-menu > div.current > .a,
+  .nav-menu > div.current > button,
+  .nav-menu > div.current > .button {
+    color: var(--main);
+    background-color: var(--bg3);
+    border: none;
+  }
+
+  .nav-menu > div > a,
+  .nav-menu > div > .a,
+  .nav-menu > div > button,
+  .nav-menu > div > .button {
+    margin: 0px;
+    padding-left: 0.8rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-right: 0.8rem;
+    display: flex;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 0.8rem;
+    color: var(--fg1);
+  }
+
+  .nav-menu > div > a:hover,
+  .nav-menu > div > .a:hover,
+  .nav-menu > div > button:hover,
+  .nav-menu > div > .button:hover,
+  .nav-menu > div > a:focus,
+  .nav-menu > div > .a:focus,
+  .nav-menu > div > button:focus,
+  .nav-menu > div > .button:focus {
+    color: var(--fg1);
+    background-color: var(--bg3);
+  }
+
+  .nav-menu > div > a:focus-visible,
+  .nav-menu > div > .a:focus-visible,
+  .nav-menu > div > button:focus-visible,
+  .nav-menu > div > .button:focus-visible {
+    outline: 0.2rem solid var(--main);
+    outline-offset: 0px;
+    border: none;
+  }
+
+  .nav-menu > div.current > a:hover,
+  .nav-menu > div.current > .a:hover,
+  .nav-menu > div.current > button:hover,
+  .nav-menu > div.current > .button:hover,
+  .nav-menu > div.current > a:focus,
+  .nav-menu > div.current > .a:focus,
+  .nav-menu > div.current > button:focus,
+  .nav-menu > div.current > .button:focus {
+    color: var(--main-alt);
+    background-color: var(--bg3);
+  }
 }
 
 footer,
@@ -796,92 +910,6 @@ button.faint:focus,
   background-color: var(--bg3);
   border: none;
   color: var(--main-alt);
-}
-
-.full-sidebar-menu > .content {
-  display: none;
-  
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  gap: 0.4rem;
-  flex-direction: column;
-  align-items: stretch;
-  align-content: stretch;
-  justify-items: flex-start;
-  justify-items: flex-start;
-  margin: 0px;
-  padding-left: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-right: 1rem;
-  background-color: var(--bg1);
-  z-index: 20;
-  height: 100%;
-  min-width: 10rem;
-  border-right: 0.2rem solid var(--bg4);
-}
-
-.full-sidebar-menu:focus-within > .content {
-  display: flex;
-}
-
-.full-sidebar-menu > .content > a.current,
-.full-sidebar-menu > .content > .a.current,
-.full-sidebar-menu > .content > button.current,
-.full-sidebar-menu > .content > .button.current {
-  color: var(--main);
-  background-color: var(--bg3);
-  border: none;
-}
-
-.full-sidebar-menu > .content > a,
-.full-sidebar-menu > .content > .a,
-.full-sidebar-menu > .content > button,
-.full-sidebar-menu > .content > .button {
-  margin: 0px;
-  padding-left: 0.8rem;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
-  padding-right: 0.8rem;
-  display: flex;
-  justify-items: flex-start;
-  justify-content: flex-start;
-  border-radius: 0.8rem;
-  color: var(--fg1);
-}
-
-.full-sidebar-menu > .content > a:hover,
-.full-sidebar-menu > .content > .a:hover,
-.full-sidebar-menu > .content > button:hover,
-.full-sidebar-menu > .content > .button:hover,
-.full-sidebar-menu > .content > a:focus,
-.full-sidebar-menu > .content > .a:focus,
-.full-sidebar-menu > .content > button:focus,
-.full-sidebar-menu > .content > .button:focus {
-  color: var(--fg1);
-  background-color: var(--bg3);
-}
-
-.full-sidebar-menu > .content > a:focus-visible,
-.full-sidebar-menu > .content > .a:focus-visible,
-.full-sidebar-menu > .content > button:focus-visible,
-.full-sidebar-menu > .content > .button:focus-visible {
-  outline: 0.2rem solid var(--main);
-  outline-offset: 0px;
-  border: none;
-}
-
-.full-sidebar-menu > .content > a.current:hover,
-.full-sidebar-menu > .content > .a.current:hover,
-.full-sidebar-menu > .content > button.current:hover,
-.full-sidebar-menu > .content > .button.current:hover,
-.full-sidebar-menu > .content > a.current:focus,
-.full-sidebar-menu > .content > .a.current:focus,
-.full-sidebar-menu > .content > button.current:focus,
-.full-sidebar-menu > .content > .button.current:focus {
-  color: var(--main-alt);
-  background-color: var(--bg3);
 }
 
 .combo-select {
