@@ -839,6 +839,10 @@ textarea:focus {
   border-radius: 0.8rem;
 }
 
+.dropdown.left .content {
+  right: 0px;
+}
+
 .dropdown:focus-within .content {
   display: flex;
 }
