@@ -226,7 +226,7 @@ header > .nav,
   .nav-menu {
     display: none;
 
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     gap: 0.4rem;
@@ -257,7 +257,7 @@ header > .nav,
 
   .nav-menu-toggle:checked ~ .nav-menu-close {
     display: inline-block;
-    position: absolute;
+    position: fixed;
     top: 1rem;
     right: 1rem;
     margin: 0px;
@@ -271,11 +271,10 @@ header > .nav,
     display: flex;
   }
 
-  .nav-menu > div {
+  .nav-menu > div,
+  .nav-menu > div.current {
     padding: 0px;
     margin: 0px;
-  }
-  .nav-menu > div.current {
     border: none;
   }
 
