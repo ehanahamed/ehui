@@ -305,6 +305,12 @@ header.with-search.with-status {
   grid-template-areas: "menu search status";
 }
 
+@media only screen and (max-width: 800px) {
+  header.with-search.with-status {
+    grid-template-columns: auto 1fr auto;
+  }
+}
+
 header > .menu {
   grid-area: menu;
   text-align: start;
