@@ -418,7 +418,7 @@ button,
   padding: 0.6rem 1rem;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: normal;
   line-height: 1.4;
   transition-duration: 0.4s;
 }
@@ -1029,7 +1029,7 @@ details {
 }
 
 summary {
-  font-weight: 600;
+  font-weight: normal;
   padding: 0px;
   border: none;
   margin: 0px;
