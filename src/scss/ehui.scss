@@ -32,18 +32,20 @@ $font-weight-link: normal !default;
 );
 
 .clickable-effect {
-  transition-duration: 0.4s;
+  transition: transform 0.4s ease-out;
 }
 
-button:hover, .button:hover,
-button:focus, .button:focus,
+.button:hover,
+.button:focus,
 .clickable-effect:hover,
 .clickable-effect:focus {
   transform: scale(1.1);
 }
 
-button.no-clickable-effect:hover, .button.no-clickable-effect:hover,
-button.no-clickable-effect:focus, .button.no-clickable-effect:focus {
+.button.no-clickable-effect:hover,
+.button.no-clickable-effect:focus,
+.no-clickable-effect .button:hover,
+.no-clickable-effect .button:focus {
   transform: none;
 }
 
@@ -62,12 +64,8 @@ button.no-clickable-effect:focus, .button.no-clickable-effect:focus {
 }
 
 @media (prefers-reduced-motion) {  
-  .clickable-effect {
-    transition-duration: 0s;
-  }
-
-  button:hover, .button:hover,
-  button:focus, .button:focus,
+  .button:hover,
+  .button:focus,
   .clickable-effect:hover,
   .clickable-effect:focus {
     transform: none;

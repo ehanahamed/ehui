@@ -351,13 +351,6 @@ header.with-search.with-status > .status {
   align-items: center;
 }
 
-/*
-
-* + *        for default,
-* + element  for reversing margin-top: 0px;
-
-*/
-* + *,
 * + p,
 * + h1,
 * + h2,
@@ -378,6 +371,22 @@ header > *,
 .nav > div,
 .nav-menu > div,
 .logotype > * {
+  margin-top: 0px;
+}
+
+.apply-margin-top * + * {
+  margin-top: 1rem;
+}
+
+.apply-direct-margin-top > * + * {
+  margin-top: 1rem;
+}
+
+.no-apply-margin-top * + * {
+  margin-top: 0px;
+}
+
+.no-apply-direct-margin-top > * + * {
   margin-top: 0px;
 }
 
