@@ -2164,10 +2164,14 @@ button.faint.yay:focus,
     transition-duration: 0s;
   }
 }
+button,
+.button,
 .clickable-effect {
   transition: transform 0.2s ease-out;
 }
 
+button:hover,
+button:focus,
 .button:hover,
 .button:focus,
 .clickable-effect:hover,
@@ -2175,6 +2179,8 @@ button.faint.yay:focus,
   transform: scale(1.1);
 }
 
+button.no-clickable-effect:hover,
+button.no-clickable-effect:focus,
 .button.no-clickable-effect:hover,
 .button.no-clickable-effect:focus,
 .no-clickable-effect .button:hover,
@@ -2197,6 +2203,8 @@ button.faint.yay:focus,
 }
 
 @media (prefers-reduced-motion) {
+  button:hover,
+  button:focus,
   .button:hover,
   .button:focus,
   .clickable-effect:hover,

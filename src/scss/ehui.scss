@@ -31,10 +31,14 @@ $font-weight-link: normal !default;
   $border-radius: $border-radius
 );
 
+button,
+.button,
 .clickable-effect {
   transition: transform 0.2s ease-out;
 }
 
+button:hover,
+button:focus,
 .button:hover,
 .button:focus,
 .clickable-effect:hover,
@@ -42,6 +46,8 @@ $font-weight-link: normal !default;
   transform: scale(1.1);
 }
 
+button.no-clickable-effect:hover,
+button.no-clickable-effect:focus,
 .button.no-clickable-effect:hover,
 .button.no-clickable-effect:focus,
 .no-clickable-effect .button:hover,
@@ -64,6 +70,8 @@ $font-weight-link: normal !default;
 }
 
 @media (prefers-reduced-motion) {  
+  button:hover,
+  button:focus,
   .button:hover,
   .button:focus,
   .clickable-effect:hover,
