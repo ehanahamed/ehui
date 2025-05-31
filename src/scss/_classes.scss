@@ -49,7 +49,7 @@ u.bg1,
 mark.bg1,
 .mark.bg1,
 code.bg1 {
-  color: var(--bg1);
+  color: var(--bg-1);
 }
 
 span.fg2,
@@ -61,7 +61,7 @@ u.fg2,
 mark.fg2,
 .mark.fg2,
 code.fg2 {
-  color: var(--fg2);
+  color: var(--fg-2);
 }
 
 span.fg1,
@@ -73,7 +73,7 @@ u.fg1,
 mark.fg1,
 .mark.fg1,
 code.fg1 {
-  color: var(--fg1);
+  color: var(--fg-1);
 }
 
 span.fg0,
@@ -85,7 +85,7 @@ u.fg0,
 mark.fg0,
 .mark.fg0,
 code.fg0 {
-  color: var(--fg0);
+  color: var(--fg-0);
 }
 
 span.main,
@@ -124,27 +124,27 @@ mark.markYay,
 
 mark.markBg4,
 .mark.markBg4 {
-  background-color: var(--bg4);
+  background-color: var(--border);
 }
 
 mark.markBg2,
 .mark.markBg2 {
-  background-color: var(--bg2);
+  background-color: var(--bg-2);
 }
 
 mark.markFg2,
 .mark.markFg2 {
-  background-color: var(--fg2);
+  background-color: var(--fg-2);
 }
 
 mark.markFg1,
 .mark.markFg1 {
-  background-color: var(--fg1);
+  background-color: var(--fg-1);
 }
 
 mark.markFg0,
 .mark.markFg0 {
-  background-color: var(--fg0);
+  background-color: var(--fg-0);
 }
 
 mark.markMain,
@@ -174,7 +174,7 @@ pre,
   padding: 0.8rem;
   border: none;
   border-radius: $border-radius;
-  background: var(--bg2);
+  background: var(--bg-2);
 }
 
 pre > code,
@@ -206,26 +206,26 @@ button.extra,
 button.alt.ohno,
 .button.alt.ohno {
   color: var(--ohno);
-  background: var(--bg2);
+  background: var(--bg-2);
 }
 
 button.alt.yay,
 .button.alt.yay {
   color: var(--yay);
-  background: var(--bg2);
+  background: var(--bg-2);
 }
 
 button.alt.extra,
 .button.alt.extra {
   color: var(--extra);
-  background: var(--bg2);
+  background: var(--bg-2);
 }
 
 button.alt:hover.ohno,
 button.alt:focus.ohno,
 .button.alt:hover.ohno,
 .button.alt:focus.ohno {
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   color: var(--ohno-alt);
 }
 
@@ -233,7 +233,7 @@ button.alt:hover.yay,
 button.alt:focus.yay,
 .button.alt:hover.yay,
 .button.alt:focus.yay {
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   color: var(--yay-alt);
 }
 
@@ -241,7 +241,7 @@ button.alt:hover.extra,
 button.alt:focus.extra,
 .button.alt:hover.extra,
 .button.alt:focus.extra {
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   color: var(--extra-alt);
 }
 
@@ -250,7 +250,7 @@ button:focus.ohno,
 .button:hover.ohno,
 .button:focus.ohno {
   background-color: var(--ohno-alt);
-  color: var(--bg1);
+  color: var(--bg-1);
 }
 
 button:hover.yay,
@@ -258,7 +258,7 @@ button:focus.yay,
 .button:hover.yay,
 .button:focus.yay {
   background-color: var(--yay-alt);
-  color: var(--bg1);
+  color: var(--bg-1);
 }
 
 button:hover.extra,
@@ -287,16 +287,16 @@ button:focus-visible.extra,
 button.button-box.ohno,
 .button.button-box.ohno {
   color: var(--ohno);
-  background: var(--bg2);
-  border: 0.2rem solid var(--bg2);
+  background: var(--bg-2);
+  border: 0.2rem solid var(--bg-2);
   border-radius: $border-radius;
 }
 
 button.button-box.yay,
 .button.button-box.yay {
   color: var(--yay);
-  background: var(--bg2);
-  border: 0.2rem solid var(--bg2);
+  background: var(--bg-2);
+  border: 0.2rem solid var(--bg-2);
   border-radius: $border-radius;
 }
 
@@ -305,8 +305,8 @@ button.button-box:focus.ohno,
 .button.button-box:hover.ohno,
 .button.button-box:focus.ohno {
   color: var(--ohno-alt);
-  background: var(--bg3);
-  border-color: var(--bg3);
+  background: var(--bg-3);
+  border-color: var(--bg-3);
 }
 
 button.button-box:hover.yay,
@@ -314,8 +314,8 @@ button.button-box:focus.yay,
 .button.button-box:hover.yay,
 .button.button-box:focus.yay {
   color: var(--yay-alt);
-  background: var(--bg3);
-  border-color: var(--bg3);
+  background: var(--bg-3);
+  border-color: var(--bg-3);
 }
 
 button.button-box.selected.ohno,
@@ -335,7 +335,7 @@ button.button-box.selected:focus.ohno,
 .button.button-box.selected:hover.ohno,
 .button.button-box.selected:focus.ohno {
   color: var(--ohno-alt);
-  background: var(--bg3);
+  background: var(--bg-3);
   border-color: var(--ohno-alt);
 }
 
@@ -344,7 +344,7 @@ button.button-box.selected:focus.yay,
 .button.button-box.selected:hover.yay,
 .button.button-box.selected:focus.yay {
   color: var(--yay-alt);
-  background: var(--bg3);
+  background: var(--bg-3);
   border-color: var(--yay-alt);
 }
 
@@ -409,7 +409,7 @@ textarea.horizontal {
   align-items: center;
   justify-content: center;
   margin: 0px;
-  background: var(--bg1);
+  background: var(--bg-1);
 }
 
 .exitFullscreen {
@@ -514,35 +514,35 @@ button.large,
 }
 
 .fill-fg2 {
-  fill: var(--fg2);
+  fill: var(--fg-2);
 }
 
 .fill-fg1 {
-  fill: var(--fg1);
+  fill: var(--fg-1);
 }
 
 .fill-fg0 {
-  fill: var(--fg0);
+  fill: var(--fg-0);
 }
 
 .fill-bg4 {
-  fill: var(--bg4);
+  fill: var(--border);
 }
 
 .fill-bg3 {
-  fill: var(--bg3);
+  fill: var(--bg-3);
 }
 
 .fill-bg2 {
-  fill: var(--bg2);
+  fill: var(--bg-2);
 }
 
 .fill-bg1 {
-  fill: var(--bg1);
+  fill: var(--bg-1);
 }
 
 .fill-bg0 {
-  fill: var(--bg0);
+  fill: var(--bg-0);
 }
 
 .background-extra-bg {
@@ -550,26 +550,26 @@ button.large,
 }
 
 .background-bg2 {
-  background-color: var(--bg2);
+  background-color: var(--bg-2);
 }
 
 .background-bg1 {
-  background-color: var(--bg1);
+  background-color: var(--bg-1);
 }
 
 .background-bg0 {
-  background-color: var(--bg0);
+  background-color: var(--bg-0);
 }
 
 .dropdown .content button.ohno,
 .dropdown .content .button.ohno {
-  background-color: var(--bg2);
+  background-color: var(--bg-2);
   color: var(--ohno);
 }
 
 .dropdown .content button.yay,
 .dropdown .content .button.yay {
-  background-color: var(--bg2);
+  background-color: var(--bg-2);
   color: var(--yay);
 }
 
@@ -577,7 +577,7 @@ button.large,
 .dropdown .content .button.ohno:hover,
 .dropdown .content button.ohno:focus,
 .dropdown .content .button.ohno:focus {
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   color: var(--ohno-alt);
 }
 
@@ -585,7 +585,7 @@ button.large,
 .dropdown .content .button.yay:hover,
 .dropdown .content button.yay:focus,
 .dropdown .content .button.yay:focus {
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   color: var(--yay-alt);
 }
 
@@ -612,7 +612,7 @@ button.faint.ohno:hover,
 .button.faint.ohno:hover,
 button.faint.ohno:focus,
 .button.faint.ohno:focus {
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   border: none;
   color: var(--ohno-alt);
 }
@@ -640,7 +640,7 @@ button.faint.yay:hover,
 .button.faint.yay:hover,
 button.faint.yay:focus,
 .button.faint.yay:focus {
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   border: none;
   color: var(--yay-alt);
 }
@@ -692,7 +692,7 @@ button.faint.yay:focus,
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: var(--bg2);
+    background-color: var(--bg-2);
     border-radius: $border-radius;
     align-items: center;
     justify-content: center;
