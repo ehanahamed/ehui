@@ -414,6 +414,7 @@ a:focus-visible,
   transition-duration: 0.1s;
 }
 
+button,
 .button {
   display: inline-flex;
   appearance: none;
@@ -437,29 +438,36 @@ a:focus-visible,
   transition-duration: 0.4s;
 }
 
+button,
 .button,
 a,
 .a {
   -webkit-tap-highlight-color: transparent;
 }
 
+button.alt,
 .button.alt {
   background-color: var(--bg2);
   color: var(--main);
 }
 
+button:hover,
+button:focus,
 .button:hover,
 .button:focus {
   background-color: var(--main-alt);
   color: var(--bg1);
 }
 
+button.alt:hover,
+button.alt:focus,
 .button.alt:hover,
 .button.alt:focus {
   background-color: var(--bg3);
   color: var(--main-alt);
 }
 
+button:focus-visible,
 .button:focus-visible {
   outline: 0.2rem solid var(--main);
   outline-offset: 0.2rem;
@@ -992,6 +1000,7 @@ button.faint:focus,
   display: inline;
 }
 
+button.button-box,
 .button.button-box {
   display: inline-block;
   color: var(--fg1);
@@ -1000,6 +1009,8 @@ button.faint:focus,
   border-radius: $border-radius;
 }
 
+button.button-box:hover,
+button.button-box:focus,
 .button.button-box:hover,
 .button.button-box:focus {
   color: var(--main-alt);
@@ -1007,17 +1018,21 @@ button.faint:focus,
   border-color: var(--bg3);
 }
 
+button.button-box:focus-visible,
 .button.button-box:focus-visible {
   outline-offset: 0.4rem;
 }
 
+button.button-box.selected,
 .button.button-box.selected {
   color: var(--main);
   border-color: var(--main);
 }
 
 
+button.button-box.selected:hover,
 .button.button-box.selected:hover,
+button.button-box.selected:focus,
 .button.button-box.selected:focus {
   color: var(--main-alt);
   border-color: var(--main-alt);

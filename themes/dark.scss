@@ -3,24 +3,37 @@
 :root {
   color-scheme: dark;
   --ohno: #ff6666;
+  --ohno-on-bg: #ff6666;
   --ohno-alt: #ff9999;
+  --ohno-faint: #ff9999;
+  --on-ohno: #000000;
   --yay: #80FFBF;
+  --yay-on-bg: #80FFBF;
   --yay-alt: #B3FFD9;
+  --yay-faint: #B3FFD9;
+  --on-yay: #B3FFD9;
   --main: #A280FF;
+  --main-on-bg: ;
   --main-alt: #C7B3FF;
+  --main-faint: #2C2C3A;
+  --on-main: #21212C;
   --extra: #80FFBF;
+  --extra-on-bg: #80FFBF;
   --extra-alt: #B3FFD9;
+  --extra-faint: #1C1C26;
+  --on-extra: #1C1C26;
   --extra-bg: #1C1C26;
-  --fg2: #c3cce9;
-  --fg1: #c3cce9;
-  --fg0: #9399b2;
-  --bg4: #303040;
-  --bg3: #2C2C3A;
-  --bg2: #252531;
-  --bg1: #21212C;
-  --bg0: #1C1C26;
-  --select: #c3cce9;
+  --fg-2: #c3cce9;
+  --fg-1: #c3cce9;
+  --fg-0: #9399b2;
+  --border: #303040;
+  --bg-3-alt: #2C2C3A;
+  --bg-3: #2C2C3A;
+  --bg-2: #252531;
+  --bg-1: #202225;
+  --bg-0: #1C1C26;
+  --on-select-bg: #c3cce9;
   --select-bg: #43396A;
 }
 
-@include theme-svgs.waves(#1C1C26 /* bg0 */, #1C1C26 /* extra-bg */);
+@include theme-svgs.waves(#1C1C26 /* bg-0 */, #1C1C26 /* extra-bg */);

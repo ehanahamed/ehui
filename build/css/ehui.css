@@ -27,7 +27,7 @@ body {
 
 ::selection {
   background-color: var(--select-bg);
-  color: var(--select);
+  color: var(--on-select-bg);
 }
 
 h1,
@@ -149,7 +149,7 @@ code,
 }
 
 .hero {
-  border-bottom: 0.2rem solid var(--bg4);
+  border-bottom: 0.2rem solid var(--border);
   text-align: center;
   padding: 1rem;
   padding-bottom: 4rem;
@@ -167,7 +167,7 @@ header,
   /* TEMP*/
   height: 4rem;
   background-color: var(--bg1);
-  border-bottom: 0.2rem solid var(--bg4);
+  border-bottom: 0.2rem solid var(--border);
   padding: 0px;
   margin-top: 0px;
   margin-left: 0px;
@@ -271,7 +271,7 @@ header > .nav,
   .nav-menu > div.current > button,
   .nav-menu > div.current > .button {
     color: var(--main);
-    background-color: var(--bg3);
+    background-color: var(--main-faint);
     border: none;
   }
   .nav-menu > div > a,
@@ -298,7 +298,7 @@ header > .nav,
   .nav-menu > div > button:focus,
   .nav-menu > div > .button:focus {
     color: var(--fg1);
-    background-color: var(--bg3);
+    background-color: var(--main-faint);
   }
   .nav-menu > div > a:focus-visible,
   .nav-menu > div > .a:focus-visible,
@@ -317,12 +317,12 @@ header > .nav,
   .nav-menu > div.current > button:focus,
   .nav-menu > div.current > .button:focus {
     color: var(--main-alt);
-    background-color: var(--bg3);
+    background-color: var(--main-faint);
   }
 }
 footer,
 .footer {
-  border-top: 0.2rem solid var(--bg4);
+  border-top: 0.2rem solid var(--border);
   text-align: center;
   padding: 1rem;
   padding-top: 4rem;
@@ -333,7 +333,7 @@ table {
   border-collapse: separate;
   border-spacing: 0px;
   border-radius: 0.8rem;
-  border: 0.2rem solid var(--bg4);
+  border: 0.2rem solid var(--border);
 }
 
 td {
@@ -358,7 +358,7 @@ table.outer tfoot {
 
 table.inner th:not(:last-child),
 table.inner td:not(:last-child) {
-  border-right: 0.2rem solid var(--bg4);
+  border-right: 0.2rem solid var(--border);
 }
 
 table.inner > thead > tr > th,
@@ -369,7 +369,7 @@ table.inner > tr:not(:last-child) > td,
 table.inner > tr:not(:last-child) > th,
 table.inner > thead:not(:last-child),
 table.inner > tbody:not(:last-child) {
-  border-bottom: 0.2rem solid var(--bg4);
+  border-bottom: 0.2rem solid var(--border);
 }
 
 a,
@@ -398,7 +398,9 @@ a:focus-visible,
   transition-duration: 0.1s;
 }
 
-.button {
+.button,
+.button-box,
+.combo-select button {
   display: inline-flex;
   appearance: none;
   align-items: center;
@@ -410,7 +412,7 @@ a:focus-visible,
   cursor: pointer;
   text-decoration: none;
   background-color: var(--main);
-  color: var(--bg1);
+  color: var(--on-main);
   border: none;
   border-radius: 1.6rem;
   padding: 0.6rem 1rem;
@@ -423,28 +425,36 @@ a:focus-visible,
 
 .button,
 a,
-.a {
+.a,
+.button-box,
+.combo-select button {
   -webkit-tap-highlight-color: transparent;
 }
 
 .button.alt {
-  background-color: var(--bg2);
-  color: var(--main);
+  background-color: var(--bg-3);
+  color: var(--main-on-bg);
 }
 
 .button:hover,
-.button:focus {
+.button:focus,
+.button-box:hover,
+.button-box:focus,
+.combo-select button:hover,
+.combo-select button:focus {
   background-color: var(--main-alt);
-  color: var(--bg1);
+  color: var(--on-main);
 }
 
 .button.alt:hover,
 .button.alt:focus {
-  background-color: var(--bg3);
+  background-color: var(--bg-3-alt);
   color: var(--main-alt);
 }
 
-.button:focus-visible {
+.button:focus-visible,
+.button-box:focus-visible,
+.combo-select button:focus-visible {
   outline: 0.2rem solid var(--main);
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
@@ -471,7 +481,7 @@ textarea {
   font-family: Inter, Arial, Helvetica, sans-serif;
   background-color: var(--bg1);
   color: var(--fg1);
-  border: 0.2rem solid var(--bg4);
+  border: 0.2rem solid var(--border);
   border-radius: 0.8rem;
   outline: none;
   padding: 0.4rem 0.8rem;
@@ -483,7 +493,7 @@ textarea {
 input[type=text]:hover,
 input[type=password]:hover,
 textarea:hover {
-  border-color: var(--bg4);
+  border-color: var(--border);
   background-color: var(--bg2);
 }
 
@@ -560,7 +570,7 @@ textarea:focus {
   margin-top: 0.4rem;
   padding: 0.4rem;
   background: var(--bg2);
-  border: 0.2rem solid var(--bg4);
+  border: 0.2rem solid var(--border);
   border-radius: 0.8rem;
 }
 
@@ -658,7 +668,7 @@ textarea:focus {
 }
 
 .radio input[type=radio]:disabled + span::before {
-  border-color: var(--bg4);
+  border-color: var(--border);
 }
 
 .radio input[type=radio]:disabled:checked + span::before {
@@ -763,7 +773,7 @@ textarea:focus {
 .separator::after {
   content: "";
   display: block;
-  background: var(--bg4);
+  background: var(--border);
   width: 100%;
   height: 0.2rem;
   margin: 0px 1rem;
@@ -799,7 +809,7 @@ textarea:focus {
   width: auto;
   max-width: 90vw;
   background-color: var(--bg1);
-  border: 0.2rem solid var(--bg4);
+  border: 0.2rem solid var(--border);
   border-radius: 0.8rem;
   padding: 1rem;
 }
@@ -838,7 +848,7 @@ textarea:focus {
   margin-top: 0.4rem;
   padding: 0.4rem;
   background: var(--bg2);
-  border: 0.2rem solid var(--bg4);
+  border: 0.2rem solid var(--border);
   border-radius: 0.8rem;
 }
 
@@ -977,7 +987,8 @@ button.faint:focus,
   display: inline;
 }
 
-.button.button-box {
+.button.button-box,
+button.button-box {
   display: inline-block;
   color: var(--fg1);
   background: var(--bg2);
@@ -986,29 +997,35 @@ button.faint:focus,
 }
 
 .button.button-box:hover,
-.button.button-box:focus {
+.button.button-box:focus,
+button.button-box:hover,
+button.button-box:focus {
   color: var(--main-alt);
   background: var(--bg3);
   border-color: var(--bg3);
 }
 
-.button.button-box:focus-visible {
+.button.button-box:focus-visible,
+button.button-box:focus-visible {
   outline-offset: 0.4rem;
 }
 
-.button.button-box.selected {
+.button.button-box.selected,
+button.button-box.selected {
   color: var(--main);
   border-color: var(--main);
 }
 
 .button.button-box.selected:hover,
-.button.button-box.selected:focus {
+.button.button-box.selected:focus,
+button.button-box.selected:hover,
+button.button-box.selected:focus {
   color: var(--main-alt);
   border-color: var(--main-alt);
 }
 
 details {
-  border: 0.2rem solid var(--bg4);
+  border: 0.2rem solid var(--border);
   border-radius: 0.8rem;
   padding: 1rem;
 }
@@ -1022,7 +1039,7 @@ summary {
 
 details[open] summary {
   padding-bottom: 1rem;
-  border-bottom: 0.2rem solid var(--bg4);
+  border-bottom: 0.2rem solid var(--border);
   margin-bottom: 1rem;
 }
 

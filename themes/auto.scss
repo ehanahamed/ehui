@@ -3,23 +3,35 @@
 :root {
   color-scheme: light;
   --ohno: #f03e3e;
+  --ohno-on-bg: #f03e3e;
   --ohno-alt: #c92a2a;
+  --ohno-faint: #c92a2a;
+  --on-ohno: #c92a2a;
   --yay: #0fb180;
+  --yay-on-bg: #0fb180;
   --yay-alt: #087f5b;
+  --yay-faint: #087f5b;
+  --on-yay: #087f5b;
   --main: #4E4EEF;
+  --main-on-bg: #4E4EEF;
   --main-alt: #3C3CC3;
+  --main-faint: #3C3CC3;
+  --on-main: #3C3CC3;
   --extra: #0fb180;
+  --extra-on-bg: #0fb180;
   --extra-alt: #087f5b;
+  --extra-faint: #087f5b;
+  --on-extra: #087f5b;
   --extra-bg: #f8f8f8;
   --fg2: #242528;
   --fg1: #242528;
   --fg0: #747474;
-  --bg4: #f0f0f0;
+  --border: #f0f0f0;
   --bg3: #f2f2f2;
   --bg2: #f8f8f8;
   --bg1: #fefefe;
   --bg0: #f8f8f8;
-  --select: #242528;
+  --on-select-bg: #242528;
   --select-bg: #DBDBFF;
 }
 
