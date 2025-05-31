@@ -16,8 +16,8 @@ html {
 }
 body {
   height: auto;
-  background-color: var(--bg1);
-  color: var(--fg1);
+  background-color: var(--bg-1);
+  color: var(--fg-1);
   font-size: 1rem;
   line-height: 1.4;
   font-family: Inter, Arial, Helvetica, sans-serif;
@@ -27,7 +27,7 @@ body {
 
 ::selection {
   background-color: var(--select-bg);
-  color: var(--on-select-bg);
+  color: var(--select);
 }
 
 h1,
@@ -117,8 +117,8 @@ s,
 
 mark,
 .mark {
-  background-color: var(--fg1);
-  color: var(--bg1);
+  background-color: var(--fg-1);
+  color: var(--bg-1);
   border-radius: 0.4rem;
   padding: 0.2rem 0.4rem;
   font-size: 1rem;
@@ -128,7 +128,7 @@ mark,
 code,
 .code {
   font-family: monospace;
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   border-radius: 0.4rem;
   padding: 0.2rem 0.4rem;
   font-size: 1rem;
@@ -136,16 +136,16 @@ code,
 }
 
 .box {
-  background-color: var(--bg2);
-  color: var(--fg1);
-  border: 0.2rem solid var(--bg2);
+  background-color: var(--bg-2);
+  color: var(--fg-1);
+  border: 0.2rem solid var(--bg-2);
   border-radius: 0.8rem;
   padding: 1rem;
 }
 
 .extra .box {
-  background-color: var(--bg1);
-  border-color: var(--bg1);
+  background-color: var(--bg-1);
+  border-color: var(--bg-1);
 }
 
 .hero {
@@ -166,7 +166,7 @@ header,
   position: static;
   /* TEMP*/
   height: 4rem;
-  background-color: var(--bg1);
+  background-color: var(--bg-1);
   border-bottom: 0.2rem solid var(--border);
   padding: 0px;
   margin-top: 0px;
@@ -197,7 +197,7 @@ header > .nav,
 
 .nav > div,
 .nav-menu > div {
-  border-bottom: 0.2rem solid var(--bg1);
+  border-bottom: 0.2rem solid var(--bg-1);
 }
 
 .nav > div.current,
@@ -230,7 +230,7 @@ header > .nav,
     justify-content: flex-start;
     margin: 0px;
     padding: 4rem;
-    background-color: var(--bg1);
+    background-color: var(--bg-1);
     z-index: 20;
     height: 100%;
     width: 100%;
@@ -271,7 +271,7 @@ header > .nav,
   .nav-menu > div.current > button,
   .nav-menu > div.current > .button {
     color: var(--main);
-    background-color: var(--main-faint);
+    background-color: var(--bg-3);
     border: none;
   }
   .nav-menu > div > a,
@@ -287,7 +287,7 @@ header > .nav,
     justify-items: flex-start;
     justify-content: flex-start;
     border-radius: 0.8rem;
-    color: var(--fg1);
+    color: var(--fg-1);
   }
   .nav-menu > div > a:hover,
   .nav-menu > div > .a:hover,
@@ -297,8 +297,8 @@ header > .nav,
   .nav-menu > div > .a:focus,
   .nav-menu > div > button:focus,
   .nav-menu > div > .button:focus {
-    color: var(--fg1);
-    background-color: var(--main-faint);
+    color: var(--fg-1);
+    background-color: var(--bg-3);
   }
   .nav-menu > div > a:focus-visible,
   .nav-menu > div > .a:focus-visible,
@@ -317,7 +317,7 @@ header > .nav,
   .nav-menu > div.current > button:focus,
   .nav-menu > div.current > .button:focus {
     color: var(--main-alt);
-    background-color: var(--main-faint);
+    background-color: var(--bg-3);
   }
 }
 footer,
@@ -398,9 +398,8 @@ a:focus-visible,
   transition-duration: 0.1s;
 }
 
-.button,
-.button-box,
-.combo-select button {
+button,
+.button {
   display: inline-flex;
   appearance: none;
   align-items: center;
@@ -412,7 +411,7 @@ a:focus-visible,
   cursor: pointer;
   text-decoration: none;
   background-color: var(--main);
-  color: var(--on-main);
+  color: var(--bg-1);
   border: none;
   border-radius: 1.6rem;
   padding: 0.6rem 1rem;
@@ -423,45 +422,44 @@ a:focus-visible,
   transition-duration: 0.4s;
 }
 
+button,
 .button,
 a,
-.a,
-.button-box,
-.combo-select button {
+.a {
   -webkit-tap-highlight-color: transparent;
 }
 
+button.alt,
 .button.alt {
-  background-color: var(--bg-3);
-  color: var(--main-on-bg);
+  background-color: var(--bg-2);
+  color: var(--main);
 }
 
+button:hover,
+button:focus,
 .button:hover,
-.button:focus,
-.button-box:hover,
-.button-box:focus,
-.combo-select button:hover,
-.combo-select button:focus {
+.button:focus {
   background-color: var(--main-alt);
-  color: var(--on-main);
+  color: var(--bg-1);
 }
 
+button.alt:hover,
+button.alt:focus,
 .button.alt:hover,
 .button.alt:focus {
-  background-color: var(--bg-3-alt);
+  background-color: var(--bg-3);
   color: var(--main-alt);
 }
 
-.button:focus-visible,
-.button-box:focus-visible,
-.combo-select button:focus-visible {
+button:focus-visible,
+.button:focus-visible {
   outline: 0.2rem solid var(--main);
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
 }
 
 ::placeholder {
-  color: var(--fg0);
+  color: var(--fg-0);
   font-size: 1rem;
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-weight: normal;
@@ -479,8 +477,8 @@ textarea {
   cursor: text;
   text-decoration: none;
   font-family: Inter, Arial, Helvetica, sans-serif;
-  background-color: var(--bg1);
-  color: var(--fg1);
+  background-color: var(--bg-1);
+  color: var(--fg-1);
   border: 0.2rem solid var(--border);
   border-radius: 0.8rem;
   outline: none;
@@ -494,14 +492,14 @@ input[type=text]:hover,
 input[type=password]:hover,
 textarea:hover {
   border-color: var(--border);
-  background-color: var(--bg2);
+  background-color: var(--bg-2);
 }
 
 input[type=text]:focus,
 input[type=password]:focus,
 textarea:focus {
   border-color: var(--main);
-  background-color: var(--bg1);
+  background-color: var(--bg-1);
 }
 
 .searchbar {
@@ -511,8 +509,8 @@ textarea:focus {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  background-color: var(--bg2);
-  border: 0.2rem solid var(--bg2);
+  background-color: var(--bg-2);
+  border: 0.2rem solid var(--bg-2);
   border-radius: 1.6rem;
   transition-duration: 0.4s;
 }
@@ -522,7 +520,7 @@ textarea:focus {
   margin-top: 0px;
   margin-bottom: 0px;
   margin-right: 0px;
-  color: var(--fg0);
+  color: var(--fg-0);
 }
 
 .searchbar > input[type=text],
@@ -542,12 +540,12 @@ textarea:focus {
 }
 
 .searchbar:hover {
-  background: var(--bg3);
-  border-color: var(--bg3);
+  background: var(--bg-3);
+  border-color: var(--bg-3);
 }
 
 .searchbar:focus-within {
-  background: var(--bg2);
+  background: var(--bg-2);
   border-color: var(--main);
 }
 
@@ -569,7 +567,7 @@ textarea:focus {
   gap: 0.2rem;
   margin-top: 0.4rem;
   padding: 0.4rem;
-  background: var(--bg2);
+  background: var(--bg-2);
   border: 0.2rem solid var(--border);
   border-radius: 0.8rem;
 }
@@ -600,21 +598,21 @@ textarea:focus {
   margin-top: 0px;
   padding: 0.2rem 0.6rem;
   border: none;
-  color: var(--fg1);
-  background-color: var(--bg2);
+  color: var(--fg-1);
+  background-color: var(--bg-2);
 }
 
 .searchbar-autocomplete > a:hover,
 .searchbar-autocomplete > .a:hover {
   color: var(--main-alt);
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
 }
 
 /* extra focus-visible to override link's other styles */
 .searchbar-autocomplete > a:focus-visible,
 .searchbar-autocomplete > .a:focus-visible {
   color: var(--main-alt);
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   border: none;
   outline: none;
 }
@@ -627,7 +625,7 @@ textarea:focus {
 
 .radio input[type=radio] + span {
   cursor: pointer;
-  color: var(--fg1);
+  color: var(--fg-1);
 }
 
 .radio input[type=radio] + span::before {
@@ -664,7 +662,7 @@ textarea:focus {
 
 .radio input[type=radio]:disabled + span {
   cursor: default;
-  color: var(--fg0);
+  color: var(--fg-0);
 }
 
 .radio input[type=radio]:disabled + span::before {
@@ -672,7 +670,7 @@ textarea:focus {
 }
 
 .radio input[type=radio]:disabled:checked + span::before {
-  background-color: var(--fg0);
+  background-color: var(--fg-0);
 }
 
 .card {
@@ -711,7 +709,7 @@ textarea:focus {
   width: 100%;
   height: 100%;
   padding: 1rem;
-  background-color: var(--bg2);
+  background-color: var(--bg-2);
   border-radius: 0.8rem;
   align-items: center;
   justify-content: center;
@@ -742,7 +740,7 @@ textarea:focus {
   height: 100%;
   margin-top: 0px;
   padding: 1rem;
-  background-color: var(--bg2);
+  background-color: var(--bg-2);
   border-radius: 0.8rem;
   align-items: center;
   justify-content: center;
@@ -766,7 +764,7 @@ textarea:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--fg0);
+  color: var(--fg-0);
 }
 
 .separator::before,
@@ -799,7 +797,7 @@ textarea:focus {
   left: 0px;
   width: 100vw;
   height: 100vh;
-  background-color: var(--bg0);
+  background-color: var(--bg-0);
   opacity: 0.6;
 }
 
@@ -808,7 +806,7 @@ textarea:focus {
   min-width: 40vw;
   width: auto;
   max-width: 90vw;
-  background-color: var(--bg1);
+  background-color: var(--bg-1);
   border: 0.2rem solid var(--border);
   border-radius: 0.8rem;
   padding: 1rem;
@@ -847,7 +845,7 @@ textarea:focus {
   gap: 0.4rem;
   margin-top: 0.4rem;
   padding: 0.4rem;
-  background: var(--bg2);
+  background: var(--bg-2);
   border: 0.2rem solid var(--border);
   border-radius: 0.8rem;
 }
@@ -866,8 +864,8 @@ textarea:focus {
   justify-content: start;
   margin-top: 0px;
   text-wrap: nowrap;
-  background-color: var(--bg2);
-  border-color: var(--bg2);
+  background-color: var(--bg-2);
+  border-color: var(--bg-2);
   color: var(--main);
 }
 
@@ -875,8 +873,8 @@ textarea:focus {
 .dropdown .content .button:hover,
 .dropdown .content button:focus,
 .dropdown .content .button:focus {
-  background-color: var(--bg3);
-  border-color: var(--bg3);
+  background-color: var(--bg-3);
+  border-color: var(--bg-3);
   color: var(--main-alt);
 }
 
@@ -888,7 +886,7 @@ button.faint,
 .button.faint {
   background-color: transparent;
   border: none;
-  color: var(--fg1);
+  color: var(--fg-1);
 }
 
 button.icon-only-button,
@@ -908,7 +906,7 @@ button.faint:hover,
 .button.faint:hover,
 button.faint:focus,
 .button.faint:focus {
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   border: none;
   color: var(--main-alt);
 }
@@ -948,25 +946,25 @@ button.faint:focus,
 
 .combo-select > button,
 .combo-select > .button {
-  background-color: var(--bg2);
+  background-color: var(--bg-2);
   color: var(--main);
-  border-color: var(--bg2);
+  border-color: var(--bg-2);
 }
 
 .combo-select > button:hover,
 .combo-select > .button:hover,
 .combo-select > button:focus,
 .combo-select > .button:focus {
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   color: var(--main-alt);
-  border-color: var(--bg3);
+  border-color: var(--bg-3);
 }
 
 .combo-select > .selected,
 .combo-select > button.selected,
 .combo-select > .button.selected {
   background-color: var(--main);
-  color: var(--bg1);
+  color: var(--bg-1);
   border-color: var(--main);
 }
 
@@ -975,7 +973,7 @@ button.faint:focus,
 .combo-select > button.selected:focus,
 .combo-select > .button.selected:focus {
   background-color: var(--main-alt);
-  color: var(--bg1);
+  color: var(--bg-1);
   border-color: var(--main-alt);
 }
 
@@ -987,39 +985,39 @@ button.faint:focus,
   display: inline;
 }
 
-.button.button-box,
-button.button-box {
+button.button-box,
+.button.button-box {
   display: inline-block;
-  color: var(--fg1);
-  background: var(--bg2);
-  border: 0.2rem solid var(--bg2);
+  color: var(--fg-1);
+  background: var(--bg-2);
+  border: 0.2rem solid var(--bg-2);
   border-radius: 0.8rem;
 }
 
-.button.button-box:hover,
-.button.button-box:focus,
 button.button-box:hover,
-button.button-box:focus {
+button.button-box:focus,
+.button.button-box:hover,
+.button.button-box:focus {
   color: var(--main-alt);
-  background: var(--bg3);
-  border-color: var(--bg3);
+  background: var(--bg-3);
+  border-color: var(--bg-3);
 }
 
-.button.button-box:focus-visible,
-button.button-box:focus-visible {
+button.button-box:focus-visible,
+.button.button-box:focus-visible {
   outline-offset: 0.4rem;
 }
 
-.button.button-box.selected,
-button.button-box.selected {
+button.button-box.selected,
+.button.button-box.selected {
   color: var(--main);
   border-color: var(--main);
 }
 
-.button.button-box.selected:hover,
-.button.button-box.selected:focus,
 button.button-box.selected:hover,
-button.button-box.selected:focus {
+.button.button-box.selected:hover,
+button.button-box.selected:focus,
+.button.button-box.selected:focus {
   color: var(--main-alt);
   border-color: var(--main-alt);
 }
@@ -1178,7 +1176,7 @@ details[open] summary {
   grid-area: right;
   justify-self: left;
   padding-left: 2rem;
-  border-left: 0.2rem solid var(--bg4);
+  border-left: 0.2rem solid var(--border);
 }
 
 .grid.split.noBorder > .left,
@@ -1268,7 +1266,7 @@ make the list have only one column
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 4rem;
-  border-bottom: 0.2rem solid var(--bg4);
+  border-bottom: 0.2rem solid var(--border);
 }
 
 .grid.intro > .logotype {
@@ -1498,7 +1496,7 @@ u.bg1,
 mark.bg1,
 .mark.bg1,
 code.bg1 {
-  color: var(--bg1);
+  color: var(--bg-1);
 }
 
 span.fg2,
@@ -1510,7 +1508,7 @@ u.fg2,
 mark.fg2,
 .mark.fg2,
 code.fg2 {
-  color: var(--fg2);
+  color: var(--fg-2);
 }
 
 span.fg1,
@@ -1522,7 +1520,7 @@ u.fg1,
 mark.fg1,
 .mark.fg1,
 code.fg1 {
-  color: var(--fg1);
+  color: var(--fg-1);
 }
 
 span.fg0,
@@ -1534,7 +1532,7 @@ u.fg0,
 mark.fg0,
 .mark.fg0,
 code.fg0 {
-  color: var(--fg0);
+  color: var(--fg-0);
 }
 
 span.main,
@@ -1573,27 +1571,27 @@ mark.markYay,
 
 mark.markBg4,
 .mark.markBg4 {
-  background-color: var(--bg4);
+  background-color: var(--border);
 }
 
 mark.markBg2,
 .mark.markBg2 {
-  background-color: var(--bg2);
+  background-color: var(--bg-2);
 }
 
 mark.markFg2,
 .mark.markFg2 {
-  background-color: var(--fg2);
+  background-color: var(--fg-2);
 }
 
 mark.markFg1,
 .mark.markFg1 {
-  background-color: var(--fg1);
+  background-color: var(--fg-1);
 }
 
 mark.markFg0,
 .mark.markFg0 {
-  background-color: var(--fg0);
+  background-color: var(--fg-0);
 }
 
 mark.markMain,
@@ -1623,7 +1621,7 @@ pre,
   padding: 0.8rem;
   border: none;
   border-radius: 0.8rem;
-  background: var(--bg2);
+  background: var(--bg-2);
 }
 
 pre > code,
@@ -1655,26 +1653,26 @@ button.extra,
 button.alt.ohno,
 .button.alt.ohno {
   color: var(--ohno);
-  background: var(--bg2);
+  background: var(--bg-2);
 }
 
 button.alt.yay,
 .button.alt.yay {
   color: var(--yay);
-  background: var(--bg2);
+  background: var(--bg-2);
 }
 
 button.alt.extra,
 .button.alt.extra {
   color: var(--extra);
-  background: var(--bg2);
+  background: var(--bg-2);
 }
 
 button.alt:hover.ohno,
 button.alt:focus.ohno,
 .button.alt:hover.ohno,
 .button.alt:focus.ohno {
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   color: var(--ohno-alt);
 }
 
@@ -1682,7 +1680,7 @@ button.alt:hover.yay,
 button.alt:focus.yay,
 .button.alt:hover.yay,
 .button.alt:focus.yay {
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   color: var(--yay-alt);
 }
 
@@ -1690,7 +1688,7 @@ button.alt:hover.extra,
 button.alt:focus.extra,
 .button.alt:hover.extra,
 .button.alt:focus.extra {
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   color: var(--extra-alt);
 }
 
@@ -1699,7 +1697,7 @@ button:focus.ohno,
 .button:hover.ohno,
 .button:focus.ohno {
   background-color: var(--ohno-alt);
-  color: var(--bg1);
+  color: var(--bg-1);
 }
 
 button:hover.yay,
@@ -1707,7 +1705,7 @@ button:focus.yay,
 .button:hover.yay,
 .button:focus.yay {
   background-color: var(--yay-alt);
-  color: var(--bg1);
+  color: var(--bg-1);
 }
 
 button:hover.extra,
@@ -1736,16 +1734,16 @@ button:focus-visible.extra,
 button.button-box.ohno,
 .button.button-box.ohno {
   color: var(--ohno);
-  background: var(--bg2);
-  border: 0.2rem solid var(--bg2);
+  background: var(--bg-2);
+  border: 0.2rem solid var(--bg-2);
   border-radius: 0.8rem;
 }
 
 button.button-box.yay,
 .button.button-box.yay {
   color: var(--yay);
-  background: var(--bg2);
-  border: 0.2rem solid var(--bg2);
+  background: var(--bg-2);
+  border: 0.2rem solid var(--bg-2);
   border-radius: 0.8rem;
 }
 
@@ -1754,8 +1752,8 @@ button.button-box:focus.ohno,
 .button.button-box:hover.ohno,
 .button.button-box:focus.ohno {
   color: var(--ohno-alt);
-  background: var(--bg3);
-  border-color: var(--bg3);
+  background: var(--bg-3);
+  border-color: var(--bg-3);
 }
 
 button.button-box:hover.yay,
@@ -1763,8 +1761,8 @@ button.button-box:focus.yay,
 .button.button-box:hover.yay,
 .button.button-box:focus.yay {
   color: var(--yay-alt);
-  background: var(--bg3);
-  border-color: var(--bg3);
+  background: var(--bg-3);
+  border-color: var(--bg-3);
 }
 
 button.button-box.selected.ohno,
@@ -1784,7 +1782,7 @@ button.button-box.selected:focus.ohno,
 .button.button-box.selected:hover.ohno,
 .button.button-box.selected:focus.ohno {
   color: var(--ohno-alt);
-  background: var(--bg3);
+  background: var(--bg-3);
   border-color: var(--ohno-alt);
 }
 
@@ -1793,7 +1791,7 @@ button.button-box.selected:focus.yay,
 .button.button-box.selected:hover.yay,
 .button.button-box.selected:focus.yay {
   color: var(--yay-alt);
-  background: var(--bg3);
+  background: var(--bg-3);
   border-color: var(--yay-alt);
 }
 
@@ -1858,7 +1856,7 @@ textarea.horizontal {
   align-items: center;
   justify-content: center;
   margin: 0px;
-  background: var(--bg1);
+  background: var(--bg-1);
 }
 
 .exitFullscreen {
@@ -1963,35 +1961,35 @@ button.large,
 }
 
 .fill-fg2 {
-  fill: var(--fg2);
+  fill: var(--fg-2);
 }
 
 .fill-fg1 {
-  fill: var(--fg1);
+  fill: var(--fg-1);
 }
 
 .fill-fg0 {
-  fill: var(--fg0);
+  fill: var(--fg-0);
 }
 
 .fill-bg4 {
-  fill: var(--bg4);
+  fill: var(--border);
 }
 
 .fill-bg3 {
-  fill: var(--bg3);
+  fill: var(--bg-3);
 }
 
 .fill-bg2 {
-  fill: var(--bg2);
+  fill: var(--bg-2);
 }
 
 .fill-bg1 {
-  fill: var(--bg1);
+  fill: var(--bg-1);
 }
 
 .fill-bg0 {
-  fill: var(--bg0);
+  fill: var(--bg-0);
 }
 
 .background-extra-bg {
@@ -1999,26 +1997,26 @@ button.large,
 }
 
 .background-bg2 {
-  background-color: var(--bg2);
+  background-color: var(--bg-2);
 }
 
 .background-bg1 {
-  background-color: var(--bg1);
+  background-color: var(--bg-1);
 }
 
 .background-bg0 {
-  background-color: var(--bg0);
+  background-color: var(--bg-0);
 }
 
 .dropdown .content button.ohno,
 .dropdown .content .button.ohno {
-  background-color: var(--bg2);
+  background-color: var(--bg-2);
   color: var(--ohno);
 }
 
 .dropdown .content button.yay,
 .dropdown .content .button.yay {
-  background-color: var(--bg2);
+  background-color: var(--bg-2);
   color: var(--yay);
 }
 
@@ -2026,7 +2024,7 @@ button.large,
 .dropdown .content .button.ohno:hover,
 .dropdown .content button.ohno:focus,
 .dropdown .content .button.ohno:focus {
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   color: var(--ohno-alt);
 }
 
@@ -2034,7 +2032,7 @@ button.large,
 .dropdown .content .button.yay:hover,
 .dropdown .content button.yay:focus,
 .dropdown .content .button.yay:focus {
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   color: var(--yay-alt);
 }
 
@@ -2061,7 +2059,7 @@ button.faint.ohno:hover,
 .button.faint.ohno:hover,
 button.faint.ohno:focus,
 .button.faint.ohno:focus {
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   border: none;
   color: var(--ohno-alt);
 }
@@ -2089,7 +2087,7 @@ button.faint.yay:hover,
 .button.faint.yay:hover,
 button.faint.yay:focus,
 .button.faint.yay:focus {
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   border: none;
   color: var(--yay-alt);
 }
@@ -2136,7 +2134,7 @@ button.faint.yay:focus,
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: var(--bg2);
+    background-color: var(--bg-2);
     border-radius: 0.8rem;
     align-items: center;
     justify-content: center;
@@ -2167,7 +2165,7 @@ button.faint.yay:focus,
   }
 }
 .clickable-effect {
-  transition: transform 0.4s ease-out;
+  transition: transform 0.2s ease-out;
 }
 
 .button:hover,

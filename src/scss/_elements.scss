@@ -22,8 +22,8 @@ html {
 
 body {
   height: auto;
-  background-color: var(--bg1);
-  color: var(--fg1);
+  background-color: var(--bg-1);
+  color: var(--fg-1);
   font-size: 1rem;
   line-height: 1.4;
   font-family: $font-family;
@@ -122,8 +122,8 @@ s,
 
 mark,
 .mark {
-  background-color: var(--fg1);
-  color: var(--bg1);
+  background-color: var(--fg-1);
+  color: var(--bg-1);
   border-radius: $border-radius-text;
   padding: 0.2rem 0.4rem;
   font-size: 1rem;
@@ -133,7 +133,7 @@ mark,
 code,
 .code {
   font-family: monospace;
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   border-radius: $border-radius-text;
   padding: 0.2rem 0.4rem;
   font-size: 1rem;
@@ -141,20 +141,20 @@ code,
 }
 
 .box {
-  background-color: var(--bg2);
-  color: var(--fg1);
-  border: 0.2rem solid var(--bg2);
+  background-color: var(--bg-2);
+  color: var(--fg-1);
+  border: 0.2rem solid var(--bg-2);
   border-radius: $border-radius;
   padding: 1rem;
 }
 
 .extra .box {
-  background-color: var(--bg1);
-  border-color: var(--bg1);
+  background-color: var(--bg-1);
+  border-color: var(--bg-1);
 }
 
 .hero {
-  border-bottom: 0.2rem solid var(--bg4);
+  border-bottom: 0.2rem solid var(--border);
   text-align: center;
   padding: 1rem;
   padding-bottom: 4rem;
@@ -171,8 +171,8 @@ header,
   position: static;
   /* TEMP*/
   height: 4rem;
-  background-color: var(--bg1);
-  border-bottom: 0.2rem solid var(--bg4);
+  background-color: var(--bg-1);
+  border-bottom: 0.2rem solid var(--border);
   padding: 0px;
   margin-top: 0px;
   margin-left: 0px;
@@ -202,7 +202,7 @@ header > .nav,
 
 .nav > div,
 .nav-menu > div {
-  border-bottom: 0.2rem solid var(--bg1);
+  border-bottom: 0.2rem solid var(--bg-1);
 }
 
 .nav > div.current,
@@ -236,7 +236,7 @@ header > .nav,
     justify-content: flex-start;
     margin: 0px;
     padding: 4rem;
-    background-color: var(--bg1);
+    background-color: var(--bg-1);
     z-index: 20;
     height: 100%;
     width: 100%;
@@ -282,7 +282,7 @@ header > .nav,
   .nav-menu > div.current > button,
   .nav-menu > div.current > .button {
     color: var(--main);
-    background-color: var(--bg3);
+    background-color: var(--bg-3);
     border: none;
   }
 
@@ -299,7 +299,7 @@ header > .nav,
     justify-items: flex-start;
     justify-content: flex-start;
     border-radius: 0.8rem;
-    color: var(--fg1);
+    color: var(--fg-1);
   }
 
   .nav-menu > div > a:hover,
@@ -310,8 +310,8 @@ header > .nav,
   .nav-menu > div > .a:focus,
   .nav-menu > div > button:focus,
   .nav-menu > div > .button:focus {
-    color: var(--fg1);
-    background-color: var(--bg3);
+    color: var(--fg-1);
+    background-color: var(--bg-3);
   }
 
   .nav-menu > div > a:focus-visible,
@@ -332,13 +332,13 @@ header > .nav,
   .nav-menu > div.current > button:focus,
   .nav-menu > div.current > .button:focus {
     color: var(--main-alt);
-    background-color: var(--bg3);
+    background-color: var(--bg-3);
   }
 }
 
 footer,
 .footer {
-  border-top: 0.2rem solid var(--bg4);
+  border-top: 0.2rem solid var(--border);
   text-align: center;
   padding: 1rem;
   padding-top: 4rem;
@@ -349,7 +349,7 @@ table {
   border-collapse: separate;
   border-spacing: 0px;
   border-radius: $border-radius;
-  border: 0.2rem solid var(--bg4);
+  border: 0.2rem solid var(--border);
 }
 
 td {
@@ -374,7 +374,7 @@ table.outer tfoot {
 
 table.inner th:not(:last-child),
 table.inner td:not(:last-child) {
- border-right: 0.2rem solid var(--bg4);
+ border-right: 0.2rem solid var(--border);
 }
 
 table.inner > thead > tr > th,
@@ -385,7 +385,7 @@ table.inner > tr:not(:last-child) > td,
 table.inner > tr:not(:last-child) > th,
 table.inner > thead:not(:last-child),
 table.inner > tbody:not(:last-child) {
-  border-bottom: 0.2rem solid var(--bg4);
+  border-bottom: 0.2rem solid var(--border);
 }
 
 a,
@@ -427,7 +427,7 @@ button,
   cursor: pointer;
   text-decoration: none;
   background-color: var(--main);
-  color: var(--bg1);
+  color: var(--bg-1);
   border: none;
   border-radius: $border-radius-button;
   padding: 0.6rem 1rem;
@@ -447,7 +447,7 @@ a,
 
 button.alt,
 .button.alt {
-  background-color: var(--bg2);
+  background-color: var(--bg-2);
   color: var(--main);
 }
 
@@ -456,14 +456,14 @@ button:focus,
 .button:hover,
 .button:focus {
   background-color: var(--main-alt);
-  color: var(--bg1);
+  color: var(--bg-1);
 }
 
 button.alt:hover,
 button.alt:focus,
 .button.alt:hover,
 .button.alt:focus {
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   color: var(--main-alt);
 }
 
@@ -475,7 +475,7 @@ button:focus-visible,
 }
 
 ::placeholder {
-  color: var(--fg0);
+  color: var(--fg-0);
   font-size: 1rem;
   font-family: $font-family;
   font-weight: normal;
@@ -493,9 +493,9 @@ textarea {
   cursor: text;
   text-decoration: none;
   font-family: $font-family;
-  background-color: var(--bg1);
-  color: var(--fg1);
-  border: 0.2rem solid var(--bg4);
+  background-color: var(--bg-1);
+  color: var(--fg-1);
+  border: 0.2rem solid var(--border);
   border-radius: $border-radius-textbox;
   outline: none;
   padding: 0.4rem 0.8rem;
@@ -507,15 +507,15 @@ textarea {
 input[type="text"]:hover,
 input[type="password"]:hover,
 textarea:hover {
-  border-color: var(--bg4);
-  background-color: var(--bg2);
+  border-color: var(--border);
+  background-color: var(--bg-2);
 }
 
 input[type="text"]:focus,
 input[type="password"]:focus,
 textarea:focus {
   border-color: var(--main);
-  background-color: var(--bg1);
+  background-color: var(--bg-1);
 }
 
 .searchbar {
@@ -525,8 +525,8 @@ textarea:focus {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  background-color: var(--bg2);
-  border: 0.2rem solid var(--bg2);
+  background-color: var(--bg-2);
+  border: 0.2rem solid var(--bg-2);
   border-radius: $border-radius-textbox-searchbar;
   transition-duration: 0.4s;
 }
@@ -536,7 +536,7 @@ textarea:focus {
   margin-top: 0px;
   margin-bottom: 0px;
   margin-right: 0px;
-  color: var(--fg0);
+  color: var(--fg-0);
 }
 
 .searchbar > input[type="text"],
@@ -556,12 +556,12 @@ textarea:focus {
 }
 
 .searchbar:hover {
-  background: var(--bg3);
-  border-color: var(--bg3);
+  background: var(--bg-3);
+  border-color: var(--bg-3);
 }
 
 .searchbar:focus-within {
-  background: var(--bg2);
+  background: var(--bg-2);
   border-color: var(--main);
 }
 
@@ -583,8 +583,8 @@ textarea:focus {
   gap: 0.2rem;
   margin-top: 0.4rem;
   padding: 0.4rem;
-  background: var(--bg2);
-  border: 0.2rem solid var(--bg4);
+  background: var(--bg-2);
+  border: 0.2rem solid var(--border);
   border-radius: $border-radius;
 }
 
@@ -612,21 +612,21 @@ textarea:focus {
   margin-top: 0px;
   padding: 0.2rem 0.6rem;
   border: none;
-  color: var(--fg1);
-  background-color: var(--bg2);
+  color: var(--fg-1);
+  background-color: var(--bg-2);
 }
 
 .searchbar-autocomplete > a:hover,
 .searchbar-autocomplete > .a:hover {
   color: var(--main-alt);
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
 }
 
 /* extra focus-visible to override link's other styles */
 .searchbar-autocomplete > a:focus-visible,
 .searchbar-autocomplete > .a:focus-visible {
   color: var(--main-alt);
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   border: none;
   outline: none;
 }
@@ -639,7 +639,7 @@ textarea:focus {
 
 .radio input[type="radio"]+span {
   cursor: pointer;
-  color: var(--fg1);
+  color: var(--fg-1);
 }
 
 .radio input[type="radio"]+span::before {
@@ -676,15 +676,15 @@ textarea:focus {
 
 .radio input[type="radio"]:disabled+span {
   cursor: default;
-  color: var(--fg0);
+  color: var(--fg-0);
 }
 
 .radio input[type="radio"]:disabled+span::before {
-  border-color: var(--bg4);
+  border-color: var(--border);
 }
 
 .radio input[type="radio"]:disabled:checked+span::before {
-  background-color: var(--fg0);
+  background-color: var(--fg-0);
 }
 
 .card {
@@ -724,7 +724,7 @@ textarea:focus {
   width: 100%;
   height: 100%;
   padding: 1rem;
-  background-color: var(--bg2);
+  background-color: var(--bg-2);
   border-radius: $border-radius;
   align-items: center;
   justify-content: center;
@@ -755,7 +755,7 @@ textarea:focus {
   height: 100%;
   margin-top: 0px;
   padding: 1rem;
-  background-color: var(--bg2);
+  background-color: var(--bg-2);
   border-radius: $border-radius;
   align-items: center;
   justify-content: center;
@@ -779,14 +779,14 @@ textarea:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--fg0);
+  color: var(--fg-0);
 }
 
 .separator::before,
 .separator::after {
   content: "";
   display: block;
-  background: var(--bg4);
+  background: var(--border);
   width: 100%;
   height: 0.2rem;
   margin: 0px 1rem;
@@ -812,7 +812,7 @@ textarea:focus {
   left: 0px;
   width: 100vw;
   height: 100vh;
-  background-color: var(--bg0);
+  background-color: var(--bg-0);
   opacity: 0.6;
 }
 
@@ -821,8 +821,8 @@ textarea:focus {
   min-width: 40vw;
   width: auto;
   max-width: 90vw;
-  background-color: var(--bg1);
-  border: 0.2rem solid var(--bg4);
+  background-color: var(--bg-1);
+  border: 0.2rem solid var(--border);
   border-radius: $border-radius;
   padding: 1rem;
 }
@@ -861,8 +861,8 @@ textarea:focus {
   gap: 0.4rem;
   margin-top: 0.4rem;
   padding: 0.4rem;
-  background: var(--bg2);
-  border: 0.2rem solid var(--bg4);
+  background: var(--bg-2);
+  border: 0.2rem solid var(--border);
   border-radius: $border-radius;
 }
 
@@ -880,8 +880,8 @@ textarea:focus {
   justify-content: start;
   margin-top: 0px;
   text-wrap: nowrap;
-  background-color: var(--bg2);
-  border-color: var(--bg2);
+  background-color: var(--bg-2);
+  border-color: var(--bg-2);
   color: var(--main);
 }
 
@@ -889,8 +889,8 @@ textarea:focus {
 .dropdown .content .button:hover,
 .dropdown .content button:focus,
 .dropdown .content .button:focus {
-  background-color: var(--bg3);
-  border-color: var(--bg3);
+  background-color: var(--bg-3);
+  border-color: var(--bg-3);
   color: var(--main-alt);
 }
 
@@ -902,7 +902,7 @@ button.faint,
 .button.faint {
   background-color: transparent;
   border: none;
-  color: var(--fg1);
+  color: var(--fg-1);
 }
 
 button.icon-only-button,
@@ -922,7 +922,7 @@ button.faint:hover,
 .button.faint:hover,
 button.faint:focus,
 .button.faint:focus {
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   border: none;
   color: var(--main-alt);
 }
@@ -961,25 +961,25 @@ button.faint:focus,
 
 .combo-select > button,
 .combo-select > .button {
-  background-color: var(--bg2);
+  background-color: var(--bg-2);
   color: var(--main);
-  border-color: var(--bg2);
+  border-color: var(--bg-2);
 }
 
 .combo-select > button:hover,
 .combo-select > .button:hover,
 .combo-select > button:focus,
 .combo-select > .button:focus {
-  background-color: var(--bg3);
+  background-color: var(--bg-3);
   color: var(--main-alt);
-  border-color: var(--bg3);
+  border-color: var(--bg-3);
 }
 
 .combo-select > .selected,
 .combo-select > button.selected,
 .combo-select > .button.selected {
   background-color: var(--main);
-  color: var(--bg1);
+  color: var(--bg-1);
   border-color: var(--main);
 }
 
@@ -988,7 +988,7 @@ button.faint:focus,
 .combo-select > button.selected:focus,
 .combo-select > .button.selected:focus {
   background-color: var(--main-alt);
-  color: var(--bg1);
+  color: var(--bg-1);
   border-color: var(--main-alt);
 }
 
@@ -1003,9 +1003,9 @@ button.faint:focus,
 button.button-box,
 .button.button-box {
   display: inline-block;
-  color: var(--fg1);
-  background: var(--bg2);
-  border: 0.2rem solid var(--bg2);
+  color: var(--fg-1);
+  background: var(--bg-2);
+  border: 0.2rem solid var(--bg-2);
   border-radius: $border-radius;
 }
 
@@ -1014,8 +1014,8 @@ button.button-box:focus,
 .button.button-box:hover,
 .button.button-box:focus {
   color: var(--main-alt);
-  background: var(--bg3);
-  border-color: var(--bg3);
+  background: var(--bg-3);
+  border-color: var(--bg-3);
 }
 
 button.button-box:focus-visible,
@@ -1039,7 +1039,7 @@ button.button-box.selected:focus,
 }
 
 details {
-  border: 0.2rem solid var(--bg4);
+  border: 0.2rem solid var(--border);
   border-radius: $border-radius;
   padding: 1rem;
 }
@@ -1053,6 +1053,6 @@ summary {
 
 details[open] summary {
   padding-bottom: 1rem;
-  border-bottom: 0.2rem solid var(--bg4);
+  border-bottom: 0.2rem solid var(--border);
   margin-bottom: 1rem;
 }
