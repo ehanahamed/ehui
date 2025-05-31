@@ -31,10 +31,9 @@ $font-weight-link: normal !default;
   $border-radius: $border-radius
 );
 
-button,
-.button,
 .clickable-effect {
-  transition: transform 0.2s ease-out;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
 }
 
 button:hover,
@@ -78,4 +77,9 @@ button.no-clickable-effect:focus,
   .clickable-effect:focus {
     transform: none;
   }
+
+  .clickable-effect {
+    transition-duration: 0s;
+  }
 }
+

@@ -381,7 +381,8 @@ a,
   font-weight: normal;
   line-height: 1.4;
   text-decoration: none;
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
 }
 
 a:hover,
@@ -419,7 +420,8 @@ button,
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.4;
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
 }
 
 button,
@@ -485,7 +487,8 @@ textarea {
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
   line-height: 1.4;
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
 }
 
 input[type=text]:hover,
@@ -512,7 +515,8 @@ textarea:focus {
   background-color: var(--bg-2);
   border: 0.2rem solid var(--bg-2);
   border-radius: 1.6rem;
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
 }
 
 .searchbar > .searchbar-icon {
@@ -639,19 +643,22 @@ textarea:focus {
   margin-top: 0.2rem;
   vertical-align: -0.4rem;
   outline: none;
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
 }
 
 .radio input[type=radio]:checked + span::before {
   border-radius: 50%;
   background-color: var(--main-alt);
   border: 0.4rem solid var(--main);
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
 }
 
 .radio input[type=radio]:hover + span::before {
   border-color: var(--main-alt);
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
 }
 
 .radio input[type=radio]:focus-visible + span::before {
@@ -723,6 +730,7 @@ textarea:focus {
 .card.double > .content {
   display: block;
   transition: transform 0.4s;
+  transition-timing-function: ease-in-out;
   transform-style: preserve-3d;
   background-color: inherit;
   border-radius: 0px;
@@ -2164,10 +2172,9 @@ button.faint.yay:focus,
     transition-duration: 0s;
   }
 }
-button,
-.button,
 .clickable-effect {
-  transition: transform 0.2s ease-out;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
 }
 
 button:hover,
@@ -2210,5 +2217,8 @@ button.no-clickable-effect:focus,
   .clickable-effect:hover,
   .clickable-effect:focus {
     transform: none;
+  }
+  .clickable-effect {
+    transition-duration: 0s;
   }
 }
