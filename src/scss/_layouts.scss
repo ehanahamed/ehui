@@ -375,6 +375,10 @@ header > *,
   margin-top: 0px;
 }
 
+.no-margin-top {
+  margin-top: 0px;
+}
+
 .no-child-margin-top * + * {
   margin-top: 0px;
 }
