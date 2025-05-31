@@ -1367,6 +1367,7 @@ header.with-search.with-status > .status {
   align-items: center;
 }
 
+* + *,
 * + p,
 * + h1,
 * + h2,
@@ -1390,19 +1391,11 @@ header > *,
   margin-top: 0px;
 }
 
-.apply-margin-top * + * {
-  margin-top: 1rem;
-}
-
-.apply-direct-margin-top > * + * {
-  margin-top: 1rem;
-}
-
-.no-apply-margin-top * + * {
+.no-child-margin-top * + * {
   margin-top: 0px;
 }
 
-.no-apply-direct-margin-top > * + * {
+.no-direct-child-margin-top > * + * {
   margin-top: 0px;
 }
 
