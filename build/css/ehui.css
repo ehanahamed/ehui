@@ -76,7 +76,6 @@ p {
   margin-bottom: 1rem;
 }
 
-/* TEMPORARY FIX */
 p {
   margin-block-end: 0px;
 }
@@ -399,7 +398,6 @@ a:focus-visible,
   transition-duration: 0.1s;
 }
 
-button,
 .button {
   display: inline-flex;
   appearance: none;
@@ -423,36 +421,29 @@ button,
   transition-duration: 0.4s;
 }
 
-button,
 .button,
 a,
 .a {
   -webkit-tap-highlight-color: transparent;
 }
 
-button.alt,
 .button.alt {
   background-color: var(--bg2);
   color: var(--main);
 }
 
-button:hover,
-button:focus,
 .button:hover,
 .button:focus {
   background-color: var(--main-alt);
   color: var(--bg1);
 }
 
-button.alt:hover,
-button.alt:focus,
 .button.alt:hover,
 .button.alt:focus {
   background-color: var(--bg3);
   color: var(--main-alt);
 }
 
-button:focus-visible,
 .button:focus-visible {
   outline: 0.2rem solid var(--main);
   outline-offset: 0.2rem;
@@ -986,7 +977,6 @@ button.faint:focus,
   display: inline;
 }
 
-button.button-box,
 .button.button-box {
   display: inline-block;
   color: var(--fg1);
@@ -995,8 +985,6 @@ button.button-box,
   border-radius: 0.8rem;
 }
 
-button.button-box:hover,
-button.button-box:focus,
 .button.button-box:hover,
 .button.button-box:focus {
   color: var(--main-alt);
@@ -1004,19 +992,16 @@ button.button-box:focus,
   border-color: var(--bg3);
 }
 
-button.button-box:focus-visible {
+.button.button-box:focus-visible {
   outline-offset: 0.4rem;
 }
 
-button.button-box.selected,
 .button.button-box.selected {
   color: var(--main);
   border-color: var(--main);
 }
 
-button.button-box.selected:hover,
 .button.button-box.selected:hover,
-button.button-box.selected:focus,
 .button.button-box.selected:focus {
   color: var(--main-alt);
   border-color: var(--main-alt);
@@ -1382,13 +1367,6 @@ header.with-search.with-status > .status {
   align-items: center;
 }
 
-/*
-
-* + *        for default,
-* + element  for reversing margin-top: 0px;
-
-*/
-* + *,
 * + p,
 * + h1,
 * + h2,
@@ -1409,6 +1387,22 @@ header > *,
 .nav > div,
 .nav-menu > div,
 .logotype > * {
+  margin-top: 0px;
+}
+
+.apply-margin-top * + * {
+  margin-top: 1rem;
+}
+
+.apply-direct-margin-top > * + * {
+  margin-top: 1rem;
+}
+
+.no-apply-margin-top * + * {
+  margin-top: 0px;
+}
+
+.no-apply-direct-margin-top > * + * {
   margin-top: 0px;
 }
 
@@ -2159,18 +2153,20 @@ button.faint.yay:focus,
   }
 }
 .clickable-effect {
-  transition-duration: 0.4s;
+  transition: transform 0.4s ease-out;
 }
 
-button:hover, .button:hover,
-button:focus, .button:focus,
+.button:hover,
+.button:focus,
 .clickable-effect:hover,
 .clickable-effect:focus {
   transform: scale(1.1);
 }
 
-button.no-clickable-effect:hover, .button.no-clickable-effect:hover,
-button.no-clickable-effect:focus, .button.no-clickable-effect:focus {
+.button.no-clickable-effect:hover,
+.button.no-clickable-effect:focus,
+.no-clickable-effect .button:hover,
+.no-clickable-effect .button:focus {
   transform: none;
 }
 
@@ -2189,11 +2185,8 @@ button.no-clickable-effect:focus, .button.no-clickable-effect:focus {
 }
 
 @media (prefers-reduced-motion) {
-  .clickable-effect {
-    transition-duration: 0s;
-  }
-  button:hover, .button:hover,
-  button:focus, .button:focus,
+  .button:hover,
+  .button:focus,
   .clickable-effect:hover,
   .clickable-effect:focus {
     transform: none;
