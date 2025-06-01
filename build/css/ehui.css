@@ -729,8 +729,7 @@ textarea:focus {
 
 .card.double > .content {
   display: block;
-  transition: transform 0.4s;
-  transition-timing-function: ease-in-out;
+  transition: transform 0.4s ease-in-out;
   transform-style: preserve-3d;
   background-color: inherit;
   border-radius: 0px;
