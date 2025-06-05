@@ -21,10 +21,12 @@
       href="https://www.nerdfonts.com/assets/css/webfont.css"
     />
     <script>
-        if (window?.location?.search) {
-            const searchParams = new URLSearchParams(window.location.search);
-            if (searchParams.has("theme")) {
-                document.documentElement.classList.add(searchParams.get("theme"));
+        if (window.localStorage) {
+            const theme = localStorage.getItem("ehuisite:theme");
+            if (theme) {
+                document.documentElement.classList.add(
+                    theme
+                );
             }
         }
     </script>
