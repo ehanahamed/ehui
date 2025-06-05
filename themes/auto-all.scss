@@ -1,6 +1,7 @@
 @use "../src/scss/theme-svgs.scss";
 
-:root {
+:root,
+:root.light {
   color-scheme: light;
   --ohno: #f03e3e;
   --ohno-on-bg: #f03e3e;
