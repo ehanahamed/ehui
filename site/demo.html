@@ -20,6 +20,14 @@
       rel="stylesheet"
       href="https://www.nerdfonts.com/assets/css/webfont.css"
     />
+    <script>
+        if (window?.location?.search) {
+            const searchParams = new URLSearchParams(window.location.search);
+            if (searchParams.has("theme")) {
+                document.documentElement.classList.add(searchParams.get("theme"));
+            }
+        }
+    </script>
   </head>
 
   <body>

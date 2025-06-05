@@ -1,0 +1,154 @@
+@use "../src/scss/theme-svgs.scss";
+
+:root {
+  color-scheme: light;
+  --ohno: #f03e3e;
+  --ohno-on-bg: #f03e3e;
+  --ohno-alt: #c92a2a;
+  --ohno-faint: #c92a2a;
+  --on-ohno: #c92a2a;
+  --yay: #0fb180;
+  --yay-on-bg: #0fb180;
+  --yay-alt: #087f5b;
+  --yay-faint: #087f5b;
+  --on-yay: #087f5b;
+  --main: #4E4EEF;
+  --main-on-bg: #4E4EEF;
+  --main-alt: #3C3CC3;
+  --main-faint: #3C3CC3;
+  --on-main: #3C3CC3;
+  --extra: #0fb180;
+  --extra-on-bg: #0fb180;
+  --extra-alt: #087f5b;
+  --extra-faint: #087f5b;
+  --on-extra: #087f5b;
+  --extra-bg: #f8f8f8;
+  --fg-2: #242528;
+  --fg-1: #242528;
+  --fg-0: #747474;
+  --border: #f0f0f0;
+  --bg-3-alt: #f2f2f2;
+  --bg-3: #f2f2f2;
+  --bg-2: #f8f8f8;
+  --bg-1: #fefefe;
+  --bg-0: #f8f8f8;
+  --on-select-bg: #242528;
+  --select-bg: #DBDBFF;
+
+  @include theme-svgs.waves(#f8f8f8 /* bg0 */, #f8f8f8 /* extra-bg */);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+      color-scheme: dark;
+      --ohno: #ff6666;
+      --ohno-on-bg: #ff6666;
+      --ohno-alt: #ff9999;
+      --ohno-faint: #ff9999;
+      --on-ohno: #000000;
+      --yay: #80FFBF;
+      --yay-on-bg: #80FFBF;
+      --yay-alt: #B3FFD9;
+      --yay-faint: #B3FFD9;
+      --on-yay: #B3FFD9;
+      --main: #A280FF;
+      --main-on-bg: ;
+      --main-alt: #C7B3FF;
+      --main-faint: #2C2C3A;
+      --on-main: #21212C;
+      --extra: #80FFBF;
+      --extra-on-bg: #80FFBF;
+      --extra-alt: #B3FFD9;
+      --extra-faint: #1C1C26;
+      --on-extra: #1C1C26;
+      --extra-bg: #1C1C26;
+      --fg-2: #c3cce9;
+      --fg-1: #c3cce9;
+      --fg-0: #9399b2;
+      --border: #303040;
+      --bg-3-alt: #2C2C3A;
+      --bg-3: #2C2C3A;
+      --bg-2: #252531;
+      --bg-1: #21212C;
+      --bg-0: #1C1C26;
+      --on-select-bg: #c3cce9;
+      --select-bg: #43396A;
+      @include theme-svgs.waves(#1C1C26 /* bg-0 */, #1C1C26 /* extra-bg */);
+  }
+}
+
+:root.dark {
+    color-scheme: dark;
+    --ohno: #ff6666;
+    --ohno-on-bg: #ff6666;
+    --ohno-alt: #ff9999;
+    --ohno-faint: #ff9999;
+    --on-ohno: #000000;
+    --yay: #80FFBF;
+    --yay-on-bg: #80FFBF;
+    --yay-alt: #B3FFD9;
+    --yay-faint: #B3FFD9;
+    --on-yay: #B3FFD9;
+    --main: #A280FF;
+    --main-on-bg: ;
+    --main-alt: #C7B3FF;
+    --main-faint: #2C2C3A;
+    --on-main: #21212C;
+    --extra: #80FFBF;
+    --extra-on-bg: #80FFBF;
+    --extra-alt: #B3FFD9;
+    --extra-faint: #1C1C26;
+    --on-extra: #1C1C26;
+    --extra-bg: #1C1C26;
+    --fg-2: #c3cce9;
+    --fg-1: #c3cce9;
+    --fg-0: #9399b2;
+    --border: #303040;
+    --bg-3-alt: #2C2C3A;
+    --bg-3: #2C2C3A;
+    --bg-2: #252531;
+    --bg-1: #21212C;
+    --bg-0: #1C1C26;
+    --on-select-bg: #c3cce9;
+    --select-bg: #43396A;
+    @include theme-svgs.waves(#1C1C26 /* bg-0 */, #1C1C26 /* extra-bg */);
+}
+
+:root.monochrome {
+  color-scheme: light;
+  --ohno: #f03e3e;
+  --ohno-on-bg: #f03e3e;
+  --ohno-alt: #c92a2a;
+  --ohno-faint: #c92a2a;
+  --on-ohno: #c92a2a;
+  --yay: #0fb180;
+  --yay-on-bg: #0fb180;
+  --yay-alt: #087f5b;
+  --yay-faint: #087f5b;
+  --on-yay: #087f5b;
+  --main: #242528;
+  --main-on-bg: #242528;
+  --main-alt: #747474;
+  --main-faint: #242528;
+  --on-main: #fff;
+  --extra: #0fb180;
+  --extra-on-bg: #0fb180;
+  --extra-alt: #087f5b;
+  --extra-faint: #087f5b;
+  --on-extra: #087f5b;
+  --extra-bg: #f8f8f8;
+  --fg-2: #242528;
+  --fg-1: #242528;
+  --fg-0: #747474;
+  --border: #f0f0f0;
+  --bg-3-alt: #f2f2f2;
+  --bg-3: #f2f2f2;
+  --bg-2: #f8f8f8;
+  --bg-1: #fefefe;
+  --bg-0: #f8f8f8;
+  --on-select-bg: #242528;
+  --select-bg: #DBDBFF;
+
+  @include theme-svgs.waves(#f8f8f8 /* bg0 */, #f8f8f8 /* extra-bg */);
+}
+
