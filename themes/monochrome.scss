@@ -1,39 +1,44 @@
 @use "../src/scss/theme-svgs.scss";
 
-:root {
-  color-scheme: light;
-  --ohno: #f03e3e;
-  --ohno-on-bg: #f03e3e;
-  --ohno-alt: #c92a2a;
-  --ohno-faint: #c92a2a;
-  --on-ohno: #c92a2a;
-  --yay: #0fb180;
-  --yay-on-bg: #0fb180;
-  --yay-alt: #087f5b;
-  --yay-faint: #087f5b;
-  --on-yay: #087f5b;
-  --main: #242528;
-  --main-on-bg: #242528;
-  --main-alt: #747474;
-  --main-faint: #242528;
-  --on-main: #fff;
-  --extra: #0fb180;
-  --extra-on-bg: #0fb180;
-  --extra-alt: #087f5b;
-  --extra-faint: #087f5b;
-  --on-extra: #087f5b;
-  --extra-bg: #f8f8f8;
-  --fg-2: #242528;
-  --fg-1: #242528;
-  --fg-0: #747474;
-  --border: #f0f0f0;
-  --bg-3-alt: #f2f2f2;
-  --bg-3: #f2f2f2;
-  --bg-2: #f8f8f8;
-  --bg-1: #fefefe;
-  --bg-0: #f8f8f8;
-  --on-select-bg: #242528;
-  --select-bg: #DBDBFF;
+@mixin theme {
+    color-scheme: light;
+    --ohno: #f03e3e;
+    --ohno-on-bg: #f03e3e;
+    --ohno-alt: #c92a2a;
+    --ohno-faint: #c92a2a;
+    --on-ohno: #c92a2a;
+    --yay: #0fb180;
+    --yay-on-bg: #0fb180;
+    --yay-alt: #087f5b;
+    --yay-faint: #087f5b;
+    --on-yay: #087f5b;
+    --main: #242528;
+    --main-on-bg: #242528;
+    --main-alt: #747474;
+    --main-faint: #242528;
+    --on-main: #fff;
+    --extra: #0fb180;
+    --extra-on-bg: #0fb180;
+    --extra-alt: #087f5b;
+    --extra-faint: #087f5b;
+    --on-extra: #087f5b;
+    --extra-bg: #f8f8f8;
+    --fg-2: #242528;
+    --fg-1: #242528;
+    --fg-0: #747474;
+    --border: #f0f0f0;
+    --bg-3-alt: #f2f2f2;
+    --bg-3: #f2f2f2;
+    --bg-2: #f8f8f8;
+    --bg-1: #fefefe;
+    --bg-0: #f8f8f8;
+    --on-select-bg: #242528;
+    --select-bg: #DBDBFF;
+
+    @include theme-svgs.waves(#f8f8f8 /* bg0 */, #f8f8f8 /* extra-bg */);
 }
 
-@include theme-svgs.waves(#f8f8f8 /* bg0 */, #f8f8f8 /* extra-bg */);
+.theme-monochrome {
+    @include theme;
+}
+
