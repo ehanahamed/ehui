@@ -499,7 +499,7 @@ button:focus-visible,
   border-left: 0.3rem solid transparent;
   border-right: 0.3rem solid transparent;
   border-top: 0.3rem solid var(--fg-1);
-  top: 58%;
+  top: 54%;
 }
 
 .select-wrapper select:hover {
