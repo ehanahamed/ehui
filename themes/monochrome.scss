@@ -38,7 +38,8 @@
     @include theme-svgs.waves(#f8f8f8 /* bg0 */, #f8f8f8 /* extra-bg */);
 }
 
-.theme-monochrome {
+.theme-monochrome,
+:root.theme-monochrome {
     @include theme;
 }
 
