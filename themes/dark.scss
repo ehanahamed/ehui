@@ -38,7 +38,8 @@
     @include theme-svgs.waves(#1C1C26 /* bg-0 */, #1C1C26 /* extra-bg */);
 }
 
-.theme-dark {
+.theme-dark,
+:root.theme-dark {
     @include theme;
 }
 
