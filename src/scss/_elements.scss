@@ -479,7 +479,7 @@ button:focus-visible,
 .select-wrapper {
   position: relative;
   display: inline-block;
-  width: 20rem;
+  width: 18rem;
 }
 
 .select-wrapper select {
@@ -496,11 +496,6 @@ button:focus-visible,
   outline: none;
 }
 
-.select-wrapper select:focus {
-  outline: 0.2rem solid var(--main);
-  outline-offset: 0.2rem;
-}
-
 .select-wrapper::before,
 .select-wrapper::after {
   content: "";
@@ -513,14 +508,14 @@ button:focus-visible,
   border-left: 0.3rem solid transparent;
   border-right: 0.3rem solid transparent;
   border-bottom: 0.3rem solid var(--fg-1);
-  top: 40%;
+  top: 38%;
 }
 
 .select-wrapper::after {
   border-left: 0.3rem solid transparent;
   border-right: 0.3rem solid transparent;
   border-top: 0.3rem solid var(--fg-1);
-  top: 55%;
+  top: 54%;
 }
 
 .select-wrapper select:hover {
