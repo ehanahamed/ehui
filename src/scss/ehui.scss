@@ -54,6 +54,11 @@ button.no-clickable-effect:focus,
   transform: none;
 }
 
+.no-child-clickable-effect button:hover,
+.no-child-clickable-effect .button:hover {
+  transform: none;
+}
+
 .combo-select button:hover,
 .combo-select button:focus,
 .combo-select .button:hover,
