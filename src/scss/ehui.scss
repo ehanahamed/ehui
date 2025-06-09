@@ -55,7 +55,9 @@ button.no-clickable-effect:focus,
 }
 
 .no-child-clickable-effect button:hover,
-.no-child-clickable-effect .button:hover {
+.no-child-clickable-effect button:focus,
+.no-child-clickable-effect .button:hover,
+.no-child-clickable-effect .button:focus {
   transform: none;
 }
 
