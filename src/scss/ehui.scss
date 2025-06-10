@@ -64,7 +64,11 @@ button.no-clickable-effect:focus,
 .combo-select button:hover,
 .combo-select button:focus,
 .combo-select .button:hover,
-.combo-select .button:focus {
+.combo-select .button:focus,
+.combo-buttons button:hover,
+.combo-buttons button:focus,
+.combo-buttons .button:hover,
+.combo-buttons .button:focus {
   transform: none;
 }
 
