@@ -1044,6 +1044,39 @@ button.faint:focus,
   display: inline;
 }
 
+.combo-buttons {
+  display: flex;
+  gap: 0px;
+  align-items: stretch;
+}
+
+.combo-buttons > .left,
+.combo-buttons > button.left,
+.combo-buttons > .button.left {
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.combo-buttons > .mid,
+.combo-buttons > button.mid,
+.combo-buttons > .button.mid {
+  margin: 0px;
+  border-radius: 0px;
+}
+
+.combo-buttons > .right,
+.combo-buttons > button.right,
+.combo-buttons > .button.right {
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
 button.button-box,
 .button.button-box {
   display: inline-block;
