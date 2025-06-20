@@ -28,19 +28,6 @@
                     "theme-" + theme
                 );
 
-                document.getElementById("theme-auto-button").classList.remove("selected");
-                document.getElementById("theme-light-button").classList.remove("selected");
-                document.getElementById("theme-dark-button").classList.remove("selected");
-                document.getElementById("theme-monochrome-button").classList.remove("selected");
-                document.getElementById("theme-midnight-button").classList.remove("selected");
-                const selectedThemeButton = document.getElementById(
-                  "theme-" + theme + "-button"
-                );
-                if (selectedThemeButton) {
-                  document.getElementById(
-                    "theme-" + theme + "-button"
-                  ).classList.add("selected");
-                }
             }
         }
     </script>
@@ -980,6 +967,17 @@
         document.getElementById("theme-monochrome-button").classList.remove("selected");
         document.getElementById("theme-midnight-button").classList.add("selected");
       });
+
+      /* `theme` is set in the script tag at the top, inside head
+      because we need to change the class before the document renders (inside head)
+      having it at the top inside head prevents flickering
+      and then we need to change the visual selected effect after the document renders (here, inside body, at the end) */
+      const selectedThemeButton = document.getElementById(
+        "theme-" + theme + "-button"
+      );
+      if (selectedThemeButton) {
+        selectedThemeButton.classList.add("selected");
+      }
     </script>
   </body>
 </html>
