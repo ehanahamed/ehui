@@ -27,7 +27,10 @@
                 document.documentElement.classList.add(
                     "theme-" + theme
                 );
-
+                /* `theme` is also used later at the bottom in a script tag inside of `body`
+                to change which button has a visual selected indicator
+                it's at the end so it runs after the button exists/after `body` is rendered
+                but this is at the beginning inside `head` so it runs first to avoid flickering colors/themes */
             }
         }
     </script>
@@ -968,15 +971,17 @@
         document.getElementById("theme-midnight-button").classList.add("selected");
       });
 
-      /* `theme` is set in the script tag at the top, inside head
-      because we need to change the class before the document renders (inside head)
-      having it at the top inside head prevents flickering
-      and then we need to change the visual selected effect after the document renders (here, inside body, at the end) */
-      const selectedThemeButton = document.getElementById(
-        "theme-" + theme + "-button"
-      );
-      if (selectedThemeButton) {
-        selectedThemeButton.classList.add("selected");
+      if (theme) {
+        /* `theme` is set in the script tag at the top, inside head
+        because we need to change the class before the document renders (inside head)
+        having it at the top inside head prevents flickering
+        and then we need to change the visual selected effect after the document renders (here, inside body, at the end) */
+        const selectedThemeButton = document.getElementById(
+          "theme-" + theme + "-button"
+        );
+        if (selectedThemeButton) {
+          selectedThemeButton.classList.add("selected");
+        }
       }
     </script>
   </body>
