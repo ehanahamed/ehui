@@ -890,51 +890,51 @@
         if (window.localStorage) {
           localStorage.setItem("ehuidemo:theme", "auto");
         }
-        document.documentElement.classList.remove("light");
-        document.documentElement.classList.remove("dark");
-        document.documentElement.classList.remove("monochrome");
-        document.documentElement.classList.remove("midnight");
-        document.documentElement.classList.add("auto");
+        document.documentElement.classList.remove("theme-light");
+        document.documentElement.classList.remove("theme-dark");
+        document.documentElement.classList.remove("theme-monochrome");
+        document.documentElement.classList.remove("theme-midnight");
+        document.documentElement.classList.add("theme-auto");
       });
       document.getElementById("theme-light-button").addEventListener("click", function () {
         if (window.localStorage) {
           localStorage.setItem("ehuidemo:theme", "light");
         }
-        document.documentElement.classList.remove("auto");
-        document.documentElement.classList.remove("dark");
-        document.documentElement.classList.remove("monochrome");
-        document.documentElement.classList.remove("midnight");
-        document.documentElement.classList.add("light");
+        document.documentElement.classList.remove("theme-auto");
+        document.documentElement.classList.remove("theme-dark");
+        document.documentElement.classList.remove("theme-monochrome");
+        document.documentElement.classList.remove("theme-midnight");
+        document.documentElement.classList.add("theme-light");
       });
       document.getElementById("theme-dark-button").addEventListener("click", function () {
         if (window.localStorage) {
           localStorage.setItem("ehuidemo:theme", "dark");
         }
-        document.documentElement.classList.remove("auto");
-        document.documentElement.classList.remove("light");
-        document.documentElement.classList.remove("monochrome");
-        document.documentElement.classList.remove("midnight");
-        document.documentElement.classList.add("dark");
+        document.documentElement.classList.remove("theme-auto");
+        document.documentElement.classList.remove("theme-light");
+        document.documentElement.classList.remove("theme-monochrome");
+        document.documentElement.classList.remove("theme-midnight");
+        document.documentElement.classList.add("theme-dark");
       });
       document.getElementById("theme-monochrome-button").addEventListener("click", function () {
         if (window.localStorage) {
           localStorage.setItem("ehuidemo:theme", "monochrome");
         }
-        document.documentElement.classList.remove("auto");
-        document.documentElement.classList.remove("light");
-        document.documentElement.classList.remove("dark");
-        document.documentElement.classList.remove("midnight");
-        document.documentElement.classList.add("monochrome");
+        document.documentElement.classList.remove("theme-auto");
+        document.documentElement.classList.remove("theme-light");
+        document.documentElement.classList.remove("theme-dark");
+        document.documentElement.classList.remove("theme-midnight");
+        document.documentElement.classList.add("theme-monochrome");
       });
       document.getElementById("theme-midnight-button").addEventListener("click", function () {
         if (window.localStorage) {
           localStorage.setItem("ehuidemo:theme", "midnight");
         }
-        document.documentElement.classList.remove("auto");
-        document.documentElement.classList.remove("light");
-        document.documentElement.classList.remove("dark");
-        document.documentElement.classList.remove("monochrome");
-        document.documentElement.classList.add("midnight");
+        document.documentElement.classList.remove("theme-auto");
+        document.documentElement.classList.remove("theme-light");
+        document.documentElement.classList.remove("theme-dark");
+        document.documentElement.classList.remove("theme-monochrome");
+        document.documentElement.classList.add("theme-midnight");
       });
     </script>
   </body>
