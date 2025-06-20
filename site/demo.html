@@ -27,6 +27,20 @@
                 document.documentElement.classList.add(
                     "theme-" + theme
                 );
+
+                document.getElementById("theme-auto-button").classList.remove("selected");
+                document.getElementById("theme-light-button").classList.remove("selected");
+                document.getElementById("theme-dark-button").classList.remove("selected");
+                document.getElementById("theme-monochrome-button").classList.remove("selected");
+                document.getElementById("theme-midnight-button").classList.remove("selected");
+                const selectedThemeButton = document.getElementById(
+                  "theme-" + theme + "-button"
+                );
+                if (selectedThemeButton) {
+                  document.getElementById(
+                    "theme-" + theme + "-button"
+                  ).classList.add("selected");
+                }
             }
         }
     </script>
@@ -895,6 +909,12 @@
         document.documentElement.classList.remove("theme-monochrome");
         document.documentElement.classList.remove("theme-midnight");
         document.documentElement.classList.add("theme-auto");
+
+        document.getElementById("theme-auto-button").classList.add("selected");
+        document.getElementById("theme-light-button").classList.remove("selected");
+        document.getElementById("theme-dark-button").classList.remove("selected");
+        document.getElementById("theme-monochrome-button").classList.remove("selected");
+        document.getElementById("theme-midnight-button").classList.remove("selected");
       });
       document.getElementById("theme-light-button").addEventListener("click", function () {
         if (window.localStorage) {
@@ -905,6 +925,12 @@
         document.documentElement.classList.remove("theme-monochrome");
         document.documentElement.classList.remove("theme-midnight");
         document.documentElement.classList.add("theme-light");
+
+        document.getElementById("theme-auto-button").classList.remove("selected");
+        document.getElementById("theme-light-button").classList.add("selected");
+        document.getElementById("theme-dark-button").classList.remove("selected");
+        document.getElementById("theme-monochrome-button").classList.remove("selected");
+        document.getElementById("theme-midnight-button").classList.remove("selected");
       });
       document.getElementById("theme-dark-button").addEventListener("click", function () {
         if (window.localStorage) {
@@ -915,6 +941,12 @@
         document.documentElement.classList.remove("theme-monochrome");
         document.documentElement.classList.remove("theme-midnight");
         document.documentElement.classList.add("theme-dark");
+
+        document.getElementById("theme-auto-button").classList.remove("selected");
+        document.getElementById("theme-light-button").classList.remove("selected");
+        document.getElementById("theme-dark-button").classList.add("selected");
+        document.getElementById("theme-monochrome-button").classList.remove("selected");
+        document.getElementById("theme-midnight-button").classList.remove("selected");
       });
       document.getElementById("theme-monochrome-button").addEventListener("click", function () {
         if (window.localStorage) {
@@ -925,6 +957,12 @@
         document.documentElement.classList.remove("theme-dark");
         document.documentElement.classList.remove("theme-midnight");
         document.documentElement.classList.add("theme-monochrome");
+
+        document.getElementById("theme-auto-button").classList.remove("selected");
+        document.getElementById("theme-light-button").classList.remove("selected");
+        document.getElementById("theme-dark-button").classList.remove("selected");
+        document.getElementById("theme-monochrome-button").classList.add("selected");
+        document.getElementById("theme-midnight-button").classList.remove("selected");
       });
       document.getElementById("theme-midnight-button").addEventListener("click", function () {
         if (window.localStorage) {
@@ -935,6 +973,12 @@
         document.documentElement.classList.remove("theme-dark");
         document.documentElement.classList.remove("theme-monochrome");
         document.documentElement.classList.add("theme-midnight");
+
+        document.getElementById("theme-auto-button").classList.remove("selected");
+        document.getElementById("theme-light-button").classList.remove("selected");
+        document.getElementById("theme-dark-button").classList.remove("selected");
+        document.getElementById("theme-monochrome-button").classList.remove("selected");
+        document.getElementById("theme-midnight-button").classList.add("selected");
       });
     </script>
   </body>
