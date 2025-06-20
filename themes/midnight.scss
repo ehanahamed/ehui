@@ -1,0 +1,44 @@
+@use "../src/scss/theme-svgs.scss";
+
+@mixin midnight {
+    color-scheme: dark;
+    --ohno: #ff6666;
+    --ohno-on-bg: #ff6666;
+    --ohno-alt: #ff9999;
+    --ohno-faint: #ff9999;
+    --on-ohno: #000000;
+    --yay: #80FFBF;
+    --yay-on-bg: #80FFBF;
+    --yay-alt: #B3FFD9;
+    --yay-faint: #B3FFD9;
+    --on-yay: #B3FFD9;
+    --main: #fff;
+    --main-on-bg: #fff;
+    --main-alt: #C7B3FF;
+    --main-faint: #2C2C3A;
+    --on-main: #21212C;
+    --extra: #80FFBF;
+    --extra-on-bg: #80FFBF;
+    --extra-alt: #B3FFD9;
+    --extra-faint: #1C1C26;
+    --on-extra: #1C1C26;
+    --extra-bg: #000d14;
+    --fg-2: #ffffff;
+    --fg-1: #ffffff;
+    --fg-0: #c0c0c0;
+    --border: #666666;
+    --bg-3-alt: #444444;
+    --bg-3: #333333;
+    --bg-2: #111111;
+    --bg-1: #000000;
+    --bg-0: #000d14;
+    --on-select-bg: #c3cce9;
+    --select-bg: #43396A;
+
+    @include theme-svgs.waves(#000d14 /* bg-0 */, #000d14 /* extra-bg */);
+}
+
+.theme-midnight,
+:root.theme-midnight {
+    @include theme;
+}
