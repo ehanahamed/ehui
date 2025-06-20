@@ -970,7 +970,7 @@
         document.getElementById("theme-monochrome-button").classList.remove("selected");
         document.getElementById("theme-midnight-button").classList.add("selected");
       });
-
+      try {
       if (theme) {
         /* `theme` is set in the script tag at the top, inside head
         because we need to change the class before the document renders (inside head)
@@ -983,6 +983,9 @@
           selectedThemeButton.classList.add("selected");
         }
       }
+    } catch (error) {
+        alert(error)
+    }
     </script>
   </body>
 </html>
