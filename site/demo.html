@@ -22,7 +22,7 @@
     />
     <script>
         if (window.localStorage) {
-            const theme = localStorage.getItem("ehuisite:theme");
+            const theme = localStorage.getItem("ehuidemo:theme");
             if (theme) {
                 document.documentElement.classList.add(
                     "theme-" + theme
@@ -92,6 +92,24 @@
       </div>
       <div class="grid page">
         <div class="content">
+          <p>Select theme</p>
+          <div class="grid list">
+            <button class="button-box" id="theme-auto-button">
+              Auto
+            </button>
+            <button class="button-box" id="theme-light-button">
+              Light
+            </button>
+            <button class="button-box" id="theme-dark-button">
+              Dark
+            </button>
+            <button class="button-box" id="theme-monochrome-button">
+              Monochrome
+            </button>
+            <button class="button-box" id="theme-midnight-button">
+              Midnight
+            </button>
+          </div>
           <h1>Heading 1</h1>
           <h2>Heading 2</h2>
           <h3>Heading 3</h3>
@@ -866,6 +884,58 @@
         document.getElementById("button-box-incorrect-2").classList.add("ohno");
         document.getElementById("button-box-incorrect-2").classList.toggle("selected");
       })
+    </script>
+    <script>
+      document.getElementById("theme-auto-button").addEventListener("click", function () {
+        if (window.localStorage) {
+          localStorage.setItem("ehuidemo:theme", "auto");
+        }
+        document.documentElement.classList.remove("light")
+        document.documentElement.classList.remove("dark")
+        document.documentElement.classList.remove("monochrome")
+        document.documentElement.classList.remove("midnight")
+        document.documentElement.classList.add("auto")
+      });
+      document.getElementById("theme-light-button").addEventListener("click", function () {
+        if (window.localStorage) {
+          localStorage.setItem("ehuidemo:theme", "light");
+        }
+        document.documentElement.classList.remove("auto")
+        document.documentElement.classList.remove("dark")
+        document.documentElement.classList.remove("monochrome")
+        document.documentElement.classList.remove("midnight")
+        document.documentElement.classList.add("light")
+      });
+      document.getElementById("theme-dark-button").addEventListener("click", function () {
+        if (window.localStorage) {
+          localStorage.setItem("ehuidemo:theme", "dark");
+        }
+        document.documentElement.classList.remove("auto")
+        document.documentElement.classList.remove("light")
+        document.documentElement.classList.remove("monochrome")
+        document.documentElement.classList.remove("midnight")
+        document.documentElement.classList.add("dark")
+      });
+      document.getElementById("theme-monochrome-button").addEventListener("click", function () {
+        if (window.localStorage) {
+          localStorage.setItem("ehuidemo:theme", "monochrome");
+        }
+        document.documentElement.classList.remove("auto")
+        document.documentElement.classList.remove("light")
+        document.documentElement.classList.remove("dark")
+        document.documentElement.classList.remove("midnight")
+        document.documentElement.classList.add("monochrome")
+      });
+      document.getElementById("theme-midnight-button").addEventListener("click", function () {
+        if (window.localStorage) {
+          localStorage.setItem("ehuidemo:theme", "midnight");
+        }
+        document.documentElement.classList.remove("auto")
+        document.documentElement.classList.remove("light")
+        document.documentElement.classList.remove("dark")
+        document.documentElement.classList.remove("monochrome")
+        document.documentElement.classList.add("midnight")
+      });
     </script>
   </body>
 </html>
