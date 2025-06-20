@@ -21,8 +21,9 @@
       href="https://www.nerdfonts.com/assets/css/webfont.css"
     />
     <script>
+        let theme;
         if (window.localStorage) {
-            const theme = localStorage.getItem("ehuidemo:theme");
+            theme = localStorage.getItem("ehuidemo:theme");
             if (theme) {
                 document.documentElement.classList.add(
                     "theme-" + theme
@@ -970,9 +971,7 @@
         document.getElementById("theme-monochrome-button").classList.remove("selected");
         document.getElementById("theme-midnight-button").classList.add("selected");
       });
-      try {
       if (theme) {
-        alert("yees it exists")
         /* `theme` is set in the script tag at the top, inside head
         because we need to change the class before the document renders (inside head)
         having it at the top inside head prevents flickering
@@ -981,13 +980,9 @@
           "theme-" + theme + "-button"
         );
         if (selectedThemeButton) {
-          alert("yes the element exists too")
           selectedThemeButton.classList.add("selected");
         }
       }
-    } catch (error) {
-        alert(error)
-    }
     </script>
   </body>
 </html>
