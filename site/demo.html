@@ -972,6 +972,7 @@
       });
       try {
       if (theme) {
+        alert("yees it exists")
         /* `theme` is set in the script tag at the top, inside head
         because we need to change the class before the document renders (inside head)
         having it at the top inside head prevents flickering
@@ -980,6 +981,7 @@
           "theme-" + theme + "-button"
         );
         if (selectedThemeButton) {
+          alert("yes the element exists too")
           selectedThemeButton.classList.add("selected");
         }
       }
