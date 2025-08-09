@@ -2261,54 +2261,12 @@ button.faint.yay:focus,
   transition-timing-function: ease-out;
 }
 
-button:hover,
-button:focus,
-.button:hover,
-.button:focus,
 .clickable-effect:hover,
 .clickable-effect:focus {
   transform: scale(1.1);
 }
 
-button.no-clickable-effect:hover,
-button.no-clickable-effect:focus,
-.button.no-clickable-effect:hover,
-.button.no-clickable-effect:focus,
-.no-clickable-effect .button:hover,
-.no-clickable-effect .button:focus {
-  transform: none;
-}
-
-.no-child-clickable-effect button:hover,
-.no-child-clickable-effect button:focus,
-.no-child-clickable-effect .button:hover,
-.no-child-clickable-effect .button:focus {
-  transform: none;
-}
-
-.combo-select button:hover,
-.combo-select button:focus,
-.combo-select .button:hover,
-.combo-select .button:focus,
-.combo-buttons button:hover,
-.combo-buttons button:focus,
-.combo-buttons .button:hover,
-.combo-buttons .button:focus {
-  transform: none;
-}
-
-.full-sidebar-menu > button:hover,
-.full-sidebar-menu > .button:hover,
-.full-sidebar-menu > button:focus,
-.full-sidebar-menu > .button:focus {
-  transform: none;
-}
-
 @media (prefers-reduced-motion) {
-  button:hover,
-  button:focus,
-  .button:hover,
-  .button:focus,
   .clickable-effect:hover,
   .clickable-effect:focus {
     transform: none;
