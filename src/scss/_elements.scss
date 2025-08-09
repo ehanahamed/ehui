@@ -1090,6 +1090,15 @@ button.faint:focus,
   border-bottom-left-radius: 0px;
 }
 
+.combo-buttons > button:focus-visible,
+.combo-buttons > .button:focus-visible,
+.combo-select > button:focus-visible,
+.combo-select > .button:focus-visible {
+  /* fix adjacent buttons overlapping outline */
+  position: relative;
+  z-index: 2;
+}
+
 button.button-box,
 .button.button-box {
   display: inline-block;
