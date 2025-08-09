@@ -458,8 +458,6 @@ button:focus-visible,
   outline: 0.2rem solid var(--main);
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
-  position: relative;
-  z-index: 2;
 }
 
 .select-wrapper {
@@ -1077,6 +1075,15 @@ button.faint:focus,
   margin-top: 0px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
+}
+
+.combo-buttons > button:focus-visible,
+.combo-buttons > .button:focus-visible,
+.combo-select > button:focus-visible,
+.combo-select > .button:focus-visible {
+  /* fix adjacent buttons overlapping outline */
+  position: relative;
+  z-index: 2;
 }
 
 button.button-box,
