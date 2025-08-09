@@ -1,7 +1,6 @@
 @use "../src/scss/theme-svgs.scss";
 @use "./light.scss";
 @use "./dark.scss";
-@use "./monochrome.scss";
 
 :root {
     @include light.theme;
@@ -12,4 +11,3 @@
         @include dark.theme;
     }
 }
-
