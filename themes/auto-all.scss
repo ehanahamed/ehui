@@ -2,6 +2,7 @@
 @use "./light.scss";
 @use "./dark.scss";
 @use "./monochrome.scss";
+@use "./midnight.scss";
 
 :root {
     @include light.theme;
@@ -12,4 +13,3 @@
         @include dark.theme;
     }
 }
-

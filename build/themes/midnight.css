@@ -1,0 +1,89 @@
+.theme-midnight,
+:root.theme-midnight {
+  color-scheme: dark;
+  --ohno: #ff6666;
+  --ohno-on-bg: #ff6666;
+  --ohno-alt: #ff9999;
+  --ohno-faint: #ff9999;
+  --on-ohno: #000000;
+  --yay: #80FFBF;
+  --yay-on-bg: #80FFBF;
+  --yay-alt: #B3FFD9;
+  --yay-faint: #B3FFD9;
+  --on-yay: #B3FFD9;
+  --main: #fff;
+  --main-on-bg: #fff;
+  --main-alt: #C7B3FF;
+  --main-faint: #2C2C3A;
+  --on-main: #21212C;
+  --extra: #80FFBF;
+  --extra-on-bg: #80FFBF;
+  --extra-alt: #B3FFD9;
+  --extra-faint: #1C1C26;
+  --on-extra: #1C1C26;
+  --extra-bg: #000d14;
+  --fg-2: #ffffff;
+  --fg-1: #ffffff;
+  --fg-0: #c0c0c0;
+  --border: #666666;
+  --bg-3-alt: #444444;
+  --bg-3: #333333;
+  --bg-2: #111111;
+  --bg-1: #000000;
+  --bg-0: #000d14;
+  --on-select-bg: #c3cce9;
+  --select-bg: #43396A;
+}
+.theme-midnight .wave-top,
+.theme-midnight .wave-bottom,
+:root.theme-midnight .wave-top,
+:root.theme-midnight .wave-bottom {
+  width: 100%;
+  height: 10rem;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-size: 100% 10rem;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 800px) {
+  .theme-midnight .wave-top,
+  .theme-midnight .wave-bottom,
+  :root.theme-midnight .wave-top,
+  :root.theme-midnight .wave-bottom {
+    height: 8rem;
+    background-size: 100% 8rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .theme-midnight .wave-top,
+  .theme-midnight .wave-bottom,
+  :root.theme-midnight .wave-top,
+  :root.theme-midnight .wave-bottom {
+    height: 6rem;
+    background-size: 100% 6rem;
+  }
+}
+.theme-midnight .wave-top,
+.theme-midnight .wave-top.bg0,
+:root.theme-midnight .wave-top,
+:root.theme-midnight .wave-top.bg0 {
+  margin-top: 1rem;
+  margin-bottom: 0px;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23000d14%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E");
+}
+.theme-midnight .wave-top.extra-bg,
+:root.theme-midnight .wave-top.extra-bg {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23000d14%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E");
+}
+.theme-midnight .wave-bottom,
+.theme-midnight .wave-bottom.bg0,
+:root.theme-midnight .wave-bottom,
+:root.theme-midnight .wave-bottom.bg0 {
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23000d14%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
+}
+.theme-midnight .wave-bottom.extra-bg,
+:root.theme-midnight .wave-bottom.extra-bg {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23000d14%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
+}
