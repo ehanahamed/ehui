@@ -437,23 +437,6 @@ textarea.horizontal {
   overflow: hidden;
 }
 
-/* fancy stuff */
-.hero > .logo::before {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  z-index: -1;
-  background-color: var(--main);
-  opacity: 0.2;
-  filter: blur(1rem);
-  border-radius: 50%;
-}
-
-html.min .hero > .logo::before {
-  display: none;
-}
-
 .hero > .logo > svg {
   margin-top: 0px;
 }
