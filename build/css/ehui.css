@@ -458,6 +458,8 @@ button:focus-visible,
   outline: 0.2rem solid var(--main);
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
+  position: relative;
+  z-index: 2;
 }
 
 .select-wrapper {
@@ -1974,23 +1976,6 @@ textarea.horizontal {
   margin: 0px;
   opacity: 0;
   overflow: hidden;
-}
-
-/* fancy stuff */
-.hero > .logo::before {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  z-index: -1;
-  background-color: var(--main);
-  opacity: 0.2;
-  filter: blur(1rem);
-  border-radius: 50%;
-}
-
-html.min .hero > .logo::before {
-  display: none;
 }
 
 .hero > .logo > svg {
