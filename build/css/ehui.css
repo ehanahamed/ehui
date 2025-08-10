@@ -27,7 +27,7 @@ body {
 
 ::selection {
   background-color: var(--select-bg);
-  color: var(--select);
+  color: var(--on-select-bg);
 }
 
 h1,
