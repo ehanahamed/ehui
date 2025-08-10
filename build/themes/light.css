@@ -11,10 +11,10 @@
   --yay-alt: #087f5b;
   --yay-faint: #087f5b;
   --on-yay: #087f5b;
-  --main: #4E4EEF;
-  --main-on-bg: #4E4EEF;
-  --main-alt: #3C3CC3;
-  --main-faint: #3C3CC3;
+  --main: #4551f0;
+  --main-on-bg: #4551f0;
+  --main-alt: #333ac0;
+  --main-faint: #333ac0;
   --on-main: #fff;
   --extra: #0fb180;
   --extra-on-bg: #0fb180;
@@ -32,7 +32,7 @@
   --bg-1: #fefefe;
   --bg-0: #f8f8f8;
   --on-select-bg: #242528;
-  --select-bg: #DBDBFF;
+  --select-bg: #d4defa;
 }
 .theme-light .wave-top,
 .theme-light .wave-bottom,
