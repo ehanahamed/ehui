@@ -15,7 +15,7 @@
   --main-on-bg: #4E4EEF;
   --main-alt: #3C3CC3;
   --main-faint: #3C3CC3;
-  --on-main: #3C3CC3;
+  --on-main: #fff;
   --extra: #0fb180;
   --extra-on-bg: #0fb180;
   --extra-alt: #087f5b;
@@ -194,7 +194,7 @@
   --main-on-bg: #4E4EEF;
   --main-alt: #3C3CC3;
   --main-faint: #3C3CC3;
-  --on-main: #3C3CC3;
+  --on-main: #fff;
   --extra: #0fb180;
   --extra-on-bg: #0fb180;
   --extra-alt: #087f5b;
