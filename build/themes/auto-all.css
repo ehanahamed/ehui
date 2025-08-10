@@ -95,32 +95,32 @@
   --ohno-on-bg: #ff6666;
   --ohno-alt: #ff9999;
   --ohno-faint: #ff9999;
-  --on-ohno: #111418;
+  --on-ohno: #101217;
   --yay: #80FFBF;
   --yay-on-bg: #80FFBF;
   --yay-alt: #B3FFD9;
   --yay-faint: #B3FFD9;
-  --on-yay: #111418;
+  --on-yay: #101217;
   --main: #80AAFF;
   --main-on-bg: #80AAFF;
   --main-alt: #B3CCFF;
   --main-faint: #B3CCFF;
-  --on-main: #111418;
+  --on-main: #101217;
   --extra: #80FFBF;
   --extra-on-bg: #80FFBF;
   --extra-alt: #B3FFD9;
   --extra-faint: #B3FFD9;
-  --on-extra: #111418;
-  --extra-bg: #111418;
+  --on-extra: #101217;
+  --extra-bg: #101217;
   --fg-2: #c3cce9;
   --fg-1: #c3cce9;
   --fg-0: #9399b2;
-  --border: #272C34;
-  --bg-3-alt: #272C34;
-  --bg-3: #25292E;
-  --bg-2: #1D2126;
-  --bg-1: #161A1F;
-  --bg-0: #111418;
+  --border: #262B33;
+  --bg-3-alt: #262B33;
+  --bg-3: #25282E;
+  --bg-2: #1D2026;
+  --bg-1: #16191F;
+  --bg-0: #101217;
   --on-select-bg: #c3cce9;
   --select-bg: #3A4A6B;
 }
@@ -159,11 +159,11 @@
 :root.theme-dark .wave-top.bg0 {
   margin-top: 1rem;
   margin-bottom: 0px;
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23111418%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23101217%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E");
 }
 .theme-dark .wave-top.extra-bg,
 :root.theme-dark .wave-top.extra-bg {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23111418%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23101217%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E");
 }
 .theme-dark .wave-bottom,
 .theme-dark .wave-bottom.bg0,
@@ -171,11 +171,11 @@
 :root.theme-dark .wave-bottom.bg0 {
   margin-top: 0px;
   margin-bottom: 1rem;
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23111418%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23101217%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
 }
 .theme-dark .wave-bottom.extra-bg,
 :root.theme-dark .wave-bottom.extra-bg {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23111418%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23101217%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
 }
 
 .theme-monochrome,
@@ -442,32 +442,32 @@
     --ohno-on-bg: #ff6666;
     --ohno-alt: #ff9999;
     --ohno-faint: #ff9999;
-    --on-ohno: #111418;
+    --on-ohno: #101217;
     --yay: #80FFBF;
     --yay-on-bg: #80FFBF;
     --yay-alt: #B3FFD9;
     --yay-faint: #B3FFD9;
-    --on-yay: #111418;
+    --on-yay: #101217;
     --main: #80AAFF;
     --main-on-bg: #80AAFF;
     --main-alt: #B3CCFF;
     --main-faint: #B3CCFF;
-    --on-main: #111418;
+    --on-main: #101217;
     --extra: #80FFBF;
     --extra-on-bg: #80FFBF;
     --extra-alt: #B3FFD9;
     --extra-faint: #B3FFD9;
-    --on-extra: #111418;
-    --extra-bg: #111418;
+    --on-extra: #101217;
+    --extra-bg: #101217;
     --fg-2: #c3cce9;
     --fg-1: #c3cce9;
     --fg-0: #9399b2;
-    --border: #272C34;
-    --bg-3-alt: #272C34;
-    --bg-3: #25292E;
-    --bg-2: #1D2126;
-    --bg-1: #161A1F;
-    --bg-0: #111418;
+    --border: #262B33;
+    --bg-3-alt: #262B33;
+    --bg-3: #25282E;
+    --bg-2: #1D2026;
+    --bg-1: #16191F;
+    --bg-0: #101217;
     --on-select-bg: #c3cce9;
     --select-bg: #3A4A6B;
   }
@@ -500,18 +500,18 @@
   :root .wave-top.bg0 {
     margin-top: 1rem;
     margin-bottom: 0px;
-    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23111418%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23101217%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E");
   }
   :root .wave-top.extra-bg {
-    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23111418%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23101217%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E");
   }
   :root .wave-bottom,
   :root .wave-bottom.bg0 {
     margin-top: 0px;
     margin-bottom: 1rem;
-    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23111418%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23101217%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
   }
   :root .wave-bottom.extra-bg {
-    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23111418%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23101217%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
   }
 }
