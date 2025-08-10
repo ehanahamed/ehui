@@ -331,7 +331,7 @@ header > .nav,
   .nav-menu > div.current > .a:focus,
   .nav-menu > div.current > button:focus,
   .nav-menu > div.current > .button:focus {
-    color: var(--main-alt);
+    color: var(--main-alt-on-bg);
     background-color: var(--bg-3);
   }
 }
@@ -390,7 +390,7 @@ table.inner > tbody:not(:last-child) {
 
 a,
 .a {
-  color: var(--main);
+  color: var(--main-on-bg);
   cursor: pointer;
   border-radius: $border-radius-text;
   font-size: 1rem;
@@ -405,12 +405,12 @@ a:hover,
 a:focus,
 .a:hover,
 .a:focus {
-  color: var(--main-alt);
+  color: var(--main-alt-on-bg);
 }
 
 a:focus-visible,
 .a:focus-visible {
-  outline: 0.2rem solid var(--main);
+  outline: 0.2rem solid var(--main-on-bg);
   outline-offset: 0.4rem;
   transition-duration: 0.1s;
 }
