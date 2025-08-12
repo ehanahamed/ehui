@@ -4,7 +4,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-    base: "/ehui/docs/"
+    base: "/ehui/docs/",
 	integrations: [
 		starlight({
 			title: 'EhUI',
