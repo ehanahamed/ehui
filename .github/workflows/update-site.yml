@@ -18,6 +18,7 @@ jobs:
           cd ehui/docs/
           npm install
           npm run build
+          rm -rf ../../site/site/ehui/docs
           cp -R dist ../../site/site/ehui/docs
       - name: Commit & push to site (gh)
         run: |
