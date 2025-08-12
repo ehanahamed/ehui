@@ -3,20 +3,30 @@ title: EhUI Docs
 description: Get started building your docs site with Starlight.
 template: splash
 hero:
-  tagline: Customizable, free, & open source UI kit/CSS library.
+  tagline: Customizable free & open source UI kit/CSS library.
   actions:
-    - text: Get started
+    - text: Read the docs
       link: /ehui/docs/guides/example/
-      icon: right-arrow
-    - text: Demos & Main Site
+    - text: Demo & main website
       link: https://starlight.astro.build
-      icon: external
+      icon: right-arrow
       variant: minimal
 ---
 
-import { Steps, Card, CardGrid } from '@astrojs/starlight/components';
+import { Steps, LinkButton, LinkCard, Card, CardGrid } from '@astrojs/starlight/components';
 
-[Codeberg](https://codeberg.org/ehanahamed/ehui) · [GitHub](https://github.com/ehanahamed/ehui)
+<CardGrid>
+    <LinkCard
+        title="Codeberg"
+        href="https://codeberg.org/ehanahamed/ehui"
+    />
+    <LinkCard
+        title="GitHub"
+        href="https://github.com/ehanahamed/ehui"
+    />
+</CardGrid>
+
+## Get Started
 
 <Steps>
 
@@ -31,21 +41,8 @@ import { Steps, Card, CardGrid } from '@astrojs/starlight/components';
    <link rel="stylesheet" href="https://ehan.dev/ehui/themes/auto-light-dark.min.css">
    ```
 
+3. You're all set
+   
+   <LinkButton href="/ehui/docs/get-started" icon="right-arrow">More Details</LinkButton>
 </Steps>
 
-## Next steps
-
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
-</CardGrid>
