@@ -16,6 +16,7 @@ jobs:
       - name: Build & copy docs
         run: |
           cd ehui/docs/
+          npm install
           npm run build
           cp -R .dist ../../site/site/ehui/docs
       - name: Commit & push to site (gh)
