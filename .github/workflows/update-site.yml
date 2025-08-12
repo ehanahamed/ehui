@@ -13,6 +13,11 @@ jobs:
         run: |
           rm -rf site/site/ehui
           cp -R ehui/site site/site/ehui
+      - name: Build & copy docs
+        run: |
+          cd ehui/docs/
+          npm run build
+          cp -R .dist ../../site/site/ehui/docs
       - name: Commit & push to site (gh)
         run: |
           cd site
