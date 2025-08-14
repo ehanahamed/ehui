@@ -1,9 +1,9 @@
-name: Update Site
+name: Update Site & Docs
 on:
   workflow_dispatch:
 jobs:
   build:
-    name: Update site
+    name: Update site & docs
     runs-on: ubuntu-latest
     steps:
       - name: Clone ehui (from GitHub)
@@ -14,6 +14,13 @@ jobs:
         run: |
           rm -rf site/site/ehui
           cp -R ehui/site site/site/ehui
+      - name: Build & copy docs
+        run: |
+          cd ehui/docs/
+          npm install
+          npm run build
+          rm -rf ../../site/site/ehui/docs
+          cp -R dist ../../site/site/ehui/docs
       - name: Commit & push to site (gh)
         run: |
           cd site
