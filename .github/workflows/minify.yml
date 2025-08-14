@@ -1,3 +1,4 @@
+name: Minify
 on:
   workflow_dispatch:
 jobs:

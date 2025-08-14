@@ -1,3 +1,4 @@
+name: Compile
 on:
   workflow_dispatch:
 jobs:
