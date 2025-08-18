@@ -14,6 +14,7 @@
   --main: #4551f0;
   --main-on-bg: #4551f0;
   --main-alt: #333ac0;
+  --main-alt-on-bg: #333ac0;
   --main-faint: #333ac0;
   --on-main: #fff;
   --extra: #0fb180;
@@ -104,6 +105,7 @@
   --main: #80AAFF;
   --main-on-bg: #80AAFF;
   --main-alt: #B3CCFF;
+  --main-alt-on-bg: #B3CCFF;
   --main-faint: #B3CCFF;
   --on-main: #101217;
   --extra: #80FFBF;
@@ -373,6 +375,7 @@
   --main: #4551f0;
   --main-on-bg: #4551f0;
   --main-alt: #333ac0;
+  --main-alt-on-bg: #333ac0;
   --main-faint: #333ac0;
   --on-main: #fff;
   --extra: #0fb180;
@@ -451,6 +454,7 @@
     --main: #80AAFF;
     --main-on-bg: #80AAFF;
     --main-alt: #B3CCFF;
+    --main-alt-on-bg: #B3CCFF;
     --main-faint: #B3CCFF;
     --on-main: #101217;
     --extra: #80FFBF;

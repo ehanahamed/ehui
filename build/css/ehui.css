@@ -316,7 +316,7 @@ header > .nav,
   .nav-menu > div.current > .a:focus,
   .nav-menu > div.current > button:focus,
   .nav-menu > div.current > .button:focus {
-    color: var(--main-alt-on-bg);
+    color: var(--main-alt-on-bg, var(--main-alt));
     background-color: var(--bg-3);
   }
 }
@@ -389,7 +389,7 @@ a:hover,
 a:focus,
 .a:hover,
 .a:focus {
-  color: var(--main-alt-on-bg);
+  color: var(--main-alt-on-bg, var(--main-alt));
 }
 
 a:focus-visible,
