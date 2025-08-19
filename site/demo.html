@@ -727,6 +727,22 @@
             <summary>Text goes here</summary>
             <p>More text goes here and here and here</p>
           </details>
+          <p style="margin-top: 4rem;">Progress bars:</p>
+          <div class="progress-bar" id="progress-bar">
+            <div style="width: 12%;"></div>
+          </div>
+          <p class="fg0">Change progress (live)</p>
+            <div class="flex nowrap compact-gap" style="align-items: center; align-content: center; margin-top: 0.2rem;">
+                <input type="text" id="progress-bar-input" placeholder="12" style="width: 4rem;"><span>%</span>
+            </div>
+          <p style="margin-top: 2rem;">More progress bar styles:</p>
+          <div class="progress-bar yay" id="progress-bar2">
+            <div style="width: 34%;"></div>
+          </div>
+          <p class="fg0">Change progress (live)</p>
+            <div class="flex nowrap compact-gap" style="align-items: center; align-content: center; margin-top: 0.2rem;">
+                <input type="text" id="progress-bar2-input" placeholder="34" style="width: 4rem;"><span>%</span>
+            </div>
         </div>
       </div>
     </main>
@@ -734,6 +750,14 @@
       <h2>Footer</h2>
       <p>Text text text text</p>
     </footer>
+        <script>
+        document.getElementById("progress-bar-input").addEventListener("input", (ev) => {
+            const n = parseFloat(ev.target.value);
+            if (!isNaN(n) && n >= 0 && n <= 100) {
+                document.getElementById("progress-bar").children[0].style.width = ev.target.value+"%";
+            }
+        })
+        </script>
     <!--<script src="https://ehui.ehan.dev/js/ehUi.js"></script>
     <script src="https://ehui.ehan.dev/js/modals.js"></script>
     <script>
