@@ -736,12 +736,35 @@
                 <input type="text" id="progress-bar-input" placeholder="12" style="width: 4rem;"><span>%</span>
             </div>
           <p style="margin-top: 2rem;">More progress bar styles:</p>
-          <div class="progress-bar yay" id="progress-bar2">
+          <div class="progress-bar thin" id="progress-bar2">
             <div style="width: 34%;"></div>
           </div>
-          <p class="fg0">Change progress (live)</p>
-            <div class="flex nowrap compact-gap" style="align-items: center; align-content: center; margin-top: 0.2rem;">
+            <div class="flex nowrap compact-gap" style="align-items: center; align-content: center;">
                 <input type="text" id="progress-bar2-input" placeholder="34" style="width: 4rem;"><span>%</span>
+            </div>
+          <div class="progress-bar yay" id="progress-bar3" style="margin-top: 2rem;">
+            <div style="width: 67%;"></div>
+          </div>
+            <div class="flex nowrap compact-gap" style="align-items: center; align-content: center;">
+                <input type="text" id="progress-bar3-input" placeholder="67" style="width: 4rem;"><span>%</span>
+            </div>
+          <div class="progress-bar yay thin" id="progress-bar31" style="margin-top: 2rem;">
+            <div style="width: 67%;"></div>
+          </div>
+            <div class="flex nowrap compact-gap" style="align-items: center; align-content: center;">
+                <input type="text" id="progress-bar31-input" placeholder="67" style="width: 4rem;"><span>%</span>
+            </div>
+          <div class="progress-bar fg1" id="progress-bar4" style="margin-top: 2rem;">
+            <div style="width: 50%;"></div>
+          </div>
+            <div class="flex nowrap compact-gap" style="align-items: center; align-content: center;">
+                <input type="text" id="progress-bar4-input" placeholder="50" style="width: 4rem;"><span>%</span>
+            </div>
+          <div class="progress-bar ohno" id="progress-bar5" style="margin-top: 2rem;">
+            <div style="width: 80%;"></div>
+          </div>
+            <div class="flex nowrap compact-gap" style="align-items: center; align-content: center;">
+                <input type="text" id="progress-bar5-input" placeholder="80" style="width: 4rem;"><span>%</span>
             </div>
         </div>
       </div>
@@ -752,11 +775,78 @@
     </footer>
         <script>
         document.getElementById("progress-bar-input").addEventListener("input", (ev) => {
-            const n = parseFloat(ev.target.value);
-            if (!isNaN(n) && n >= 0 && n <= 100) {
-                document.getElementById("progress-bar").children[0].style.width = ev.target.value+"%";
+            let n = parseFloat(ev.target.value);
+            if (!isNaN(n) && n > 100) {
+                n = 100;
+            }
+            if (!isNaN(n) && n < 0) {
+                n = 0;
+            }
+            if (!isNaN(n)) {
+                document.getElementById("progress-bar").children[0].style.width = n+"%";
             }
         })
+        document.getElementById("progress-bar2-input").addEventListener("input", (ev) => {
+            let n = parseFloat(ev.target.value);
+            if (!isNaN(n) && n > 100) {
+                n = 100;
+            }
+            if (!isNaN(n) && n < 0) {
+                n = 0;
+            }
+            if (!isNaN(n)) {
+                document.getElementById("progress-bar2").children[0].style.width = n+"%";
+            }
+        })
+        document.getElementById("progress-bar3-input").addEventListener("input", (ev) => {
+            let n = parseFloat(ev.target.value);
+            if (!isNaN(n) && n > 100) {
+                n = 100;
+            }
+            if (!isNaN(n) && n < 0) {
+                n = 0;
+            }
+            if (!isNaN(n)) {
+                document.getElementById("progress-bar3").children[0].style.width = n+"%";
+            }
+        })
+        document.getElementById("progress-bar31-input").addEventListener("input", (ev) => {
+            let n = parseFloat(ev.target.value);
+            if (!isNaN(n) && n > 100) {
+                n = 100;
+            }
+            if (!isNaN(n) && n < 0) {
+                n = 0;
+            }
+            if (!isNaN(n)) {
+                document.getElementById("progress-bar31").children[0].style.width = n+"%";
+            }
+        })
+        document.getElementById("progress-bar4-input").addEventListener("input", (ev) => {
+            let n = parseFloat(ev.target.value);
+            if (!isNaN(n) && n > 100) {
+                n = 100;
+            }
+            if (!isNaN(n) && n < 0) {
+                n = 0;
+            }
+            if (!isNaN(n)) {
+                document.getElementById("progress-bar4").children[0].style.width = n+"%";
+            }
+        })
+        document.getElementById("progress-bar5-input").addEventListener("input", (ev) => {
+            let n = parseFloat(ev.target.value);
+            if (!isNaN(n) && n > 100) {
+                n = 100;
+            }
+            if (!isNaN(n) && n < 0) {
+                n = 0;
+            }
+            if (!isNaN(n)) {
+                document.getElementById("progress-bar5").children[0].style.width = n+"%";
+            }
+        })
+        </script>
         </script>
     <!--<script src="https://ehui.ehan.dev/js/ehUi.js"></script>
     <script src="https://ehui.ehan.dev/js/modals.js"></script>
