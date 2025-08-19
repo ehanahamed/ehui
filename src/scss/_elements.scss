@@ -1155,3 +1155,43 @@ details[open] summary {
   border-bottom: 0.2rem solid var(--border);
   margin-bottom: 1rem;
 }
+
+/*
+  <div class="progress-bar">
+    <div width="12%"></div>
+  </div>
+ */
+.progress-bar {
+  height: 1rem;
+  border-radius: 1rem;
+  background-color: var(--border);
+}
+.progress-bar > div {
+  content: "";
+  height: 1rem;
+  border-radius: 1rem;
+  background-color: var(--main);
+  transition: width 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.progress-bar.thin {
+  height: 0.4rem;
+}
+.progress-bar.thin > div {
+  height: 0.4rem;
+}
+
+.progress-bar.yay > div {
+  background-color: var(--yay);
+}
+.progress-bar.ohno > div {
+  background-color: var(--ohno);
+}
+.progress-bar.fg0 > div {
+  background-color: var(--fg-0);
+}
+.progress-bar.fg1 > div {
+  background-color: var(--fg-1);
+}
+.progress-bar.main > div {
+  background-color: var(--main);
+}
