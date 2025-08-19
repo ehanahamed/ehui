@@ -1164,6 +1164,7 @@ details[open] summary {
 .progress-bar {
   height: 1rem;
   border-radius: 1rem;
+  overflow: hidden;
   background-color: var(--border);
 }
 .progress-bar > div {
