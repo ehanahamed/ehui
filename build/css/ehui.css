@@ -460,6 +460,12 @@ button:focus-visible,
   transition-duration: 0.1s;
 }
 
+label.button:focus-within {
+  outline: 0.2rem solid var(--main);
+  outline-offset: 0.2rem;
+  transition-duration: 0.1s;
+}
+
 .select-wrapper {
   position: relative;
   display: inline-block;
@@ -834,6 +840,21 @@ textarea:focus {
 .dropdown {
   position: relative;
   display: inline-block;
+  outline: none;
+  border-radius: 1.6rem;
+}
+
+.dropdown:focus-visible {
+  outline: 0.2rem solid var(--main);
+  outline-offset: 0.2rem;
+}
+
+.dropdown.yay {
+  outline-color: var(--yay);
+}
+
+.dropdown.ohno {
+  outline-color: var(--ohno);
 }
 
 .dropdown .content {
