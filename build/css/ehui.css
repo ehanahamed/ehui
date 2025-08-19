@@ -673,65 +673,6 @@ textarea:focus {
   outline: none;
 }
 
-.radio input[type=radio] {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
-}
-
-.radio input[type=radio] + span {
-  cursor: pointer;
-  color: var(--fg-1);
-}
-
-.radio input[type=radio] + span::before {
-  content: "";
-  border: 0.2rem solid var(--main);
-  border-radius: 50%;
-  display: inline-block;
-  width: 1.4rem;
-  height: 1.4rem;
-  margin-right: 0.5rem;
-  margin-top: 0.2rem;
-  vertical-align: -0.4rem;
-  outline: none;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-out;
-}
-
-.radio input[type=radio]:checked + span::before {
-  border-radius: 50%;
-  background-color: var(--main-alt);
-  border: 0.4rem solid var(--main);
-  transition-duration: 0.2s;
-  transition-timing-function: ease-out;
-}
-
-.radio input[type=radio]:hover + span::before {
-  border-color: var(--main-alt);
-  transition-duration: 0.2s;
-  transition-timing-function: ease-out;
-}
-
-.radio input[type=radio]:focus-visible + span::before {
-  outline: 0.2rem solid var(--main);
-  outline-offset: 0.2rem;
-  transition-duration: 0.1s;
-}
-
-.radio input[type=radio]:disabled + span {
-  cursor: default;
-  color: var(--fg-0);
-}
-
-.radio input[type=radio]:disabled + span::before {
-  border-color: var(--border);
-}
-
-.radio input[type=radio]:disabled:checked + span::before {
-  background-color: var(--fg-0);
-}
-
 .card {
   width: 40rem;
   height: 20rem;
