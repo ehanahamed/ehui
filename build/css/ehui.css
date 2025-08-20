@@ -997,11 +997,13 @@ button.faint:focus,
   border-color: var(--main-alt);
 }
 
-.combo-select .combo-selected-icon {
+.combo-select .combo-selected-icon,
+.button-box .button-box-selected-icon {
   display: none;
 }
 
-.combo-select > .selected > .combo-selected-icon {
+.combo-select > .selected > .combo-selected-icon,
+.button-box.selected .button-box-selected-icon {
   display: inline;
 }
 
