@@ -678,6 +678,30 @@
               Incorrect
             </button>
           </div>
+        <br>
+        <br>
+        <p>You can use the <code>button-box-selected-icon</code> class to show/hide icons when selected</p>
+        <p>For example, Question Types: <span class="fg0">(select multiple)</span></p>
+        <div style="display: grid; grid-template-columns: auto; justify-content: start;">
+            <button class="button-box selected" style="display: flex;" id="questiontypes1">
+                <i class="button-box-selected-icon nf nf-fa-check"></i>
+                Multiple Choice
+            </button>
+            <button class="button-box" style="display: flex;" id="questiontypes2">
+                <i class="button-box-selected-icon nf nf-fa-check"></i>
+                True/False
+            </button>
+            <button class="button-box selected" style="display: flex;" id="questiontypes3">
+                <i class="button-box-selected-icon nf nf-fa-check"></i>
+                Matching
+            </button>
+            <button class="button-box" style="display: flex;" id="questiontypes4">
+                <i class="button-box-selected-icon nf nf-fa-check"></i>
+                Free Response
+            </button>
+        </div>
+        <br>
+        <br>
           <p>Accordions using the <code>&lt;details&gt;</code> element</p>
           <details>
             <summary>Text goes here</summary>
@@ -730,6 +754,14 @@
       <p>Text text text text</p>
     </footer>
         <script>
+        function questiontypesonclick(e) {
+            e.target.classList.toggle("selected");
+        }
+        document.getElementById("questiontypes1").addEventListener("click", questiontypesonclick);
+        document.getElementById("questiontypes2").addEventListener("click", questiontypesonclick);
+        document.getElementById("questiontypes3").addEventListener("click", questiontypesonclick);
+        document.getElementById("questiontypes4").addEventListener("click", questiontypesonclick);
+
         document.getElementById("progress-bar-input").addEventListener("input", (ev) => {
             let n = parseFloat(ev.target.value);
             if (!isNaN(n) && n > 100) {
