@@ -456,7 +456,9 @@ button.alt,
 button:hover,
 button:focus,
 .button:hover,
-.button:focus {
+.button:focus,
+.dropdown:focus > button,
+.dropdown:focus > .button {
   background-color: var(--main-alt);
   color: var(--bg-1);
 }
@@ -464,13 +466,17 @@ button:focus,
 button.alt:hover,
 button.alt:focus,
 .button.alt:hover,
-.button.alt:focus {
+.button.alt:focus,
+.dropdown:focus > button.alt,
+.dropdown:focus > .button.alt {
   background-color: var(--bg-3);
   color: var(--main-alt);
 }
 
 button:focus-visible,
-.button:focus-visible {
+.button:focus-visible,
+.dropdown:focus-visible > button,
+.dropdown:focus-visible > .button {
   outline: 0.2rem solid var(--main);
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
@@ -859,17 +865,6 @@ textarea:focus {
   border-radius: $border-radius-button;
 }
 
-.dropdown:focus-visible {
-  outline: 0.2rem solid var(--main);
-  outline-offset: 0.2rem;
-}
-.dropdown.yay {
-  outline-color: var(--yay);
-}
-.dropdown.ohno {
-  outline-color: var(--ohno);
-}
-
 .dropdown .content {
   display: none;
   position: absolute;
@@ -939,7 +934,13 @@ button.icon-only-button:focus,
 button.faint:hover,
 .button.faint:hover,
 button.faint:focus,
-.button.faint:focus {
+.button.faint:focus,
+.dropdown:focus > button.dropdown-toggle,
+.dropdown:focus > .button.dropdown-toggle,
+.dropdown:focus > button.icon-only-button,
+.dropdown:focus > .button.icon-only-button,
+.dropdown:focus > button.faint,
+.dropdown:focus > .button.faint {
   background-color: var(--bg-3);
   border: none;
   color: var(--main-alt);

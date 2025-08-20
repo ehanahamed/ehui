@@ -440,7 +440,9 @@ button.alt,
 button:hover,
 button:focus,
 .button:hover,
-.button:focus {
+.button:focus,
+.dropdown:focus > button,
+.dropdown:focus > .button {
   background-color: var(--main-alt);
   color: var(--bg-1);
 }
@@ -448,13 +450,17 @@ button:focus,
 button.alt:hover,
 button.alt:focus,
 .button.alt:hover,
-.button.alt:focus {
+.button.alt:focus,
+.dropdown:focus > button.alt,
+.dropdown:focus > .button.alt {
   background-color: var(--bg-3);
   color: var(--main-alt);
 }
 
 button:focus-visible,
-.button:focus-visible {
+.button:focus-visible,
+.dropdown:focus-visible > button,
+.dropdown:focus-visible > .button {
   outline: 0.2rem solid var(--main);
   outline-offset: 0.2rem;
   transition-duration: 0.1s;
@@ -844,19 +850,6 @@ textarea:focus {
   border-radius: 1.6rem;
 }
 
-.dropdown:focus-visible {
-  outline: 0.2rem solid var(--main);
-  outline-offset: 0.2rem;
-}
-
-.dropdown.yay {
-  outline-color: var(--yay);
-}
-
-.dropdown.ohno {
-  outline-color: var(--ohno);
-}
-
 .dropdown .content {
   display: none;
   position: absolute;
@@ -926,7 +919,13 @@ button.icon-only-button:focus,
 button.faint:hover,
 .button.faint:hover,
 button.faint:focus,
-.button.faint:focus {
+.button.faint:focus,
+.dropdown:focus > button.dropdown-toggle,
+.dropdown:focus > .button.dropdown-toggle,
+.dropdown:focus > button.icon-only-button,
+.dropdown:focus > .button.icon-only-button,
+.dropdown:focus > button.faint,
+.dropdown:focus > .button.faint {
   background-color: var(--bg-3);
   border: none;
   color: var(--main-alt);
@@ -1782,7 +1781,9 @@ button.alt.extra,
 button.alt:hover.ohno,
 button.alt:focus.ohno,
 .button.alt:hover.ohno,
-.button.alt:focus.ohno {
+.button.alt:focus.ohno,
+.dropdown:focus > button.alt.ohno,
+.dropdown:focus > .button.alt.ohno {
   background-color: var(--bg-3);
   color: var(--ohno-alt);
 }
@@ -1790,7 +1791,9 @@ button.alt:focus.ohno,
 button.alt:hover.yay,
 button.alt:focus.yay,
 .button.alt:hover.yay,
-.button.alt:focus.yay {
+.button.alt:focus.yay,
+.dropdown:focus > button.alt.yay,
+.dropdown:focus > .button.alt.yay {
   background-color: var(--bg-3);
   color: var(--yay-alt);
 }
@@ -1798,7 +1801,9 @@ button.alt:focus.yay,
 button.alt:hover.extra,
 button.alt:focus.extra,
 .button.alt:hover.extra,
-.button.alt:focus.extra {
+.button.alt:focus.extra,
+.dropdown:focus > button.alt.extra,
+.dropdown:focus > .button.alt.extra {
   background-color: var(--bg-3);
   color: var(--extra-alt);
 }
@@ -1806,7 +1811,9 @@ button.alt:focus.extra,
 button:hover.ohno,
 button:focus.ohno,
 .button:hover.ohno,
-.button:focus.ohno {
+.button:focus.ohno,
+.dropdown:focus > button.ohno,
+.dropdown:focus > .button.ohno {
   background-color: var(--ohno-alt);
   color: var(--bg-1);
 }
@@ -1814,7 +1821,9 @@ button:focus.ohno,
 button:hover.yay,
 button:focus.yay,
 .button:hover.yay,
-.button:focus.yay {
+.button:focus.yay,
+.dropdown:focus > button.yay,
+.dropdown:focus > .button.yay {
   background-color: var(--yay-alt);
   color: var(--bg-1);
 }
@@ -1822,23 +1831,31 @@ button:focus.yay,
 button:hover.extra,
 button:focus.extra,
 .button:hover.extra,
-.button:focus.extra {
+.button:focus.extra,
+.dropdown:focus > button.extra,
+.dropdown:focus > .button.extra {
   background-color: var(--extra-alt);
   color: var(--extra-bg);
 }
 
 button:focus-visible.ohno,
-.button:focus-visible.ohno {
+.button:focus-visible.ohno,
+.dropdown:focus-visible > button.ohno,
+.dropdown:focus-visible > .button.ohno {
   outline-color: var(--ohno);
 }
 
 button:focus-visible.yay,
-.button:focus-visible.yay {
+.button:focus-visible.yay,
+.dropdown:focus-visible > button.yay,
+.dropdown:focus-visible > .button.yay {
   outline-color: var(--yay);
 }
 
 button:focus-visible.extra,
-.button:focus-visible.extra {
+.button:focus-visible.extra,
+.dropdown:focus-visible > button.extra,
+.dropdown:focus-visible > .button.extra {
   outline-color: var(--extra);
 }
 
