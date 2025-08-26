@@ -702,6 +702,31 @@
         </div>
         <br>
         <br>
+        <p>You can use classes <code>button-box</code> and <code>with-bordercolor-border</code> when button boxes are inside of div elements that have <code>class="box"</code></p>
+        <div class="box">
+            <p class="fg0">Select the matching definition</p>
+            <p class="h4">ammonium</p>
+            <div style="display: grid; gap: 0.2rem; grid-template-columns: auto; justify-content: start; margin-top: 0.6rem;">
+                <button style="display: flex; justify-items: start; justify-content: start; text-align: start; margin-top: 0px;" class="button-box with-bordercolor-border" id="button-box-with-bordercolor-border-incorrect1">
+                    <i class="nf nf-fa-check button-box-selected-icon"></i> HCO3
+                </button>
+                <button style="display: flex; justify-items: start; justify-content: start; text-align: start; margin-top: 0px;" class="button-box with-bordercolor-border" id="button-box-with-bordercolor-border-correct">
+                    <i class="nf nf-fa-check button-box-selected-icon"></i> NH4
+                </button>
+                <button style="display: flex; justify-items: start; justify-content: start; text-align: start; margin-top: 0px;" class="button-box with-bordercolor-border" id="button-box-with-bordercolor-border-incorrect2">
+                    <i class="nf nf-fa-check button-box-selected-icon"></i> C2H3O2
+                </button>
+                <button style="display: flex; justify-items: start; justify-content: start; text-align: start; margin-top: 0px;" class="button-box with-bordercolor-border" id="button-box-with-bordercolor-border-incorrect3">
+                    <i class="nf nf-fa-check button-box-selected-icon"></i> ClO
+                </button>
+            </div>
+        </div>
+        <div class="flex">
+            <button class="yay alt" id="button-box-with-bordercolor-border-check-answer"><i class="nf nf-fa-check"></i> Check Answer</button>
+            <button class="faint" id="button-box-with-bordercolor-border-reset">Reset</button>
+        </div>
+        <br>
+        <br>
           <p>Accordions using the <code>&lt;details&gt;</code> element</p>
           <details>
             <summary>Text goes here</summary>
@@ -754,6 +779,70 @@
       <p>Text text text text</p>
     </footer>
         <script>
+        buttonBoxWBorderIncorrect1 = document.getElementById("button-box-with-bordercolor-border-incorrect1");
+        buttonBoxWBorderCorrect = document.getElementById("button-box-with-bordercolor-border-correct");
+        buttonBoxWBorderIncorrect2 = document.getElementById("button-box-with-bordercolor-border-incorrect2");
+        buttonBoxWBorderIncorrect3 = document.getElementById("button-box-with-bordercolor-border-incorrect3");
+
+        buttonBoxWBorderCheckAnswer = document.getElementById("button-box-with-bordercolor-border-check-answer");
+        buttonBoxWBorderReset = document.getElementById("button-box-with-bordercolor-border-reset");
+
+        function buttonBoxWBorderOnClickHandler(e) {
+            if (buttonBoxWBorderAnswerSubmitted) {
+                return;
+            }
+            buttonBoxWBorderIncorrect1.classList.remove("selected");
+            buttonBoxWBorderCorrect.classList.remove("selected");
+            buttonBoxWBorderIncorrect2.classList.remove("selected");
+            buttonBoxWBorderIncorrect3.classList.remove("selected");
+            e.target.classList.add("selected");
+        }
+        buttonBoxWBorderIncorrect1.addEventListener("click", buttonBoxWBorderOnClickHandler);
+        buttonBoxWBorderCorrect.addEventListener("click", buttonBoxWBorderOnClickHandler);
+        buttonBoxWBorderIncorrect2.addEventListener("click", buttonBoxWBorderOnClickHandler);
+        buttonBoxWBorderIncorrect3.addEventListener("click", buttonBoxWBorderOnClickHandler);
+        let buttonBoxWBorderAnswerSubmitted = false;
+        buttonBoxWBorderCheckAnswer.addEventListener("click", () => {
+            let anySelected = false;
+            if (buttonBoxWBorderIncorrect1.classList.contains("selected")) {
+                anySelected = true;
+                buttonBoxWBorderIncorrect1.classList.add("ohno");
+                buttonBoxWBorderIncorrect1.children[0].classList.remove("nf-fa-check");
+                buttonBoxWBorderIncorrect1.children[0].classList.add("nf-fa-xmark");
+            }
+            if (buttonBoxWBorderCorrect.classList.contains("selected")) {
+                anySelected = true;
+                buttonBoxWBorderCorrect.classList.add("yay");
+            }
+            if (buttonBoxWBorderIncorrect2.classList.contains("selected")) {
+                anySelected = true;
+                buttonBoxWBorderIncorrect2.classList.add("ohno");
+                buttonBoxWBorderIncorrect2.children[0].classList.remove("nf-fa-check");
+                buttonBoxWBorderIncorrect2.children[0].classList.add("nf-fa-xmark");
+            }
+            if (buttonBoxWBorderIncorrect3.classList.contains("selected")) {
+                anySelected = true;
+                buttonBoxWBorderIncorrect3.classList.add("ohno");
+                buttonBoxWBorderIncorrect3.children[0].classList.remove("nf-fa-check");
+                buttonBoxWBorderIncorrect3.children[0].classList.add("nf-fa-xmark");
+            }
+
+            if (anySelected) {
+                buttonBoxWBorderAnswerSubmitted = true;
+            }
+        })
+        buttonBoxWBorderReset.addEventListener("click", () => {
+            buttonBoxWBorderAnswerSubmitted = false;
+            buttonBoxWBorderIncorrect1.classList.remove("ohno");
+            buttonBoxWBorderCorrect.classList.remove("yay");
+            buttonBoxWBorderIncorrect2.classList.remove("ohno");
+            buttonBoxWBorderIncorrect3.classList.remove("ohno");
+            buttonBoxWBorderIncorrect1.classList.remove("selected");
+            buttonBoxWBorderCorrect.classList.remove("selected");
+            buttonBoxWBorderIncorrect2.classList.remove("selected");
+            buttonBoxWBorderIncorrect3.classList.remove("selected");
+        })
+
         function questiontypesonclick(e) {
             e.target.classList.toggle("selected");
         }
