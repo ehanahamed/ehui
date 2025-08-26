@@ -1058,10 +1058,19 @@ button.button-box,
   border-radius: 0.8rem;
 }
 
+button.button-box.with-bordercolor-border,
+.button.button-box.with-bordercolor-border {
+  border-color: var(--border);
+}
+
 button.button-box:hover,
 button.button-box:focus,
 .button.button-box:hover,
-.button.button-box:focus {
+.button.button-box:focus,
+button.button-box:hover.with-bordercolor-border,
+button.button-box:focus.with-bordercolor-border,
+.button.button-box:hover.with-bordercolor-border,
+.button.button-box:focus.with-bordercolor-border {
   color: var(--main-alt);
   background: var(--bg-3);
   border-color: var(--bg-3);
@@ -1073,7 +1082,9 @@ button.button-box:focus-visible,
 }
 
 button.button-box.selected,
-.button.button-box.selected {
+.button.button-box.selected,
+button.button-box.selected.with-bordercolor-border,
+.button.button-box.selected.with-bordercolor-border {
   color: var(--main);
   border-color: var(--main);
 }
@@ -1081,7 +1092,11 @@ button.button-box.selected,
 button.button-box.selected:hover,
 .button.button-box.selected:hover,
 button.button-box.selected:focus,
-.button.button-box.selected:focus {
+.button.button-box.selected:focus,
+button.button-box.selected:hover.with-bordercolor-border,
+.button.button-box.selected:hover.with-bordercolor-border,
+button.button-box.selected:focus.with-bordercolor-border,
+.button.button-box.selected:focus.with-bordercolor-border {
   color: var(--main-alt);
   border-color: var(--main-alt);
 }
