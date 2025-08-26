@@ -1910,6 +1910,13 @@ button.button-box:focus.yay,
   border-color: var(--bg-3);
 }
 
+button.button-box.ohno.with-bordercolor-border,
+.button.button-box.ohno.with-bordercolor-border,
+button.button-box.yay.with-bordercolor-border,
+.button.button-box.yay.with-bordercolor-border {
+  border-color: var(--border);
+}
+
 button.button-box.selected.ohno,
 .button.button-box.selected.ohno {
   color: var(--ohno);
