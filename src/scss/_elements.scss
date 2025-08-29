@@ -1116,6 +1116,26 @@ button.button-box:focus.with-bordercolor-border,
   border-color: var(--bg-3);
 }
 
+/* reset hover/focus for disabled button-boxes */
+button.button-box:disabled:hover,
+button.button-box:disabled:focus,
+button.button-box.disabled:hover,
+button.button-box.disabled:focus,
+.button.button-box.disabled:hover,
+.button.button-box.disabled:focus {
+  color: var(--fg-1);
+  background: var(--bg-2);
+  border-color: var(--bg-2);
+}
+button.button-box:hover.with-bordercolor-border,
+button.button-box:focus.with-bordercolor-border,
+.button.button-box:hover.with-bordercolor-border,
+.button.button-box:focus.with-bordercolor-border {
+  color: var(--fg-1);
+  background: var(--bg-2);
+  border-color: var(--border);
+}
+
 button.button-box:focus-visible,
 .button.button-box:focus-visible {
   outline-offset: 0.4rem;
@@ -1128,7 +1148,6 @@ button.button-box.selected.with-bordercolor-border,
   color: var(--main);
   border-color: var(--main);
 }
-
 
 button.button-box.selected:hover,
 .button.button-box.selected:hover,
