@@ -746,7 +746,7 @@
         <br>
         <p>
             You can use classes <code>button-box</code> and <code>with-bordercolor-border</code> when button boxes are inside of div elements that have <code>class="box"</code><br>
-            This example also applies <code>disabled</code> attributes when the answer is submitted.
+            This example also applies/resets <code>disabled</code> attributes when answers are submitted/reset.
         </p>
         <div class="box">
             <p class="fg0">Select the matching definition</p>
@@ -874,10 +874,18 @@
 
             if (anySelected) {
                 buttonBoxWBorderAnswerSubmitted = true;
+                buttonBoxWBorderIncorrect1.setAttribute("disabled", "");
+                buttonBoxWBorderCorrect.setAttribute("disabled", "");
+                buttonBoxWBorderIncorrect2.setAttribute("disabled", "");
+                buttonBoxWBorderIncorrect3.setAttribute("disabled", "");
             }
         })
         buttonBoxWBorderReset.addEventListener("click", () => {
             buttonBoxWBorderAnswerSubmitted = false;
+            buttonBoxWBorderIncorrect1.removeAttribute("disabled");
+            buttonBoxWBorderCorrect.removeAttribute("disabled");
+            buttonBoxWBorderIncorrect2.removeAttribute("disabled");
+            buttonBoxWBorderIncorrect3.removeAttribute("disabled");
             buttonBoxWBorderIncorrect1.classList.remove("ohno");
             buttonBoxWBorderCorrect.classList.remove("yay");
             buttonBoxWBorderIncorrect2.classList.remove("ohno");
