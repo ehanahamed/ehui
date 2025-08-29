@@ -281,6 +281,61 @@ button:focus.extra,
   color: var(--extra-bg);
 }
 
+/* use same color as default state when disabled buttons are hovered/focused,
+ to make it have no visual change on hover/focus */
+button.alt:disabled:hover.ohno,
+button.alt:disabled:focus.ohno,
+button.alt.disabled:hover.ohno,
+button.alt.disabled:focus.ohno,
+.button.alt.disabled:hover.ohno,
+.button.alt.disabled:focus.ohno {
+  color: var(--ohno);
+  background: var(--bg-2);
+}
+button.alt:disabled:hover.yay,
+button.alt:disabled:focus.yay,
+button.alt.disabled:hover.yay,
+button.alt.disabled:focus.yay,
+.button.alt.disabled:hover.yay,
+.button.alt.disabled:focus.yay {
+  color: var(--yay);
+  background: var(--bg-2);
+}
+button.alt:disabled:hover.extra,
+button.alt:disabled:focus.extra,
+button.alt.disabled:hover.extra,
+button.alt.disabled:focus.extra,
+.button.alt.disabled:hover.extra,
+.button.alt.disabled:focus.extra {
+  color: var(--extra);
+  background: var(--bg-2);
+}
+button:disabled:hover.ohno,
+button:disabled:focus.ohno,
+button.disabled:hover.ohno,
+button.disabled:focus.ohno,
+.button.disabled:hover.ohno,
+.button.disabled:focus.ohno {
+  background-color: var(--ohno);
+}
+button:disabled:hover.yay,
+button:disabled:focus.yay,
+button.disabled:hover.yay,
+button.disabled:focus.yay,
+.button.disabled:hover.yay,
+.button.disabled:focus.yay {
+  background-color: var(--yay);
+}
+button:disabled:hover.extra,
+button:disabled:focus.extra,
+button.disabled:hover.extra,
+button.disabled:focus.extra,
+.button.disabled:hover.extra,
+.button.disabled:focus.extra {
+  background-color: var(--extra);
+  color: var(--extra-bg);
+}
+
 button:focus-visible.ohno,
 .button:focus-visible.ohno,
 .dropdown:focus-visible > button.ohno,
