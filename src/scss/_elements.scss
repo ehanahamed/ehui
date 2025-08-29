@@ -1163,6 +1163,23 @@ button.button-box.selected:focus.with-bordercolor-border,
   border-color: var(--main-alt);
 }
 
+/* reset hover/focus styles for disabled+selected button boxes */
+button.button-box.selected:disabled:hover,
+button.button-box.selected:disabled:focus,
+button.button-box.selected.disabled:hover,
+button.button-box.selected.disabled:focus,
+.button.button-box.selected.disabled:hover,
+.button.button-box.selected.disabled:focus,
+button.button-box.selected:disabled:hover.with-bordercolor-border,
+button.button-box.selected:disabled:focus.with-bordercolor-border,
+button.button-box.selected.disabled:hover.with-bordercolor-border,
+button.button-box.selected.disabled:focus.with-bordercolor-border,
+.button.button-box.selected.disabled:hover.with-bordercolor-border,
+.button.button-box.selected.disabled:focus.with-bordercolor-border {
+  color: var(--main);
+  border-color: var(--main);
+}
+
 details {
   border: 0.2rem solid var(--border);
   border-radius: $border-radius;
