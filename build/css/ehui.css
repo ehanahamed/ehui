@@ -424,9 +424,12 @@ button,
   transition-timing-function: ease-out;
 }
 
-button:disabled,
-button.disabled,
 .button.disabled {
+  cursor: auto;
+}
+
+button:disabled,
+button.disabled {
   cursor: text;
 }
 
@@ -434,7 +437,7 @@ button.icon-only-button:disabled,
 button.icon-only-button.disabled,
 .button.icon-only-button:disabled,
 .button.icon-only-button.disabled {
-  cursor: default;
+  cursor: auto;
 }
 
 button,
