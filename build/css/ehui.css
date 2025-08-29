@@ -424,6 +424,12 @@ button,
   transition-timing-function: ease-out;
 }
 
+button:disabled,
+button.disabled,
+.button.disabled {
+  cursor: auto;
+}
+
 button,
 .button,
 a,
@@ -455,6 +461,29 @@ button.alt:focus,
 .dropdown:focus > .button.alt {
   background-color: var(--bg-3);
   color: var(--main-alt);
+}
+
+/* keep colors the same as default state on hover/focus for disabled buttons
+ so it looks like "nothing happens" when you hover,
+ making it more clear that it's disabled */
+button:disabled:hover,
+button:disabled:focus,
+button.disabled:hover,
+button.disabled:focus,
+.button.disabled:hover,
+.button.disabled:focus {
+  background-color: var(--main);
+  color: var(--on-main);
+}
+
+button.alt:disabled:hover,
+button.alt:disabled:focus,
+button.alt.disabled:hover,
+button.alt.disabled:focus,
+.button.alt.disabled:hover,
+.button.alt.disabled:focus {
+  background-color: var(--bg-2);
+  color: var(--main);
 }
 
 button:focus-visible,
@@ -1852,6 +1881,66 @@ button:focus.extra,
 .dropdown:focus > button.extra,
 .dropdown:focus > .button.extra {
   background-color: var(--extra-alt);
+  color: var(--extra-bg);
+}
+
+/* use same color as default state when disabled buttons are hovered/focused,
+ to make it have no visual change on hover/focus */
+button.alt:disabled:hover.ohno,
+button.alt:disabled:focus.ohno,
+button.alt.disabled:hover.ohno,
+button.alt.disabled:focus.ohno,
+.button.alt.disabled:hover.ohno,
+.button.alt.disabled:focus.ohno {
+  color: var(--ohno);
+  background: var(--bg-2);
+}
+
+button.alt:disabled:hover.yay,
+button.alt:disabled:focus.yay,
+button.alt.disabled:hover.yay,
+button.alt.disabled:focus.yay,
+.button.alt.disabled:hover.yay,
+.button.alt.disabled:focus.yay {
+  color: var(--yay);
+  background: var(--bg-2);
+}
+
+button.alt:disabled:hover.extra,
+button.alt:disabled:focus.extra,
+button.alt.disabled:hover.extra,
+button.alt.disabled:focus.extra,
+.button.alt.disabled:hover.extra,
+.button.alt.disabled:focus.extra {
+  color: var(--extra);
+  background: var(--bg-2);
+}
+
+button:disabled:hover.ohno,
+button:disabled:focus.ohno,
+button.disabled:hover.ohno,
+button.disabled:focus.ohno,
+.button.disabled:hover.ohno,
+.button.disabled:focus.ohno {
+  background-color: var(--ohno);
+}
+
+button:disabled:hover.yay,
+button:disabled:focus.yay,
+button.disabled:hover.yay,
+button.disabled:focus.yay,
+.button.disabled:hover.yay,
+.button.disabled:focus.yay {
+  background-color: var(--yay);
+}
+
+button:disabled:hover.extra,
+button:disabled:focus.extra,
+button.disabled:hover.extra,
+button.disabled:focus.extra,
+.button.disabled:hover.extra,
+.button.disabled:focus.extra {
+  background-color: var(--extra);
   color: var(--extra-bg);
 }
 
