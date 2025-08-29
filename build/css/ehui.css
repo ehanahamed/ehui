@@ -2097,6 +2097,29 @@ button.button-box.selected:focus.yay,
   border-color: var(--yay-alt);
 }
 
+/* reset selected + hover/focus styles for disabled + selected button boxes */
+button.button-box.selected:disabled:hover.ohno,
+button.button-box.selected:disabled:focus.ohno,
+button.button-box.selected.disabled:hover.ohno,
+button.button-box.selected.disabled:focus.ohno,
+.button.button-box.selected.disabled:hover.ohno,
+.button.button-box.selected.disabled:focus.ohno {
+  color: var(--ohno);
+  background: var(--bg-2);
+  border-color: var(--ohno);
+}
+
+button.button-box.selected:disabled:hover.yay,
+button.button-box.selected:disabled:focus.yay,
+button.button-box.selected.disabled:hover.yay,
+button.button-box.selected.disabled:focus.yay,
+.button.button-box.selected.disabled:hover.yay,
+.button.button-box.selected.disabled:focus.yay {
+  color: var(--yay);
+  background: var(--bg-2);
+  border-color: var(--yay);
+}
+
 input[type=text].ohno,
 input[type=password].ohno,
 textarea.ohno {
