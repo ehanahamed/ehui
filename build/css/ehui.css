@@ -1117,10 +1117,12 @@ button.button-box.disabled:focus,
   border-color: var(--bg-2);
 }
 
-button.button-box:hover.with-bordercolor-border,
-button.button-box:focus.with-bordercolor-border,
-.button.button-box:hover.with-bordercolor-border,
-.button.button-box:focus.with-bordercolor-border {
+button.button-box:disabled:hover.with-bordercolor-border,
+button.button-box:disabled:focus.with-bordercolor-border,
+button.button-box.disabled:hover.with-bordercolor-border,
+button.button-box.disabled:focus.with-bordercolor-border,
+.button.button-box.disabled:hover.with-bordercolor-border,
+.button.button-box.disabled:focus.with-bordercolor-border {
   color: var(--fg-1);
   background: var(--bg-2);
   border-color: var(--border);
