@@ -398,6 +398,42 @@ button.button-box.yay.with-bordercolor-border,
   border-color: var(--border);
 }
 
+/* reset hover/focus styles for disabled button boxes */
+button.button-box:disabled:hover.ohno,
+button.button-box:disabled:focus.ohno,
+button.button-box.disabled:hover.ohno,
+button.button-box.disabled:focus.ohno,
+.button.button-box.disabled:hover.ohno,
+.button.button-box.disabled:focus.ohno {
+  color: var(--ohno);
+  background: var(--bg-2);
+  border-color: var(--bg-2);
+}
+button.button-box:disabled:hover.yay,
+button.button-box:disabled:focus.yay,
+button.button-box.disabled:hover.yay,
+button.button-box.disabled:focus.yay,
+.button.button-box.disabled:hover.yay,
+.button.button-box.disabled:focus.yay {
+  color: var(--yay);
+  background: var(--bg-2);
+  border-color: var(--bg-2);
+}
+button.button-box:disabled:hover.ohno.with-bordercolor-border,
+button.button-box:disabled:focus.ohno.with-bordercolor-border,
+button.button-box.disabled:hover.ohno.with-bordercolor-border,
+button.button-box.disabled:focus.ohno.with-bordercolor-border,
+.button.button-box.disabled:hover.ohno.with-bordercolor-border,
+.button.button-box.disabled:focus.ohno.with-bordercolor-border,
+button.button-box:disabled:hover.yay.with-bordercolor-border,
+button.button-box:disabled:focus.yay.with-bordercolor-border,
+button.button-box.disabled:hover.yay.with-bordercolor-border,
+button.button-box.disabled:focus.yay.with-bordercolor-border,
+.button.button-box.disabled:hover.yay.with-bordercolor-border,
+.button.button-box.disabled:focus.yay.with-bordercolor-border {
+  border-color: var(--border);
+}
+
 button.button-box.selected.ohno,
 .button.button-box.selected.ohno {
   color: var(--ohno);
