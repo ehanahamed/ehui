@@ -427,7 +427,14 @@ button,
 button:disabled,
 button.disabled,
 .button.disabled {
-  cursor: auto;
+  cursor: text;
+}
+
+button.icon-only-button:disabled,
+button.icon-only-button.disabled,
+.button.icon-only-button:disabled,
+.button.icon-only-button.disabled {
+  cursor: default;
 }
 
 button,
