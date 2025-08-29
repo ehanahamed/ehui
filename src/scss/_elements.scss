@@ -440,6 +440,12 @@ button,
   transition-timing-function: ease-out;
 }
 
+button:disabled,
+button.disabled,
+.button.disabled {
+  cursor: auto;
+}
+
 button,
 .button,
 a,
@@ -471,6 +477,28 @@ button.alt:focus,
 .dropdown:focus > .button.alt {
   background-color: var(--bg-3);
   color: var(--main-alt);
+}
+
+/* keep colors the same as default state on hover/focus for disabled buttons
+ so it looks like "nothing happens" when you hover,
+ making it more clear that it's disabled */
+button:disabled:hover,
+button:disabled:focus,
+button.disabled:hover,
+button.disabled:focus,
+.button.disabled:hover,
+.button.disabled:focus {
+  background-color: var(--main);
+  color: var(--on-main);
+}
+button.alt:disabled:hover,
+button.alt:disabled:focus,
+button.alt.disabled:hover,
+button.alt.disabled:focus,
+.button.alt.disabled:hover,
+.button.alt.disabled:focus {
+  background-color: var(--bg-2);
+  color: var(--main);
 }
 
 button:focus-visible,
