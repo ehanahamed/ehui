@@ -27,6 +27,17 @@ mark.ohno,
 code.ohno {
   color: var(--ohno);
 }
+span.love,
+p.love,
+b.love,
+i.love,
+u.love,
+.text.love,
+mark.love,
+.mark.love,
+code.love {
+  color: var(--love);
+}
 
 span.yay,
 p.yay,
@@ -116,6 +127,10 @@ mark.markOhno,
 .mark.markOhno {
   background-color: var(--ohno);
 }
+mark.markLove,
+.mark.markLove {
+  background-color: var(--love);
+}
 
 mark.markYay,
 .mark.markYay {
@@ -161,6 +176,10 @@ mark.markExtra,
   color: var(--ohno);
   border-color: var(--ohno);
 }
+.box.love {
+  color: var(--love);
+  border-color: var(--love);
+}
 
 .box.yay {
   color: var(--yay);
@@ -191,6 +210,10 @@ button.ohno,
 .button.ohno {
   background-color: var(--ohno);
 }
+button.love,
+.button.love {
+  background-color: var(--love);
+}
 
 button.yay,
 .button.yay {
@@ -206,6 +229,11 @@ button.extra,
 button.alt.ohno,
 .button.alt.ohno {
   color: var(--ohno);
+  background: var(--bg-2);
+}
+button.alt.love,
+.button.alt.love {
+  color: var(--love);
   background: var(--bg-2);
 }
 
@@ -229,6 +257,15 @@ button.alt:focus.ohno,
 .dropdown:focus > .button.alt.ohno {
   background-color: var(--bg-3);
   color: var(--ohno-alt);
+}
+button.alt:hover.love,
+button.alt:focus.love,
+.button.alt:hover.love,
+.button.alt:focus.love,
+.dropdown:focus > button.alt.love,
+.dropdown:focus > .button.alt.love {
+  background-color: var(--bg-3);
+  color: var(--love-alt);
 }
 
 button.alt:hover.yay,
@@ -258,6 +295,15 @@ button:focus.ohno,
 .dropdown:focus > button.ohno,
 .dropdown:focus > .button.ohno {
   background-color: var(--ohno-alt);
+  color: var(--bg-1);
+}
+button:hover.love,
+button:focus.love,
+.button:hover.love,
+.button:focus.love,
+.dropdown:focus > button.love,
+.dropdown:focus > .button.love {
+  background-color: var(--love-alt);
   color: var(--bg-1);
 }
 
@@ -292,6 +338,15 @@ button.alt.disabled:focus.ohno,
   color: var(--ohno);
   background: var(--bg-2);
 }
+button.alt:disabled:hover.love,
+button.alt:disabled:focus.love,
+button.alt.disabled:hover.love,
+button.alt.disabled:focus.love,
+.button.alt.disabled:hover.love,
+.button.alt.disabled:focus.love {
+  color: var(--love);
+  background: var(--bg-2);
+}
 button.alt:disabled:hover.yay,
 button.alt:disabled:focus.yay,
 button.alt.disabled:hover.yay,
@@ -318,6 +373,14 @@ button.disabled:focus.ohno,
 .button.disabled:focus.ohno {
   background-color: var(--ohno);
 }
+button:disabled:hover.love,
+button:disabled:focus.love,
+button.disabled:hover.love,
+button.disabled:focus.love,
+.button.disabled:hover.love,
+.button.disabled:focus.love {
+  background-color: var(--love);
+}
 button:disabled:hover.yay,
 button:disabled:focus.yay,
 button.disabled:hover.yay,
@@ -342,6 +405,12 @@ button:focus-visible.ohno,
 .dropdown:focus-visible > .button.ohno {
   outline-color: var(--ohno);
 }
+button:focus-visible.love,
+.button:focus-visible.love,
+.dropdown:focus-visible > button.love,
+.dropdown:focus-visible > .button.love {
+  outline-color: var(--love);
+}
 
 button:focus-visible.yay,
 .button:focus-visible.yay,
@@ -364,6 +433,13 @@ button.button-box.ohno,
   border: 0.2rem solid var(--bg-2);
   border-radius: $border-radius;
 }
+button.button-box.love,
+.button.button-box.love {
+  color: var(--love);
+  background: var(--bg-2);
+  border: 0.2rem solid var(--bg-2);
+  border-radius: $border-radius;
+}
 
 button.button-box.yay,
 .button.button-box.yay {
@@ -381,6 +457,14 @@ button.button-box:focus.ohno,
   background: var(--bg-3);
   border-color: var(--bg-3);
 }
+button.button-box:hover.love,
+button.button-box:focus.love,
+.button.button-box:hover.love,
+.button.button-box:focus.love {
+  color: var(--love-alt);
+  background: var(--bg-3);
+  border-color: var(--bg-3);
+}
 
 button.button-box:hover.yay,
 button.button-box:focus.yay,
@@ -393,6 +477,8 @@ button.button-box:focus.yay,
 
 button.button-box.ohno.with-bordercolor-border,
 .button.button-box.ohno.with-bordercolor-border,
+button.button-box.love.with-bordercolor-border,
+.button.button-box.love.with-bordercolor-border,
 button.button-box.yay.with-bordercolor-border,
 .button.button-box.yay.with-bordercolor-border {
   border-color: var(--border);
@@ -406,6 +492,16 @@ button.button-box.disabled:focus.ohno,
 .button.button-box.disabled:hover.ohno,
 .button.button-box.disabled:focus.ohno {
   color: var(--ohno);
+  background: var(--bg-2);
+  border-color: var(--bg-2);
+}
+button.button-box:disabled:hover.love,
+button.button-box:disabled:focus.love,
+button.button-box.disabled:hover.love,
+button.button-box.disabled:focus.love,
+.button.button-box.disabled:hover.love,
+.button.button-box.disabled:focus.love {
+  color: var(--love);
   background: var(--bg-2);
   border-color: var(--bg-2);
 }
@@ -425,6 +521,12 @@ button.button-box.disabled:hover.ohno.with-bordercolor-border,
 button.button-box.disabled:focus.ohno.with-bordercolor-border,
 .button.button-box.disabled:hover.ohno.with-bordercolor-border,
 .button.button-box.disabled:focus.ohno.with-bordercolor-border,
+button.button-box:disabled:hover.love.with-bordercolor-border,
+button.button-box:disabled:focus.love.with-bordercolor-border,
+button.button-box.disabled:hover.love.with-bordercolor-border,
+button.button-box.disabled:focus.love.with-bordercolor-border,
+.button.button-box.disabled:hover.love.with-bordercolor-border,
+.button.button-box.disabled:focus.love.with-bordercolor-border,
 button.button-box:disabled:hover.yay.with-bordercolor-border,
 button.button-box:disabled:focus.yay.with-bordercolor-border,
 button.button-box.disabled:hover.yay.with-bordercolor-border,
@@ -438,6 +540,11 @@ button.button-box.selected.ohno,
 .button.button-box.selected.ohno {
   color: var(--ohno);
   border-color: var(--ohno);
+}
+button.button-box.selected.love,
+.button.button-box.selected.love {
+  color: var(--love);
+  border-color: var(--love);
 }
 
 button.button-box.selected.yay,
@@ -453,6 +560,14 @@ button.button-box.selected:focus.ohno,
   color: var(--ohno-alt);
   background: var(--bg-3);
   border-color: var(--ohno-alt);
+}
+button.button-box.selected:hover.love,
+button.button-box.selected:focus.love,
+.button.button-box.selected:hover.love,
+.button.button-box.selected:focus.love {
+  color: var(--love-alt);
+  background: var(--bg-3);
+  border-color: var(--love-alt);
 }
 
 button.button-box.selected:hover.yay,
@@ -475,6 +590,16 @@ button.button-box.selected.disabled:focus.ohno,
   background: var(--bg-2);
   border-color: var(--ohno);
 }
+button.button-box.selected:disabled:hover.love,
+button.button-box.selected:disabled:focus.love,
+button.button-box.selected.disabled:hover.love,
+button.button-box.selected.disabled:focus.love,
+.button.button-box.selected.disabled:hover.love,
+.button.button-box.selected.disabled:focus.love {
+  color: var(--love);
+  background: var(--bg-2);
+  border-color: var(--love);
+}
 button.button-box.selected:disabled:hover.yay,
 button.button-box.selected:disabled:focus.yay,
 button.button-box.selected.disabled:hover.yay,
@@ -490,6 +615,11 @@ input[type="text"].ohno,
 input[type="password"].ohno,
 textarea.ohno {
   border-color: var(--ohno);
+}
+input[type="text"].love,
+input[type="password"].love,
+textarea.love {
+  border-color: var(--love);
 }
 
 input[type="text"].yay,
@@ -508,6 +638,11 @@ input[type="text"].ohno:focus,
 input[type="password"].ohno:focus,
 textarea.ohno:focus {
   border-color: var(--ohno-alt);
+}
+input[type="text"].love:focus,
+input[type="password"].love:focus,
+textarea.love:focus {
+  border-color: var(--love-alt);
 }
 
 input[type="text"].yay:focus,
@@ -601,9 +736,15 @@ button.large,
 .fill-ohno {
   fill: var(--ohno);
 }
+.fill-love {
+  fill: var(--love);
+}
 
 .fill-ohno-alt {
   fill: var(--ohno-alt);
+}
+.fill-love-alt {
+  fill: var(--love-alt);
 }
 
 .fill-yay {
@@ -687,6 +828,11 @@ button.large,
   background-color: var(--bg-2);
   color: var(--ohno);
 }
+.dropdown .content button.love,
+.dropdown .content .button.love {
+  background-color: var(--bg-2);
+  color: var(--love);
+}
 
 .dropdown .content button.yay,
 .dropdown .content .button.yay {
@@ -700,6 +846,13 @@ button.large,
 .dropdown .content .button.ohno:focus {
   background-color: var(--bg-3);
   color: var(--ohno-alt);
+}
+.dropdown .content button.love:hover,
+.dropdown .content .button.love:hover,
+.dropdown .content button.love:focus,
+.dropdown .content .button.love:focus {
+  background-color: var(--bg-3);
+  color: var(--love-alt);
 }
 
 .dropdown .content button.yay:hover,
@@ -720,6 +873,16 @@ button.faint.ohno,
   border: none;
   color: var(--ohno);
 }
+button.dropdown-toggle.love,
+.button.dropdown-toggle.love,
+button.icon-only-button.love,
+.button.icon-only-button.love,
+button.faint.love,
+.button.faint.love {
+  background-color: transparent;
+  border: none;
+  color: var(--love);
+}
 
 button.dropdown-toggle.ohno:hover,
 .button.dropdown-toggle.ohno:hover,
@@ -736,6 +899,22 @@ button.faint.ohno:focus,
   background-color: var(--bg-3);
   border: none;
   color: var(--ohno-alt);
+}
+button.dropdown-toggle.love:hover,
+.button.dropdown-toggle.love:hover,
+button.dropdown-toggle.love:focus,
+.button.dropdown-toggle.love:focus,
+button.icon-only-button.love:hover,
+.button.icon-only-button.love:hover,
+button.icon-only-button.love:focus,
+.button.icon-only-button.love:focus,
+button.faint.love:hover,
+.button.faint.love:hover,
+button.faint.love:focus,
+.button.faint.love:focus {
+  background-color: var(--bg-3);
+  border: none;
+  color: var(--love-alt);
 }
 
 button.dropdown-toggle.yay,
