@@ -1660,6 +1660,46 @@ a.mark:focus {
   color: var(--main-alt);
 }
 
+a.link-ohno {
+  color: var(--ohno);
+  outline-color: var(--ohno);
+}
+
+a.link-ohno:hover,
+a.link-ohno:focus {
+  color: var(--ohno-alt);
+}
+
+a.link-love {
+  color: var(--love);
+  outline-color: var(--love);
+}
+
+a.link-love:hover,
+a.link-love:focus {
+  color: var(--love-alt);
+}
+
+a.link-yay {
+  color: var(--yay);
+  outline-color: var(--yay);
+}
+
+a.link-yay:hover,
+a.link-yay:focus {
+  color: var(--yay-alt);
+}
+
+a.link-extra {
+  color: var(--extra);
+  outline-color: var(--extra);
+}
+
+a.link-extra:hover,
+a.link-extra:focus {
+  color: var(--extra-alt);
+}
+
 /*
 other utils
 */
