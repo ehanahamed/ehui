@@ -578,6 +578,46 @@
       <div class="wave-bottom extra-bg"></div>
       <div class="grid page">
         <div class="content">
+            <p>
+                "yay" color is for success (usually green)<br>
+                "ohno" is for danger/error (usually red)<br>
+                "extra" is just an accent/secondary color, it can be the same as yay if we want<br>
+                "love" is a cute (usually red) color for not-scary stuff, it can be the same as ohno<br>
+                the main difference is ohno and yay need to have contrast, so in colorblind themes they might not be red/green, but they should always give off negative/positive vibes, while love is supposed to be used for stuff like like buttons or donation links which isn't the same "scary" vibe use case that ohno is for
+            </p>
+                    <div class="flex">
+                        <button class="love">Love Color</button>
+                        <button class="love alt">Love Alt</button>
+                        <button class="love faint">Love Faint</button>
+                    </div>
+                    <div class="flex">
+                        <a class="button love">Link Button</a>
+                        <a class="button love alt">Link Alt</a>
+                        <a class="button love faint">Link Faint</a>
+                    </div>
+                    <div class="flex">
+                        <button class="love icon-only-button" id="heartbuttontoggle">
+                            <i class="nf nf-fa-heart" id="annoyingshi" style="font-size: 1.1rem;"></i>
+                        </button>
+                    </div>
+                    <div class="flex">
+                        <a href="https://hcb.hackclub.com/donations/start/quizfreely" class="button love"><i class="nf nf-fa-heart"></i> Donate</a>
+                        <a href="https://hcb.hackclub.com/donations/start/quizfreely" class="button love alt"><i class="nf nf-fa-heart"></i> Donate</a>
+                        <a href="https://hcb.hackclub.com/donations/start/quizfreely" class="button love faint"><i class="nf nf-fa-heart"></i> Donate</a>
+                    </div>
+                    <p>Ohno and love are not usually directly next to eachother, so they might look odd in the example below but they usually look nice in real use cases (or they might be the same, which is fine)</p>
+                    <div class="flex">
+                        <button class="love">Love Color</button>
+                        <button class="ohno">Ohno Color</button>
+                    </div>
+                    <div class="flex">
+                        <button class="love alt">Love Alt</button>
+                        <button class="ohno alt">Ohno Alt</button>
+                    </div>
+                    <div class="flex">
+                        <button class="love faint">Love Faint</button>
+                        <button class="ohno faint">Ohno Faint</button>
+                    </div>
           <p>Large buttons (continued?)</p>
           <div class="flex">
             <button class="large">Large</button>
@@ -1226,6 +1266,17 @@
           selectedThemeButton.classList.add("selected");
         }
       }
+
+      document.getElementById("heartbuttontoggle").addEventListener("click", (e) => {
+          const hearticon = document.getElementById("annoyingshi");
+          if (hearticon && hearticon.classList.contains("nf-fa-heart")) {
+            hearticon.classList.remove("nf-fa-heart")
+            hearticon.classList.add("nf-fa-heart_o")
+          } else if (hearticon) {
+            hearticon.classList.remove("nf-fa-heart_o")
+            hearticon.classList.add("nf-fa-heart")
+          }
+      });
     </script>
   </body>
 </html>
