@@ -385,6 +385,12 @@ a,
   transition-timing-function: ease-out;
 }
 
+a.with-underline,
+.a.with-underline {
+  text-decoration-line: underline;
+  text-underline-position: under;
+}
+
 a:hover,
 a:focus,
 .a:hover,
