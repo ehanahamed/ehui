@@ -421,6 +421,7 @@ header > *,
 }
 
 .optional-line {
+  margin-top: 0px;
   display: block;
 }
 
@@ -433,6 +434,7 @@ header > *,
 $i: 200;
 @while $i <= 2000 {
   .optional-line-#{$i}px {
+    margin-top: 0px;
     display: block;
   }
 
