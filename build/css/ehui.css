@@ -1654,6 +1654,11 @@ header > *,
     grid-template-areas: "content" "image";
   }
 }
+span.line {
+  margin-top: 0px;
+  display: block;
+}
+
 .optional-line {
   margin-top: 0px;
   display: block;
