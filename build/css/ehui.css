@@ -1663,6 +1663,177 @@ header > *,
     display: inline;
   }
 }
+.optional-line-200px {
+  display: block;
+}
+
+@media only screen and (max-width: 200px) {
+  .optional-line-200px {
+    display: inline;
+  }
+}
+.optional-line-300px {
+  display: block;
+}
+
+@media only screen and (max-width: 300px) {
+  .optional-line-300px {
+    display: inline;
+  }
+}
+.optional-line-400px {
+  display: block;
+}
+
+@media only screen and (max-width: 400px) {
+  .optional-line-400px {
+    display: inline;
+  }
+}
+.optional-line-500px {
+  display: block;
+}
+
+@media only screen and (max-width: 500px) {
+  .optional-line-500px {
+    display: inline;
+  }
+}
+.optional-line-600px {
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .optional-line-600px {
+    display: inline;
+  }
+}
+.optional-line-700px {
+  display: block;
+}
+
+@media only screen and (max-width: 700px) {
+  .optional-line-700px {
+    display: inline;
+  }
+}
+.optional-line-800px {
+  display: block;
+}
+
+@media only screen and (max-width: 800px) {
+  .optional-line-800px {
+    display: inline;
+  }
+}
+.optional-line-900px {
+  display: block;
+}
+
+@media only screen and (max-width: 900px) {
+  .optional-line-900px {
+    display: inline;
+  }
+}
+.optional-line-1000px {
+  display: block;
+}
+
+@media only screen and (max-width: 1000px) {
+  .optional-line-1000px {
+    display: inline;
+  }
+}
+.optional-line-1100px {
+  display: block;
+}
+
+@media only screen and (max-width: 1100px) {
+  .optional-line-1100px {
+    display: inline;
+  }
+}
+.optional-line-1200px {
+  display: block;
+}
+
+@media only screen and (max-width: 1200px) {
+  .optional-line-1200px {
+    display: inline;
+  }
+}
+.optional-line-1300px {
+  display: block;
+}
+
+@media only screen and (max-width: 1300px) {
+  .optional-line-1300px {
+    display: inline;
+  }
+}
+.optional-line-1400px {
+  display: block;
+}
+
+@media only screen and (max-width: 1400px) {
+  .optional-line-1400px {
+    display: inline;
+  }
+}
+.optional-line-1500px {
+  display: block;
+}
+
+@media only screen and (max-width: 1500px) {
+  .optional-line-1500px {
+    display: inline;
+  }
+}
+.optional-line-1600px {
+  display: block;
+}
+
+@media only screen and (max-width: 1600px) {
+  .optional-line-1600px {
+    display: inline;
+  }
+}
+.optional-line-1700px {
+  display: block;
+}
+
+@media only screen and (max-width: 1700px) {
+  .optional-line-1700px {
+    display: inline;
+  }
+}
+.optional-line-1800px {
+  display: block;
+}
+
+@media only screen and (max-width: 1800px) {
+  .optional-line-1800px {
+    display: inline;
+  }
+}
+.optional-line-1900px {
+  display: block;
+}
+
+@media only screen and (max-width: 1900px) {
+  .optional-line-1900px {
+    display: inline;
+  }
+}
+.optional-line-2000px {
+  display: block;
+}
+
+@media only screen and (max-width: 2000px) {
+  .optional-line-2000px {
+    display: inline;
+  }
+}
 a.mark {
   /*
   undo stuff in other stuff?
