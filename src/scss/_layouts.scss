@@ -419,3 +419,13 @@ header > *,
       "image";
   }
 }
+
+.optional-line {
+  display: block;
+}
+
+@media only screen and (max-width: 800px) {
+  .optional-line {
+    display: inline;
+  }
+}
