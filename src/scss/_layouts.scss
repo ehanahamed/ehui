@@ -429,3 +429,17 @@ header > *,
     display: inline;
   }
 }
+
+$i: 200;
+@while $i <= 2000 {
+  .optional-line-#{$i}px {
+    display: block;
+  }
+
+  @media only screen and (max-width: #{$i}px) {
+    .optional-line-#{$i}px {
+      display: inline;
+    }
+  }
+  $i: $i + 100;
+}
