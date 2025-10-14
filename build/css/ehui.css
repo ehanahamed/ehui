@@ -920,6 +920,7 @@ textarea:focus {
   background-color: var(--bg-2ish);
   border-color: var(--bg-2ish);
   color: var(--main);
+  box-shadow: none;
 }
 
 .dropdown .content button:hover,
