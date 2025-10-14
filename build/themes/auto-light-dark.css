@@ -41,6 +41,8 @@
   --bg-0: #fafafa;
   --on-select-bg: #242528;
   --select-bg: #d4defa;
+  --above-box-shadow-color: rgba(0, 0, 0, 0.1);
+  --button-box-shadow-color: rgba(0, 0, 0, 0.05);
 }
 .theme-light .wave-top,
 .theme-light .wave-bottom,
@@ -139,6 +141,8 @@
   --bg-0: #101217;
   --on-select-bg: #c3cce9;
   --select-bg: #3A4A6B;
+  --above-box-shadow-color: rgba(0, 0, 0, 0.4);
+  --button-box-shadow-color: rgba(0, 0, 0, 0.2);
 }
 .theme-dark .wave-top,
 .theme-dark .wave-bottom,
@@ -236,6 +240,8 @@
   --bg-0: #fafafa;
   --on-select-bg: #242528;
   --select-bg: #d4defa;
+  --above-box-shadow-color: rgba(0, 0, 0, 0.1);
+  --button-box-shadow-color: rgba(0, 0, 0, 0.05);
 }
 :root .wave-top,
 :root .wave-bottom {
@@ -322,6 +328,8 @@
     --bg-0: #101217;
     --on-select-bg: #c3cce9;
     --select-bg: #3A4A6B;
+    --above-box-shadow-color: rgba(0, 0, 0, 0.4);
+    --button-box-shadow-color: rgba(0, 0, 0, 0.2);
   }
   :root .wave-top,
   :root .wave-bottom {

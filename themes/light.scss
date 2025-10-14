@@ -42,6 +42,8 @@
     --bg-0: #fafafa;
     --on-select-bg: #242528;
     --select-bg: #d4defa;
+    --above-box-shadow-color: rgba(0, 0, 0, 0.1);
+    --button-box-shadow-color: rgba(0, 0, 0, 0.05);
 
     @include theme-svgs.waves(#fafafa /* bg0 */, #fafafa /* extra-bg */);
 }
