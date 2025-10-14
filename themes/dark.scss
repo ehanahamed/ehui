@@ -42,6 +42,8 @@
     --bg-0: #101217;
     --on-select-bg: #c3cce9;
     --select-bg: #3A4A6B;
+    --above-box-shadow-color: rgba(0, 0, 0, 0.4);
+    --button-box-shadow-color: rgba(0, 0, 0, 0.2);
 
     @include theme-svgs.waves(#101217 /* bg-0 */, #101217 /* extra-bg */);
 }

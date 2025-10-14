@@ -40,6 +40,8 @@
   --bg-0: #000d14;
   --on-select-bg: #c3cce9;
   --select-bg: #43396A;
+  --above-box-shadow-color: rgba(0, 0, 0, 0.4);
+  --button-box-shadow-color: rgba(0, 0, 0, 0.2);
 }
 .theme-midnight .wave-top,
 .theme-midnight .wave-bottom,

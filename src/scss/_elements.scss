@@ -421,8 +421,8 @@ a:focus-visible,
   transition-duration: 0.1s;
 }
 
-$box-box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.1);
-$button-box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.05);
+$above-box-shadow: 0px 2px 4px 2px var(--above-box-shadow-color);
+$button-box-shadow: 0px 2px 2px 1px var(--button-box-shadow-color);
 button,
 .button {
   display: inline-flex;
@@ -690,7 +690,7 @@ textarea:focus {
   background: var(--bg-2ish);
   border: none;
   border-radius: $border-radius;
-  box-shadow: $box-box-shadow;
+  box-shadow: $above-box-shadow;
 }
 
 .searchbar.with-autocomplete:focus > .searchbar-autocomplete {
@@ -874,7 +874,7 @@ textarea:focus {
   border: none;
   border-radius: $border-radius;
   padding: 1.4rem;
-  box-shadow: $box-box-shadow;
+  box-shadow: $above-box-shadow;
 }
 
 @media only screen and (max-width: 800px) {
@@ -916,7 +916,7 @@ textarea:focus {
   background: var(--bg-2ish);
   border: none;
   border-radius: $border-radius;
-  box-shadow: $box-box-shadow;
+  box-shadow: $above-box-shadow;
 }
 
 .dropdown.left .content {

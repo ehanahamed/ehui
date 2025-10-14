@@ -428,7 +428,7 @@ button,
   line-height: 1.4;
   transition-duration: 0.2s;
   transition-timing-function: ease-out;
-  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 2px 2px 1px var(--button-box-shadow-color);
 }
 
 button:disabled,
@@ -674,7 +674,7 @@ textarea:focus {
   background: var(--bg-2ish);
   border: none;
   border-radius: 0.8rem;
-  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px 2px var(--above-box-shadow-color);
 }
 
 .searchbar.with-autocomplete:focus > .searchbar-autocomplete {
@@ -859,7 +859,7 @@ textarea:focus {
   border: none;
   border-radius: 0.8rem;
   padding: 1.4rem;
-  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px 2px var(--above-box-shadow-color);
 }
 
 @media only screen and (max-width: 800px) {
@@ -900,7 +900,7 @@ textarea:focus {
   background: var(--bg-2ish);
   border: none;
   border-radius: 0.8rem;
-  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px 2px var(--above-box-shadow-color);
 }
 
 .dropdown.left .content {
@@ -970,7 +970,7 @@ button.faint:focus,
   background-color: var(--bg-3);
   border: none;
   color: var(--main-alt);
-  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 2px 2px 1px var(--button-box-shadow-color);
 }
 
 .combo-select {
