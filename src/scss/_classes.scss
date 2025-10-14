@@ -1064,3 +1064,8 @@ button.faint.yay:focus,
     transition-duration: 0s;
   }
 }
+
+.no-box-shadow,
+button.no-box-shadow {
+  box-shadow: none;
+}
