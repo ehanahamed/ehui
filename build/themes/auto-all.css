@@ -34,7 +34,9 @@
   --border: #f0f0f0;
   --bg-3-alt: #f2f2f2;
   --bg-3: #f2f2f2;
+  --bg-3ish: #f8f8f8;
   --bg-2: #f8f8f8;
+  --bg-1ish: #fefefe;
   --bg-1: #fefefe;
   --bg-0: #f8f8f8;
   --on-select-bg: #242528;
@@ -130,7 +132,9 @@
   --border: #262B33;
   --bg-3-alt: #262B33;
   --bg-3: #25282E;
+  --bg-3ish: #25282E;
   --bg-2: #1D2026;
+  --bg-2ish: #1D2026;
   --bg-1: #16191F;
   --bg-0: #101217;
   --on-select-bg: #c3cce9;
@@ -225,7 +229,9 @@
   --border: #f0f0f0;
   --bg-3-alt: #f2f2f2;
   --bg-3: #f2f2f2;
+  --bg-3ish: #f8f8f8;
   --bg-2: #f8f8f8;
+  --bg-2ish: #fefefe;
   --bg-1: #fefefe;
   --bg-0: #f8f8f8;
   --on-select-bg: #242528;
@@ -320,7 +326,9 @@
   --border: #666666;
   --bg-3-alt: #444444;
   --bg-3: #333333;
+  --bg-3ish: #333333;
   --bg-2: #111111;
+  --bg-2ish: #111111;
   --bg-1: #000000;
   --bg-0: #000d14;
   --on-select-bg: #c3cce9;
@@ -415,7 +423,9 @@
   --border: #f0f0f0;
   --bg-3-alt: #f2f2f2;
   --bg-3: #f2f2f2;
+  --bg-3ish: #f8f8f8;
   --bg-2: #f8f8f8;
+  --bg-1ish: #fefefe;
   --bg-1: #fefefe;
   --bg-0: #f8f8f8;
   --on-select-bg: #242528;
@@ -499,7 +509,9 @@
     --border: #262B33;
     --bg-3-alt: #262B33;
     --bg-3: #25282E;
+    --bg-3ish: #25282E;
     --bg-2: #1D2026;
+    --bg-2ish: #1D2026;
     --bg-1: #16191F;
     --bg-0: #101217;
     --on-select-bg: #c3cce9;
