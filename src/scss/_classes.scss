@@ -291,7 +291,7 @@ button.alt:focus.ohno,
 .button.alt:focus.ohno,
 .dropdown:focus > button.alt.ohno,
 .dropdown:focus > .button.alt.ohno {
-  background-color: var(--bg-3);
+  background-color: var(--bg-3ish);
   color: var(--ohno-alt);
 }
 button.alt:hover.love,
@@ -300,7 +300,7 @@ button.alt:focus.love,
 .button.alt:focus.love,
 .dropdown:focus > button.alt.love,
 .dropdown:focus > .button.alt.love {
-  background-color: var(--bg-3);
+  background-color: var(--bg-3ish);
   color: var(--love-alt);
 }
 
@@ -310,7 +310,7 @@ button.alt:focus.yay,
 .button.alt:focus.yay,
 .dropdown:focus > button.alt.yay,
 .dropdown:focus > .button.alt.yay {
-  background-color: var(--bg-3);
+  background-color: var(--bg-3ish);
   color: var(--yay-alt);
 }
 
@@ -320,7 +320,7 @@ button.alt:focus.extra,
 .button.alt:focus.extra,
 .dropdown:focus > button.alt.extra,
 .dropdown:focus > .button.alt.extra {
-  background-color: var(--bg-3);
+  background-color: var(--bg-3ish);
   color: var(--extra-alt);
 }
 
@@ -861,18 +861,18 @@ button.large,
 
 .dropdown .content button.ohno,
 .dropdown .content .button.ohno {
-  background-color: var(--bg-2);
+  background-color: var(--bg-2ish);
   color: var(--ohno);
 }
 .dropdown .content button.love,
 .dropdown .content .button.love {
-  background-color: var(--bg-2);
+  background-color: var(--bg-2ish);
   color: var(--love);
 }
 
 .dropdown .content button.yay,
 .dropdown .content .button.yay {
-  background-color: var(--bg-2);
+  background-color: var(--bg-2ish);
   color: var(--yay);
 }
 
@@ -880,14 +880,14 @@ button.large,
 .dropdown .content .button.ohno:hover,
 .dropdown .content button.ohno:focus,
 .dropdown .content .button.ohno:focus {
-  background-color: var(--bg-3);
+  background-color: var(--bg-3ish);
   color: var(--ohno-alt);
 }
 .dropdown .content button.love:hover,
 .dropdown .content .button.love:hover,
 .dropdown .content button.love:focus,
 .dropdown .content .button.love:focus {
-  background-color: var(--bg-3);
+  background-color: var(--bg-3ish);
   color: var(--love-alt);
 }
 
@@ -895,7 +895,7 @@ button.large,
 .dropdown .content .button.yay:hover,
 .dropdown .content button.yay:focus,
 .dropdown .content .button.yay:focus {
-  background-color: var(--bg-3);
+  background-color: var(--bg-3ish);
   color: var(--yay-alt);
 }
 
