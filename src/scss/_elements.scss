@@ -423,6 +423,7 @@ a:focus-visible,
 
 $above-box-shadow: 0px 1px 2px 2px var(--above-box-shadow-color);
 $button-box-shadow: 0px 1px 2px 1px var(--button-box-shadow-color);
+$combo-button-box-shadow: 0px 1px 2px 0px var(--button-box-shadow-color);
 button,
 .button {
   display: inline-flex;
@@ -1104,6 +1105,13 @@ button.faint:focus,
   /* fix adjacent buttons overlapping outline */
   position: relative;
   z-index: 2;
+}
+
+.combo-select > button,
+.combo-select > .button,
+.combo-buttons > button,
+.combo-buttons > .button {
+  box-shadow: $combo-button-box-shadow;
 }
 
 button.button-box,
