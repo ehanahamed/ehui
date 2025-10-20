@@ -428,7 +428,7 @@ button,
   line-height: 1.4;
   transition-duration: 0.2s;
   transition-timing-function: ease-out;
-  box-shadow: 0px 0px 2px 1px var(--button-box-shadow-color);
+  box-shadow: 0px 1px 2px 1px var(--button-box-shadow-color);
 }
 
 button:disabled,
@@ -971,7 +971,7 @@ button.faint:focus,
   background-color: var(--bg-3);
   border: none;
   color: var(--main-alt);
-  box-shadow: 0px 0px 2px 1px var(--button-box-shadow-color);
+  box-shadow: 0px 1px 2px 1px var(--button-box-shadow-color);
 }
 
 .combo-select {

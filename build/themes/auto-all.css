@@ -42,7 +42,7 @@
   --on-select-bg: #242528;
   --select-bg: #d4defa;
   --above-box-shadow-color: rgba(0, 0, 0, 0.1);
-  --button-box-shadow-color: rgba(0, 0, 0, 0.1);
+  --button-box-shadow-color: rgba(0, 0, 0, 0.08);
 }
 .theme-light .wave-top,
 .theme-light .wave-bottom,
@@ -241,7 +241,7 @@
   --on-select-bg: #242528;
   --select-bg: #DBDBFF;
   --above-box-shadow-color: rgba(0, 0, 0, 0.1);
-  --button-box-shadow-color: rgba(0, 0, 0, 0.1);
+  --button-box-shadow-color: rgba(0, 0, 0, 0.08);
 }
 .theme-monochrome .wave-top,
 .theme-monochrome .wave-bottom,
@@ -439,7 +439,7 @@
   --on-select-bg: #242528;
   --select-bg: #d4defa;
   --above-box-shadow-color: rgba(0, 0, 0, 0.1);
-  --button-box-shadow-color: rgba(0, 0, 0, 0.1);
+  --button-box-shadow-color: rgba(0, 0, 0, 0.08);
 }
 :root .wave-top,
 :root .wave-bottom {
