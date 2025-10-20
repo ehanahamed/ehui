@@ -42,7 +42,7 @@
     --on-select-bg: #242528;
     --select-bg: #DBDBFF;
     --above-box-shadow-color: rgba(0, 0, 0, 0.1);
-    --button-box-shadow-color: rgba(0, 0, 0, 0.1);
+    --button-box-shadow-color: rgba(0, 0, 0, 0.08);
 
     @include theme-svgs.waves(#f8f8f8 /* bg0 */, #f8f8f8 /* extra-bg */);
 }
