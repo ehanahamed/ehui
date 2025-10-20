@@ -1092,6 +1092,13 @@ button.faint:focus,
   z-index: 2;
 }
 
+.combo-select > button,
+.combo-select > .button,
+.combo-buttons > button,
+.combo-buttons > .button {
+  box-shadow: 0px 1px 2px 0px var(--button-box-shadow-color);
+}
+
 button.button-box,
 .button.button-box {
   display: inline-block;
