@@ -2779,19 +2779,25 @@ button.large,
 }
 
 .dropdown .content button.ohno,
-.dropdown .content .button.ohno {
+.dropdown .content .button.ohno,
+.raw-dropdown button.ohno,
+.raw-dropdown .button.ohno {
   background-color: var(--bg-2ish);
   color: var(--ohno);
 }
 
 .dropdown .content button.love,
-.dropdown .content .button.love {
+.dropdown .content .button.love,
+.raw-dropdown button.love,
+.raw-dropdown .button.love {
   background-color: var(--bg-2ish);
   color: var(--love);
 }
 
 .dropdown .content button.yay,
-.dropdown .content .button.yay {
+.dropdown .content .button.yay,
+.raw-dropdown button.yay,
+.raw-dropdown .button.yay {
   background-color: var(--bg-2ish);
   color: var(--yay);
 }
@@ -2799,7 +2805,11 @@ button.large,
 .dropdown .content button.ohno:hover,
 .dropdown .content .button.ohno:hover,
 .dropdown .content button.ohno:focus,
-.dropdown .content .button.ohno:focus {
+.dropdown .content .button.ohno:focus,
+.raw-dropdown button.ohno:hover,
+.raw-dropdown .button.ohno:hover,
+.raw-dropdown button.ohno:focus,
+.raw-dropdown .button.ohno:focus {
   background-color: var(--bg-3ish);
   color: var(--ohno-alt);
 }
@@ -2807,7 +2817,11 @@ button.large,
 .dropdown .content button.love:hover,
 .dropdown .content .button.love:hover,
 .dropdown .content button.love:focus,
-.dropdown .content .button.love:focus {
+.dropdown .content .button.love:focus,
+.raw-dropdown button.love:hover,
+.raw-dropdown .button.love:hover,
+.raw-dropdown button.love:focus,
+.raw-dropdown .button.love:focus {
   background-color: var(--bg-3ish);
   color: var(--love-alt);
 }
@@ -2815,7 +2829,11 @@ button.large,
 .dropdown .content button.yay:hover,
 .dropdown .content .button.yay:hover,
 .dropdown .content button.yay:focus,
-.dropdown .content .button.yay:focus {
+.dropdown .content .button.yay:focus,
+.raw-dropdown button.yay:hover,
+.raw-dropdown .button.yay:hover,
+.raw-dropdown button.yay:focus,
+.raw-dropdown .button.yay:focus {
   background-color: var(--bg-3ish);
   color: var(--yay-alt);
 }
