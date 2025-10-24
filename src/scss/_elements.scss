@@ -933,7 +933,9 @@ textarea:focus {
 }
 
 .dropdown .content button,
-.dropdown .content .button {
+.dropdown .content .button,
+.dropdown-raw button,
+.dropdown-raw .button {
   justify-items: start;
   justify-content: start;
   margin-top: 0px;
@@ -948,6 +950,10 @@ textarea:focus {
 .dropdown .content .button:hover,
 .dropdown .content button:focus,
 .dropdown .content .button:focus {
+.dropdown-raw button:hover,
+.dropdown-raw .button:hover,
+.dropdown-raw button:focus,
+.dropdown-raw .button:focus {
   background-color: var(--bg-3ish);
   border-color: var(--bg-3ish);
   color: var(--main-alt);
