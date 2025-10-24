@@ -908,6 +908,9 @@ textarea:focus {
 
 .dropdown .content {
   display: none;
+}
+.dropdown .content,
+.raw-dropdown {
   position: absolute;
   z-index: 20;
   flex-direction: column;
