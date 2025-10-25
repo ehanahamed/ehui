@@ -670,18 +670,19 @@ textarea:focus {
   border-color: var(--main);
 }
 
-.searchbar.with-autocomplete {
+.searchbar.with-autocomplete,
+.searchbar.with-raw-autocomplete {
   position: relative;
 }
 
-.searchbar.with-autocomplete > .searchbar-autocomplete {
+.searchbar.with-autocomplete > .searchbar-autocomplete,
+.searchbar.with-raw-autocomplete > .searchbar-raw-autocomplete {
   position: absolute;
   top: 100%;
   left: 0px;
   right: 0px;
   width: 100%;
   display: none;
-  /*display: flex;*/
   flex-direction: column;
   flex-wrap: nowrap;
   justify-items: stretch;
@@ -713,8 +714,14 @@ textarea:focus {
   display: none;
 }
 
+.searchbar.with-raw-autocomplete > .searchbar-raw-autocomplete {
+  display: flex;
+}
+
 .searchbar-autocomplete > a,
-.searchbar-autocomplete > .a {
+.searchbar-autocomplete > .a,
+.searchbar-raw-autocomplete > a,
+.searchbar-raw-autocomplete > .a {
   margin-top: 0px;
   padding: 0.2rem 0.6rem;
   border: none;
@@ -723,14 +730,18 @@ textarea:focus {
 }
 
 .searchbar-autocomplete > a:hover,
-.searchbar-autocomplete > .a:hover {
+.searchbar-autocomplete > .a:hover,
+.searchbar-raw-autocomplete > a:hover,
+.searchbar-raw-autocomplete > .a:hover {
   color: var(--main-alt);
   background-color: var(--bg-3ish);
 }
 
 /* extra focus-visible to override link's other styles */
 .searchbar-autocomplete > a:focus-visible,
-.searchbar-autocomplete > .a:focus-visible {
+.searchbar-autocomplete > .a:focus-visible,
+.searchbar-raw-autocomplete > a:focus-visible,
+.searchbar-raw-autocomplete > .a:focus-visible {
   color: var(--main-alt);
   background-color: var(--bg-3ish);
   border: none;
