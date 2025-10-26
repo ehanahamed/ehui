@@ -367,14 +367,16 @@
             <div class="searchbar with-raw-autocomplete">
                 <i class="nf nf-fa-search searchbar-icon"></i>
                 <input type="text" placeholder="Search" id="raw-autocomplete-input" />
-                <div class="searchbar-raw-autocomplete" id="raw-autocomplete">
+                <div class="searchbar-raw-autocomplete hide" id="raw-autocomplete">
                   <a href="/docs">Docs & Tutorials</a>
                   <a href="/">text texttext</a>
                   <a href="/">abc defg hijkl</a>
                 </div>
             </div>
           </div>
-          <h2 style="margin-top: 10rem;">Notice boxes</h2>
+          <br />
+          <br />
+          <h2>Notice boxes</h2>
           <p class="box center">Notice box text</p>
           <p class="box center yay">Notice box text</p>
           <p class="box center ohno">Notice box text</p>
@@ -1305,15 +1307,26 @@
       });
     </script>
     <script>
-        document.getElementById("raw-autocomplete-input").addEventListener(
-            "focus", () => {
-                document.getElementById("raw-autocomplete").classList.remove("hide");
+        function outsideClick(e) {
+            if (!document.getElementById("raw-autocomplete-input").contains(e.target) && !document.getElementById("raw-autocomplete").contains(e.target)) {
+                document.getElementById("raw-autocomplete").classList.add("hide");
+                window.removeEventListener("click", outsideClick);
             }
+        }
+        function searchbarInteraction(e) {
+            if (e.target.value.length > 0) {
+                document.getElementById("raw-autocomplete").classList.remove("hide");
+                window.addEventListener("click", outsideClick);
+            } else {
+                document.getElementById("raw-autocomplete").classList.add("hide");
+                window.removeEventListener("click", outsideClick);
+            }
+        }
+        document.getElementById("raw-autocomplete-input").addEventListener(
+            "input", searchbarInteraction
         );
         document.getElementById("raw-autocomplete-input").addEventListener(
-            "blur", () => {
-                document.getElementById("raw-autocomplete").classList.add("hide");
-            }
+            "focus", searchbarInteraction
         );
     </script>
   </body>
