@@ -366,8 +366,8 @@
           <div style="display:inline-block">
             <div class="searchbar with-raw-autocomplete">
                 <i class="nf nf-fa-search searchbar-icon"></i>
-                <input type="text" placeholder="Search" />
-                <div class="searchbar-raw-autocomplete">
+                <input type="text" placeholder="Search" id="raw-autocomplete-input" />
+                <div class="searchbar-raw-autocomplete" id="raw-autocomplete">
                   <a href="/docs">Docs & Tutorials</a>
                   <a href="/">text texttext</a>
                   <a href="/">abc defg hijkl</a>
@@ -1303,6 +1303,21 @@
             hearticon.classList.add("nf-fa-heart")
           }
       });
+    </script>
+    <script>
+        console.log("Asdf")
+        document.getElementById("raw-autocomplete-input").addEventListener(
+            "focus", () => {
+                console.log("asdf")
+                document.getElementById("raw-autocomplete").classList.remove("hide");
+            }
+        );
+        document.getElementById("raw-autocomplete-input").addEventListener(
+            "blur", () => {
+                console.log("asdf")
+                document.getElementById("raw-autocomplete").classList.add("hide");
+            }
+        );
     </script>
   </body>
 </html>

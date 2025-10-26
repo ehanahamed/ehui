@@ -706,6 +706,10 @@ textarea:focus {
   display: flex;
 }
 
+.searchbar.with-raw-autocomplete > .searchbar-raw-autocomplete {
+  display: flex;
+}
+
 /* make sure :focus and :focus-within do not override .hide */
 .searchbar.with-autocomplete:focus > .searchbar-autocomplete.hide {
   display: none;
@@ -713,9 +717,8 @@ textarea:focus {
 .searchbar.with-autocomplete:focus-within > .searchbar-autocomplete.hide {
   display: none;
 }
-
-.searchbar.with-raw-autocomplete > .searchbar-raw-autocomplete {
-  display: flex;
+.searchbar.with-raw-autocomplete > .searchbar-raw-autocomplete.hide {
+  display: none;
 }
 
 .searchbar-autocomplete > a,
