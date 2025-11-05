@@ -5,41 +5,42 @@
   --ohno-on-bg: #ff6666;
   --ohno-alt: #ff9999;
   --ohno-faint: #ff9999;
-  --on-ohno: #000000;
-  --love: #ff6666;
-  --love-on-bg: #ff6666;
-  --love-alt: #ff9999;
-  --love-faint: #ff9999;
-  --on-love: #000000;
+  --on-ohno: #101217;
+  --love: #FF668A;
+  --love-on-bg: #FF668A;
+  --love-alt: #FF99B1;
+  --love-faint: #FF99B1;
+  --on-love: #101217;
   --yay: #80FFBF;
   --yay-on-bg: #80FFBF;
   --yay-alt: #B3FFD9;
   --yay-faint: #B3FFD9;
-  --on-yay: #B3FFD9;
-  --main: #fff;
-  --main-on-bg: #fff;
-  --main-alt: #C7B3FF;
-  --main-faint: #2C2C3A;
-  --on-main: #21212C;
-  --extra: #80FFBF;
-  --extra-on-bg: #80FFBF;
-  --extra-alt: #B3FFD9;
-  --extra-faint: #1C1C26;
-  --on-extra: #1C1C26;
-  --extra-bg: #000d14;
-  --fg-2: #ffffff;
-  --fg-1: #ffffff;
-  --fg-0: #c0c0c0;
-  --border: #666666;
-  --bg-3-alt: #444444;
-  --bg-3: #333333;
-  --bg-3ish: #333333;
-  --bg-2: #111111;
-  --bg-2ish: #111111;
-  --bg-1: #000000;
-  --bg-0: #000d14;
+  --on-yay: #101217;
+  --main: #80FFBF;
+  --main-on-bg: #80FFBF;
+  --main-alt: #B3CCFF;
+  --main-alt-on-bg: #B3FFD9;
+  --main-faint: #B3FFD9;
+  --on-main: #101217;
+  --extra: #c8fde2;
+  --extra-on-bg: #c5fce0;
+  --extra-alt: #d7fce9;
+  --extra-faint: #d1fae6;
+  --on-extra: #101217;
+  --extra-bg: #101217;
+  --fg-2: #c3cce9;
+  --fg-1: #c3cce9;
+  --fg-0: #9399b2;
+  --border: #262B33;
+  --bg-3-alt: #262B33;
+  --bg-3: #25282E;
+  --bg-3ish: #25282E;
+  --bg-2: #1D2026;
+  --bg-2ish: #1D2026;
+  --bg-1: #16191F;
+  --bg-0: #101217;
   --on-select-bg: #c3cce9;
-  --select-bg: #43396A;
+  --select-bg: #3A4A6B;
   --above-box-shadow-color: rgba(0, 0, 0, 0.4);
   --button-box-shadow-color: rgba(0, 0, 0, 0.2);
 }
@@ -78,11 +79,11 @@
 :root.theme-midnight .wave-top.bg0 {
   margin-top: 1rem;
   margin-bottom: 0px;
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23000d14%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23101217%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E");
 }
 .theme-midnight .wave-top.extra-bg,
 :root.theme-midnight .wave-top.extra-bg {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23000d14%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23101217%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E");
 }
 .theme-midnight .wave-bottom,
 .theme-midnight .wave-bottom.bg0,
@@ -90,9 +91,9 @@
 :root.theme-midnight .wave-bottom.bg0 {
   margin-top: 0px;
   margin-bottom: 1rem;
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23000d14%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23101217%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
 }
 .theme-midnight .wave-bottom.extra-bg,
 :root.theme-midnight .wave-bottom.extra-bg {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23000d14%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23101217%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
 }
