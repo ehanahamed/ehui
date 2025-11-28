@@ -1,0 +1,13 @@
+@use "../src/scss/theme-svgs.scss";
+@use "./light.scss";
+@use "./midnight.scss";
+
+:root {
+    @include light.theme;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        @include midnight.theme;
+    }
+}
