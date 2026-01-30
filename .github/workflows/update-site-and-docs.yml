@@ -25,7 +25,7 @@ jobs:
         run: |
           cd site
           git add .
-          git config --global user.name "Ehan"
-          git config --global user.email "ehanahamed@ehan.dev"
+          git config --global user.name "Ehan A"
+          git config --global user.email "ehan@ehanaha.me"
           git commit -m "Update ehui"
           git push https://ehanahamed:${{ secrets.GH_TOKEN }}@github.com/ehanahamed/site.git --all
