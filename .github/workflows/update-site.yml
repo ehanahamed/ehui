@@ -16,7 +16,7 @@ jobs:
           cp -R ehui/site/* ehan.dev/site/ehui
       - name: Commit & push to ehan.dev (gh)
         run: |
-          cd site
+          cd ehan.dev
           git add .
           git config --global user.name "Ehan A"
           git config --global user.email "ehan@ehanaha.me"
