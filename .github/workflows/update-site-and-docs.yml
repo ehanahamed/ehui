@@ -8,24 +8,24 @@ jobs:
     steps:
       - name: Clone ehui (from GitHub)
         run: git clone https://github.com/ehanahamed/ehui.git
-      - name: Clone site (from GitHub)
-        run: git clone https://github.com/ehanahamed/site.git
-      - name: Copy ehui's site/ into site's site/ehui/
+      - name: Clone ehan.dev (from GitHub)
+        run: git clone https://github.com/ehanahamed/ehan.dev.git
+      - name: Copy ehui/site/ into ehan.dev/site/ehui/
         run: |
-          rm -rf site/site/ehui
-          cp -R ehui/site site/site/ehui
+          rm -rf ehan.dev/site/ehui
+          cp -R ehui/site ehan.dev/site/ehui
       - name: Build & copy docs
         run: |
           cd ehui/docs/
           npm install
           npm run build
-          rm -rf ../../site/site/ehui/docs
-          cp -R dist ../../site/site/ehui/docs
-      - name: Commit & push to site (gh)
+          rm -rf ../../ehan.dev/site/ehui/docs
+          cp -R dist ../../ehan.dev/site/ehui/docs
+      - name: Commit & push to ehan.dev (gh)
         run: |
-          cd site
+          cd ehan.dev
           git add .
           git config --global user.name "Ehan A"
           git config --global user.email "ehan@ehanaha.me"
           git commit -m "Update ehui"
-          git push https://ehanahamed:${{ secrets.GH_TOKEN }}@github.com/ehanahamed/site.git --all
+          git push https://ehanahamed:${{ secrets.GH_TOKEN }}@github.com/ehanahamed/ehan.dev.git --all
