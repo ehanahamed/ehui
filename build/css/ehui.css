@@ -20,7 +20,7 @@ body {
   color: var(--fg-1);
   font-size: 1rem;
   line-height: 1.4;
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-family: system-ui, sans-serif;
   font-weight: normal;
   margin: 0px;
 }
@@ -422,7 +422,7 @@ button,
   border: none;
   border-radius: 1.6rem;
   padding: 0.6rem 1rem;
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-family: system-ui, sans-serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.4;
@@ -563,7 +563,7 @@ label.button:focus-within {
 ::placeholder {
   color: var(--fg-0);
   font-size: 1rem;
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-family: system-ui, sans-serif;
   font-weight: normal;
   opacity: 1;
 }
@@ -578,7 +578,7 @@ textarea {
   text-align: left;
   cursor: text;
   text-decoration: none;
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-family: system-ui, sans-serif;
   background-color: var(--bg-1);
   color: var(--fg-1);
   border: 0.2rem solid var(--border);
