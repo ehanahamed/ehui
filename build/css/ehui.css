@@ -737,7 +737,8 @@ textarea:focus {
   outline: none;
 }
 
-.card {
+.card,
+.card-size {
   width: 40rem;
   height: 20rem;
 }
@@ -763,6 +764,7 @@ textarea:focus {
 
 @media only screen and (max-width: 800px) {
   .card,
+  .card-size,
   .caption {
     width: 100%;
   }
