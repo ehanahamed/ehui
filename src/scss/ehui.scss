@@ -4,7 +4,9 @@
   https://ehan.dev/ehui/LICENSE.txt
 */
 
-$font-family: system-ui, sans-serif !default;
+$font-family: "Noto Sans", Roboto, system-ui, -apple-system, BlinkMacSystemFont, Cantarell, "Segoe UI", "Open Sans", Oxygen, Ubuntu, "Helvetica Neue", sans-serif !default;
+/* Inter removed from font stack for now because of issues with accents on cyrllic characters */
+
 $border-radius: 0.8rem !default;
 $border-radius-button: 1.6rem !default;
 $border-radius-textbox: 0.8rem !default;
