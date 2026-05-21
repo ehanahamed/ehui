@@ -12,6 +12,7 @@ jobs:
         run: git clone https://github.com/ehanahamed/ehan.dev.git
       - name: Copy ehui/site/ into ehan.dev/public/ehui/
         run: |
+          rm -rf ehan.dev/public/ehui
           mkdir -p ehan.dev/public/ehui
           cp -R ehui/site/* ehan.dev/public/ehui
       - name: Commit & push to ehan.dev (gh)
