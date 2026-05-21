@@ -1,15 +1,26 @@
 name: Update Site
 on:
   workflow_dispatch:
+    inputs:
+      ehui-branch:
+        description: 'ehui branch source'
+        default: 'main'
+        required: true
+        type: 'string'
+      ehandotdev-branch:
+        description: 'ehan.dev branch destination'
+        default: 'main'
+        required: true
+        type: 'string'
 jobs:
   build:
     name: Update site
     runs-on: ubuntu-latest
     steps:
       - name: Clone ehui (from GitHub)
-        run: git clone https://github.com/ehanahamed/ehui.git
+        run: git clone --branch "${{ inputs.ehui-branch }}" --single-branch https://github.com/ehanahamed/ehui.git
       - name: Clone ehan.dev (from GitHub)
-        run: git clone https://github.com/ehanahamed/ehan.dev.git
+        run: git clone --branch "${{ inputs.ehandotdev-branch }}" --single-branch https://github.com/ehanahamed/ehan.dev.git
       - name: Copy ehui/site/ into ehan.dev/public/ehui/
         run: |
           rm -rf ehan.dev/public/ehui
@@ -22,4 +33,4 @@ jobs:
           git config --global user.name "Ehan A"
           git config --global user.email "ehan@ehanaha.me"
           git commit -m "Update ehui"
-          git push https://ehanahamed:${{ secrets.GH_TOKEN }}@github.com/ehanahamed/ehan.dev.git --all
+          git push https://ehanahamed:${{ secrets.GH_TOKEN }}@github.com/ehanahamed/ehan.dev.git "${{ inputs.ehandotdev-branch }}"
