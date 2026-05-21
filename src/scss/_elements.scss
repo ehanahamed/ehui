@@ -1303,6 +1303,7 @@ details[open] summary {
   --spinner-color: var(--main);
   --spinner-border-width: 0.2rem;
   --spinner-size: 2rem;
+  --spinner-duration: 1s;
   border: var(--spinner-border-width) solid var(--spinner-color);
   border-top-color: var(--border);
   border-radius: 50%;
