@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone from GitHub
-        run: git clone--branch "${{ inputs.branch }}" --single-branch https://github.com/ehanahamed/ehui.git
+        run: git clone --branch "${{ inputs.branch }}" --single-branch https://github.com/ehanahamed/ehui.git
       - uses: actions/setup-node@v4
         with:
           node-version: 20
