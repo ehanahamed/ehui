@@ -1299,7 +1299,7 @@ details[open] summary {
 }
 
 .spinner {
-  --spinner-color: var(--main);
+  --spinner-color: currentColor;
   --spinner-border-width: 0.2rem;
   --spinner-size: 2rem;
   --spinner-duration: 1s;
@@ -1389,28 +1389,41 @@ details[open] summary {
   --spinner-border-width: 0.2rem;
 }
 
-.spinner.yay {
+.spinner.yay,
+.spinner.color-yay {
   --spinner-color: var(--yay);
 }
 
-.spinner.ohno {
+.spinner.ohno,
+.spinner.color-ohno {
   --spinner-color: var(--ohno);
 }
 
-.spinner.love {
+.spinner.love,
+.spinner.color-love {
   --spinner-color: var(--love);
 }
 
-.spinner.fg0 {
+.spinner.fg0,
+.spinner.color-fg0 {
   --spinner-color: var(--fg-0);
 }
 
-.spinner.fg1 {
+.spinner.fg1,
+.spinner.color-fg1 {
   --spinner-color: var(--fg-1);
 }
 
-.spinner.main {
+.spinner.main,
+.spinner.color-main {
   --spinner-color: var(--main);
+}
+
+.spinner.currentcolor,
+.spinner.currentColor,
+.spinner.color-currentcolor,
+.spinner.color-currentColor {
+  --spinner-color: currentColor;
 }
 
 *,
