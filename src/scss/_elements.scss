@@ -1376,9 +1376,9 @@ details[open] summary {
   --spinner-border-width: 0.2rem;
 }
 
-.spinner.trans,
-.spinner.bg-trans {
-  --spinner-bg-color: transparent;
+.spinner.semi-trans,
+.spinner.bg-semi-trans {
+  --spinner-bg-color: color-mix(in srgb, var(--spinner-color), transparent 60%);;
 }
 
 .spinner.yay,
