@@ -1303,8 +1303,9 @@ details[open] summary {
   --spinner-border-width: 0.2rem;
   --spinner-size: 2rem;
   --spinner-duration: 1s;
+  --spinner-bg-color: var(--border);
   border: var(--spinner-border-width) solid var(--spinner-color);
-  border-top-color: var(--border);
+  border-top-color: var(--spinner-bg-color);
   border-radius: 50%;
   width: var(--spinner-size);
   height: var(--spinner-size);
@@ -1387,6 +1388,11 @@ details[open] summary {
 .spinner.thin,
 .spinner.thick.thin {
   --spinner-border-width: 0.2rem;
+}
+
+.spinner.semi-trans,
+.spinner.bg-semi-trans {
+  --spinner-bg-color: color-mix(in srgb, var(--spinner-color) 20%, transparent);
 }
 
 .spinner.yay,
