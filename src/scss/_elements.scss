@@ -1378,7 +1378,7 @@ details[open] summary {
 
 .spinner.semi-trans,
 .spinner.bg-semi-trans {
-  --spinner-bg-color: color-mix(in srgb, var(--spinner-color), transparent 60%);;
+  --spinner-bg-color: color-mix(in srgb, var(--spinner-color) 20%, transparent);;
 }
 
 .spinner.yay,
