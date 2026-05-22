@@ -1323,7 +1323,8 @@ details[open] summary {
   }
 }
 .spinner.speed-fast,
-.spinner.time-1\/2 {
+.spinner.time-1\/2,
+.spinner.time-0\.5 {
   --spinner-duration: 0.5s;
 }
 
@@ -1337,6 +1338,16 @@ details[open] summary {
   --spinner-duration: 2s;
 }
 
+.spinner.speed-slower,
+.spinner.time-4 {
+  --spinner-duration: 4s;
+}
+
+.spinner.speed-slowest,
+.spinner.time-6 {
+  --spinner-duration: 6s;
+}
+
 .spinner.size-4rem {
   --spinner-size: 4rem;
 }
@@ -1347,6 +1358,22 @@ details[open] summary {
 
 .spinner.size-2rem {
   --spinner-size: 2rem;
+}
+
+.spinner.size-1\.8rem {
+  --spinner-size: 1.8rem;
+}
+
+.spinner.size-1\.6rem {
+  --spinner-size: 1.6rem;
+}
+
+.spinner.size-1\.4rem {
+  --spinner-size: 1.4rem;
+}
+
+.spinner.size-1\.2rem {
+  --spinner-size: 1.2rem;
 }
 
 .spinner.size-1rem {
