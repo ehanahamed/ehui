@@ -1274,12 +1274,17 @@ details[open] summary {
   height: 0.4rem;
 }
 
+.progress-bar.yayy > div,
 .progress-bar.yay > div {
-  background-color: var(--yay);
+  background-color: var(--yayy);
 }
 
 .progress-bar.ohno > div {
   background-color: var(--ohno);
+}
+
+.progress-bar.warn > div {
+  background-color: var(--warn);
 }
 
 .progress-bar.love > div {
@@ -1395,14 +1400,21 @@ details[open] summary {
   --spinner-bg-color: color-mix(in srgb, var(--spinner-color) 20%, transparent);
 }
 
+.spinner.yayy,
+.spinner.color-yayy,
 .spinner.yay,
 .spinner.color-yay {
-  --spinner-color: var(--yay);
+  --spinner-color: var(--yayy);
 }
 
 .spinner.ohno,
 .spinner.color-ohno {
   --spinner-color: var(--ohno);
+}
+
+.spinner.warn,
+.spinner.color-warn {
+  --spinner-color: var(--warn);
 }
 
 .spinner.love,
@@ -2066,6 +2078,16 @@ a.link-ohno:focus {
   color: var(--ohno-alt);
 }
 
+a.link-warn {
+  color: var(--warn);
+  outline-color: var(--warn);
+}
+
+a.link-warn:hover,
+a.link-warn:focus {
+  color: var(--warn-alt);
+}
+
 a.link-love {
   color: var(--love);
   outline-color: var(--love);
@@ -2076,14 +2098,17 @@ a.link-love:focus {
   color: var(--love-alt);
 }
 
+a.link-yayy,
 a.link-yay {
-  color: var(--yay);
-  outline-color: var(--yay);
+  color: var(--yayy);
+  outline-color: var(--yayy);
 }
 
+a.link-yayy:hover,
+a.link-yayy:focus,
 a.link-yay:hover,
 a.link-yay:focus {
-  color: var(--yay-alt);
+  color: var(--yayy-alt);
 }
 
 a.link-extra {
@@ -2111,6 +2136,18 @@ code.ohno {
   color: var(--ohno);
 }
 
+span.warn,
+p.warn,
+b.warn,
+i.warn,
+u.warn,
+.text.warn,
+mark.warn,
+.mark.warn,
+code.warn {
+  color: var(--warn);
+}
+
 span.love,
 p.love,
 b.love,
@@ -2123,6 +2160,15 @@ code.love {
   color: var(--love);
 }
 
+span.yayy,
+p.yayy,
+b.yayy,
+i.yayy,
+u.yayy,
+.text.yayy,
+mark.yayy,
+.mark.yayy,
+code.yayy,
 span.yay,
 p.yay,
 b.yay,
@@ -2132,7 +2178,7 @@ u.yay,
 mark.yay,
 .mark.yay,
 code.yay {
-  color: var(--yay);
+  color: var(--yayy);
 }
 
 span.bg1,
@@ -2212,14 +2258,21 @@ mark.markOhno,
   background-color: var(--ohno);
 }
 
+mark.markWarn,
+.mark.markWarn {
+  background-color: var(--warn);
+}
+
 mark.markLove,
 .mark.markLove {
   background-color: var(--love);
 }
 
+mark.markYayy,
+.mark.markYayy,
 mark.markYay,
 .mark.markYay {
-  background-color: var(--yay);
+  background-color: var(--yayy);
 }
 
 mark.markBg4,
@@ -2262,14 +2315,20 @@ mark.markExtra,
   border-color: var(--ohno);
 }
 
+.box.warn {
+  color: var(--warn);
+  border-color: var(--warn);
+}
+
 .box.love {
   color: var(--love);
   border-color: var(--love);
 }
 
+.box.yayy,
 .box.yay {
-  color: var(--yay);
-  border-color: var(--yay);
+  color: var(--yayy);
+  border-color: var(--yayy);
 }
 
 pre,
@@ -2297,14 +2356,21 @@ button.ohno,
   background-color: var(--ohno);
 }
 
+button.warn,
+.button.warn {
+  background-color: var(--warn);
+}
+
 button.love,
 .button.love {
   background-color: var(--love);
 }
 
+button.yayy,
+.button.yayy,
 button.yay,
 .button.yay {
-  background-color: var(--yay);
+  background-color: var(--yayy);
 }
 
 button.extra,
@@ -2319,15 +2385,23 @@ button.alt.ohno,
   background: var(--bg-2);
 }
 
+button.alt.warn,
+.button.alt.warn {
+  color: var(--warn);
+  background: var(--bg-2);
+}
+
 button.alt.love,
 .button.alt.love {
   color: var(--love);
   background: var(--bg-2);
 }
 
+button.alt.yayy,
+.button.alt.yayy,
 button.alt.yay,
 .button.alt.yay {
-  color: var(--yay);
+  color: var(--yayy);
   background: var(--bg-2);
 }
 
@@ -2347,6 +2421,16 @@ button.alt:focus.ohno,
   color: var(--ohno-alt);
 }
 
+button.alt:hover.warn,
+button.alt:focus.warn,
+.button.alt:hover.warn,
+.button.alt:focus.warn,
+.dropdown:focus > button.alt.warn,
+.dropdown:focus > .button.alt.warn {
+  background-color: var(--bg-3ish);
+  color: var(--warn-alt);
+}
+
 button.alt:hover.love,
 button.alt:focus.love,
 .button.alt:hover.love,
@@ -2357,6 +2441,12 @@ button.alt:focus.love,
   color: var(--love-alt);
 }
 
+button.alt:hover.yayy,
+button.alt:focus.yayy,
+.button.alt:hover.yayy,
+.button.alt:focus.yayy,
+.dropdown:focus > button.alt.yayy,
+.dropdown:focus > .button.alt.yayy,
 button.alt:hover.yay,
 button.alt:focus.yay,
 .button.alt:hover.yay,
@@ -2364,7 +2454,7 @@ button.alt:focus.yay,
 .dropdown:focus > button.alt.yay,
 .dropdown:focus > .button.alt.yay {
   background-color: var(--bg-3ish);
-  color: var(--yay-alt);
+  color: var(--yayy-alt);
 }
 
 button.alt:hover.extra,
@@ -2387,6 +2477,16 @@ button:focus.ohno,
   color: var(--bg-1);
 }
 
+button:hover.warn,
+button:focus.warn,
+.button:hover.warn,
+.button:focus.warn,
+.dropdown:focus > button.warn,
+.dropdown:focus > .button.warn {
+  background-color: var(--warn-alt);
+  color: var(--bg-1);
+}
+
 button:hover.love,
 button:focus.love,
 .button:hover.love,
@@ -2397,13 +2497,19 @@ button:focus.love,
   color: var(--bg-1);
 }
 
+button:hover.yayy,
+button:focus.yayy,
+.button:hover.yayy,
+.button:focus.yayy,
+.dropdown:focus > button.yayy,
+.dropdown:focus > .button.yayy,
 button:hover.yay,
 button:focus.yay,
 .button:hover.yay,
 .button:focus.yay,
 .dropdown:focus > button.yay,
 .dropdown:focus > .button.yay {
-  background-color: var(--yay-alt);
+  background-color: var(--yayy-alt);
   color: var(--bg-1);
 }
 
@@ -2429,6 +2535,16 @@ button.alt.disabled:focus.ohno,
   background: var(--bg-2);
 }
 
+button.alt:disabled:hover.warn,
+button.alt:disabled:focus.warn,
+button.alt.disabled:hover.warn,
+button.alt.disabled:focus.warn,
+.button.alt.disabled:hover.warn,
+.button.alt.disabled:focus.warn {
+  color: var(--warn);
+  background: var(--bg-2);
+}
+
 button.alt:disabled:hover.love,
 button.alt:disabled:focus.love,
 button.alt.disabled:hover.love,
@@ -2439,13 +2555,19 @@ button.alt.disabled:focus.love,
   background: var(--bg-2);
 }
 
+button.alt:disabled:hover.yayy,
+button.alt:disabled:focus.yayy,
+button.alt.disabled:hover.yayy,
+button.alt.disabled:focus.yayy,
+.button.alt.disabled:hover.yayy,
+.button.alt.disabled:focus.yayy,
 button.alt:disabled:hover.yay,
 button.alt:disabled:focus.yay,
 button.alt.disabled:hover.yay,
 button.alt.disabled:focus.yay,
 .button.alt.disabled:hover.yay,
 .button.alt.disabled:focus.yay {
-  color: var(--yay);
+  color: var(--yayy);
   background: var(--bg-2);
 }
 
@@ -2468,6 +2590,15 @@ button.disabled:focus.ohno,
   background-color: var(--ohno);
 }
 
+button:disabled:hover.warn,
+button:disabled:focus.warn,
+button.disabled:hover.warn,
+button.disabled:focus.warn,
+.button.disabled:hover.warn,
+.button.disabled:focus.warn {
+  background-color: var(--warn);
+}
+
 button:disabled:hover.love,
 button:disabled:focus.love,
 button.disabled:hover.love,
@@ -2477,13 +2608,19 @@ button.disabled:focus.love,
   background-color: var(--love);
 }
 
+button:disabled:hover.yayy,
+button:disabled:focus.yayy,
+button.disabled:hover.yayy,
+button.disabled:focus.yayy,
+.button.disabled:hover.yayy,
+.button.disabled:focus.yayy,
 button:disabled:hover.yay,
 button:disabled:focus.yay,
 button.disabled:hover.yay,
 button.disabled:focus.yay,
 .button.disabled:hover.yay,
 .button.disabled:focus.yay {
-  background-color: var(--yay);
+  background-color: var(--yayy);
 }
 
 button:disabled:hover.extra,
@@ -2503,6 +2640,13 @@ button:focus-visible.ohno,
   outline-color: var(--ohno);
 }
 
+button:focus-visible.warn,
+.button:focus-visible.warn,
+.dropdown:focus-visible > button.warn,
+.dropdown:focus-visible > .button.warn {
+  outline-color: var(--warn);
+}
+
 button:focus-visible.love,
 .button:focus-visible.love,
 .dropdown:focus-visible > button.love,
@@ -2510,11 +2654,15 @@ button:focus-visible.love,
   outline-color: var(--love);
 }
 
+button:focus-visible.yayy,
+.button:focus-visible.yayy,
+.dropdown:focus-visible > button.yayy,
+.dropdown:focus-visible > .button.yayy,
 button:focus-visible.yay,
 .button:focus-visible.yay,
 .dropdown:focus-visible > button.yay,
 .dropdown:focus-visible > .button.yay {
-  outline-color: var(--yay);
+  outline-color: var(--yayy);
 }
 
 button:focus-visible.extra,
@@ -2532,6 +2680,14 @@ button.button-box.ohno,
   border-radius: 0.8rem;
 }
 
+button.button-box.warn,
+.button.button-box.warn {
+  color: var(--warn);
+  background: var(--bg-2);
+  border: 0.2rem solid var(--bg-2);
+  border-radius: 0.8rem;
+}
+
 button.button-box.love,
 .button.button-box.love {
   color: var(--love);
@@ -2540,9 +2696,11 @@ button.button-box.love,
   border-radius: 0.8rem;
 }
 
+button.button-box.yayy,
+.button.button-box.yayy,
 button.button-box.yay,
 .button.button-box.yay {
-  color: var(--yay);
+  color: var(--yayy);
   background: var(--bg-2);
   border: 0.2rem solid var(--bg-2);
   border-radius: 0.8rem;
@@ -2557,6 +2715,15 @@ button.button-box:focus.ohno,
   border-color: var(--bg-3);
 }
 
+button.button-box:hover.warn,
+button.button-box:focus.warn,
+.button.button-box:hover.warn,
+.button.button-box:focus.warn {
+  color: var(--warn-alt);
+  background: var(--bg-3);
+  border-color: var(--bg-3);
+}
+
 button.button-box:hover.love,
 button.button-box:focus.love,
 .button.button-box:hover.love,
@@ -2566,19 +2733,27 @@ button.button-box:focus.love,
   border-color: var(--bg-3);
 }
 
+button.button-box:hover.yayy,
+button.button-box:focus.yayy,
+.button.button-box:hover.yayy,
+.button.button-box:focus.yayy,
 button.button-box:hover.yay,
 button.button-box:focus.yay,
 .button.button-box:hover.yay,
 .button.button-box:focus.yay {
-  color: var(--yay-alt);
+  color: var(--yayy-alt);
   background: var(--bg-3);
   border-color: var(--bg-3);
 }
 
 button.button-box.ohno.with-bordercolor-border,
 .button.button-box.ohno.with-bordercolor-border,
+button.button-box.warn.with-bordercolor-border,
+.button.button-box.warn.with-bordercolor-border,
 button.button-box.love.with-bordercolor-border,
 .button.button-box.love.with-bordercolor-border,
+button.button-box.yayy.with-bordercolor-border,
+.button.button-box.yayy.with-bordercolor-border,
 button.button-box.yay.with-bordercolor-border,
 .button.button-box.yay.with-bordercolor-border {
   border-color: var(--border);
@@ -2596,6 +2771,17 @@ button.button-box.disabled:focus.ohno,
   border-color: var(--bg-2);
 }
 
+button.button-box:disabled:hover.warn,
+button.button-box:disabled:focus.warn,
+button.button-box.disabled:hover.warn,
+button.button-box.disabled:focus.warn,
+.button.button-box.disabled:hover.warn,
+.button.button-box.disabled:focus.warn {
+  color: var(--warn);
+  background: var(--bg-2);
+  border-color: var(--bg-2);
+}
+
 button.button-box:disabled:hover.love,
 button.button-box:disabled:focus.love,
 button.button-box.disabled:hover.love,
@@ -2607,13 +2793,19 @@ button.button-box.disabled:focus.love,
   border-color: var(--bg-2);
 }
 
+button.button-box:disabled:hover.yayy,
+button.button-box:disabled:focus.yayy,
+button.button-box.disabled:hover.yayy,
+button.button-box.disabled:focus.yayy,
+.button.button-box.disabled:hover.yayy,
+.button.button-box.disabled:focus.yayy,
 button.button-box:disabled:hover.yay,
 button.button-box:disabled:focus.yay,
 button.button-box.disabled:hover.yay,
 button.button-box.disabled:focus.yay,
 .button.button-box.disabled:hover.yay,
 .button.button-box.disabled:focus.yay {
-  color: var(--yay);
+  color: var(--yayy);
   background: var(--bg-2);
   border-color: var(--bg-2);
 }
@@ -2624,12 +2816,24 @@ button.button-box.disabled:hover.ohno.with-bordercolor-border,
 button.button-box.disabled:focus.ohno.with-bordercolor-border,
 .button.button-box.disabled:hover.ohno.with-bordercolor-border,
 .button.button-box.disabled:focus.ohno.with-bordercolor-border,
+button.button-box:disabled:hover.warn.with-bordercolor-border,
+button.button-box:disabled:focus.warn.with-bordercolor-border,
+button.button-box.disabled:hover.warn.with-bordercolor-border,
+button.button-box.disabled:focus.warn.with-bordercolor-border,
+.button.button-box.disabled:hover.warn.with-bordercolor-border,
+.button.button-box.disabled:focus.warn.with-bordercolor-border,
 button.button-box:disabled:hover.love.with-bordercolor-border,
 button.button-box:disabled:focus.love.with-bordercolor-border,
 button.button-box.disabled:hover.love.with-bordercolor-border,
 button.button-box.disabled:focus.love.with-bordercolor-border,
 .button.button-box.disabled:hover.love.with-bordercolor-border,
 .button.button-box.disabled:focus.love.with-bordercolor-border,
+button.button-box:disabled:hover.yayy.with-bordercolor-border,
+button.button-box:disabled:focus.yayy.with-bordercolor-border,
+button.button-box.disabled:hover.yayy.with-bordercolor-border,
+button.button-box.disabled:focus.yayy.with-bordercolor-border,
+.button.button-box.disabled:hover.yayy.with-bordercolor-border,
+.button.button-box.disabled:focus.yayy.with-bordercolor-border,
 button.button-box:disabled:hover.yay.with-bordercolor-border,
 button.button-box:disabled:focus.yay.with-bordercolor-border,
 button.button-box.disabled:hover.yay.with-bordercolor-border,
@@ -2645,16 +2849,24 @@ button.button-box.selected.ohno,
   border-color: var(--ohno);
 }
 
+button.button-box.selected.warn,
+.button.button-box.selected.warn {
+  color: var(--warn);
+  border-color: var(--warn);
+}
+
 button.button-box.selected.love,
 .button.button-box.selected.love {
   color: var(--love);
   border-color: var(--love);
 }
 
+button.button-box.selected.yayy,
+.button.button-box.selected.yayy,
 button.button-box.selected.yay,
 .button.button-box.selected.yay {
-  color: var(--yay);
-  border-color: var(--yay);
+  color: var(--yayy);
+  border-color: var(--yayy);
 }
 
 button.button-box.selected:hover.ohno,
@@ -2666,6 +2878,15 @@ button.button-box.selected:focus.ohno,
   border-color: var(--ohno-alt);
 }
 
+button.button-box.selected:hover.warn,
+button.button-box.selected:focus.warn,
+.button.button-box.selected:hover.warn,
+.button.button-box.selected:focus.warn {
+  color: var(--warn-alt);
+  background: var(--bg-3);
+  border-color: var(--warn-alt);
+}
+
 button.button-box.selected:hover.love,
 button.button-box.selected:focus.love,
 .button.button-box.selected:hover.love,
@@ -2675,13 +2896,17 @@ button.button-box.selected:focus.love,
   border-color: var(--love-alt);
 }
 
+button.button-box.selected:hover.yayy,
+button.button-box.selected:focus.yayy,
+.button.button-box.selected:hover.yayy,
+.button.button-box.selected:focus.yayy,
 button.button-box.selected:hover.yay,
 button.button-box.selected:focus.yay,
 .button.button-box.selected:hover.yay,
 .button.button-box.selected:focus.yay {
-  color: var(--yay-alt);
+  color: var(--yayy-alt);
   background: var(--bg-3);
-  border-color: var(--yay-alt);
+  border-color: var(--yayy-alt);
 }
 
 /* reset selected + hover/focus styles for disabled + selected button boxes */
@@ -2696,6 +2921,17 @@ button.button-box.selected.disabled:focus.ohno,
   border-color: var(--ohno);
 }
 
+button.button-box.selected:disabled:hover.warn,
+button.button-box.selected:disabled:focus.warn,
+button.button-box.selected.disabled:hover.warn,
+button.button-box.selected.disabled:focus.warn,
+.button.button-box.selected.disabled:hover.warn,
+.button.button-box.selected.disabled:focus.warn {
+  color: var(--warn);
+  background: var(--bg-2);
+  border-color: var(--warn);
+}
+
 button.button-box.selected:disabled:hover.love,
 button.button-box.selected:disabled:focus.love,
 button.button-box.selected.disabled:hover.love,
@@ -2707,15 +2943,21 @@ button.button-box.selected.disabled:focus.love,
   border-color: var(--love);
 }
 
+button.button-box.selected:disabled:hover.yayy,
+button.button-box.selected:disabled:focus.yayy,
+button.button-box.selected.disabled:hover.yayy,
+button.button-box.selected.disabled:focus.yayy,
+.button.button-box.selected.disabled:hover.yayy,
+.button.button-box.selected.disabled:focus.yayy,
 button.button-box.selected:disabled:hover.yay,
 button.button-box.selected:disabled:focus.yay,
 button.button-box.selected.disabled:hover.yay,
 button.button-box.selected.disabled:focus.yay,
 .button.button-box.selected.disabled:hover.yay,
 .button.button-box.selected.disabled:focus.yay {
-  color: var(--yay);
+  color: var(--yayy);
   background: var(--bg-2);
-  border-color: var(--yay);
+  border-color: var(--yayy);
 }
 
 input[type=text].ohno,
@@ -2724,16 +2966,25 @@ textarea.ohno {
   border-color: var(--ohno);
 }
 
+input[type=text].warn,
+input[type=password].warn,
+textarea.warn {
+  border-color: var(--warn);
+}
+
 input[type=text].love,
 input[type=password].love,
 textarea.love {
   border-color: var(--love);
 }
 
+input[type=text].yayy,
+input[type=password].yayy,
+textarea.yayy,
 input[type=text].yay,
 input[type=password].yay,
 textarea.yay {
-  border-color: var(--yay);
+  border-color: var(--yayy);
 }
 
 input[type=text].extra,
@@ -2748,16 +2999,25 @@ textarea.ohno:focus {
   border-color: var(--ohno-alt);
 }
 
+input[type=text].warn:focus,
+input[type=password].warn:focus,
+textarea.warn:focus {
+  border-color: var(--warn-alt);
+}
+
 input[type=text].love:focus,
 input[type=password].love:focus,
 textarea.love:focus {
   border-color: var(--love-alt);
 }
 
+input[type=text].yayy:focus,
+input[type=password].yayy:focus,
+textarea.yayy:focus,
 input[type=text].yay:focus,
 input[type=password].yay:focus,
 textarea.yay:focus {
-  border-color: var(--yay-alt);
+  border-color: var(--yayy-alt);
 }
 
 input[type=text].extra:focus,
@@ -2846,6 +3106,10 @@ button.large,
   fill: var(--ohno);
 }
 
+.fill-warn {
+  fill: var(--warn);
+}
+
 .fill-love {
   fill: var(--love);
 }
@@ -2854,16 +3118,22 @@ button.large,
   fill: var(--ohno-alt);
 }
 
+.fill-warn-alt {
+  fill: var(--warn-alt);
+}
+
 .fill-love-alt {
   fill: var(--love-alt);
 }
 
+.fill-yayy,
 .fill-yay {
-  fill: var(--yay);
+  fill: var(--yayy);
 }
 
+.fill-yayy-alt,
 .fill-yay-alt {
-  fill: var(--yay-alt);
+  fill: var(--yayy-alt);
 }
 
 .fill-main {
@@ -2942,6 +3212,14 @@ button.large,
   color: var(--ohno);
 }
 
+.dropdown .content button.warn,
+.dropdown .content .button.warn,
+.raw-dropdown button.warn,
+.raw-dropdown .button.warn {
+  background-color: var(--bg-2ish);
+  color: var(--warn);
+}
+
 .dropdown .content button.love,
 .dropdown .content .button.love,
 .raw-dropdown button.love,
@@ -2950,12 +3228,16 @@ button.large,
   color: var(--love);
 }
 
+.dropdown .content button.yayy,
+.dropdown .content .button.yayy,
+.raw-dropdown button.yayy,
+.raw-dropdown .button.yayy,
 .dropdown .content button.yay,
 .dropdown .content .button.yay,
 .raw-dropdown button.yay,
 .raw-dropdown .button.yay {
   background-color: var(--bg-2ish);
-  color: var(--yay);
+  color: var(--yayy);
 }
 
 .dropdown .content button.ohno:hover,
@@ -2970,6 +3252,18 @@ button.large,
   color: var(--ohno-alt);
 }
 
+.dropdown .content button.warn:hover,
+.dropdown .content .button.warn:hover,
+.dropdown .content button.warn:focus,
+.dropdown .content .button.warn:focus,
+.raw-dropdown button.warn:hover,
+.raw-dropdown .button.warn:hover,
+.raw-dropdown button.warn:focus,
+.raw-dropdown .button.warn:focus {
+  background-color: var(--bg-3ish);
+  color: var(--warn-alt);
+}
+
 .dropdown .content button.love:hover,
 .dropdown .content .button.love:hover,
 .dropdown .content button.love:focus,
@@ -2982,6 +3276,14 @@ button.large,
   color: var(--love-alt);
 }
 
+.dropdown .content button.yayy:hover,
+.dropdown .content .button.yayy:hover,
+.dropdown .content button.yayy:focus,
+.dropdown .content .button.yayy:focus,
+.raw-dropdown button.yayy:hover,
+.raw-dropdown .button.yayy:hover,
+.raw-dropdown button.yayy:focus,
+.raw-dropdown .button.yayy:focus,
 .dropdown .content button.yay:hover,
 .dropdown .content .button.yay:hover,
 .dropdown .content button.yay:focus,
@@ -2991,7 +3293,7 @@ button.large,
 .raw-dropdown button.yay:focus,
 .raw-dropdown .button.yay:focus {
   background-color: var(--bg-3ish);
-  color: var(--yay-alt);
+  color: var(--yayy-alt);
 }
 
 button.dropdown-toggle.ohno,
@@ -3003,6 +3305,17 @@ button.faint.ohno,
   background-color: transparent;
   border: none;
   color: var(--ohno);
+}
+
+button.dropdown-toggle.warn,
+.button.dropdown-toggle.warn,
+button.icon-only-button.warn,
+.button.icon-only-button.warn,
+button.faint.warn,
+.button.faint.warn {
+  background-color: transparent;
+  border: none;
+  color: var(--warn);
 }
 
 button.dropdown-toggle.love,
@@ -3033,6 +3346,23 @@ button.faint.ohno:focus,
   color: var(--ohno-alt);
 }
 
+button.dropdown-toggle.warn:hover,
+.button.dropdown-toggle.warn:hover,
+button.dropdown-toggle.warn:focus,
+.button.dropdown-toggle.warn:focus,
+button.icon-only-button.warn:hover,
+.button.icon-only-button.warn:hover,
+button.icon-only-button.warn:focus,
+.button.icon-only-button.warn:focus,
+button.faint.warn:hover,
+.button.faint.warn:hover,
+button.faint.warn:focus,
+.button.faint.warn:focus {
+  background-color: var(--bg-3);
+  border: none;
+  color: var(--warn-alt);
+}
+
 button.dropdown-toggle.love:hover,
 .button.dropdown-toggle.love:hover,
 button.dropdown-toggle.love:focus,
@@ -3050,6 +3380,12 @@ button.faint.love:focus,
   color: var(--love-alt);
 }
 
+button.dropdown-toggle.yayy,
+.button.dropdown-toggle.yayy,
+button.icon-only-button.yayy,
+.button.icon-only-button.yayy,
+button.faint.yayy,
+.button.faint.yayy,
 button.dropdown-toggle.yay,
 .button.dropdown-toggle.yay,
 button.icon-only-button.yay,
@@ -3058,9 +3394,21 @@ button.faint.yay,
 .button.faint.yay {
   background-color: transparent;
   border: none;
-  color: var(--yay);
+  color: var(--yayy);
 }
 
+button.dropdown-toggle.yayy:hover,
+.button.dropdown-toggle.yayy:hover,
+button.dropdown-toggle.yayy:focus,
+.button.dropdown-toggle.yayy:focus,
+button.icon-only-button.yayy:hover,
+.button.icon-only-button.yayy:hover,
+button.icon-only-button.yayy:focus,
+.button.icon-only-button.yayy:focus,
+button.faint.yayy:hover,
+.button.faint.yayy:hover,
+button.faint.yayy:focus,
+.button.faint.yayy:focus,
 button.dropdown-toggle.yay:hover,
 .button.dropdown-toggle.yay:hover,
 button.dropdown-toggle.yay:focus,
@@ -3075,7 +3423,7 @@ button.faint.yay:focus,
 .button.faint.yay:focus {
   background-color: var(--bg-3);
   border: none;
-  color: var(--yay-alt);
+  color: var(--yayy-alt);
 }
 
 @media (prefers-reduced-motion) {
