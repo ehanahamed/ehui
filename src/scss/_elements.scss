@@ -1286,6 +1286,9 @@ details[open] summary {
 .progress-bar.ohno > div {
   background-color: var(--ohno);
 }
+.progress-bar.warn > div {
+  background-color: var(--warn);
+}
 .progress-bar.love > div {
   background-color: var(--love);
 }
@@ -1388,6 +1391,10 @@ details[open] summary {
 .spinner.ohno,
 .spinner.color-ohno {
   --spinner-color: var(--ohno);
+}
+.spinner.warn,
+.spinner.color-warn {
+  --spinner-color: var(--warn);
 }
 .spinner.love,
 .spinner.color-love {

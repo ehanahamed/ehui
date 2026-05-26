@@ -21,6 +21,15 @@ a.link-ohno:focus {
   color: var(--ohno-alt);
 }
 
+a.link-warn {
+  color: var(--warn);
+  outline-color: var(--warn);
+}
+a.link-warn:hover,
+a.link-warn:focus {
+  color: var(--warn-alt);
+}
+
 a.link-love {
   color: var(--love);
   outline-color: var(--love);
@@ -62,6 +71,17 @@ mark.ohno,
 .mark.ohno,
 code.ohno {
   color: var(--ohno);
+}
+span.warn,
+p.warn,
+b.warn,
+i.warn,
+u.warn,
+.text.warn,
+mark.warn,
+.mark.warn,
+code.warn {
+  color: var(--warn);
 }
 span.love,
 p.love,
@@ -163,6 +183,10 @@ mark.markOhno,
 .mark.markOhno {
   background-color: var(--ohno);
 }
+mark.markWarn,
+.mark.markWarn {
+  background-color: var(--warn);
+}
 mark.markLove,
 .mark.markLove {
   background-color: var(--love);
@@ -212,6 +236,10 @@ mark.markExtra,
   color: var(--ohno);
   border-color: var(--ohno);
 }
+.box.warn {
+  color: var(--warn);
+  border-color: var(--warn);
+}
 .box.love {
   color: var(--love);
   border-color: var(--love);
@@ -246,6 +274,10 @@ button.ohno,
 .button.ohno {
   background-color: var(--ohno);
 }
+button.warn,
+.button.warn {
+  background-color: var(--warn);
+}
 button.love,
 .button.love {
   background-color: var(--love);
@@ -265,6 +297,11 @@ button.extra,
 button.alt.ohno,
 .button.alt.ohno {
   color: var(--ohno);
+  background: var(--bg-2);
+}
+button.alt.warn,
+.button.alt.warn {
+  color: var(--warn);
   background: var(--bg-2);
 }
 button.alt.love,
@@ -293,6 +330,15 @@ button.alt:focus.ohno,
 .dropdown:focus > .button.alt.ohno {
   background-color: var(--bg-3ish);
   color: var(--ohno-alt);
+}
+button.alt:hover.warn,
+button.alt:focus.warn,
+.button.alt:hover.warn,
+.button.alt:focus.warn,
+.dropdown:focus > button.alt.warn,
+.dropdown:focus > .button.alt.warn {
+  background-color: var(--bg-3ish);
+  color: var(--warn-alt);
 }
 button.alt:hover.love,
 button.alt:focus.love,
@@ -331,6 +377,15 @@ button:focus.ohno,
 .dropdown:focus > button.ohno,
 .dropdown:focus > .button.ohno {
   background-color: var(--ohno-alt);
+  color: var(--bg-1);
+}
+button:hover.warn,
+button:focus.warn,
+.button:hover.warn,
+.button:focus.warn,
+.dropdown:focus > button.warn,
+.dropdown:focus > .button.warn {
+  background-color: var(--warn-alt);
   color: var(--bg-1);
 }
 button:hover.love,
@@ -374,6 +429,15 @@ button.alt.disabled:focus.ohno,
   color: var(--ohno);
   background: var(--bg-2);
 }
+button.alt:disabled:hover.warn,
+button.alt:disabled:focus.warn,
+button.alt.disabled:hover.warn,
+button.alt.disabled:focus.warn,
+.button.alt.disabled:hover.warn,
+.button.alt.disabled:focus.warn {
+  color: var(--warn);
+  background: var(--bg-2);
+}
 button.alt:disabled:hover.love,
 button.alt:disabled:focus.love,
 button.alt.disabled:hover.love,
@@ -409,6 +473,14 @@ button.disabled:focus.ohno,
 .button.disabled:focus.ohno {
   background-color: var(--ohno);
 }
+button:disabled:hover.warn,
+button:disabled:focus.warn,
+button.disabled:hover.warn,
+button.disabled:focus.warn,
+.button.disabled:hover.warn,
+.button.disabled:focus.warn {
+  background-color: var(--warn);
+}
 button:disabled:hover.love,
 button:disabled:focus.love,
 button.disabled:hover.love,
@@ -441,6 +513,12 @@ button:focus-visible.ohno,
 .dropdown:focus-visible > .button.ohno {
   outline-color: var(--ohno);
 }
+button:focus-visible.warn,
+.button:focus-visible.warn,
+.dropdown:focus-visible > button.warn,
+.dropdown:focus-visible > .button.warn {
+  outline-color: var(--warn);
+}
 button:focus-visible.love,
 .button:focus-visible.love,
 .dropdown:focus-visible > button.love,
@@ -469,6 +547,13 @@ button.button-box.ohno,
   border: 0.2rem solid var(--bg-2);
   border-radius: $border-radius;
 }
+button.button-box.warn,
+.button.button-box.warn {
+  color: var(--warn);
+  background: var(--bg-2);
+  border: 0.2rem solid var(--bg-2);
+  border-radius: $border-radius;
+}
 button.button-box.love,
 .button.button-box.love {
   color: var(--love);
@@ -493,6 +578,14 @@ button.button-box:focus.ohno,
   background: var(--bg-3);
   border-color: var(--bg-3);
 }
+button.button-box:hover.warn,
+button.button-box:focus.warn,
+.button.button-box:hover.warn,
+.button.button-box:focus.warn {
+  color: var(--warn-alt);
+  background: var(--bg-3);
+  border-color: var(--bg-3);
+}
 button.button-box:hover.love,
 button.button-box:focus.love,
 .button.button-box:hover.love,
@@ -513,6 +606,8 @@ button.button-box:focus.yay,
 
 button.button-box.ohno.with-bordercolor-border,
 .button.button-box.ohno.with-bordercolor-border,
+button.button-box.warn.with-bordercolor-border,
+.button.button-box.warn.with-bordercolor-border,
 button.button-box.love.with-bordercolor-border,
 .button.button-box.love.with-bordercolor-border,
 button.button-box.yay.with-bordercolor-border,
@@ -528,6 +623,16 @@ button.button-box.disabled:focus.ohno,
 .button.button-box.disabled:hover.ohno,
 .button.button-box.disabled:focus.ohno {
   color: var(--ohno);
+  background: var(--bg-2);
+  border-color: var(--bg-2);
+}
+button.button-box:disabled:hover.warn,
+button.button-box:disabled:focus.warn,
+button.button-box.disabled:hover.warn,
+button.button-box.disabled:focus.warn,
+.button.button-box.disabled:hover.warn,
+.button.button-box.disabled:focus.warn {
+  color: var(--warn);
   background: var(--bg-2);
   border-color: var(--bg-2);
 }
@@ -557,6 +662,12 @@ button.button-box.disabled:hover.ohno.with-bordercolor-border,
 button.button-box.disabled:focus.ohno.with-bordercolor-border,
 .button.button-box.disabled:hover.ohno.with-bordercolor-border,
 .button.button-box.disabled:focus.ohno.with-bordercolor-border,
+button.button-box:disabled:hover.warn.with-bordercolor-border,
+button.button-box:disabled:focus.warn.with-bordercolor-border,
+button.button-box.disabled:hover.warn.with-bordercolor-border,
+button.button-box.disabled:focus.warn.with-bordercolor-border,
+.button.button-box.disabled:hover.warn.with-bordercolor-border,
+.button.button-box.disabled:focus.warn.with-bordercolor-border,
 button.button-box:disabled:hover.love.with-bordercolor-border,
 button.button-box:disabled:focus.love.with-bordercolor-border,
 button.button-box.disabled:hover.love.with-bordercolor-border,
@@ -577,6 +688,11 @@ button.button-box.selected.ohno,
   color: var(--ohno);
   border-color: var(--ohno);
 }
+button.button-box.selected.warn,
+.button.button-box.selected.warn {
+  color: var(--warn);
+  border-color: var(--warn);
+}
 button.button-box.selected.love,
 .button.button-box.selected.love {
   color: var(--love);
@@ -596,6 +712,14 @@ button.button-box.selected:focus.ohno,
   color: var(--ohno-alt);
   background: var(--bg-3);
   border-color: var(--ohno-alt);
+}
+button.button-box.selected:hover.warn,
+button.button-box.selected:focus.warn,
+.button.button-box.selected:hover.warn,
+.button.button-box.selected:focus.warn {
+  color: var(--warn-alt);
+  background: var(--bg-3);
+  border-color: var(--warn-alt);
 }
 button.button-box.selected:hover.love,
 button.button-box.selected:focus.love,
@@ -626,6 +750,16 @@ button.button-box.selected.disabled:focus.ohno,
   background: var(--bg-2);
   border-color: var(--ohno);
 }
+button.button-box.selected:disabled:hover.warn,
+button.button-box.selected:disabled:focus.warn,
+button.button-box.selected.disabled:hover.warn,
+button.button-box.selected.disabled:focus.warn,
+.button.button-box.selected.disabled:hover.warn,
+.button.button-box.selected.disabled:focus.warn {
+  color: var(--warn);
+  background: var(--bg-2);
+  border-color: var(--warn);
+}
 button.button-box.selected:disabled:hover.love,
 button.button-box.selected:disabled:focus.love,
 button.button-box.selected.disabled:hover.love,
@@ -652,6 +786,11 @@ input[type="password"].ohno,
 textarea.ohno {
   border-color: var(--ohno);
 }
+input[type="text"].warn,
+input[type="password"].warn,
+textarea.warn {
+  border-color: var(--warn);
+}
 input[type="text"].love,
 input[type="password"].love,
 textarea.love {
@@ -674,6 +813,11 @@ input[type="text"].ohno:focus,
 input[type="password"].ohno:focus,
 textarea.ohno:focus {
   border-color: var(--ohno-alt);
+}
+input[type="text"].warn:focus,
+input[type="password"].warn:focus,
+textarea.warn:focus {
+  border-color: var(--warn-alt);
 }
 input[type="text"].love:focus,
 input[type="password"].love:focus,
@@ -772,12 +916,18 @@ button.large,
 .fill-ohno {
   fill: var(--ohno);
 }
+.fill-warn {
+  fill: var(--warn);
+}
 .fill-love {
   fill: var(--love);
 }
 
 .fill-ohno-alt {
   fill: var(--ohno-alt);
+}
+.fill-warn-alt {
+  fill: var(--warn-alt);
 }
 .fill-love-alt {
   fill: var(--love-alt);
@@ -866,6 +1016,13 @@ button.large,
   background-color: var(--bg-2ish);
   color: var(--ohno);
 }
+.dropdown .content button.warn,
+.dropdown .content .button.warn,
+.raw-dropdown button.warn,
+.raw-dropdown .button.warn {
+  background-color: var(--bg-2ish);
+  color: var(--warn);
+}
 .dropdown .content button.love,
 .dropdown .content .button.love,
 .raw-dropdown button.love,
@@ -892,6 +1049,17 @@ button.large,
 .raw-dropdown .button.ohno:focus {
   background-color: var(--bg-3ish);
   color: var(--ohno-alt);
+}
+.dropdown .content button.warn:hover,
+.dropdown .content .button.warn:hover,
+.dropdown .content button.warn:focus,
+.dropdown .content .button.warn:focus,
+.raw-dropdown button.warn:hover,
+.raw-dropdown .button.warn:hover,
+.raw-dropdown button.warn:focus,
+.raw-dropdown .button.warn:focus {
+  background-color: var(--bg-3ish);
+  color: var(--warn-alt);
 }
 .dropdown .content button.love:hover,
 .dropdown .content .button.love:hover,
@@ -927,6 +1095,16 @@ button.faint.ohno,
   border: none;
   color: var(--ohno);
 }
+button.dropdown-toggle.warn,
+.button.dropdown-toggle.warn,
+button.icon-only-button.warn,
+.button.icon-only-button.warn,
+button.faint.warn,
+.button.faint.warn {
+  background-color: transparent;
+  border: none;
+  color: var(--warn);
+}
 button.dropdown-toggle.love,
 .button.dropdown-toggle.love,
 button.icon-only-button.love,
@@ -953,6 +1131,22 @@ button.faint.ohno:focus,
   background-color: var(--bg-3);
   border: none;
   color: var(--ohno-alt);
+}
+button.dropdown-toggle.warn:hover,
+.button.dropdown-toggle.warn:hover,
+button.dropdown-toggle.warn:focus,
+.button.dropdown-toggle.warn:focus,
+button.icon-only-button.warn:hover,
+.button.icon-only-button.warn:hover,
+button.icon-only-button.warn:focus,
+.button.icon-only-button.warn:focus,
+button.faint.warn:hover,
+.button.faint.warn:hover,
+button.faint.warn:focus,
+.button.faint.warn:focus {
+  background-color: var(--bg-3);
+  border: none;
+  color: var(--warn-alt);
 }
 button.dropdown-toggle.love:hover,
 .button.dropdown-toggle.love:hover,
