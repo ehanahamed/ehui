@@ -1280,8 +1280,9 @@ details[open] summary {
   height: 0.4rem;
 }
 
+.progress-bar.yayy > div,
 .progress-bar.yay > div {
-  background-color: var(--yay);
+  background-color: var(--yayy);
 }
 .progress-bar.ohno > div {
   background-color: var(--ohno);
@@ -1384,9 +1385,11 @@ details[open] summary {
   --spinner-bg-color: color-mix(in srgb, var(--spinner-color) 20%, transparent);;
 }
 
+.spinner.yayy,
+.spinner.color-yayy,
 .spinner.yay,
 .spinner.color-yay {
-  --spinner-color: var(--yay);
+  --spinner-color: var(--yayy);
 }
 .spinner.ohno,
 .spinner.color-ohno {
