@@ -139,6 +139,7 @@
           </ol>
           <p>Text, <a href="https://ehui.ehan.dev">link</a>.</p>
           <p><a class="link-ohno" href="https://ehui.ehan.dev">link-ohno</a></p>
+          <p><a class="link-warn" href="https://ehui.ehan.dev">link-warn</a></p>
           <p><a class="link-yay" href="https://ehui.ehan.dev">link-yay</a></p>
           <p><a class="link-extra" href="https://ehui.ehan.dev">link-extra</a></p>
           <p><a class="link-love" href="https://ehui.ehan.dev">link-love</a></p>
@@ -155,6 +156,10 @@
             <button class="button alt ohno">Ohno alt</button>
           </div>
           <div class="flex">
+            <button class="button warn">Warn</button>
+            <button class="button alt warn">Warn alt</button>
+          </div>
+          <div class="flex">
             <button class="button">Button</button>
             <a href="https://ehui.ehan.dev" class="button">Link button</a>
           </div>
@@ -166,11 +171,14 @@
         <div class="flex">
             <button class="yay" disabled>Yay button</button>
             <a class="button ohno disabled">Ohno link-button</a>
+            <a class="button warn disabled">Warn link-button</a>
             <button class="yay alt" disabled>Yay alt</button>
             <button class="ohno alt" disabled>Ohno alt</button>
+            <button class="warn alt" disabled>Warn alt</button>
         </div>
           <p>Default text</p>
           <p class="ohno">Ohno text</p>
+          <p class="warn">Warn text</p>
           <p class="yay">Yay text</p>
           <p class="main">Main text</p>
           <p class="fg2">Fg2 text</p>
@@ -380,6 +388,7 @@
           <p class="box center">Notice box text</p>
           <p class="box center yay">Notice box text</p>
           <p class="box center ohno">Notice box text</p>
+          <p class="box center warn">Notice box text</p>
           <h2>Boxes</h2>
           <div class="box">
             <p>Box text</p>
@@ -402,11 +411,19 @@
               <button class="ohno alt">Button</button>
             </div>
           </div>
+          <div class="box warn">
+            <p>Red box</p>
+            <div class="flex">
+              <button class="warn">Button</button>
+              <button class="warn alt">Button</button>
+            </div>
+          </div>
           <h2>Inputs</h2>
           <p>Text input</p>
           <div class="flex col">
             <div><input type="text" placeholder="Text input" /></div>
             <div><input class="ohno" type="text" placeholder="Red text input" /></div>
+            <div><input class="warn" type="text" placeholder="Orange text input" /></div>
             <div><input class="yay" type="text" placeholder="Green text input" /></div>
           </div>
           <p>Password input</p>
@@ -414,6 +431,11 @@
             <div><input type="password" placeholder="Password input" /></div>
             <div><input
               class="ohno"
+              type="password"
+              placeholder="Red password input"
+            /></div>
+            <div><input
+              class="warn"
               type="password"
               placeholder="Red password input"
             /></div>
@@ -430,6 +452,11 @@
               class="ohno"
               rows="2"
               placeholder="Red textarea"
+            ></textarea>
+            <textarea
+              class="warn"
+              rows="2"
+              placeholder="Orange textarea"
             ></textarea>
             <textarea
               class="yay"
@@ -607,6 +634,7 @@
             <p>
                 "yay" color is for success (usually green)<br>
                 "ohno" is for danger/error (usually red)<br>
+                "warn" is for warning/loading (usually orange)<br>
                 "extra" is just an accent/secondary color, it can be the same as yay if we want<br>
                 "love" is a cute (usually red) color for not-scary stuff, it can be the same as ohno<br>
                 the main difference is ohno and yay need to have contrast, so in colorblind themes they might not be red/green, but they should always give off negative/positive vibes, while love is supposed to be used for stuff like like buttons or donation links which isn't the same "scary" vibe use case that ohno is for
@@ -658,6 +686,10 @@
           <div class="flex">
             <button class="large ohno">Button</button>
             <a href="https://ehui.ehan.dev" class="button large alt ohno">Alt Link Button</a>
+          </div>
+          <div class="flex">
+            <button class="large warn">Button</button>
+            <a href="https://ehui.ehan.dev" class="button large alt warn">Alt Link Button</a>
           </div>
           <div class="flex">
             <button class="large">Button</button>
@@ -720,7 +752,7 @@
               <p>Example 3</p>
             </button>
           </div>
-          <p>We can apply color classes <code>.yay</code> and <code>.ohno</code> to button boxes too</p>
+          <p>We can apply color classes <code>.yay</code>, <code>.ohno</code>, etc to button boxes too</p>
           <div class="flex">
             <button id="button-box-w-color-1" class="button-box">
               Plain
@@ -890,10 +922,11 @@
             <div>
                         <div class="spinner"></div>
             </div>
-            <p>Add <code>yay, ohno, love, fg0, fg1, main, currentcolor or currentColor</code> classes for colors (or <code>color-yay, color-ohno, color-love, color-fg0, color-fg1, color-main, color-currentcolor or color-currentColor</code>)</p>
+            <p>Add <code>yay, ohno, warn, love, fg0, fg1, main, currentcolor or currentColor</code> classes for colors (or <code>color-yay, color-ohno, color-warn, color-love, color-fg0, color-fg1, color-main, color-currentcolor or color-currentColor</code>)</p>
             <div class="flex">
                         <div class="spinner yay"></div>
                         <div class="spinner ohno"></div>
+                        <div class="spinner warn"></div>
                         <div class="spinner love"></div>
                         <div class="spinner fg0"></div>
                         <div class="spinner fg1"></div>
@@ -904,7 +937,7 @@
             <div class="flex">
                         <div class="spinner yay speed-fast"></div>
                         <div class="spinner speed-mid"></div>
-                        <div class="spinner ohno speed-slow"></div>
+                        <div class="spinner warn speed-slow"></div>
                         <div class="spinner ohno speed-slower"></div>
                         <div class="spinner ohno speed-slowest"></div>
             </div>
