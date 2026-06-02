@@ -1,0 +1,61 @@
+@use "../src/scss/theme-svgs.scss";
+
+@mixin theme {
+    color-scheme: light;
+    --ohno: #f03e3e;
+    --ohno-on-bg: #f03e3e;
+    --ohno-alt: #c92a2a;
+    --ohno-faint: #c92a2a;
+    --on-ohno: #c92a2a;
+    --warn: #f0973e;
+    --warn-alt: #c97a2a;
+    --love: #F03D66;
+    --love-on-bg: #F03D66;
+    --love-alt: #CA2B50;
+    --love-faint: #CA2B50;
+    --on-love: #CA2B50;
+    --yayy: #0fb180;
+    --yayy-on-bg: #0fb180;
+    --yayy-alt: #087f5b;
+    --yayy-faint: #087f5b;
+    --on-yayy: #087f5b;
+    --yay: var(--yayy);
+    --yay-on-bg: var(--yayy-on-bg);
+    --yay-alt: var(--yayy-alt);
+    --yay-faint: var(--yayy-faint);
+    --on-yay: var(--on-yayy);
+    --main: var(--ohno);
+    --main-on-bg: var(--ohno-on-bg);
+    --main-alt: var(--ohno-alt);
+    --main-alt-on-bg: var(--ohno-alt-on-bg);
+    --main-faint: var(--ohno-faint);
+    --on-main: #fff;
+    --extra: #0fb180;
+    --extra-on-bg: #0fb180;
+    --extra-alt: #087f5b;
+    --extra-faint: #087f5b;
+    --on-extra: #087f5b;
+    --extra-bg: #fafafa;
+    --fg-2: #242528;
+    --fg-1: #242528;
+    --fg-0: #747474;
+    --border: #f0f0f0;
+    --bg-3-alt: #f2f2f2;
+    --bg-3: #f2f2f2;
+    --bg-3ish: #fafafa;
+    --bg-2: #fafafa;
+    --bg-2ish: #fefefe;
+    --bg-1: #fefefe;
+    --bg-0: #fafafa;
+    --on-select-bg: #242528;
+    --select-bg: #d4defa;
+    --above-box-shadow-color: rgba(0, 0, 0, 0.1);
+    --button-box-shadow-color: rgba(0, 0, 0, 0.08);
+
+    @include theme-svgs.waves(#fafafa /* bg0 */, #fafafa /* extra-bg */);
+}
+
+.theme-flight,
+:root.theme-flight {
+    @include theme;
+}
