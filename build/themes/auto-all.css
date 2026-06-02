@@ -425,6 +425,220 @@
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23010101%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
 }
 
+.theme-flight,
+:root.theme-flight {
+  color-scheme: light;
+  --ohno: #f03e3e;
+  --ohno-on-bg: #f03e3e;
+  --ohno-alt: #c92a2a;
+  --ohno-faint: #c92a2a;
+  --on-ohno: #c92a2a;
+  --warn: #f0973e;
+  --warn-alt: #c97a2a;
+  --love: #F03D66;
+  --love-on-bg: #F03D66;
+  --love-alt: #CA2B50;
+  --love-faint: #CA2B50;
+  --on-love: #CA2B50;
+  --yayy: #0fb180;
+  --yayy-on-bg: #0fb180;
+  --yayy-alt: #087f5b;
+  --yayy-faint: #087f5b;
+  --on-yayy: #087f5b;
+  --yay: var(--yayy);
+  --yay-on-bg: var(--yayy-on-bg);
+  --yay-alt: var(--yayy-alt);
+  --yay-faint: var(--yayy-faint);
+  --on-yay: var(--on-yayy);
+  --main: var(--ohno);
+  --main-on-bg: var(--ohno-on-bg);
+  --main-alt: var(--ohno-alt);
+  --main-alt-on-bg: var(--ohno-alt-on-bg);
+  --main-faint: var(--ohno-faint);
+  --on-main: #fff;
+  --extra: #0fb180;
+  --extra-on-bg: #0fb180;
+  --extra-alt: #087f5b;
+  --extra-faint: #087f5b;
+  --on-extra: #087f5b;
+  --extra-bg: #fafafa;
+  --fg-2: #242528;
+  --fg-1: #242528;
+  --fg-0: #747474;
+  --border: #f0f0f0;
+  --bg-3-alt: #f2f2f2;
+  --bg-3: #f2f2f2;
+  --bg-3ish: #fafafa;
+  --bg-2: #fafafa;
+  --bg-2ish: #fefefe;
+  --bg-1: #fefefe;
+  --bg-0: #fafafa;
+  --on-select-bg: #242528;
+  --select-bg: #d4defa;
+  --above-box-shadow-color: rgba(0, 0, 0, 0.1);
+  --button-box-shadow-color: rgba(0, 0, 0, 0.08);
+}
+.theme-flight .wave-top,
+.theme-flight .wave-bottom,
+:root.theme-flight .wave-top,
+:root.theme-flight .wave-bottom {
+  width: 100%;
+  height: 10rem;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-size: 100% 10rem;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 800px) {
+  .theme-flight .wave-top,
+  .theme-flight .wave-bottom,
+  :root.theme-flight .wave-top,
+  :root.theme-flight .wave-bottom {
+    height: 8rem;
+    background-size: 100% 8rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .theme-flight .wave-top,
+  .theme-flight .wave-bottom,
+  :root.theme-flight .wave-top,
+  :root.theme-flight .wave-bottom {
+    height: 6rem;
+    background-size: 100% 6rem;
+  }
+}
+.theme-flight .wave-top,
+.theme-flight .wave-top.bg0,
+:root.theme-flight .wave-top,
+:root.theme-flight .wave-top.bg0 {
+  margin-top: 1rem;
+  margin-bottom: 0px;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23fafafa%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E");
+}
+.theme-flight .wave-top.extra-bg,
+:root.theme-flight .wave-top.extra-bg {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23fafafa%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E");
+}
+.theme-flight .wave-bottom,
+.theme-flight .wave-bottom.bg0,
+:root.theme-flight .wave-bottom,
+:root.theme-flight .wave-bottom.bg0 {
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23fafafa%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
+}
+.theme-flight .wave-bottom.extra-bg,
+:root.theme-flight .wave-bottom.extra-bg {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23fafafa%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.theme-fdark,
+:root.theme-fdark {
+  color-scheme: dark;
+  --ohno: #ff6666;
+  --ohno-on-bg: #ff6666;
+  --ohno-alt: #ff9999;
+  --ohno-faint: #ff9999;
+  --on-ohno: #010101;
+  --warn: #ffb366;
+  --warn-alt: #ffcc99;
+  --love: #FF668A;
+  --love-on-bg: #FF668A;
+  --love-alt: #FF99B1;
+  --love-faint: #FF99B1;
+  --on-love: #010101;
+  --yayy: #80FFBF;
+  --yayy-on-bg: #80FFBF;
+  --yayy-alt: #B3FFD9;
+  --yayy-faint: #B3FFD9;
+  --on-yayy: #010101;
+  --yay: var(--yayy);
+  --yay-on-bg: var(--yayy-on-bg);
+  --yay-alt: var(--yayy-alt);
+  --yay-faint: var(--yayy-faint);
+  --on-yay: var(--on-yayy);
+  --main: var(--ohno);
+  --main-on-bg: var(--ohno-on-bg);
+  --main-alt: var(--ohno-alt);
+  --main-alt-on-bg: var(--ohno-alt-on-bg);
+  --main-faint: var(--ohno-faint);
+  --on-main: #010101;
+  --extra: #80FFBF;
+  --extra-on-bg: #80FFBF;
+  --extra-alt: #B3FFD9;
+  --extra-faint: #B3FFD9;
+  --on-extra: #010101;
+  --extra-bg: #010101;
+  --fg-2: #ffffff;
+  --fg-1: #ffffff;
+  --fg-0: #cccccc;
+  --border: #333333;
+  --bg-3-alt: #272727;
+  --bg-3: #252525;
+  --bg-3ish: #252525;
+  --bg-2: #202020;
+  --bg-2ish: #202020;
+  --bg-1: #121212;
+  --bg-0: #010101;
+  --on-select-bg: #ffffff;
+  --select-bg: #303030;
+  --above-box-shadow-color: rgba(0, 0, 0, 0.4);
+  --button-box-shadow-color: rgba(0, 0, 0, 0.2);
+}
+.theme-fdark .wave-top,
+.theme-fdark .wave-bottom,
+:root.theme-fdark .wave-top,
+:root.theme-fdark .wave-bottom {
+  width: 100%;
+  height: 10rem;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-size: 100% 10rem;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 800px) {
+  .theme-fdark .wave-top,
+  .theme-fdark .wave-bottom,
+  :root.theme-fdark .wave-top,
+  :root.theme-fdark .wave-bottom {
+    height: 8rem;
+    background-size: 100% 8rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .theme-fdark .wave-top,
+  .theme-fdark .wave-bottom,
+  :root.theme-fdark .wave-top,
+  :root.theme-fdark .wave-bottom {
+    height: 6rem;
+    background-size: 100% 6rem;
+  }
+}
+.theme-fdark .wave-top,
+.theme-fdark .wave-top.bg0,
+:root.theme-fdark .wave-top,
+:root.theme-fdark .wave-top.bg0 {
+  margin-top: 1rem;
+  margin-bottom: 0px;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23010101%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E");
+}
+.theme-fdark .wave-top.extra-bg,
+:root.theme-fdark .wave-top.extra-bg {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23010101%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060v140H0Z%22%2F%3E%3C%2Fsvg%3E");
+}
+.theme-fdark .wave-bottom,
+.theme-fdark .wave-bottom.bg0,
+:root.theme-fdark .wave-bottom,
+:root.theme-fdark .wave-bottom.bg0 {
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23010101%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
+}
+.theme-fdark .wave-bottom.extra-bg,
+:root.theme-fdark .wave-bottom.extra-bg {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23010101%22%20d%3D%22M0%20100s250.096-101.786%20566.869%206.735C861.491%20207.668%201000%2060%201000%2060V0H0Z%22%2F%3E%3C%2Fsvg%3E");
+}
+
 :root {
   color-scheme: light;
   --ohno: #f03e3e;
