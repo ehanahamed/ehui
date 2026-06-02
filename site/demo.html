@@ -114,6 +114,12 @@
             <button class="button-box" id="theme-midnight-button">
               Midnight
             </button>
+            <button class="button-box" id="theme-flight-button">
+              FLight
+            </button>
+            <button class="button-box" id="theme-fdark-button">
+              FDark
+            </button>
           </div>
           <h1>Heading 1</h1>
           <h2>Heading 2</h2>
@@ -1301,85 +1307,77 @@
       })
     </script>
     <script>
-      document.getElementById("theme-auto-button").addEventListener("click", function () {
-        if (window.localStorage) {
-          localStorage.setItem("ehuidemo:theme", "auto");
-        }
+	  function resetThemes() {
+        document.documentElement.classList.remove("theme-auto");
         document.documentElement.classList.remove("theme-light");
         document.documentElement.classList.remove("theme-dark");
         document.documentElement.classList.remove("theme-monochrome");
         document.documentElement.classList.remove("theme-midnight");
-        document.documentElement.classList.add("theme-auto");
-
-        document.getElementById("theme-auto-button").classList.add("selected");
+        document.documentElement.classList.remove("theme-flight");
+        document.documentElement.classList.remove("theme-fdark");
+        document.getElementById("theme-auto-button").classList.remove("selected");
         document.getElementById("theme-light-button").classList.remove("selected");
         document.getElementById("theme-dark-button").classList.remove("selected");
         document.getElementById("theme-monochrome-button").classList.remove("selected");
         document.getElementById("theme-midnight-button").classList.remove("selected");
+        document.getElementById("theme-flight-button").classList.remove("selected");
+        document.getElementById("theme-fdark-button").classList.remove("selected");
+	  }
+      document.getElementById("theme-auto-button").addEventListener("click", function () {
+        if (window.localStorage) {
+          localStorage.setItem("ehuidemo:theme", "auto");
+        }
+		resetThemes();
+        document.documentElement.classList.add("theme-auto");
+        document.getElementById("theme-auto-button").classList.add("selected");
       });
       document.getElementById("theme-light-button").addEventListener("click", function () {
         if (window.localStorage) {
           localStorage.setItem("ehuidemo:theme", "light");
         }
-        document.documentElement.classList.remove("theme-auto");
-        document.documentElement.classList.remove("theme-dark");
-        document.documentElement.classList.remove("theme-monochrome");
-        document.documentElement.classList.remove("theme-midnight");
+        resetThemes();
         document.documentElement.classList.add("theme-light");
-
-        document.getElementById("theme-auto-button").classList.remove("selected");
         document.getElementById("theme-light-button").classList.add("selected");
-        document.getElementById("theme-dark-button").classList.remove("selected");
-        document.getElementById("theme-monochrome-button").classList.remove("selected");
-        document.getElementById("theme-midnight-button").classList.remove("selected");
       });
       document.getElementById("theme-dark-button").addEventListener("click", function () {
         if (window.localStorage) {
           localStorage.setItem("ehuidemo:theme", "dark");
         }
-        document.documentElement.classList.remove("theme-auto");
-        document.documentElement.classList.remove("theme-light");
-        document.documentElement.classList.remove("theme-monochrome");
-        document.documentElement.classList.remove("theme-midnight");
+        resetThemes();
         document.documentElement.classList.add("theme-dark");
-
-        document.getElementById("theme-auto-button").classList.remove("selected");
-        document.getElementById("theme-light-button").classList.remove("selected");
-        document.getElementById("theme-dark-button").classList.add("selected");
-        document.getElementById("theme-monochrome-button").classList.remove("selected");
-        document.getElementById("theme-midnight-button").classList.remove("selected");
+		document.getElementById("theme-dark-button").classList.add("selected");
       });
       document.getElementById("theme-monochrome-button").addEventListener("click", function () {
         if (window.localStorage) {
           localStorage.setItem("ehuidemo:theme", "monochrome");
         }
-        document.documentElement.classList.remove("theme-auto");
-        document.documentElement.classList.remove("theme-light");
-        document.documentElement.classList.remove("theme-dark");
-        document.documentElement.classList.remove("theme-midnight");
+        resetThemes();
         document.documentElement.classList.add("theme-monochrome");
-
-        document.getElementById("theme-auto-button").classList.remove("selected");
-        document.getElementById("theme-light-button").classList.remove("selected");
-        document.getElementById("theme-dark-button").classList.remove("selected");
         document.getElementById("theme-monochrome-button").classList.add("selected");
-        document.getElementById("theme-midnight-button").classList.remove("selected");
       });
       document.getElementById("theme-midnight-button").addEventListener("click", function () {
         if (window.localStorage) {
           localStorage.setItem("ehuidemo:theme", "midnight");
         }
-        document.documentElement.classList.remove("theme-auto");
-        document.documentElement.classList.remove("theme-light");
-        document.documentElement.classList.remove("theme-dark");
-        document.documentElement.classList.remove("theme-monochrome");
-        document.documentElement.classList.add("theme-midnight");
-
-        document.getElementById("theme-auto-button").classList.remove("selected");
-        document.getElementById("theme-light-button").classList.remove("selected");
-        document.getElementById("theme-dark-button").classList.remove("selected");
-        document.getElementById("theme-monochrome-button").classList.remove("selected");
-        document.getElementById("theme-midnight-button").classList.add("selected");
+        resetThemes();
+		document.documentElement.classList.add("theme-midnight");
+		document.getElementById("theme-midnight-button").classList.add("selected");
+      });
+	  document.getElementById("theme-flight-button").addEventListener("click", function () {
+        if (window.localStorage) {
+          localStorage.setItem("ehuidemo:theme", "flight");
+        }
+        resetThemes();
+		document.documentElement.classList.add("theme-flight");
+		document.getElementById("theme-flight-button").classList.add("selected");
+      });
+	  document.getElementById("theme-fdark-button").addEventListener("click", function () {
+        if (window.localStorage) {
+          localStorage.setItem("ehuidemo:theme", "fdark");
+        }
+        resetThemes();
+		document.documentElement.classList.add("theme-fdark");
+		document.getElementById("theme-fdark-button").classList.add("selected");
       });
       if (theme) {
         /* `theme` is set in the script tag at the top, inside head
