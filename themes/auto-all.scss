@@ -3,6 +3,8 @@
 @use "./dark.scss";
 @use "./monochrome.scss";
 @use "./midnight.scss";
+@use "./flight.scss";
+@use "./fdark.scss";
 
 :root {
     @include light.theme;
