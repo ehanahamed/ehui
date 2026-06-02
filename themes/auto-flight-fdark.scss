@@ -1,0 +1,13 @@
+@use "../src/scss/theme-svgs.scss";
+@use "./flight.scss";
+@use "./fdark.scss";
+
+:root {
+    @include flight.theme;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        @include fdark.theme;
+    }
+}
