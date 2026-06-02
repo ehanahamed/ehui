@@ -1,0 +1,61 @@
+@use "../src/scss/theme-svgs.scss";
+
+@mixin theme {
+    color-scheme: dark;
+    --ohno: #ff6666;
+    --ohno-on-bg: #ff6666;
+    --ohno-alt: #ff9999;
+    --ohno-faint: #ff9999;
+    --on-ohno: #010101;
+    --warn: #ffb366;
+    --warn-alt: #ffcc99;
+    --love: #FF668A;
+    --love-on-bg: #FF668A;
+    --love-alt: #FF99B1;
+    --love-faint: #FF99B1;
+    --on-love: #010101;
+    --yayy: #80FFBF;
+    --yayy-on-bg: #80FFBF;
+    --yayy-alt: #B3FFD9;
+    --yayy-faint: #B3FFD9;
+    --on-yayy: #010101;
+    --yay: var(--yayy);
+    --yay-on-bg: var(--yayy-on-bg);
+    --yay-alt: var(--yayy-alt);
+    --yay-faint: var(--yayy-faint);
+    --on-yay: var(--on-yayy);
+    --main: var(--ohno);
+    --main-on-bg: var(--ohno-on-bg);
+    --main-alt: var(--ohno-alt);
+    --main-alt-on-bg: var(--ohno-alt-on-bg);
+    --main-faint: var(--ohno-faint);
+    --on-main: #010101;
+    --extra: #80FFBF;
+    --extra-on-bg: #80FFBF;
+    --extra-alt: #B3FFD9;
+    --extra-faint: #B3FFD9;
+    --on-extra: #010101;
+    --extra-bg: #010101;
+    --fg-2: #ffffff;
+    --fg-1: #ffffff;
+    --fg-0: #cccccc;
+    --border: #333333;
+    --bg-3-alt: #272727;
+    --bg-3: #252525;
+    --bg-3ish: #252525;
+    --bg-2: #202020;
+    --bg-2ish: #202020;
+    --bg-1: #121212;
+    --bg-0: #010101;
+    --on-select-bg: #ffffff;
+    --select-bg: #303030;
+    --above-box-shadow-color: rgba(0, 0, 0, 0.4);
+    --button-box-shadow-color: rgba(0, 0, 0, 0.2);
+
+    @include theme-svgs.waves(#010101 /* bg-0 */, #010101 /* extra-bg */);
+}
+
+.theme-fdark,
+:root.theme-fdark {
+    @include theme;
+}
