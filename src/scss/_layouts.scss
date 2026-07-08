@@ -413,7 +413,7 @@ header > *,
   .grid.paragraph.alt {
     gap: 1rem;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: auto auto;
     grid-template-areas:
       "content"
       "image";
