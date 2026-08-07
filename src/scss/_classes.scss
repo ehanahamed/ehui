@@ -1,5 +1,7 @@
 $border-radius: 0.8rem !default;
 
+@layer ehui {
+
 a.mark {
   /*
   undo stuff in other stuff?
@@ -1397,4 +1399,6 @@ button.faint.yay:focus,
 .no-box-shadow,
 button.no-box-shadow {
   box-shadow: none;
+}
+
 }
