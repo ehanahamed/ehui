@@ -8,6 +8,8 @@ $border-radius-text: 0.4rem !default;
 $font-weight-button: normal !default;
 $font-weight-link: normal !default;
 
+@layer ehui {
+
 html {
   height: auto;
   font-size: 18px;
@@ -1420,4 +1422,6 @@ details[open] summary {
 .spinner.color-currentcolor,
 .spinner.color-currentColor {
   --spinner-color: currentColor;
+}
+
 }
