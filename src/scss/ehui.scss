@@ -33,6 +33,8 @@ $font-weight-link: normal !default;
   $border-radius: $border-radius
 );
 
+@layer ehui {
+
 .clickable-effect {
   transition-duration: 0.2s;
   transition-timing-function: ease-out;
@@ -96,3 +98,4 @@ $font-weight-link: normal !default;
   }
 }
 
+}
