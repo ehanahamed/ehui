@@ -886,12 +886,16 @@ textarea:focus {
   width: 100vw;
   height: 100vh;
   background: var(--bg-0); /* fallback color overrided later */
+  --trans-dots-start-color: rgb(from var(--bg-0) r g b / 0);
+  --trans-dots-end-color: rgb(from var(--bg-0) r g b / 0.6);
 }
 @supports (backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px)) {
-  .modal::before {
+  .modal::before,
+  .trans-dots,
+  .trans-dots-before::before {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    background: radial-gradient(rgb(from var(--bg-0) r g b / 0) 1px, rgb(from var(--bg-0) r g b / 0.6) 1px);
+    background: radial-gradient(var(--trans-dots-start-color, rgb(from var(--bg-0) r g b / 0)) 1px, var(--trans-dots-end-color, rgb(from var(--bg-0) r g b / 0.6)) 1px);
     background-size: 6px 6px;
     background-repeat: repeat;
   }
