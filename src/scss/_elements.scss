@@ -885,8 +885,16 @@ textarea:focus {
   left: 0px;
   width: 100vw;
   height: 100vh;
-  background-color: var(--bg-0);
-  opacity: 0.6;
+  background: var(--bg-0); /* fallback color overrided later */
+}
+@supports (backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px)) {
+  .modal::before {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: radial-gradient(rgb(from var(--bg-0) r g b / 0) 1px, rgb(from var(--bg-0) r g b / 0.6) 1px);
+    background-size: 6px 6px;
+    background-repeat: repeat;
+  }
 }
 
 .modal > .content {
