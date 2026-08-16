@@ -893,7 +893,15 @@ textarea:focus {
   /* fallback color overrided later */
   background: var(--trans-dots-color, var(--bg-1));
 }
-@supports ((backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px))) and (color: rgb(from #70e2ff r g b / 0.5)) {
+@supports (color: rgb(from #70e2ff r g b / 0.5)) {
+  .trans-dots,
+  .trans-dots-before::before,
+  .modal::before {
+    /* fallback color with transparency, overrided later */
+    background: rgb(from var(--trans-dots-color, var(--bg-1)) r g b / var(--trans-dots-fallback-opacity, var(--trans-dots-opacity, 0.6)));
+  }
+}
+@supports (color: rgb(from #70e2ff r g b / 0.5)) and ((backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px))) {
   .trans-dots,
   .trans-dots-before::before,
   .modal::before {
