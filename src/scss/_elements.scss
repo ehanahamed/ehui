@@ -885,7 +885,7 @@ textarea:focus {
   left: 0px;
   width: 100vw;
   height: 100vh;
-  --trans-dots-color: var(--bg-0);
+  --trans-dots-color: color-mix(in srgb, var(--bg-0) 60%, var(--bg-1));
 }
 .trans-dots,
 .trans-dots-before::before,
