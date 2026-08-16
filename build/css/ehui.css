@@ -777,17 +777,21 @@
     left: 0px;
     width: 100vw;
     height: 100vh;
-    background: var(--bg-0); /* fallback color overrided later */
-    --trans-dots-start-color: rgb(from var(--bg-0) r g b / 0);
-    --trans-dots-end-color: rgb(from var(--bg-0) r g b / 0.6);
+    --trans-dots-color: var(--bg-0);
   }
-  @supports (backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px)) {
-    .modal::before,
+  .trans-dots,
+  .trans-dots-before::before,
+  .modal::before {
+    /* fallback color overrided later */
+    background: var(--trans-dots-color, var(--bg-1));
+  }
+  @supports ((backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px))) and (color: rgb(from #70e2ff r g b/0.5)) {
     .trans-dots,
-    .trans-dots-before::before {
+    .trans-dots-before::before,
+    .modal::before {
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
-      background: radial-gradient(var(--trans-dots-start-color, rgb(from var(--bg-0) r g b/0)) 1px, var(--trans-dots-end-color, rgb(from var(--bg-0) r g b/0.6)) 1px);
+      background: radial-gradient(rgb(from var(--trans-dots-color, var(--bg-1)) r g b/0) 1px, rgb(from var(--trans-dots-color, var(--bg-1)) r g b/var(--trans-dots-opacity, 0.6)) 1px);
       background-size: 6px 6px;
       background-repeat: repeat;
     }
