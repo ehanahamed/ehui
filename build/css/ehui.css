@@ -789,11 +789,11 @@
     .trans-dots,
     .trans-dots-before::before,
     .modal::before {
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      background: radial-gradient(rgb(from var(--trans-dots-color, var(--bg-1)) r g b/0) 1px, rgb(from var(--trans-dots-color, var(--bg-1)) r g b/var(--trans-dots-opacity, 0.6)) 1px);
+      background: radial-gradient(rgb(from var(--trans-dots-color, var(--bg-1)) r g b/0) 1px, rgb(from var(--trans-dots-color, var(--bg-1)) r g b/var(--trans-dots-opacity, 0.9)) 1px);
       background-size: 6px 6px;
       background-repeat: repeat;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
     }
   }
   .modal > .content {
