@@ -885,29 +885,25 @@ textarea:focus {
   left: 0px;
   width: 100vw;
   height: 100vh;
-  --trans-dots-color: color-mix(in srgb, var(--bg-0) 60%, var(--bg-1));
+  background-color: color-mix(in srgb, var(--bg-0) 60%, transparent);
 }
+
 .trans-dots,
-.trans-dots-before::before,
-.modal::before {
-  /* fallback color overrided later */
-  background: var(--trans-dots-color, var(--bg-1));
+.trans-dots-before::before {
+  /* fallback color, overrided later */
+  background: color-mix(in srgb, var(--trans-dots-color, var(--bg-1)) var(--trans-dots-opacity, 90%), transparent);
 }
-@supports (color: rgb(from #70e2ff r g b / 0.5)) {
-  .trans-dots,
-  .trans-dots-before::before,
+@supports (backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px)) {
   .modal::before {
-    /* fallback color with transparency, overrided later */
-    background: rgb(from var(--trans-dots-color, var(--bg-1)) r g b / var(--trans-dots-fallback-opacity, var(--trans-dots-opacity, 0.6)));
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
   }
-}
-@supports (color: rgb(from #70e2ff r g b / 0.5)) and ((backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px))) {
+
   .trans-dots,
-  .trans-dots-before::before,
-  .modal::before {
+  .trans-dots-before::before {
     background: radial-gradient(
-      rgb(from var(--trans-dots-color, var(--bg-1)) r g b / 0) 1px,
-      rgb(from var(--trans-dots-color, var(--bg-1)) r g b / var(--trans-dots-opacity, 0.9)) 1px
+      transparent 1px,
+      color-mix(in srgb, var(--trans-dots-color, var(--bg-1)) var(--trans-dots-opacity, 90%), transparent) 1px
     );
     background-size: 6px 6px;
     background-repeat: repeat;
