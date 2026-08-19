@@ -886,6 +886,8 @@ textarea:focus {
   width: 100vw;
   height: 100vh;
   background-color: color-mix(in srgb, var(--bg-0) 60%, transparent);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 .trans-dots,
@@ -894,11 +896,6 @@ textarea:focus {
   background: color-mix(in srgb, var(--trans-dots-color, var(--bg-1)) var(--trans-dots-opacity, 90%), transparent);
 }
 @supports (backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px)) {
-  .modal::before {
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-  }
-
   .trans-dots,
   .trans-dots-before::before {
     background: radial-gradient(
