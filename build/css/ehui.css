@@ -1290,6 +1290,20 @@
   .spinner.color-currentColor {
     --spinner-color: currentColor;
   }
+  .with-badge {
+    position: relative;
+  }
+  .with-badge::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: var(--badge-color, var(--ohno));
+    border-radius: 50%;
+  }
 }
 @layer ehui {
   *,
