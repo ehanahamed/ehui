@@ -174,11 +174,11 @@
   }
   .nav > div,
   .nav-menu > div {
-    border-bottom: 0.2rem solid var(--bg-1);
+    border-bottom: 0.2rem solid transparent;
   }
   .nav > div.current,
   .nav-menu > div.current {
-    border-bottom: 0.2rem solid var(--main-alt);
+    border-bottom-color: var(--main-alt);
   }
   .nav > div.current > a,
   .nav-menu > div.current > a {
