@@ -1454,8 +1454,10 @@ details[open] summary {
 .with-badge::before {
   content: "";
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: var(--badge-top, var(--badge-offset, 0px));
+  right: var(--badge-right, var(--badge-offset, 0px));
+  left: var(--badge-left, auto);
+  bottom: var(--badge-left, auto);
   z-index: 2;
   width: 0.6rem;
   height: 0.6rem;
