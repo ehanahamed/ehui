@@ -1457,7 +1457,7 @@ details[open] summary {
   top: var(--badge-top, var(--badge-offset, 0px));
   right: var(--badge-right, var(--badge-offset, 0px));
   left: var(--badge-left, auto);
-  bottom: var(--badge-left, auto);
+  bottom: var(--badge-bottom, auto);
   z-index: 2;
   width: 0.6rem;
   height: 0.6rem;
