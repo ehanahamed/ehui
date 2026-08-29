@@ -759,8 +759,11 @@ textarea:focus {
   height: 20rem;
 }
 
-.caption {
+.caption,
+.caption-size {
   width: 40rem;
+}
+.caption {
   display: grid;
   gap: 1rem;
   grid-template-rows: 1fr;
@@ -781,7 +784,8 @@ textarea:focus {
 @media only screen and (max-width: 800px) {
   .card,
   .card-size,
-  .caption {
+  .caption,
+  .caption-size {
     width: 100%;
   }
 }
